@@ -112,6 +112,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 15px;
+        }
+
+        .file-list a span:first-child {
+            flex: 1;
+            word-break: break-word;
+            min-width: 0;
         }
 
         .file-list a:hover {
@@ -121,6 +128,8 @@
         .file-meta {
             font-size: 0.85em;
             color: #999;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .stats {
