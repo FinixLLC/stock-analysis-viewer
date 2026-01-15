@@ -272,7 +272,7 @@
 
             list.innerHTML = files.map(file => `
                 <li>
-                    <a href="${file.path}">
+                    <a href="viewer.html?file=${file.path}">
                         <span>${file.name}</span>
                         <span class="file-meta">${file.date || ''}</span>
                     </a>
