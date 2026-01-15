@@ -6,7 +6,7 @@ Deploy your stock analysis outputs to GitHub Pages for free hosting with a beaut
 
 **Cost:** FREE ✅
 **Time:** 10 minutes
-**URL:** `https://finixllc.github.io/stock-analysis-viewer`
+**URL:** `https://FinixLLC.github.io/stock-analysis-viewer`
 
 ---
 
@@ -28,7 +28,7 @@ This creates:
 
 ### **Step 2: Create GitHub Repository**
 
-1. Go to https://github.com/organizations/finixllc/repositories/new
+1. Go to https://github.com/organizations/FinixLLC/repositories/new
 2. Repository name: `stock-analysis-viewer`
 3. Description: `Stock Analysis Viewer with Bayesian Learning`
 4. **Public** (required for free GitHub Pages)
@@ -40,7 +40,7 @@ This creates:
 cd ~/stock-analysis-pages
 
 # Add your GitHub repository
-git remote add origin https://github.com/finixllc/stock-analysis-viewer.git
+git remote add origin https://github.com/FinixLLC/stock-analysis-viewer.git
 
 # Push
 git branch -M main
@@ -58,7 +58,7 @@ git push -u origin main
 
 **🎉 Your site will be live in 1-2 minutes!**
 
-**URL:** `https://finixllc.github.io/stock-analysis-viewer`
+**URL:** `https://FinixLLC.github.io/stock-analysis-viewer`
 
 ---
 
@@ -153,7 +153,7 @@ git commit -m "Add custom page"
 git push
 ```
 
-Access at: `https://finixllc.github.io/stock-analysis-viewer/custom-page.html`
+Access at: `https://FinixLLC.github.io/stock-analysis-viewer/custom-page.html`
 
 ---
 
@@ -359,7 +359,7 @@ crontab -e
 2. **Push to GitHub**
    ```bash
    cd ~/stock-analysis-pages
-   git remote add origin https://github.com/finixllc/stock-analysis-viewer.git
+   git remote add origin https://github.com/FinixLLC/stock-analysis-viewer.git
    git push -u origin main
    ```
 
@@ -367,7 +367,7 @@ crontab -e
 
 4. **Visit your site!**
    ```
-   https://finixllc.github.io/stock-analysis-viewer
+   https://FinixLLC.github.io/stock-analysis-viewer
    ```
 
 5. **Update after each analysis**
