@@ -37,7 +37,7 @@ This creates:
 ### **Step 3: Push to GitHub**
 
 ```bash
-cd ~/stock-analysis-pages
+cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
 
 # Add your GitHub repository
 git remote add origin https://github.com/FinixLLC/stock-analysis-viewer.git
@@ -108,7 +108,7 @@ Your site includes:
 
 ### **Update Site Title**
 
-Edit `~/stock-analysis-pages/index.html`:
+Edit `/Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages/index.html`:
 
 ```html
 <h1>📊 YOUR CUSTOM TITLE</h1>
@@ -133,7 +133,7 @@ background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
 ### **Add Custom Pages**
 
 ```bash
-cd ~/stock-analysis-pages
+cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
 
 # Create new page
 cat > custom-page.html << 'EOF'
@@ -237,7 +237,7 @@ Want to use your own domain? (e.g., `stocks.yourdomain.com`)
 
 4. Create `CNAME` file:
    ```bash
-   cd ~/stock-analysis-pages
+   cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
    echo "stocks.yourdomain.com" > CNAME
    git add CNAME
    git commit -m "Add custom domain"
@@ -261,7 +261,7 @@ Want to use your own domain? (e.g., `stocks.yourdomain.com`)
 
 ```bash
 # Force rebuild
-cd ~/stock-analysis-pages
+cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
 git commit --allow-empty -m "Rebuild site"
 git push
 ```
@@ -270,7 +270,7 @@ git push
 
 ```bash
 # Regenerate file list
-cd ~/stock-analysis-pages
+cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
 python3 << 'EOF'
 import json
 from pathlib import Path
@@ -287,7 +287,7 @@ git push
 ### **"Permission Denied"**
 
 ```bash
-chmod +x ~/stock-analysis-pages/*.sh
+chmod +x /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages/*.sh
 ```
 
 ---
@@ -358,7 +358,7 @@ crontab -e
 
 2. **Push to GitHub**
    ```bash
-   cd ~/stock-analysis-pages
+   cd /Volumes/1T_ExFAT/StockScan/devcpp/Sarah2/src/stock-analysis-pages
    git remote add origin https://github.com/FinixLLC/stock-analysis-viewer.git
    git push -u origin main
    ```
