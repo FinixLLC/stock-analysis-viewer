@@ -364,6 +364,16 @@
       "name": "stock_analysis_2025_11_14.csv",
       "path": "top50/stock_analysis_2025_11_14.csv",
       "date": "2026-01-15"
+    },
+    {
+      "name": "._stock_analysis_NASDAQ_Polygon_2025_12_30.csv",
+      "path": "top50/._stock_analysis_NASDAQ_Polygon_2025_12_30.csv",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "._stock_analysis_AMEX_Polygon_2025_12_30.csv",
+      "path": "top50/._stock_analysis_AMEX_Polygon_2025_12_30.csv",
+      "date": "2026-01-15"
     }
   ],
   "patterns": [
@@ -518,6 +528,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top50_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/Top50_NYSE_Polygon_2026_01_10.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "Top50_NYSE_Polygon_2026_01_09.txt",
       "path": "patterns/Top50_NYSE_Polygon_2026_01_09.txt",
       "date": "2026-01-15"
@@ -625,6 +640,11 @@
     {
       "name": "Top50_AMEX_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_AMEX_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/Top20_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
     },
     {
@@ -1263,6 +1283,6 @@
   "stats": {
     "total_stocks": "105",
     "total_patterns": "50",
-    "last_update": "Jan 15, 2026 14:31"
+    "last_update": "Jan 15, 2026 14:43"
   }
 }
