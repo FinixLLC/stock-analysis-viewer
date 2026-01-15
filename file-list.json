@@ -368,6 +368,11 @@
   ],
   "patterns": [
     {
+      "name": "VBottomList_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/VBottomList_NYSE_Polygon_2026_01_10.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "VBottomList_NYSE_Polygon_2026_01_09.txt",
       "path": "patterns/VBottomList_NYSE_Polygon_2026_01_09.txt",
       "date": "2026-01-15"
@@ -753,6 +758,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "SpoonList_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/SpoonList_NYSE_Polygon_2026_01_10.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "SpoonList_NYSE_Polygon_2026_01_09.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2026_01_09.txt",
       "date": "2026-01-15"
@@ -898,6 +908,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "POSList_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/POSList_NYSE_Polygon_2026_01_10.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "POSList_NYSE_Polygon_2026_01_09.txt",
       "path": "patterns/POSList_NYSE_Polygon_2026_01_09.txt",
       "date": "2026-01-15"
@@ -1040,6 +1055,11 @@
     {
       "name": "POSList.txt",
       "path": "patterns/POSList.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_NYSE_Polygon_2026_01_10.txt",
+      "path": "patterns/CupHandleList_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
     },
     {
@@ -1243,6 +1263,6 @@
   "stats": {
     "total_stocks": "105",
     "total_patterns": "50",
-    "last_update": "Jan 15, 2026 14:25"
+    "last_update": "Jan 15, 2026 14:31"
   }
 }

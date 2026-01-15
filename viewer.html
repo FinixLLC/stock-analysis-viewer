@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #dee2e6;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: auto;
+        }
+
+        /* CSV Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Text File Styles */
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .error {
+            color: #dc3545;
+            padding: 20px;
+            background: #f8d7da;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.2em; }
+            .header-content { flex-direction: column; }
+            table { font-size: 0.8em; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 id="filename">Loading...</h1>
+                <div class="actions">
+                    <a href="/" class="btn btn-secondary">← Back</a>
+                    <a href="#" id="download-btn" class="btn btn-primary" download>Download</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-box">
+            <div id="content" class="loading">Loading file...</div>
+        </div>
+    </div>
+
+    <script>
+        // Get file path from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const filePath = urlParams.get('file');
+
+        if (!filePath) {
+            document.getElementById('content').innerHTML = 
+                '<div class="error">Error: No file specified</div>';
+        } else {
+            loadFile(filePath);
+        }
+
+        async function loadFile(path) {
+            try {
+                const filename = path.split('/').pop();
+                document.getElementById('filename').textContent = filename;
+                document.getElementById('download-btn').href = path;
+                document.getElementById('download-btn').download = filename;
+
+                const response = await fetch(path);
+                if (!response.ok) throw new Error('File not found');
+                
+                const text = await response.text();
+                const contentDiv = document.getElementById('content');
+
+                // Determine file type and render accordingly
+                if (path.endsWith('.csv')) {
+                    renderCSV(text, contentDiv);
+                } else if (path.endsWith('.txt') || path.endsWith('.md')) {
+                    renderText(text, contentDiv);
+                } else {
+                    renderText(text, contentDiv);
+                }
+            } catch (error) {
+                document.getElementById('content').innerHTML = 
+                    `<div class="error">Error loading file: ${error.message}</div>`;
+            }
+        }
+
+        function renderCSV(csvText, container) {
+            const lines = csvText.trim().split('\n');
+            if (lines.length === 0) {
+                container.innerHTML = '<div class="error">Empty file</div>';
+                return;
+            }
+
+            // Parse CSV
+            const rows = lines.map(line => {
+                // Simple CSV parser (handles basic cases)
+                const cells = [];
+                let cell = '';
+                let inQuotes = false;
+                
+                for (let i = 0; i < line.length; i++) {
+                    const char = line[i];
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        cells.push(cell.trim());
+                        cell = '';
+                    } else {
+                        cell += char;
+                    }
+                }
+                cells.push(cell.trim());
+                return cells;
+            });
+
+            // Build table
+            let html = '<table><thead><tr>';
+            rows[0].forEach(header => {
+                html += `<th>${escapeHtml(header)}</th>`;
+            });
+            html += '</tr></thead><tbody>';
+
+            for (let i = 1; i < rows.length; i++) {
+                html += '<tr>';
+                rows[i].forEach(cell => {
+                    html += `<td>${escapeHtml(cell)}</td>`;
+                });
+                html += '</tr>';
+            }
+            html += '</tbody></table>';
+
+            container.innerHTML = html;
+        }
+
+        function renderText(text, container) {
+            container.innerHTML = `<pre>${escapeHtml(text)}</pre>`;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
