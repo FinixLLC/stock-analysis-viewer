@@ -214,6 +214,27 @@
             </div>
         </div>
 
+        <div class="card" style="max-width: 1200px; margin: 0 auto 30px;">
+            <h2 style="margin-bottom: 15px;">📖 How to Read the Data</h2>
+            <div style="line-height: 1.8; color: #555;">
+                <p style="margin-bottom: 15px;">
+                    <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
+                    Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom), including tier classification,
+                    momentum, volatility, volume metrics, and risk assessment. Higher tiers (1-2) indicate stronger opportunities.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>Pattern Analysis:</strong> Detailed pattern detection results organized by pattern type.
+                    Files show all stocks exhibiting specific technical patterns on a given date, useful for identifying
+                    breakout candidates and trend reversals across different markets (NYSE, NASDAQ, AMEX).
+                </p>
+                <p>
+                    <strong>Key Metrics:</strong> Composite Score (overall strength), Tier (1=best, 4=lowest),
+                    Pattern Score (pattern quality), Momentum (price trend), Volatility (price stability),
+                    Volume (trading activity), Risk (penalty for adverse factors).
+                </p>
+            </div>
+        </div>
+
         <div class="grid">
             <div class="card">
                 <h2>📈 Top 50 Composite Scores</h2>
@@ -225,13 +246,6 @@
             <div class="card">
                 <h2>📉 Pattern Analysis</h2>
                 <ul class="file-list" id="pattern-list">
-                    <li>Loading...</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>📚 Documentation</h2>
-                <ul class="file-list" id="docs-list">
                     <li>Loading...</li>
                 </ul>
             </div>
@@ -260,7 +274,6 @@
                 .then(data => {
                     populateList('top50-list', data.top50 || []);
                     populateList('pattern-list', data.patterns || []);
-                    populateList('docs-list', data.docs || []);
 
                     // Update stats
                     document.getElementById('total-stocks').textContent = data.stats?.total_stocks || 0;
