@@ -6,6 +6,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "stock_analysis_NYSE_Polygon_2026_01_11.csv",
+      "path": "top50/stock_analysis_NYSE_Polygon_2026_01_11.csv",
+      "date": "2026-01-15"
+    },
+    {
       "name": "stock_analysis_NYSE_Polygon_2026_01_10.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2026_01_10.csv",
       "date": "2026-01-15"
@@ -119,6 +124,11 @@
       "name": "stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "date": "2026-01-15"
+    },
+    {
+      "name": "stock_analysis_NASDAQ_Polygon_2026_01_11.csv",
+      "path": "top50/stock_analysis_NASDAQ_Polygon_2026_01_11.csv",
+      "date": "2026-01-16"
     },
     {
       "name": "stock_analysis_NASDAQ_Polygon_2026_01_10.csv",
@@ -244,6 +254,11 @@
       "name": "stock_analysis_NASDAQ_2025_12_30.csv",
       "path": "top50/stock_analysis_NASDAQ_2025_12_30.csv",
       "date": "2026-01-15"
+    },
+    {
+      "name": "stock_analysis_AMEX_Polygon_2026_01_12.csv",
+      "path": "top50/stock_analysis_AMEX_Polygon_2026_01_12.csv",
+      "date": "2026-01-16"
     },
     {
       "name": "stock_analysis_AMEX_Polygon_2026_01_11.csv",
@@ -393,6 +408,11 @@
   ],
   "patterns": [
     {
+      "name": "Top50_NYSE_Polygon_2026_01_11.txt",
+      "path": "patterns/Top50_NYSE_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "Top50_NYSE_Polygon_2026_01_10.txt",
       "path": "patterns/Top50_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -430,6 +450,11 @@
     {
       "name": "Top50_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_NYSE_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "Top50_NASDAQ_Polygon_2026_01_11.txt",
+      "path": "patterns/Top50_NASDAQ_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -471,6 +496,11 @@
       "name": "Top50_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top50_AMEX_Polygon_2026_01_12.txt",
+      "path": "patterns/Top50_AMEX_Polygon_2026_01_12.txt",
+      "date": "2026-01-16"
     },
     {
       "name": "Top50_AMEX_Polygon_2026_01_11.txt",
@@ -518,6 +548,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top20_NYSE_Polygon_2026_01_11.txt",
+      "path": "patterns/Top20_NYSE_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "Top20_NYSE_Polygon_2026_01_10.txt",
       "path": "patterns/Top20_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -555,6 +590,11 @@
     {
       "name": "Top20_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NYSE_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_NASDAQ_Polygon_2026_01_11.txt",
+      "path": "patterns/Top20_NASDAQ_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -596,6 +636,11 @@
       "name": "Top20_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_AMEX_Polygon_2026_01_12.txt",
+      "path": "patterns/Top20_AMEX_Polygon_2026_01_12.txt",
+      "date": "2026-01-16"
     },
     {
       "name": "Top20_AMEX_Polygon_2026_01_11.txt",
@@ -663,6 +708,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "SpoonList_NYSE_Polygon_2026_01_11.txt",
+      "path": "patterns/SpoonList_NYSE_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "SpoonList_NYSE_Polygon_2026_01_10.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -700,6 +750,11 @@
     {
       "name": "SpoonList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "SpoonList_NASDAQ_Polygon_2026_01_11.txt",
+      "path": "patterns/SpoonList_NASDAQ_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -743,6 +798,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "POSList_NYSE_Polygon_2026_01_11.txt",
+      "path": "patterns/POSList_NYSE_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "POSList_NYSE_Polygon_2026_01_10.txt",
       "path": "patterns/POSList_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -780,6 +840,11 @@
     {
       "name": "POSList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/POSList_NYSE_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "POSList_NASDAQ_Polygon_2026_01_11.txt",
+      "path": "patterns/POSList_NASDAQ_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -821,6 +886,11 @@
       "name": "POSList_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/POSList_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "POSList_AMEX_Polygon_2026_01_12.txt",
+      "path": "patterns/POSList_AMEX_Polygon_2026_01_12.txt",
+      "date": "2026-01-16"
     },
     {
       "name": "POSList_AMEX_Polygon_2026_01_11.txt",
@@ -898,6 +968,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "CupHandleList_NYSE_Polygon_2026_01_11.txt",
+      "path": "patterns/CupHandleList_NYSE_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "CupHandleList_NYSE_Polygon_2026_01_10.txt",
       "path": "patterns/CupHandleList_NYSE_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -935,6 +1010,11 @@
     {
       "name": "CupHandleList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/CupHandleList_NYSE_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_NASDAQ_Polygon_2026_01_11.txt",
+      "path": "patterns/CupHandleList_NASDAQ_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -976,6 +1056,11 @@
       "name": "CupHandleList_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/CupHandleList_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_AMEX_Polygon_2026_01_12.txt",
+      "path": "patterns/CupHandleList_AMEX_Polygon_2026_01_12.txt",
+      "date": "2026-01-16"
     },
     {
       "name": "CupHandleList_AMEX_Polygon_2026_01_11.txt",
@@ -1056,6 +1141,6 @@
   "stats": {
     "total_stocks": "105",
     "total_patterns": "50",
-    "last_update": "Jan 15, 2026 19:18"
+    "last_update": "Jan 16, 2026 11:50"
   }
 }
