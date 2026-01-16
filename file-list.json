@@ -473,6 +473,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "VBottomList_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/VBottomList_AMEX_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "VBottomList_AMEX_Polygon_2026_01_10.txt",
       "path": "patterns/VBottomList_AMEX_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -623,6 +628,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top50_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/Top50_AMEX_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "Top50_AMEX_Polygon_2026_01_10.txt",
       "path": "patterns/Top50_AMEX_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -740,6 +750,11 @@
     {
       "name": "Top20_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NASDAQ_Polygon_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/Top20_AMEX_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -885,6 +900,11 @@
     {
       "name": "SpoonList_NASDAQ_2025_12_30.txt",
       "path": "patterns/SpoonList_NASDAQ_2025_12_30.txt",
+      "date": "2026-01-15"
+    },
+    {
+      "name": "SpoonList_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/SpoonList_AMEX_Polygon_2026_01_11.txt",
       "date": "2026-01-15"
     },
     {
@@ -1043,6 +1063,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "POSList_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/POSList_AMEX_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "POSList_AMEX_Polygon_2026_01_10.txt",
       "path": "patterns/POSList_AMEX_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -1198,6 +1223,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "CupHandleList_AMEX_Polygon_2026_01_11.txt",
+      "path": "patterns/CupHandleList_AMEX_Polygon_2026_01_11.txt",
+      "date": "2026-01-15"
+    },
+    {
       "name": "CupHandleList_AMEX_Polygon_2026_01_10.txt",
       "path": "patterns/CupHandleList_AMEX_Polygon_2026_01_10.txt",
       "date": "2026-01-15"
@@ -1268,61 +1298,9 @@
       "date": "2026-01-15"
     }
   ],
-  "docs": [
-    {
-      "name": "Bayesian Analysis",
-      "path": "tracking/BAYESIAN_ANALYSIS.md",
-      "date": ""
-    },
-    {
-      "name": "Bayesian Quick Ref",
-      "path": "tracking/BAYESIAN_QUICK_REF.md",
-      "date": ""
-    },
-    {
-      "name": "Daily Workflow",
-      "path": "tracking/DAILY_WORKFLOW.md",
-      "date": ""
-    },
-    {
-      "name": "Database Info",
-      "path": "tracking/DATABASE_INFO.md",
-      "date": ""
-    },
-    {
-      "name": "Github Pages Guide",
-      "path": "tracking/GITHUB_PAGES_GUIDE.md",
-      "date": ""
-    },
-    {
-      "name": "Polygon Loader Info",
-      "path": "tracking/POLYGON_LOADER_INFO.md",
-      "date": ""
-    },
-    {
-      "name": "Quick Reference",
-      "path": "tracking/QUICK_REFERENCE.md",
-      "date": ""
-    },
-    {
-      "name": "Tracking Readme",
-      "path": "tracking/TRACKING_README.md",
-      "date": ""
-    },
-    {
-      "name": "Tracking Summary",
-      "path": "tracking/TRACKING_SUMMARY.md",
-      "date": ""
-    },
-    {
-      "name": "Deploy To Cloud Vm",
-      "path": "tracking/deploy_to_cloud_vm.md",
-      "date": ""
-    }
-  ],
   "stats": {
     "total_stocks": "105",
     "total_patterns": "50",
-    "last_update": "Jan 15, 2026 17:39"
+    "last_update": "Jan 15, 2026 17:49"
   }
 }
