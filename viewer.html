@@ -223,7 +223,14 @@
                 // Determine file type and render accordingly
                 if (path.endsWith('.csv')) {
                     renderCSV(text, contentDiv);
-                } else if (path.endsWith('.txt') || path.endsWith('.md')) {
+                } else if (path.endsWith('.txt')) {
+                    // Check if it's a pattern file (has # Format: header)
+                    if (text.includes('# Format:')) {
+                        renderPatternFile(text, contentDiv);
+                    } else {
+                        renderText(text, contentDiv);
+                    }
+                } else if (path.endsWith('.md')) {
                     renderText(text, contentDiv);
                 } else {
                     renderText(text, contentDiv);
@@ -279,6 +286,70 @@
             }
             html += '</tbody></table></div>';
 
+            container.innerHTML = html;
+        }
+
+        function renderPatternFile(text, container) {
+            const lines = text.trim().split('\n');
+
+            // Extract header and metadata
+            let headers = [];
+            let metadata = [];
+            const dataLines = [];
+
+            for (const line of lines) {
+                if (line.startsWith('# Format:')) {
+                    // Parse header from "# Format: Rank,Symbol,Date,..."
+                    const headerLine = line.substring(10).trim();
+                    headers = headerLine.split(',').map(h => h.trim());
+                } else if (line.startsWith('#')) {
+                    // Store metadata
+                    const metaText = line.substring(1).trim();
+                    if (metaText) {
+                        metadata.push(metaText);
+                    }
+                } else if (line.trim()) {
+                    // Data line
+                    dataLines.push(line);
+                }
+            }
+
+            // If no header found in Format line, use default
+            if (headers.length === 0) {
+                headers = ['Rank', 'Symbol', 'Date', 'Pattern', 'Price', 'Composite', 'Tier',
+                          'Pattern', 'Momentum', 'Volatility', 'Volume', 'Risk'];
+            }
+
+            // Build HTML
+            let html = '';
+
+            // Add metadata if present
+            if (metadata.length > 0) {
+                html += '<div style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; color: #666;">';
+                metadata.forEach(meta => {
+                    html += `<div style="margin: 5px 0;">${escapeHtml(meta)}</div>`;
+                });
+                html += '</div>';
+            }
+
+            // Build table
+            html += '<div class="table-wrapper"><table><thead><tr>';
+            headers.forEach(header => {
+                html += `<th>${escapeHtml(header)}</th>`;
+            });
+            html += '</tr></thead><tbody>';
+
+            // Parse data rows
+            dataLines.forEach(line => {
+                const cells = line.split(',').map(c => c.trim());
+                html += '<tr>';
+                cells.forEach(cell => {
+                    html += `<td>${escapeHtml(cell)}</td>`;
+                });
+                html += '</tr>';
+            });
+
+            html += '</tbody></table></div>';
             container.innerHTML = html;
         }
 
