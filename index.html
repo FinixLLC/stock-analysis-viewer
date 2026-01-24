@@ -292,7 +292,14 @@
                 return;
             }
 
-            list.innerHTML = files.map(file => `
+            // Sort by date descending (newest first)
+            const sortedFiles = [...files].sort((a, b) => {
+                const dateA = new Date(a.date || '1970-01-01');
+                const dateB = new Date(b.date || '1970-01-01');
+                return dateB - dateA;
+            });
+
+            list.innerHTML = sortedFiles.map(file => `
                 <li>
                     <a href="viewer.html?file=${file.path}">
                         <span>${file.name}</span>
