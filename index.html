@@ -276,40 +276,158 @@
             margin-top: 40px;
         }
 
+        /* Loading Spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            border-top-color: #667eea;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-state {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            color: #666;
+        }
+
+        /* Error Alert */
+        .error-alert {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .error-alert::before {
+            content: '⚠️';
+        }
+
+        /* Search Box */
+        .search-box {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: border-color 0.2s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-box::placeholder {
+            color: #adb5bd;
+        }
+
+        /* Data freshness indicator */
+        .freshness-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .freshness-fresh {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .freshness-stale {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .freshness-old {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Skip to main content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 0 0 8px 0;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             .grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr; }
+            .stat-card { padding: 20px; }
+            .stat-number { font-size: 2em; }
+            .pick-header { flex-direction: column; align-items: flex-start; }
+            .pick-metrics { justify-content: flex-start; }
+            header { padding: 25px; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .card { padding: 20px; }
+            h1 { font-size: 1.6em; }
+            .metric { padding: 4px 8px; font-size: 0.85em; }
         }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
-        <header>
+        <header role="banner">
             <h1>📊 Stock Analysis Dashboard</h1>
             <p class="subtitle">Real-time pattern recognition and composite scoring</p>
             <p class="timestamp" id="timestamp"></p>
+            <span id="freshness-badge" class="freshness-badge freshness-fresh" aria-live="polite"></span>
         </header>
 
-        <div class="stats">
-            <div class="stat-card">
-                <div class="stat-number" id="total-stocks">0</div>
+        <div class="stats" role="region" aria-label="Analysis statistics">
+            <div class="stat-card" role="status" aria-label="Stocks analyzed">
+                <div class="stat-number" id="total-stocks" aria-live="polite">0</div>
                 <div class="stat-label">Stocks Analyzed</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-number" id="total-patterns">0</div>
+            <div class="stat-card" role="status" aria-label="Patterns detected">
+                <div class="stat-number" id="total-patterns" aria-live="polite">0</div>
                 <div class="stat-label">Patterns Detected</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-number" id="last-update">--</div>
+            <div class="stat-card" role="status" aria-label="Last data update">
+                <div class="stat-number" id="last-update" aria-live="polite">--</div>
                 <div class="stat-label">Last Update</div>
             </div>
         </div>
 
         <!-- Today's Top Picks Section -->
-        <div class="top-picks" id="top-picks-section">
-            <h2>🎯 Today's Top Picks</h2>
-            <div id="top-picks-content">
-                <div class="no-picks">Loading top picks...</div>
+        <div class="top-picks" id="top-picks-section" role="region" aria-labelledby="top-picks-heading">
+            <h2 id="top-picks-heading">🎯 Today's Top Picks</h2>
+            <div id="top-picks-content" aria-live="polite">
+                <div class="loading-state"><span class="spinner"></span> Analyzing top picks...</div>
             </div>
         </div>
 
@@ -334,21 +452,25 @@
             </div>
         </div>
 
+        <main id="main-content">
         <div class="grid">
-            <div class="card">
-                <h2>📈 Top 50 Composite Scores</h2>
-                <ul class="file-list" id="top50-list">
-                    <li>Loading...</li>
+            <div class="card" role="region" aria-labelledby="top50-heading">
+                <h2 id="top50-heading">📈 Top 50 Composite Scores</h2>
+                <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 files">
+                <ul class="file-list" id="top50-list" role="list" aria-live="polite">
+                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
                 </ul>
             </div>
 
-            <div class="card">
-                <h2>📉 Pattern Analysis</h2>
-                <ul class="file-list" id="pattern-list">
-                    <li>Loading...</li>
+            <div class="card" role="region" aria-labelledby="pattern-heading">
+                <h2 id="pattern-heading">📉 Pattern Analysis</h2>
+                <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
+                <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
+                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
                 </ul>
             </div>
         </div>
+        </main>
 
         <footer>
             <p>Stock Analysis System • Built with Bayesian Learning</p>
@@ -361,52 +483,117 @@
     </div>
 
     <script>
+        // Store file data for search functionality
+        let fileData = { top50: [], patterns: [] };
+
         // Display current timestamp
         document.getElementById('timestamp').textContent =
-            'Last updated: ' + new Date().toLocaleString();
+            'Dashboard loaded: ' + new Date().toLocaleString();
 
-        // Auto-populate file lists
-        function loadFiles() {
-            // Top50 files
-            fetch('file-list.json')
-                .then(response => response.json())
-                .then(data => {
-                    populateList('top50-list', data.top50 || []);
-                    populateList('pattern-list', data.patterns || []);
+        // Calculate data freshness
+        function updateFreshnessBadge(lastUpdate) {
+            const badge = document.getElementById('freshness-badge');
+            if (!lastUpdate || lastUpdate === '--') {
+                badge.style.display = 'none';
+                return;
+            }
 
-                    // Update stats
-                    document.getElementById('total-stocks').textContent = data.stats?.total_stocks || 0;
-                    document.getElementById('total-patterns').textContent = data.stats?.total_patterns || 0;
-                    document.getElementById('last-update').textContent = data.stats?.last_update || '--';
-                })
-                .catch(err => {
-                    console.error('Error loading files:', err);
-                });
+            const updateDate = new Date(lastUpdate);
+            const now = new Date();
+            const hoursDiff = (now - updateDate) / (1000 * 60 * 60);
+
+            if (hoursDiff < 24) {
+                badge.className = 'freshness-badge freshness-fresh';
+                badge.textContent = '🟢 Data is fresh';
+            } else if (hoursDiff < 72) {
+                badge.className = 'freshness-badge freshness-stale';
+                badge.textContent = '🟡 Data is ' + Math.floor(hoursDiff / 24) + ' day(s) old';
+            } else {
+                badge.className = 'freshness-badge freshness-old';
+                badge.textContent = '🔴 Data is ' + Math.floor(hoursDiff / 24) + ' days old';
+            }
         }
 
-        function populateList(listId, files) {
+        // Show error message to user
+        function showError(listId, message) {
+            const list = document.getElementById(listId);
+            list.innerHTML = `<li class="error-alert">${message}</li>`;
+        }
+
+        // Auto-populate file lists
+        async function loadFiles() {
+            try {
+                const response = await fetch('file-list.json');
+                if (!response.ok) throw new Error('Failed to load file list');
+
+                const data = await response.json();
+                fileData.top50 = data.top50 || [];
+                fileData.patterns = data.patterns || [];
+
+                populateList('top50-list', fileData.top50);
+                populateList('pattern-list', fileData.patterns);
+
+                // Update stats
+                document.getElementById('total-stocks').textContent = data.stats?.total_stocks || 0;
+                document.getElementById('total-patterns').textContent = data.stats?.total_patterns || 0;
+                document.getElementById('last-update').textContent = data.stats?.last_update || '--';
+
+                // Update freshness badge
+                updateFreshnessBadge(data.stats?.last_update);
+            } catch (err) {
+                console.error('Error loading files:', err);
+                showError('top50-list', 'Failed to load files. Please try refreshing.');
+                showError('pattern-list', 'Failed to load files. Please try refreshing.');
+            }
+        }
+
+        function populateList(listId, files, searchTerm = '') {
             const list = document.getElementById(listId);
             if (!files || files.length === 0) {
                 list.innerHTML = '<li>No files available</li>';
                 return;
             }
 
+            // Filter by search term if provided
+            let filteredFiles = files;
+            if (searchTerm) {
+                const term = searchTerm.toLowerCase();
+                filteredFiles = files.filter(f =>
+                    f.name.toLowerCase().includes(term) ||
+                    (f.date && f.date.includes(term))
+                );
+            }
+
+            if (filteredFiles.length === 0) {
+                list.innerHTML = '<li>No matching files found</li>';
+                return;
+            }
+
             // Sort by date descending (newest first)
-            const sortedFiles = [...files].sort((a, b) => {
+            const sortedFiles = [...filteredFiles].sort((a, b) => {
                 const dateA = new Date(a.date || '1970-01-01');
                 const dateB = new Date(b.date || '1970-01-01');
                 return dateB - dateA;
             });
 
             list.innerHTML = sortedFiles.map(file => `
-                <li>
-                    <a href="viewer.html?file=${file.path}">
+                <li role="listitem">
+                    <a href="viewer.html?file=${encodeURIComponent(file.path)}" aria-label="${file.name}, dated ${file.date || 'unknown'}">
                         <span>${file.name}</span>
                         <span class="file-meta">${file.date || ''}</span>
                     </a>
                 </li>
             `).join('');
         }
+
+        // Search functionality
+        document.getElementById('top50-search').addEventListener('input', (e) => {
+            populateList('top50-list', fileData.top50, e.target.value);
+        });
+
+        document.getElementById('pattern-search').addEventListener('input', (e) => {
+            populateList('pattern-list', fileData.patterns, e.target.value);
+        });
 
         // Load files on page load
         loadFiles();
@@ -472,7 +659,7 @@
 
             } catch (err) {
                 console.error('Error loading top picks:', err);
-                showNoPicksMessage();
+                showNoPicksMessage(true);
             }
         }
 
@@ -588,9 +775,13 @@
                    `Overall composite score of ${pick.compositeScore.toFixed(1)} places this in Tier ${pick.tier}.`;
         }
 
-        function showNoPicksMessage() {
-            document.getElementById('top-picks-content').innerHTML =
-                '<div class="no-picks">No top picks available. Check back after the next analysis run.</div>';
+        function showNoPicksMessage(isError = false) {
+            const content = document.getElementById('top-picks-content');
+            if (isError) {
+                content.innerHTML = '<div class="error-alert">Unable to load top picks. Please try refreshing the page.</div>';
+            } else {
+                content.innerHTML = '<div class="no-picks">No top picks available. Check back after the next analysis run.</div>';
+            }
         }
 
         // Load top picks on page load

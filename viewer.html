@@ -160,6 +160,24 @@
             padding: 40px;
             color: #666;
             font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            border-top-color: #667eea;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
 
         .error {
@@ -168,6 +186,65 @@
             background: #f8d7da;
             border-radius: 10px;
             margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .error::before {
+            content: '⚠️';
+            font-size: 1.5em;
+        }
+
+        /* Row count indicator */
+        .row-count {
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Table sorting indicator */
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th.sortable:hover {
+            background: linear-gradient(135deg, #5a6fd6 0%, #6a4192 100%);
+        }
+
+        th.sortable::after {
+            content: ' ↕';
+            opacity: 0.5;
+        }
+
+        th.sort-asc::after {
+            content: ' ↑';
+            opacity: 1;
+        }
+
+        th.sort-desc::after {
+            content: ' ↓';
+            opacity: 1;
+        }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
         }
 
         @media (max-width: 768px) {
@@ -175,24 +252,36 @@
             .header-content { flex-direction: column; }
             table { font-size: 0.8em; }
             th, td { padding: 8px; }
+            .content-box { padding: 15px; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            header { padding: 15px; }
+            th, td { padding: 6px 8px; font-size: 0.75em; }
+            .btn { padding: 8px 15px; font-size: 0.9em; }
         }
     </style>
 </head>
 <body>
+    <a href="#content" class="skip-link">Skip to content</a>
     <div class="container">
-        <header>
+        <header role="banner">
             <div class="header-content">
-                <h1 id="filename">Loading...</h1>
-                <div class="actions">
-                    <a href="index.html" class="btn btn-secondary">← Back</a>
-                    <a href="#" id="download-btn" class="btn btn-primary" download>Download</a>
-                </div>
+                <h1 id="filename" aria-live="polite">Loading...</h1>
+                <nav class="actions" aria-label="File actions">
+                    <a href="index.html" class="btn btn-secondary" aria-label="Back to dashboard">← Back</a>
+                    <a href="#" id="download-btn" class="btn btn-primary" download aria-label="Download file">Download</a>
+                </nav>
             </div>
         </header>
 
-        <div class="content-box">
-            <div id="content" class="loading">Loading file...</div>
-        </div>
+        <main class="content-box" role="main">
+            <div id="content" class="loading" aria-live="polite" aria-busy="true">
+                <div class="spinner" aria-hidden="true"></div>
+                <span>Loading file...</span>
+            </div>
+        </main>
     </div>
 
     <script>
@@ -254,7 +343,7 @@
                 const cells = [];
                 let cell = '';
                 let inQuotes = false;
-                
+
                 for (let i = 0; i < line.length; i++) {
                     const char = line[i];
                     if (char === '"') {
@@ -270,23 +359,71 @@
                 return cells;
             });
 
-            // Build table
-            let html = '<div class="table-wrapper"><table><thead><tr>';
-            rows[0].forEach(header => {
-                html += `<th>${escapeHtml(header)}</th>`;
+            const dataRowCount = rows.length - 1;
+
+            // Build table with row count
+            let html = `<div class="row-count" role="status" aria-live="polite">Showing ${dataRowCount} row${dataRowCount !== 1 ? 's' : ''}</div>`;
+            html += '<div class="table-wrapper"><table role="grid" aria-label="Data table"><thead><tr role="row">';
+            rows[0].forEach((header, idx) => {
+                html += `<th role="columnheader" class="sortable" data-col="${idx}" aria-sort="none">${escapeHtml(header)}</th>`;
             });
             html += '</tr></thead><tbody>';
 
             for (let i = 1; i < rows.length; i++) {
-                html += '<tr>';
+                html += '<tr role="row">';
                 rows[i].forEach(cell => {
-                    html += `<td>${escapeHtml(cell)}</td>`;
+                    html += `<td role="gridcell">${escapeHtml(cell)}</td>`;
                 });
                 html += '</tr>';
             }
             html += '</tbody></table></div>';
 
             container.innerHTML = html;
+            container.setAttribute('aria-busy', 'false');
+
+            // Add click handlers for sortable headers
+            initTableSorting(container);
+        }
+
+        function initTableSorting(container) {
+            const headers = container.querySelectorAll('th.sortable');
+            headers.forEach(th => {
+                th.addEventListener('click', () => {
+                    const table = container.querySelector('table');
+                    const tbody = table.querySelector('tbody');
+                    const rows = Array.from(tbody.querySelectorAll('tr'));
+                    const colIdx = parseInt(th.dataset.col);
+                    const isAsc = th.classList.contains('sort-asc');
+
+                    // Reset all headers
+                    headers.forEach(h => {
+                        h.classList.remove('sort-asc', 'sort-desc');
+                        h.setAttribute('aria-sort', 'none');
+                    });
+
+                    // Sort rows
+                    rows.sort((a, b) => {
+                        const aVal = a.cells[colIdx]?.textContent || '';
+                        const bVal = b.cells[colIdx]?.textContent || '';
+                        const aNum = parseFloat(aVal);
+                        const bNum = parseFloat(bVal);
+
+                        // Numeric comparison if both are numbers
+                        if (!isNaN(aNum) && !isNaN(bNum)) {
+                            return isAsc ? bNum - aNum : aNum - bNum;
+                        }
+                        // String comparison
+                        return isAsc ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                    });
+
+                    // Update header state
+                    th.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+                    th.setAttribute('aria-sort', isAsc ? 'descending' : 'ascending');
+
+                    // Re-append rows in sorted order
+                    rows.forEach(row => tbody.appendChild(row));
+                });
+            });
         }
 
         function renderPatternFile(text, container) {
