@@ -456,14 +456,25 @@
         <div class="grid">
             <div class="card" role="region" aria-labelledby="top50-heading">
                 <h2 id="top50-heading">📈 Top 50 Composite Scores</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">CSV files with ranked stocks by composite score</p>
                 <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 files">
                 <ul class="file-list" id="top50-list" role="list" aria-live="polite">
                     <li class="loading-state"><span class="spinner"></span> Loading files...</li>
                 </ul>
             </div>
 
+            <div class="card" role="region" aria-labelledby="top-patterns-heading">
+                <h2 id="top-patterns-heading">🏆 Top Chart Patterns</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">Top 20/50 stocks with strongest pattern signals</p>
+                <input type="search" class="search-box" id="top-patterns-search" placeholder="Search files..." aria-label="Search Top Pattern files">
+                <ul class="file-list" id="top-patterns-list" role="list" aria-live="polite">
+                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                </ul>
+            </div>
+
             <div class="card" role="region" aria-labelledby="pattern-heading">
-                <h2 id="pattern-heading">📉 Pattern Analysis</h2>
+                <h2 id="pattern-heading">📊 Pattern Detection Lists</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">All stocks with Spoon, Cup&Handle, or POS patterns</p>
                 <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
                 <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
                     <li class="loading-state"><span class="spinner"></span> Loading files...</li>
@@ -484,7 +495,7 @@
 
     <script>
         // Store file data for search functionality
-        let fileData = { top50: [], patterns: [] };
+        let fileData = { top50: [], topPatterns: [], detectionLists: [] };
 
         // Display current timestamp
         document.getElementById('timestamp').textContent =
@@ -528,10 +539,19 @@
 
                 const data = await response.json();
                 fileData.top50 = data.top50 || [];
-                fileData.patterns = data.patterns || [];
+
+                // Separate pattern files into categories
+                const allPatterns = data.patterns || [];
+                fileData.topPatterns = allPatterns.filter(f =>
+                    f.name.startsWith('Top50_') || f.name.startsWith('Top20_'));
+                fileData.detectionLists = allPatterns.filter(f =>
+                    f.name.startsWith('SpoonList') ||
+                    f.name.startsWith('CupHandleList') ||
+                    f.name.startsWith('POSList'));
 
                 populateList('top50-list', fileData.top50);
-                populateList('pattern-list', fileData.patterns);
+                populateList('top-patterns-list', fileData.topPatterns);
+                populateList('pattern-list', fileData.detectionLists);
 
                 // Update stats
                 document.getElementById('total-stocks').textContent = data.stats?.total_stocks || 0;
@@ -543,6 +563,7 @@
             } catch (err) {
                 console.error('Error loading files:', err);
                 showError('top50-list', 'Failed to load files. Please try refreshing.');
+                showError('top-patterns-list', 'Failed to load files. Please try refreshing.');
                 showError('pattern-list', 'Failed to load files. Please try refreshing.');
             }
         }
@@ -591,8 +612,12 @@
             populateList('top50-list', fileData.top50, e.target.value);
         });
 
+        document.getElementById('top-patterns-search').addEventListener('input', (e) => {
+            populateList('top-patterns-list', fileData.topPatterns, e.target.value);
+        });
+
         document.getElementById('pattern-search').addEventListener('input', (e) => {
-            populateList('pattern-list', fileData.patterns, e.target.value);
+            populateList('pattern-list', fileData.detectionLists, e.target.value);
         });
 
         // Load files on page load

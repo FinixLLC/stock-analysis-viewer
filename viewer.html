@@ -313,9 +313,16 @@
                 if (path.endsWith('.csv')) {
                     renderCSV(text, contentDiv);
                 } else if (path.endsWith('.txt')) {
-                    // Check if it's a pattern file (has # Format: header)
-                    if (text.includes('# Format:')) {
-                        renderPatternFile(text, contentDiv);
+                    // Check if it's a pattern file
+                    const lowerPath = path.toLowerCase();
+                    const isPatternFile = text.includes('# Format:') ||
+                        lowerPath.includes('spoonlist') ||
+                        lowerPath.includes('cuphandlelist') ||
+                        lowerPath.includes('poslist') ||
+                        lowerPath.includes('top50') ||
+                        lowerPath.includes('top20');
+                    if (isPatternFile) {
+                        renderPatternFile(text, contentDiv, path);
                     } else {
                         renderText(text, contentDiv);
                     }
@@ -426,7 +433,7 @@
             });
         }
 
-        function renderPatternFile(text, container) {
+        function renderPatternFile(text, container, filePath = '') {
             const lines = text.trim().split('\n');
 
             // Extract header and metadata
@@ -451,10 +458,20 @@
                 }
             }
 
-            // If no header found in Format line, use default
+            // If no header found in Format line, detect file type and use appropriate default
             if (headers.length === 0) {
-                headers = ['Rank', 'Symbol', 'Date', 'Pattern', 'Price', 'Composite', 'Tier',
-                          'Pattern', 'Momentum', 'Volatility', 'Volume', 'Risk'];
+                const filename = filePath.toLowerCase();
+                if (filename.includes('spoonlist')) {
+                    headers = ['Symbol', 'Date', 'Price', 'Depth%', 'Recovery%', 'Asymmetry', 'Smoothness', 'VolumeRatio', 'Days', 'Score'];
+                } else if (filename.includes('cuphandlelist')) {
+                    headers = ['Symbol', 'Date', 'Price', 'Depth%', 'Handle%', 'VolumeRatio', 'Days', 'Score'];
+                } else if (filename.includes('poslist')) {
+                    headers = ['Symbol', 'Date', 'Price', 'Change%', 'Volume', 'Score'];
+                } else if (filename.includes('top50') || filename.includes('top20')) {
+                    headers = ['Rank', 'Symbol', 'Date', 'Pattern', 'Price', 'VolumeRatio', 'Score', 'Details'];
+                } else {
+                    headers = ['Symbol', 'Date', 'Price', 'Score', 'Details'];
+                }
             }
 
             // Build HTML
