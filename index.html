@@ -178,6 +178,97 @@
             box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
         }
 
+        /* Top Picks Section */
+        .top-picks {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .top-picks h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .pick-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .pick-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .pick-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pick-symbol {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .pick-tier {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .tier-1 { background: #28a745; color: white; }
+        .tier-2 { background: #17a2b8; color: white; }
+        .tier-3 { background: #ffc107; color: #333; }
+
+        .pick-score {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .pick-description {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .pick-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 12px;
+            font-size: 0.9em;
+        }
+
+        .metric {
+            background: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            color: #666;
+        }
+
+        .metric strong {
+            color: #333;
+        }
+
+        .no-picks {
+            color: #666;
+            text-align: center;
+            padding: 20px;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -211,6 +302,14 @@
             <div class="stat-card">
                 <div class="stat-number" id="last-update">--</div>
                 <div class="stat-label">Last Update</div>
+            </div>
+        </div>
+
+        <!-- Today's Top Picks Section -->
+        <div class="top-picks" id="top-picks-section">
+            <h2>🎯 Today's Top Picks</h2>
+            <div id="top-picks-content">
+                <div class="no-picks">Loading top picks...</div>
             </div>
         </div>
 
@@ -311,6 +410,191 @@
 
         // Load files on page load
         loadFiles();
+
+        // Load top picks from the most recent CSV files
+        async function loadTopPicks() {
+            try {
+                const response = await fetch('file-list.json');
+                const data = await response.json();
+
+                if (!data.top50 || data.top50.length === 0) {
+                    showNoPicksMessage();
+                    return;
+                }
+
+                // Sort by date and get the most recent files (one per exchange)
+                const sortedFiles = [...data.top50]
+                    .filter(f => f.name.includes('Polygon') && f.name.endsWith('.csv'))
+                    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                // Get unique exchanges from most recent files
+                const exchanges = ['NASDAQ', 'NYSE', 'AMEX'];
+                const latestFiles = [];
+
+                for (const exchange of exchanges) {
+                    const file = sortedFiles.find(f => f.name.includes(exchange));
+                    if (file) latestFiles.push(file);
+                }
+
+                if (latestFiles.length === 0) {
+                    showNoPicksMessage();
+                    return;
+                }
+
+                // Fetch and parse the most recent file
+                const allPicks = [];
+                for (const file of latestFiles.slice(0, 2)) { // Limit to 2 exchanges
+                    try {
+                        const csvResponse = await fetch(file.path);
+                        const csvText = await csvResponse.text();
+                        const picks = parseCSVForTopPicks(csvText, file.name);
+                        allPicks.push(...picks);
+                    } catch (e) {
+                        console.error('Error loading', file.path, e);
+                    }
+                }
+
+                // Sort all picks by composite score and take top 3
+                const topPicks = allPicks
+                    .filter(p => p.tier <= 2) // Only Tier 1 and 2
+                    .sort((a, b) => b.compositeScore - a.compositeScore)
+                    .slice(0, 3);
+
+                if (topPicks.length === 0) {
+                    // If no Tier 1-2, take top 3 regardless of tier
+                    const fallbackPicks = allPicks
+                        .sort((a, b) => b.compositeScore - a.compositeScore)
+                        .slice(0, 3);
+                    displayTopPicks(fallbackPicks);
+                } else {
+                    displayTopPicks(topPicks);
+                }
+
+            } catch (err) {
+                console.error('Error loading top picks:', err);
+                showNoPicksMessage();
+            }
+        }
+
+        function parseCSVForTopPicks(csvText, filename) {
+            const lines = csvText.trim().split('\n');
+            if (lines.length < 2) return [];
+
+            const headers = lines[0].split(',').map(h => h.trim());
+            const picks = [];
+
+            // Find column indices
+            const cols = {
+                symbol: headers.indexOf('Symbol'),
+                date: headers.indexOf('Date'),
+                pattern: headers.indexOf('Pattern'),
+                price: headers.indexOf('Price'),
+                composite: headers.indexOf('Composite Score'),
+                tier: headers.indexOf('Tier'),
+                patternScore: headers.indexOf('Pattern Score'),
+                momentum: headers.indexOf('Momentum'),
+                volatility: headers.indexOf('Volatility'),
+                volume: headers.indexOf('Volume'),
+                risk: headers.indexOf('Risk')
+            };
+
+            // Extract exchange from filename
+            let exchange = 'Unknown';
+            if (filename.includes('NASDAQ')) exchange = 'NASDAQ';
+            else if (filename.includes('NYSE')) exchange = 'NYSE';
+            else if (filename.includes('AMEX')) exchange = 'AMEX';
+
+            // Parse data rows (skip header, take top 10)
+            for (let i = 1; i < Math.min(lines.length, 11); i++) {
+                const cells = lines[i].split(',').map(c => c.trim());
+                if (cells.length < 5) continue;
+
+                picks.push({
+                    symbol: cells[cols.symbol] || '',
+                    date: cells[cols.date] || '',
+                    pattern: cells[cols.pattern] || '',
+                    price: parseFloat(cells[cols.price]) || 0,
+                    compositeScore: parseFloat(cells[cols.composite]) || 0,
+                    tier: parseInt(cells[cols.tier]) || 4,
+                    patternScore: parseFloat(cells[cols.patternScore]) || 0,
+                    momentum: parseFloat(cells[cols.momentum]) || 0,
+                    volatility: parseFloat(cells[cols.volatility]) || 0,
+                    volume: parseFloat(cells[cols.volume]) || 0,
+                    risk: parseFloat(cells[cols.risk]) || 0,
+                    exchange: exchange
+                });
+            }
+
+            return picks;
+        }
+
+        function displayTopPicks(picks) {
+            const container = document.getElementById('top-picks-content');
+
+            if (picks.length === 0) {
+                showNoPicksMessage();
+                return;
+            }
+
+            container.innerHTML = picks.map((pick, index) => {
+                const description = generateDescription(pick, index + 1);
+                const tierClass = `tier-${Math.min(pick.tier, 3)}`;
+                const tierLabel = pick.tier === 1 ? 'Tier 1 - Premium' :
+                                  pick.tier === 2 ? 'Tier 2 - Strong' :
+                                  `Tier ${pick.tier}`;
+
+                return `
+                    <div class="pick-card">
+                        <div class="pick-header">
+                            <span class="pick-symbol">#${index + 1} ${pick.symbol}</span>
+                            <span class="pick-tier ${tierClass}">${tierLabel}</span>
+                            <span class="pick-score">Score: ${pick.compositeScore.toFixed(1)}</span>
+                        </div>
+                        <div class="pick-description">${description}</div>
+                        <div class="pick-metrics">
+                            <span class="metric"><strong>$${pick.price.toFixed(2)}</strong> Price</span>
+                            <span class="metric"><strong>${pick.pattern}</strong> Pattern</span>
+                            <span class="metric"><strong>${pick.momentum.toFixed(0)}</strong> Momentum</span>
+                            <span class="metric"><strong>${pick.volume.toFixed(0)}</strong> Volume</span>
+                            <span class="metric"><strong>${pick.exchange}</strong></span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function generateDescription(pick, rank) {
+            const momentumDesc = pick.momentum >= 80 ? 'exceptional momentum' :
+                                 pick.momentum >= 70 ? 'strong momentum' :
+                                 pick.momentum >= 60 ? 'solid momentum' : 'moderate momentum';
+
+            const volumeDesc = pick.volume >= 70 ? 'above-average trading volume' :
+                               pick.volume >= 50 ? 'healthy trading volume' : 'moderate volume';
+
+            const volatilityDesc = pick.volatility >= 80 ? 'favorable low volatility' :
+                                   pick.volatility >= 60 ? 'manageable volatility' : 'higher volatility';
+
+            const riskDesc = pick.risk <= 5 ? 'minimal risk factors' :
+                             pick.risk <= 15 ? 'low risk profile' : 'some risk factors to monitor';
+
+            const patternName = pick.pattern === 'CupHandle' ? 'Cup and Handle' :
+                               pick.pattern === 'VBottom' ? 'V-Bottom reversal' :
+                               pick.pattern === 'Spoon' ? 'Spoon pattern' : pick.pattern;
+
+            return `<strong>${pick.symbol}</strong> on ${pick.exchange} shows a ${patternName} formation ` +
+                   `detected on ${pick.date}. The stock demonstrates ${momentumDesc} (${pick.momentum.toFixed(0)}) ` +
+                   `with ${volumeDesc} (${pick.volume.toFixed(0)}). Technical analysis indicates ${volatilityDesc} ` +
+                   `(${pick.volatility.toFixed(0)}) and ${riskDesc} (${pick.risk.toFixed(1)}). ` +
+                   `Overall composite score of ${pick.compositeScore.toFixed(1)} places this in Tier ${pick.tier}.`;
+        }
+
+        function showNoPicksMessage() {
+            document.getElementById('top-picks-content').innerHTML =
+                '<div class="no-picks">No top picks available. Check back after the next analysis run.</div>';
+        }
+
+        // Load top picks on page load
+        loadTopPicks();
     </script>
 </body>
 </html>
