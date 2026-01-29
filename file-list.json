@@ -6,6 +6,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "stock_analysis_NYSE_Polygon_2026_01_26.csv",
+      "path": "top50/stock_analysis_NYSE_Polygon_2026_01_26.csv",
+      "date": "2026-01-28"
+    },
+    {
       "name": "stock_analysis_NYSE_Polygon_2026_01_23.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2026_01_23.csv",
       "date": "2026-01-27"
@@ -346,6 +351,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "stock_analysis_AMEX_Polygon_2026_01_26.csv",
+      "path": "top50/stock_analysis_AMEX_Polygon_2026_01_26.csv",
+      "date": "2026-01-28"
+    },
+    {
       "name": "stock_analysis_AMEX_Polygon_2026_01_23.csv",
       "path": "top50/stock_analysis_AMEX_Polygon_2026_01_23.csv",
       "date": "2026-01-26"
@@ -533,6 +543,11 @@
   ],
   "patterns": [
     {
+      "name": "Top50_NYSE_Polygon_2026_01_26.txt",
+      "path": "patterns/Top50_NYSE_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "Top50_NYSE_Polygon_2026_01_23.txt",
       "path": "patterns/Top50_NYSE_Polygon_2026_01_23.txt",
       "date": "2026-01-27"
@@ -713,6 +728,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top50_AMEX_Polygon_2026_01_26.txt",
+      "path": "patterns/Top50_AMEX_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "Top50_AMEX_Polygon_2026_01_23.txt",
       "path": "patterns/Top50_AMEX_Polygon_2026_01_23.txt",
       "date": "2026-01-26"
@@ -806,6 +826,11 @@
       "name": "Top50_AMEX_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_AMEX_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_NYSE_Polygon_2026_01_26.txt",
+      "path": "patterns/Top20_NYSE_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
     },
     {
       "name": "Top20_NYSE_Polygon_2026_01_23.txt",
@@ -988,6 +1013,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top20_AMEX_Polygon_2026_01_26.txt",
+      "path": "patterns/Top20_AMEX_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "Top20_AMEX_Polygon_2026_01_23.txt",
       "path": "patterns/Top20_AMEX_Polygon_2026_01_23.txt",
       "date": "2026-01-26"
@@ -1101,6 +1131,11 @@
       "name": "Top20_AMEX_Polygon_2025_09_01.txt",
       "path": "patterns/Top20_AMEX_Polygon_2025_09_01.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "SpoonList_NYSE_Polygon_2026_01_26.txt",
+      "path": "patterns/SpoonList_NYSE_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
     },
     {
       "name": "SpoonList_NYSE_Polygon_2026_01_23.txt",
@@ -1283,6 +1318,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "POSList_NYSE_Polygon_2026_01_26.txt",
+      "path": "patterns/POSList_NYSE_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "POSList_NYSE_Polygon_2026_01_23.txt",
       "path": "patterns/POSList_NYSE_Polygon_2026_01_23.txt",
       "date": "2026-01-27"
@@ -1463,6 +1503,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "POSList_AMEX_Polygon_2026_01_26.txt",
+      "path": "patterns/POSList_AMEX_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "POSList_AMEX_Polygon_2026_01_23.txt",
       "path": "patterns/POSList_AMEX_Polygon_2026_01_23.txt",
       "date": "2026-01-26"
@@ -1586,6 +1631,11 @@
       "name": "POSList.txt",
       "path": "patterns/POSList.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_NYSE_Polygon_2026_01_26.txt",
+      "path": "patterns/CupHandleList_NYSE_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
     },
     {
       "name": "CupHandleList_NYSE_Polygon_2026_01_23.txt",
@@ -1768,6 +1818,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "CupHandleList_AMEX_Polygon_2026_01_26.txt",
+      "path": "patterns/CupHandleList_AMEX_Polygon_2026_01_26.txt",
+      "date": "2026-01-28"
+    },
+    {
       "name": "CupHandleList_AMEX_Polygon_2026_01_23.txt",
       "path": "patterns/CupHandleList_AMEX_Polygon_2026_01_23.txt",
       "date": "2026-01-26"
@@ -1894,8 +1949,8 @@
     }
   ],
   "stats": {
-    "total_stocks": "106",
-    "total_patterns": "272",
-    "last_update": "Jan 27, 2026 13:06"
+    "total_stocks": "108",
+    "total_patterns": "281",
+    "last_update": "Jan 29, 2026 00:01"
   }
 }
