@@ -176,6 +176,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "stock_analysis_NASDAQ_Polygon_2026_01_26.csv",
+      "path": "top50/stock_analysis_NASDAQ_Polygon_2026_01_26.csv",
+      "date": "2026-01-29"
+    },
+    {
       "name": "stock_analysis_NASDAQ_Polygon_2026_01_23.csv",
       "path": "top50/stock_analysis_NASDAQ_Polygon_2026_01_23.csv",
       "date": "2026-01-27"
@@ -638,6 +643,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "Top50_NASDAQ_Polygon_2026_01_26.txt",
+      "path": "patterns/Top50_NASDAQ_Polygon_2026_01_26.txt",
+      "date": "2026-01-29"
+    },
+    {
       "name": "Top50_NASDAQ_Polygon_2026_01_23.txt",
       "path": "patterns/Top50_NASDAQ_Polygon_2026_01_23.txt",
       "date": "2026-01-27"
@@ -921,6 +931,11 @@
       "name": "Top20_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NYSE_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_NASDAQ_Polygon_2026_01_26.txt",
+      "path": "patterns/Top20_NASDAQ_Polygon_2026_01_26.txt",
+      "date": "2026-01-29"
     },
     {
       "name": "Top20_NASDAQ_Polygon_2026_01_23.txt",
@@ -1228,6 +1243,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "SpoonList_NASDAQ_Polygon_2026_01_26.txt",
+      "path": "patterns/SpoonList_NASDAQ_Polygon_2026_01_26.txt",
+      "date": "2026-01-29"
+    },
+    {
       "name": "SpoonList_NASDAQ_Polygon_2026_01_23.txt",
       "path": "patterns/SpoonList_NASDAQ_Polygon_2026_01_23.txt",
       "date": "2026-01-27"
@@ -1411,6 +1431,11 @@
       "name": "POSList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/POSList_NYSE_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "POSList_NASDAQ_Polygon_2026_01_26.txt",
+      "path": "patterns/POSList_NASDAQ_Polygon_2026_01_26.txt",
+      "date": "2026-01-29"
     },
     {
       "name": "POSList_NASDAQ_Polygon_2026_01_23.txt",
@@ -1728,6 +1753,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "CupHandleList_NASDAQ_Polygon_2026_01_26.txt",
+      "path": "patterns/CupHandleList_NASDAQ_Polygon_2026_01_26.txt",
+      "date": "2026-01-29"
+    },
+    {
       "name": "CupHandleList_NASDAQ_Polygon_2026_01_23.txt",
       "path": "patterns/CupHandleList_NASDAQ_Polygon_2026_01_23.txt",
       "date": "2026-01-27"
@@ -1949,8 +1979,8 @@
     }
   ],
   "stats": {
-    "total_stocks": "108",
-    "total_patterns": "281",
-    "last_update": "Jan 29, 2026 00:01"
+    "total_stocks": "109",
+    "total_patterns": "286",
+    "last_update": "Jan 29, 2026 08:28"
   }
 }
