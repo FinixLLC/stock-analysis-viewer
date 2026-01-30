@@ -454,27 +454,29 @@
 
         <main id="main-content">
         <div class="grid">
-            <div class="card" role="region" aria-labelledby="portfolio-heading" style="grid-column: span 2; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                <h2 id="portfolio-heading" style="color: white;">💼 Portfolio Monitor</h2>
-                <p style="color: rgba(255,255,255,0.9); font-size: 0.95em; margin-bottom: 20px;">
-                    Real-time tracking of 228 positions • Top gainers, losers, and sell signals
+            <div class="card" role="region" aria-labelledby="portfolio-heading">
+                <h2 id="portfolio-heading">💼 Portfolio Monitor</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 15px;">
+                    Real-time tracking of your 228 positions
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 20px;">
-                    <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 2em; font-weight: bold; color: white;" id="portfolio-positions">-</div>
-                        <div style="color: rgba(255,255,255,0.8); font-size: 0.85em;">Positions</div>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; margin-bottom: 15px;">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: white;" id="portfolio-positions">-</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em;">Total Positions</div>
                     </div>
-                    <div style="background: rgba(16,185,129,0.2); padding: 15px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 2em; font-weight: bold; color: #10b981;" id="portfolio-return">-</div>
-                        <div style="color: rgba(255,255,255,0.8); font-size: 0.85em;">Avg 1M Return</div>
-                    </div>
-                    <div style="background: rgba(239,68,68,0.2); padding: 15px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 2em; font-weight: bold; color: #ef4444;" id="portfolio-alerts">-</div>
-                        <div style="color: rgba(255,255,255,0.8); font-size: 0.85em;">Sell Alerts</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.5em; font-weight: bold; color: #10b981;" id="portfolio-return">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Avg Return</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.5em; font-weight: bold; color: #ef4444;" id="portfolio-alerts">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Alerts</div>
+                        </div>
                     </div>
                 </div>
-                <a href="portfolio.html" class="btn" style="width: 100%; text-align: center; display: block; background: white; color: #667eea;">
-                    📊 View Full Portfolio Dashboard →
+                <a href="portfolio.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.9em;">
+                    📊 View Dashboard →
                 </a>
             </div>
 
