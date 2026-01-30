@@ -6,6 +6,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "stock_analysis_NYSE_Polygon_2026_01_28.csv",
+      "path": "top50/stock_analysis_NYSE_Polygon_2026_01_28.csv",
+      "date": "2026-01-29"
+    },
+    {
       "name": "stock_analysis_NYSE_Polygon_2026_01_26.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2026_01_26.csv",
       "date": "2026-01-28"
@@ -553,6 +558,11 @@
   ],
   "patterns": [
     {
+      "name": "Top50_NYSE_Polygon_2026_01_28.txt",
+      "path": "patterns/Top50_NYSE_Polygon_2026_01_28.txt",
+      "date": "2026-01-29"
+    },
+    {
       "name": "Top50_NYSE_Polygon_2026_01_26.txt",
       "path": "patterns/Top50_NYSE_Polygon_2026_01_26.txt",
       "date": "2026-01-28"
@@ -846,6 +856,11 @@
       "name": "Top50_AMEX_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_AMEX_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_NYSE_Polygon_2026_01_28.txt",
+      "path": "patterns/Top20_NYSE_Polygon_2026_01_28.txt",
+      "date": "2026-01-29"
     },
     {
       "name": "Top20_NYSE_Polygon_2026_01_26.txt",
@@ -1163,6 +1178,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "SpoonList_NYSE_Polygon_2026_01_28.txt",
+      "path": "patterns/SpoonList_NYSE_Polygon_2026_01_28.txt",
+      "date": "2026-01-29"
+    },
+    {
       "name": "SpoonList_NYSE_Polygon_2026_01_26.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2026_01_26.txt",
       "date": "2026-01-28"
@@ -1351,6 +1371,11 @@
       "name": "SpoonList.txt",
       "path": "patterns/SpoonList.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "POSList_NYSE_Polygon_2026_01_28.txt",
+      "path": "patterns/POSList_NYSE_Polygon_2026_01_28.txt",
+      "date": "2026-01-29"
     },
     {
       "name": "POSList_NYSE_Polygon_2026_01_26.txt",
@@ -1676,6 +1701,11 @@
       "name": "POSList.txt",
       "path": "patterns/POSList.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_NYSE_Polygon_2026_01_28.txt",
+      "path": "patterns/CupHandleList_NYSE_Polygon_2026_01_28.txt",
+      "date": "2026-01-29"
     },
     {
       "name": "CupHandleList_NYSE_Polygon_2026_01_26.txt",
@@ -2004,8 +2034,8 @@
     }
   ],
   "stats": {
-    "total_stocks": "110",
-    "total_patterns": "290",
-    "last_update": "Jan 29, 2026 19:13"
+    "total_stocks": "111",
+    "total_patterns": "295",
+    "last_update": "Jan 29, 2026 23:58"
   }
 }
