@@ -408,18 +408,51 @@
             <span id="freshness-badge" class="freshness-badge freshness-fresh" aria-live="polite"></span>
         </header>
 
-        <div class="stats" role="region" aria-label="Analysis statistics">
-            <div class="stat-card" role="status" aria-label="Stocks analyzed">
-                <div class="stat-number" id="total-stocks" aria-live="polite">0</div>
-                <div class="stat-label">Stocks Analyzed</div>
+        <div class="stats" role="region" aria-label="Quick access">
+            <div class="stat-card" role="region" aria-labelledby="portfolio-heading" style="padding: 25px;">
+                <h2 id="portfolio-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">💼 Portfolio Monitor</h2>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="text-align: center; margin-bottom: 10px;">
+                        <div style="font-size: 2em; font-weight: bold; color: white;" id="portfolio-positions">-</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">Total Positions</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #10b981;" id="portfolio-return">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Avg Return</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #ef4444;" id="portfolio-alerts">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Alerts</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px;">
+                    📊 View Dashboard →
+                </a>
             </div>
-            <div class="stat-card" role="status" aria-label="Patterns detected">
-                <div class="stat-number" id="total-patterns" aria-live="polite">0</div>
-                <div class="stat-label">Patterns Detected</div>
-            </div>
-            <div class="stat-card" role="status" aria-label="Last data update">
-                <div class="stat-number" id="last-update" aria-live="polite">--</div>
-                <div class="stat-label">Last Update</div>
+
+            <div class="stat-card" role="region" aria-labelledby="trends-heading" style="padding: 25px;">
+                <h2 id="trends-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">📊 Trend Classifier</h2>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #28a745;" id="trend-golden-count">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Golden Cross</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #dc3545;" id="trend-death-count">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Death Cross</div>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 1.3em; font-weight: bold; color: white;" id="trend-total-count">-</div>
+                        <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Total Stocks Analyzed</div>
+                    </div>
+                </div>
+                <a href="trends.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px;">
+                    📈 View Trend Analysis →
+                </a>
             </div>
         </div>
 
@@ -454,32 +487,6 @@
 
         <main id="main-content">
         <div class="grid">
-            <div class="card" role="region" aria-labelledby="portfolio-heading">
-                <h2 id="portfolio-heading">💼 Portfolio Monitor</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 15px;">
-                    Real-time tracking of your 228 positions
-                </p>
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; margin-bottom: 15px;">
-                    <div style="text-align: center; margin-bottom: 15px;">
-                        <div style="font-size: 2.5em; font-weight: bold; color: white;" id="portfolio-positions">-</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em;">Total Positions</div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.5em; font-weight: bold; color: #10b981;" id="portfolio-return">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Avg Return</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.5em; font-weight: bold; color: #ef4444;" id="portfolio-alerts">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Alerts</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="portfolio.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.9em;">
-                    📊 View Dashboard →
-                </a>
-            </div>
-
             <div class="card" role="region" aria-labelledby="top50-heading">
                 <h2 id="top50-heading">📈 Top 50 Composite Scores</h2>
                 <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">CSV files with ranked stocks by composite score</p>
@@ -505,30 +512,6 @@
                 <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
                     <li class="loading-state"><span class="spinner"></span> Loading files...</li>
                 </ul>
-            </div>
-
-            <div class="card" role="region" aria-labelledby="trends-heading">
-                <h2 id="trends-heading">📊 Trend Classifier</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 15px;">MA-based pattern detection using 20, 50, 100, and 200-period SMAs</p>
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 15px; margin-bottom: 15px;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #28a745;" id="trend-golden-count">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Golden Cross</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #dc3545;" id="trend-death-count">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Death Cross</div>
-                        </div>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.3em; font-weight: bold; color: white;" id="trend-total-count">-</div>
-                        <div style="color: rgba(255,255,255,0.8); font-size: 0.75em;">Total Stocks Analyzed</div>
-                    </div>
-                </div>
-                <a href="trends.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.9em;">
-                    📈 View Trend Analysis →
-                </a>
             </div>
         </div>
         </main>
