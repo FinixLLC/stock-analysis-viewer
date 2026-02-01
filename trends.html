@@ -270,14 +270,14 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active" onclick="showTab('highlights')">🌟 Highlights</button>
-            <button class="tab" onclick="showTab('golden')">✅ Golden Cross</button>
-            <button class="tab" onclick="showTab('death')">⚠️ Death Cross</button>
-            <button class="tab" onclick="showTab('alignment')">📈 Full Alignment</button>
-            <button class="tab" onclick="showTab('support')">📍 Support Tests</button>
-            <button class="tab" onclick="showTab('momentum')">🚀 Momentum</button>
-            <button class="tab" onclick="showTab('breakdown')">📉 Breakdown</button>
-            <button class="tab" onclick="showTab('all')">📋 All Trends</button>
+            <button class="tab active" onclick="showTab('highlights', event)">🌟 Highlights</button>
+            <button class="tab" onclick="showTab('golden', event)">✅ Golden Cross</button>
+            <button class="tab" onclick="showTab('death', event)">⚠️ Death Cross</button>
+            <button class="tab" onclick="showTab('alignment', event)">📈 Full Alignment</button>
+            <button class="tab" onclick="showTab('support', event)">📍 Support Tests</button>
+            <button class="tab" onclick="showTab('momentum', event)">🚀 Momentum</button>
+            <button class="tab" onclick="showTab('breakdown', event)">📉 Breakdown</button>
+            <button class="tab" onclick="showTab('all', event)">📋 All Trends</button>
         </div>
 
         <div id="content">
@@ -328,10 +328,22 @@
             }
         }
 
-        function showTab(tab) {
+        function showTab(tab, event) {
             currentTab = tab;
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
+
+            // If called from a button click, highlight it
+            if (event && event.target) {
+                event.target.classList.add('active');
+            } else {
+                // If called programmatically, find and highlight the correct button
+                const buttons = document.querySelectorAll('.tab');
+                buttons.forEach(btn => {
+                    if (btn.textContent.toLowerCase().includes(tab)) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
 
             const dataMap = {
                 'highlights': trendData.highlights || [],
