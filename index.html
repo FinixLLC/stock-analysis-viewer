@@ -618,11 +618,6 @@
                 populateList('top-patterns-list', fileData.topPatterns);
                 populateList('pattern-list', fileData.detectionLists);
 
-                // Update stats
-                document.getElementById('total-stocks').textContent = data.stats?.total_stocks || 0;
-                document.getElementById('total-patterns').textContent = data.stats?.total_patterns || 0;
-                document.getElementById('last-update').textContent = data.stats?.last_update || '--';
-
                 // Update freshness badge
                 updateFreshnessBadge(data.stats?.last_update);
             } catch (err) {
