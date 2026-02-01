@@ -1,0 +1,55 @@
+{
+  "generated": "2026-02-01T11:32:30.105364",
+  "pattern": "death_cross",
+  "count": 4,
+  "stocks": [
+    {
+      "symbol": "DHIL",
+      "price": 147.85,
+      "sma20": 148.68,
+      "sma50": 153.87,
+      "sma100": 156.99,
+      "sma200": 154.05,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-01T05:45:35.412000"
+    },
+    {
+      "symbol": "HLIO",
+      "price": 40.82,
+      "sma20": 43.52,
+      "sma50": 46.63,
+      "sma100": 47.36,
+      "sma200": 46.76,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-01T05:45:37.755000"
+    },
+    {
+      "symbol": "PXI",
+      "price": 45.87,
+      "sma20": 46.44,
+      "sma50": 46.42,
+      "sma100": 45.86,
+      "sma200": 46.46,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Death Cross (Major Sell) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:39.851000"
+    },
+    {
+      "symbol": "QCLN",
+      "price": 33.3,
+      "sma20": 33.45,
+      "sma50": 34.63,
+      "sma100": 34.5,
+      "sma200": 34.66,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-01T05:45:39.884000"
+    }
+  ]
+}
