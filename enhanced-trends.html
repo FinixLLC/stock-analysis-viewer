@@ -106,24 +106,30 @@
             color: white;
         }
 
-        .stock-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            gap: 20px;
-        }
-
-        .stock-card {
+        .stock-list {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 15px;
-            padding: 20px;
+            overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
         }
 
-        .stock-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        .stock-item {
+            display: grid;
+            grid-template-columns: 100px 100px 180px 150px 150px 150px auto;
+            gap: 15px;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: background 0.2s ease;
+        }
+
+        .stock-item:hover {
+            background: rgba(0,200,100,0.05);
+        }
+
+        .stock-item:last-child {
+            border-bottom: none;
         }
 
         .stock-symbol {
@@ -503,34 +509,20 @@
 
             const html = `
                 <input type="search" class="search-box" placeholder="Search by symbol..." onkeyup="filterStocks(event)">
-                <div class="stock-grid" id="stock-grid">
+                <div class="stock-list" id="stock-list">
                     ${stocks.map(stock => `
-                        <div class="stock-card" data-symbol="${stock.symbol}">
+                        <div class="stock-item" data-symbol="${stock.symbol}">
                             <div class="stock-symbol">${stock.symbol}</div>
                             <div class="stock-price">$${stock.price.toFixed(2)}</div>
                             <div>
                                 <span class="trend-label ${stock.longTerm.replace(/_/g, '-')}">${formatTrend(stock.longTerm)}</span>
-                                <span class="trend-label ${stock.midTerm.replace(/_/g, '-')}">${formatTrend(stock.midTerm)}</span>
-                                ${stock.volumeRatio > 1.5 ? '<span class="volume-badge high">High Vol</span>' : stock.volumeRatio < 0.5 ? '<span class="volume-badge">Low Vol</span>' : ''}
                             </div>
-                            <div class="performance-grid">
-                                <div class="perf-value">
-                                    <span class="perf-label">1 Month</span>
-                                    <div class="perf-number ${getPerformanceClass(stock.change1M)}">${stock.change1M > 0 ? '+' : ''}${stock.change1M.toFixed(1)}%</div>
-                                </div>
-                                <div class="perf-value">
-                                    <span class="perf-label">6 Months</span>
-                                    <div class="perf-number ${getPerformanceClass(stock.change6M)}">${stock.change6M > 0 ? '+' : ''}${stock.change6M.toFixed(1)}%</div>
-                                </div>
-                                <div class="perf-value">
-                                    <span class="perf-label">1 Year</span>
-                                    <div class="perf-number ${getPerformanceClass(stock.change1Y)}">${stock.change1Y > 0 ? '+' : ''}${stock.change1Y.toFixed(1)}%</div>
-                                </div>
+                            <div class="perf-number ${getPerformanceClass(stock.change1M)}">1M: ${stock.change1M > 0 ? '+' : ''}${stock.change1M.toFixed(1)}%</div>
+                            <div class="perf-number ${getPerformanceClass(stock.change6M)}">6M: ${stock.change6M > 0 ? '+' : ''}${stock.change6M.toFixed(1)}%</div>
+                            <div class="perf-number ${getPerformanceClass(stock.change1Y)}">1Y: ${stock.change1Y > 0 ? '+' : ''}${stock.change1Y.toFixed(1)}%</div>
+                            <div style="font-size: 0.85em; color: #666;">
+                                52W: ${stock.distFromHigh.toFixed(0)}% below high, ${stock.distFromLow.toFixed(0)}% above low
                             </div>
-                            <div class="context-52w ${stock.distFromLow < 10 ? 'near-low' : ''}">
-                                📊 52W High: $${stock.high52W.toFixed(2)} (${stock.distFromHigh.toFixed(1)}% below) | Low: $${stock.low52W.toFixed(2)} (${stock.distFromLow.toFixed(1)}% above)
-                            </div>
-                            <div class="pattern-desc">${stock.pattern}</div>
                         </div>
                     `).join('')}
                 </div>
@@ -550,10 +542,10 @@
 
         function filterStocks(event) {
             const query = event.target.value.toLowerCase();
-            const cards = document.querySelectorAll('.stock-card');
-            cards.forEach(card => {
-                const symbol = card.dataset.symbol.toLowerCase();
-                card.style.display = symbol.includes(query) ? 'block' : 'none';
+            const items = document.querySelectorAll('.stock-item');
+            items.forEach(item => {
+                const symbol = item.dataset.symbol.toLowerCase();
+                item.style.display = symbol.includes(query) ? 'grid' : 'none';
             });
         }
 

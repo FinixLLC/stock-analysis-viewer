@@ -110,24 +110,30 @@
             display: block;
         }
 
-        .stock-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-        }
-
-        .stock-card {
+        .stock-list {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-radius: 15px;
-            padding: 20px;
+            overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
         }
 
-        .stock-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        .stock-item {
+            display: grid;
+            grid-template-columns: 100px 100px 200px 120px 120px 120px 120px;
+            gap: 15px;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: background 0.2s ease;
+        }
+
+        .stock-item:hover {
+            background: rgba(79,70,229,0.05);
+        }
+
+        .stock-item:last-child {
+            border-bottom: none;
         }
 
         .stock-symbol {
@@ -372,34 +378,18 @@
 
             const html = `
                 <input type="search" class="search-box" placeholder="Search by symbol..." onkeyup="filterStocks(event)">
-                <div class="stock-grid" id="stock-grid">
+                <div class="stock-list" id="stock-list">
                     ${stocks.map(stock => `
-                        <div class="stock-card" data-symbol="${stock.symbol}">
+                        <div class="stock-item" data-symbol="${stock.symbol}">
                             <div class="stock-symbol">${stock.symbol}</div>
                             <div class="stock-price">$${stock.price.toFixed(2)}</div>
                             <div>
                                 <span class="trend-label ${stock.longTerm.replace(/_/g, '-')}">${formatTrend(stock.longTerm)}</span>
-                                <span class="trend-label ${stock.midTerm.replace(/_/g, '-')}">${formatTrend(stock.midTerm)}</span>
                             </div>
-                            <div class="sma-row">
-                                <div class="sma-value">
-                                    <span class="sma-label">20 SMA</span>
-                                    $${stock.sma20.toFixed(2)}
-                                </div>
-                                <div class="sma-value">
-                                    <span class="sma-label">50 SMA</span>
-                                    $${stock.sma50.toFixed(2)}
-                                </div>
-                                <div class="sma-value">
-                                    <span class="sma-label">100 SMA</span>
-                                    $${stock.sma100.toFixed(2)}
-                                </div>
-                                <div class="sma-value">
-                                    <span class="sma-label">200 SMA</span>
-                                    $${stock.sma200.toFixed(2)}
-                                </div>
-                            </div>
-                            <div class="pattern-desc">${stock.pattern}</div>
+                            <div style="font-size: 0.9em; color: #666;">20: $${stock.sma20.toFixed(2)}</div>
+                            <div style="font-size: 0.9em; color: #666;">50: $${stock.sma50.toFixed(2)}</div>
+                            <div style="font-size: 0.9em; color: #666;">100: $${stock.sma100.toFixed(2)}</div>
+                            <div style="font-size: 0.9em; color: #666;">200: $${stock.sma200.toFixed(2)}</div>
                         </div>
                     `).join('')}
                 </div>
@@ -413,10 +403,10 @@
 
         function filterStocks(event) {
             const query = event.target.value.toLowerCase();
-            const cards = document.querySelectorAll('.stock-card');
-            cards.forEach(card => {
-                const symbol = card.dataset.symbol.toLowerCase();
-                card.style.display = symbol.includes(query) ? 'block' : 'none';
+            const items = document.querySelectorAll('.stock-item');
+            items.forEach(item => {
+                const symbol = item.dataset.symbol.toLowerCase();
+                item.style.display = symbol.includes(query) ? 'grid' : 'none';
             });
         }
 
