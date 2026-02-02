@@ -264,11 +264,63 @@
             background: #28a745;
             color: white;
         }
+
+        .freshness-warning {
+            background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
+            display: none;
+        }
+
+        .freshness-warning.show {
+            display: block;
+        }
+
+        .freshness-warning h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+        }
+
+        .freshness-warning p {
+            margin: 5px 0;
+            opacity: 0.95;
+        }
+
+        .data-age-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 5px;
+        }
+
+        .data-age-badge.fresh {
+            background: #28a745;
+            color: white;
+        }
+
+        .data-age-badge.stale {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .data-age-badge.very-stale {
+            background: #dc3545;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-link">← Back to Dashboard</a>
+
+        <div class="freshness-warning" id="freshness-warning">
+            <h3>⚠️ Data Freshness Warning</h3>
+            <p id="warning-message">Checking data freshness...</p>
+        </div>
 
         <header>
             <h1>🎯 Enhanced Trend Classifier Analysis</h1>
@@ -324,6 +376,60 @@
         let trendData = {};
         let currentTab = 'highlights';
 
+        function checkDataFreshness(stocks) {
+            if (!stocks || stocks.length === 0) return;
+
+            const now = new Date();
+            const warningEl = document.getElementById('freshness-warning');
+            const messageEl = document.getElementById('warning-message');
+
+            let veryStaleCount = 0;
+            let staleCount = 0;
+            let oldestStock = null;
+            let oldestDays = 0;
+
+            stocks.forEach(stock => {
+                if (!stock.dataEndDate) return;
+
+                const endDate = new Date(stock.dataEndDate);
+                const daysOld = Math.floor((now - endDate) / (1000 * 60 * 60 * 24));
+
+                if (daysOld > 365) {
+                    veryStaleCount++;
+                    if (daysOld > oldestDays) {
+                        oldestDays = daysOld;
+                        oldestStock = stock;
+                    }
+                } else if (daysOld > 30) {
+                    staleCount++;
+                }
+            });
+
+            if (veryStaleCount > 0 || staleCount > stocks.length * 0.5) {
+                warningEl.classList.add('show');
+                const staleDays = oldestDays;
+                const staleMonths = Math.floor(staleDays / 30);
+
+                messageEl.innerHTML = `
+                    <strong>⚠️ Data is severely outdated!</strong><br>
+                    • ${veryStaleCount} stocks have data over 1 year old<br>
+                    • ${staleCount} stocks have data over 30 days old<br>
+                    • Oldest data: <strong>${oldestStock ? oldestStock.symbol : 'N/A'}</strong> (${staleMonths} months old, ends ${oldestStock ? oldestStock.dataEndDate : 'N/A'})<br>
+                    <br>
+                    <strong>To fix:</strong> Run Polygon loader to fetch fresh data:<br>
+                    <code style="background: rgba(0,0,0,0.2); padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">
+                        cd Polygon/Scripts && python3 polygon_loader.py NASDAQ
+                    </code>
+                `;
+            } else if (staleCount > 0) {
+                warningEl.classList.add('show');
+                messageEl.innerHTML = `
+                    <strong>Data freshness notice:</strong> ${staleCount} stocks have data over 30 days old.<br>
+                    Consider running the Polygon loader for the latest prices.
+                `;
+            }
+        }
+
         async function loadData() {
             try {
                 // Load summary first
@@ -351,6 +457,9 @@
                     const data = await resp.json();
                     trendData[cat] = data.stocks;
                 }
+
+                // Check data freshness
+                checkDataFreshness(trendData.all_trends);
 
                 showTab('highlights');
             } catch (error) {
