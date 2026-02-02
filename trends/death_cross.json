@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-01T15:38:54.484967",
+  "generated": "2026-02-01T19:31:56.687199",
   "pattern": "death_cross",
-  "count": 15,
+  "count": 19,
   "stocks": [
     {
       "symbol": "AC",
@@ -26,6 +26,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Death Cross (Major Sell) | Neutral",
       "updated": "2026-02-01T20:32:53.186000"
+    },
+    {
+      "symbol": "DHIL",
+      "price": 147.85,
+      "sma20": 148.68,
+      "sma50": 153.87,
+      "sma100": 156.99,
+      "sma200": 154.05,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-02T01:00:53.269000"
     },
     {
       "symbol": "DHIL",
@@ -62,6 +74,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Death Cross (Major Sell) | Neutral",
       "updated": "2026-02-01T05:45:37.755000"
+    },
+    {
+      "symbol": "HLIO",
+      "price": 40.82,
+      "sma20": 43.52,
+      "sma50": 46.63,
+      "sma100": 47.36,
+      "sma200": 46.76,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-02T01:00:55.607000"
     },
     {
       "symbol": "HPF",
@@ -146,6 +170,30 @@
       "midTerm": "mid_bull",
       "pattern": "Death Cross (Major Sell) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.851000"
+    },
+    {
+      "symbol": "PXI",
+      "price": 45.87,
+      "sma20": 46.44,
+      "sma50": 46.42,
+      "sma100": 45.86,
+      "sma200": 46.46,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Death Cross (Major Sell) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.729000"
+    },
+    {
+      "symbol": "QCLN",
+      "price": 33.3,
+      "sma20": 33.45,
+      "sma50": 34.63,
+      "sma100": 34.5,
+      "sma200": 34.66,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Death Cross (Major Sell) | Neutral",
+      "updated": "2026-02-02T01:00:57.762000"
     },
     {
       "symbol": "QCLN",

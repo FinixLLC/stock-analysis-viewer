@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-01T15:38:54.482069",
+  "generated": "2026-02-01T19:31:56.683508",
   "pattern": "golden_cross",
-  "count": 23,
+  "count": 27,
   "stocks": [
     {
       "symbol": "ABL",
@@ -40,6 +40,18 @@
       "updated": "2026-02-01T05:45:33.293000"
     },
     {
+      "symbol": "ARKR",
+      "price": 11.29,
+      "sma20": 13.05,
+      "sma50": 12.82,
+      "sma100": 12.05,
+      "sma200": 12.82,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.174000"
+    },
+    {
       "symbol": "BDSX",
       "price": 11.74,
       "sma20": 7.76,
@@ -64,6 +76,18 @@
       "updated": "2026-02-01T05:45:34.246000"
     },
     {
+      "symbol": "CASS",
+      "price": 44.59,
+      "sma20": 42.13,
+      "sma50": 42.37,
+      "sma100": 42.4,
+      "sma200": 42.36,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_neutral",
+      "pattern": "Golden Cross (Major Buy) | Neutral",
+      "updated": "2026-02-02T01:00:52.100000"
+    },
+    {
       "symbol": "CNC",
       "price": 43.32,
       "sma20": 45.1,
@@ -86,6 +110,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:36.872000"
+    },
+    {
+      "symbol": "FRPH",
+      "price": 31.24,
+      "sma20": 30.76,
+      "sma50": 30.77,
+      "sma100": 30.42,
+      "sma200": 30.69,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.752000"
     },
     {
       "symbol": "GUG",
@@ -266,6 +302,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:40.408000"
+    },
+    {
+      "symbol": "VRIG",
+      "price": 25.17,
+      "sma20": 25.12,
+      "sma50": 25.13,
+      "sma100": 25.12,
+      "sma200": 25.13,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:58.284000"
     },
     {
       "symbol": "WVFC",

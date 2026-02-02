@@ -454,6 +454,33 @@
                     📈 View Trend Analysis →
                 </a>
             </div>
+
+            <div class="stat-card" role="region" aria-labelledby="enhanced-trends-heading" style="padding: 25px;">
+                <h2 id="enhanced-trends-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🎯 Enhanced Trend Classifier</h2>
+                <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #28a745;" id="enhanced-trend-bull-count">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Bullish</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #ffc107;" id="enhanced-trend-neutral-count">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Neutral</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: #dc3545;" id="enhanced-trend-bear-count">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Bearish</div>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 1.3em; font-weight: bold; color: white;" id="enhanced-trend-total-count">-</div>
+                        <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Total Stocks (Performance-Based)</div>
+                    </div>
+                </div>
+                <a href="enhanced-trends.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    🎯 View Enhanced Analysis →
+                </a>
+            </div>
         </div>
 
         <!-- Today's Top Picks Section -->
@@ -565,6 +592,23 @@
             }
         }
         loadTrendSummary();
+
+        // Load EnhancedTrendClassifier summary
+        async function loadEnhancedTrendSummary() {
+            try {
+                const response = await fetch('enhanced-trends/summary.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('enhanced-trend-total-count').textContent = data.total_stocks || 0;
+                    document.getElementById('enhanced-trend-bull-count').textContent = data.bullish || 0;
+                    document.getElementById('enhanced-trend-neutral-count').textContent = data.neutral || 0;
+                    document.getElementById('enhanced-trend-bear-count').textContent = data.bearish || 0;
+                }
+            } catch (error) {
+                console.log('EnhancedTrendClassifier data not available yet');
+            }
+        }
+        loadEnhancedTrendSummary();
 
         // Calculate data freshness
         function updateFreshnessBadge(lastUpdate) {

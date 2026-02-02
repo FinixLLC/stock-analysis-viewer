@@ -1,8 +1,20 @@
 {
-  "generated": "2026-02-01T15:38:54.579918",
+  "generated": "2026-02-01T19:31:56.806938",
   "pattern": "trend_breakdown",
-  "count": 47,
+  "count": 49,
   "stocks": [
+    {
+      "symbol": "ADUS",
+      "price": 113.22,
+      "sma20": 125.1,
+      "sma50": 125.34,
+      "sma100": 126.53,
+      "sma200": 124.29,
+      "longTerm": "long_neutral",
+      "midTerm": "mid_bear_strong",
+      "pattern": "Mid-Term Breakdown (Warning)",
+      "updated": "2026-02-02T01:00:50.618000"
+    },
     {
       "symbol": "ADUS",
       "price": 113.22,
@@ -158,6 +170,18 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Mid-Term Breakdown (Warning)",
       "updated": "2026-02-01T20:32:46.993000"
+    },
+    {
+      "symbol": "DMRC",
+      "price": 35.11,
+      "sma20": 37.69,
+      "sma50": 37.96,
+      "sma100": 33.94,
+      "sma200": 30.77,
+      "longTerm": "long_neutral",
+      "midTerm": "mid_bear_strong",
+      "pattern": "Mid-Term Breakdown (Warning)",
+      "updated": "2026-02-02T01:00:53.335000"
     },
     {
       "symbol": "DMRC",

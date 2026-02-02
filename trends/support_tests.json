@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-01T15:38:54.514466",
+  "generated": "2026-02-01T19:31:56.724467",
   "pattern": "support_tests",
-  "count": 1786,
+  "count": 2064,
   "stocks": [
     {
       "symbol": "AACI",
@@ -40,6 +40,18 @@
       "updated": "2026-02-01T05:45:32.531000"
     },
     {
+      "symbol": "AAOI",
+      "price": 25.9,
+      "sma20": 28.51,
+      "sma50": 32.76,
+      "sma100": 25.9,
+      "sma200": 18.01,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.445000"
+    },
+    {
       "symbol": "AAPB",
       "price": 26.44,
       "sma20": 30.46,
@@ -62,6 +74,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:49.845000"
+    },
+    {
+      "symbol": "AAXJ",
+      "price": 75.3,
+      "sma20": 73.0,
+      "sma50": 73.28,
+      "sma100": 75.01,
+      "sma200": 73.07,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.485000"
     },
     {
       "symbol": "AAXJ",
@@ -98,6 +122,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:32.603000"
+    },
+    {
+      "symbol": "ABCB",
+      "price": 66.19,
+      "sma20": 65.83,
+      "sma50": 65.52,
+      "sma100": 64.94,
+      "sma200": 58.68,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.485000"
     },
     {
       "symbol": "ABG",
@@ -196,6 +232,18 @@
       "updated": "2026-02-01T05:45:32.667000"
     },
     {
+      "symbol": "ACIW",
+      "price": 52.51,
+      "sma20": 53.35,
+      "sma50": 53.68,
+      "sma100": 53.01,
+      "sma200": 47.88,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.519000"
+    },
+    {
       "symbol": "ACLO",
       "price": 50.59,
       "sma20": 50.44,
@@ -266,6 +314,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:32.740000"
+    },
+    {
+      "symbol": "ADMA",
+      "price": 15.9,
+      "sma20": 16.32,
+      "sma50": 17.76,
+      "sma100": 18.26,
+      "sma200": 15.84,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.585000"
     },
     {
       "symbol": "ADUR",
@@ -497,15 +557,15 @@
     },
     {
       "symbol": "AGNCN",
-      "price": 25.51,
-      "sma20": 25.44,
-      "sma50": 25.5,
-      "sma100": 25.58,
-      "sma200": 25.58,
+      "price": 25.69,
+      "sma20": 25.76,
+      "sma50": 25.71,
+      "sma100": 25.64,
+      "sma200": 25.69,
       "longTerm": "long_bull_test",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:47.292000"
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:32.833000"
     },
     {
       "symbol": "AGNCN",
@@ -517,7 +577,19 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:32.833000"
+      "updated": "2026-02-02T01:00:50.686000"
+    },
+    {
+      "symbol": "AGNCN",
+      "price": 25.51,
+      "sma20": 25.44,
+      "sma50": 25.5,
+      "sma100": 25.58,
+      "sma200": 25.58,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T20:32:47.292000"
     },
     {
       "symbol": "AGNCO",
@@ -638,6 +710,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T21:25:14.582000"
+    },
+    {
+      "symbol": "AKAM",
+      "price": 100.01,
+      "sma20": 98.48,
+      "sma50": 96.73,
+      "sma100": 98.33,
+      "sma200": 96.96,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.750000"
     },
     {
       "symbol": "AKAM",
@@ -781,6 +865,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.848000"
+    },
+    {
+      "symbol": "ALRS",
+      "price": 21.42,
+      "sma20": 20.88,
+      "sma50": 20.72,
+      "sma100": 21.7,
+      "sma200": 21.13,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:32.967000"
     },
     {
@@ -794,6 +890,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.033000"
+    },
+    {
+      "symbol": "ALTY",
+      "price": 11.99,
+      "sma20": 11.91,
+      "sma50": 11.86,
+      "sma100": 11.91,
+      "sma200": 11.68,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.882000"
+    },
+    {
+      "symbol": "AMBC",
+      "price": 11.66,
+      "sma20": 11.5,
+      "sma50": 12.05,
+      "sma100": 11.81,
+      "sma200": 12.68,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.915000"
     },
     {
       "symbol": "AMBC",
@@ -817,7 +937,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.910000"
+    },
+    {
+      "symbol": "AMCX",
+      "price": 8.79,
+      "sma20": 9.58,
+      "sma50": 9.48,
+      "sma100": 8.95,
+      "sma200": 10.3,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.029000"
+    },
+    {
+      "symbol": "AMED",
+      "price": 92.6,
+      "sma20": 92.39,
+      "sma50": 89.89,
+      "sma100": 92.63,
+      "sma200": 93.88,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.914000"
     },
     {
       "symbol": "AMED",
@@ -842,6 +986,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.062000"
+    },
+    {
+      "symbol": "AMGN",
+      "price": 291.16,
+      "sma20": 285.78,
+      "sma50": 275.84,
+      "sma100": 296.31,
+      "sma200": 303.22,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:50.943000"
     },
     {
       "symbol": "AMP",
@@ -877,7 +1033,31 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:50.975000"
+    },
+    {
+      "symbol": "AMSF",
+      "price": 49.5,
+      "sma20": 50.37,
+      "sma50": 52.24,
+      "sma100": 52.38,
+      "sma200": 49.39,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:33.129000"
+    },
+    {
+      "symbol": "AMSWA",
+      "price": 10.43,
+      "sma20": 10.53,
+      "sma50": 10.62,
+      "sma100": 10.36,
+      "sma200": 10.54,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.009000"
     },
     {
       "symbol": "AMSWA",
@@ -953,6 +1133,18 @@
     },
     {
       "symbol": "ANIP",
+      "price": 79.51,
+      "sma20": 81.62,
+      "sma50": 81.82,
+      "sma100": 87.4,
+      "sma200": 78.68,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T20:32:48.987000"
+    },
+    {
+      "symbol": "ANIP",
       "price": 58.92,
       "sma20": 59.03,
       "sma50": 57.23,
@@ -965,15 +1157,15 @@
     },
     {
       "symbol": "ANIP",
-      "price": 79.51,
-      "sma20": 81.62,
-      "sma50": 81.82,
-      "sma100": 87.4,
-      "sma200": 78.68,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_neutral",
-      "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T20:32:48.987000"
+      "price": 58.92,
+      "sma20": 59.03,
+      "sma50": 57.23,
+      "sma100": 57.79,
+      "sma200": 60.48,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.048000"
     },
     {
       "symbol": "ANSC",
@@ -986,6 +1178,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:54.314000"
+    },
+    {
+      "symbol": "ANSS",
+      "price": 338.93,
+      "sma20": 347.36,
+      "sma50": 344.46,
+      "sma100": 336.11,
+      "sma200": 329.31,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.041000"
     },
     {
       "symbol": "ANSS",
@@ -1058,6 +1262,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:47.678000"
+    },
+    {
+      "symbol": "APA",
+      "price": 23.14,
+      "sma20": 23.01,
+      "sma50": 22.77,
+      "sma100": 23.57,
+      "sma200": 26.66,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.075000"
     },
     {
       "symbol": "APA",
@@ -1264,6 +1480,18 @@
       "updated": "2026-02-01T05:45:33.329000"
     },
     {
+      "symbol": "ARLP",
+      "price": 26.76,
+      "sma20": 27.78,
+      "sma50": 27.08,
+      "sma100": 26.43,
+      "sma200": 25.17,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.181000"
+    },
+    {
       "symbol": "ARMK",
       "price": 38.49,
       "sma20": 38.57,
@@ -1297,6 +1525,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.207000"
+    },
+    {
+      "symbol": "ARWR",
+      "price": 19.95,
+      "sma20": 19.81,
+      "sma50": 20.8,
+      "sma100": 20.35,
+      "sma200": 22.65,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:33.326000"
     },
     {
@@ -1310,6 +1550,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:14.360000"
+    },
+    {
+      "symbol": "ASET",
+      "price": 30.79,
+      "sma20": 30.44,
+      "sma50": 30.64,
+      "sma100": 31.42,
+      "sma200": 31.13,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.213000"
     },
     {
       "symbol": "ASET",
@@ -1346,6 +1598,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.391000"
+    },
+    {
+      "symbol": "ASML",
+      "price": 751.55,
+      "sma20": 740.16,
+      "sma50": 726.63,
+      "sma100": 737.33,
+      "sma200": 839.99,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.240000"
     },
     {
       "symbol": "ASRT",
@@ -1477,6 +1741,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.310000"
+    },
+    {
+      "symbol": "ATLO",
+      "price": 18.39,
+      "sma20": 18.0,
+      "sma50": 17.26,
+      "sma100": 17.55,
+      "sma200": 18.65,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.425000"
     },
     {
@@ -1513,6 +1789,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.344000"
+    },
+    {
+      "symbol": "ATRO",
+      "price": 18.51,
+      "sma20": 17.83,
+      "sma50": 16.82,
+      "sma100": 17.85,
+      "sma200": 18.67,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.492000"
     },
     {
@@ -1526,6 +1814,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:55.105000"
+    },
+    {
+      "symbol": "AUB",
+      "price": 37.45,
+      "sma20": 37.76,
+      "sma50": 38.85,
+      "sma100": 38.84,
+      "sma200": 36.82,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.377000"
     },
     {
       "symbol": "AUB",
@@ -1638,14 +1938,14 @@
     {
       "symbol": "AY",
       "price": 21.99,
-      "sma20": 22.06,
+      "sma20": 22.05,
       "sma50": 22.02,
       "sma100": 22.03,
-      "sma200": 21.23,
+      "sma200": 21.05,
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:55.494000"
+      "updated": "2026-02-02T01:00:51.477000"
     },
     {
       "symbol": "AY",
@@ -1658,6 +1958,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.590000"
+    },
+    {
+      "symbol": "AY",
+      "price": 21.99,
+      "sma20": 22.06,
+      "sma50": 22.02,
+      "sma100": 22.03,
+      "sma200": 21.23,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:55.494000"
     },
     {
       "symbol": "AYI",
@@ -1682,6 +1994,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.624000"
+    },
+    {
+      "symbol": "AZN",
+      "price": 73.58,
+      "sma20": 70.46,
+      "sma50": 68.18,
+      "sma100": 70.89,
+      "sma200": 74.58,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.480000"
     },
     {
       "symbol": "BAC",
@@ -1765,6 +2089,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.512000"
+    },
+    {
+      "symbol": "BANFP",
+      "price": 25.82,
+      "sma20": 25.96,
+      "sma50": 25.87,
+      "sma100": 25.83,
+      "sma200": 25.73,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.655000"
     },
     {
@@ -1778,6 +2114,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:33.656000"
+    },
+    {
+      "symbol": "BANR",
+      "price": 68.66,
+      "sma20": 70.12,
+      "sma50": 70.15,
+      "sma100": 67.55,
+      "sma200": 59.05,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.510000"
     },
     {
       "symbol": "BANX",
@@ -1814,6 +2162,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:33.655000"
+    },
+    {
+      "symbol": "BATRK",
+      "price": 39.96,
+      "sma20": 38.94,
+      "sma50": 38.85,
+      "sma100": 39.56,
+      "sma200": 39.94,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.543000"
     },
     {
       "symbol": "BATRK",
@@ -1934,6 +2294,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:33.722000"
+    },
+    {
+      "symbol": "BCPC",
+      "price": 164.82,
+      "sma20": 161.38,
+      "sma50": 166.16,
+      "sma100": 170.01,
+      "sma200": 164.7,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.576000"
     },
     {
       "symbol": "BDC",
@@ -2284,6 +2656,18 @@
       "updated": "2026-02-01T05:45:33.820000"
     },
     {
+      "symbol": "BJRI",
+      "price": 34.96,
+      "sma20": 35.72,
+      "sma50": 35.9,
+      "sma100": 35.12,
+      "sma200": 34.23,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.708000"
+    },
+    {
       "symbol": "BKN",
       "price": 11.45,
       "sma20": 11.32,
@@ -2390,6 +2774,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:33.918000"
+    },
+    {
+      "symbol": "BLKB",
+      "price": 79.88,
+      "sma20": 78.09,
+      "sma50": 78.2,
+      "sma100": 80.97,
+      "sma200": 79.41,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.772000"
     },
     {
       "symbol": "BLLD",
@@ -2557,6 +2953,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.805000"
+    },
+    {
+      "symbol": "BOKF",
+      "price": 110.57,
+      "sma20": 110.97,
+      "sma50": 112.23,
+      "sma100": 110.47,
+      "sma200": 102.54,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:33.951000"
     },
     {
@@ -2570,6 +2978,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:10.872000"
+    },
+    {
+      "symbol": "BOTJ",
+      "price": 13.0,
+      "sma20": 13.56,
+      "sma50": 14.42,
+      "sma100": 14.03,
+      "sma200": 12.82,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:51.836000"
     },
     {
       "symbol": "BOTJ",
@@ -2606,6 +3026,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T20:32:55.278000"
+    },
+    {
+      "symbol": "BPMC",
+      "price": 93.94,
+      "sma20": 109.0,
+      "sma50": 100.01,
+      "sma100": 95.17,
+      "sma200": 98.18,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.838000"
     },
     {
       "symbol": "BPMC",
@@ -2785,7 +3217,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:34.016000"
+      "updated": "2026-02-02T01:00:51.870000"
     },
     {
       "symbol": "BSCO",
@@ -2800,6 +3232,18 @@
       "updated": "2026-02-01T20:32:55.487000"
     },
     {
+      "symbol": "BSCO",
+      "price": 21.12,
+      "sma20": 21.12,
+      "sma50": 21.13,
+      "sma100": 21.12,
+      "sma200": 21.07,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:34.016000"
+    },
+    {
       "symbol": "BSCP",
       "price": 20.68,
       "sma20": 20.7,
@@ -2810,6 +3254,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:53.631000"
+    },
+    {
+      "symbol": "BSCP",
+      "price": 20.71,
+      "sma20": 20.68,
+      "sma50": 20.67,
+      "sma100": 20.66,
+      "sma200": 20.58,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.903000"
     },
     {
       "symbol": "BSCP",
@@ -2845,6 +3301,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.902000"
+    },
+    {
+      "symbol": "BSCQ",
+      "price": 19.51,
+      "sma20": 19.46,
+      "sma50": 19.46,
+      "sma100": 19.48,
+      "sma200": 19.38,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:34.015000"
     },
     {
@@ -2861,6 +3329,18 @@
     },
     {
       "symbol": "BSCR",
+      "price": 19.53,
+      "sma20": 19.49,
+      "sma50": 19.5,
+      "sma100": 19.55,
+      "sma200": 19.44,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.902000"
+    },
+    {
+      "symbol": "BSCR",
       "price": 19.71,
       "sma20": 19.73,
       "sma50": 19.73,
@@ -2870,6 +3350,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:50.443000"
+    },
+    {
+      "symbol": "BSCS",
+      "price": 20.25,
+      "sma20": 20.18,
+      "sma50": 20.2,
+      "sma100": 20.29,
+      "sma200": 20.19,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.900000"
     },
     {
       "symbol": "BSCS",
@@ -2989,6 +3481,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.935000"
+    },
+    {
+      "symbol": "BSJO",
+      "price": 22.68,
+      "sma20": 22.64,
+      "sma50": 22.66,
+      "sma100": 22.68,
+      "sma200": 22.71,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.047000"
     },
     {
@@ -3002,6 +3506,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:55.625000"
+    },
+    {
+      "symbol": "BSJP",
+      "price": 23.17,
+      "sma20": 23.11,
+      "sma50": 23.11,
+      "sma100": 23.11,
+      "sma200": 23.05,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.935000"
     },
     {
       "symbol": "BSJP",
@@ -3029,6 +3545,18 @@
     },
     {
       "symbol": "BSJQ",
+      "price": 23.29,
+      "sma20": 23.32,
+      "sma50": 23.35,
+      "sma100": 23.38,
+      "sma200": 23.33,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T20:32:50.352000"
+    },
+    {
+      "symbol": "BSJQ",
       "price": 23.48,
       "sma20": 23.42,
       "sma50": 23.4,
@@ -3041,15 +3569,15 @@
     },
     {
       "symbol": "BSJQ",
-      "price": 23.29,
-      "sma20": 23.32,
-      "sma50": 23.35,
-      "sma100": 23.38,
-      "sma200": 23.33,
+      "price": 23.48,
+      "sma20": 23.42,
+      "sma50": 23.4,
+      "sma100": 23.41,
+      "sma200": 23.29,
       "longTerm": "long_bull_test",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:50.352000"
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.929000"
     },
     {
       "symbol": "BSJR",
@@ -3376,6 +3904,18 @@
       "updated": "2026-02-01T05:45:34.115000"
     },
     {
+      "symbol": "BUSE",
+      "price": 24.53,
+      "sma20": 23.99,
+      "sma50": 24.59,
+      "sma100": 25.17,
+      "sma200": 24.74,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:51.970000"
+    },
+    {
       "symbol": "BUXX",
       "price": 20.31,
       "sma20": 20.28,
@@ -3493,6 +4033,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:51.995000"
+    },
+    {
+      "symbol": "CALM",
+      "price": 95.1,
+      "sma20": 109.44,
+      "sma50": 105.75,
+      "sma100": 95.72,
+      "sma200": 79.58,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:34.140000"
     },
     {
@@ -3529,7 +4081,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.028000"
+    },
+    {
+      "symbol": "CAR",
+      "price": 90.75,
+      "sma20": 89.77,
+      "sma50": 91.09,
+      "sma100": 89.74,
+      "sma200": 95.95,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.173000"
+    },
+    {
+      "symbol": "CARE",
+      "price": 17.99,
+      "sma20": 17.72,
+      "sma50": 17.9,
+      "sma100": 18.05,
+      "sma200": 16.14,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.065000"
     },
     {
       "symbol": "CARE",
@@ -3601,6 +4177,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.133000"
+    },
+    {
+      "symbol": "CATY",
+      "price": 46.58,
+      "sma20": 47.28,
+      "sma50": 48.53,
+      "sma100": 47.28,
+      "sma200": 43.01,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:34.279000"
     },
     {
@@ -3638,6 +4226,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:34.311000"
+    },
+    {
+      "symbol": "CBOE",
+      "price": 202.33,
+      "sma20": 204.15,
+      "sma50": 201.93,
+      "sma100": 204.87,
+      "sma200": 194.69,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.166000"
+    },
+    {
+      "symbol": "CBSH",
+      "price": 65.74,
+      "sma20": 66.37,
+      "sma50": 66.21,
+      "sma100": 64.86,
+      "sma200": 61.22,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.156000"
     },
     {
       "symbol": "CBSH",
@@ -3688,6 +4300,18 @@
       "updated": "2026-02-01T05:45:34.344000"
     },
     {
+      "symbol": "CCBG",
+      "price": 36.99,
+      "sma20": 36.96,
+      "sma50": 37.29,
+      "sma100": 36.54,
+      "sma200": 33.03,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.199000"
+    },
+    {
       "symbol": "CCD",
       "price": 24.68,
       "sma20": 24.43,
@@ -3698,6 +4322,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:34.311000"
+    },
+    {
+      "symbol": "CCD",
+      "price": 24.68,
+      "sma20": 24.43,
+      "sma50": 24.21,
+      "sma100": 24.5,
+      "sma200": 23.61,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.197000"
     },
     {
       "symbol": "CCEP",
@@ -3772,6 +4408,18 @@
       "updated": "2026-02-01T05:45:34.366000"
     },
     {
+      "symbol": "CDNA",
+      "price": 24.5,
+      "sma20": 23.16,
+      "sma50": 23.23,
+      "sma100": 24.72,
+      "sma200": 21.13,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.222000"
+    },
+    {
       "symbol": "CDNS",
       "price": 295.19,
       "sma20": 302.74,
@@ -3794,6 +4442,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:52.542000"
+    },
+    {
+      "symbol": "CDNS",
+      "price": 295.19,
+      "sma20": 302.74,
+      "sma50": 304.51,
+      "sma100": 291.41,
+      "sma200": 289.81,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.224000"
     },
     {
       "symbol": "CDRE",
@@ -3845,6 +4505,18 @@
     },
     {
       "symbol": "CENT",
+      "price": 38.75,
+      "sma20": 37.36,
+      "sma50": 38.5,
+      "sma100": 37.18,
+      "sma200": 38.72,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.288000"
+    },
+    {
+      "symbol": "CENT",
       "price": 32.08,
       "sma20": 32.34,
       "sma50": 32.62,
@@ -3854,6 +4526,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:50.635000"
+    },
+    {
+      "symbol": "CENTA",
+      "price": 29.16,
+      "sma20": 29.35,
+      "sma50": 29.57,
+      "sma100": 29.55,
+      "sma200": 30.98,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T20:32:50.686000"
     },
     {
       "symbol": "CENTA",
@@ -3869,15 +4553,15 @@
     },
     {
       "symbol": "CENTA",
-      "price": 29.16,
-      "sma20": 29.35,
-      "sma50": 29.57,
-      "sma100": 29.55,
-      "sma200": 30.98,
-      "longTerm": "long_neutral_test",
+      "price": 33.25,
+      "sma20": 31.84,
+      "sma50": 32.76,
+      "sma100": 31.81,
+      "sma200": 33.26,
+      "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
-      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:50.686000"
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.290000"
     },
     {
       "symbol": "CEPO",
@@ -3925,7 +4609,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.321000"
+    },
+    {
+      "symbol": "CFBK",
+      "price": 24.99,
+      "sma20": 24.19,
+      "sma50": 25.12,
+      "sma100": 24.73,
+      "sma200": 22.27,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.465000"
+    },
+    {
+      "symbol": "CFFN",
+      "price": 6.18,
+      "sma20": 5.91,
+      "sma50": 6.11,
+      "sma100": 6.17,
+      "sma200": 5.85,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.365000"
     },
     {
       "symbol": "CFFN",
@@ -3997,6 +4705,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.354000"
+    },
+    {
+      "symbol": "CGO",
+      "price": 11.66,
+      "sma20": 11.41,
+      "sma50": 11.57,
+      "sma100": 11.74,
+      "sma200": 11.34,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.498000"
     },
     {
@@ -4010,6 +4730,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:34.503000"
+    },
+    {
+      "symbol": "CHCI",
+      "price": 8.09,
+      "sma20": 8.23,
+      "sma50": 8.27,
+      "sma100": 9.19,
+      "sma200": 7.94,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.356000"
     },
     {
       "symbol": "CHCO",
@@ -4069,6 +4801,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.420000"
+    },
+    {
+      "symbol": "CHSCL",
+      "price": 25.98,
+      "sma20": 25.99,
+      "sma50": 25.84,
+      "sma100": 25.97,
+      "sma200": 25.91,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:34.565000"
     },
     {
@@ -4085,18 +4829,6 @@
     },
     {
       "symbol": "CHSCM",
-      "price": 25.23,
-      "sma20": 25.14,
-      "sma50": 25.07,
-      "sma100": 25.33,
-      "sma200": 25.26,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:34.571000"
-    },
-    {
-      "symbol": "CHSCM",
       "price": 25.02,
       "sma20": 24.88,
       "sma50": 24.92,
@@ -4108,6 +4840,30 @@
       "updated": "2026-02-01T20:32:51.158000"
     },
     {
+      "symbol": "CHSCM",
+      "price": 25.23,
+      "sma20": 25.14,
+      "sma50": 25.07,
+      "sma100": 25.33,
+      "sma200": 25.26,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.421000"
+    },
+    {
+      "symbol": "CHSCM",
+      "price": 25.23,
+      "sma20": 25.14,
+      "sma50": 25.07,
+      "sma100": 25.33,
+      "sma200": 25.26,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:34.571000"
+    },
+    {
       "symbol": "CHSCN",
       "price": 25.5,
       "sma20": 25.61,
@@ -4117,7 +4873,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:34.615000"
+      "updated": "2026-02-02T01:00:52.464000"
     },
     {
       "symbol": "CHSCN",
@@ -4132,16 +4888,28 @@
       "updated": "2026-02-01T20:32:50.776000"
     },
     {
+      "symbol": "CHSCN",
+      "price": 25.5,
+      "sma20": 25.61,
+      "sma50": 25.47,
+      "sma100": 25.64,
+      "sma200": 25.66,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:34.615000"
+    },
+    {
       "symbol": "CHSCO",
-      "price": 26.28,
-      "sma20": 26.2,
-      "sma50": 26.21,
-      "sma100": 26.48,
-      "sma200": 26.49,
+      "price": 26.62,
+      "sma20": 26.57,
+      "sma50": 26.61,
+      "sma100": 26.8,
+      "sma200": 26.81,
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:50.763000"
+      "updated": "2026-02-02T01:00:52.461000"
     },
     {
       "symbol": "CHSCO",
@@ -4154,6 +4922,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.582000"
+    },
+    {
+      "symbol": "CHSCO",
+      "price": 26.28,
+      "sma20": 26.2,
+      "sma50": 26.21,
+      "sma100": 26.48,
+      "sma200": 26.49,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T20:32:50.763000"
     },
     {
       "symbol": "CHSCP",
@@ -4189,6 +4969,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.454000"
+    },
+    {
+      "symbol": "CHTR",
+      "price": 360.27,
+      "sma20": 352.68,
+      "sma50": 362.14,
+      "sma100": 354.82,
+      "sma200": 328.88,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.604000"
     },
     {
@@ -4202,6 +4994,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:34.615000"
+    },
+    {
+      "symbol": "CHW",
+      "price": 7.02,
+      "sma20": 6.92,
+      "sma50": 6.94,
+      "sma100": 7.01,
+      "sma200": 6.89,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.494000"
     },
     {
       "symbol": "CIA",
@@ -4249,7 +5053,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:34.680000"
+      "updated": "2026-02-02T01:00:52.528000"
     },
     {
       "symbol": "CIGI",
@@ -4262,6 +5066,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:52.770000"
+    },
+    {
+      "symbol": "CIGI",
+      "price": 131.7,
+      "sma20": 139.03,
+      "sma50": 140.93,
+      "sma100": 145.14,
+      "sma200": 133.2,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:34.680000"
     },
     {
       "symbol": "CII",
@@ -4537,7 +5353,7 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:34.847000"
+      "updated": "2026-02-02T01:00:52.726000"
     },
     {
       "symbol": "COLM",
@@ -4550,6 +5366,30 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Testing 100 SMA Support | Mid-Term Breakdown (Warning)",
       "updated": "2026-02-01T20:32:47.006000"
+    },
+    {
+      "symbol": "COLM",
+      "price": 84.58,
+      "sma20": 85.06,
+      "sma50": 85.99,
+      "sma100": 83.78,
+      "sma200": 82.1,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:34.847000"
+    },
+    {
+      "symbol": "COMT",
+      "price": 26.36,
+      "sma20": 26.34,
+      "sma50": 26.01,
+      "sma100": 26.11,
+      "sma200": 26.47,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.717000"
     },
     {
       "symbol": "COMT",
@@ -4586,6 +5426,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T21:25:12.128000"
+    },
+    {
+      "symbol": "CPHC",
+      "price": 20.8,
+      "sma20": 20.63,
+      "sma50": 20.83,
+      "sma100": 19.97,
+      "sma200": 20.94,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.750000"
     },
     {
       "symbol": "CPHC",
@@ -4729,6 +5581,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.811000"
+    },
+    {
+      "symbol": "CRESY",
+      "price": 11.3,
+      "sma20": 12.38,
+      "sma50": 12.82,
+      "sma100": 11.2,
+      "sma200": 9.89,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:34.961000"
     },
     {
@@ -4753,7 +5617,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:34.994000"
+      "updated": "2026-02-02T01:00:52.844000"
     },
     {
       "symbol": "CRSP",
@@ -4768,6 +5632,18 @@
       "updated": "2026-02-01T20:32:48.263000"
     },
     {
+      "symbol": "CRSP",
+      "price": 49.72,
+      "sma20": 42.08,
+      "sma50": 43.69,
+      "sma100": 45.84,
+      "sma200": 50.36,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:34.994000"
+    },
+    {
       "symbol": "CRT",
       "price": 8.8,
       "sma20": 8.39,
@@ -4778,6 +5654,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:11.556000"
+    },
+    {
+      "symbol": "CRUS",
+      "price": 109.06,
+      "sma20": 102.26,
+      "sma50": 103.13,
+      "sma100": 109.67,
+      "sma200": 114.75,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.887000"
     },
     {
       "symbol": "CRUS",
@@ -4816,6 +5704,18 @@
       "updated": "2026-02-01T05:45:35.041000"
     },
     {
+      "symbol": "CSGP",
+      "price": 74.06,
+      "sma20": 75.47,
+      "sma50": 75.02,
+      "sma100": 75.32,
+      "sma200": 77.66,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.920000"
+    },
+    {
       "symbol": "CSQ",
       "price": 19.37,
       "sma20": 19.42,
@@ -4838,6 +5738,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:35.133000"
+    },
+    {
+      "symbol": "CSWC",
+      "price": 23.46,
+      "sma20": 22.68,
+      "sma50": 22.42,
+      "sma100": 23.49,
+      "sma200": 24.52,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:52.983000"
     },
     {
       "symbol": "CSWCZ",
@@ -4864,16 +5776,28 @@
       "updated": "2026-02-01T05:45:35.107000"
     },
     {
+      "symbol": "CSWI",
+      "price": 318.12,
+      "sma20": 345.92,
+      "sma50": 368.61,
+      "sma100": 375.17,
+      "sma200": 324.4,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:52.987000"
+    },
+    {
       "symbol": "CSX",
-      "price": 35.78,
-      "sma20": 36.03,
-      "sma50": 35.77,
-      "sma100": 35.2,
-      "sma200": 33.64,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.783000"
+      "price": 33.37,
+      "sma20": 33.01,
+      "sma50": 33.28,
+      "sma100": 33.89,
+      "sma200": 33.86,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:52.981000"
     },
     {
       "symbol": "CSX",
@@ -4888,6 +5812,18 @@
       "updated": "2026-02-01T05:45:35.126000"
     },
     {
+      "symbol": "CSX",
+      "price": 35.78,
+      "sma20": 36.03,
+      "sma50": 35.77,
+      "sma100": 35.2,
+      "sma200": 33.64,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:52.783000"
+    },
+    {
       "symbol": "CTAS",
       "price": 204.22,
       "sma20": 201.45,
@@ -4897,7 +5833,7 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:35.121000"
+      "updated": "2026-02-02T01:00:52.971000"
     },
     {
       "symbol": "CTAS",
@@ -4910,6 +5846,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:46.968000"
+    },
+    {
+      "symbol": "CTAS",
+      "price": 204.22,
+      "sma20": 201.45,
+      "sma50": 202.54,
+      "sma100": 206.63,
+      "sma200": 451.17,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:35.121000"
     },
     {
       "symbol": "CTBB",
@@ -4996,6 +5944,18 @@
       "updated": "2026-02-01T05:45:35.199000"
     },
     {
+      "symbol": "CVBF",
+      "price": 20.28,
+      "sma20": 20.64,
+      "sma50": 21.53,
+      "sma100": 20.58,
+      "sma200": 18.88,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.050000"
+    },
+    {
       "symbol": "CVGW",
       "price": 24.95,
       "sma20": 23.34,
@@ -5018,6 +5978,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:15.842000"
+    },
+    {
+      "symbol": "CWBC",
+      "price": 19.06,
+      "sma20": 19.17,
+      "sma50": 19.87,
+      "sma100": 19.63,
+      "sma200": 19.03,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.071000"
     },
     {
       "symbol": "CWBC",
@@ -5176,6 +6148,18 @@
       "updated": "2026-02-01T05:45:35.346000"
     },
     {
+      "symbol": "DCOM",
+      "price": 31.34,
+      "sma20": 31.67,
+      "sma50": 32.59,
+      "sma100": 31.51,
+      "sma200": 26.24,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.203000"
+    },
+    {
       "symbol": "DCOMG",
       "price": 26.73,
       "sma20": 26.41,
@@ -5269,7 +6253,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.236000"
+    },
+    {
+      "symbol": "DGICA",
+      "price": 15.21,
+      "sma20": 14.84,
+      "sma50": 15.39,
+      "sma100": 15.26,
+      "sma200": 14.48,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:35.379000"
+    },
+    {
+      "symbol": "DGICB",
+      "price": 14.0,
+      "sma20": 14.09,
+      "sma50": 14.37,
+      "sma100": 13.94,
+      "sma200": 13.16,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.228000"
     },
     {
       "symbol": "DGICB",
@@ -5309,6 +6317,18 @@
     },
     {
       "symbol": "DHCNI",
+      "price": 14.75,
+      "sma20": 14.68,
+      "sma50": 14.93,
+      "sma100": 15.44,
+      "sma200": 14.66,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:35.401000"
+    },
+    {
+      "symbol": "DHCNI",
       "price": 17.12,
       "sma20": 16.92,
       "sma50": 16.95,
@@ -5329,7 +6349,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:35.401000"
+      "updated": "2026-02-02T01:00:53.283000"
     },
     {
       "symbol": "DHR",
@@ -5342,6 +6362,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:11.805000"
+    },
+    {
+      "symbol": "DINT",
+      "price": 23.49,
+      "sma20": 22.27,
+      "sma50": 22.54,
+      "sma100": 23.07,
+      "sma200": 21.68,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.260000"
     },
     {
       "symbol": "DINT",
@@ -5401,6 +6433,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:53.293000"
+    },
+    {
+      "symbol": "DLTR",
+      "price": 71.56,
+      "sma20": 73.03,
+      "sma50": 72.57,
+      "sma100": 70.22,
+      "sma200": 88.46,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:35.442000"
     },
     {
@@ -5449,7 +6493,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:35.470000"
+      "updated": "2026-02-02T01:00:53.349000"
     },
     {
       "symbol": "DMLP",
@@ -5462,6 +6506,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:53.021000"
+    },
+    {
+      "symbol": "DMLP",
+      "price": 31.94,
+      "sma20": 31.99,
+      "sma50": 32.81,
+      "sma100": 32.33,
+      "sma200": 31.97,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:35.470000"
     },
     {
       "symbol": "DMYY",
@@ -5512,6 +6568,18 @@
       "updated": "2026-02-01T05:45:35.558000"
     },
     {
+      "symbol": "DORM",
+      "price": 126.67,
+      "sma20": 129.9,
+      "sma50": 132.18,
+      "sma100": 126.53,
+      "sma200": 111.55,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.410000"
+    },
+    {
       "symbol": "DOX",
       "price": 83.15,
       "sma20": 82.34,
@@ -5522,6 +6590,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:52.845000"
+    },
+    {
+      "symbol": "DOX",
+      "price": 88.3,
+      "sma20": 86.38,
+      "sma50": 86.14,
+      "sma100": 87.09,
+      "sma200": 84.75,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:53.414000"
     },
     {
       "symbol": "DOX",
@@ -5558,6 +6638,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:11.917000"
+    },
+    {
+      "symbol": "DRIV",
+      "price": 23.79,
+      "sma20": 23.41,
+      "sma50": 23.52,
+      "sma100": 23.29,
+      "sma200": 23.36,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.396000"
     },
     {
       "symbol": "DRIV",
@@ -5728,6 +6820,18 @@
       "updated": "2026-02-01T05:45:35.569000"
     },
     {
+      "symbol": "DVY",
+      "price": 135.71,
+      "sma20": 134.9,
+      "sma50": 135.11,
+      "sma100": 135.44,
+      "sma200": 129.9,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.419000"
+    },
+    {
       "symbol": "DWAS",
       "price": 93.12,
       "sma20": 93.24,
@@ -5738,6 +6842,30 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:35.624000"
+    },
+    {
+      "symbol": "DWAS",
+      "price": 93.12,
+      "sma20": 93.24,
+      "sma50": 94.67,
+      "sma100": 94.59,
+      "sma200": 90.93,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.475000"
+    },
+    {
+      "symbol": "DWSH",
+      "price": 7.08,
+      "sma20": 6.92,
+      "sma50": 7.02,
+      "sma100": 7.14,
+      "sma200": 7.24,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.449000"
     },
     {
       "symbol": "DWSH",
@@ -5920,6 +7048,30 @@
       "updated": "2026-02-01T05:45:35.698000"
     },
     {
+      "symbol": "EEFT",
+      "price": 104.64,
+      "sma20": 98.64,
+      "sma50": 101.3,
+      "sma100": 100.66,
+      "sma200": 103.12,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.577000"
+    },
+    {
+      "symbol": "EEMA",
+      "price": 75.14,
+      "sma20": 72.93,
+      "sma50": 73.07,
+      "sma100": 74.91,
+      "sma200": 73.21,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.558000"
+    },
+    {
       "symbol": "EEMA",
       "price": 75.14,
       "sma20": 72.93,
@@ -5930,6 +7082,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:35.701000"
+    },
+    {
+      "symbol": "EFAS",
+      "price": 14.77,
+      "sma20": 14.45,
+      "sma50": 14.32,
+      "sma100": 14.67,
+      "sma200": 14.69,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:53.548000"
     },
     {
       "symbol": "EFAS",
@@ -5990,6 +7154,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:35.734000"
+    },
+    {
+      "symbol": "EGBN",
+      "price": 25.65,
+      "sma20": 25.7,
+      "sma50": 26.67,
+      "sma100": 25.87,
+      "sma200": 22.88,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.591000"
     },
     {
       "symbol": "EGF",
@@ -6124,6 +7300,18 @@
       "updated": "2026-02-01T20:32:49.513000"
     },
     {
+      "symbol": "EMB",
+      "price": 90.99,
+      "sma20": 90.46,
+      "sma50": 90.5,
+      "sma100": 91.26,
+      "sma200": 90.41,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.625000"
+    },
+    {
       "symbol": "EMCB",
       "price": 66.97,
       "sma20": 66.98,
@@ -6146,6 +7334,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:35.759000"
+    },
+    {
+      "symbol": "EMIF",
+      "price": 21.36,
+      "sma20": 21.15,
+      "sma50": 21.15,
+      "sma100": 21.73,
+      "sma200": 21.84,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.609000"
     },
     {
       "symbol": "EMN",
@@ -6230,6 +7430,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:52.631000"
+    },
+    {
+      "symbol": "ENTG",
+      "price": 107.12,
+      "sma20": 104.14,
+      "sma50": 104.14,
+      "sma100": 105.66,
+      "sma200": 116.09,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.704000"
     },
     {
       "symbol": "ENTG",
@@ -6337,7 +7549,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.737000"
+    },
+    {
+      "symbol": "EQBK",
+      "price": 43.36,
+      "sma20": 43.69,
+      "sma50": 44.31,
+      "sma100": 43.66,
+      "sma200": 39.72,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:35.885000"
+    },
+    {
+      "symbol": "EQIX",
+      "price": 933.6,
+      "sma20": 926.01,
+      "sma50": 940.74,
+      "sma100": 916.43,
+      "sma200": 848.64,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:53.742000"
     },
     {
       "symbol": "EQIX",
@@ -6424,6 +7660,18 @@
       "updated": "2026-02-01T05:45:35.864000"
     },
     {
+      "symbol": "ERIC",
+      "price": 7.87,
+      "sma20": 7.92,
+      "sma50": 8.09,
+      "sma100": 8.02,
+      "sma200": 7.11,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.723000"
+    },
+    {
       "symbol": "ERII",
       "price": 15.29,
       "sma20": 14.64,
@@ -6433,7 +7681,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:35.918000"
+      "updated": "2026-02-02T01:00:53.770000"
     },
     {
       "symbol": "ERII",
@@ -6446,6 +7694,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:53.299000"
+    },
+    {
+      "symbol": "ERII",
+      "price": 15.29,
+      "sma20": 14.64,
+      "sma50": 15.15,
+      "sma100": 16.44,
+      "sma200": 15.46,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:35.918000"
     },
     {
       "symbol": "ERNZ",
@@ -6566,6 +7826,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T21:25:13.802000"
+    },
+    {
+      "symbol": "ETSY",
+      "price": 57.2,
+      "sma20": 54.15,
+      "sma50": 55.29,
+      "sma100": 53.69,
+      "sma200": 57.16,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.854000"
     },
     {
       "symbol": "ETSY",
@@ -6832,6 +8104,18 @@
       "updated": "2026-02-01T05:45:36.077000"
     },
     {
+      "symbol": "EWZS",
+      "price": 11.09,
+      "sma20": 10.33,
+      "sma50": 10.16,
+      "sma100": 11.15,
+      "sma200": 11.95,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:53.929000"
+    },
+    {
       "symbol": "EXC",
       "price": 44.83,
       "sma20": 43.94,
@@ -6866,6 +8150,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:51.107000"
+    },
+    {
+      "symbol": "EXTR",
+      "price": 16.38,
+      "sma20": 16.2,
+      "sma50": 16.93,
+      "sma100": 16.11,
+      "sma200": 14.38,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:53.999000"
     },
     {
       "symbol": "EXTR",
@@ -6925,7 +8221,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:36.176000"
+      "updated": "2026-02-02T01:00:54.028000"
     },
     {
       "symbol": "FAAR",
@@ -6938,6 +8234,30 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T20:32:47.317000"
+    },
+    {
+      "symbol": "FAAR",
+      "price": 28.53,
+      "sma20": 28.58,
+      "sma50": 28.33,
+      "sma100": 28.1,
+      "sma200": 28.31,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:36.176000"
+    },
+    {
+      "symbol": "FAB",
+      "price": 83.64,
+      "sma20": 84.42,
+      "sma50": 84.77,
+      "sma100": 84.8,
+      "sma200": 82.64,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.032000"
     },
     {
       "symbol": "FAB",
@@ -6965,6 +8285,18 @@
     },
     {
       "symbol": "FALN",
+      "price": 27.59,
+      "sma20": 27.48,
+      "sma50": 27.41,
+      "sma100": 27.48,
+      "sma200": 27.1,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:50.750000"
+    },
+    {
+      "symbol": "FALN",
       "price": 27.02,
       "sma20": 27.02,
       "sma50": 26.98,
@@ -6977,15 +8309,15 @@
     },
     {
       "symbol": "FALN",
-      "price": 27.59,
-      "sma20": 27.48,
-      "sma50": 27.41,
-      "sma100": 27.48,
-      "sma200": 27.1,
+      "price": 27.02,
+      "sma20": 27.02,
+      "sma50": 26.98,
+      "sma100": 27.06,
+      "sma200": 26.8,
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:50.750000"
+      "updated": "2026-02-02T01:00:54.003000"
     },
     {
       "symbol": "FAM",
@@ -7010,6 +8342,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:52.732000"
+    },
+    {
+      "symbol": "FAST",
+      "price": 74.78,
+      "sma20": 74.66,
+      "sma50": 76.12,
+      "sma100": 76.11,
+      "sma200": 71.48,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.052000"
     },
     {
       "symbol": "FAST",
@@ -7084,6 +8428,30 @@
       "updated": "2026-02-01T05:45:36.227000"
     },
     {
+      "symbol": "FBRX",
+      "price": 12.0,
+      "sma20": 14.2,
+      "sma50": 18.41,
+      "sma100": 12.2,
+      "sma200": 6.81,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.085000"
+    },
+    {
+      "symbol": "FBZ",
+      "price": 10.17,
+      "sma20": 9.69,
+      "sma50": 9.62,
+      "sma100": 10.31,
+      "sma200": 10.72,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.069000"
+    },
+    {
       "symbol": "FBZ",
       "price": 10.17,
       "sma20": 9.69,
@@ -7120,6 +8488,18 @@
       "updated": "2026-02-01T05:45:36.253000"
     },
     {
+      "symbol": "FCAL",
+      "price": 49.29,
+      "sma20": 49.34,
+      "sma50": 49.57,
+      "sma100": 49.76,
+      "sma200": 49.68,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.131000"
+    },
+    {
       "symbol": "FCBC",
       "price": 33.85,
       "sma20": 33.65,
@@ -7154,6 +8534,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.286000"
+    },
+    {
+      "symbol": "FCEF",
+      "price": 22.22,
+      "sma20": 22.15,
+      "sma50": 22.04,
+      "sma100": 22.08,
+      "sma200": 21.55,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.164000"
     },
     {
       "symbol": "FCNCO",
@@ -7273,6 +8665,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.229000"
+    },
+    {
+      "symbol": "FDTS",
+      "price": 42.15,
+      "sma20": 40.98,
+      "sma50": 40.78,
+      "sma100": 41.49,
+      "sma200": 41.61,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.351000"
     },
     {
@@ -7300,6 +8704,30 @@
       "updated": "2026-02-01T05:45:36.407000"
     },
     {
+      "symbol": "FELE",
+      "price": 99.98,
+      "sma20": 99.82,
+      "sma50": 101.09,
+      "sma100": 102.49,
+      "sma200": 100.9,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.259000"
+    },
+    {
+      "symbol": "FEM",
+      "price": 22.86,
+      "sma20": 22.25,
+      "sma50": 22.35,
+      "sma100": 22.7,
+      "sma200": 23.21,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.263000"
+    },
+    {
       "symbol": "FEM",
       "price": 22.86,
       "sma20": 22.25,
@@ -7321,7 +8749,31 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.250000"
+    },
+    {
+      "symbol": "FEMB",
+      "price": 27.02,
+      "sma20": 26.62,
+      "sma50": 26.58,
+      "sma100": 27.27,
+      "sma200": 27.49,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.391000"
+    },
+    {
+      "symbol": "FEMS",
+      "price": 38.51,
+      "sma20": 37.59,
+      "sma50": 38.1,
+      "sma100": 38.79,
+      "sma200": 39.48,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.230000"
     },
     {
       "symbol": "FEMS",
@@ -7358,6 +8810,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:11.146000"
+    },
+    {
+      "symbol": "FFBW",
+      "price": 14.15,
+      "sma20": 14.17,
+      "sma50": 14.04,
+      "sma100": 13.89,
+      "sma200": 13.38,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.328000"
     },
     {
       "symbol": "FFBW",
@@ -7406,6 +8870,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:36.482000"
+    },
+    {
+      "symbol": "FFNW",
+      "price": 21.34,
+      "sma20": 21.31,
+      "sma50": 21.59,
+      "sma100": 22.06,
+      "sma200": 21.69,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.361000"
     },
     {
       "symbol": "FGBIP",
@@ -7468,6 +8944,30 @@
       "updated": "2026-02-01T05:45:36.523000"
     },
     {
+      "symbol": "FIBK",
+      "price": 32.69,
+      "sma20": 32.71,
+      "sma50": 33.0,
+      "sma100": 32.26,
+      "sma200": 30.1,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.382000"
+    },
+    {
+      "symbol": "FID",
+      "price": 16.6,
+      "sma20": 16.31,
+      "sma50": 16.43,
+      "sma100": 16.85,
+      "sma200": 16.52,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.363000"
+    },
+    {
       "symbol": "FID",
       "price": 16.6,
       "sma20": 16.31,
@@ -7528,6 +9028,18 @@
       "updated": "2026-02-01T05:45:36.545000"
     },
     {
+      "symbol": "FITB",
+      "price": 44.06,
+      "sma20": 44.06,
+      "sma50": 44.43,
+      "sma100": 44.3,
+      "sma200": 41.25,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.396000"
+    },
+    {
       "symbol": "FITBI",
       "price": 25.58,
       "sma20": 25.68,
@@ -7550,6 +9062,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:52.377000"
+    },
+    {
+      "symbol": "FIVN",
+      "price": 40.12,
+      "sma20": 40.42,
+      "sma50": 40.84,
+      "sma100": 36.11,
+      "sma200": 40.44,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.444000"
     },
     {
       "symbol": "FIVN",
@@ -7588,6 +9112,18 @@
       "updated": "2026-02-01T20:32:51.462000"
     },
     {
+      "symbol": "FIXD",
+      "price": 43.35,
+      "sma20": 43.09,
+      "sma50": 43.23,
+      "sma100": 43.8,
+      "sma200": 43.69,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.429000"
+    },
+    {
       "symbol": "FIXT",
       "price": 38.45,
       "sma20": 38.34,
@@ -7610,6 +9146,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.613000"
+    },
+    {
+      "symbol": "FKU",
+      "price": 40.53,
+      "sma20": 39.26,
+      "sma50": 39.0,
+      "sma100": 39.77,
+      "sma200": 39.25,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.492000"
     },
     {
       "symbol": "FLC",
@@ -7646,6 +9194,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:16.166000"
+    },
+    {
+      "symbol": "FLXS",
+      "price": 51.65,
+      "sma20": 52.26,
+      "sma50": 55.25,
+      "sma100": 52.58,
+      "sma200": 44.3,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.495000"
     },
     {
       "symbol": "FLXS",
@@ -7693,7 +9253,31 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.556000"
+    },
+    {
+      "symbol": "FMAO",
+      "price": 26.23,
+      "sma20": 26.85,
+      "sma50": 28.93,
+      "sma100": 28.75,
+      "sma200": 26.05,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:36.704000"
+    },
+    {
+      "symbol": "FMB",
+      "price": 51.2,
+      "sma20": 51.05,
+      "sma50": 51.19,
+      "sma100": 51.39,
+      "sma200": 51.33,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.559000"
     },
     {
       "symbol": "FMB",
@@ -7718,6 +9302,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:36.679000"
+    },
+    {
+      "symbol": "FMBH",
+      "price": 38.63,
+      "sma20": 37.99,
+      "sma50": 38.63,
+      "sma100": 39.05,
+      "sma200": 36.61,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.552000"
     },
     {
       "symbol": "FMBH",
@@ -7757,6 +9353,18 @@
     },
     {
       "symbol": "FMHI",
+      "price": 48.49,
+      "sma20": 48.41,
+      "sma50": 48.52,
+      "sma100": 48.78,
+      "sma200": 48.59,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.527000"
+    },
+    {
+      "symbol": "FMHI",
       "price": 47.95,
       "sma20": 48.03,
       "sma50": 47.96,
@@ -7778,6 +9386,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T21:25:14.187000"
+    },
+    {
+      "symbol": "FMNB",
+      "price": 14.32,
+      "sma20": 13.83,
+      "sma50": 14.34,
+      "sma100": 14.59,
+      "sma200": 13.9,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.589000"
     },
     {
       "symbol": "FMNB",
@@ -7840,6 +9460,18 @@
       "updated": "2026-02-01T05:45:36.726000"
     },
     {
+      "symbol": "FNK",
+      "price": 54.29,
+      "sma20": 54.84,
+      "sma50": 54.97,
+      "sma100": 54.78,
+      "sma200": 53.5,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.585000"
+    },
+    {
       "symbol": "FNLC",
       "price": 25.72,
       "sma20": 25.81,
@@ -7850,6 +9482,30 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:36.770000"
+    },
+    {
+      "symbol": "FNLC",
+      "price": 25.72,
+      "sma20": 25.81,
+      "sma50": 26.81,
+      "sma100": 26.92,
+      "sma200": 25.73,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.622000"
+    },
+    {
+      "symbol": "FNX",
+      "price": 119.92,
+      "sma20": 120.37,
+      "sma50": 120.24,
+      "sma100": 119.23,
+      "sma200": 114.71,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.618000"
     },
     {
       "symbol": "FNX",
@@ -7874,6 +9530,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:13.654000"
+    },
+    {
+      "symbol": "FONR",
+      "price": 16.25,
+      "sma20": 15.83,
+      "sma50": 15.64,
+      "sma100": 15.78,
+      "sma200": 16.17,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.654000"
     },
     {
       "symbol": "FONR",
@@ -7910,6 +9578,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.808000"
+    },
+    {
+      "symbol": "FPA",
+      "price": 29.81,
+      "sma20": 28.99,
+      "sma50": 28.71,
+      "sma100": 29.29,
+      "sma200": 28.59,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.658000"
     },
     {
       "symbol": "FPF",
@@ -7970,6 +9650,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:36.872000"
+    },
+    {
+      "symbol": "FRPH",
+      "price": 31.24,
+      "sma20": 30.76,
+      "sma50": 30.77,
+      "sma100": 30.42,
+      "sma200": 30.69,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.752000"
     },
     {
       "symbol": "FRSH",
@@ -8056,6 +9748,18 @@
       "updated": "2026-02-01T05:45:36.968000"
     },
     {
+      "symbol": "FSZ",
+      "price": 67.89,
+      "sma20": 66.25,
+      "sma50": 65.06,
+      "sma100": 66.58,
+      "sma200": 65.81,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.820000"
+    },
+    {
       "symbol": "FT",
       "price": 8.07,
       "sma20": 8.05,
@@ -8066,6 +9770,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:12.662000"
+    },
+    {
+      "symbol": "FTA",
+      "price": 78.29,
+      "sma20": 78.81,
+      "sma50": 78.8,
+      "sma100": 79.17,
+      "sma200": 77.05,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.818000"
     },
     {
       "symbol": "FTA",
@@ -8090,6 +9806,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:36.957000"
+    },
+    {
+      "symbol": "FTAG",
+      "price": 24.52,
+      "sma20": 24.55,
+      "sma50": 24.18,
+      "sma100": 24.6,
+      "sma200": 24.68,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.817000"
     },
     {
       "symbol": "FTAIM",
@@ -8138,6 +9866,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:37"
+    },
+    {
+      "symbol": "FTCS",
+      "price": 89.4,
+      "sma20": 90.02,
+      "sma50": 89.96,
+      "sma100": 90.52,
+      "sma200": 87.82,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.853000"
     },
     {
       "symbol": "FTDR",
@@ -8201,6 +9941,18 @@
     },
     {
       "symbol": "FTHI",
+      "price": 23.72,
+      "sma20": 23.59,
+      "sma50": 23.62,
+      "sma100": 23.42,
+      "sma200": 22.92,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.850000"
+    },
+    {
+      "symbol": "FTHI",
       "price": 23.98,
       "sma20": 23.82,
       "sma50": 23.67,
@@ -8261,6 +10013,18 @@
     },
     {
       "symbol": "FTSL",
+      "price": 46.27,
+      "sma20": 46.27,
+      "sma50": 46.3,
+      "sma100": 46.23,
+      "sma200": 46.13,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.884000"
+    },
+    {
+      "symbol": "FTSL",
       "price": 45.68,
       "sma20": 45.94,
       "sma50": 45.91,
@@ -8282,6 +10046,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.004000"
+    },
+    {
+      "symbol": "FTSM",
+      "price": 59.89,
+      "sma20": 59.88,
+      "sma50": 59.87,
+      "sma100": 59.91,
+      "sma200": 59.84,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.883000"
     },
     {
       "symbol": "FTSM",
@@ -8332,6 +10108,30 @@
       "updated": "2026-02-01T05:45:37.067000"
     },
     {
+      "symbol": "FTXH",
+      "price": 27.27,
+      "sma20": 27.49,
+      "sma50": 27.5,
+      "sma100": 28.02,
+      "sma200": 27.79,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.919000"
+    },
+    {
+      "symbol": "FTXL",
+      "price": 89.32,
+      "sma20": 89.73,
+      "sma50": 89.47,
+      "sma100": 90.52,
+      "sma200": 91.83,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.917000"
+    },
+    {
       "symbol": "FTXL",
       "price": 89.32,
       "sma20": 89.73,
@@ -8354,6 +10154,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:37.056000"
+    },
+    {
+      "symbol": "FTXN",
+      "price": 29.88,
+      "sma20": 30.28,
+      "sma50": 30.0,
+      "sma100": 30.05,
+      "sma200": 30.44,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:54.916000"
+    },
+    {
+      "symbol": "FTXR",
+      "price": 34.32,
+      "sma20": 35.1,
+      "sma50": 35.31,
+      "sma100": 34.23,
+      "sma200": 32.46,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.952000"
     },
     {
       "symbol": "FTXR",
@@ -8401,6 +10225,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:54.982000"
+    },
+    {
+      "symbol": "FVCB",
+      "price": 12.05,
+      "sma20": 12.2,
+      "sma50": 12.69,
+      "sma100": 12.9,
+      "sma200": 12.05,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:37.122000"
     },
     {
@@ -8425,7 +10261,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:54.987000"
+    },
+    {
+      "symbol": "FYC",
+      "price": 79.28,
+      "sma20": 79.56,
+      "sma50": 80.15,
+      "sma100": 78.14,
+      "sma200": 72.55,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.135000"
+    },
+    {
+      "symbol": "FYT",
+      "price": 54.66,
+      "sma20": 55.5,
+      "sma50": 56.42,
+      "sma100": 56.11,
+      "sma200": 54.63,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.051000"
     },
     {
       "symbol": "FYT",
@@ -8450,6 +10310,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:37.168000"
+    },
+    {
+      "symbol": "FYX",
+      "price": 101.79,
+      "sma20": 102.76,
+      "sma50": 104.02,
+      "sma100": 102.44,
+      "sma200": 97.53,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.049000"
     },
     {
       "symbol": "G",
@@ -8570,6 +10442,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T21:25:12.724000"
+    },
+    {
+      "symbol": "GBCI",
+      "price": 49.83,
+      "sma20": 50.35,
+      "sma50": 52.04,
+      "sma100": 50.84,
+      "sma200": 45.23,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.082000"
     },
     {
       "symbol": "GBCI",
@@ -8821,6 +10705,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.183000"
+    },
+    {
+      "symbol": "GIII",
+      "price": 29.72,
+      "sma20": 30.88,
+      "sma50": 31.86,
+      "sma100": 31.31,
+      "sma200": 29.3,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:37.330000"
     },
     {
@@ -8929,6 +10825,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:55.213000"
+    },
+    {
+      "symbol": "GLDI",
+      "price": 158.29,
+      "sma20": 158.08,
+      "sma50": 155.9,
+      "sma100": 156.02,
+      "sma200": 153.21,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:37.333000"
     },
     {
@@ -8969,15 +10877,15 @@
     },
     {
       "symbol": "GLPI",
-      "price": 45.36,
-      "sma20": 45.13,
-      "sma50": 44.22,
-      "sma100": 44.97,
-      "sma200": 46.04,
+      "price": 48.61,
+      "sma20": 48.61,
+      "sma50": 48.76,
+      "sma100": 49.68,
+      "sma200": 48.08,
       "longTerm": "long_bull_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:47.753000"
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.248000"
     },
     {
       "symbol": "GLPI",
@@ -8990,6 +10898,30 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.396000"
+    },
+    {
+      "symbol": "GLPI",
+      "price": 45.36,
+      "sma20": 45.13,
+      "sma50": 44.22,
+      "sma100": 44.97,
+      "sma200": 46.04,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:47.753000"
+    },
+    {
+      "symbol": "GLRE",
+      "price": 13.52,
+      "sma20": 13.66,
+      "sma50": 14.06,
+      "sma100": 14.03,
+      "sma200": 13.49,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.246000"
     },
     {
       "symbol": "GLRE",
@@ -9049,6 +10981,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.217000"
+    },
+    {
+      "symbol": "GNMA",
+      "price": 43.33,
+      "sma20": 43.11,
+      "sma50": 43.16,
+      "sma100": 43.61,
+      "sma200": 43.5,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.365000"
     },
     {
@@ -9088,6 +11032,18 @@
       "updated": "2026-02-01T05:45:37.398000"
     },
     {
+      "symbol": "GOGO",
+      "price": 8.38,
+      "sma20": 8.27,
+      "sma50": 7.95,
+      "sma100": 7.56,
+      "sma200": 8.29,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:55.250000"
+    },
+    {
       "symbol": "GOLD",
       "price": 17.94,
       "sma20": 16.65,
@@ -9100,16 +11056,16 @@
       "updated": "2026-02-01T05:45:37.462000"
     },
     {
-      "symbol": "GOOD",
-      "price": 16.21,
-      "sma20": 16.2,
-      "sma50": 16.42,
-      "sma100": 16.39,
-      "sma200": 15.37,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:37.431000"
+      "symbol": "GOLD",
+      "price": 17.94,
+      "sma20": 16.65,
+      "sma50": 16.49,
+      "sma100": 18.0,
+      "sma200": 17.87,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:55.314000"
     },
     {
       "symbol": "GOOD",
@@ -9122,6 +11078,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:48.859000"
+    },
+    {
+      "symbol": "GOOD",
+      "price": 16.21,
+      "sma20": 16.2,
+      "sma50": 16.42,
+      "sma100": 16.39,
+      "sma200": 15.37,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.313000"
+    },
+    {
+      "symbol": "GOOD",
+      "price": 16.21,
+      "sma20": 16.2,
+      "sma50": 16.42,
+      "sma100": 16.39,
+      "sma200": 15.37,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:37.431000"
     },
     {
       "symbol": "GOODN",
@@ -9253,6 +11233,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.316000"
+    },
+    {
+      "symbol": "GRID",
+      "price": 122.92,
+      "sma20": 122.1,
+      "sma50": 122.6,
+      "sma100": 123.89,
+      "sma200": 120.58,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.465000"
     },
     {
@@ -9268,6 +11260,18 @@
       "updated": "2026-02-01T05:45:37.517000"
     },
     {
+      "symbol": "GRVY",
+      "price": 62.89,
+      "sma20": 61.87,
+      "sma50": 63.19,
+      "sma100": 62.88,
+      "sma200": 68.1,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.378000"
+    },
+    {
       "symbol": "GRX",
       "price": 9.62,
       "sma20": 9.64,
@@ -9278,6 +11282,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:10.797000"
+    },
+    {
+      "symbol": "GSBC",
+      "price": 60.88,
+      "sma20": 62.42,
+      "sma50": 62.1,
+      "sma100": 60.99,
+      "sma200": 59.61,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:47.790000"
     },
     {
       "symbol": "GSBC",
@@ -9293,15 +11309,15 @@
     },
     {
       "symbol": "GSBC",
-      "price": 60.88,
-      "sma20": 62.42,
-      "sma50": 62.1,
-      "sma100": 60.99,
-      "sma200": 59.61,
+      "price": 59.73,
+      "sma20": 59.71,
+      "sma50": 61.24,
+      "sma100": 60.07,
+      "sma200": 57.54,
       "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:47.790000"
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.349000"
     },
     {
       "symbol": "GT",
@@ -9398,6 +11414,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:37.590000"
+    },
+    {
+      "symbol": "GYRO",
+      "price": 9.11,
+      "sma20": 9.16,
+      "sma50": 9.31,
+      "sma100": 9.15,
+      "sma200": 8.58,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.442000"
     },
     {
       "symbol": "H",
@@ -9541,6 +11569,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.540000"
+    },
+    {
+      "symbol": "HEWG",
+      "price": 33.01,
+      "sma20": 33.92,
+      "sma50": 34.69,
+      "sma100": 34.86,
+      "sma200": 33.01,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:37.680000"
     },
     {
@@ -9578,6 +11618,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T21:25:14.668000"
+    },
+    {
+      "symbol": "HFWA",
+      "price": 24.25,
+      "sma20": 25.01,
+      "sma50": 25.09,
+      "sma100": 24.09,
+      "sma200": 21.73,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.574000"
     },
     {
       "symbol": "HFWA",
@@ -9737,18 +11789,6 @@
     },
     {
       "symbol": "HNRG",
-      "price": 10.91,
-      "sma20": 11.43,
-      "sma50": 11.79,
-      "sma100": 10.85,
-      "sma200": 8.78,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_neutral",
-      "pattern": "Testing 100 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:37.779000"
-    },
-    {
-      "symbol": "HNRG",
       "price": 18.21,
       "sma20": 19.38,
       "sma50": 19.82,
@@ -9758,6 +11798,30 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T20:32:48.709000"
+    },
+    {
+      "symbol": "HNRG",
+      "price": 10.91,
+      "sma20": 11.43,
+      "sma50": 11.79,
+      "sma100": 10.85,
+      "sma200": 8.78,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.638000"
+    },
+    {
+      "symbol": "HNRG",
+      "price": 10.91,
+      "sma20": 11.43,
+      "sma50": 11.79,
+      "sma100": 10.85,
+      "sma200": 8.78,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:37.779000"
     },
     {
       "symbol": "HOMB",
@@ -9784,6 +11848,18 @@
       "updated": "2026-02-01T05:45:37.792000"
     },
     {
+      "symbol": "HONE",
+      "price": 12.04,
+      "sma20": 11.92,
+      "sma50": 12.2,
+      "sma100": 12.48,
+      "sma200": 11.86,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.642000"
+    },
+    {
       "symbol": "HOVNP",
       "price": 20.35,
       "sma20": 20.34,
@@ -9806,6 +11882,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.821000"
+    },
+    {
+      "symbol": "HOVNP",
+      "price": 17.43,
+      "sma20": 17.23,
+      "sma50": 17.51,
+      "sma100": 17.63,
+      "sma200": 17.82,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.701000"
     },
     {
       "symbol": "HPF",
@@ -9841,6 +11929,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.702000"
+    },
+    {
+      "symbol": "HPK",
+      "price": 14.48,
+      "sma20": 14.23,
+      "sma50": 14.41,
+      "sma100": 14.41,
+      "sma200": 14.68,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:37.842000"
     },
     {
@@ -9854,6 +11954,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
       "updated": "2026-02-01T21:25:14.754000"
+    },
+    {
+      "symbol": "HQI",
+      "price": 14.19,
+      "sma20": 13.16,
+      "sma50": 13.82,
+      "sma100": 13.95,
+      "sma200": 13.44,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.675000"
     },
     {
       "symbol": "HQI",
@@ -9926,6 +12038,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:37.875000"
+    },
+    {
+      "symbol": "HRZN",
+      "price": 9.86,
+      "sma20": 9.41,
+      "sma50": 9.26,
+      "sma100": 9.69,
+      "sma200": 10.67,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:55.735000"
     },
     {
       "symbol": "HSPO",
@@ -10072,6 +12196,18 @@
       "updated": "2026-02-01T05:45:38.008000"
     },
     {
+      "symbol": "HWKN",
+      "price": 110.39,
+      "sma20": 113.36,
+      "sma50": 121.1,
+      "sma100": 122.34,
+      "sma200": 109.05,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.867000"
+    },
+    {
       "symbol": "HYAC",
       "price": 11.38,
       "sma20": 11.39,
@@ -10133,15 +12269,15 @@
     },
     {
       "symbol": "HYLS",
-      "price": 41.78,
-      "sma20": 41.9,
-      "sma50": 41.81,
-      "sma100": 41.91,
-      "sma200": 41.69,
+      "price": 41.73,
+      "sma20": 41.63,
+      "sma50": 41.62,
+      "sma100": 41.72,
+      "sma200": 41.32,
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:51.104000"
+      "updated": "2026-02-02T01:00:55.841000"
     },
     {
       "symbol": "HYLS",
@@ -10156,6 +12292,18 @@
       "updated": "2026-02-01T05:45:37.990000"
     },
     {
+      "symbol": "HYLS",
+      "price": 41.78,
+      "sma20": 41.9,
+      "sma50": 41.81,
+      "sma100": 41.91,
+      "sma200": 41.69,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:51.104000"
+    },
+    {
       "symbol": "HYTR",
       "price": 21.84,
       "sma20": 21.82,
@@ -10166,6 +12314,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:14.063000"
+    },
+    {
+      "symbol": "HYXF",
+      "price": 46.77,
+      "sma20": 46.72,
+      "sma50": 46.63,
+      "sma100": 46.75,
+      "sma200": 46.13,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:38.048000"
     },
     {
       "symbol": "HYXF",
@@ -10189,7 +12349,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:38.048000"
+      "updated": "2026-02-02T01:00:55.901000"
     },
     {
       "symbol": "HYZD",
@@ -10225,7 +12385,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.899000"
+    },
+    {
+      "symbol": "IAC",
+      "price": 47.02,
+      "sma20": 42.86,
+      "sma50": 43.94,
+      "sma100": 47.84,
+      "sma200": 48.92,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:38.018000"
+    },
+    {
+      "symbol": "IART",
+      "price": 24.18,
+      "sma20": 25.42,
+      "sma50": 24.07,
+      "sma100": 22.07,
+      "sma200": 24.63,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:55.900000"
     },
     {
       "symbol": "IART",
@@ -10250,6 +12434,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:55.097000"
+    },
+    {
+      "symbol": "IBCP",
+      "price": 35.11,
+      "sma20": 35.75,
+      "sma50": 35.97,
+      "sma100": 35.17,
+      "sma200": 31.55,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:55.934000"
     },
     {
       "symbol": "IBCP",
@@ -10313,6 +12509,18 @@
     },
     {
       "symbol": "IBOC",
+      "price": 64.74,
+      "sma20": 66.19,
+      "sma50": 67.07,
+      "sma100": 65.49,
+      "sma200": 62.07,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:38.074000"
+    },
+    {
+      "symbol": "IBOC",
       "price": 68.34,
       "sma20": 68.88,
       "sma50": 68.41,
@@ -10333,7 +12541,7 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:38.074000"
+      "updated": "2026-02-02T01:00:55.933000"
     },
     {
       "symbol": "IBTE",
@@ -10482,6 +12690,18 @@
     {
       "symbol": "IBTX",
       "price": 60.67,
+      "sma20": 63.69,
+      "sma50": 62.93,
+      "sma100": 59.93,
+      "sma200": 52.72,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:55.437000"
+    },
+    {
+      "symbol": "IBTX",
+      "price": 60.67,
       "sma20": 64.35,
       "sma50": 62.94,
       "sma100": 59.6,
@@ -10494,14 +12714,14 @@
     {
       "symbol": "IBTX",
       "price": 60.67,
-      "sma20": 63.69,
-      "sma50": 62.93,
-      "sma100": 59.93,
-      "sma200": 52.72,
+      "sma20": 64.35,
+      "sma50": 62.94,
+      "sma100": 59.6,
+      "sma200": 52.14,
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:55.437000"
+      "updated": "2026-02-02T01:00:55.906000"
     },
     {
       "symbol": "ICCC",
@@ -10540,6 +12760,18 @@
       "updated": "2026-02-01T20:32:55.656000"
     },
     {
+      "symbol": "ICCH",
+      "price": 23.1,
+      "sma20": 23.17,
+      "sma50": 23.23,
+      "sma100": 23.13,
+      "sma200": 21.47,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:55.964000"
+    },
+    {
       "symbol": "IDA",
       "price": 132.23,
       "sma20": 130.64,
@@ -10562,6 +12794,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T20:32:48.558000"
+    },
+    {
+      "symbol": "IDXX",
+      "price": 444.53,
+      "sma20": 441.86,
+      "sma50": 431.83,
+      "sma100": 447.29,
+      "sma200": 469.54,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.030000"
     },
     {
       "symbol": "IDXX",
@@ -10597,7 +12841,31 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.005000"
+    },
+    {
+      "symbol": "IEF",
+      "price": 93.32,
+      "sma20": 92.87,
+      "sma50": 93.13,
+      "sma100": 94.48,
+      "sma200": 94.48,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:38.154000"
+    },
+    {
+      "symbol": "IEI",
+      "price": 116.04,
+      "sma20": 115.85,
+      "sma50": 115.89,
+      "sma100": 116.83,
+      "sma200": 116.47,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.066000"
     },
     {
       "symbol": "IEI",
@@ -10648,6 +12916,18 @@
       "updated": "2026-02-01T05:45:38.187000"
     },
     {
+      "symbol": "IEUS",
+      "price": 57.93,
+      "sma20": 55.79,
+      "sma50": 55.0,
+      "sma100": 56.46,
+      "sma200": 57.03,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.038000"
+    },
+    {
       "symbol": "IFF",
       "price": 69.6,
       "sma20": 70.2,
@@ -10670,6 +12950,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:38.215000"
+    },
+    {
+      "symbol": "IFV",
+      "price": 19.93,
+      "sma20": 19.45,
+      "sma50": 19.45,
+      "sma100": 19.88,
+      "sma200": 19.87,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.096000"
     },
     {
       "symbol": "IGA",
@@ -10708,6 +13000,18 @@
       "updated": "2026-02-01T05:45:38.237000"
     },
     {
+      "symbol": "IGF",
+      "price": 54.16,
+      "sma20": 53.9,
+      "sma50": 53.61,
+      "sma100": 53.93,
+      "sma200": 51.66,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.096000"
+    },
+    {
       "symbol": "IGI",
       "price": 16.44,
       "sma20": 16.45,
@@ -10718,6 +13022,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:15.658000"
+    },
+    {
+      "symbol": "IGIB",
+      "price": 51.99,
+      "sma20": 51.75,
+      "sma50": 51.84,
+      "sma100": 52.34,
+      "sma200": 52.0,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.071000"
     },
     {
       "symbol": "IGIB",
@@ -10766,6 +13082,30 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:52.453000"
+    },
+    {
+      "symbol": "IGOV",
+      "price": 39.23,
+      "sma20": 38.63,
+      "sma50": 38.85,
+      "sma100": 39.73,
+      "sma200": 39.67,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.130000"
+    },
+    {
+      "symbol": "IGSB",
+      "price": 51.96,
+      "sma20": 51.89,
+      "sma50": 51.85,
+      "sma100": 52.03,
+      "sma200": 51.73,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.130000"
     },
     {
       "symbol": "IGSB",
@@ -10840,6 +13180,18 @@
       "updated": "2026-02-01T05:45:38.253000"
     },
     {
+      "symbol": "IIIN",
+      "price": 31.18,
+      "sma20": 28.86,
+      "sma50": 28.4,
+      "sma100": 29.03,
+      "sma200": 30.66,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.104000"
+    },
+    {
       "symbol": "IIM",
       "price": 12.2,
       "sma20": 12.37,
@@ -10862,6 +13214,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:38.281000"
+    },
+    {
+      "symbol": "IJT",
+      "price": 139.36,
+      "sma20": 140.31,
+      "sma50": 141.16,
+      "sma100": 140.53,
+      "sma200": 135.6,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.163000"
     },
     {
       "symbol": "IKNA",
@@ -10889,6 +13253,18 @@
     },
     {
       "symbol": "IMMR",
+      "price": 8.62,
+      "sma20": 8.45,
+      "sma50": 8.74,
+      "sma100": 8.68,
+      "sma200": 9.15,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:38.314000"
+    },
+    {
+      "symbol": "IMMR",
       "price": 6.75,
       "sma20": 6.59,
       "sma50": 6.61,
@@ -10909,7 +13285,19 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:38.314000"
+      "updated": "2026-02-02T01:00:56.196000"
+    },
+    {
+      "symbol": "IMOS",
+      "price": 20.52,
+      "sma20": 19.74,
+      "sma50": 19.31,
+      "sma100": 20.68,
+      "sma200": 23.35,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.196000"
     },
     {
       "symbol": "IMOS",
@@ -10972,6 +13360,18 @@
       "updated": "2026-02-01T05:45:38.347000"
     },
     {
+      "symbol": "INCY",
+      "price": 70.42,
+      "sma20": 72.25,
+      "sma50": 71.88,
+      "sma100": 70.78,
+      "sma200": 65.4,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.229000"
+    },
+    {
       "symbol": "INFA",
       "price": 24.79,
       "sma20": 24.84,
@@ -10985,15 +13385,15 @@
     },
     {
       "symbol": "INFN",
-      "price": 6.64,
-      "sma20": 6.64,
+      "price": 6.65,
+      "sma20": 6.62,
       "sma50": 6.61,
-      "sma100": 6.65,
-      "sma200": 6.28,
+      "sma100": 6.66,
+      "sma200": 6.13,
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:55.271000"
+      "updated": "2026-02-02T01:00:56.259000"
     },
     {
       "symbol": "INFN",
@@ -11006,6 +13406,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:38.405000"
+    },
+    {
+      "symbol": "INFN",
+      "price": 6.64,
+      "sma20": 6.64,
+      "sma50": 6.61,
+      "sma100": 6.65,
+      "sma200": 6.28,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:55.271000"
     },
     {
       "symbol": "INFU",
@@ -11081,15 +13493,15 @@
     },
     {
       "symbol": "INVA",
-      "price": 19.55,
-      "sma20": 19.65,
-      "sma50": 20.32,
-      "sma100": 19.52,
-      "sma200": 19.51,
+      "price": 18.08,
+      "sma20": 18.48,
+      "sma50": 18.34,
+      "sma100": 18.97,
+      "sma200": 17.89,
       "longTerm": "long_bull_test",
-      "midTerm": "mid_neutral",
-      "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T20:32:48.351000"
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:38.471000"
     },
     {
       "symbol": "INVA",
@@ -11101,7 +13513,19 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:38.471000"
+      "updated": "2026-02-02T01:00:56.326000"
+    },
+    {
+      "symbol": "INVA",
+      "price": 19.55,
+      "sma20": 19.65,
+      "sma50": 20.32,
+      "sma100": 19.52,
+      "sma200": 19.51,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T20:32:48.351000"
     },
     {
       "symbol": "IOR",
@@ -11189,18 +13613,6 @@
     },
     {
       "symbol": "ISHP",
-      "price": 39.45,
-      "sma20": 40.0,
-      "sma50": 39.38,
-      "sma100": 40.31,
-      "sma200": 39.64,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:14.939000"
-    },
-    {
-      "symbol": "ISHP",
       "price": 39.8,
       "sma20": 39.95,
       "sma50": 39.37,
@@ -11210,6 +13622,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:53.361000"
+    },
+    {
+      "symbol": "ISHP",
+      "price": 39.45,
+      "sma20": 40.0,
+      "sma50": 39.38,
+      "sma100": 40.31,
+      "sma200": 39.64,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T21:25:14.939000"
     },
     {
       "symbol": "ISRG",
@@ -11234,6 +13658,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:54.961000"
+    },
+    {
+      "symbol": "ISTB",
+      "price": 47.96,
+      "sma20": 47.92,
+      "sma50": 47.87,
+      "sma100": 48.05,
+      "sma200": 47.8,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.458000"
     },
     {
       "symbol": "ISTB",
@@ -11284,6 +13720,18 @@
       "updated": "2026-02-01T05:45:38.668000"
     },
     {
+      "symbol": "IUSB",
+      "price": 45.58,
+      "sma20": 45.39,
+      "sma50": 45.47,
+      "sma100": 45.9,
+      "sma200": 45.73,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.523000"
+    },
+    {
       "symbol": "IUSV",
       "price": 95.39,
       "sma20": 95.17,
@@ -11294,6 +13742,30 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:38.665000"
+    },
+    {
+      "symbol": "IUSV",
+      "price": 95.39,
+      "sma20": 95.17,
+      "sma50": 95.25,
+      "sma100": 95.59,
+      "sma200": 92.56,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.526000"
+    },
+    {
+      "symbol": "IXUS",
+      "price": 70.67,
+      "sma20": 68.62,
+      "sma50": 68.08,
+      "sma100": 69.29,
+      "sma200": 68.76,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.495000"
     },
     {
       "symbol": "IXUS",
@@ -11320,6 +13792,18 @@
       "updated": "2026-02-01T05:45:38.675000"
     },
     {
+      "symbol": "JBHT",
+      "price": 169.98,
+      "sma20": 171.1,
+      "sma50": 176.03,
+      "sma100": 176.36,
+      "sma200": 171.55,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.528000"
+    },
+    {
       "symbol": "JBK",
       "price": 26.05,
       "sma20": 25.79,
@@ -11342,6 +13826,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:38.733000"
+    },
+    {
+      "symbol": "JBLU",
+      "price": 6.78,
+      "sma20": 6.89,
+      "sma50": 7.02,
+      "sma100": 6.77,
+      "sma200": 6.29,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.609000"
     },
     {
       "symbol": "JBND",
@@ -11605,6 +14101,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.611000"
+    },
+    {
+      "symbol": "JSMD",
+      "price": 76.46,
+      "sma20": 77.48,
+      "sma50": 78.07,
+      "sma100": 76.11,
+      "sma200": 71.95,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:38.737000"
     },
     {
@@ -11618,6 +14126,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:38.799000"
+    },
+    {
+      "symbol": "JSML",
+      "price": 68.24,
+      "sma20": 68.82,
+      "sma50": 68.89,
+      "sma100": 67.68,
+      "sma200": 63.84,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:56.675000"
     },
     {
       "symbol": "JTEK",
@@ -11666,6 +14186,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:38.803000"
+    },
+    {
+      "symbol": "KBWP",
+      "price": 113.23,
+      "sma20": 114.46,
+      "sma50": 116.79,
+      "sma100": 117.05,
+      "sma200": 111.52,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.677000"
     },
     {
       "symbol": "KBWP",
@@ -11800,6 +14332,18 @@
       "updated": "2026-02-01T05:45:38.964000"
     },
     {
+      "symbol": "KNSL",
+      "price": 449.34,
+      "sma20": 454.73,
+      "sma50": 467.03,
+      "sma100": 464.06,
+      "sma200": 441.43,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.840000"
+    },
+    {
       "symbol": "KNTK",
       "price": 40.91,
       "sma20": 38.16,
@@ -11848,6 +14392,18 @@
       "updated": "2026-02-01T05:45:38.940000"
     },
     {
+      "symbol": "KOSS",
+      "price": 6.56,
+      "sma20": 6.43,
+      "sma50": 7.01,
+      "sma100": 7.09,
+      "sma200": 6.5,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.838000"
+    },
+    {
       "symbol": "KQQQ",
       "price": 27.95,
       "sma20": 28.05,
@@ -11882,6 +14438,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:38.962000"
+    },
+    {
+      "symbol": "KRMA",
+      "price": 40.35,
+      "sma20": 40.21,
+      "sma50": 40.07,
+      "sma100": 39.67,
+      "sma200": 38.17,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.843000"
     },
     {
       "symbol": "KRMA",
@@ -12004,6 +14572,18 @@
       "updated": "2026-02-01T05:45:38.997000"
     },
     {
+      "symbol": "KTOS",
+      "price": 27.16,
+      "sma20": 32.96,
+      "sma50": 29.86,
+      "sma100": 27.14,
+      "sma200": 23.77,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.876000"
+    },
+    {
       "symbol": "KTRA",
       "price": 7.54,
       "sma20": 6.7,
@@ -12062,6 +14642,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.063000"
+    },
+    {
+      "symbol": "LAMR",
+      "price": 130.04,
+      "sma20": 126.5,
+      "sma50": 126.33,
+      "sma100": 129.38,
+      "sma200": 123.67,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:56.939000"
     },
     {
       "symbol": "LAMR",
@@ -12196,6 +14788,18 @@
       "updated": "2026-02-01T05:45:39.093000"
     },
     {
+      "symbol": "LCNB",
+      "price": 15.43,
+      "sma20": 15.34,
+      "sma50": 15.77,
+      "sma100": 15.71,
+      "sma200": 15.06,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.972000"
+    },
+    {
       "symbol": "LDOS",
       "price": 188.28,
       "sma20": 192.23,
@@ -12290,6 +14894,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 200 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:39.096000"
+    },
+    {
+      "symbol": "LFUS",
+      "price": 246.87,
+      "sma20": 235.96,
+      "sma50": 239.52,
+      "sma100": 247.13,
+      "sma200": 249.84,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:56.972000"
     },
     {
       "symbol": "LGCF",
@@ -12397,6 +15013,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.104000"
+    },
+    {
+      "symbol": "LKFN",
+      "price": 67.38,
+      "sma20": 68.12,
+      "sma50": 69.84,
+      "sma100": 68.6,
+      "sma200": 65.6,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:39.228000"
     },
     {
@@ -12412,6 +15040,18 @@
       "updated": "2026-02-01T05:45:39.200000"
     },
     {
+      "symbol": "LKOR",
+      "price": 42.44,
+      "sma20": 42.15,
+      "sma50": 42.53,
+      "sma100": 43.43,
+      "sma200": 43.3,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.098000"
+    },
+    {
       "symbol": "LKQ",
       "price": 39.11,
       "sma20": 38.07,
@@ -12424,6 +15064,18 @@
       "updated": "2026-02-01T05:45:39.224000"
     },
     {
+      "symbol": "LKQ",
+      "price": 39.11,
+      "sma20": 38.07,
+      "sma50": 37.86,
+      "sma100": 38.36,
+      "sma200": 40.63,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.102000"
+    },
+    {
       "symbol": "LLYVA",
       "price": 83.97,
       "sma20": 81.75,
@@ -12434,6 +15086,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:51.600000"
+    },
+    {
+      "symbol": "LMBS",
+      "price": 48.87,
+      "sma20": 48.7,
+      "sma50": 48.72,
+      "sma100": 48.88,
+      "sma200": 48.63,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:39.261000"
     },
     {
       "symbol": "LMBS",
@@ -12457,7 +15121,19 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:39.261000"
+      "updated": "2026-02-02T01:00:57.137000"
+    },
+    {
+      "symbol": "LMNR",
+      "price": 23.07,
+      "sma20": 22.89,
+      "sma50": 24.65,
+      "sma100": 25.77,
+      "sma200": 23.4,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.131000"
     },
     {
       "symbol": "LMNR",
@@ -12533,6 +15209,18 @@
     },
     {
       "symbol": "LOCO",
+      "price": 10.56,
+      "sma20": 10.84,
+      "sma50": 10.89,
+      "sma100": 10.38,
+      "sma200": 10.32,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-01T20:32:50.055000"
+    },
+    {
+      "symbol": "LOCO",
       "price": 12.36,
       "sma20": 11.95,
       "sma50": 11.97,
@@ -12545,15 +15233,15 @@
     },
     {
       "symbol": "LOCO",
-      "price": 10.56,
-      "sma20": 10.84,
-      "sma50": 10.89,
-      "sma100": 10.38,
-      "sma200": 10.32,
+      "price": 12.36,
+      "sma20": 11.95,
+      "sma50": 11.97,
+      "sma100": 12.53,
+      "sma200": 11.79,
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
-      "updated": "2026-02-01T20:32:50.055000"
+      "updated": "2026-02-02T01:00:57.164000"
     },
     {
       "symbol": "LOGC",
@@ -12662,6 +15350,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:39.360000"
+    },
+    {
+      "symbol": "LVHD",
+      "price": 39.6,
+      "sma20": 39.1,
+      "sma50": 39.22,
+      "sma100": 39.81,
+      "sma200": 38.4,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.235000"
     },
     {
       "symbol": "LVS",
@@ -12821,6 +15521,18 @@
     },
     {
       "symbol": "MBB",
+      "price": 92.43,
+      "sma20": 92.0,
+      "sma50": 92.16,
+      "sma100": 93.13,
+      "sma200": 92.82,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.268000"
+    },
+    {
+      "symbol": "MBB",
       "price": 95.79,
       "sma20": 95.51,
       "sma50": 95.38,
@@ -12902,6 +15614,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:54.281000"
+    },
+    {
+      "symbol": "MBSD",
+      "price": 20.42,
+      "sma20": 20.33,
+      "sma50": 20.33,
+      "sma100": 20.52,
+      "sma200": 20.47,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.332000"
     },
     {
       "symbol": "MBSD",
@@ -13034,6 +15758,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T20:32:50.610000"
+    },
+    {
+      "symbol": "MDIV",
+      "price": 16.51,
+      "sma20": 16.45,
+      "sma50": 16.41,
+      "sma100": 16.5,
+      "sma200": 16.2,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.333000"
     },
     {
       "symbol": "MDIV",
@@ -15529,6 +18265,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.432000"
+    },
+    {
+      "symbol": "PDBC",
+      "price": 13.63,
+      "sma20": 13.48,
+      "sma50": 13.36,
+      "sma100": 13.47,
+      "sma200": 13.65,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.555000"
     },
     {
@@ -15664,6 +18412,18 @@
       "updated": "2026-02-01T05:45:39.588000"
     },
     {
+      "symbol": "PEY",
+      "price": 21.74,
+      "sma20": 21.75,
+      "sma50": 21.79,
+      "sma100": 21.83,
+      "sma200": 21.11,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.464000"
+    },
+    {
       "symbol": "PFD",
       "price": 11.81,
       "sma20": 11.86,
@@ -15674,6 +18434,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:13.505000"
+    },
+    {
+      "symbol": "PFF",
+      "price": 31.69,
+      "sma20": 31.63,
+      "sma50": 31.18,
+      "sma100": 31.38,
+      "sma200": 31.03,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:47.330000"
     },
     {
       "symbol": "PFF",
@@ -15689,15 +18461,15 @@
     },
     {
       "symbol": "PFF",
-      "price": 31.69,
-      "sma20": 31.63,
-      "sma50": 31.18,
-      "sma100": 31.38,
-      "sma200": 31.03,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:47.330000"
+      "price": 31.8,
+      "sma20": 31.82,
+      "sma50": 31.92,
+      "sma100": 32.5,
+      "sma200": 32.08,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.465000"
     },
     {
       "symbol": "PFGC",
@@ -15853,6 +18625,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.498000"
+    },
+    {
+      "symbol": "PHO",
+      "price": 67.21,
+      "sma20": 67.91,
+      "sma50": 68.21,
+      "sma100": 69.08,
+      "sma200": 67.81,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:39.620000"
     },
     {
@@ -15877,6 +18661,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.530000"
+    },
+    {
+      "symbol": "PID",
+      "price": 19.19,
+      "sma20": 18.95,
+      "sma50": 18.85,
+      "sma100": 19.18,
+      "sma200": 18.84,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.654000"
     },
     {
@@ -15890,6 +18686,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.654000"
+    },
+    {
+      "symbol": "PIO",
+      "price": 41.26,
+      "sma20": 40.79,
+      "sma50": 40.49,
+      "sma100": 41.09,
+      "sma200": 41.19,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.531000"
     },
     {
       "symbol": "PIPR",
@@ -15937,6 +18745,18 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.563000"
+    },
+    {
+      "symbol": "PKW",
+      "price": 118.68,
+      "sma20": 119.43,
+      "sma50": 119.15,
+      "sma100": 117.75,
+      "sma200": 111.58,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.687000"
     },
     {
@@ -15953,18 +18773,6 @@
     },
     {
       "symbol": "PLMR",
-      "price": 121.87,
-      "sma20": 130.06,
-      "sma50": 127.61,
-      "sma100": 122.47,
-      "sma200": 133.81,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:51.095000"
-    },
-    {
-      "symbol": "PLMR",
       "price": 123.59,
       "sma20": 128.13,
       "sma50": 127.17,
@@ -15974,6 +18782,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T22:36:10.512000"
+    },
+    {
+      "symbol": "PLMR",
+      "price": 121.87,
+      "sma20": 130.06,
+      "sma50": 127.61,
+      "sma100": 122.47,
+      "sma200": 133.81,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:51.095000"
     },
     {
       "symbol": "PLYA",
@@ -16204,6 +19024,18 @@
       "updated": "2026-02-01T05:45:39.690000"
     },
     {
+      "symbol": "PRFZ",
+      "price": 42.94,
+      "sma20": 42.88,
+      "sma50": 43.09,
+      "sma100": 42.58,
+      "sma200": 40.71,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.565000"
+    },
+    {
       "symbol": "PRH",
       "price": 25.16,
       "sma20": 25.04,
@@ -16313,18 +19145,6 @@
     },
     {
       "symbol": "PSCC",
-      "price": 37.12,
-      "sma20": 37.6,
-      "sma50": 38.43,
-      "sma100": 38.04,
-      "sma200": 37.14,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_neutral",
-      "pattern": "Testing 200 SMA Support | Neutral",
-      "updated": "2026-02-01T05:45:39.720000"
-    },
-    {
-      "symbol": "PSCC",
       "price": 33.04,
       "sma20": 32.02,
       "sma50": 31.77,
@@ -16334,6 +19154,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:50.397000"
+    },
+    {
+      "symbol": "PSCC",
+      "price": 37.12,
+      "sma20": 37.6,
+      "sma50": 38.43,
+      "sma100": 38.04,
+      "sma200": 37.14,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.618000"
+    },
+    {
+      "symbol": "PSCC",
+      "price": 37.12,
+      "sma20": 37.6,
+      "sma50": 38.43,
+      "sma100": 38.04,
+      "sma200": 37.14,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-01T05:45:39.720000"
     },
     {
       "symbol": "PSCD",
@@ -16346,6 +19190,30 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:39.752000"
+    },
+    {
+      "symbol": "PSCD",
+      "price": 109.92,
+      "sma20": 111.86,
+      "sma50": 112.29,
+      "sma100": 110.68,
+      "sma200": 106.92,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.630000"
+    },
+    {
+      "symbol": "PSCF",
+      "price": 56.93,
+      "sma20": 56.44,
+      "sma50": 57.03,
+      "sma100": 56.86,
+      "sma200": 53.16,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.659000"
     },
     {
       "symbol": "PSCF",
@@ -16369,7 +19237,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.663000"
+    },
+    {
+      "symbol": "PSCI",
+      "price": 136.76,
+      "sma20": 139.44,
+      "sma50": 140.19,
+      "sma100": 137.42,
+      "sma200": 130.42,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:39.785000"
+    },
+    {
+      "symbol": "PSCT",
+      "price": 46.44,
+      "sma20": 48.05,
+      "sma50": 49.02,
+      "sma100": 48.28,
+      "sma200": 47.29,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.692000"
     },
     {
       "symbol": "PSCT",
@@ -16385,6 +19277,18 @@
     },
     {
       "symbol": "PSCU",
+      "price": 58.71,
+      "sma20": 58.07,
+      "sma50": 57.86,
+      "sma100": 58.0,
+      "sma200": 56.69,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:52.858000"
+    },
+    {
+      "symbol": "PSCU",
       "price": 60.02,
       "sma20": 59.65,
       "sma50": 60.69,
@@ -16397,15 +19301,15 @@
     },
     {
       "symbol": "PSCU",
-      "price": 58.71,
-      "sma20": 58.07,
-      "sma50": 57.86,
-      "sma100": 58.0,
-      "sma200": 56.69,
+      "price": 60.02,
+      "sma20": 59.65,
+      "sma50": 60.69,
+      "sma100": 60.91,
+      "sma200": 56.81,
       "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.858000"
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.684000"
     },
     {
       "symbol": "PSET",
@@ -16469,15 +19373,15 @@
     },
     {
       "symbol": "PTH",
-      "price": 48.8,
-      "sma20": 49.4,
-      "sma50": 50.85,
-      "sma100": 47.84,
-      "sma200": 43.01,
+      "price": 44.85,
+      "sma20": 42.8,
+      "sma50": 42.38,
+      "sma100": 44.22,
+      "sma200": 43.81,
       "longTerm": "long_neutral_test",
-      "midTerm": "mid_neutral",
-      "pattern": "Testing 100 SMA Support | Neutral",
-      "updated": "2026-02-01T20:32:49.506000"
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:39.851000"
     },
     {
       "symbol": "PTH",
@@ -16489,7 +19393,19 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:39.851000"
+      "updated": "2026-02-02T01:00:57.725000"
+    },
+    {
+      "symbol": "PTH",
+      "price": 48.8,
+      "sma20": 49.4,
+      "sma50": 50.85,
+      "sma100": 47.84,
+      "sma200": 43.01,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-01T20:32:49.506000"
     },
     {
       "symbol": "PTMN",
@@ -16502,6 +19418,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:54.865000"
+    },
+    {
+      "symbol": "PUI",
+      "price": 40.83,
+      "sma20": 40.29,
+      "sma50": 40.08,
+      "sma100": 40.15,
+      "sma200": 37.91,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.717000"
     },
     {
       "symbol": "PUI",
@@ -16564,6 +19492,18 @@
       "updated": "2026-02-01T05:45:39.851000"
     },
     {
+      "symbol": "PXI",
+      "price": 45.87,
+      "sma20": 46.44,
+      "sma50": 46.42,
+      "sma100": 45.86,
+      "sma200": 46.46,
+      "longTerm": "long_bear_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Death Cross (Major Sell) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.729000"
+    },
+    {
       "symbol": "PY",
       "price": 52.47,
       "sma20": 52.59,
@@ -16600,6 +19540,18 @@
       "updated": "2026-02-01T05:45:39.821000"
     },
     {
+      "symbol": "PYZ",
+      "price": 91.41,
+      "sma20": 91.63,
+      "sma50": 91.98,
+      "sma100": 93.48,
+      "sma200": 91.41,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.697000"
+    },
+    {
       "symbol": "QAT",
       "price": 17.98,
       "sma20": 17.99,
@@ -16610,6 +19562,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.851000"
+    },
+    {
+      "symbol": "QAT",
+      "price": 17.98,
+      "sma20": 17.99,
+      "sma50": 17.95,
+      "sma100": 18.14,
+      "sma200": 17.67,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.750000"
     },
     {
       "symbol": "QBIG",
@@ -16948,6 +19912,18 @@
       "updated": "2026-02-01T05:45:39.917000"
     },
     {
+      "symbol": "RAIL",
+      "price": 11.17,
+      "sma20": 12.4,
+      "sma50": 10.86,
+      "sma100": 11.34,
+      "sma200": 7.76,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.816000"
+    },
+    {
       "symbol": "RBCAA",
       "price": 70.82,
       "sma20": 70.59,
@@ -17113,6 +20089,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.857000"
+    },
+    {
+      "symbol": "RFDI",
+      "price": 65.74,
+      "sma20": 64.06,
+      "sma50": 63.2,
+      "sma100": 64.39,
+      "sma200": 64.64,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.982000"
     },
     {
@@ -17128,6 +20116,18 @@
       "updated": "2026-02-01T05:45:39.949000"
     },
     {
+      "symbol": "RFEM",
+      "price": 65.51,
+      "sma20": 64.05,
+      "sma50": 64.16,
+      "sma100": 65.26,
+      "sma200": 64.81,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 200 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.849000"
+    },
+    {
       "symbol": "RFEU",
       "price": 63.47,
       "sma20": 61.68,
@@ -17138,6 +20138,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:39.981000"
+    },
+    {
+      "symbol": "RFEU",
+      "price": 63.47,
+      "sma20": 61.68,
+      "sma50": 61.13,
+      "sma100": 63.17,
+      "sma200": 64.52,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.860000"
     },
     {
       "symbol": "RFM",
@@ -17308,6 +20320,18 @@
       "updated": "2026-02-01T05:45:40.013000"
     },
     {
+      "symbol": "RNDV",
+      "price": 33.42,
+      "sma20": 33.1,
+      "sma50": 33.47,
+      "sma100": 33.6,
+      "sma200": 32.03,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.887000"
+    },
+    {
       "symbol": "RNEM",
       "price": 50.99,
       "sma20": 49.92,
@@ -17318,6 +20342,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:39.982000"
+    },
+    {
+      "symbol": "RNEM",
+      "price": 50.99,
+      "sma20": 49.92,
+      "sma50": 50.23,
+      "sma100": 51.76,
+      "sma200": 52.07,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.882000"
     },
     {
       "symbol": "RNEW",
@@ -17341,6 +20377,18 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull_reversion",
       "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.891000"
+    },
+    {
+      "symbol": "RNLC",
+      "price": 41.21,
+      "sma20": 40.8,
+      "sma50": 41.18,
+      "sma100": 41.02,
+      "sma200": 38.89,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:40.012000"
     },
     {
@@ -17353,7 +20401,31 @@
       "longTerm": "long_neutral_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.861000"
+    },
+    {
+      "symbol": "RNMC",
+      "price": 36.28,
+      "sma20": 36.18,
+      "sma50": 36.65,
+      "sma100": 35.75,
+      "sma200": 34.02,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:39.988000"
+    },
+    {
+      "symbol": "RNSC",
+      "price": 29.97,
+      "sma20": 30.55,
+      "sma50": 30.96,
+      "sma100": 30.45,
+      "sma200": 29.34,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:57.920000"
     },
     {
       "symbol": "RNSC",
@@ -17860,6 +20932,18 @@
       "updated": "2026-02-01T05:45:40.053000"
     },
     {
+      "symbol": "SCZ",
+      "price": 64.16,
+      "sma20": 62.59,
+      "sma50": 62.25,
+      "sma100": 63.58,
+      "sma200": 63.36,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.926000"
+    },
+    {
       "symbol": "SDHC",
       "price": 18.15,
       "sma20": 19.15,
@@ -17920,6 +21004,18 @@
       "updated": "2026-02-01T05:45:40.078000"
     },
     {
+      "symbol": "SDVY",
+      "price": 36.99,
+      "sma20": 37.32,
+      "sma50": 37.41,
+      "sma100": 37.15,
+      "sma200": 35.61,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 100 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.978000"
+    },
+    {
       "symbol": "SELF",
       "price": 5.05,
       "sma20": 5.07,
@@ -17930,6 +21026,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:52.277000"
+    },
+    {
+      "symbol": "SELF",
+      "price": 5.16,
+      "sma20": 5.15,
+      "sma50": 5.15,
+      "sma100": 5.13,
+      "sma200": 4.99,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:57.990000"
     },
     {
       "symbol": "SELF",
@@ -18065,6 +21173,18 @@
     },
     {
       "symbol": "SHV",
+      "price": 110.28,
+      "sma20": 110.31,
+      "sma50": 110.24,
+      "sma100": 110.31,
+      "sma200": 110.3,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.959000"
+    },
+    {
+      "symbol": "SHV",
       "price": 110.44,
       "sma20": 110.3,
       "sma50": 110.26,
@@ -18098,6 +21218,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:40.144000"
+    },
+    {
+      "symbol": "SHY",
+      "price": 82.1,
+      "sma20": 82.1,
+      "sma50": 82.05,
+      "sma100": 82.29,
+      "sma200": 82.06,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.019000"
     },
     {
       "symbol": "SHY",
@@ -18265,6 +21397,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:58.011000"
+    },
+    {
+      "symbol": "SKOR",
+      "price": 48.01,
+      "sma20": 47.88,
+      "sma50": 47.92,
+      "sma100": 48.23,
+      "sma200": 47.99,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:40.111000"
     },
     {
@@ -18349,6 +21493,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:57.992000"
+    },
+    {
+      "symbol": "SLQD",
+      "price": 49.94,
+      "sma20": 49.9,
+      "sma50": 49.85,
+      "sma100": 49.96,
+      "sma200": 49.67,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:40.118000"
     },
     {
@@ -18373,19 +21529,19 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:40.177000"
+      "updated": "2026-02-02T01:00:58.052000"
     },
     {
-      "symbol": "SMCP",
-      "price": 32.67,
-      "sma20": 34.67,
-      "sma50": 33.98,
-      "sma100": 32.89,
-      "sma200": 31.89,
-      "longTerm": "long_neutral_test",
+      "symbol": "SLVO",
+      "price": 79.59,
+      "sma20": 78.02,
+      "sma50": 77.41,
+      "sma100": 79.14,
+      "sma200": 79.5,
+      "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:55.476000"
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:40.177000"
     },
     {
       "symbol": "SMCP",
@@ -18398,6 +21554,30 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:40.143000"
+    },
+    {
+      "symbol": "SMCP",
+      "price": 32.67,
+      "sma20": 34.28,
+      "sma50": 33.93,
+      "sma100": 33.09,
+      "sma200": 32.0,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.044000"
+    },
+    {
+      "symbol": "SMCP",
+      "price": 32.67,
+      "sma20": 34.67,
+      "sma50": 33.98,
+      "sma100": 32.89,
+      "sma200": 31.89,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:55.476000"
     },
     {
       "symbol": "SMHI",
@@ -18589,6 +21769,18 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.085000"
+    },
+    {
+      "symbol": "SOXX",
+      "price": 223.07,
+      "sma20": 222.1,
+      "sma50": 220.87,
+      "sma100": 223.41,
+      "sma200": 227.06,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:40.210000"
     },
     {
@@ -18664,6 +21856,18 @@
       "updated": "2026-02-01T05:45:40.176000"
     },
     {
+      "symbol": "SQLV",
+      "price": 42.72,
+      "sma20": 43.27,
+      "sma50": 43.63,
+      "sma100": 43.0,
+      "sma200": 41.43,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:58.077000"
+    },
+    {
       "symbol": "SR",
       "price": 82.78,
       "sma20": 82.9,
@@ -18686,6 +21890,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:13.939000"
+    },
+    {
+      "symbol": "SRET",
+      "price": 20.86,
+      "sma20": 20.45,
+      "sma50": 20.47,
+      "sma100": 21.13,
+      "sma200": 20.8,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:58.058000"
     },
     {
       "symbol": "SRET",
@@ -18937,7 +22153,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T05:45:40.243000"
+      "updated": "2026-02-02T01:00:58.118000"
     },
     {
       "symbol": "SUSB",
@@ -18952,16 +22168,28 @@
       "updated": "2026-02-01T20:32:52.302000"
     },
     {
+      "symbol": "SUSB",
+      "price": 24.82,
+      "sma20": 24.78,
+      "sma50": 24.77,
+      "sma100": 24.86,
+      "sma200": 24.71,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T05:45:40.243000"
+    },
+    {
       "symbol": "SUSC",
-      "price": 23.48,
-      "sma20": 23.44,
-      "sma50": 23.44,
-      "sma100": 23.52,
-      "sma200": 23.24,
+      "price": 22.92,
+      "sma20": 22.82,
+      "sma50": 22.89,
+      "sma100": 23.14,
+      "sma200": 23.03,
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:51.260000"
+      "updated": "2026-02-02T01:00:58.110000"
     },
     {
       "symbol": "SUSC",
@@ -18974,6 +22202,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:40.209000"
+    },
+    {
+      "symbol": "SUSC",
+      "price": 23.48,
+      "sma20": 23.44,
+      "sma50": 23.44,
+      "sma100": 23.52,
+      "sma200": 23.24,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T20:32:51.260000"
     },
     {
       "symbol": "SUZ",
@@ -19142,6 +22382,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:47.952000"
+    },
+    {
+      "symbol": "TCPC",
+      "price": 9.41,
+      "sma20": 9.13,
+      "sma50": 9.03,
+      "sma100": 8.72,
+      "sma200": 9.51,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.091000"
     },
     {
       "symbol": "TCPC",
@@ -19480,6 +22732,18 @@
       "updated": "2026-02-01T20:32:48.936000"
     },
     {
+      "symbol": "TREE",
+      "price": 46.97,
+      "sma20": 44.73,
+      "sma50": 41.8,
+      "sma100": 47.94,
+      "sma200": 46.89,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.156000"
+    },
+    {
       "symbol": "TRINI",
       "price": 25.49,
       "sma20": 25.38,
@@ -19517,18 +22781,6 @@
     },
     {
       "symbol": "TROW",
-      "price": 105.31,
-      "sma20": 105.84,
-      "sma50": 103.99,
-      "sma100": 104.15,
-      "sma200": 101.12,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bull",
-      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:51.805000"
-    },
-    {
-      "symbol": "TROW",
       "price": 105.68,
       "sma20": 106.1,
       "sma50": 104.24,
@@ -19538,6 +22790,18 @@
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T21:25:12.885000"
+    },
+    {
+      "symbol": "TROW",
+      "price": 105.31,
+      "sma20": 105.84,
+      "sma50": 103.99,
+      "sma100": 104.15,
+      "sma200": 101.12,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T20:32:51.805000"
     },
     {
       "symbol": "TRTX",
@@ -19682,6 +22946,18 @@
       "midTerm": "mid_neutral",
       "pattern": "Testing 100 SMA Support | Neutral",
       "updated": "2026-02-01T05:45:40.342000"
+    },
+    {
+      "symbol": "TUR",
+      "price": 35.23,
+      "sma20": 35.86,
+      "sma50": 36.35,
+      "sma100": 35.55,
+      "sma200": 37.98,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_neutral",
+      "pattern": "Testing 100 SMA Support | Neutral",
+      "updated": "2026-02-02T01:00:58.217000"
     },
     {
       "symbol": "TVC",
@@ -20009,6 +23285,18 @@
     },
     {
       "symbol": "USIG",
+      "price": 50.73,
+      "sma20": 50.52,
+      "sma50": 50.65,
+      "sma100": 51.18,
+      "sma200": 50.91,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-01T05:45:40.316000"
+    },
+    {
+      "symbol": "USIG",
       "price": 51.96,
       "sma20": 51.92,
       "sma50": 51.93,
@@ -20029,7 +23317,7 @@
       "longTerm": "long_bull_test",
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
-      "updated": "2026-02-01T05:45:40.316000"
+      "updated": "2026-02-02T01:00:58.189000"
     },
     {
       "symbol": "USIN",
@@ -20356,6 +23644,18 @@
       "updated": "2026-02-01T05:45:40.340000"
     },
     {
+      "symbol": "VBND",
+      "price": 43.26,
+      "sma20": 43.2,
+      "sma50": 43.32,
+      "sma100": 43.76,
+      "sma200": 43.69,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:58.242000"
+    },
+    {
       "symbol": "VBTX",
       "price": 30.26,
       "sma20": 32.45,
@@ -20522,6 +23822,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Testing 200 SMA Support | Mean Reversion Opportunity",
       "updated": "2026-02-01T20:32:53.763000"
+    },
+    {
+      "symbol": "VIDI",
+      "price": 26.24,
+      "sma20": 25.59,
+      "sma50": 25.54,
+      "sma100": 25.92,
+      "sma200": 25.58,
+      "longTerm": "long_neutral_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 100 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.250000"
     },
     {
       "symbol": "VIDI",
@@ -20774,6 +24086,18 @@
       "midTerm": "mid_bull_reversion",
       "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
       "updated": "2026-02-01T05:45:40.408000"
+    },
+    {
+      "symbol": "VRIG",
+      "price": 25.17,
+      "sma20": 25.12,
+      "sma50": 25.13,
+      "sma100": 25.12,
+      "sma200": 25.13,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
+      "updated": "2026-02-02T01:00:58.284000"
     },
     {
       "symbol": "VRN",
@@ -21098,6 +24422,18 @@
       "midTerm": "mid_bull",
       "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T05:45:40.383000"
+    },
+    {
+      "symbol": "WOOD",
+      "price": 79.94,
+      "sma20": 79.47,
+      "sma50": 78.8,
+      "sma100": 80.54,
+      "sma200": 80.49,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-02T01:00:58.256000"
     },
     {
       "symbol": "WOR",
