@@ -416,7 +416,7 @@
                     • ${staleCount} stocks have data over 30 days old<br>
                     • Oldest data: <strong>${oldestStock ? oldestStock.symbol : 'N/A'}</strong> (${staleMonths} months old, ends ${oldestStock ? oldestStock.dataEndDate : 'N/A'})<br>
                     <br>
-                    <strong>To fix:</strong> Run Polygon loader to fetch fresh data:<br>
+                    <strong>To fix:</strong> Run Polygon loader to fetch fresh data into NASDAQ_Polygon database:<br>
                     <code style="background: rgba(0,0,0,0.2); padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 5px;">
                         cd Polygon/Scripts && python3 polygon_loader.py NASDAQ
                     </code>
