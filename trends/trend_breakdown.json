@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-01T19:31:56.806938",
+  "generated": "2026-02-01T19:46:51.479620",
   "pattern": "trend_breakdown",
-  "count": 49,
+  "count": 39,
   "stocks": [
     {
       "symbol": "ADUS",
@@ -14,18 +14,6 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Mid-Term Breakdown (Warning)",
       "updated": "2026-02-02T01:00:50.618000"
-    },
-    {
-      "symbol": "ADUS",
-      "price": 113.22,
-      "sma20": 125.1,
-      "sma50": 125.34,
-      "sma100": 126.53,
-      "sma200": 124.29,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T05:45:32.773000"
     },
     {
       "symbol": "AGNCO",
@@ -64,18 +52,6 @@
       "updated": "2026-02-01T21:25:12.736000"
     },
     {
-      "symbol": "ATLC",
-      "price": 50.55,
-      "sma20": 60.74,
-      "sma50": 61.43,
-      "sma100": 60.71,
-      "sma200": 57.77,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:48.622000"
-    },
-    {
       "symbol": "AVB",
       "price": 174.8,
       "sma20": 179.13,
@@ -112,42 +88,6 @@
       "updated": "2026-02-01T20:32:54.892000"
     },
     {
-      "symbol": "BCRX",
-      "price": 6.79,
-      "sma20": 7.27,
-      "sma50": 7.29,
-      "sma100": 7.36,
-      "sma200": 8.22,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:52.277000"
-    },
-    {
-      "symbol": "COLM",
-      "price": 54.13,
-      "sma20": 54.61,
-      "sma50": 54.62,
-      "sma100": 53.69,
-      "sma200": 57.13,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Testing 100 SMA Support | Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:47.006000"
-    },
-    {
-      "symbol": "CPSS",
-      "price": 8.57,
-      "sma20": 8.79,
-      "sma50": 8.81,
-      "sma100": 8.42,
-      "sma200": 8.69,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Testing 200 SMA Support | Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:46.968000"
-    },
-    {
       "symbol": "DASH",
       "price": 206.66,
       "sma20": 215.6,
@@ -182,18 +122,6 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Mid-Term Breakdown (Warning)",
       "updated": "2026-02-02T01:00:53.335000"
-    },
-    {
-      "symbol": "DMRC",
-      "price": 35.11,
-      "sma20": 37.69,
-      "sma50": 37.96,
-      "sma100": 33.94,
-      "sma200": 30.77,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T05:45:35.478000"
     },
     {
       "symbol": "DV",
@@ -242,18 +170,6 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Breakdown (Warning)",
       "updated": "2026-02-01T20:32:53.473000"
-    },
-    {
-      "symbol": "FITBI",
-      "price": 25.58,
-      "sma20": 25.68,
-      "sma50": 25.69,
-      "sma100": 25.67,
-      "sma200": 25.57,
-      "longTerm": "long_bull_test",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Testing 200 SMA Support | Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:54.025000"
     },
     {
       "symbol": "G",
@@ -314,18 +230,6 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Mid-Term Breakdown (Warning)",
       "updated": "2026-02-01T20:32:52.466000"
-    },
-    {
-      "symbol": "IGIC",
-      "price": 24.8,
-      "sma20": 24.36,
-      "sma50": 24.36,
-      "sma100": 23.68,
-      "sma200": 23.75,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:48.522000"
     },
     {
       "symbol": "INFA",
@@ -460,18 +364,6 @@
       "updated": "2026-02-01T20:32:47.305000"
     },
     {
-      "symbol": "PSCH",
-      "price": 44.45,
-      "sma20": 44.93,
-      "sma50": 45.0,
-      "sma100": 43.47,
-      "sma200": 41.78,
-      "longTerm": "long_neutral",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:53.763000"
-    },
-    {
       "symbol": "SEVN",
       "price": 8.6,
       "sma20": 8.9,
@@ -578,18 +470,6 @@
       "midTerm": "mid_bear_strong",
       "pattern": "Mid-Term Breakdown (Warning)",
       "updated": "2026-02-01T21:25:14.730000"
-    },
-    {
-      "symbol": "YY",
-      "price": 41.55,
-      "sma20": 46.06,
-      "sma50": 46.07,
-      "sma100": 42.1,
-      "sma200": 37.94,
-      "longTerm": "long_neutral_test",
-      "midTerm": "mid_bear_strong",
-      "pattern": "Testing 100 SMA Support | Mid-Term Breakdown (Warning)",
-      "updated": "2026-02-01T20:32:55.385000"
     }
   ]
 }
