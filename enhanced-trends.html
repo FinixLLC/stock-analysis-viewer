@@ -137,6 +137,13 @@
             font-weight: bold;
             color: #333;
             margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .stock-symbol:hover {
+            color: #11998e;
+            text-decoration: underline;
         }
 
         .stock-price {
@@ -512,7 +519,7 @@
                 <div class="stock-list" id="stock-list">
                     ${stocks.map(stock => `
                         <div class="stock-item" data-symbol="${stock.symbol}">
-                            <div class="stock-symbol">${stock.symbol}</div>
+                            <a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>
                             <div class="stock-price">$${stock.price.toFixed(2)}</div>
                             <div>
                                 <span class="trend-label ${stock.longTerm.replace(/_/g, '-')}">${formatTrend(stock.longTerm)}</span>
