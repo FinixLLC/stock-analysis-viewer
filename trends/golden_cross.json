@@ -1,67 +1,19 @@
 {
-  "generated": "2026-02-02T13:47:33.244766",
+  "generated": "2026-02-02T20:15:41.704765",
   "pattern": "golden_cross",
-  "count": 22,
+  "count": 14,
   "stocks": [
     {
-      "symbol": "ABL",
-      "price": 8.47,
-      "sma20": 7.9,
-      "sma50": 6.67,
-      "sma100": 6.47,
-      "sma200": 6.66,
+      "symbol": "CNC",
+      "price": 43.32,
+      "sma20": 45.1,
+      "sma50": 41.42,
+      "sma100": 38.28,
+      "sma200": 41.22,
       "longTerm": "long_bull_strong",
       "midTerm": "mid_bull",
       "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:53.522000"
-    },
-    {
-      "symbol": "APVO",
-      "price": 8.26,
-      "sma20": 9.08,
-      "sma50": 4.35,
-      "sma100": 2.94,
-      "sma200": 4.25,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:50.475000"
-    },
-    {
-      "symbol": "ARKR",
-      "price": 11.29,
-      "sma20": 13.05,
-      "sma50": 12.82,
-      "sma100": 12.05,
-      "sma200": 12.82,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:51.174000"
-    },
-    {
-      "symbol": "BDSX",
-      "price": 11.74,
-      "sma20": 7.76,
-      "sma50": 7.69,
-      "sma100": 7.6,
-      "sma200": 7.63,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.314000"
-    },
-    {
-      "symbol": "CASS",
-      "price": 44.59,
-      "sma20": 42.13,
-      "sma50": 42.37,
-      "sma100": 42.4,
-      "sma200": 42.36,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Golden Cross (Major Buy) | Neutral",
-      "updated": "2026-02-02T01:00:52.100000"
+      "updated": "2026-02-03T01:48:44.098000"
     },
     {
       "symbol": "CNC",
@@ -76,16 +28,16 @@
       "updated": "2026-02-01T21:25:11.382000"
     },
     {
-      "symbol": "FRPH",
-      "price": 31.24,
-      "sma20": 30.76,
-      "sma50": 30.77,
-      "sma100": 30.42,
-      "sma200": 30.69,
+      "symbol": "EAT",
+      "price": 157.72,
+      "sma20": 159.63,
+      "sma50": 149.95,
+      "sma100": 138.54,
+      "sma200": 149.32,
       "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
-      "updated": "2026-02-02T01:00:54.752000"
+      "midTerm": "mid_bull",
+      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:45.755000"
     },
     {
       "symbol": "GUG",
@@ -97,103 +49,43 @@
       "longTerm": "long_bull_strong",
       "midTerm": "mid_bull",
       "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:12.997000"
+      "updated": "2026-02-03T01:48:45.767000"
     },
     {
-      "symbol": "IBRX",
-      "price": 6.45,
-      "sma20": 3.42,
-      "sma50": 2.67,
-      "sma100": 2.57,
-      "sma200": 2.6,
+      "symbol": "HOMB",
+      "price": 28.9,
+      "sma20": 28.59,
+      "sma50": 28.35,
+      "sma100": 28.11,
+      "sma200": 28.35,
       "longTerm": "long_bull_strong",
       "midTerm": "mid_bull",
       "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.504000"
+      "updated": "2026-02-03T01:48:45.445000"
     },
     {
-      "symbol": "ITW",
-      "price": 258.25,
-      "sma20": 255.51,
-      "sma50": 251.77,
-      "sma100": 252.82,
-      "sma200": 251.73,
+      "symbol": "SUI",
+      "price": 127.43,
+      "sma20": 125.33,
+      "sma50": 125.33,
+      "sma100": 125.79,
+      "sma200": 125.32,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
+      "updated": "2026-02-03T01:48:43.428000"
+    },
+    {
+      "symbol": "TROX",
+      "price": 6.06,
+      "sma20": 5.76,
+      "sma50": 4.72,
+      "sma100": 4.33,
+      "sma200": 4.67,
       "longTerm": "long_bull_strong",
       "midTerm": "mid_bull",
       "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:13.493000"
-    },
-    {
-      "symbol": "MRX",
-      "price": 39.17,
-      "sma20": 39.27,
-      "sma50": 37.44,
-      "sma100": 34.82,
-      "sma200": 37.38,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:54.627000"
-    },
-    {
-      "symbol": "MSFD",
-      "price": 11.58,
-      "sma20": 11.84,
-      "sma50": 11.65,
-      "sma100": 11.28,
-      "sma200": 11.64,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:50.143000"
-    },
-    {
-      "symbol": "ONBPP",
-      "price": 25.33,
-      "sma20": 25.18,
-      "sma50": 25.13,
-      "sma100": 25.18,
-      "sma200": 25.13,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:53.261000"
-    },
-    {
-      "symbol": "QTI",
-      "price": 5.73,
-      "sma20": 1.02,
-      "sma50": 0.69,
-      "sma100": 0.66,
-      "sma200": 0.69,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:55.642000"
-    },
-    {
-      "symbol": "RBKB",
-      "price": 11.88,
-      "sma20": 12.01,
-      "sma50": 11.65,
-      "sma100": 11.41,
-      "sma200": 11.65,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:53.522000"
-    },
-    {
-      "symbol": "RMBI",
-      "price": 14.14,
-      "sma20": 14.03,
-      "sma50": 13.87,
-      "sma100": 13.92,
-      "sma200": 13.87,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.732000"
+      "updated": "2026-02-03T01:48:43.118000"
     },
     {
       "symbol": "TROX",
@@ -220,6 +112,30 @@
       "updated": "2026-02-01T21:25:10.686000"
     },
     {
+      "symbol": "UNH",
+      "price": 286.93,
+      "sma20": 332.19,
+      "sma50": 329.44,
+      "sma100": 338.55,
+      "sma200": 329.18,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:42.969000"
+    },
+    {
+      "symbol": "USPH",
+      "price": 83.87,
+      "sma20": 84.04,
+      "sma50": 79.48,
+      "sma100": 81.73,
+      "sma200": 79.41,
+      "longTerm": "long_bull_strong",
+      "midTerm": "mid_bull",
+      "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:42.931000"
+    },
+    {
       "symbol": "USPH",
       "price": 83.87,
       "sma20": 84.04,
@@ -242,18 +158,6 @@
       "midTerm": "mid_bull",
       "pattern": "Golden Cross (Major Buy) | Mid-Term Momentum (Bullish)",
       "updated": "2026-02-01T20:32:47.068000"
-    },
-    {
-      "symbol": "VRIG",
-      "price": 25.17,
-      "sma20": 25.12,
-      "sma50": 25.13,
-      "sma100": 25.12,
-      "sma200": 25.13,
-      "longTerm": "long_bull_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Golden Cross (Major Buy) | Mean Reversion Opportunity",
-      "updated": "2026-02-02T01:00:58.284000"
     },
     {
       "symbol": "WVFC",

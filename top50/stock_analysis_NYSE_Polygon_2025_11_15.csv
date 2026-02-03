@@ -1,43 +1,43 @@
-List,Rank,Symbol,Exchange,Signal,Score,Confidence,IC10d,Price,Predicted,Return,Momentum %,Avg Volume,Dollar Volume,Momentum 5d %
-,,,,,,,,,,,,,,
-Top 20 Momentum,1,HPP,NYSE,,,,,    13.94,,,674.44,5466129,,
-Top 20 Momentum,2,DBI,NYSE,,,,,     8.60,,,147.84,1732375,,
-Top 20 Momentum,3,MAGN,NYSE,,,,,    14.62,,,81.61,1770741,,
-Top 20 Momentum,4,WRBY,NYSE,,,,,    30.23,,,76.27,5591645,,
-Top 20 Momentum,5,EB,NYSE,,,,,     4.43,,,70.38,2709126,,
-Top 20 Momentum,6,ANF,NYSE,,,,,   112.09,,,61.23,2903896,,
-Top 20 Momentum,7,DXYZ,NYSE,,,,,    34.10,,,57.58,1638002,,
-Top 20 Momentum,8,NRGV,NYSE,,,,,     5.00,,,57.23,3023640,,
-Top 20 Momentum,9,NRDY,NYSE,,,,,     1.32,,,56.94,1297096,,
-Top 20 Momentum,10,PL,NYSE,,,,,    17.88,,,56.16,11969384,,
-Top 20 Momentum,11,EVTL,NYSE,,,,,     6.09,,,51.49,2635322,,
-Top 20 Momentum,12,JELD,NYSE,,,,,     2.73,,,49.18,1713393,,
-Top 20 Momentum,13,DBRG,NYSE,,,,,    14.03,,,49.10,6952984,,
-Top 20 Momentum,14,CPAC,NYSE,,,,,    10.64,,,47.37,192437,,
-Top 20 Momentum,15,VSCO,NYSE,,,,,    50.65,,,46.56,3544437,,
-Top 20 Momentum,16,SMRT,NYSE,,,,,     2.05,,,46.43,1246507,,
-Top 20 Momentum,17,TROX,NYSE,,,,,     4.43,,,43.83,5090114,,
-Top 20 Momentum,18,RXO,NYSE,,,,,    15.43,,,43.14,1843066,,
-Top 20 Momentum,19,INSP,NYSE,,,,,   119.26,,,42.71,1947820,,
-Top 20 Momentum,20,TLYS,NYSE,,,,,     1.81,,,42.52,391750,,
-,,,,,,,,,,,,,,
-Top 20 Volume,1,ORCL,NYSE,,,,,   198.85,,,,,  7314279239,-4.27
-Top 20 Volume,2,TSM,NYSE,,,,,   286.87,,,,,  3582536149,-2.90
-Top 20 Volume,3,CRM,NYSE,,,,,   264.20,,,,,  3447483317,10.67
-Top 20 Volume,4,LLY,NYSE,,,,,  1027.51,,,,,  3367757785,-0.59
-Top 20 Volume,5,GEV,NYSE,,,,,   686.22,,,,,  2944779111,14.00
-Top 20 Volume,6,JPM,NYSE,,,,,   315.04,,,,,  2591939303,0.93
-Top 20 Volume,7,WMT,NYSE,,,,,   115.42,,,,,  2576884164,0.88
-Top 20 Volume,8,V,NYSE,,,,,   346.89,,,,,  2335494085,5.24
-Top 20 Volume,9,BAC,NYSE,,,,,    55.14,,,,,  2217236049,1.94
-Top 20 Volume,10,UNH,NYSE,,,,,   323.60,,,,,  2145392536,-4.74
-Top 20 Volume,11,GS,NYSE,,,,,   887.96,,,,,  2064710565,6.14
-Top 20 Volume,12,BA,NYSE,,,,,   200.71,,,,,  2050494649,-0.90
-Top 20 Volume,13,SNOW,NYSE,,,,,   220.60,,,,,  1994920412,-16.75
-Top 20 Volume,14,HD,NYSE,,,,,   356.99,,,,,  1890447724,-0.26
-Top 20 Volume,15,XOM,NYSE,,,,,   114.68,,,,,  1888956895,-2.65
-Top 20 Volume,16,JNJ,NYSE,,,,,   214.17,,,,,  1820259124,4.31
-Top 20 Volume,17,PG,NYSE,,,,,   142.84,,,,,  1713674013,-2.64
-Top 20 Volume,18,GE,NYSE,,,,,   300.98,,,,,  1649740605,4.33
-Top 20 Volume,19,CAT,NYSE,,,,,   588.93,,,,,  1593688514,-0.43
-Top 20 Volume,20,MA,NYSE,,,,,   566.02,,,,,  1572111267,2.22
+List,Rank,Symbol,Exchange,Signal,Score,Confidence,IC10d,Price,Predicted,Return,Momentum %,Avg Volume,Dollar Volume,Momentum 5d %,ROE,P/E Ratio,Sector,Fund Quality
+,,,,,,,,,,,,,,,,,,
+Top 20 Momentum,1,HPP,NYSE,,,,,    13.94,,,674.44,5466129,,,,,,
+Top 20 Momentum,2,DBI,NYSE,,,,,     8.60,,,147.84,1732375,,,,,,
+Top 20 Momentum,3,MAGN,NYSE,,,,,    14.62,,,81.61,1770741,,,,,,
+Top 20 Momentum,4,WRBY,NYSE,,,,,    30.23,,,76.27,5591645,,,,,,
+Top 20 Momentum,5,EB,NYSE,,,,,     4.43,,,70.38,2709126,,,,,,
+Top 20 Momentum,6,ANF,NYSE,,,,,   112.09,,,61.23,2903896,,,40.9%,9.8,Consumer Cyclical,⚠️
+Top 20 Momentum,7,DXYZ,NYSE,,,,,    34.10,,,57.58,1638002,,,,,,
+Top 20 Momentum,8,NRGV,NYSE,,,,,     5.00,,,57.23,3023640,,,,,,
+Top 20 Momentum,9,NRDY,NYSE,,,,,     1.32,,,56.94,1297096,,,,,,
+Top 20 Momentum,10,PL,NYSE,,,,,    17.88,,,56.16,11969384,,,,,,
+Top 20 Momentum,11,EVTL,NYSE,,,,,     6.09,,,51.49,2635322,,,,,,
+Top 20 Momentum,12,JELD,NYSE,,,,,     2.73,,,49.18,1713393,,,,,,
+Top 20 Momentum,13,DBRG,NYSE,,,,,    14.03,,,49.10,6952984,,,,,,
+Top 20 Momentum,14,CPAC,NYSE,,,,,    10.64,,,47.37,192437,,,,,,
+Top 20 Momentum,15,VSCO,NYSE,,,,,    50.65,,,46.56,3544437,,,,,,
+Top 20 Momentum,16,SMRT,NYSE,,,,,     2.05,,,46.43,1246507,,,,,,
+Top 20 Momentum,17,TROX,NYSE,,,,,     4.43,,,43.83,5090114,,,,,,
+Top 20 Momentum,18,RXO,NYSE,,,,,    15.43,,,43.14,1843066,,,,,,
+Top 20 Momentum,19,INSP,NYSE,,,,,   119.26,,,42.71,1947820,,,,,,
+Top 20 Momentum,20,TLYS,NYSE,,,,,     1.81,,,42.52,391750,,,,,,
+,,,,,,,,,,,,,,,,,,
+Top 20 Volume,1,ORCL,NYSE,,,,,   198.85,,,,,  7314279239,-4.27,,,,
+Top 20 Volume,2,TSM,NYSE,,,,,   286.87,,,,,  3582536149,-2.90,,,,
+Top 20 Volume,3,CRM,NYSE,,,,,   264.20,,,,,  3447483317,10.67,,,,
+Top 20 Volume,4,LLY,NYSE,,,,,  1027.51,,,,,  3367757785,-0.59,,,,
+Top 20 Volume,5,GEV,NYSE,,,,,   686.22,,,,,  2944779111,14.00,,,,
+Top 20 Volume,6,JPM,NYSE,,,,,   315.04,,,,,  2591939303,0.93,,,,
+Top 20 Volume,7,WMT,NYSE,,,,,   115.42,,,,,  2576884164,0.88,,,,
+Top 20 Volume,8,V,NYSE,,,,,   346.89,,,,,  2335494085,5.24,,,,
+Top 20 Volume,9,BAC,NYSE,,,,,    55.14,,,,,  2217236049,1.94,10.2%,14.2,Financial Services,⚠️
+Top 20 Volume,10,UNH,NYSE,,,,,   323.60,,,,,  2145392536,-4.74,,,,
+Top 20 Volume,11,GS,NYSE,,,,,   887.96,,,,,  2064710565,6.14,,,,
+Top 20 Volume,12,BA,NYSE,,,,,   200.71,,,,,  2050494649,-0.90,290.1%,94.3,Industrials,⚠️
+Top 20 Volume,13,SNOW,NYSE,,,,,   220.60,,,,,  1994920412,-16.75,,,,
+Top 20 Volume,14,HD,NYSE,,,,,   356.99,,,,,  1890447724,-0.26,,,,
+Top 20 Volume,15,XOM,NYSE,,,,,   114.68,,,,,  1888956895,-2.65,,,,
+Top 20 Volume,16,JNJ,NYSE,,,,,   214.17,,,,,  1820259124,4.31,,,,
+Top 20 Volume,17,PG,NYSE,,,,,   142.84,,,,,  1713674013,-2.64,,,,
+Top 20 Volume,18,GE,NYSE,,,,,   300.98,,,,,  1649740605,4.33,,,,
+Top 20 Volume,19,CAT,NYSE,,,,,   588.93,,,,,  1593688514,-0.43,43.5%,36.8,Industrials,⚠️
+Top 20 Volume,20,MA,NYSE,,,,,   566.02,,,,,  1572111267,2.22,,,,

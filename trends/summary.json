@@ -1,39 +1,15 @@
 {
-  "generated": "2026-02-02T13:47:33.405519",
-  "total_stocks": 5508,
+  "generated": "2026-02-02T20:15:41.804010",
+  "total_stocks": 3327,
   "categories": {
-    "Golden Cross (Major Bull)": 22,
-    "Death Cross (Major Bear)": 14,
-    "Full Alignment (Strong Uptrend)": 2021,
-    "Support Tests": 1580,
-    "Mid-Term Momentum": 3688,
-    "Trend Breakdown (Warning)": 39
+    "Golden Cross (Major Bull)": 14,
+    "Death Cross (Major Bear)": 1,
+    "Full Alignment (Strong Uptrend)": 1222,
+    "Support Tests": 982,
+    "Mid-Term Momentum": 2481,
+    "Trend Breakdown (Warning)": 19
   },
   "top_bullish": [
-    {
-      "symbol": "BKNG",
-      "price": 5044.4,
-      "sma20": 4800.36,
-      "sma50": 4962.23,
-      "sma100": 4713.71,
-      "sma200": 4231.95,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
-      "updated": "2026-02-02T01:00:51.705000"
-    },
-    {
-      "symbol": "SEB",
-      "price": 4695.52,
-      "sma20": 4472.72,
-      "sma50": 4344.87,
-      "sma100": 3986.51,
-      "sma200": 3434.14,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T22:36:10.744000"
-    },
     {
       "symbol": "WTM",
       "price": 2052.17,
@@ -44,31 +20,7 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:12.513000"
-    },
-    {
-      "symbol": "COKE",
-      "price": 1408.59,
-      "sma20": 1368.22,
-      "sma50": 1312.08,
-      "sma100": 1284.28,
-      "sma200": 1174.37,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:52.684000"
-    },
-    {
-      "symbol": "MPWR",
-      "price": 1183.15,
-      "sma20": 1020.77,
-      "sma50": 967.36,
-      "sma100": 961.01,
-      "sma200": 839.1,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:47.740000"
+      "updated": "2026-02-03T01:48:45.730000"
     },
     {
       "symbol": "GHC",
@@ -83,6 +35,18 @@
       "updated": "2026-02-01T21:25:10.922000"
     },
     {
+      "symbol": "GHC",
+      "price": 1166.63,
+      "sma20": 1146.6,
+      "sma50": 1116.03,
+      "sma100": 1099.02,
+      "sma200": 1033.25,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:45.581000"
+    },
+    {
       "symbol": "FIX",
       "price": 1127.55,
       "sma20": 1046.08,
@@ -92,31 +56,7 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:14.199000"
-    },
-    {
-      "symbol": "COST",
-      "price": 1071.85,
-      "sma20": 996.98,
-      "sma50": 974.41,
-      "sma100": 938.12,
-      "sma200": 880.25,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:52.759000"
-    },
-    {
-      "symbol": "GS",
-      "price": 940.12,
-      "sma20": 938.94,
-      "sma50": 885.84,
-      "sma100": 835.39,
-      "sma200": 744.75,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:13.406000"
+      "updated": "2026-02-03T01:48:47.242000"
     },
     {
       "symbol": "PH",
@@ -131,16 +71,40 @@
       "updated": "2026-02-01T21:25:11.034000"
     },
     {
-      "symbol": "REGN",
-      "price": 771.25,
-      "sma20": 766.72,
-      "sma50": 752.55,
-      "sma100": 673.18,
-      "sma200": 615.65,
+      "symbol": "PH",
+      "price": 935.84,
+      "sma20": 927.97,
+      "sma50": 891.94,
+      "sma100": 830.3,
+      "sma200": 758.38,
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:51.222000"
+      "updated": "2026-02-03T01:48:44.222000"
+    },
+    {
+      "symbol": "GS",
+      "price": 935.41,
+      "sma20": 941.76,
+      "sma50": 889.03,
+      "sma100": 837.32,
+      "sma200": 746.9,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:45.743000"
+    },
+    {
+      "symbol": "MCK",
+      "price": 831.21,
+      "sma20": 826.06,
+      "sma50": 829.43,
+      "sma100": 803.0,
+      "sma200": 753.79,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull_reversion",
+      "pattern": "Full Alignment (Strong Uptrend) | Mean Reversion Opportunity",
+      "updated": "2026-02-03T01:48:44.893000"
     },
     {
       "symbol": "GEV",
@@ -152,7 +116,19 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:16.008000"
+      "updated": "2026-02-03T01:48:48.749000"
+    },
+    {
+      "symbol": "NOC",
+      "price": 692.26,
+      "sma20": 645.25,
+      "sma50": 597.32,
+      "sma100": 593.6,
+      "sma200": 558.59,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:44.582000"
     },
     {
       "symbol": "NOC",
@@ -167,18 +143,6 @@
       "updated": "2026-02-01T21:25:10.312000"
     },
     {
-      "symbol": "ULTA",
-      "price": 681.64,
-      "sma20": 643.82,
-      "sma50": 589.71,
-      "sma100": 560.14,
-      "sma200": 506.84,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T20:32:52.996000"
-    },
-    {
       "symbol": "CW",
       "price": 664.46,
       "sma20": 622.39,
@@ -188,19 +152,7 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:13.715000"
-    },
-    {
-      "symbol": "ARGX",
-      "price": 639.41,
-      "sma20": 651.1,
-      "sma50": 637.52,
-      "sma100": 597.01,
-      "sma200": 517.06,
-      "longTerm": "long_bull",
-      "midTerm": "mid_bull",
-      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:51.174000"
+      "updated": "2026-02-03T01:48:46.945000"
     },
     {
       "symbol": "CAT",
@@ -212,7 +164,7 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:14.619000"
+      "updated": "2026-02-03T01:48:47.513000"
     },
     {
       "symbol": "CACI",
@@ -224,7 +176,7 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:12.563000"
+      "updated": "2026-02-03T01:48:46.400000"
     },
     {
       "symbol": "MSCI",
@@ -236,106 +188,70 @@
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-01T21:25:15.807000"
+      "updated": "2026-02-03T01:48:48.537000"
     },
     {
-      "symbol": "ISRG",
-      "price": 595.55,
-      "sma20": 587.89,
-      "sma50": 559.54,
-      "sma100": 531.86,
-      "sma200": 480.25,
+      "symbol": "CMI",
+      "price": 583.94,
+      "sma20": 560.29,
+      "sma50": 524.88,
+      "sma100": 476.61,
+      "sma200": 408.63,
       "longTerm": "long_bull",
       "midTerm": "mid_bull",
       "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:56.427000"
+      "updated": "2026-02-03T01:48:46.623000"
+    },
+    {
+      "symbol": "LMT",
+      "price": 581.66,
+      "sma20": 540.19,
+      "sma50": 495.17,
+      "sma100": 489.64,
+      "sma200": 474.43,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:47.340000"
+    },
+    {
+      "symbol": "MCO",
+      "price": 515.56,
+      "sma20": 526.29,
+      "sma50": 506.65,
+      "sma100": 496.35,
+      "sma200": 492.12,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-01T21:25:09.864000"
+    },
+    {
+      "symbol": "MCO",
+      "price": 515.56,
+      "sma20": 526.29,
+      "sma50": 506.65,
+      "sma100": 496.35,
+      "sma200": 492.12,
+      "longTerm": "long_bull",
+      "midTerm": "mid_bull",
+      "pattern": "Full Alignment (Strong Uptrend) | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:44.868000"
+    },
+    {
+      "symbol": "AMP",
+      "price": 500.53,
+      "sma20": 501.88,
+      "sma50": 483.43,
+      "sma100": 483.12,
+      "sma200": 495.72,
+      "longTerm": "long_bull_test",
+      "midTerm": "mid_bull",
+      "pattern": "Testing 200 SMA Support | Mid-Term Momentum (Bullish)",
+      "updated": "2026-02-03T01:48:47.427000"
     }
   ],
   "top_bearish": [
-    {
-      "symbol": "DHIL",
-      "price": 147.85,
-      "sma20": 148.68,
-      "sma50": 153.87,
-      "sma100": 156.99,
-      "sma200": 154.05,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-02T01:00:53.269000"
-    },
-    {
-      "symbol": "SUI",
-      "price": 126.59,
-      "sma20": 125.15,
-      "sma50": 125.3,
-      "sma100": 125.81,
-      "sma200": 125.3,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
-      "updated": "2026-02-01T21:25:12.215000"
-    },
-    {
-      "symbol": "MSM",
-      "price": 84.25,
-      "sma20": 84.8,
-      "sma50": 85.39,
-      "sma100": 87.12,
-      "sma200": 85.47,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
-      "updated": "2026-02-01T21:25:12.302000"
-    },
-    {
-      "symbol": "PLTU",
-      "price": 52.19,
-      "sma20": 67.86,
-      "sma50": 76.58,
-      "sma100": 87.57,
-      "sma200": 76.84,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-01T20:32:55.411000"
-    },
-    {
-      "symbol": "PXI",
-      "price": 45.87,
-      "sma20": 46.44,
-      "sma50": 46.42,
-      "sma100": 45.86,
-      "sma200": 46.46,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull",
-      "pattern": "Death Cross (Major Sell) | Mid-Term Momentum (Bullish)",
-      "updated": "2026-02-02T01:00:57.729000"
-    },
-    {
-      "symbol": "HLIO",
-      "price": 40.82,
-      "sma20": 43.52,
-      "sma50": 46.63,
-      "sma100": 47.36,
-      "sma200": 46.76,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-02T01:00:55.607000"
-    },
-    {
-      "symbol": "QCLN",
-      "price": 33.3,
-      "sma20": 33.45,
-      "sma50": 34.63,
-      "sma100": 34.5,
-      "sma200": 34.66,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-02T01:00:57.762000"
-    },
     {
       "symbol": "AC",
       "price": 30.92,
@@ -346,79 +262,7 @@
       "longTerm": "long_bear_strong",
       "midTerm": "mid_neutral",
       "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-01T21:25:16.050000"
-    },
-    {
-      "symbol": "QURE",
-      "price": 23.66,
-      "sma20": 23.19,
-      "sma50": 24.05,
-      "sma100": 33.67,
-      "sma200": 24.11,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
-      "updated": "2026-02-01T20:32:49.678000"
-    },
-    {
-      "symbol": "PARAA",
-      "price": 16.91,
-      "sma20": 21.98,
-      "sma50": 22.42,
-      "sma100": 22.52,
-      "sma200": 22.51,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-01T20:32:54.947000"
-    },
-    {
-      "symbol": "HPF",
-      "price": 16.14,
-      "sma20": 16.13,
-      "sma50": 16.17,
-      "sma100": 16.45,
-      "sma200": 16.18,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
-      "updated": "2026-02-01T21:25:13.195000"
-    },
-    {
-      "symbol": "HPS",
-      "price": 14.61,
-      "sma20": 14.52,
-      "sma50": 14.65,
-      "sma100": 14.99,
-      "sma200": 14.66,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_bull_reversion",
-      "pattern": "Death Cross (Major Sell) | Mean Reversion Opportunity",
-      "updated": "2026-02-01T21:25:14.754000"
-    },
-    {
-      "symbol": "EMBC",
-      "price": 10.2,
-      "sma20": 11.99,
-      "sma50": 12.3,
-      "sma100": 13.24,
-      "sma200": 12.35,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-01T20:32:49.495000"
-    },
-    {
-      "symbol": "NLSP",
-      "price": 7.62,
-      "sma20": 15.58,
-      "sma50": 19.12,
-      "sma100": 20.98,
-      "sma200": 19.36,
-      "longTerm": "long_bear_strong",
-      "midTerm": "mid_neutral",
-      "pattern": "Death Cross (Major Sell) | Neutral",
-      "updated": "2026-02-01T20:32:54.522000"
+      "updated": "2026-02-03T01:48:48.791000"
     }
   ]
 }
