@@ -1,17 +1,17 @@
 {
-  "generated": "2026-02-03T09:17:27.908462",
-  "total_stocks": 3393,
-  "bullish": 1793,
-  "neutral": 503,
-  "bearish": 1097,
+  "generated": "2026-02-03T09:24:28.111195",
+  "total_stocks": 3288,
+  "bullish": 1722,
+  "neutral": 495,
+  "bearish": 1071,
   "categories": {
-    "Strong Bull": 317,
-    "Bull": 1476,
-    "Neutral": 503,
-    "Bear": 964,
-    "Strong Bear": 133,
-    "Blue Sky Candidates": 34,
-    "Bottoming": 74
+    "Strong Bull": 276,
+    "Bull": 1446,
+    "Neutral": 495,
+    "Bear": 943,
+    "Strong Bear": 128,
+    "Blue Sky Candidates": 28,
+    "Bottoming": 72
   },
   "top_performers_1y": [
     {
@@ -167,28 +167,6 @@
       "volumeRatio": 1.45,
       "dataEndDate": "2026-01-30",
       "updated": "2026-02-03T00:35:12.966000"
-    },
-    {
-      "symbol": "DTC",
-      "price": 19.55,
-      "sma20": 4.2,
-      "sma50": 2.0,
-      "sma100": 1.54,
-      "sma200": 1.54,
-      "change1M": 9321.7,
-      "change6M": 1427.3,
-      "change1Y": 907.7,
-      "high52W": 33.43,
-      "low52W": 0.09,
-      "distFromHigh": 41.5,
-      "distFromLow": 22090.7,
-      "longTerm": "bull_weak",
-      "midTerm": "bull_weak",
-      "shortTerm": "bull_weak",
-      "pattern": "Long-Term Uptrend",
-      "volumeRatio": 0.02,
-      "dataEndDate": "2025-07-23",
-      "updated": "2026-02-03T01:48:49.352000"
     },
     {
       "symbol": "OPGN",
@@ -453,6 +431,28 @@
       "volumeRatio": 0.74,
       "dataEndDate": "2026-01-30",
       "updated": "2026-02-03T00:35:12.962000"
+    },
+    {
+      "symbol": "NBTX",
+      "price": 21,
+      "sma20": 21.16,
+      "sma50": 21.55,
+      "sma100": 20.24,
+      "sma200": 12.83,
+      "change1M": -3.1,
+      "change6M": 204.1,
+      "change1Y": 508.7,
+      "high52W": 30.35,
+      "low52W": 2.95,
+      "distFromHigh": 30.8,
+      "distFromLow": 611.9,
+      "longTerm": "bull_weak",
+      "midTerm": "bull_weak",
+      "shortTerm": "bear_weak",
+      "pattern": "Long-Term Uptrend",
+      "volumeRatio": 0.38,
+      "dataEndDate": "2026-01-30",
+      "updated": "2026-02-03T00:35:12.987000"
     }
   ],
   "worst_performers_1y": [

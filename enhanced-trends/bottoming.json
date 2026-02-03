@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-03T09:17:27.838129",
+  "generated": "2026-02-03T09:24:28.044510",
   "category": "bottoming",
-  "count": 74,
+  "count": 72,
   "stocks": [
     {
       "symbol": "ACLO",
@@ -708,28 +708,6 @@
       "updated": "2026-02-03T00:35:12.990000"
     },
     {
-      "symbol": "MHI",
-      "price": 8.95,
-      "sma20": 8.93,
-      "sma50": 9.03,
-      "sma100": 9.04,
-      "sma200": 9.23,
-      "change1M": 1.0,
-      "change6M": -4.7,
-      "change1Y": -4.9,
-      "high52W": 9.74,
-      "low52W": 8.62,
-      "distFromHigh": 8.2,
-      "distFromLow": 3.7,
-      "longTerm": "bear_weak",
-      "midTerm": "bear_weak",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.51,
-      "dataEndDate": "2025-08-22",
-      "updated": "2026-02-03T01:48:49.351000"
-    },
-    {
       "symbol": "MMKT",
       "price": 100.22,
       "sma20": 100.25,
@@ -1168,28 +1146,6 @@
       "volumeRatio": 0.27,
       "dataEndDate": "2026-01-30",
       "updated": "2026-02-03T01:48:49.346000"
-    },
-    {
-      "symbol": "SBBA",
-      "price": 25.29,
-      "sma20": 25.21,
-      "sma50": 25.15,
-      "sma100": 25.2,
-      "sma200": 25.21,
-      "change1M": 0.7,
-      "change6M": 0.1,
-      "change1Y": -0.0,
-      "high52W": 25.45,
-      "low52W": 25.0,
-      "distFromHigh": 0.6,
-      "distFromLow": 1.2,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.37,
-      "dataEndDate": "2025-02-28",
-      "updated": "2026-02-03T01:48:49.352000"
     },
     {
       "symbol": "SHV",
