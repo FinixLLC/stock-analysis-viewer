@@ -821,12 +821,12 @@
 
                 // Sort all picks by composite score and take top 3
                 const topPicks = allPicks
-                    .filter(p => p.tier <= 2) // Only Tier 1 and 2
+                    .filter(p => p.tier <= 3) // Include Tier 1, 2, and 3 (Good quality or better)
                     .sort((a, b) => b.compositeScore - a.compositeScore)
                     .slice(0, 3);
 
                 if (topPicks.length === 0) {
-                    // If no Tier 1-2, take top 3 regardless of tier
+                    // If no quality tiers, take top 3 regardless of tier
                     const fallbackPicks = allPicks
                         .sort((a, b) => b.compositeScore - a.compositeScore)
                         .slice(0, 3);
