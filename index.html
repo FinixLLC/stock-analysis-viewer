@@ -404,7 +404,24 @@
         <header role="banner">
             <h1>📊 Stock Analysis Dashboard</h1>
             <p class="subtitle">Real-time pattern recognition and composite scoring</p>
-            <p class="timestamp" id="timestamp"></p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <p class="timestamp" id="timestamp" style="margin: 0;"></p>
+                <button id="refresh-btn" onclick="refreshDashboard()" style="
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    border: none;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+                " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(102, 126, 234, 0.4)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(102, 126, 234, 0.3)';">
+                    🔄 Refresh
+                </button>
+            </div>
             <span id="freshness-badge" class="freshness-badge freshness-fresh" aria-live="polite"></span>
         </header>
 
@@ -921,6 +938,32 @@
             } else {
                 content.innerHTML = '<div class="no-picks">No top picks available. Check back after the next analysis run.</div>';
             }
+        }
+
+        // Refresh dashboard function
+        function refreshDashboard() {
+            const btn = document.getElementById('refresh-btn');
+            btn.disabled = true;
+            btn.innerHTML = '⏳ Refreshing...';
+
+            // Update timestamp
+            document.getElementById('timestamp').textContent =
+                'Dashboard loaded: ' + new Date().toLocaleString();
+
+            // Reload all data
+            Promise.all([
+                loadPortfolioSummary(),
+                loadEnhancedTrendSummary(),
+                loadFiles(),
+                loadTopPicks()
+            ]).then(() => {
+                btn.disabled = false;
+                btn.innerHTML = '🔄 Refresh';
+            }).catch((error) => {
+                console.error('Refresh failed:', error);
+                btn.disabled = false;
+                btn.innerHTML = '🔄 Refresh';
+            });
         }
 
         // Load top picks on page load
