@@ -767,7 +767,7 @@
 
                 // Sort by date and get the most recent files (one per exchange)
                 const sortedFiles = [...data.top50]
-                    .filter(f => f.name.includes('Polygon') && f.name.endsWith('.csv'))
+                    .filter(f => f.name.includes('Yahoo') && f.name.endsWith('.csv'))
                     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
                 // Get unique exchanges from most recent files
