@@ -574,7 +574,7 @@
         // Load EnhancedTrendClassifier summary
         async function loadEnhancedTrendSummary() {
             try {
-                const response = await fetch('enhanced-trends/summary.json');
+                const response = await fetch(`enhanced-trends/summary.json?t=${Date.now()}`);
                 if (response.ok) {
                     const data = await response.json();
                     document.getElementById('enhanced-trend-total-count').textContent = data.total_stocks || 0;
@@ -594,7 +594,7 @@
 
             try {
                 // Check actual stock data age from enhanced trends
-                const response = await fetch('enhanced-trends/all_trends.json');
+                const response = await fetch(`enhanced-trends/all_trends.json?t=${Date.now()}`);
                 if (response.ok) {
                     const data = await response.json();
                     const stocks = data.stocks || [];
