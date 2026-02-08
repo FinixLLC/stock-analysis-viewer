@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Financial Profiles</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .subtitle { color: #666; font-size: 1.1em; }
+        .back-link {
+            display: inline-block; margin-top: 10px;
+            color: #667eea; text-decoration: none; font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .stats-bar {
+            display: flex; gap: 30px; margin-top: 15px; flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-num {
+            font-size: 1.8em; font-weight: bold;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .stat-lbl { color: #888; font-size: 0.85em; }
+        .search-container {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .search-box {
+            width: 100%; padding: 14px 20px;
+            border: 2px solid #e9ecef; border-radius: 12px;
+            font-size: 1.1em; transition: border-color 0.2s;
+        }
+        .search-box:focus { outline: none; border-color: #f093fb; }
+        .search-hint { color: #999; font-size: 0.85em; margin-top: 8px; }
+        .results {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .profile-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .profile-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        .card-symbol {
+            font-size: 1.6em; font-weight: bold; color: #333;
+            margin-bottom: 10px;
+        }
+        .card-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+        .badge {
+            padding: 4px 10px; border-radius: 15px;
+            font-size: 0.78em; font-weight: 600;
+        }
+        .badge-analysis { background: #d4edda; color: #155724; }
+        .badge-filing { background: #cce5ff; color: #004085; }
+        .card-date { color: #888; font-size: 0.85em; }
+        .card-actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+        .btn {
+            padding: 8px 18px;
+            border-radius: 20px; text-decoration: none;
+            font-weight: 600; font-size: 0.85em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+        .btn-analysis {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(240,147,251,0.4);
+        }
+        .btn-filing {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(102,126,234,0.4);
+        }
+        .btn:hover { transform: translateY(-1px); }
+        /* Report viewer modal */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6); z-index: 1000;
+            justify-content: center; align-items: center; padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal {
+            background: white; border-radius: 20px;
+            width: 100%; max-width: 900px; max-height: 90vh;
+            overflow: hidden; display: flex; flex-direction: column;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+        }
+        .modal-header {
+            padding: 20px 25px; border-bottom: 1px solid #eee;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .modal-header h2 { font-size: 1.3em; color: #333; }
+        .modal-close {
+            background: none; border: none; font-size: 1.5em;
+            cursor: pointer; color: #999; padding: 5px 10px;
+        }
+        .modal-close:hover { color: #333; }
+        .modal-body {
+            padding: 25px; overflow-y: auto; flex: 1;
+            font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+            font-size: 0.9em; line-height: 1.7;
+            white-space: pre-wrap; color: #333;
+        }
+        .no-results {
+            text-align: center; padding: 40px; color: #888;
+            background: rgba(255,255,255,0.95); border-radius: 16px;
+        }
+        .pagination {
+            display: flex; justify-content: center; gap: 10px;
+            margin-top: 20px; flex-wrap: wrap;
+        }
+        .page-btn {
+            padding: 8px 16px; border-radius: 10px; border: none;
+            background: rgba(255,255,255,0.9); color: #667eea;
+            font-weight: 600; cursor: pointer; transition: all 0.2s;
+        }
+        .page-btn:hover { background: white; transform: translateY(-1px); }
+        .page-btn.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .page-btn:disabled { opacity: 0.5; cursor: default; transform: none; }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .results { grid-template-columns: 1fr; }
+            header { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 Company Financial Profiles</h1>
+            <p class="subtitle">SEC 10-Q filings with AI-powered financial health analysis</p>
+            <a href="index.html" class="back-link">← Back to Dashboard</a>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-num" id="total-symbols">-</div>
+                    <div class="stat-lbl">Companies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num" id="total-analyses">-</div>
+                    <div class="stat-lbl">AI Analyses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num" id="total-filings">-</div>
+                    <div class="stat-lbl">SEC Filings</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="search" class="search-box" id="search" placeholder="Search by symbol (e.g. AAPL, MSFT, TSLA)..." autofocus>
+            <div class="search-hint" id="search-hint">Type a symbol to search across <span id="hint-count">-</span> companies</div>
+        </div>
+
+        <div class="results" id="results"></div>
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <!-- Report viewer modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Report</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        let allProfiles = [];
+        const PAGE_SIZE = 30;
+        let currentPage = 1;
+        let filteredProfiles = [];
+
+        async function loadIndex() {
+            try {
+                const res = await fetch(`company-profiles/index.json?t=${Date.now()}`);
+                const data = await res.json();
+                allProfiles = data.profiles;
+                filteredProfiles = allProfiles;
+
+                document.getElementById('total-symbols').textContent = data.totalSymbols.toLocaleString();
+                document.getElementById('total-analyses').textContent = data.totalAnalyses.toLocaleString();
+                document.getElementById('total-filings').textContent = data.totalFilings.toLocaleString();
+                document.getElementById('hint-count').textContent = data.totalSymbols.toLocaleString();
+
+                renderPage();
+            } catch (err) {
+                document.getElementById('results').innerHTML =
+                    '<div class="no-results">Failed to load company profiles. Please try refreshing.</div>';
+            }
+        }
+
+        function renderPage() {
+            const start = (currentPage - 1) * PAGE_SIZE;
+            const pageData = filteredProfiles.slice(start, start + PAGE_SIZE);
+            const results = document.getElementById('results');
+
+            if (pageData.length === 0) {
+                results.innerHTML = '<div class="no-results">No matching companies found. Try a different symbol.</div>';
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+
+            results.innerHTML = pageData.map(p => `
+                <div class="profile-card">
+                    <div class="card-symbol">${p.symbol}</div>
+                    <div class="card-badges">
+                        ${p.analysisFile ? `<span class="badge badge-analysis">AI Analysis</span>` : ''}
+                        ${p.filingFile ? `<span class="badge badge-filing">${p.filingType || '10-Q'}</span>` : ''}
+                    </div>
+                    <div class="card-date">${p.analysisDate ? 'Report: ' + p.analysisDate : ''}</div>
+                    <div class="card-actions">
+                        ${p.analysisFile ? `<a class="btn btn-analysis" onclick="viewReport('${p.symbol}', '${p.analysisFile}')">View Analysis</a>` : ''}
+                        ${p.filingFile ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - SEC Filing', '${p.filingFile}')">View Filing</a>` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProfiles.length / PAGE_SIZE);
+            if (totalPages <= 1) {
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+            let html = '';
+            html += `<button class="page-btn" onclick="goPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
+
+            const maxShow = 7;
+            let startP = Math.max(1, currentPage - 3);
+            let endP = Math.min(totalPages, startP + maxShow - 1);
+            if (endP - startP < maxShow - 1) startP = Math.max(1, endP - maxShow + 1);
+
+            for (let i = startP; i <= endP; i++) {
+                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
+            }
+            html += `<button class="page-btn" onclick="goPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+            html += `<span style="color: rgba(255,255,255,0.8); align-self: center; font-size: 0.9em;">${filteredProfiles.length} results</span>`;
+            document.getElementById('pagination').innerHTML = html;
+        }
+
+        function goPage(n) {
+            const totalPages = Math.ceil(filteredProfiles.length / PAGE_SIZE);
+            if (n < 1 || n > totalPages) return;
+            currentPage = n;
+            renderPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('search').addEventListener('input', (e) => {
+            const term = e.target.value.trim().toUpperCase();
+            if (!term) {
+                filteredProfiles = allProfiles;
+            } else {
+                filteredProfiles = allProfiles.filter(p => p.symbol.includes(term));
+            }
+            currentPage = 1;
+            renderPage();
+        });
+
+        async function viewReport(title, filename) {
+            const modal = document.getElementById('modal');
+            const body = document.getElementById('modal-body');
+            document.getElementById('modal-title').textContent = title;
+            body.textContent = 'Loading...';
+            modal.classList.add('active');
+
+            try {
+                const res = await fetch(`financial_reports/${filename}`);
+                const text = await res.text();
+                // If it's HTML (SEC filing), render it; otherwise show as text
+                if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
+                    body.style.fontFamily = '-apple-system, sans-serif';
+                    body.innerHTML = text;
+                } else {
+                    body.style.fontFamily = "'SF Mono', 'Monaco', 'Menlo', monospace";
+                    body.textContent = text;
+                }
+            } catch (err) {
+                body.textContent = 'Failed to load report.';
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        loadIndex();
+    </script>
+</body>
+</html>

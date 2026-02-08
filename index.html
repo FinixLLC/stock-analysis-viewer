@@ -449,6 +449,29 @@
                 </a>
             </div>
 
+            <div class="stat-card" role="region" aria-labelledby="company-profiles-heading" style="padding: 25px;">
+                <h2 id="company-profiles-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🏢 Company Profiles</h2>
+                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="text-align: center; margin-bottom: 10px;">
+                        <div style="font-size: 2em; font-weight: bold; color: white;" id="profile-total">-</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">Companies</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="profile-analyses">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">AI Analyses</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="profile-filings">-</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">SEC Filings</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="company-profile.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    🏢 View Profiles →
+                </a>
+            </div>
+
             <div class="stat-card" role="region" aria-labelledby="enhanced-trends-heading" style="padding: 25px;">
                 <h2 id="enhanced-trends-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🎯 Enhanced Trend Classifier</h2>
                 <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
@@ -570,6 +593,22 @@
             }
         }
         loadPortfolioSummary();
+
+        // Load Company Profiles summary
+        async function loadCompanyProfileSummary() {
+            try {
+                const response = await fetch(`company-profiles/index.json?t=${Date.now()}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('profile-total').textContent = data.totalSymbols.toLocaleString();
+                    document.getElementById('profile-analyses').textContent = data.totalAnalyses.toLocaleString();
+                    document.getElementById('profile-filings').textContent = data.totalFilings.toLocaleString();
+                }
+            } catch (error) {
+                console.log('Company profile data not available yet');
+            }
+        }
+        loadCompanyProfileSummary();
 
         // Load EnhancedTrendClassifier summary
         async function loadEnhancedTrendSummary() {
@@ -953,6 +992,7 @@
             // Reload all data
             Promise.all([
                 loadPortfolioSummary(),
+                loadCompanyProfileSummary(),
                 loadEnhancedTrendSummary(),
                 loadFiles(),
                 loadTopPicks()
