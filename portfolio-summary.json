@@ -1,175 +1,405 @@
 {
-  "generated_at": "2026-02-09T23:34:54.678042",
-  "total_positions": 101,
-  "avg_1m_return": 1.94,
-  "sell_signal_count": 0,
+  "generated_at": "2026-02-10T07:42:55.654282",
+  "total_positions": 219,
+  "avg_1m_return": 11.24255707762557,
+  "sell_signal_count": 21,
   "top_gainer": {
-    "symbol": "SNDK",
-    "return_1m": 49.87
+    "symbol": "AMCR",
+    "return_1m": 429.86
   },
   "top_gainers": [
     {
-      "symbol": "SNDK",
-      "price": 583.4000244140625,
-      "return_1m": 49.87,
-      "return_3m": 106.08,
-      "return_6m": 1149.79,
-      "return_1y": 1520.56,
+      "symbol": "AMCR",
+      "price": 44.19,
+      "return_1m": 429.86,
+      "return_3m": 462.21,
+      "return_6m": 370.11,
+      "return_1y": 353.23,
+      "signal_count": 0
+    },
+    {
+      "symbol": "CRML",
+      "price": 18.27,
+      "return_1m": 163.26,
+      "return_3m": 67.08,
+      "return_6m": 387.2,
+      "return_1y": 135.74,
+      "signal_count": 0
+    },
+    {
+      "symbol": "USAR",
+      "price": 26.35,
+      "return_1m": 121.43,
+      "return_3m": 55.82,
+      "return_6m": 88.35,
+      "return_1y": 42.05,
+      "signal_count": 1
+    },
+    {
+      "symbol": "MAIA",
+      "price": 2.95,
+      "return_1m": 92.81,
+      "return_3m": 154.31,
+      "return_6m": 86.71,
+      "return_1y": 58.6,
+      "signal_count": 0
+    },
+    {
+      "symbol": "UUUU",
+      "price": 27.72,
+      "return_1m": 90.65,
+      "return_3m": 55.73,
+      "return_6m": 185.19,
+      "return_1y": 400.36,
+      "signal_count": 0
+    },
+    {
+      "symbol": "BE",
+      "price": 165.39,
+      "return_1m": 90.34,
+      "return_3m": 16.17,
+      "return_6m": 358.14,
+      "return_1y": 603.19,
       "signal_count": 0
     },
     {
       "symbol": "USAS",
-      "price": 8.0,
-      "return_1m": 31.36,
-      "return_3m": 80.18,
-      "return_6m": 233.33,
-      "return_1y": 471.43,
+      "price": 9.4,
+      "return_1m": 83.95,
+      "return_3m": 143.52,
+      "return_6m": 277.24,
+      "return_1y": 636.22,
       "signal_count": 0
     },
     {
-      "symbol": "YDDL",
-      "price": 7.03000020980835,
-      "return_1m": 28.05,
-      "return_3m": 80.72,
-      "return_6m": 29.7,
-      "return_1y": 29.7,
+      "symbol": "APLD",
+      "price": 41.35,
+      "return_1m": 68.64,
+      "return_3m": 25.8,
+      "return_6m": 196.42,
+      "return_1y": 460.3,
       "signal_count": 0
     },
     {
-      "symbol": "SLSR",
-      "price": 10.460000038146973,
-      "return_1m": 27.1,
-      "return_3m": 51.37,
-      "return_6m": 96.62,
-      "return_1y": 168.89,
+      "symbol": "IREN",
+      "price": 62.94,
+      "return_1m": 66.64,
+      "return_3m": -7.1,
+      "return_6m": 281.92,
+      "return_1y": 511.07,
       "signal_count": 0
     },
     {
-      "symbol": "MAIA",
-      "price": 1.9800000190734863,
-      "return_1m": 26.11,
-      "return_3m": 85.05,
-      "return_6m": 26.92,
-      "return_1y": 9.39,
-      "signal_count": 0
-    },
-    {
-      "symbol": "GEV",
-      "price": 801.5399780273438,
-      "return_1m": 25.29,
-      "return_3m": 39.4,
-      "return_6m": 28.34,
-      "return_1y": 108.68,
-      "signal_count": 0
-    },
-    {
-      "symbol": "BKR",
-      "price": 59.54999923706055,
-      "return_1m": 24.19,
-      "return_3m": 25.29,
-      "return_6m": 38.34,
-      "return_1y": 28.29,
-      "signal_count": 0
-    },
-    {
-      "symbol": "XOM",
-      "price": 151.2100067138672,
-      "return_1m": 21.91,
-      "return_3m": 29.13,
-      "return_6m": 43.37,
-      "return_1y": 41.26,
-      "signal_count": 0
-    },
-    {
-      "symbol": "TKR",
-      "price": 108.93000030517578,
-      "return_1m": 19.93,
-      "return_3m": 39.09,
-      "return_6m": 42.59,
-      "return_1y": 36.04,
-      "signal_count": 0
-    },
-    {
-      "symbol": "SCCO",
-      "price": 208.27999877929688,
-      "return_1m": 18.34,
-      "return_3m": 52.27,
-      "return_6m": 120.44,
-      "return_1y": 127.14,
+      "symbol": "WRN",
+      "price": 3.97,
+      "return_1m": 48.69,
+      "return_3m": 94.61,
+      "return_6m": 217.6,
+      "return_1y": 285.44,
       "signal_count": 0
     }
   ],
   "top_losers": [
     {
-      "symbol": "SMX",
-      "price": 13.899999618530273,
-      "return_1m": -47.57,
-      "return_3m": 742.42,
-      "signal_count": 0
-    },
-    {
-      "symbol": "PD",
-      "price": 7.820000171661377,
-      "return_1m": -36.22,
-      "return_3m": -51.09,
-      "signal_count": 0
-    },
-    {
-      "symbol": "HUM",
-      "price": 189.49000549316406,
-      "return_1m": -31.49,
-      "return_3m": -20.93,
-      "signal_count": 0
-    },
-    {
-      "symbol": "APP",
-      "price": 460.3800048828125,
-      "return_1m": -30.1,
-      "return_3m": -21.28,
-      "signal_count": 0
-    },
-    {
-      "symbol": "MOH",
-      "price": 127.52999877929688,
-      "return_1m": -29.86,
-      "return_3m": -9.57,
-      "signal_count": 0
-    },
-    {
-      "symbol": "HOOD",
-      "price": 86.55999755859375,
-      "return_1m": -26.34,
-      "return_3m": -34.91,
-      "signal_count": 0
-    },
-    {
-      "symbol": "CRM",
-      "price": 194.02999877929688,
-      "return_1m": -25.2,
-      "return_3m": -21.01,
-      "signal_count": 0
-    },
-    {
-      "symbol": "PLTR",
-      "price": 135.89999389648438,
-      "return_1m": -24.25,
-      "return_3m": -26.21,
-      "signal_count": 0
-    },
-    {
-      "symbol": "ORCL",
-      "price": 156.58999633789062,
-      "return_1m": -23.5,
-      "return_3m": -30.83,
-      "signal_count": 0
+      "symbol": "TRT",
+      "price": 6.1,
+      "return_1m": -53.93,
+      "return_3m": -15.16,
+      "signal_count": 5
     },
     {
       "symbol": "WGS",
-      "price": 91.23999786376953,
-      "return_1m": -23.48,
-      "return_3m": -33.13,
-      "signal_count": 0
+      "price": 96.01,
+      "return_1m": -26.18,
+      "return_3m": -30.58,
+      "signal_count": 3
+    },
+    {
+      "symbol": "ANF",
+      "price": 97.09,
+      "return_1m": -22.86,
+      "return_3m": 38.4,
+      "signal_count": 3
+    },
+    {
+      "symbol": "APP",
+      "price": 535.44,
+      "return_1m": -20.54,
+      "return_3m": -15.3,
+      "signal_count": 3
+    },
+    {
+      "symbol": "FIG",
+      "price": 30.06,
+      "return_1m": -19.56,
+      "return_3m": -37.6,
+      "signal_count": 3
+    },
+    {
+      "symbol": "RIVN",
+      "price": null,
+      "return_1m": -19.08,
+      "return_3m": 20.92,
+      "signal_count": 3
+    },
+    {
+      "symbol": "CEG",
+      "price": 287.95,
+      "return_1m": -18.49,
+      "return_3m": -23.76,
+      "signal_count": 3
+    },
+    {
+      "symbol": "PD",
+      "price": 10.76,
+      "return_1m": -17.93,
+      "return_3m": -33.21,
+      "signal_count": 3
+    },
+    {
+      "symbol": "SDGR",
+      "price": 14.88,
+      "return_1m": -16.78,
+      "return_3m": -27.59,
+      "signal_count": 3
+    },
+    {
+      "symbol": "APLS",
+      "price": null,
+      "return_1m": -16.6,
+      "return_3m": 1.26,
+      "signal_count": 2
     }
   ],
-  "sell_alerts": []
+  "sell_alerts": [
+    {
+      "symbol": "PLTU",
+      "price": null,
+      "return_1m": -11.33,
+      "signal_count": 5,
+      "signals": [
+        "BELOW_MA20 (Price: $65.21, MA20: $76.05)",
+        "BELOW_MA50 (Price: $65.21, MA50: $81.42)",
+        "LOWER_HIGHS (Declining trend)",
+        "CONSECUTIVE_DOWN (5 days)",
+        "SHARP_DECLINE (-11.5% in 5 days)"
+      ]
+    },
+    {
+      "symbol": "SMX",
+      "price": 17,
+      "return_1m": 3.98,
+      "signal_count": 5,
+      "signals": [
+        "BELOW_MA20 (Price: $17.00, MA20: $31.60)",
+        "BELOW_MA50 (Price: $17.00, MA50: $67.37)",
+        "LOWER_HIGHS (Declining trend)",
+        "CONSECUTIVE_DOWN (5 days)",
+        "SHARP_DECLINE (-23.5% in 5 days)"
+      ]
+    },
+    {
+      "symbol": "TRT",
+      "price": 6.1,
+      "return_1m": -53.93,
+      "signal_count": 5,
+      "signals": [
+        "BELOW_MA20 (Price: $6.10, MA20: $8.06)",
+        "BELOW_MA50 (Price: $6.10, MA50: $8.84)",
+        "LOWER_HIGHS (Declining trend)",
+        "CONSECUTIVE_DOWN (5 days)",
+        "SHARP_DECLINE (-10.9% in 5 days)"
+      ]
+    },
+    {
+      "symbol": "PFBC",
+      "price": 83.54,
+      "return_1m": -11.53,
+      "signal_count": 4,
+      "signals": [
+        "BELOW_MA20 (Price: $83.54, MA20: $95.26)",
+        "BELOW_MA50 (Price: $83.54, MA50: $95.46)",
+        "VOLUME_SPIKE_DOWN (High volume on down day)",
+        "SHARP_DECLINE (-13.8% in 5 days)"
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "price": null,
+      "return_1m": -6.99,
+      "signal_count": 4,
+      "signals": [
+        "BELOW_MA20 (Price: $165.33, MA20: $179.50)",
+        "BELOW_MA50 (Price: $165.33, MA50: $177.62)",
+        "LOWER_HIGHS (Declining trend)",
+        "CONSECUTIVE_DOWN (6 days)"
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "price": 282.7,
+      "return_1m": -14.36,
+      "signal_count": 4,
+      "signals": [
+        "BELOW_MA20 (Price: $282.70, MA20: $338.09)",
+        "BELOW_MA50 (Price: $282.70, MA50: $331.47)",
+        "VOLUME_SPIKE_DOWN (High volume on down day)",
+        "SHARP_DECLINE (-18.7% in 5 days)"
+      ]
+    },
+    {
+      "symbol": "ACIW",
+      "price": 43.5,
+      "return_1m": -9.01,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $43.50, MA20: $45.17)",
+        "BELOW_MA50 (Price: $43.50, MA50: $46.34)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "ADBE",
+      "price": 299.58,
+      "return_1m": -14.4,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $299.58, MA20: $317.19)",
+        "BELOW_MA50 (Price: $299.58, MA50: $329.42)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "ANF",
+      "price": 97.09,
+      "return_1m": -22.86,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $97.09, MA20: $113.89)",
+        "BELOW_MA50 (Price: $97.09, MA50: $103.41)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "APP",
+      "price": 535.44,
+      "return_1m": -20.54,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $535.44, MA20: $617.34)",
+        "BELOW_MA50 (Price: $535.44, MA50: $628.37)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "CEG",
+      "price": 287.95,
+      "return_1m": -18.49,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $287.95, MA20: $323.33)",
+        "BELOW_MA50 (Price: $287.95, MA50: $343.15)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "DDS",
+      "price": 603.73,
+      "return_1m": -0.43,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $603.73, MA20: $649.56)",
+        "BELOW_MA50 (Price: $603.73, MA50: $652.98)",
+        "CONSECUTIVE_DOWN (6 days)"
+      ]
+    },
+    {
+      "symbol": "FIG",
+      "price": 30.06,
+      "return_1m": -19.56,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $30.06, MA20: $33.12)",
+        "BELOW_MA50 (Price: $30.06, MA50: $35.51)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "GIII",
+      "price": 28.13,
+      "return_1m": -2.87,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $28.13, MA20: $29.41)",
+        "BELOW_MA50 (Price: $28.13, MA50: $29.62)",
+        "CONSECUTIVE_DOWN (5 days)"
+      ]
+    },
+    {
+      "symbol": "HQY",
+      "price": 82.85,
+      "return_1m": -9.56,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $82.85, MA20: $88.58)",
+        "BELOW_MA50 (Price: $82.85, MA50: $94.21)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "INO",
+      "price": 1.53,
+      "return_1m": -12.07,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $1.53, MA20: $1.59)",
+        "BELOW_MA50 (Price: $1.53, MA50: $1.87)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "KINS",
+      "price": 14.96,
+      "return_1m": -11.11,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $14.96, MA20: $16.18)",
+        "BELOW_MA50 (Price: $14.96, MA50: $15.82)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "PD",
+      "price": 10.76,
+      "return_1m": -17.93,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $10.76, MA20: $11.87)",
+        "BELOW_MA50 (Price: $10.76, MA50: $12.71)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "RIVN",
+      "price": null,
+      "return_1m": -19.08,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $15.95, MA20: $18.69)",
+        "BELOW_MA50 (Price: $15.95, MA50: $17.88)",
+        "LOWER_HIGHS (Declining trend)"
+      ]
+    },
+    {
+      "symbol": "SDGR",
+      "price": 14.88,
+      "return_1m": -16.78,
+      "signal_count": 3,
+      "signals": [
+        "BELOW_MA20 (Price: $14.88, MA20: $17.55)",
+        "BELOW_MA50 (Price: $14.88, MA50: $17.61)",
+        "VOLUME_SPIKE_DOWN (High volume on down day)"
+      ]
+    }
+  ]
 }

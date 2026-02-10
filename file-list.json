@@ -638,6 +638,16 @@
   ],
   "patterns": [
     {
+      "name": "Top50_Nasdaq_yahoo_2026_02_06.txt",
+      "path": "patterns/Top50_Nasdaq_yahoo_2026_02_06.txt",
+      "date": "2026-02-07"
+    },
+    {
+      "name": "Top50_Nasdaq_yahoo_2026_02_05.txt",
+      "path": "patterns/Top50_Nasdaq_yahoo_2026_02_05.txt",
+      "date": "2026-02-06"
+    },
+    {
       "name": "Top50_Nasdaq_yahoo_2026_02_04.txt",
       "path": "patterns/Top50_Nasdaq_yahoo_2026_02_04.txt",
       "date": "2026-02-05"
@@ -1021,6 +1031,16 @@
       "name": "Top50_AMEX_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_AMEX_Polygon_2025_12_30.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "Top20_Nasdaq_yahoo_2026_02_06.txt",
+      "path": "patterns/Top20_Nasdaq_yahoo_2026_02_06.txt",
+      "date": "2026-02-07"
+    },
+    {
+      "name": "Top20_Nasdaq_yahoo_2026_02_05.txt",
+      "path": "patterns/Top20_Nasdaq_yahoo_2026_02_05.txt",
+      "date": "2026-02-06"
     },
     {
       "name": "Top20_Nasdaq_yahoo_2026_02_04.txt",
@@ -1428,6 +1448,11 @@
       "date": "2026-01-15"
     },
     {
+      "name": "SpoonList_Nasdaq_yahoo_2026_02_05.txt",
+      "path": "patterns/SpoonList_Nasdaq_yahoo_2026_02_05.txt",
+      "date": "2026-02-06"
+    },
+    {
       "name": "SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "path": "patterns/SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "date": "2026-02-05"
@@ -1686,6 +1711,11 @@
       "name": "SpoonList.txt",
       "path": "patterns/SpoonList.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "POSList_Nasdaq_yahoo_2026_02_05.txt",
+      "path": "patterns/POSList_Nasdaq_yahoo_2026_02_05.txt",
+      "date": "2026-02-06"
     },
     {
       "name": "POSList_Nasdaq_yahoo_2026_02_04.txt",
@@ -2111,6 +2141,11 @@
       "name": "POSList.txt",
       "path": "patterns/POSList.txt",
       "date": "2026-01-15"
+    },
+    {
+      "name": "CupHandleList_Nasdaq_yahoo_2026_02_05.txt",
+      "path": "patterns/CupHandleList_Nasdaq_yahoo_2026_02_05.txt",
+      "date": "2026-02-06"
     },
     {
       "name": "CupHandleList_Nasdaq_yahoo_2026_02_04.txt",
@@ -2540,7 +2575,7 @@
   ],
   "stats": {
     "total_stocks": "127",
-    "total_patterns": "380",
-    "last_update": "Feb 09, 2026 23:47"
+    "total_patterns": "387",
+    "last_update": "Feb 10, 2026 07:42"
   }
 }
