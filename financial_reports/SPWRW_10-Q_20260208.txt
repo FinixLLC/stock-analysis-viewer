@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ENG">
+<head>
+<title>EDGAR Search Results</title>
+<link href="/include/interactive2.css" rel="stylesheet" type="text/css" />
+<link  rel="stylesheet" href="/edgar/search/global/css/bootstrap/bootstrap.min.css" type="text/css" />
+<link href="/edgar/search/css/smartSearchCompanyLanding.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="/edgar/search/js/smartSearchCompanyLanding.js" type="text/javascript"></script>
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001838987&amp;type=10-Q%25&amp;dateb=&amp;owner=exclude&amp;count=10&amp;output=atom" />
+
+</head>
+<body style="margin: 0">
+<!-- SEC Web Analytics - For information please visit: https://www.sec.gov/privacy.htm#collectedinfo -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TD3BKV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TD3BKV');</script>
+<!-- End SEC Web Analytics -->
+
+<!-- BEGIN BANNER -->
+<div  id="header" style="text-align: center;">
+    <nav id="main-navbar" class="navbar navbar-expand">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav__sec_link" href="https://www.sec.gov">
+                    <img src="/edgar/search/images/edgar-logo-2x.png" alt="" style="height:6.25rem">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav__sec_link" href="https://www.sec.gov">
+                    <span class="link-text d-inline">SEC.gov</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav__link" href="//www.sec.gov/submit-filings/about-edgar" id="edgar-short-form"><span class="link-text">EDGAR</span></a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+		                        <a href="/cgi-bin/browse-edgar?action=getcurrent" class="nav__link">Latest Filings</a>
+
+            </li>
+            <li class="nav-item">
+                <a href="https://www.sec.gov/edgar/search-and-access" class="nav__link">Filings search tools</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 style="position: relative; top: -40px;">EDGAR Company Search Results</h1>
+</div>
+<!-- END BANNER -->
+
+
+<!-- BEGIN BREADCRUMBS -->
+<div id="breadCrumbs">
+   <ul>
+      <li><a href="/index.htm">SEC Home</a> &#187;</li>
+      <li><a href="/edgar/searchedgar/companysearch.html">Company Search</a> &#187;</li>
+      <li class="last">Current Page</li>
+   </ul>
+</div>
+<!-- END BREADCRUMBS -->
+
+<div id="contentDiv">
+   <!-- START FILER DIV -->
+<div class="filerDiv"> 
+      <div class="mailer">Mailing Address
+         <span class="mailerAddress">45700 NORTHPORT LOOP EAST</span>
+         <span class="mailerAddress">
+FREMONT CA          </span>
+      </div>
+      <div class="mailer">Business Address
+         <span class="mailerAddress">45700 NORTHPORT LOOP EAST</span>
+         <span class="mailerAddress">
+FREMONT CA          </span>
+         <span class="mailerAddress">5102702507</span>
+      </div>
+      <div class="companyInfo">
+         <span class="companyName">SunPower Inc. <acronym title="Central Index Key">CIK</acronym>#: <a href="/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001838987&amp;owner=exclude&amp;count=10">0001838987 (see all company filings)</a></span>
+         <p class="identInfo"><acronym title="Standard Industrial Code">SIC</acronym>: <a href="/cgi-bin/browse-edgar?action=getcompany&amp;SIC=1700&amp;owner=exclude&amp;count=10">1700</a> - CONSTRUCTION SPECIAL TRADE CONTRACTORS<br />State location: <a href="/cgi-bin/browse-edgar?action=getcompany&amp;State=CA&amp;owner=exclude&amp;count=10">CA</a> | State of Inc.: <strong>DE</strong> | Fiscal Year End: 1229<br />formerly: Complete Solaria, Inc. (filings through 2025-09-26)<br />formerly: Freedom Acquisition I Corp. (filings through 2023-07-20)<br /><span>(CF Office: 05 Real Estate & Construction)<span><br />Get <a href="/cgi-bin/own-disp?action=getissuer&amp;CIK=0001838987"><b>insider transactions</b></a> for this <b>issuer</b>.
+</p>
+      </div>
+   </div>
+   <div style="width: 100%;">
+      <form method="GET" action="/cgi-bin/browse-edgar">
+         <input type="hidden" name="action" value="getcompany">
+         <input type="hidden" name="CIK" value="0001838987">
+         <table style="margin: 0px; background:#FFFFFF; border: 1px solid #BCD6F8; width: 100%;">
+            <tr>
+            <tr>
+                <td colspan="5" class="filter-results-title"><strong>Filter Results</strong></td>
+                <td rowspan="2" class="efts_form forms_separator"><div></div></td>
+                <td class="efts_form"><strong>Search Within Files</strong> <img src="/edgar/search/images/edgar_full_text_search.png" class="efts-logo-image"></td>
+            </tr>
+            <tr>
+               <td><label for="type">Filing Type:</label><br /><input name="type" size="10" tabindex="1" id="type" value="10-Q"></td>
+               <td><label for="prior_to">Prior to:</label> (YYYYMMDD)<br /><input name="dateb" size="10" tabindex="2" id="prior_to" value=""></td>
+               <td>Ownership?<br /><input type="radio" name="owner" value="include" id="include" tabindex="3"><label for="include">include</label><input type="radio" name="owner" value="exclude" id="exclude" checked="checked" tabindex="4"><label for="exclude">exclude</label><input type="radio" name="owner" value="only" id="only" tabindex="5"/><label for="only">only</label>
+               <td><label for="count">Limit Results Per Page</label><br />
+					 <select name="count" id="count" tabindex="6">
+                     <option value="10"  selected>10 Entries
+                     <option value="20" >20 Entries
+                     <option value="40" >40 Entries
+                     <option value="80" >80 Entries
+                     <option value="100" >100 Entries
+                  </select>
+               </td>
+               <td style="text-align: middle;"><input type="submit" value="Search"><br /><input type="submit" onClick="this.form.type.value=''" value="Show All"></td>
+                <td class="efts_form">Enter keywords<br /><input name="search_text" id="keywords" class="smart-search" type="text"><button id="smart_search_execute_fts" class="smart-search">Search</button></td>
+            </tr>
+         </table>
+      </form>
+   </div>
+<!-- END FILER DIV -->
+   <div style="margin-top: 5px; margin-bottom: 5px;">
+      <form>
+         <table border="0" width="100%">
+            <tr>
+               <td>Items 1 - 10&nbsp;&nbsp;<a href="/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001838987&amp;type=10-Q%25&amp;dateb=&amp;owner=exclude&amp;start=0&amp;count=10&amp;output=atom"><img src="/images/rss-feed-icon-14x14.png" alt="0001838987 Filings" border="0" align="top" /> RSS Feed</a></td>
+               <td style="text-align: right;"> <input type="button" value="Next10" onClick="parent.location='/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001838987&amp;type=10-Q%25&amp;dateb=&amp;owner=exclude&amp;start=10&amp;count=10'"></td>
+            </tr>
+         </table>
+      </form>
+   </div>
+   <div id="seriesDiv" style="margin-top: 0px;">
+      <table class="tableFile2" summary="Results">
+         <tr>
+            <th width="7%" scope="col">Filings</th>
+            <th width="10%" scope="col">Format</th>
+            <th scope="col">Description</th>
+            <th width="10%" scope="col">Filing Date</th>
+            <th width="15%" scope="col">File/Film Number</th>
+         </tr>
+<tr>
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390025123769/0001213900-25-123769-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-25-123769&amp;amp;xbrl_type=f" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-25-123769&nbsp;(34 Act)&nbsp; Size: 13 MB            </td>
+            <td>2025-12-19</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>251587183         </td>
+         </tr>
+<tr class="evenRow">
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390025075811/0001213900-25-075811-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-25-075811&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-25-075811&nbsp;(34 Act)&nbsp; Size: 10 MB            </td>
+            <td>2025-08-13</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>251212945         </td>
+         </tr>
+<tr>
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390025045417/0001213900-25-045417-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-25-045417&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-25-045417&nbsp;(34 Act)&nbsp; Size: 9 MB            </td>
+            <td>2025-05-19</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>25964268         </td>
+         </tr>
+<tr class="evenRow">
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390024099667/0001213900-24-099667-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-24-099667&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-24-099667&nbsp;(34 Act)&nbsp; Size: 10 MB            </td>
+            <td>2024-11-18</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>241471943         </td>
+         </tr>
+<tr>
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390024068973/0001213900-24-068973-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-24-068973&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-24-068973&nbsp;(34 Act)&nbsp; Size: 9 MB            </td>
+            <td>2024-08-14</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>241207316         </td>
+         </tr>
+<tr class="evenRow">
+<td nowrap="nowrap">10-Q/A</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390024043833/0001213900-24-043833-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-24-043833&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" ><b>[Amend]</b> Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-24-043833&nbsp;(34 Act)&nbsp; Size: 8 MB            </td>
+            <td>2024-05-15</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>24952778         </td>
+         </tr>
+<tr>
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390024043520/0001213900-24-043520-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-24-043520&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-24-043520&nbsp;(34 Act)&nbsp; Size: 8 MB            </td>
+            <td>2024-05-15</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>24949823         </td>
+         </tr>
+<tr class="evenRow">
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390023087084/0001213900-23-087084-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-23-087084&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-23-087084&nbsp;(34 Act)&nbsp; Size: 10 MB            </td>
+            <td>2023-11-14</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>231407929         </td>
+         </tr>
+<tr>
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390023067241/0001213900-23-067241-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-23-067241&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-23-067241&nbsp;(34 Act)&nbsp; Size: 4 MB            </td>
+            <td>2023-08-14</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>231171964         </td>
+         </tr>
+<tr class="evenRow">
+<td nowrap="nowrap">10-Q</td>
+<td nowrap="nowrap"><a href="/Archives/edgar/data/1838987/000121390023040548/0001213900-23-040548-index.htm" id="documentsbutton">&nbsp;Documents</a>&nbsp; <a href="/cgi-bin/viewer?action=view&amp;amp;cik=1838987&amp;amp;accession_number=0001213900-23-040548&amp;amp;xbrl_type=v" id="interactiveDataBtn">&nbsp;Interactive Data</a></td>
+<td class="small" >Quarterly report [Sections 13 or 15(d)]<br />Acc-no: 0001213900-23-040548&nbsp;(34 Act)&nbsp; Size: 3 MB            </td>
+            <td>2023-05-16</td>
+            <td nowrap="nowrap"><a href="/cgi-bin/browse-edgar?action=getcompany&amp;filenum=001-40117&amp;owner=exclude&amp;count=10">001-40117</a><br>23928716         </td>
+         </tr>
+      </table>
+   </div>
+   <div style="margin-top: 5px; margin-bottom: 5px;">
+      <form>
+         <table border="0" width="100%">
+            <tr>
+               <td style="text-align: right;"> <input type="button" value="Next10" onClick="parent.location='/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001838987&amp;type=10-Q%25&amp;dateb=&amp;owner=exclude&amp;start=10&amp;count=10'"></td>
+            </tr>
+         </table>
+      </form>
+   </div>
+</div>
+
+<!-- BEGIN FOOTER -->
+<div id="footer">
+  <div class="currentURL">https://www.sec.gov/cgi-bin/browse-edgar</div>
+  <div class="links"><a href="/index.htm">Home</a> | <a href="/edgar/searchedgar/webusers.htm">Search the Next-Generation EDGAR System</a> | <a href="javascript:history.back()">Previous Page</a></div>
+  <div class="modified">Modified 07/18/2014</div>
+</div>
+<!-- END FOOTER -->
+
+</body>
+</html>

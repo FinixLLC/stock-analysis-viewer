@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "AAPL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AAPL_analysis_20260207_104840.txt"
+  },
+  {
+    "ticker": "MSFT",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MSFT_analysis_20260207_104900.txt"
+  },
+  {
+    "ticker": "GOOGL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GOOGL_analysis_20260207_104921.txt"
+  },
+  {
+    "ticker": "TSLA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/TSLA_analysis_20260207_104944.txt"
+  },
+  {
+    "ticker": "NVDA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NVDA_analysis_20260207_105003.txt"
+  }
+]

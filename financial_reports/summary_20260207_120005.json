@@ -1,0 +1,464 @@
+[
+  {
+    "ticker": "AAPL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AAPL_analysis_20260207_113340.txt"
+  },
+  {
+    "ticker": "ACHR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/ACHR_analysis_20260207_113404.txt"
+  },
+  {
+    "ticker": "ADBE",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/ADBE_analysis_20260207_113423.txt"
+  },
+  {
+    "ticker": "AMCR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AMCR_analysis_20260207_113446.txt"
+  },
+  {
+    "ticker": "AMD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AMD_analysis_20260207_113505.txt"
+  },
+  {
+    "ticker": "AMG",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AMG_analysis_20260207_113527.txt"
+  },
+  {
+    "ticker": "AMZN",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/AMZN_analysis_20260207_113545.txt"
+  },
+  {
+    "ticker": "APA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/APA_analysis_20260207_113612.txt"
+  },
+  {
+    "ticker": "APLD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/APLD_analysis_20260207_113635.txt"
+  },
+  {
+    "ticker": "APP",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/APP_analysis_20260207_113653.txt"
+  },
+  {
+    "ticker": "BA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/BA_analysis_20260207_113715.txt"
+  },
+  {
+    "ticker": "BKR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/BKR_analysis_20260207_113738.txt"
+  },
+  {
+    "ticker": "BMY",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/BMY_analysis_20260207_113759.txt"
+  },
+  {
+    "ticker": "BRKRP",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/BRKRP_analysis_20260207_113821.txt"
+  },
+  {
+    "ticker": "CCL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/CCL_analysis_20260207_113842.txt"
+  },
+  {
+    "ticker": "CRM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/CRM_analysis_20260207_113904.txt"
+  },
+  {
+    "ticker": "CVS",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/CVS_analysis_20260207_113923.txt"
+  },
+  {
+    "ticker": "CVX",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/CVX_analysis_20260207_113942.txt"
+  },
+  {
+    "ticker": "DDS",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/DDS_analysis_20260207_114004.txt"
+  },
+  {
+    "ticker": "DGII",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/DGII_analysis_20260207_114025.txt"
+  },
+  {
+    "ticker": "ENVA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/ENVA_analysis_20260207_114045.txt"
+  },
+  {
+    "ticker": "ETR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/ETR_analysis_20260207_114108.txt"
+  },
+  {
+    "ticker": "FANG",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/FANG_analysis_20260207_114129.txt"
+  },
+  {
+    "ticker": "GE",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GE_analysis_20260207_114147.txt"
+  },
+  {
+    "ticker": "GEV",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GEV_analysis_20260207_114208.txt"
+  },
+  {
+    "ticker": "GLD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GLD_analysis_20260207_114234.txt"
+  },
+  {
+    "ticker": "GM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GM_analysis_20260207_114254.txt"
+  },
+  {
+    "ticker": "GOOG",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GOOG_analysis_20260207_114312.txt"
+  },
+  {
+    "ticker": "GOOGL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/GOOGL_analysis_20260207_114331.txt"
+  },
+  {
+    "ticker": "HD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/HD_analysis_20260207_114351.txt"
+  },
+  {
+    "ticker": "HL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/HL_analysis_20260207_114411.txt"
+  },
+  {
+    "ticker": "HOOD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/HOOD_analysis_20260207_114430.txt"
+  },
+  {
+    "ticker": "HUM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/HUM_analysis_20260207_114451.txt"
+  },
+  {
+    "ticker": "INDB",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/INDB_analysis_20260207_114518.txt"
+  },
+  {
+    "ticker": "INTC",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/INTC_analysis_20260207_114540.txt"
+  },
+  {
+    "ticker": "IRMD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/IRMD_analysis_20260207_114558.txt"
+  },
+  {
+    "ticker": "JPM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/JPM_analysis_20260207_114621.txt"
+  },
+  {
+    "ticker": "KODK",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/KODK_analysis_20260207_114642.txt"
+  },
+  {
+    "ticker": "KYMR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/KYMR_analysis_20260207_114703.txt"
+  },
+  {
+    "ticker": "LGN",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/LGN_analysis_20260207_114719.txt"
+  },
+  {
+    "ticker": "LNT",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/LNT_analysis_20260207_114741.txt"
+  },
+  {
+    "ticker": "MAIA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MAIA_analysis_20260207_114800.txt"
+  },
+  {
+    "ticker": "MDB",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MDB_analysis_20260207_114819.txt"
+  },
+  {
+    "ticker": "META",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/META_analysis_20260207_114839.txt"
+  },
+  {
+    "ticker": "MOH",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MOH_analysis_20260207_114905.txt"
+  },
+  {
+    "ticker": "MP",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MP_analysis_20260207_114930.txt"
+  },
+  {
+    "ticker": "MRK",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MRK_analysis_20260207_114952.txt"
+  },
+  {
+    "ticker": "MSFT",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MSFT_analysis_20260207_115017.txt"
+  },
+  {
+    "ticker": "MU",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MU_analysis_20260207_115036.txt"
+  },
+  {
+    "ticker": "MUR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MUR_analysis_20260207_115042.txt"
+  },
+  {
+    "ticker": "MX",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/MX_analysis_20260207_115048.txt"
+  },
+  {
+    "ticker": "NBR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NBR_analysis_20260207_115108.txt"
+  },
+  {
+    "ticker": "NDSN",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NDSN_analysis_20260207_115126.txt"
+  },
+  {
+    "ticker": "NFLX",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NFLX_analysis_20260207_115144.txt"
+  },
+  {
+    "ticker": "NUE",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NUE_analysis_20260207_115204.txt"
+  },
+  {
+    "ticker": "NVDA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/NVDA_analysis_20260207_115224.txt"
+  },
+  {
+    "ticker": "ORCL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/ORCL_analysis_20260207_115248.txt"
+  },
+  {
+    "ticker": "PACB",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/PACB_analysis_20260207_115308.txt"
+  },
+  {
+    "ticker": "PD",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/PD_analysis_20260207_115333.txt"
+  },
+  {
+    "ticker": "PEP",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/PEP_analysis_20260207_115354.txt"
+  },
+  {
+    "ticker": "PFE",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/PFE_analysis_20260207_115417.txt"
+  },
+  {
+    "ticker": "PLTR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/PLTR_analysis_20260207_115435.txt"
+  },
+  {
+    "ticker": "SATS",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/SATS_analysis_20260207_115507.txt"
+  },
+  {
+    "ticker": "SCCO",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/SCCO_analysis_20260207_115525.txt"
+  },
+  {
+    "ticker": "SNDK",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/SNDK_analysis_20260207_115546.txt"
+  },
+  {
+    "ticker": "SNPS",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/SNPS_analysis_20260207_115604.txt"
+  },
+  {
+    "ticker": "T",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/T_analysis_20260207_115621.txt"
+  },
+  {
+    "ticker": "TEM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/TEM_analysis_20260207_115646.txt"
+  },
+  {
+    "ticker": "TG",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/TG_analysis_20260207_115709.txt"
+  },
+  {
+    "ticker": "TSBK",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/TSBK_analysis_20260207_115734.txt"
+  },
+  {
+    "ticker": "TSLA",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/TSLA_analysis_20260207_115755.txt"
+  },
+  {
+    "ticker": "UNH",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/UNH_analysis_20260207_115816.txt"
+  },
+  {
+    "ticker": "UTHR",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/UTHR_analysis_20260207_115836.txt"
+  },
+  {
+    "ticker": "VZ",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/VZ_analysis_20260207_115859.txt"
+  },
+  {
+    "ticker": "WELL",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/WELL_analysis_20260207_115919.txt"
+  },
+  {
+    "ticker": "WGS",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/WGS_analysis_20260207_115941.txt"
+  },
+  {
+    "ticker": "XOM",
+    "form_type": "10-Q",
+    "status": "success",
+    "report": "financial_reports/XOM_analysis_20260207_120003.txt"
+  }
+]
