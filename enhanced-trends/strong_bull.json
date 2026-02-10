@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-10T07:42:56.575115",
+  "generated": "2026-02-10T13:45:11.878258",
   "category": "strong_bull",
-  "count": 234,
+  "count": 233,
   "stocks": [
     {
       "symbol": "AADR",
@@ -666,24 +666,24 @@
     {
       "symbol": "CADE",
       "price": 42.11,
-      "sma20": 43.64,
-      "sma50": 42.82,
-      "sma100": 40.1,
-      "sma200": 36.36,
-      "change1M": -4.8,
-      "change6M": 22.4,
-      "change1Y": 26.6,
+      "sma20": 43.96,
+      "sma50": 42.53,
+      "sma100": 39.94,
+      "sma200": 36.14,
+      "change1M": -2.4,
+      "change6M": 22.5,
+      "change1Y": 23.7,
       "high52W": 46.74,
       "low52W": 24.66,
       "distFromHigh": 9.9,
       "distFromLow": 70.8,
       "longTerm": "strong_bull",
       "midTerm": "strong_bull",
-      "shortTerm": "bear",
+      "shortTerm": "neutral",
       "pattern": "Strong Long-Term Uptrend",
-      "volumeRatio": 4.26,
+      "volumeRatio": 11.35,
       "dataEndDate": "2026-01-30",
-      "updated": "2026-02-10T06:34:25.304000"
+      "updated": "2026-02-06T05:40:09.088000"
     },
     {
       "symbol": "CALX",
@@ -727,7 +727,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 2.37,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-07T04:06:49.095000"
+      "updated": "2026-02-08T03:09:33.985000"
     },
     {
       "symbol": "CHW",
@@ -796,6 +796,28 @@
       "updated": "2026-02-10T03:35:30.339000"
     },
     {
+      "symbol": "CIO",
+      "price": 6.99,
+      "sma20": 6.97,
+      "sma50": 6.92,
+      "sma100": 6.93,
+      "sma200": 6.18,
+      "change1M": 0.6,
+      "change6M": 23.5,
+      "change1Y": 27.8,
+      "high52W": 7.01,
+      "low52W": 4.19,
+      "distFromHigh": 0.3,
+      "distFromLow": 66.8,
+      "longTerm": "strong_bull",
+      "midTerm": "strong_bull",
+      "shortTerm": "neutral",
+      "pattern": "Strong Long-Term Uptrend (Near 52W High)",
+      "volumeRatio": 3.66,
+      "dataEndDate": "2026-01-08",
+      "updated": "2026-02-04T20:46:01.138000"
+    },
+    {
       "symbol": "CLF",
       "price": 12.31,
       "sma20": 14.02,
@@ -842,46 +864,24 @@
     {
       "symbol": "CMA",
       "price": 88.67,
-      "sma20": 92.18,
-      "sma50": 87.8,
-      "sma100": 81.01,
-      "sma200": 70.62,
-      "change1M": 0.0,
-      "change6M": 34.0,
-      "change1Y": 37.5,
+      "sma20": 92.26,
+      "sma50": 87.52,
+      "sma100": 81.04,
+      "sma200": 71.16,
+      "change1M": 1.4,
+      "change6M": 31.2,
+      "change1Y": 35.8,
       "high52W": 99.41,
-      "low52W": 46.67,
+      "low52W": 48.12,
       "distFromHigh": 10.8,
-      "distFromLow": 90.0,
+      "distFromLow": 84.3,
       "longTerm": "strong_bull",
       "midTerm": "strong_bull",
       "shortTerm": "neutral",
       "pattern": "Strong Long-Term Uptrend",
-      "volumeRatio": 2.02,
+      "volumeRatio": 11.75,
       "dataEndDate": "2026-01-30",
-      "updated": "2026-02-07T05:40:49.413000"
-    },
-    {
-      "symbol": "CORZZ",
-      "price": 17.78,
-      "sma20": 17.99,
-      "sma50": 16.69,
-      "sma100": 17.4,
-      "sma200": 14.79,
-      "change1M": 22.3,
-      "change6M": 31.3,
-      "change1Y": 56.4,
-      "high52W": 23.34,
-      "low52W": 6.3,
-      "distFromHigh": 23.8,
-      "distFromLow": 182.2,
-      "longTerm": "strong_bull",
-      "midTerm": "strong_bull",
-      "shortTerm": "strong_bull",
-      "pattern": "Mid-Term Momentum - Bullish",
-      "volumeRatio": 2.36,
-      "dataEndDate": "2026-02-02",
-      "updated": "2026-02-04T19:28:18.413000"
+      "updated": "2026-02-03T01:48:49.327000"
     },
     {
       "symbol": "COSO",
@@ -903,7 +903,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 3.01,
       "dataEndDate": "2026-01-21",
-      "updated": "2026-02-04T20:46:01.144000"
+      "updated": "2026-02-03T01:48:49.352000"
     },
     {
       "symbol": "CUBB",
@@ -947,7 +947,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 4.85,
       "dataEndDate": "2026-01-22",
-      "updated": "2026-02-04T19:28:18.411000"
+      "updated": "2026-02-10T20:41:21.217000"
     },
     {
       "symbol": "CZAR",
@@ -1255,7 +1255,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 1.72,
       "dataEndDate": "2026-02-04",
-      "updated": "2026-02-07T05:40:49.413000"
+      "updated": "2026-02-06T00:45:41.509000"
     },
     {
       "symbol": "EGAN",
@@ -1299,7 +1299,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 1.73,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-07T05:40:49.391000"
+      "updated": "2026-02-08T04:55:45.871000"
     },
     {
       "symbol": "ELP",
@@ -1321,7 +1321,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 1.6,
       "dataEndDate": "2025-12-24",
-      "updated": "2026-02-04T20:46:01.138000"
+      "updated": "2026-02-03T01:48:49.347000"
     },
     {
       "symbol": "ELWS",
@@ -1343,7 +1343,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 2.6,
       "dataEndDate": "2026-01-16",
-      "updated": "2026-02-04T19:28:18.411000"
+      "updated": "2026-02-10T20:41:21.262000"
     },
     {
       "symbol": "EMIF",
@@ -1387,7 +1387,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 1.81,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-10T06:34:25.301000"
+      "updated": "2026-02-07T05:40:49.391000"
     },
     {
       "symbol": "ENSG",
@@ -1764,6 +1764,28 @@
       "updated": "2026-02-10T03:35:30.265000"
     },
     {
+      "symbol": "FSEA",
+      "price": 13.1,
+      "sma20": 12.92,
+      "sma50": 12.66,
+      "sma100": 12.12,
+      "sma200": 11.72,
+      "change1M": 3.1,
+      "change6M": 16.4,
+      "change1Y": 25.7,
+      "high52W": 15.0,
+      "low52W": 10.13,
+      "distFromHigh": 12.7,
+      "distFromLow": 29.3,
+      "longTerm": "strong_bull",
+      "midTerm": "strong_bull",
+      "shortTerm": "bull",
+      "pattern": "Mid-Term Momentum - Bullish",
+      "volumeRatio": 2.14,
+      "dataEndDate": "2026-02-06",
+      "updated": "2026-02-08T03:09:33.945000"
+    },
+    {
       "symbol": "FTLB",
       "price": 20.78,
       "sma20": 20.8,
@@ -1898,13 +1920,13 @@
     {
       "symbol": "GES",
       "price": 16.81,
-      "sma20": 16.8,
+      "sma20": 16.79,
       "sma50": 16.87,
       "sma100": 16.85,
-      "sma200": 14.52,
+      "sma200": 14.49,
       "change1M": 0.4,
-      "change6M": 27.2,
-      "change1Y": 35.8,
+      "change6M": 23.8,
+      "change1Y": 36.0,
       "high52W": 17.15,
       "low52W": 8.01,
       "distFromHigh": 2.0,
@@ -1913,9 +1935,9 @@
       "midTerm": "strong_bull",
       "shortTerm": "neutral",
       "pattern": "Strong Long-Term Uptrend (Near 52W High)",
-      "volumeRatio": 7.11,
+      "volumeRatio": 11.02,
       "dataEndDate": "2026-01-22",
-      "updated": "2026-02-07T05:40:49.414000"
+      "updated": "2026-02-06T05:40:09.088000"
     },
     {
       "symbol": "GJS",
@@ -2663,7 +2685,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 2.78,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-10T03:35:30.370000"
+      "updated": "2026-02-08T03:09:33.989000"
     },
     {
       "symbol": "MAGS",
@@ -3103,7 +3125,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 1.79,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-07T05:40:49.406000"
+      "updated": "2026-02-08T04:55:45.888000"
     },
     {
       "symbol": "NIXT",
@@ -3148,28 +3170,6 @@
       "volumeRatio": 1.6,
       "dataEndDate": "2026-02-09",
       "updated": "2026-02-10T06:34:25.282000"
-    },
-    {
-      "symbol": "NVAWW",
-      "price": 32.8,
-      "sma20": 42.17,
-      "sma50": 34.72,
-      "sma100": 20.1,
-      "sma200": 12.89,
-      "change1M": -21.1,
-      "change6M": 389.6,
-      "change1Y": 2403.8,
-      "high52W": 67.84,
-      "low52W": 0.99,
-      "distFromHigh": 51.7,
-      "distFromLow": 3209.5,
-      "longTerm": "strong_bull",
-      "midTerm": "strong_bull",
-      "shortTerm": "strong_bear",
-      "pattern": "Strong Long-Term Uptrend",
-      "volumeRatio": 1.97,
-      "dataEndDate": "2026-02-02",
-      "updated": "2026-02-04T19:28:18.420000"
     },
     {
       "symbol": "NWG",
@@ -3458,28 +3458,6 @@
       "updated": "2026-02-10T03:35:30.189000"
     },
     {
-      "symbol": "PGRE",
-      "price": 6.6,
-      "sma20": 6.58,
-      "sma50": 6.56,
-      "sma100": 6.65,
-      "sma200": 5.95,
-      "change1M": 0.8,
-      "change6M": 3.9,
-      "change1Y": 33.9,
-      "high52W": 7.85,
-      "low52W": 3.75,
-      "distFromHigh": 15.9,
-      "distFromLow": 76.0,
-      "longTerm": "strong_bull",
-      "midTerm": "bull",
-      "shortTerm": "neutral",
-      "pattern": "Strong Long-Term Uptrend",
-      "volumeRatio": 2.71,
-      "dataEndDate": "2025-12-18",
-      "updated": "2026-02-04T20:46:01.138000"
-    },
-    {
       "symbol": "PGY",
       "price": 14.19,
       "sma20": 20.63,
@@ -3543,7 +3521,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 2.81,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-10T03:35:30.310000"
+      "updated": "2026-02-08T03:09:33.969000"
     },
     {
       "symbol": "PIPR",
@@ -3609,7 +3587,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 1.76,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-08T03:09:33.936000"
+      "updated": "2026-02-10T03:35:30.309000"
     },
     {
       "symbol": "PLMr",
@@ -3675,7 +3653,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 1.53,
       "dataEndDate": "2026-02-06",
-      "updated": "2026-02-10T03:35:30.306000"
+      "updated": "2026-02-08T03:09:33.935000"
     },
     {
       "symbol": "PRLB",
@@ -3944,13 +3922,13 @@
     {
       "symbol": "REVG",
       "price": 63.9,
-      "sma20": 66.67,
-      "sma50": 61.05,
-      "sma100": 58.73,
-      "sma200": 51.68,
-      "change1M": 5.1,
-      "change6M": 32.4,
-      "change1Y": 86.2,
+      "sma20": 66.59,
+      "sma50": 60.79,
+      "sma100": 58.72,
+      "sma200": 51.52,
+      "change1M": 4.5,
+      "change6M": 29.2,
+      "change1Y": 90.8,
       "high52W": 69.92,
       "low52W": 26.37,
       "distFromHigh": 8.6,
@@ -3959,9 +3937,9 @@
       "midTerm": "strong_bull",
       "shortTerm": "bull",
       "pattern": "Mid-Term Momentum - Bullish",
-      "volumeRatio": 2.06,
+      "volumeRatio": 2.7,
       "dataEndDate": "2026-01-30",
-      "updated": "2026-02-07T05:40:49.414000"
+      "updated": "2026-02-06T05:40:09.088000"
     },
     {
       "symbol": "RIG",
@@ -4049,7 +4027,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 2.38,
       "dataEndDate": "2026-01-28",
-      "updated": "2026-02-04T19:28:18.408000"
+      "updated": "2026-02-10T20:41:21.115000"
     },
     {
       "symbol": "SAJ",
@@ -4273,25 +4251,25 @@
     },
     {
       "symbol": "SNPX",
-      "price": 27.11,
-      "sma20": 38.3,
-      "sma50": 34.57,
-      "sma100": 19.87,
-      "sma200": 11.37,
-      "change1M": -23.1,
-      "change6M": 868.2,
-      "change1Y": 847.9,
+      "price": 25.05,
+      "sma20": 36.81,
+      "sma50": 34.65,
+      "sma100": 20.33,
+      "sma200": 11.6,
+      "change1M": -36.7,
+      "change6M": 807.3,
+      "change1Y": 692.7,
       "high52W": 43.54,
       "low52W": 1.84,
-      "distFromHigh": 37.7,
-      "distFromLow": 1373.4,
+      "distFromHigh": 42.5,
+      "distFromLow": 1261.4,
       "longTerm": "strong_bull",
       "midTerm": "strong_bull",
       "shortTerm": "strong_bear",
       "pattern": "Strong Long-Term Uptrend",
-      "volumeRatio": 2.72,
-      "dataEndDate": "2026-02-03",
-      "updated": "2026-02-04T19:28:18.416000"
+      "volumeRatio": 4.31,
+      "dataEndDate": "2026-02-05",
+      "updated": "2026-02-10T20:41:22.153000"
     },
     {
       "symbol": "SOHO.L",
@@ -4599,7 +4577,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 1.66,
       "dataEndDate": "2026-02-03",
-      "updated": "2026-02-04T19:28:18.387000"
+      "updated": "2026-02-10T20:41:20.466000"
     },
     {
       "symbol": "THLV",
