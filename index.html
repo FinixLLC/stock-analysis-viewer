@@ -532,10 +532,19 @@
         <main id="main-content">
         <div class="grid">
             <div class="card" role="region" aria-labelledby="top50-heading">
-                <h2 id="top50-heading">📈 Top 50 Composite Scores</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">CSV files with ranked stocks by composite score</p>
-                <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 files">
+                <h2 id="top50-heading">🤖 Top 50 ML Rankings</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">ML-ranked top 50 stocks by composite score (60% technical + 40% fundamental)</p>
+                <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 ML files">
                 <ul class="file-list" id="top50-list" role="list" aria-live="polite">
+                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                </ul>
+            </div>
+
+            <div class="card" role="region" aria-labelledby="analysis-heading">
+                <h2 id="analysis-heading">📈 Full Stock Analysis</h2>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">Complete analysis of all stocks with pattern signals, momentum, and risk metrics</p>
+                <input type="search" class="search-box" id="analysis-search" placeholder="Search files..." aria-label="Search analysis files">
+                <ul class="file-list" id="analysis-list" role="list" aria-live="polite">
                     <li class="loading-state"><span class="spinner"></span> Loading files...</li>
                 </ul>
             </div>
@@ -551,7 +560,7 @@
 
             <div class="card" role="region" aria-labelledby="pattern-heading">
                 <h2 id="pattern-heading">📊 Pattern Detection Lists</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">All stocks with Spoon, Cup&Handle, or POS patterns</p>
+                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">All stocks with Spoon, Cup&Handle, VBottom, or POS patterns</p>
                 <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
                 <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
                     <li class="loading-state"><span class="spinner"></span> Loading files...</li>
@@ -572,7 +581,7 @@
 
     <script>
         // Store file data for search functionality
-        let fileData = { top50: [], topPatterns: [], detectionLists: [] };
+        let fileData = { top50: [], analysis: [], topPatterns: [], detectionLists: [] };
 
         // Display current timestamp
         document.getElementById('timestamp').textContent =
@@ -713,18 +722,27 @@
                 if (!response.ok) throw new Error('Failed to load file list');
 
                 const data = await response.json();
-                fileData.top50 = data.top50 || [];
 
-                // Separate pattern files into categories
-                const allPatterns = data.patterns || [];
-                fileData.topPatterns = allPatterns.filter(f =>
-                    f.name.startsWith('Top50_') || f.name.startsWith('Top20_'));
-                fileData.detectionLists = allPatterns.filter(f =>
-                    f.name.startsWith('SpoonList') ||
-                    f.name.startsWith('CupHandleList') ||
-                    f.name.startsWith('POSList'));
+                // Support both old and new file-list.json formats
+                if (data.top50_ml) {
+                    // New format with separate categories
+                    fileData.top50 = data.top50_ml || [];
+                    fileData.analysis = data.stock_analysis || [];
+                    fileData.topPatterns = data.top_patterns || [];
+                    fileData.detectionLists = data.detection_lists || [];
+                } else {
+                    // Legacy format: split from combined arrays
+                    fileData.top50 = (data.top50 || []).filter(f => f.name.startsWith('top_50_ml_'));
+                    fileData.analysis = (data.top50 || []).filter(f => !f.name.startsWith('top_50_ml_'));
+                    const allPatterns = data.patterns || [];
+                    fileData.topPatterns = allPatterns.filter(f =>
+                        f.name.startsWith('Top50_') || f.name.startsWith('Top20_'));
+                    fileData.detectionLists = allPatterns.filter(f =>
+                        !f.name.startsWith('Top50_') && !f.name.startsWith('Top20_'));
+                }
 
                 populateList('top50-list', fileData.top50);
+                populateList('analysis-list', fileData.analysis);
                 populateList('top-patterns-list', fileData.topPatterns);
                 populateList('pattern-list', fileData.detectionLists);
 
@@ -733,6 +751,7 @@
             } catch (err) {
                 console.error('Error loading files:', err);
                 showError('top50-list', 'Failed to load files. Please try refreshing.');
+                showError('analysis-list', 'Failed to load files. Please try refreshing.');
                 showError('top-patterns-list', 'Failed to load files. Please try refreshing.');
                 showError('pattern-list', 'Failed to load files. Please try refreshing.');
             }
@@ -782,6 +801,10 @@
             populateList('top50-list', fileData.top50, e.target.value);
         });
 
+        document.getElementById('analysis-search').addEventListener('input', (e) => {
+            populateList('analysis-list', fileData.analysis, e.target.value);
+        });
+
         document.getElementById('top-patterns-search').addEventListener('input', (e) => {
             populateList('top-patterns-list', fileData.topPatterns, e.target.value);
         });
@@ -799,13 +822,14 @@
                 const response = await fetch('file-list.json');
                 const data = await response.json();
 
-                if (!data.top50 || data.top50.length === 0) {
+                const allCsvFiles = data.top50_ml || data.top50 || [];
+                if (allCsvFiles.length === 0) {
                     showNoPicksMessage();
                     return;
                 }
 
                 // Sort by date and get the most recent files (one per exchange)
-                const sortedFiles = [...data.top50]
+                const sortedFiles = [...allCsvFiles]
                     .filter(f => f.name.includes('Yahoo') && f.name.endsWith('.csv'))
                     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
