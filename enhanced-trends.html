@@ -225,6 +225,34 @@
             border-left: 3px solid #11998e;
         }
 
+        .stock-header {
+            display: grid;
+            grid-template-columns: 100px 100px 180px 150px 150px 150px auto;
+            gap: 15px;
+            align-items: center;
+            padding: 12px 20px;
+            background: #f0f0f0;
+            border-bottom: 2px solid #ddd;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .sort-header {
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+
+        .sort-header:hover {
+            color: #11998e;
+        }
+
+        .sort-header.active {
+            color: #11998e;
+            font-weight: 700;
+        }
+
         .search-box {
             width: 100%;
             padding: 15px;
@@ -388,6 +416,7 @@
     <script>
         let trendData = {};
         let currentTab = 'highlights';
+        let currentSort = { field: null, descending: true };
 
         function checkDataFreshness(stocks) {
             if (!stocks || stocks.length === 0) return;
@@ -501,10 +530,29 @@
             }
 
             const stocks = trendData[tab] || trendData.all_trends || [];
-            renderStocks(stocks);
+            renderStocks(stocks, false);
         }
 
-        function renderStocks(stocks) {
+        function sortStocks(field) {
+            if (currentSort.field === field) {
+                currentSort.descending = !currentSort.descending;
+            } else {
+                currentSort.field = field;
+                currentSort.descending = true;
+            }
+            const stocks = trendData[currentTab] || trendData.all_trends || [];
+            const sorted = [...stocks].sort((a, b) => {
+                const diff = (a[field] || 0) - (b[field] || 0);
+                return currentSort.descending ? -diff : diff;
+            });
+            renderStocks(sorted, true);
+        }
+
+        function renderStocks(stocks, keepSort) {
+            if (!keepSort) {
+                currentSort = { field: null, descending: true };
+            }
+
             if (!stocks || stocks.length === 0) {
                 document.getElementById('content').innerHTML = `
                     <div style="text-align: center; padding: 40px; color: white;">
@@ -514,9 +562,27 @@
                 return;
             }
 
+            function sortArrow(field) {
+                if (currentSort.field !== field) return '';
+                return currentSort.descending ? ' ▼' : ' ▲';
+            }
+
+            function sortClass(field) {
+                return currentSort.field === field ? 'sort-header active' : 'sort-header';
+            }
+
             const html = `
                 <input type="search" class="search-box" placeholder="Search by symbol..." onkeyup="filterStocks(event)">
                 <div class="stock-list" id="stock-list">
+                    <div class="stock-header">
+                        <div>Symbol</div>
+                        <div>Price</div>
+                        <div>Trend</div>
+                        <div class="${sortClass('change1M')}" onclick="sortStocks('change1M')">1M${sortArrow('change1M')}</div>
+                        <div class="${sortClass('change6M')}" onclick="sortStocks('change6M')">6M${sortArrow('change6M')}</div>
+                        <div class="${sortClass('change1Y')}" onclick="sortStocks('change1Y')">1Y${sortArrow('change1Y')}</div>
+                        <div>52W Range</div>
+                    </div>
                     ${stocks.map(stock => `
                         <div class="stock-item" data-symbol="${stock.symbol}">
                             <a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>
