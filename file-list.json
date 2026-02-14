@@ -1,10 +1,5 @@
 {
-  "top50": [
-    {
-      "name": "vip_stock_analysis_NASDAQ_Polygon_2025_12_08.csv",
-      "path": "top50/vip_stock_analysis_NASDAQ_Polygon_2025_12_08.csv",
-      "date": "2026-01-15"
-    },
+  "top50_ml": [
     {
       "name": "top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_02_10.csv",
@@ -24,6 +19,13 @@
       "name": "top_50_ml_AMEX_Yahoo_2026_02_11.csv",
       "path": "top50/top_50_ml_AMEX_Yahoo_2026_02_11.csv",
       "date": "2026-02-12"
+    }
+  ],
+  "stock_analysis": [
+    {
+      "name": "vip_stock_analysis_NASDAQ_Polygon_2025_12_08.csv",
+      "path": "top50/vip_stock_analysis_NASDAQ_Polygon_2025_12_08.csv",
+      "date": "2026-01-15"
     },
     {
       "name": "stock_analysis_Nasdaq_yahoo_2026_02_06.csv",
@@ -691,7 +693,7 @@
       "date": "2026-02-02"
     }
   ],
-  "patterns": [
+  "top_patterns": [
     {
       "name": "Top50_Nasdaq_yahoo_2026_02_06.txt",
       "path": "patterns/Top50_Nasdaq_yahoo_2026_02_06.txt",
@@ -1621,7 +1623,9 @@
       "name": "Top20_AMEX_Polygon_2025_09_01.txt",
       "path": "patterns/Top20_AMEX_Polygon_2025_09_01.txt",
       "date": "2026-01-15"
-    },
+    }
+  ],
+  "detection_lists": [
     {
       "name": "SpoonList_Nasdaq_yahoo_2026_02_05.txt",
       "path": "patterns/SpoonList_Nasdaq_yahoo_2026_02_05.txt",
@@ -2924,8 +2928,10 @@
     }
   ],
   "stats": {
-    "total_stocks": "138",
-    "total_patterns": "446",
-    "last_update": "Feb 13, 2026 05:19"
+    "total_ml": "4",
+    "total_analysis": "134",
+    "total_top_patterns": "186",
+    "total_detection": "260",
+    "last_update": "Feb 13, 2026 16:48"
   }
 }
