@@ -321,6 +321,7 @@
                     const isPatternFile = text.includes('# Format:') ||
                         lowerPath.includes('spoonlist') ||
                         lowerPath.includes('cuphandlelist') ||
+                        lowerPath.includes('darvasboxlist') ||
                         lowerPath.includes('poslist') ||
                         lowerPath.includes('top50') ||
                         lowerPath.includes('top20');
@@ -468,6 +469,8 @@
                     headers = ['Symbol', 'Date', 'Price', 'Depth%', 'Recovery%', 'Asymmetry', 'Smoothness', 'VolumeRatio', 'Days', 'Score'];
                 } else if (filename.includes('cuphandlelist')) {
                     headers = ['Symbol', 'Date', 'Price', 'Depth%', 'Handle%', 'VolumeRatio', 'Days', 'Score'];
+                } else if (filename.includes('darvasboxlist')) {
+                    headers = ['Symbol', 'Date', 'Price', 'BoxTop', 'BoxBottom', 'Height%', 'VolumeRatio', 'Boxes', 'StopLoss', 'Score'];
                 } else if (filename.includes('poslist')) {
                     headers = ['Symbol', 'Date', 'Price', 'Change%', 'Volume', 'Score'];
                 } else if (filename.includes('top50') || filename.includes('top20')) {

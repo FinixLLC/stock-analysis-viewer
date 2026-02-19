@@ -513,7 +513,7 @@
             <div style="line-height: 1.8; color: #555;">
                 <p style="margin-bottom: 15px;">
                     <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
-                    Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom), including tier classification,
+                    Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom, DarvasBox), including tier classification,
                     momentum, volatility, volume metrics, and risk assessment. Higher tiers (1-2) indicate stronger opportunities.
                 </p>
                 <p style="margin-bottom: 15px;">
@@ -985,7 +985,8 @@
 
             const patternName = pick.pattern === 'CupHandle' ? 'Cup and Handle' :
                                pick.pattern === 'VBottom' ? 'V-Bottom reversal' :
-                               pick.pattern === 'Spoon' ? 'Spoon pattern' : pick.pattern;
+                               pick.pattern === 'Spoon' ? 'Spoon pattern' :
+                               pick.pattern === 'DarvasBox' ? 'Darvas Box breakout' : pick.pattern;
 
             return `<strong>${pick.symbol}</strong> on ${pick.exchange} shows a ${patternName} formation ` +
                    `detected on ${pick.date}. The stock demonstrates ${momentumDesc} (${pick.momentum.toFixed(0)}) ` +
