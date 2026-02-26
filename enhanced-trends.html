@@ -352,6 +352,25 @@
             background: #dc3545;
             color: white;
         }
+
+        .tenq-link {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65em;
+            font-weight: 600;
+            background: #198754;
+            color: white;
+            text-decoration: none;
+            margin-left: 5px;
+            vertical-align: middle;
+            letter-spacing: 0.5px;
+        }
+
+        .tenq-link:hover {
+            background: #146c43;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -417,6 +436,7 @@
         let trendData = {};
         let currentTab = 'highlights';
         let currentSort = { field: null, descending: true };
+        let deepseekIndex = new Set();
 
         function checkDataFreshness(stocks) {
             if (!stocks || stocks.length === 0) return;
@@ -474,8 +494,17 @@
 
         async function loadData() {
             try {
-                // Load summary first
-                const summaryResp = await fetch('enhanced-trends/summary.json');
+                // Load DeepSeek report index and summary in parallel
+                const [deepseekResp, summaryResp] = await Promise.all([
+                    fetch('deepseek-reports/index.json').catch(() => null),
+                    fetch('enhanced-trends/summary.json')
+                ]);
+
+                if (deepseekResp && deepseekResp.ok) {
+                    const tickers = await deepseekResp.json();
+                    deepseekIndex = new Set(tickers);
+                }
+
                 const summary = await summaryResp.json();
 
                 // Update stats
@@ -585,7 +614,7 @@
                     </div>
                     ${stocks.map(stock => `
                         <div class="stock-item" data-symbol="${stock.symbol}">
-                            <a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>
+                            <div><a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>${deepseekIndex.has(stock.symbol) ? '<a href="viewer.html?file=deepseek-reports/' + stock.symbol + '.txt" class="tenq-link" target="_blank">10-Q</a>' : ''}</div>
                             <div class="stock-price">$${stock.price.toFixed(2)}</div>
                             <div>
                                 <span class="trend-label ${stock.longTerm.replace(/_/g, '-')}">${formatTrend(stock.longTerm)}</span>
