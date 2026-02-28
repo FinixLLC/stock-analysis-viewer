@@ -371,6 +371,59 @@
             background: #146c43;
             text-decoration: none;
         }
+
+        .sector-tabs {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sector-tab {
+            background: rgba(255, 255, 255, 0.85);
+            border: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .sector-tab:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .sector-tab.active {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+        }
+
+        .sector-tab .sector-count {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            padding: 1px 6px;
+            border-radius: 10px;
+            font-size: 0.85em;
+            margin-left: 4px;
+        }
+
+        .sector-tab.active .sector-count {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .sector-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65em;
+            font-weight: 500;
+            background: #e8e8ff;
+            color: #4338ca;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -427,6 +480,8 @@
             <button class="tab" onclick="showTab('all', event)">📋 All</button>
         </div>
 
+        <div class="sector-tabs" id="sector-tabs"></div>
+
         <div id="content">
             <div class="loading">Loading enhanced trend data...</div>
         </div>
@@ -435,6 +490,7 @@
     <script>
         let trendData = {};
         let currentTab = 'highlights';
+        let currentSector = 'all';
         let currentSort = { field: null, descending: true };
         let deepseekIndex = new Set();
 
@@ -532,6 +588,9 @@
                 // Check data freshness
                 checkDataFreshness(trendData.all_trends);
 
+                // Build sector tabs from all_trends data
+                buildSectorTabs(trendData.all_trends);
+
                 showTab('highlights');
             } catch (error) {
                 document.getElementById('content').innerHTML = `
@@ -541,6 +600,47 @@
                     </div>
                 `;
             }
+        }
+
+        function buildSectorTabs(stocks) {
+            const counts = {};
+            (stocks || []).forEach(s => {
+                const sec = s.sector || 'Other';
+                counts[sec] = (counts[sec] || 0) + 1;
+            });
+
+            // Sort sectors by count descending, but "Other" always last
+            const sorted = Object.entries(counts).sort((a, b) => {
+                if (a[0] === 'Other') return 1;
+                if (b[0] === 'Other') return -1;
+                return b[1] - a[1];
+            });
+
+            let html = `<button class="sector-tab active" onclick="filterBySector('all')">All Sectors <span class="sector-count">${stocks.length}</span></button>`;
+            sorted.forEach(([sec, count]) => {
+                html += `<button class="sector-tab" onclick="filterBySector('${sec}')">${sec} <span class="sector-count">${count}</span></button>`;
+            });
+            document.getElementById('sector-tabs').innerHTML = html;
+        }
+
+        function filterBySector(sector) {
+            currentSector = sector;
+            document.querySelectorAll('.sector-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.sector-tab').forEach(t => {
+                if (t.onclick && t.onclick.toString().includes(`'${sector}'`)) {
+                    t.classList.add('active');
+                }
+            });
+            const stocks = getFilteredStocks();
+            renderStocks(stocks, false);
+        }
+
+        function getFilteredStocks() {
+            let stocks = trendData[currentTab] || trendData.all_trends || [];
+            if (currentSector !== 'all') {
+                stocks = stocks.filter(s => (s.sector || 'Other') === currentSector);
+            }
+            return stocks;
         }
 
         function showTab(tab, event) {
@@ -558,7 +658,7 @@
                 });
             }
 
-            const stocks = trendData[tab] || trendData.all_trends || [];
+            const stocks = getFilteredStocks();
             renderStocks(stocks, false);
         }
 
@@ -569,7 +669,7 @@
                 currentSort.field = field;
                 currentSort.descending = true;
             }
-            const stocks = trendData[currentTab] || trendData.all_trends || [];
+            const stocks = getFilteredStocks();
             const sorted = [...stocks].sort((a, b) => {
                 const diff = (a[field] || 0) - (b[field] || 0);
                 return currentSort.descending ? -diff : diff;
@@ -614,7 +714,7 @@
                     </div>
                     ${stocks.map(stock => `
                         <div class="stock-item" data-symbol="${stock.symbol}">
-                            <div><a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>${deepseekIndex.has(stock.symbol) ? '<a href="viewer.html?file=deepseek-reports/' + stock.symbol + '.txt" class="tenq-link" target="_blank">10-Q</a>' : ''}</div>
+                            <div><a href="https://finance.yahoo.com/quote/${stock.symbol}" class="stock-symbol" target="_blank" style="text-decoration: none; color: inherit;">${stock.symbol}</a>${deepseekIndex.has(stock.symbol) ? '<a href="viewer.html?file=deepseek-reports/' + stock.symbol + '.txt" class="tenq-link" target="_blank">10-Q</a>' : ''}${stock.sector && stock.sector !== 'Other' ? '<span class="sector-badge">' + stock.sector + '</span>' : ''}</div>
                             <div class="stock-price">$${stock.price.toFixed(2)}</div>
                             <div>
                                 <span class="trend-label ${stock.longTerm.replace(/_/g, '-')}">${formatTrend(stock.longTerm)}</span>
