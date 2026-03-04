@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-02T21:00:06.365435",
+  "generated_at": "2026-03-03T21:00:11.587343",
   "total_positions": 101,
-  "avg_1m_return": 3.84,
+  "avg_1m_return": 3.68,
   "sell_signal_count": 0,
   "top_gainer": {
     "symbol": "SMX",
@@ -12,70 +12,52 @@
       "symbol": "SMX",
       "price": 34.939998626708984,
       "return_1m": 187.57,
-      "return_3m": -40.26,
-      "return_6m": 110.57,
-      "return_1y": -95.09,
+      "return_3m": -75.22,
+      "return_6m": 125.5,
+      "return_1y": -95.18,
       "signal_count": 0
     },
     {
       "symbol": "USAS",
       "price": 10.029999732971191,
       "return_1m": 43.08,
-      "return_3m": 123.39,
-      "return_6m": 274.25,
-      "return_1y": 753.62,
+      "return_3m": 124.38,
+      "return_6m": 264.73,
+      "return_1y": 735.83,
       "signal_count": 0
     },
     {
       "symbol": "SLVR",
       "price": 81.56999969482422,
       "return_1m": 29.64,
-      "return_3m": 62.79,
-      "return_6m": 136.3,
-      "return_1y": 292.34,
+      "return_3m": 67.92,
+      "return_6m": 134.34,
+      "return_1y": 289.99,
       "signal_count": 0
     },
     {
       "symbol": "AUMI",
       "price": 121.64959716796875,
       "return_1m": 23.76,
-      "return_3m": 40.4,
-      "return_6m": 80.19,
-      "return_1y": 200.34,
+      "return_3m": 40.19,
+      "return_6m": 73.92,
+      "return_1y": 196.88,
       "signal_count": 0
     },
     {
       "symbol": "APA",
       "price": 31.690000534057617,
       "return_1m": 22.4,
-      "return_3m": 18.71,
-      "return_6m": 38.01,
-      "return_1y": 76.43,
-      "signal_count": 0
-    },
-    {
-      "symbol": "KYMR",
-      "price": 91.3499984741211,
-      "return_1m": 20.8,
-      "return_3m": 38.43,
-      "return_6m": 116.47,
-      "return_1y": 202.78,
-      "signal_count": 0
-    },
-    {
-      "symbol": "LGN",
-      "price": 57.31999969482422,
-      "return_1m": 20.47,
-      "return_3m": 24.72,
-      "return_6m": 87.93,
-      "return_1y": 87.93,
+      "return_3m": 19.77,
+      "return_6m": 42.2,
+      "return_1y": 79.47,
       "signal_count": 0
     },
     {
       "symbol": "YDDL",
       "price": 7.309999942779541,
       "return_1m": 19.06,
-      "return_3m": 39.37,
+      "return_3m": 44.18,
       "return_6m": 34.87,
       "return_1y": 34.87,
       "signal_count": 0
@@ -84,18 +66,36 @@
       "symbol": "MUR",
       "price": 34.81999969482422,
       "return_1m": 17.6,
-      "return_3m": 5.64,
-      "return_6m": 37.0,
-      "return_1y": 48.09,
+      "return_3m": 7.14,
+      "return_6m": 41.18,
+      "return_1y": 48.27,
       "signal_count": 0
     },
     {
       "symbol": "NFLX",
       "price": 97.08999633789062,
       "return_1m": 17.32,
-      "return_3m": -6.61,
-      "return_6m": -22.79,
-      "return_1y": -0.29,
+      "return_3m": -5.94,
+      "return_6m": -21.94,
+      "return_1y": -0.17,
+      "signal_count": 0
+    },
+    {
+      "symbol": "GEV",
+      "price": 881.1799926757812,
+      "return_1m": 16.72,
+      "return_3m": 40.17,
+      "return_6m": 51.56,
+      "return_1y": 182.13,
+      "signal_count": 0
+    },
+    {
+      "symbol": "NBR",
+      "price": 76.9000015258789,
+      "return_1m": 16.29,
+      "return_3m": 35.13,
+      "return_6m": 100.21,
+      "return_1y": 100.16,
       "signal_count": 0
     }
   ],
@@ -104,70 +104,70 @@
       "symbol": "PD",
       "price": 7.150000095367432,
       "return_1m": -31.12,
-      "return_3m": -40.76,
+      "return_3m": -40.47,
       "signal_count": 0
     },
     {
       "symbol": "WGS",
       "price": 74.19999694824219,
       "return_1m": -25.06,
-      "return_3m": -53.73,
+      "return_3m": -54.18,
       "signal_count": 0
     },
     {
       "symbol": "APLD",
       "price": 27.93000030517578,
       "return_1m": -19.74,
-      "return_3m": -4.87,
+      "return_3m": -10.31,
       "signal_count": 0
     },
     {
       "symbol": "MOH",
       "price": null,
       "return_1m": -19.67,
-      "return_3m": -2.37,
+      "return_3m": -3.33,
       "signal_count": 0
     },
     {
       "symbol": "AMD",
       "price": 198.6199951171875,
       "return_1m": -19.35,
-      "return_3m": -8.72,
+      "return_3m": -8.04,
       "signal_count": 0
     },
     {
       "symbol": "ENVA",
       "price": 141.58999633789062,
       "return_1m": -17.86,
-      "return_3m": 4.57,
+      "return_3m": 3.99,
       "signal_count": 0
     },
     {
       "symbol": "AMZN",
       "price": 208.38999938964844,
       "return_1m": -14.23,
-      "return_3m": -10.32,
+      "return_3m": -9.04,
       "signal_count": 0
     },
     {
       "symbol": "PACB",
-      "price": 1.7799999713897705,
+      "price": null,
       "return_1m": -13.59,
-      "return_3m": -26.75,
+      "return_3m": -29.37,
       "signal_count": 0
     },
     {
       "symbol": "MDB",
       "price": 325.010009765625,
       "return_1m": -12.79,
-      "return_3m": -19.94,
+      "return_3m": -18.08,
       "signal_count": 0
     },
     {
       "symbol": "HOOD",
       "price": 78.77999877929688,
       "return_1m": -12.38,
-      "return_3m": -41.05,
+      "return_3m": -42.53,
       "signal_count": 0
     }
   ],
