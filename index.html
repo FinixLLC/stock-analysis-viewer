@@ -822,7 +822,7 @@
                 const response = await fetch('file-list.json');
                 const data = await response.json();
 
-                const allCsvFiles = data.top50_ml || data.top50 || [];
+                const allCsvFiles = data.stock_analysis || data.top50 || [];
                 if (allCsvFiles.length === 0) {
                     showNoPicksMessage();
                     return;
