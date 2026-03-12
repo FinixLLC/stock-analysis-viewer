@@ -2,23 +2,23 @@
 # Market: NASDAQ_Yahoo | End Date: 2026-03-10
 # Format: Rank,Symbol,Date,Pattern,Price,VolumeRatio,Score,Details
 #
-1,LFMDP,2026-02-26,CupHandle,22.79,1.91x,39.1,Depth:22.5% Handle:2.4% Vol:1.91x Target:28.02
-2,LFMDP,2026-02-25,CupHandle,22.67,1.43x,34.3,Depth:21.8% Handle:0.6% Vol:1.43x Target:27.70
-3,USGO,2026-03-02,CupHandle,14.54,12.29x,75.0,Depth:25.0% Handle:9.4% Vol:12.29x Target:17.42
-4,RLAY,2026-02-27,DarvasBox,10.26,3.80x,56.0,Box:[8.42-9.54] Ht:11.7% Vol:3.80x Boxes:3 Stop:8.42
+1,RLAY,2026-02-27,DarvasBox,10.26,3.80x,56.0,Box:[8.42-9.54] Ht:11.7% Vol:3.80x Boxes:3 Stop:8.42
+2,LFMDP,2026-02-26,CupHandle,22.79,1.91x,39.1,Depth:22.5% Handle:2.4% Vol:1.91x Target:28.02
+3,LFMDP,2026-02-25,CupHandle,22.67,1.43x,34.3,Depth:21.8% Handle:0.6% Vol:1.43x Target:27.70
+4,USGO,2026-03-02,CupHandle,14.54,12.29x,75.0,Depth:25.0% Handle:9.4% Vol:12.29x Target:17.42
 5,FGBIP,2026-03-02,CupHandle,17.97,2.37x,48.7,Depth:21.3% Handle:0.0% Vol:2.37x Target:21.87
-6,FCFS,2026-03-03,DarvasBox,195.23,2.13x,44.3,Box:[178.63-188.75] Ht:5.4% Vol:2.13x Boxes:6 Stop:178.63
-7,GDFN,2026-02-20,CupHandle,27.95,2.39x,43.9,Depth:22.0% Handle:0.0% Vol:2.39x Target:33.91
-8,GDFN,2026-02-23,CupHandle,27.45,6.72x,70.0,Depth:21.2% Handle:0.0% Vol:6.72x Target:33.12
-9,AMLX,2026-02-27,CupHandle,15.17,1.35x,33.5,Depth:23.3% Handle:11.2% Vol:1.35x Target:18.46
-10,GHRS,2026-03-02,CupHandle,16.01,1.51x,40.1,Depth:20.9% Handle:2.8% Vol:1.51x Target:19.19
-11,LFMDP,2026-03-10,CupHandle,23.14,2.84x,58.4,Depth:20.8% Handle:9.3% Vol:2.84x Target:27.87
-12,CLYM,2026-02-25,DarvasBox,7.09,3.43x,52.3,Box:[5.31-6.22] Ht:14.6% Vol:3.43x Boxes:1 Stop:5.31
-13,CNTA,2026-03-04,CupHandle,26.70,2.22x,47.2,Depth:25.7% Handle:10.0% Vol:2.22x Target:32.60
-14,AMLX,2026-02-26,CupHandle,15.26,1.38x,33.8,Depth:25.9% Handle:10.8% Vol:1.38x Target:19.05
-15,VMD,2026-03-09,DarvasBox,9.29,3.65x,64.5,Box:[7.98-8.94] Ht:10.7% Vol:3.65x Boxes:1 Stop:7.98
-16,AMLX,2026-03-02,CupHandle,15.30,2.27x,47.7,Depth:25.8% Handle:9.8% Vol:2.27x Target:19.07
-17,ESLT,2026-02-24,DarvasBox,761.52,2.81x,46.1,Box:[647.25-740.67] Ht:12.6% Vol:2.81x Boxes:8 Stop:647.25
-18,TSSI,2026-03-10,CupHandle,11.05,3.11x,61.1,Depth:19.5% Handle:13.3% Vol:3.11x Target:12.71
-19,AMLX,2026-02-24,CupHandle,14.71,1.52x,35.2,Depth:25.9% Handle:13.8% Vol:1.52x Target:18.49
-20,QCMD,2026-03-10,CupHandle,27.04,3.01x,60.1,Depth:30.5% Handle:0.0% Vol:3.01x Target:34.92
+6,SLNHP,2026-02-27,CupHandle,9.08,1.50x,35.0,Depth:31.1% Handle:0.0% Vol:1.50x Target:11.92
+7,FCFS,2026-03-03,DarvasBox,195.23,2.13x,44.3,Box:[178.63-188.75] Ht:5.4% Vol:2.13x Boxes:6 Stop:178.63
+8,GDFN,2026-02-20,CupHandle,27.95,2.39x,43.9,Depth:22.0% Handle:0.0% Vol:2.39x Target:33.91
+9,SLNHP,2026-03-10,CupHandle,9.40,30.44x,80.0,Depth:30.3% Handle:14.6% Vol:30.44x Target:12.14
+10,GDFN,2026-02-23,CupHandle,27.45,6.72x,70.0,Depth:21.2% Handle:0.0% Vol:6.72x Target:33.12
+11,AMLX,2026-02-27,CupHandle,15.17,1.35x,33.5,Depth:23.3% Handle:11.2% Vol:1.35x Target:18.46
+12,GHRS,2026-03-02,CupHandle,16.01,1.51x,40.1,Depth:20.9% Handle:2.8% Vol:1.51x Target:19.19
+13,LFMDP,2026-03-10,CupHandle,23.14,2.84x,58.4,Depth:20.8% Handle:9.3% Vol:2.84x Target:27.87
+14,CLYM,2026-02-25,DarvasBox,7.09,3.43x,52.3,Box:[5.31-6.22] Ht:14.6% Vol:3.43x Boxes:1 Stop:5.31
+15,CNTA,2026-03-04,CupHandle,26.70,2.22x,47.2,Depth:25.7% Handle:10.0% Vol:2.22x Target:32.60
+16,AMLX,2026-02-26,CupHandle,15.26,1.38x,33.8,Depth:25.9% Handle:10.8% Vol:1.38x Target:19.05
+17,VMD,2026-03-09,DarvasBox,9.29,3.65x,64.5,Box:[7.98-8.94] Ht:10.7% Vol:3.65x Boxes:1 Stop:7.98
+18,AMLX,2026-03-02,CupHandle,15.30,2.27x,47.7,Depth:25.8% Handle:9.8% Vol:2.27x Target:19.07
+19,ESLT,2026-02-24,DarvasBox,761.52,2.81x,46.1,Box:[647.25-740.67] Ht:12.6% Vol:2.81x Boxes:8 Stop:647.25
+20,TSSI,2026-03-10,CupHandle,11.05,3.11x,61.1,Depth:19.5% Handle:13.3% Vol:3.11x Target:12.71
