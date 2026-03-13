@@ -1,173 +1,173 @@
 {
-  "generated_at": "2026-03-11T21:00:04.251358",
+  "generated_at": "2026-03-12T21:00:12.981486",
   "total_positions": 102,
-  "avg_1m_return": -1.72,
+  "avg_1m_return": -4.27,
   "sell_signal_count": 0,
   "top_gainer": {
-    "symbol": "SMX",
-    "return_1m": 81.95
+    "symbol": "MOH",
+    "return_1m": 19.69
   },
   "top_gainers": [
     {
-      "symbol": "SMX",
-      "price": 29.239999771118164,
-      "return_1m": 81.95,
-      "return_3m": -83.91,
-      "return_6m": 72.78,
-      "return_1y": -96.28,
-      "signal_count": 0
-    },
-    {
-      "symbol": "SNDK",
-      "price": 655.4299926757812,
-      "return_1m": 21.01,
-      "return_3m": 217.89,
-      "return_6m": 627.53,
-      "return_1y": 1199.43,
-      "signal_count": 0
-    },
-    {
-      "symbol": "NBR",
-      "price": 80.83999633789062,
-      "return_1m": 18.29,
-      "return_3m": 47.98,
-      "return_6m": 94.56,
-      "return_1y": 101.4,
-      "signal_count": 0
-    },
-    {
-      "symbol": "NFLX",
-      "price": 96.94000244140625,
-      "return_1m": 17.92,
-      "return_3m": 1.84,
-      "return_6m": -19.37,
-      "return_1y": 5.41,
-      "signal_count": 0
-    },
-    {
       "symbol": "MOH",
       "price": 146.8000030517578,
-      "return_1m": 17.04,
-      "return_3m": -12.88,
+      "return_1m": 19.69,
+      "return_3m": -11.83,
       "return_6m": -16.64,
-      "return_1y": -53.39,
+      "return_1y": -52.81,
       "signal_count": 0
     },
     {
       "symbol": "APA",
-      "price": 31.81999969482422,
-      "return_1m": 15.92,
-      "return_3m": 23.88,
-      "return_6m": 41.78,
-      "return_1y": 70.3,
+      "price": 33.61000061035156,
+      "return_1m": 18.93,
+      "return_3m": 34.27,
+      "return_6m": 49.76,
+      "return_1y": 85.65,
       "signal_count": 0
     },
     {
-      "symbol": "YDDL",
-      "price": 8.3100004196167,
-      "return_1m": 13.99,
-      "return_3m": 66.2,
-      "return_6m": 53.32,
-      "return_1y": 53.32,
+      "symbol": "NFLX",
+      "price": 94.30999755859375,
+      "return_1m": 18.45,
+      "return_3m": 0.58,
+      "return_6m": -21.56,
+      "return_1y": 5.95,
+      "signal_count": 0
+    },
+    {
+      "symbol": "SMX",
+      "price": 18.860000610351562,
+      "return_1m": 12.73,
+      "return_3m": -86.81,
+      "return_6m": 11.45,
+      "return_1y": -97.53,
       "signal_count": 0
     },
     {
       "symbol": "UTHR",
-      "price": 535.8099975585938,
-      "return_1m": 13.23,
-      "return_3m": 8.47,
-      "return_6m": 32.92,
-      "return_1y": 74.48,
-      "signal_count": 0
-    },
-    {
-      "symbol": "DGII",
-      "price": 50.310001373291016,
-      "return_1m": 9.25,
-      "return_3m": 10.55,
-      "return_6m": 40.92,
-      "return_1y": 71.12,
+      "price": 532.8200073242188,
+      "return_1m": 11.97,
+      "return_3m": 6.5,
+      "return_6m": 32.18,
+      "return_1y": 74.47,
       "signal_count": 0
     },
     {
       "symbol": "PLTR",
       "price": 151.13999938964844,
-      "return_1m": 8.34,
-      "return_3m": -17.67,
+      "return_1m": 11.39,
+      "return_3m": -17.52,
       "return_6m": -11.72,
-      "return_1y": 80.68,
+      "return_1y": 89.83,
+      "signal_count": 0
+    },
+    {
+      "symbol": "SNDK",
+      "price": 655.4299926757812,
+      "return_1m": 9.36,
+      "return_3m": 224.68,
+      "return_6m": 627.53,
+      "return_1y": 1253.08,
+      "signal_count": 0
+    },
+    {
+      "symbol": "CRM",
+      "price": 199.27999877929688,
+      "return_1m": 7.72,
+      "return_3m": -21.6,
+      "return_6m": -17.55,
+      "return_1y": -26.19,
+      "signal_count": 0
+    },
+    {
+      "symbol": "NBR",
+      "price": 75.61000061035156,
+      "return_1m": 6.67,
+      "return_3m": 41.22,
+      "return_6m": 81.97,
+      "return_1y": 92.74,
+      "signal_count": 0
+    },
+    {
+      "symbol": "DGII",
+      "price": 49.34000015258789,
+      "return_1m": 6.31,
+      "return_3m": 9.18,
+      "return_6m": 38.21,
+      "return_1y": 73.43,
       "signal_count": 0
     }
   ],
   "top_losers": [
     {
-      "symbol": "MDB",
-      "price": 270.55999755859375,
-      "return_1m": -28.28,
-      "return_3m": -35.43,
-      "signal_count": 0
-    },
-    {
-      "symbol": "APLD",
-      "price": 27.399999618530273,
-      "return_1m": -26.87,
-      "return_3m": -1.65,
-      "signal_count": 0
-    },
-    {
       "symbol": "PACB",
-      "price": 1.3700000047683716,
-      "return_1m": -24.31,
-      "return_3m": -35.38,
+      "price": 1.2699999809265137,
+      "return_1m": -30.98,
+      "return_3m": -40.09,
+      "signal_count": 0
+    },
+    {
+      "symbol": "MDB",
+      "price": 260.67999267578125,
+      "return_1m": -28.48,
+      "return_3m": -37.34,
       "signal_count": 0
     },
     {
       "symbol": "CCL",
-      "price": 26.389999389648438,
-      "return_1m": -20.87,
-      "return_3m": -4.45,
+      "price": 23.920000076293945,
+      "return_1m": -27.71,
+      "return_3m": -16.36,
       "signal_count": 0
     },
     {
-      "symbol": "MAIA",
-      "price": 1.5,
-      "return_1m": -19.79,
-      "return_3m": 10.29,
+      "symbol": "APLD",
+      "price": 27.479999542236328,
+      "return_1m": -24.94,
+      "return_3m": 19.58,
       "signal_count": 0
     },
     {
       "symbol": "AMCR",
-      "price": 42.099998474121094,
-      "return_1m": -13.25,
-      "return_3m": 2.31,
+      "price": 40.33000183105469,
+      "return_1m": -19.48,
+      "return_3m": -2.23,
       "signal_count": 0
     },
     {
-      "symbol": "ACHR",
-      "price": 6.320000171661377,
-      "return_1m": -11.85,
-      "return_3m": -23.86,
+      "symbol": "TBBB",
+      "price": 31.760000228881836,
+      "return_1m": -17.95,
+      "return_3m": -3.9,
       "signal_count": 0
     },
     {
-      "symbol": "ENVA",
-      "price": 139.08999633789062,
-      "return_1m": -11.85,
-      "return_3m": -14.52,
+      "symbol": "WGS",
+      "price": 76.8499984741211,
+      "return_1m": -15.96,
+      "return_3m": -48.97,
       "signal_count": 0
     },
     {
-      "symbol": "MFC",
-      "price": 33.7599983215332,
-      "return_1m": -11.76,
-      "return_3m": -4.85,
+      "symbol": "CCFE",
+      "price": 26.35930061340332,
+      "return_1m": -15.2,
+      "return_3m": -3.07,
       "signal_count": 0
     },
     {
-      "symbol": "BRKRP",
-      "price": 292.0299987792969,
-      "return_1m": -11.65,
-      "return_3m": -16.56,
+      "symbol": "NUE",
+      "price": 165.6699981689453,
+      "return_1m": -14.79,
+      "return_3m": 2.6,
+      "signal_count": 0
+    },
+    {
+      "symbol": "TECK",
+      "price": 51.869998931884766,
+      "return_1m": -14.09,
+      "return_3m": 20.46,
       "signal_count": 0
     }
   ],
