@@ -513,8 +513,11 @@
         </div>
 
         <div class="card" style="max-width: 1200px; margin: 0 auto 30px;">
-            <h2 style="margin-bottom: 15px;">📖 How to Read the Data</h2>
-            <div style="line-height: 1.8; color: #555;">
+            <h2 onclick="toggleHowTo()" style="margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                📖 How to Read the Data
+                <span id="howto-arrow" style="font-size: 0.7em; color: #999; transition: transform 0.2s;">▼</span>
+            </h2>
+            <div id="howto-content" style="display: none; line-height: 1.8; color: #555; margin-top: 15px;">
                 <p style="margin-bottom: 15px;">
                     <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
                     Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom, DarvasBox), including tier classification,
@@ -711,6 +714,15 @@
                 badge.textContent = '🔴 Files ' + Math.floor(hoursDiff / 24) + ' days old';
             }
             badge.style.display = 'inline-flex';
+        }
+
+        // How to Read the Data toggle
+        function toggleHowTo() {
+            const content = document.getElementById('howto-content');
+            const arrow = document.getElementById('howto-arrow');
+            const isHidden = content.style.display === 'none';
+            content.style.display = isHidden ? 'block' : 'none';
+            arrow.style.transform = isHidden ? 'rotate(180deg)' : '';
         }
 
         // Show error message to user
