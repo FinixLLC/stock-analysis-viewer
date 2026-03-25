@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-03-15
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: Training error: Input y contains NaN.
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      AACB          nan      nan     0.0000   nan         
+2      AACBR         nan      nan     0.0000   nan         
+3      AACBU         nan      nan     0.0000   nan         
+4      AACG          nan      nan     0.0000   nan         
+5      AACI          nan      nan     0.0000   nan         
+6      AACIU         nan      nan     0.0000   nan         
+7      AADR          nan      nan     0.0000   nan         
+8      AAGR          nan      nan     0.0000   nan         
+9      AAGRW         nan      nan     0.0000   nan         
+10     AAL           nan      nan     0.0000   nan         
+11     AALG          nan      nan     0.0000   nan         
+12     AAME          nan      nan     0.0000   nan         
+13     AAOI          nan      nan     0.0000   nan         
+14     AAON          nan      nan     0.0000   nan         
+15     AAPB          nan      nan     0.0000   nan         
+16     AAPD          nan      nan     0.0000   nan         
+17     AAPG          nan      nan     0.0000   nan         
+18     AAPL          nan      nan     0.0000   nan         
+19     AAPU          nan      nan     0.0000   nan         
+20     AARD          nan      nan     0.0000   nan         
+21     AATC          nan      nan     0.0000   nan         
+22     AAUS          nan      nan     0.0000   nan         
+23     AAVM          nan      nan     0.0000   nan         
+24     AAXJ          nan      nan     0.0000   nan         
+25     ABAT          nan      nan     0.0000   nan         
+26     ABCB          nan      nan     0.0000   nan         
+27     ABCL          nan      nan     0.0000   nan         
+28     ABCS          nan      nan     0.0000   nan         
+29     ABEO          nan      nan     0.0000   nan         
+30     ABI           nan      nan     0.0000   nan         
+31     ABIG          nan      nan     0.0000   nan         
+32     ABL           nan      nan     0.0000   nan         
+33     ABLLL         nan      nan     0.0000   nan         
+34     ABLLW         nan      nan     0.0000   nan         
+35     ABLV          nan      nan     0.0000   nan         
+36     ABLVW         nan      nan     0.0000   nan         
+37     ABNB          nan      nan     0.0000   nan         
+38     ABOS          nan      nan     0.0000   nan         
+39     ABP           nan      nan     0.0000   nan         
+40     ABPWW         nan      nan     0.0000   nan         
+41     ABSI          nan      nan     0.0000   nan         
+42     ABTC          nan      nan     0.0000   nan         
+43     ABTS          nan      nan     0.0000   nan         
+44     ABUS          nan      nan     0.0000   nan         
+45     ABVC          nan      nan     0.0000   nan         
+46     ABVE          nan      nan     0.0000   nan         
+47     ABVEW         nan      nan     0.0000   nan         
+48     ABVX          nan      nan     0.0000   nan         
+49     ACAD          nan      nan     0.0000   nan         
+50     ACAT          nan      nan     0.0000   nan         
+
+================================================================================

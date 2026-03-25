@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
         }
 
@@ -53,8 +53,8 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
             margin-bottom: 30px;
         }
 
@@ -379,6 +379,10 @@
             top: 0;
         }
 
+        @media (max-width: 1024px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             .grid { grid-template-columns: 1fr; }
@@ -509,8 +513,11 @@
         </div>
 
         <div class="card" style="max-width: 1200px; margin: 0 auto 30px;">
-            <h2 style="margin-bottom: 15px;">📖 How to Read the Data</h2>
-            <div style="line-height: 1.8; color: #555;">
+            <h2 onclick="toggleHowTo()" style="margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                📖 How to Read the Data
+                <span id="howto-arrow" style="font-size: 0.7em; color: #999; transition: transform 0.2s;">▼</span>
+            </h2>
+            <div id="howto-content" style="display: none; line-height: 1.8; color: #555; margin-top: 15px;">
                 <p style="margin-bottom: 15px;">
                     <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
                     Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom, DarvasBox), including tier classification,
@@ -531,40 +538,60 @@
 
         <main id="main-content">
         <div class="grid">
-            <div class="card" role="region" aria-labelledby="top50-heading">
-                <h2 id="top50-heading">🤖 Top 50 ML Rankings</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">ML-ranked top 50 stocks by composite score (60% technical + 40% fundamental)</p>
-                <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 ML files">
-                <ul class="file-list" id="top50-list" role="list" aria-live="polite">
-                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                </ul>
-            </div>
-
             <div class="card" role="region" aria-labelledby="analysis-heading">
-                <h2 id="analysis-heading">📈 Full Stock Analysis</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">Complete analysis of all stocks with pattern signals, momentum, and risk metrics</p>
-                <input type="search" class="search-box" id="analysis-search" placeholder="Search files..." aria-label="Search analysis files">
-                <ul class="file-list" id="analysis-list" role="list" aria-live="polite">
-                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                </ul>
+                <h2 id="analysis-heading" class="card-toggle" onclick="toggleCard('analysis-body','analysis-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
+                    📈 Full Stock Analysis
+                    <span id="analysis-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
+                </h2>
+                <div id="analysis-body">
+                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">Complete analysis of all stocks with pattern signals, momentum, and risk metrics</p>
+                    <input type="search" class="search-box" id="analysis-search" placeholder="Search files..." aria-label="Search analysis files">
+                    <ul class="file-list" id="analysis-list" role="list" aria-live="polite">
+                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="card" role="region" aria-labelledby="top-patterns-heading">
-                <h2 id="top-patterns-heading">🏆 Top Chart Patterns</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">Top 20/50 stocks with strongest pattern signals</p>
-                <input type="search" class="search-box" id="top-patterns-search" placeholder="Search files..." aria-label="Search Top Pattern files">
-                <ul class="file-list" id="top-patterns-list" role="list" aria-live="polite">
-                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                </ul>
+                <h2 id="top-patterns-heading" class="card-toggle" onclick="toggleCard('top-patterns-body','top-patterns-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
+                    🏆 Top Chart Patterns
+                    <span id="top-patterns-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
+                </h2>
+                <div id="top-patterns-body">
+                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">Top 20/50 stocks with strongest pattern signals</p>
+                    <input type="search" class="search-box" id="top-patterns-search" placeholder="Search files..." aria-label="Search Top Pattern files">
+                    <ul class="file-list" id="top-patterns-list" role="list" aria-live="polite">
+                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="card" role="region" aria-labelledby="pattern-heading">
-                <h2 id="pattern-heading">📊 Pattern Detection Lists</h2>
-                <p style="color: #666; font-size: 0.85em; margin-bottom: 10px;">All stocks with Spoon, Cup&Handle, VBottom, DarvasBox, or POS patterns</p>
-                <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
-                <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
-                    <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                </ul>
+                <h2 id="pattern-heading" class="card-toggle" onclick="toggleCard('pattern-body','pattern-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
+                    📊 Pattern Detection Lists
+                    <span id="pattern-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
+                </h2>
+                <div id="pattern-body">
+                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">All stocks with Spoon, Cup&Handle, VBottom, DarvasBox, or POS patterns</p>
+                    <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
+                    <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
+                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" role="region" aria-labelledby="top50-heading">
+                <h2 id="top50-heading" class="card-toggle" onclick="toggleCard('top50-body','top50-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
+                    🤖 Top 50 ML Rankings
+                    <span id="top50-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
+                </h2>
+                <div id="top50-body">
+                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">ML-ranked top 50 stocks by composite score (60% technical + 40% fundamental)</p>
+                    <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 ML files">
+                    <ul class="file-list" id="top50-list" role="list" aria-live="polite">
+                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
+                    </ul>
+                </div>
             </div>
         </div>
         </main>
@@ -709,6 +736,24 @@
             badge.style.display = 'inline-flex';
         }
 
+        // How to Read the Data toggle
+        function toggleHowTo() {
+            const content = document.getElementById('howto-content');
+            const arrow = document.getElementById('howto-arrow');
+            const isHidden = content.style.display === 'none';
+            content.style.display = isHidden ? 'block' : 'none';
+            arrow.style.transform = isHidden ? 'rotate(180deg)' : '';
+        }
+
+        // Generic card collapse toggle
+        function toggleCard(bodyId, arrowId) {
+            const body = document.getElementById(bodyId);
+            const arrow = document.getElementById(arrowId);
+            const isHidden = body.style.display === 'none';
+            body.style.display = isHidden ? 'block' : 'none';
+            arrow.style.transform = isHidden ? '' : 'rotate(-90deg)';
+        }
+
         // Show error message to user
         function showError(listId, message) {
             const list = document.getElementById(listId);
@@ -744,7 +789,7 @@
                 populateList('top50-list', fileData.top50);
                 populateList('analysis-list', fileData.analysis);
                 populateList('top-patterns-list', fileData.topPatterns);
-                populateList('pattern-list', fileData.detectionLists);
+                populateList('pattern-list', fileData.detectionLists, '', true);
 
                 // Update freshness badge
                 updateFreshnessBadge(data.stats?.last_update);
@@ -757,7 +802,23 @@
             }
         }
 
-        function populateList(listId, files, searchTerm = '') {
+        // Cache of known-empty files (checked via HEAD request)
+        const emptyFileCache = new Set();
+
+        async function filterEmptyFiles(files) {
+            const results = await Promise.all(files.map(async f => {
+                if (emptyFileCache.has(f.path)) return null;
+                try {
+                    const r = await fetch(f.path, { method: 'HEAD' });
+                    const size = parseInt(r.headers.get('content-length') || '1', 10);
+                    if (size === 0) { emptyFileCache.add(f.path); return null; }
+                } catch (e) { /* network error — include file */ }
+                return f;
+            }));
+            return results.filter(Boolean);
+        }
+
+        function populateList(listId, files, searchTerm = '', skipEmpty = false) {
             const list = document.getElementById(listId);
             if (!files || files.length === 0) {
                 list.innerHTML = '<li>No files available</li>';
@@ -774,6 +835,19 @@
                 );
             }
 
+            // For pattern detection lists: filter out empty files asynchronously
+            if (skipEmpty) {
+                filterEmptyFiles(filteredFiles).then(nonEmpty => {
+                    filteredFiles = nonEmpty;
+                    renderList(list, filteredFiles);
+                });
+                return;
+            }
+
+            renderList(list, filteredFiles);
+        }
+
+        function renderList(list, filteredFiles) {
             if (filteredFiles.length === 0) {
                 list.innerHTML = '<li>No matching files found</li>';
                 return;
@@ -810,7 +884,7 @@
         });
 
         document.getElementById('pattern-search').addEventListener('input', (e) => {
-            populateList('pattern-list', fileData.detectionLists, e.target.value);
+            populateList('pattern-list', fileData.detectionLists, e.target.value, true);
         });
 
         // Load files on page load
