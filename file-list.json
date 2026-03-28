@@ -1,6 +1,11 @@
 {
   "top50_ml": [
     {
+      "name": "top_50_ml_NYSE_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_NYSE_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
+    },
+    {
       "name": "top_50_ml_NYSE_Yahoo_2026_03_25.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_03_25.csv",
       "date": "2026-03-25"
@@ -154,6 +159,11 @@
       "name": "top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "date": "2026-02-10"
+    },
+    {
+      "name": "top_50_ml_NASDAQ_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
     },
     {
       "name": "top_50_ml_NASDAQ_Yahoo_2026_03_25.csv",
@@ -324,6 +334,11 @@
       "name": "top_50_ml_NASDAQ_Yahoo_2026_02_09.csv",
       "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_02_09.csv",
       "date": "2026-02-09"
+    },
+    {
+      "name": "top_50_ml_AMEX_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_AMEX_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
     },
     {
       "name": "top_50_ml_AMEX_Yahoo_2026_03_25.csv",
@@ -5377,6 +5392,11 @@
       "date": "2026-02-16"
     },
     {
+      "name": "DarvasBoxList_AMEX_Yahoo_2026_03_26.txt",
+      "path": "patterns/DarvasBoxList_AMEX_Yahoo_2026_03_26.txt",
+      "date": "2026-03-26"
+    },
+    {
       "name": "DarvasBoxList_AMEX_Yahoo_2026_03_19.txt",
       "path": "patterns/DarvasBoxList_AMEX_Yahoo_2026_03_19.txt",
       "date": "2026-03-19"
@@ -6444,6 +6464,11 @@
   ],
   "top50": [
     {
+      "name": "top_50_ml_NYSE_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_NYSE_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
+    },
+    {
       "name": "top_50_ml_NYSE_Yahoo_2026_03_25.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_03_25.csv",
       "date": "2026-03-25"
@@ -6597,6 +6622,11 @@
       "name": "top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "date": "2026-02-10"
+    },
+    {
+      "name": "top_50_ml_NASDAQ_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
     },
     {
       "name": "top_50_ml_NASDAQ_Yahoo_2026_03_25.csv",
@@ -6767,6 +6797,11 @@
       "name": "top_50_ml_NASDAQ_Yahoo_2026_02_09.csv",
       "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_02_09.csv",
       "date": "2026-02-09"
+    },
+    {
+      "name": "top_50_ml_AMEX_Yahoo_2026_03_26.csv",
+      "path": "top50/top_50_ml_AMEX_Yahoo_2026_03_26.csv",
+      "date": "2026-03-26"
     },
     {
       "name": "top_50_ml_AMEX_Yahoo_2026_03_25.csv",
@@ -11816,6 +11851,11 @@
       "date": "2026-02-16"
     },
     {
+      "name": "DarvasBoxList_AMEX_Yahoo_2026_03_26.txt",
+      "path": "patterns/DarvasBoxList_AMEX_Yahoo_2026_03_26.txt",
+      "date": "2026-03-26"
+    },
+    {
       "name": "DarvasBoxList_AMEX_Yahoo_2026_03_19.txt",
       "path": "patterns/DarvasBoxList_AMEX_Yahoo_2026_03_19.txt",
       "date": "2026-03-19"
@@ -12882,15 +12922,15 @@
     }
   ],
   "stats": {
-    "total_ml": "95",
+    "total_ml": "98",
     "total_analysis": "224",
     "total_top_patterns": "370",
-    "total_detection": "598",
-    "total_stocks": "319",
-    "total_patterns": "968",
-    "totalStocks": 319,
-    "patternFiles": 968,
-    "last_update": "Mar 27, 2026 17:40",
-    "lastUpdate": "Mar 27, 2026 17:40"
+    "total_detection": "599",
+    "total_stocks": "322",
+    "total_patterns": "969",
+    "totalStocks": 322,
+    "patternFiles": 969,
+    "last_update": "Mar 27, 2026 22:28",
+    "lastUpdate": "Mar 27, 2026 22:28"
   }
 }
