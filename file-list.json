@@ -1,6 +1,11 @@
 {
   "top50_ml": [
     {
+      "name": "top_50_ml_NYSE_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_NYSE_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
+    },
+    {
       "name": "top_50_ml_NYSE_Yahoo_2026_04_27.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_04_27.csv",
       "date": "2026-04-27"
@@ -254,6 +259,11 @@
       "name": "top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "date": "2026-02-10"
+    },
+    {
+      "name": "top_50_ml_NASDAQ_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "top_50_ml_NASDAQ_Yahoo_2026_04_27.csv",
@@ -526,6 +536,11 @@
       "date": "2026-02-09"
     },
     {
+      "name": "top_50_ml_AMEX_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_AMEX_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
+    },
+    {
       "name": "top_50_ml_AMEX_Yahoo_2026_04_27.csv",
       "path": "top50/top_50_ml_AMEX_Yahoo_2026_04_27.csv",
       "date": "2026-04-27"
@@ -796,6 +811,11 @@
       "name": "stock_analysis_Nasdaq_yahoo_2026_02_04.csv",
       "path": "top50/stock_analysis_Nasdaq_yahoo_2026_02_04.csv",
       "date": "2026-02-04"
+    },
+    {
+      "name": "stock_analysis_NYSE_Yahoo_2026_04_28.csv",
+      "path": "top50/stock_analysis_NYSE_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "stock_analysis_NYSE_Yahoo_2026_04_27.csv",
@@ -1256,6 +1276,11 @@
       "name": "stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "date": "2025-09-01"
+    },
+    {
+      "name": "stock_analysis_NASDAQ_Yahoo_2026_04_28.csv",
+      "path": "top50/stock_analysis_NASDAQ_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "stock_analysis_NASDAQ_Yahoo_2026_04_27.csv",
@@ -2185,6 +2210,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "Top50_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top50_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top50_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/Top50_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -2583,6 +2613,11 @@
       "name": "Top50_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "Top50_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top50_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "Top50_NASDAQ_Yahoo_2026_04_27.txt",
@@ -3370,6 +3405,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "Top20_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top20_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/Top20_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -3770,6 +3810,11 @@
       "date": "2025-12-30"
     },
     {
+      "name": "Top20_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top20_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/Top20_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -4163,6 +4208,11 @@
       "name": "Top20_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "Top20_AMEX_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_AMEX_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "Top20_AMEX_Yahoo_2026_04_27.txt",
@@ -4577,6 +4627,11 @@
   ],
   "detection_lists": [
     {
+      "name": "VCPList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/VCPList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "VCPList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/VCPList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -4675,6 +4730,11 @@
       "name": "VCPList_NYSE_Yahoo_2026_03_26.txt",
       "path": "patterns/VCPList_NYSE_Yahoo_2026_03_26.txt",
       "date": "2026-03-26"
+    },
+    {
+      "name": "VCPList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/VCPList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "VCPList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -4777,6 +4837,11 @@
       "date": "2026-03-26"
     },
     {
+      "name": "VBottomList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/VBottomList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "VBottomList_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/VBottomList_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -4800,6 +4865,11 @@
       "name": "SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "path": "patterns/SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "date": "2026-02-04"
+    },
+    {
+      "name": "SpoonList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/SpoonList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "SpoonList_NYSE_Yahoo_2026_04_27.txt",
@@ -5175,6 +5245,11 @@
       "name": "SpoonList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "SpoonList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/SpoonList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "SpoonList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -5652,6 +5727,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "POSList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "POSList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/POSList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -6062,6 +6142,11 @@
       "date": "2025-12-30"
     },
     {
+      "name": "POSList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "POSList_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/POSList_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -6460,6 +6545,11 @@
       "name": "POSList_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/POSList_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "POSList_AMEX_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_AMEX_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "POSList_AMEX_Yahoo_2026_04_27.txt",
@@ -6877,6 +6967,11 @@
       "date": "2026-03-20"
     },
     {
+      "name": "DarvasBoxList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "DarvasBoxList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -7125,6 +7220,11 @@
       "name": "DarvasBoxList_NYSE_Yahoo_2026_02_16.txt",
       "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_02_16.txt",
       "date": "2026-02-16"
+    },
+    {
+      "name": "DarvasBoxList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/DarvasBoxList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "DarvasBoxList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -7587,6 +7687,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "CupHandleList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/CupHandleList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "CupHandleList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/CupHandleList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -7995,6 +8100,11 @@
       "name": "CupHandleList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/CupHandleList_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "CupHandleList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/CupHandleList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "CupHandleList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -8799,6 +8909,11 @@
   ],
   "top50": [
     {
+      "name": "top_50_ml_NYSE_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_NYSE_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
+    },
+    {
       "name": "top_50_ml_NYSE_Yahoo_2026_04_27.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_04_27.csv",
       "date": "2026-04-27"
@@ -9052,6 +9167,11 @@
       "name": "top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "path": "top50/top_50_ml_NYSE_Yahoo_2026_02_10.csv",
       "date": "2026-02-10"
+    },
+    {
+      "name": "top_50_ml_NASDAQ_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_NASDAQ_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "top_50_ml_NASDAQ_Yahoo_2026_04_27.csv",
@@ -9324,6 +9444,11 @@
       "date": "2026-02-09"
     },
     {
+      "name": "top_50_ml_AMEX_Yahoo_2026_04_28.csv",
+      "path": "top50/top_50_ml_AMEX_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
+    },
+    {
       "name": "top_50_ml_AMEX_Yahoo_2026_04_27.csv",
       "path": "top50/top_50_ml_AMEX_Yahoo_2026_04_27.csv",
       "date": "2026-04-27"
@@ -9592,6 +9717,11 @@
       "name": "stock_analysis_Nasdaq_yahoo_2026_02_04.csv",
       "path": "top50/stock_analysis_Nasdaq_yahoo_2026_02_04.csv",
       "date": "2026-02-04"
+    },
+    {
+      "name": "stock_analysis_NYSE_Yahoo_2026_04_28.csv",
+      "path": "top50/stock_analysis_NYSE_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "stock_analysis_NYSE_Yahoo_2026_04_27.csv",
@@ -10052,6 +10182,11 @@
       "name": "stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "path": "top50/stock_analysis_NYSE_Polygon_2025_09_01.csv",
       "date": "2025-09-01"
+    },
+    {
+      "name": "stock_analysis_NASDAQ_Yahoo_2026_04_28.csv",
+      "path": "top50/stock_analysis_NASDAQ_Yahoo_2026_04_28.csv",
+      "date": "2026-04-28"
     },
     {
       "name": "stock_analysis_NASDAQ_Yahoo_2026_04_27.csv",
@@ -10981,6 +11116,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "Top50_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top50_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top50_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/Top50_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -11379,6 +11519,11 @@
       "name": "Top50_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/Top50_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "Top50_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top50_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "Top50_NASDAQ_Yahoo_2026_04_27.txt",
@@ -12166,6 +12311,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "Top20_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top20_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/Top20_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -12566,6 +12716,11 @@
       "date": "2025-12-30"
     },
     {
+      "name": "Top20_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "Top20_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/Top20_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -12959,6 +13114,11 @@
       "name": "Top20_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/Top20_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "Top20_AMEX_Yahoo_2026_04_28.txt",
+      "path": "patterns/Top20_AMEX_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "Top20_AMEX_Yahoo_2026_04_27.txt",
@@ -13371,6 +13531,11 @@
       "date": "2025-09-01"
     },
     {
+      "name": "VCPList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/VCPList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "VCPList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/VCPList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -13469,6 +13634,11 @@
       "name": "VCPList_NYSE_Yahoo_2026_03_26.txt",
       "path": "patterns/VCPList_NYSE_Yahoo_2026_03_26.txt",
       "date": "2026-03-26"
+    },
+    {
+      "name": "VCPList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/VCPList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "VCPList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -13571,6 +13741,11 @@
       "date": "2026-03-26"
     },
     {
+      "name": "VBottomList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/VBottomList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "VBottomList_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/VBottomList_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -13594,6 +13769,11 @@
       "name": "SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "path": "patterns/SpoonList_Nasdaq_yahoo_2026_02_04.txt",
       "date": "2026-02-04"
+    },
+    {
+      "name": "SpoonList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/SpoonList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "SpoonList_NYSE_Yahoo_2026_04_27.txt",
@@ -13969,6 +14149,11 @@
       "name": "SpoonList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/SpoonList_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "SpoonList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/SpoonList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "SpoonList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -14446,6 +14631,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "POSList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "POSList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/POSList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -14856,6 +15046,11 @@
       "date": "2025-12-30"
     },
     {
+      "name": "POSList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "POSList_NASDAQ_Yahoo_2026_04_27.txt",
       "path": "patterns/POSList_NASDAQ_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -15254,6 +15449,11 @@
       "name": "POSList_NASDAQ_Polygon_2025_12_30.txt",
       "path": "patterns/POSList_NASDAQ_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "POSList_AMEX_Yahoo_2026_04_28.txt",
+      "path": "patterns/POSList_AMEX_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "POSList_AMEX_Yahoo_2026_04_27.txt",
@@ -15671,6 +15871,11 @@
       "date": "2026-03-20"
     },
     {
+      "name": "DarvasBoxList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "DarvasBoxList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -15919,6 +16124,11 @@
       "name": "DarvasBoxList_NYSE_Yahoo_2026_02_16.txt",
       "path": "patterns/DarvasBoxList_NYSE_Yahoo_2026_02_16.txt",
       "date": "2026-02-16"
+    },
+    {
+      "name": "DarvasBoxList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/DarvasBoxList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "DarvasBoxList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -16381,6 +16591,11 @@
       "date": "2026-02-04"
     },
     {
+      "name": "CupHandleList_NYSE_Yahoo_2026_04_28.txt",
+      "path": "patterns/CupHandleList_NYSE_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
+    },
+    {
       "name": "CupHandleList_NYSE_Yahoo_2026_04_27.txt",
       "path": "patterns/CupHandleList_NYSE_Yahoo_2026_04_27.txt",
       "date": "2026-04-27"
@@ -16789,6 +17004,11 @@
       "name": "CupHandleList_NYSE_Polygon_2025_12_30.txt",
       "path": "patterns/CupHandleList_NYSE_Polygon_2025_12_30.txt",
       "date": "2025-12-30"
+    },
+    {
+      "name": "CupHandleList_NASDAQ_Yahoo_2026_04_28.txt",
+      "path": "patterns/CupHandleList_NASDAQ_Yahoo_2026_04_28.txt",
+      "date": "2026-04-28"
     },
     {
       "name": "CupHandleList_NASDAQ_Yahoo_2026_04_27.txt",
@@ -17592,15 +17812,15 @@
     }
   ],
   "stats": {
-    "total_ml": "155",
-    "total_analysis": "278",
-    "total_top_patterns": "481",
-    "total_detection": "844",
-    "total_stocks": "433",
-    "total_patterns": "1325",
-    "totalStocks": 433,
-    "patternFiles": 1325,
-    "last_update": "Apr 28, 2026 23:46",
-    "lastUpdate": "Apr 28, 2026 23:46"
+    "total_ml": "158",
+    "total_analysis": "280",
+    "total_top_patterns": "486",
+    "total_detection": "856",
+    "total_stocks": "438",
+    "total_patterns": "1342",
+    "totalStocks": 438,
+    "patternFiles": 1342,
+    "last_update": "Apr 29, 2026 23:41",
+    "lastUpdate": "Apr 29, 2026 23:41"
   }
 }
