@@ -1,7 +1,7 @@
 {
-  "generated": "2026-04-29T23:41:30.236161",
+  "generated": "2026-04-30T23:41:50.113166",
   "category": "blue_sky",
-  "count": 86,
+  "count": 87,
   "stocks": [
     {
       "symbol": "ACAT",
@@ -24,7 +24,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:46.210000"
+      "updated": "2026-05-01T01:57:58.770000"
     },
     {
       "symbol": "ACLX",
@@ -47,19 +47,19 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:12.222000"
+      "updated": "2026-05-01T01:58:16.958000"
     },
     {
       "symbol": "AL",
       "sector": "Industrials",
       "price": 65.0,
-      "sma20": 64.97,
-      "sma50": 64.82,
-      "sma100": 64.55,
-      "sma200": 62.89,
-      "change1M": 0.4,
+      "sma20": 64.99,
+      "sma50": 64.83,
+      "sma100": 64.57,
+      "sma200": 62.96,
+      "change1M": 0.3,
       "change6M": 2.6,
-      "change1Y": 44.1,
+      "change1Y": 42.1,
       "high52W": 65.0,
       "low52W": 44.71,
       "distFromHigh": 0.0,
@@ -70,30 +70,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.99,
       "dataEndDate": "2026-04-07",
-      "updated": "2026-04-30T05:03:54.674000"
-    },
-    {
-      "symbol": "ALDF",
-      "sector": "Financial Services",
-      "price": 10.61,
-      "sma20": 10.58,
-      "sma50": 10.56,
-      "sma100": 10.54,
-      "sma200": 10.5,
-      "change1M": 0.6,
-      "change6M": 1.4,
-      "change1Y": 4.3,
-      "high52W": 10.62,
-      "low52W": 0.0,
-      "distFromHigh": 0.1,
-      "distFromLow": 0.0,
-      "longTerm": "bull_weak",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.3,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:29.160000"
+      "updated": "2026-05-01T05:04:02.483000"
     },
     {
       "symbol": "ALEX",
@@ -101,11 +78,11 @@
       "price": 20.84,
       "sma20": 20.84,
       "sma50": 20.81,
-      "sma100": 19.88,
-      "sma200": 18.62,
+      "sma100": 19.98,
+      "sma200": 18.65,
       "change1M": 0.0,
-      "change6M": 24.5,
-      "change1Y": 34.1,
+      "change6M": 28.0,
+      "change1Y": 35.7,
       "high52W": 20.86,
       "low52W": 14.82,
       "distFromHigh": 0.1,
@@ -116,7 +93,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-03-12",
-      "updated": "2026-04-30T05:03:55.143000"
+      "updated": "2026-05-01T05:04:10.364000"
     },
     {
       "symbol": "AOGOU",
@@ -139,7 +116,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:11.560000"
+      "updated": "2026-05-01T01:58:16.878000"
     },
     {
       "symbol": "AQUNU",
@@ -162,7 +139,30 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:15.293000"
+      "updated": "2026-05-01T01:58:19.053000"
+    },
+    {
+      "symbol": "ARTC",
+      "sector": "Other",
+      "price": 9.86,
+      "sma20": 9.84,
+      "sma50": 8.71,
+      "sma100": 4.62,
+      "sma200": 2.57,
+      "change1M": 0.5,
+      "change6M": 1760.4,
+      "change1Y": 1760.4,
+      "high52W": 9.86,
+      "low52W": 0.53,
+      "distFromHigh": 0.0,
+      "distFromLow": 1760.4,
+      "longTerm": "bull_weak",
+      "midTerm": "bull_weak",
+      "shortTerm": "neutral",
+      "pattern": "Blue Sky Breakout",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-04-30",
+      "updated": "2026-05-01T01:58:38.805000"
     },
     {
       "symbol": "AXAC",
@@ -184,8 +184,31 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:59.536000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:15.413000"
+    },
+    {
+      "symbol": "BANFP",
+      "sector": "Other",
+      "price": 26.48,
+      "sma20": 26.3,
+      "sma50": 26.2,
+      "sma100": 26.12,
+      "sma200": 25.79,
+      "change1M": 0.6,
+      "change6M": 2.4,
+      "change1Y": 7.5,
+      "high52W": 26.5,
+      "low52W": 24.28,
+      "distFromHigh": 0.1,
+      "distFromLow": 9.0,
+      "longTerm": "bull",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Blue Sky Breakout",
+      "volumeRatio": 2.08,
+      "dataEndDate": "2026-04-30",
+      "updated": "2026-05-01T01:57:23.317000"
     },
     {
       "symbol": "BHE",
@@ -208,7 +231,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 3.31,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:34.534000"
+      "updated": "2026-05-01T05:03:51.866000"
     },
     {
       "symbol": "BTE",
@@ -231,7 +254,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.23,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:37.634000"
+      "updated": "2026-05-01T05:03:51.433000"
     },
     {
       "symbol": "BUFC",
@@ -254,7 +277,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:19.231000"
+      "updated": "2026-05-01T01:58:23.898000"
     },
     {
       "symbol": "CCLDO",
@@ -277,7 +300,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.33,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:12.383000"
+      "updated": "2026-05-01T01:58:17.379000"
     },
     {
       "symbol": "CFLT",
@@ -300,7 +323,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-17",
-      "updated": "2026-04-30T01:58:09.500000"
+      "updated": "2026-05-01T01:58:13.563000"
     },
     {
       "symbol": "CLOA",
@@ -323,7 +346,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.08,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:15.025000"
+      "updated": "2026-05-01T01:58:20.253000"
     },
     {
       "symbol": "CNDA",
@@ -346,7 +369,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-18",
-      "updated": "2026-04-30T06:37:54.498000"
+      "updated": "2026-05-01T06:38:14.707000"
     },
     {
       "symbol": "CNGLU",
@@ -369,7 +392,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:11.933000"
+      "updated": "2026-05-01T01:58:16.697000"
     },
     {
       "symbol": "CPSR",
@@ -392,7 +415,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:04:04.934000"
+      "updated": "2026-05-01T05:04:20.485000"
     },
     {
       "symbol": "CULL",
@@ -415,7 +438,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 6.96,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:14.461000"
+      "updated": "2026-05-01T01:57:19.008000"
     },
     {
       "symbol": "DAWN",
@@ -438,7 +461,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-24",
-      "updated": "2026-04-30T01:58:07.159000"
+      "updated": "2026-05-01T01:58:12.686000"
     },
     {
       "symbol": "DHIL",
@@ -461,7 +484,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-24",
-      "updated": "2026-04-30T01:58:04.573000"
+      "updated": "2026-05-01T01:58:09.960000"
     },
     {
       "symbol": "DMAA",
@@ -484,7 +507,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:30.815000"
+      "updated": "2026-05-01T01:58:35.295000"
     },
     {
       "symbol": "DTSQU",
@@ -506,8 +529,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:23.814000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:28.425000"
     },
     {
       "symbol": "EVY",
@@ -530,7 +553,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-19",
-      "updated": "2026-04-30T06:37:53.865000"
+      "updated": "2026-05-01T06:38:14.076000"
     },
     {
       "symbol": "EXAS",
@@ -553,7 +576,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-23",
-      "updated": "2026-04-30T01:58:05.181000"
+      "updated": "2026-05-01T01:58:10.768000"
     },
     {
       "symbol": "FMO",
@@ -575,8 +598,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:54.767000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:01.991000"
     },
     {
       "symbol": "FOLD",
@@ -599,7 +622,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-27",
-      "updated": "2026-04-30T01:57:55.548000"
+      "updated": "2026-05-01T01:58:00.602000"
     },
     {
       "symbol": "FONR",
@@ -622,7 +645,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 3.33,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:33.981000"
+      "updated": "2026-05-01T01:57:38.478000"
     },
     {
       "symbol": "FRGE",
@@ -645,7 +668,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-03",
-      "updated": "2026-04-30T05:03:56.293000"
+      "updated": "2026-05-01T05:04:11.681000"
     },
     {
       "symbol": "FSHP",
@@ -655,20 +678,20 @@
       "sma50": 10.91,
       "sma100": 10.85,
       "sma200": 10.72,
-      "change1M": 0.4,
-      "change6M": 3.0,
-      "change1Y": 6.0,
+      "change1M": 0.3,
+      "change6M": 3.4,
+      "change1Y": 5.9,
       "high52W": 10.97,
       "low52W": 10.36,
       "distFromHigh": 0.0,
-      "distFromLow": 5.9,
+      "distFromLow": 5.8,
       "longTerm": "bull_weak",
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.43,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:23.285000"
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:28.651000"
     },
     {
       "symbol": "FTGC",
@@ -691,7 +714,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.46,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:33.300000"
+      "updated": "2026-05-01T01:57:37.942000"
     },
     {
       "symbol": "FUSB",
@@ -714,15 +737,15 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.46,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:20.552000"
+      "updated": "2026-05-01T01:57:25.233000"
     },
     {
       "symbol": "GDST",
       "sector": "Financial Services",
       "price": 12.5,
       "sma20": 12.5,
-      "sma50": 12.06,
-      "sma100": 11.33,
+      "sma50": 12.08,
+      "sma100": 11.35,
       "sma200": 11.34,
       "change1M": 0.0,
       "change6M": 13.2,
@@ -736,20 +759,20 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:12.812000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:17.398000"
     },
     {
       "symbol": "GPATU",
       "sector": "Financial Services",
       "price": 10.87,
       "sma20": 10.87,
-      "sma50": 10.85,
+      "sma50": 10.86,
       "sma100": 10.79,
       "sma200": 10.74,
       "change1M": 0.0,
       "change6M": 1.4,
-      "change1Y": 4.6,
+      "change1Y": 3.8,
       "high52W": 10.87,
       "low52W": 0.0,
       "distFromHigh": 0.0,
@@ -759,8 +782,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:21.647000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:26.721000"
     },
     {
       "symbol": "HAL",
@@ -783,7 +806,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:12.392000"
+      "updated": "2026-05-01T05:03:28.024000"
     },
     {
       "symbol": "HGER",
@@ -806,7 +829,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:59.536000"
+      "updated": "2026-05-01T05:04:14.795000"
     },
     {
       "symbol": "HOLX",
@@ -829,7 +852,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-07",
-      "updated": "2026-04-30T01:58:04.844000"
+      "updated": "2026-05-01T01:58:09.932000"
     },
     {
       "symbol": "HSEB",
@@ -851,8 +874,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:54.674000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:02.646000"
     },
     {
       "symbol": "IGD",
@@ -875,7 +898,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:14.305000"
+      "updated": "2026-05-01T05:03:29.936000"
     },
     {
       "symbol": "INTEU",
@@ -898,7 +921,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:10.470000"
+      "updated": "2026-05-01T01:58:16.085000"
     },
     {
       "symbol": "INTW",
@@ -921,7 +944,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.28,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:30.156000"
+      "updated": "2026-05-01T01:58:35.023000"
     },
     {
       "symbol": "ISP",
@@ -943,8 +966,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:54.471000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:02.680000"
     },
     {
       "symbol": "IUS",
@@ -967,7 +990,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.18,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:40.794000"
+      "updated": "2026-05-01T01:57:46.438000"
     },
     {
       "symbol": "KRP",
@@ -990,7 +1013,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.35,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:18.616000"
+      "updated": "2026-05-01T05:03:34.163000"
     },
     {
       "symbol": "KVACU",
@@ -1012,8 +1035,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:17.224000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:22.076000"
     },
     {
       "symbol": "LPBB",
@@ -1036,7 +1059,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.24,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:27.706000"
+      "updated": "2026-05-01T01:58:32.847000"
     },
     {
       "symbol": "MAQCU",
@@ -1058,31 +1081,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:06.659000"
-    },
-    {
-      "symbol": "MCAG",
-      "sector": "Financial Services",
-      "price": 15.0,
-      "sma20": 12.47,
-      "sma50": 12.36,
-      "sma100": 12.31,
-      "sma200": 11.93,
-      "change1M": 22.1,
-      "change6M": 27.7,
-      "change1Y": 34.5,
-      "high52W": 15.0,
-      "low52W": 11.0,
-      "distFromHigh": 0.0,
-      "distFromLow": 36.4,
-      "longTerm": "strong_bull",
-      "midTerm": "strong_bull",
-      "shortTerm": "strong_bull",
-      "pattern": "Blue Sky Breakout",
-      "volumeRatio": 17.06,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:11.255000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:12.197000"
     },
     {
       "symbol": "MCAGU",
@@ -1104,8 +1104,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:11.052000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:16.501000"
     },
     {
       "symbol": "MCBK",
@@ -1128,7 +1128,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.13,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:14.648000"
+      "updated": "2026-05-01T01:57:19.159000"
     },
     {
       "symbol": "MMKT",
@@ -1151,7 +1151,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:04:03.589000"
+      "updated": "2026-05-01T05:04:18.776000"
     },
     {
       "symbol": "NBSTU",
@@ -1174,7 +1174,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:05.457000"
+      "updated": "2026-05-01T01:58:10.950000"
     },
     {
       "symbol": "NOEMU",
@@ -1197,7 +1197,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:27.472000"
+      "updated": "2026-05-01T01:58:32.219000"
     },
     {
       "symbol": "OAKUU",
@@ -1220,7 +1220,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:16.043000"
+      "updated": "2026-05-01T01:58:20.919000"
     },
     {
       "symbol": "OXLCP",
@@ -1243,7 +1243,30 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.14,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:55.352000"
+      "updated": "2026-05-01T01:58:05.182000"
+    },
+    {
+      "symbol": "PBNC",
+      "sector": "Financial Services",
+      "price": 75.0,
+      "sma20": 67.86,
+      "sma50": 65.18,
+      "sma100": 61.1,
+      "sma200": 56.4,
+      "change1M": 15.4,
+      "change6M": 43.6,
+      "change1Y": 62.7,
+      "high52W": 75.0,
+      "low52W": 45.93,
+      "distFromHigh": 0.0,
+      "distFromLow": 63.3,
+      "longTerm": "bull_weak",
+      "midTerm": "bull_weak",
+      "shortTerm": "bull_weak",
+      "pattern": "Blue Sky Breakout",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:57:30.932000"
     },
     {
       "symbol": "PGAC",
@@ -1266,7 +1289,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.01,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:30.555000"
+      "updated": "2026-05-01T01:58:34.334000"
     },
     {
       "symbol": "PKST",
@@ -1289,7 +1312,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 2.28,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:04:01.295000"
+      "updated": "2026-05-01T05:04:16.775000"
     },
     {
       "symbol": "PMVC",
@@ -1312,7 +1335,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-17",
-      "updated": "2026-04-30T05:03:55.968000"
+      "updated": "2026-05-01T05:04:11.562000"
     },
     {
       "symbol": "POLEU",
@@ -1335,7 +1358,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:24.714000"
+      "updated": "2026-05-01T01:58:29.336000"
     },
     {
       "symbol": "PPYA",
@@ -1357,8 +1380,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:12.690000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:17.732000"
     },
     {
       "symbol": "PPYAU",
@@ -1380,8 +1403,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:12.872000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:16.559000"
     },
     {
       "symbol": "PRIFPG",
@@ -1403,8 +1426,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:56.064000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:11.401000"
     },
     {
       "symbol": "PRIFpG",
@@ -1426,8 +1449,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:56.980000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:12.261000"
     },
     {
       "symbol": "QBUF",
@@ -1450,16 +1473,16 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.11,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:23.649000"
+      "updated": "2026-05-01T01:58:27.950000"
     },
     {
       "symbol": "QETAU",
       "sector": "Financial Services",
       "price": 12.0,
-      "sma20": 11.64,
-      "sma50": 11.39,
-      "sma100": 11.23,
-      "sma200": 11.06,
+      "sma20": 11.68,
+      "sma50": 11.41,
+      "sma100": 11.24,
+      "sma200": 11.07,
       "change1M": 6.4,
       "change6M": 10.7,
       "change1Y": 12.7,
@@ -1472,8 +1495,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:18.474000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:22.954000"
     },
     {
       "symbol": "QYLD",
@@ -1496,7 +1519,30 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.72,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:27.834000"
+      "updated": "2026-05-01T01:57:32.375000"
+    },
+    {
+      "symbol": "RAAQU",
+      "sector": "Financial Services",
+      "price": 12.5,
+      "sma20": 11.58,
+      "sma50": 11.38,
+      "sma100": 11.0,
+      "sma200": 10.73,
+      "change1M": 12.6,
+      "change6M": 17.3,
+      "change1Y": 0.0,
+      "high52W": 12.5,
+      "low52W": 0.0,
+      "distFromHigh": 0.0,
+      "distFromLow": 0.0,
+      "longTerm": "neutral",
+      "midTerm": "bull_weak",
+      "shortTerm": "bull_weak",
+      "pattern": "Blue Sky Breakout",
+      "volumeRatio": 0.02,
+      "dataEndDate": "2026-04-30",
+      "updated": "2026-05-01T01:58:38.824000"
     },
     {
       "symbol": "RAPT",
@@ -1519,7 +1565,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-06",
-      "updated": "2026-04-30T01:58:05.858000"
+      "updated": "2026-05-01T01:58:11.043000"
     },
     {
       "symbol": "RBIL",
@@ -1542,18 +1588,18 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:31.470000"
+      "updated": "2026-05-01T01:58:35.099000"
     },
     {
       "symbol": "RCB",
       "sector": "Other",
       "price": 25.34,
-      "sma20": 25.23,
-      "sma50": 24.96,
-      "sma100": 24.7,
-      "sma200": 24.3,
-      "change1M": 1.8,
-      "change6M": 5.2,
+      "sma20": 25.28,
+      "sma50": 24.99,
+      "sma100": 24.73,
+      "sma200": 24.32,
+      "change1M": 1.7,
+      "change6M": 5.0,
       "change1Y": 9.1,
       "high52W": 25.35,
       "low52W": 22.48,
@@ -1563,15 +1609,15 @@
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.2,
+      "volumeRatio": 0.25,
       "dataEndDate": "2026-04-21",
-      "updated": "2026-04-30T05:03:07.298000"
+      "updated": "2026-05-01T05:03:23.045000"
     },
     {
       "symbol": "RCP",
       "sector": "Other",
       "price": 23.92,
-      "sma20": 23.9,
+      "sma20": 23.91,
       "sma50": 23.88,
       "sma100": 23.9,
       "sma200": 23.85,
@@ -1587,8 +1633,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T05:03:54.863000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T05:04:02.399000"
     },
     {
       "symbol": "RIF",
@@ -1611,19 +1657,19 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-03-19",
-      "updated": "2026-04-30T06:37:54.087000"
+      "updated": "2026-05-01T06:38:14.244000"
     },
     {
       "symbol": "RILYK",
       "sector": "Other",
       "price": 25.23,
       "sma20": 25.22,
-      "sma50": 25.11,
-      "sma100": 24.73,
-      "sma200": 23.85,
+      "sma50": 25.12,
+      "sma100": 24.76,
+      "sma200": 23.9,
       "change1M": 0.2,
-      "change6M": 6.6,
-      "change1Y": 49.0,
+      "change6M": 6.5,
+      "change1Y": 63.6,
       "high52W": 25.23,
       "low52W": 12.36,
       "distFromHigh": 0.0,
@@ -1632,21 +1678,21 @@
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.96,
+      "volumeRatio": 0.99,
       "dataEndDate": "2026-03-27",
-      "updated": "2026-04-30T01:58:05.925000"
+      "updated": "2026-05-01T01:58:11.339000"
     },
     {
       "symbol": "SEMR",
       "sector": "Technology",
       "price": 12.0,
       "sma20": 11.97,
-      "sma50": 11.92,
+      "sma50": 11.93,
       "sma100": 11.9,
-      "sma200": 10.04,
-      "change1M": 0.5,
-      "change6M": 53.3,
-      "change1Y": 16.3,
+      "sma200": 10.07,
+      "change1M": 0.3,
+      "change6M": 68.3,
+      "change1Y": 15.6,
       "high52W": 12.01,
       "low52W": 6.56,
       "distFromHigh": 0.1,
@@ -1655,9 +1701,9 @@
       "midTerm": "strong_bull",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 2.0,
+      "volumeRatio": 1.75,
       "dataEndDate": "2026-04-27",
-      "updated": "2026-04-30T05:03:56.186000"
+      "updated": "2026-05-01T05:04:11.462000"
     },
     {
       "symbol": "SHV",
@@ -1680,7 +1726,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:03.367000"
+      "updated": "2026-05-01T01:58:07.833000"
     },
     {
       "symbol": "SLAB",
@@ -1703,7 +1749,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:02.682000"
+      "updated": "2026-05-01T01:58:05.165000"
     },
     {
       "symbol": "SUN",
@@ -1726,7 +1772,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.32,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T05:03:46.489000"
+      "updated": "2026-05-01T05:04:02.870000"
     },
     {
       "symbol": "SVA",
@@ -1749,7 +1795,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:57:56.853000"
+      "updated": "2026-05-01T01:58:02.150000"
     },
     {
       "symbol": "SWSS",
@@ -1771,31 +1817,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:09.446000"
-    },
-    {
-      "symbol": "TAPR",
-      "sector": "Other",
-      "price": 26.2,
-      "sma20": 26.04,
-      "sma50": 25.94,
-      "sma100": 25.93,
-      "sma200": 25.73,
-      "change1M": 2.4,
-      "change6M": 2.1,
-      "change1Y": 7.0,
-      "high52W": 26.23,
-      "low52W": 24.41,
-      "distFromHigh": 0.1,
-      "distFromLow": 7.3,
-      "longTerm": "bull_weak",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:32.091000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:14.975000"
     },
     {
       "symbol": "TAVIU",
@@ -1818,7 +1841,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:27.458000"
+      "updated": "2026-05-01T01:58:33.043000"
     },
     {
       "symbol": "VBIL",
@@ -1841,7 +1864,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:31.052000"
+      "updated": "2026-05-01T01:58:35.466000"
     },
     {
       "symbol": "VGUS",
@@ -1864,7 +1887,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:30.408000"
+      "updated": "2026-05-01T01:58:35.529000"
     },
     {
       "symbol": "WHFCL",
@@ -1887,7 +1910,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:17.769000"
+      "updated": "2026-05-01T01:58:22.131000"
     },
     {
       "symbol": "WINVU",
@@ -1909,8 +1932,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:09.227000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:14.934000"
     },
     {
       "symbol": "WLACU",
@@ -1933,7 +1956,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:26.843000"
+      "updated": "2026-05-01T01:58:32.298000"
     },
     {
       "symbol": "YHNAU",
@@ -1956,7 +1979,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 20.0,
       "dataEndDate": "2026-04-29",
-      "updated": "2026-04-30T01:58:25.275000"
+      "updated": "2026-05-01T01:58:29.880000"
     },
     {
       "symbol": "YOTAU",
@@ -1965,21 +1988,21 @@
       "sma20": 10.02,
       "sma50": 10.02,
       "sma100": 10.02,
-      "sma200": 8.89,
+      "sma200": 8.93,
       "change1M": 0.0,
       "change6M": 0.0,
-      "change1Y": -13.0,
+      "change1Y": 345.3,
       "high52W": 10.02,
       "low52W": 2.25,
       "distFromHigh": 0.0,
       "distFromLow": 345.3,
-      "longTerm": "bear",
+      "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-04-28",
-      "updated": "2026-04-30T01:58:13.106000"
+      "dataEndDate": "2026-04-29",
+      "updated": "2026-05-01T01:58:18.176000"
     }
   ]
 }
