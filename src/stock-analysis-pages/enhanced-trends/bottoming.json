@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T02:07:59.588965",
+  "generated": "2026-05-13T02:01:53.350678",
   "category": "bottoming",
   "count": 123,
   "stocks": [
@@ -24,7 +24,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.01,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.186000"
+      "updated": "2026-05-13T02:01:37.765000"
     },
     {
       "symbol": "AATC",
@@ -47,7 +47,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:35.458000"
+      "updated": "2026-05-13T02:00:06.636000"
     },
     {
       "symbol": "ACLO",
@@ -70,7 +70,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.07,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:19.157000"
+      "updated": "2026-05-13T06:29:38.042000"
     },
     {
       "symbol": "ACPPA",
@@ -93,7 +93,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.44,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:11.597000"
+      "updated": "2026-05-13T06:29:29.687000"
     },
     {
       "symbol": "ADXN",
@@ -116,7 +116,30 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.33,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:39.158000"
+      "updated": "2026-05-13T02:00:10.245000"
+    },
+    {
+      "symbol": "AFJKU",
+      "sector": "Financial Services",
+      "price": 54.82,
+      "sma20": 58.47,
+      "sma50": 43.46,
+      "sma100": 52.21,
+      "sma200": 32.57,
+      "change1M": 34.6,
+      "change6M": 321.0,
+      "change1Y": 387.3,
+      "high52W": 80.0,
+      "low52W": 0.0,
+      "distFromHigh": 31.5,
+      "distFromLow": 0.0,
+      "longTerm": "bull_weak",
+      "midTerm": "bull_weak",
+      "shortTerm": "bull_weak",
+      "pattern": "Mean Reversion Setup - Bottoming",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:21.941000"
     },
     {
       "symbol": "ALDF",
@@ -139,7 +162,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.34,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.937000"
+      "updated": "2026-05-13T02:01:32.272000"
     },
     {
       "symbol": "ALF",
@@ -162,7 +185,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.03,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.629000"
+      "updated": "2026-05-13T02:01:27.891000"
     },
     {
       "symbol": "ALFUU",
@@ -185,7 +208,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:59.143000"
+      "updated": "2026-05-13T02:01:25.726000"
     },
     {
       "symbol": "APPN",
@@ -208,16 +231,16 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.86,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:35.783000"
+      "updated": "2026-05-13T02:00:08.462000"
     },
     {
       "symbol": "ATIIU",
       "sector": "Financial Services",
       "price": 11.2,
-      "sma20": 11.28,
+      "sma20": 11.31,
       "sma50": 10.99,
-      "sma100": 10.86,
-      "sma200": 10.75,
+      "sma100": 10.87,
+      "sma200": 10.76,
       "change1M": 6.4,
       "change6M": 4.2,
       "change1Y": 10.3,
@@ -230,8 +253,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:09.721000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:35.603000"
     },
     {
       "symbol": "BHK",
@@ -254,7 +277,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.75,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:40.660000"
+      "updated": "2026-05-13T06:29:00.034000"
     },
     {
       "symbol": "BIPI",
@@ -277,30 +300,30 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.53,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:13.063000"
+      "updated": "2026-05-13T06:29:31.216000"
     },
     {
       "symbol": "BKHA",
       "sector": "Financial Services",
-      "price": 11.86,
-      "sma20": 11.76,
-      "sma50": 11.65,
-      "sma100": 11.55,
-      "sma200": 11.35,
-      "change1M": 2.1,
-      "change6M": 5.9,
-      "change1Y": 11.8,
+      "price": 11.71,
+      "sma20": 11.78,
+      "sma50": 11.67,
+      "sma100": 11.56,
+      "sma200": 11.36,
+      "change1M": 0.8,
+      "change6M": 4.6,
+      "change1Y": 10.6,
       "high52W": 11.98,
       "low52W": 0.0,
-      "distFromHigh": 1.0,
+      "distFromHigh": 2.3,
       "distFromLow": 0.0,
       "longTerm": "bull_weak",
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:05:59.334000"
+      "volumeRatio": 1.34,
+      "dataEndDate": "2026-05-12",
+      "updated": "2026-05-13T02:01:25.025000"
     },
     {
       "symbol": "BLKB",
@@ -323,7 +346,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:21.480000"
+      "updated": "2026-05-13T02:00:49.027000"
     },
     {
       "symbol": "BNJ",
@@ -346,7 +369,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.65,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:14.906000"
+      "updated": "2026-05-13T06:28:39.028000"
     },
     {
       "symbol": "BSCQ",
@@ -369,7 +392,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:15.874000"
+      "updated": "2026-05-13T02:00:43.180000"
     },
     {
       "symbol": "BSCR",
@@ -392,7 +415,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.836000"
+      "updated": "2026-05-13T02:00:43.180000"
     },
     {
       "symbol": "BSCS",
@@ -415,7 +438,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.87,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.456000"
+      "updated": "2026-05-13T02:00:43.120000"
     },
     {
       "symbol": "BSCT",
@@ -438,7 +461,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.858000"
+      "updated": "2026-05-13T02:00:42.865000"
     },
     {
       "symbol": "BSJQ",
@@ -461,7 +484,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.63,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.577000"
+      "updated": "2026-05-13T02:00:42.949000"
     },
     {
       "symbol": "BSJR",
@@ -484,7 +507,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.115000"
+      "updated": "2026-05-13T02:00:42.879000"
     },
     {
       "symbol": "BSMQ",
@@ -507,7 +530,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:14.456000"
+      "updated": "2026-05-13T02:00:42.832000"
     },
     {
       "symbol": "BSMR",
@@ -530,7 +553,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:13.995000"
+      "updated": "2026-05-13T02:00:42.761000"
     },
     {
       "symbol": "BSMT",
@@ -553,7 +576,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:15.362000"
+      "updated": "2026-05-13T02:00:42.715000"
     },
     {
       "symbol": "CALI",
@@ -576,7 +599,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:53.585000"
+      "updated": "2026-05-13T02:01:20.461000"
     },
     {
       "symbol": "CCIX",
@@ -599,7 +622,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.05,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:01.331000"
+      "updated": "2026-05-13T02:01:26.614000"
     },
     {
       "symbol": "CHAR",
@@ -622,7 +645,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:05.824000"
+      "updated": "2026-05-13T02:01:31.728000"
     },
     {
       "symbol": "CLOA",
@@ -645,7 +668,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 2.62,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:52.185000"
+      "updated": "2026-05-13T02:01:17.397000"
     },
     {
       "symbol": "COLA",
@@ -668,7 +691,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 18.3,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:09.929000"
+      "updated": "2026-05-13T02:01:36.320000"
     },
     {
       "symbol": "COLAU",
@@ -691,7 +714,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 17.21,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.377000"
+      "updated": "2026-05-13T02:01:33.961000"
     },
     {
       "symbol": "CPB",
@@ -714,7 +737,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.88,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:44.527000"
+      "updated": "2026-05-13T06:29:03.797000"
     },
     {
       "symbol": "CPRT",
@@ -737,7 +760,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:17.607000"
+      "updated": "2026-05-13T02:00:45.724000"
     },
     {
       "symbol": "CUB",
@@ -760,7 +783,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.28,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:19.175000"
+      "updated": "2026-05-13T06:29:38.031000"
     },
     {
       "symbol": "DBL",
@@ -783,7 +806,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.5,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:43.544000"
+      "updated": "2026-05-13T06:29:02.509000"
     },
     {
       "symbol": "DFGX",
@@ -806,7 +829,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.23,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:56.435000"
+      "updated": "2026-05-13T02:01:22.056000"
     },
     {
       "symbol": "DGICB",
@@ -829,7 +852,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.13,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:45.994000"
+      "updated": "2026-05-13T02:00:16.547000"
     },
     {
       "symbol": "DMAA",
@@ -852,7 +875,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:10.465000"
+      "updated": "2026-05-13T02:01:36.730000"
     },
     {
       "symbol": "DRDB",
@@ -875,7 +898,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.12,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:09.977000"
+      "updated": "2026-05-13T02:01:35.374000"
     },
     {
       "symbol": "EFR",
@@ -898,16 +921,16 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:52.762000"
+      "updated": "2026-05-13T06:29:10.970000"
     },
     {
       "symbol": "EGHAU",
       "sector": "Financial Services",
       "price": 11.0,
-      "sma20": 10.77,
-      "sma50": 10.61,
-      "sma100": 10.47,
-      "sma200": 10.39,
+      "sma20": 10.79,
+      "sma50": 10.62,
+      "sma100": 10.48,
+      "sma200": 10.4,
       "change1M": 5.0,
       "change6M": 4.3,
       "change1Y": 9.7,
@@ -920,8 +943,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:15.069000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:39.416000"
     },
     {
       "symbol": "EKG",
@@ -944,7 +967,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 2.11,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:46.998000"
+      "updated": "2026-05-13T02:01:14.548000"
     },
     {
       "symbol": "ENO",
@@ -967,7 +990,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.86,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:51.689000"
+      "updated": "2026-05-13T06:29:11.459000"
     },
     {
       "symbol": "ESPO",
@@ -990,7 +1013,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:23.031000"
+      "updated": "2026-05-13T02:00:52.646000"
     },
     {
       "symbol": "EURK",
@@ -1013,7 +1036,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 10.41,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.752000"
+      "updated": "2026-05-13T02:01:28.748000"
     },
     {
       "symbol": "EVF",
@@ -1059,19 +1082,19 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.86,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:08.610000"
+      "updated": "2026-05-13T02:01:33.399000"
     },
     {
       "symbol": "FACTU",
       "sector": "Financial Services",
       "price": 10.99,
-      "sma20": 10.98,
-      "sma50": 10.82,
+      "sma20": 10.99,
+      "sma50": 10.83,
       "sma100": 10.74,
       "sma200": 10.62,
       "change1M": 1.9,
       "change6M": 3.4,
-      "change1Y": 8.2,
+      "change1Y": 8.1,
       "high52W": 12.01,
       "low52W": 0.0,
       "distFromHigh": 8.5,
@@ -1081,8 +1104,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:07.205000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:31.851000"
     },
     {
       "symbol": "FCNCO",
@@ -1105,7 +1128,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:45.995000"
+      "updated": "2026-05-13T02:01:14.124000"
     },
     {
       "symbol": "FERA",
@@ -1128,7 +1151,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.514000"
+      "updated": "2026-05-13T02:01:38.371000"
     },
     {
       "symbol": "FLO",
@@ -1151,30 +1174,30 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:55.192000"
+      "updated": "2026-05-13T06:29:14.178000"
     },
     {
       "symbol": "FORTY",
       "sector": "Technology",
-      "price": 149.5,
-      "sma20": 137.19,
-      "sma50": 129.87,
-      "sma100": 141.44,
-      "sma200": 141.28,
-      "change1M": 25.4,
-      "change6M": 1.8,
-      "change1Y": 54.9,
+      "price": 147.4,
+      "sma20": 138.13,
+      "sma50": 130.47,
+      "sma100": 141.18,
+      "sma200": 141.39,
+      "change1M": 16.1,
+      "change6M": -0.1,
+      "change1Y": 54.4,
       "high52W": 189.99,
       "low52W": 0.0,
-      "distFromHigh": 21.3,
+      "distFromHigh": 22.4,
       "distFromLow": 0.0,
       "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.09,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:04:59.777000"
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:00:18.368000"
     },
     {
       "symbol": "FTHY",
@@ -1197,7 +1220,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:55.695000"
+      "updated": "2026-05-13T06:29:12.605000"
     },
     {
       "symbol": "FTSL",
@@ -1220,7 +1243,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.03,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:41.245000"
+      "updated": "2026-05-13T02:00:11.014000"
     },
     {
       "symbol": "GAINN",
@@ -1243,42 +1266,42 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-04",
-      "updated": "2026-05-12T02:05:39.565000"
+      "updated": "2026-05-13T02:01:05.573000"
     },
     {
       "symbol": "GBNY",
       "sector": "Financial Services",
-      "price": 14.82,
-      "sma20": 14.86,
-      "sma50": 14.86,
-      "sma100": 15.74,
-      "sma200": 16.43,
+      "price": 14.99,
+      "sma20": 14.85,
+      "sma50": 14.87,
+      "sma100": 15.68,
+      "sma200": 16.42,
       "change1M": 0.3,
-      "change6M": -12.2,
-      "change1Y": -9.0,
+      "change6M": -11.2,
+      "change1Y": -8.0,
       "high52W": 17.95,
       "low52W": 14.68,
-      "distFromHigh": 17.4,
-      "distFromLow": 1.0,
+      "distFromHigh": 16.5,
+      "distFromLow": 2.1,
       "longTerm": "bear",
       "midTerm": "strong_bear",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 5.35,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:04:35.119000"
+      "volumeRatio": 1.67,
+      "dataEndDate": "2026-05-12",
+      "updated": "2026-05-13T02:00:05.952000"
     },
     {
       "symbol": "GTENU",
       "sector": "Financial Services",
       "price": 10.47,
-      "sma20": 10.47,
+      "sma20": 10.48,
       "sma50": 10.41,
       "sma100": 10.45,
-      "sma200": 10.47,
-      "change1M": 1.2,
+      "sma200": 10.46,
+      "change1M": 1.3,
       "change6M": -0.7,
-      "change1Y": 3.5,
+      "change1Y": 3.4,
       "high52W": 11.32,
       "low52W": 0.0,
       "distFromHigh": 7.5,
@@ -1288,8 +1311,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:12.955000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:38.739000"
     },
     {
       "symbol": "HFBL",
@@ -1312,7 +1335,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.12,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:43.977000"
+      "updated": "2026-05-13T02:00:13.701000"
     },
     {
       "symbol": "HVII",
@@ -1335,7 +1358,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.15,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:08.791000"
+      "updated": "2026-05-13T02:01:34.967000"
     },
     {
       "symbol": "HVIIU",
@@ -1358,7 +1381,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:09.369000"
+      "updated": "2026-05-13T02:01:33.729000"
     },
     {
       "symbol": "HYLS",
@@ -1381,7 +1404,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:54.632000"
+      "updated": "2026-05-13T02:00:24.345000"
     },
     {
       "symbol": "IBAC",
@@ -1404,7 +1427,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 4.16,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:00.022000"
+      "updated": "2026-05-13T02:01:25.615000"
     },
     {
       "symbol": "IRTC",
@@ -1427,30 +1450,30 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:08.691000"
+      "updated": "2026-05-13T02:00:37.806000"
     },
     {
       "symbol": "KFII",
       "sector": "Financial Services",
       "price": 10.5,
       "sma20": 10.48,
-      "sma50": 10.44,
-      "sma100": 10.4,
+      "sma50": 10.45,
+      "sma100": 10.41,
       "sma200": 10.32,
-      "change1M": 0.6,
+      "change1M": 0.4,
       "change6M": 2.2,
       "change1Y": 4.1,
-      "high52W": 10.5,
+      "high52W": 10.51,
       "low52W": 0.0,
-      "distFromHigh": 0.0,
+      "distFromHigh": 0.1,
       "distFromLow": 0.0,
       "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:11.186000"
+      "volumeRatio": 1.08,
+      "dataEndDate": "2026-05-12",
+      "updated": "2026-05-13T02:01:36.082000"
     },
     {
       "symbol": "LDSF",
@@ -1473,7 +1496,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:26.273000"
+      "updated": "2026-05-13T02:00:53.682000"
     },
     {
       "symbol": "LPAA",
@@ -1496,7 +1519,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.03,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.374000"
+      "updated": "2026-05-13T02:01:28.197000"
     },
     {
       "symbol": "LPBB",
@@ -1519,7 +1542,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.325000"
+      "updated": "2026-05-13T02:01:32.683000"
     },
     {
       "symbol": "MACI",
@@ -1527,11 +1550,11 @@
       "price": 10.81,
       "sma20": 10.81,
       "sma50": 10.78,
-      "sma100": 10.72,
+      "sma100": 10.73,
       "sma200": 10.63,
       "change1M": 0.2,
-      "change6M": 2.4,
-      "change1Y": 4.7,
+      "change6M": 2.3,
+      "change1Y": 4.6,
       "high52W": 10.97,
       "low52W": 10.32,
       "distFromHigh": 1.5,
@@ -1541,8 +1564,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:00.466000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:27.274000"
     },
     {
       "symbol": "MACIU",
@@ -1564,8 +1587,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:01.204000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:26.818000"
     },
     {
       "symbol": "MCR",
@@ -1588,7 +1611,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.94,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:06.020000"
+      "updated": "2026-05-13T06:29:19.955000"
     },
     {
       "symbol": "MLAC",
@@ -1611,7 +1634,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.05,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:08.540000"
+      "updated": "2026-05-13T02:01:34.203000"
     },
     {
       "symbol": "MMKT",
@@ -1634,7 +1657,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.13,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:17.932000"
+      "updated": "2026-05-13T06:29:37.374000"
     },
     {
       "symbol": "NHIC",
@@ -1657,13 +1680,13 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.928000"
+      "updated": "2026-05-13T02:01:37.812000"
     },
     {
       "symbol": "NHICU",
       "sector": "Other",
       "price": 10.89,
-      "sma20": 10.74,
+      "sma20": 10.76,
       "sma50": 10.71,
       "sma100": 10.67,
       "sma200": 10.53,
@@ -1679,8 +1702,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:11.089000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:36.908000"
     },
     {
       "symbol": "NOEM",
@@ -1703,7 +1726,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.03,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.739000"
+      "updated": "2026-05-13T02:01:34.684000"
     },
     {
       "symbol": "NTWO",
@@ -1726,7 +1749,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:08.195000"
+      "updated": "2026-05-13T02:01:34.205000"
     },
     {
       "symbol": "OACC",
@@ -1749,7 +1772,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.258000"
+      "updated": "2026-05-13T02:01:33.350000"
     },
     {
       "symbol": "PCMM",
@@ -1772,7 +1795,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:06.626000"
+      "updated": "2026-05-13T02:01:32.166000"
     },
     {
       "symbol": "PGAC",
@@ -1795,7 +1818,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.739000"
+      "updated": "2026-05-13T02:01:35.029000"
     },
     {
       "symbol": "PGR",
@@ -1818,7 +1841,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:33.505000"
+      "updated": "2026-05-13T06:28:50.059000"
     },
     {
       "symbol": "PLMK",
@@ -1841,7 +1864,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.03,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:07.876000"
+      "updated": "2026-05-13T02:01:34.449000"
     },
     {
       "symbol": "POLE",
@@ -1864,16 +1887,16 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:05.105000"
+      "updated": "2026-05-13T02:01:31.030000"
     },
     {
       "symbol": "QETAU",
       "sector": "Financial Services",
       "price": 12.0,
-      "sma20": 11.93,
-      "sma50": 11.54,
-      "sma100": 11.3,
-      "sma200": 11.11,
+      "sma20": 11.96,
+      "sma50": 11.55,
+      "sma100": 11.31,
+      "sma200": 11.12,
       "change1M": 6.4,
       "change6M": 8.2,
       "change1Y": 12.7,
@@ -1886,8 +1909,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:05:55.048000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:21.191000"
     },
     {
       "symbol": "QSEA",
@@ -1910,7 +1933,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.203000"
+      "updated": "2026-05-13T02:01:40.525000"
     },
     {
       "symbol": "RAAQU",
@@ -1933,7 +1956,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 3.67,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.396000"
+      "updated": "2026-05-13T02:01:40.091000"
     },
     {
       "symbol": "RAC",
@@ -1956,30 +1979,30 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:21.335000"
+      "updated": "2026-05-13T06:29:38.493000"
     },
     {
       "symbol": "RANG",
       "sector": "Financial Services",
-      "price": 10.58,
+      "price": 10.61,
       "sma20": 10.58,
       "sma50": 10.54,
       "sma100": 10.5,
-      "sma200": 10.44,
-      "change1M": 0.4,
-      "change6M": 0.5,
-      "change1Y": 4.2,
+      "sma200": 10.45,
+      "change1M": 0.5,
+      "change6M": 0.8,
+      "change1Y": 4.7,
       "high52W": 11.63,
       "low52W": 10.12,
-      "distFromHigh": 9.0,
-      "distFromLow": 4.5,
-      "longTerm": "bull_weak",
+      "distFromHigh": 8.8,
+      "distFromLow": 4.8,
+      "longTerm": "bull",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:08.332000"
+      "volumeRatio": 8.31,
+      "dataEndDate": "2026-05-12",
+      "updated": "2026-05-13T02:01:33.462000"
     },
     {
       "symbol": "RBIL",
@@ -2002,7 +2025,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:10.852000"
+      "updated": "2026-05-13T02:01:35.373000"
     },
     {
       "symbol": "RDACU",
@@ -2025,13 +2048,13 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.42,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:03.974000"
+      "updated": "2026-05-13T02:01:30.475000"
     },
     {
       "symbol": "RIBB",
       "sector": "Financial Services",
       "price": 10.63,
-      "sma20": 10.59,
+      "sma20": 10.6,
       "sma50": 10.54,
       "sma100": 10.51,
       "sma200": 10.39,
@@ -2047,8 +2070,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:10.342000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:36.486000"
     },
     {
       "symbol": "SAMG",
@@ -2071,7 +2094,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.44,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:46.664000"
+      "updated": "2026-05-13T02:00:16.638000"
     },
     {
       "symbol": "SBXD",
@@ -2094,19 +2117,19 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:18.186000"
+      "updated": "2026-05-13T06:29:37.625000"
     },
     {
       "symbol": "SDHIU",
       "sector": "Financial Services",
       "price": 10.64,
-      "sma20": 10.55,
+      "sma20": 10.56,
       "sma50": 10.5,
       "sma100": 10.48,
       "sma200": 10.47,
       "change1M": 1.3,
-      "change6M": 0.4,
-      "change1Y": 5.5,
+      "change6M": 1.3,
+      "change1Y": 5.4,
       "high52W": 11.35,
       "low52W": 0.0,
       "distFromHigh": 6.3,
@@ -2116,8 +2139,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:12.480000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:36.880000"
     },
     {
       "symbol": "SDSI",
@@ -2140,7 +2163,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.47,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:49.365000"
+      "updated": "2026-05-13T02:01:17.286000"
     },
     {
       "symbol": "SIMA",
@@ -2163,13 +2186,13 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.06,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.183000"
+      "updated": "2026-05-13T02:01:29.160000"
     },
     {
       "symbol": "SIMAU",
       "sector": "Financial Services",
       "price": 10.89,
-      "sma20": 10.83,
+      "sma20": 10.84,
       "sma50": 10.81,
       "sma100": 10.79,
       "sma200": 10.72,
@@ -2185,8 +2208,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:00.101000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:27.467000"
     },
     {
       "symbol": "SJCP",
@@ -2209,7 +2232,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.596000"
+      "updated": "2026-05-13T02:01:28.967000"
     },
     {
       "symbol": "SJLD",
@@ -2232,7 +2255,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.01,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:14.389000"
+      "updated": "2026-05-13T02:01:38.722000"
     },
     {
       "symbol": "SLNHP",
@@ -2255,7 +2278,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.63,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:42.671000"
+      "updated": "2026-05-13T02:01:10.370000"
     },
     {
       "symbol": "SLNZ",
@@ -2278,7 +2301,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.22,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:19.829000"
+      "updated": "2026-05-13T06:29:37.558000"
     },
     {
       "symbol": "SOHOO",
@@ -2301,7 +2324,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.19,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:34.883000"
+      "updated": "2026-05-13T02:01:02.464000"
     },
     {
       "symbol": "SPKL",
@@ -2324,7 +2347,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.46,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:56.570000"
+      "updated": "2026-05-13T02:01:21.703000"
     },
     {
       "symbol": "SPSC",
@@ -2347,7 +2370,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.16,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:33.232000"
+      "updated": "2026-05-13T02:00:59.701000"
     },
     {
       "symbol": "STIP",
@@ -2370,7 +2393,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:09.799000"
+      "updated": "2026-05-13T06:29:28.521000"
     },
     {
       "symbol": "STIp",
@@ -2393,7 +2416,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:35:09.280000"
+      "updated": "2026-05-13T06:29:27.171000"
     },
     {
       "symbol": "SVCC",
@@ -2402,7 +2425,7 @@
       "sma20": 10.48,
       "sma50": 10.46,
       "sma100": 10.43,
-      "sma200": 10.37,
+      "sma200": 10.38,
       "change1M": 0.3,
       "change6M": 1.6,
       "change1Y": 4.0,
@@ -2415,31 +2438,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:10.168000"
-    },
-    {
-      "symbol": "SZZLU",
-      "sector": "Financial Services",
-      "price": 10.46,
-      "sma20": 10.48,
-      "sma50": 10.5,
-      "sma100": 10.43,
-      "sma200": 10.35,
-      "change1M": 0.8,
-      "change6M": 1.4,
-      "change1Y": 4.4,
-      "high52W": 12.38,
-      "low52W": 0.0,
-      "distFromHigh": 15.5,
-      "distFromLow": 0.0,
-      "longTerm": "bull_weak",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:11.250000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:36.672000"
     },
     {
       "symbol": "TACHU",
@@ -2451,7 +2451,7 @@
       "sma200": 10.39,
       "change1M": 0.4,
       "change6M": -2.3,
-      "change1Y": 4.3,
+      "change1Y": 4.5,
       "high52W": 11.0,
       "low52W": 0.0,
       "distFromHigh": 5.0,
@@ -2461,8 +2461,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:12.480000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:38.140000"
     },
     {
       "symbol": "TACOU",
@@ -2485,7 +2485,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.47,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:13.749000"
+      "updated": "2026-05-13T02:01:38.607000"
     },
     {
       "symbol": "TAVI",
@@ -2494,21 +2494,21 @@
       "sma20": 10.59,
       "sma50": 10.56,
       "sma100": 10.51,
-      "sma200": 10.43,
+      "sma200": 10.44,
       "change1M": 0.3,
       "change6M": 1.7,
-      "change1Y": 4.7,
+      "change1Y": 4.5,
       "high52W": 10.72,
-      "low52W": 10.13,
+      "low52W": 10.14,
       "distFromHigh": 1.1,
-      "distFromLow": 4.6,
+      "distFromLow": 4.5,
       "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:07.917000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:33.270000"
     },
     {
       "symbol": "TBB",
@@ -2531,7 +2531,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.23,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:58.334000"
+      "updated": "2026-05-13T06:29:15.679000"
     },
     {
       "symbol": "TDAC",
@@ -2545,16 +2545,16 @@
       "change6M": 1.9,
       "change1Y": 4.5,
       "high52W": 10.69,
-      "low52W": 10.15,
+      "low52W": 10.19,
       "distFromHigh": 0.6,
-      "distFromLow": 4.7,
+      "distFromLow": 4.3,
       "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:10.233000"
+      "volumeRatio": 0.87,
+      "dataEndDate": "2026-05-12",
+      "updated": "2026-05-13T02:01:34.684000"
     },
     {
       "symbol": "USTB",
@@ -2577,7 +2577,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.65,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:04:44.667000"
+      "updated": "2026-05-13T02:00:15.521000"
     },
     {
       "symbol": "UYLD",
@@ -2600,16 +2600,16 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:50.905000"
+      "updated": "2026-05-13T02:01:17.288000"
     },
     {
       "symbol": "VACHU",
       "sector": "Financial Services",
       "price": 12.8,
-      "sma20": 12.66,
-      "sma50": 11.61,
-      "sma100": 11.23,
-      "sma200": 11.14,
+      "sma20": 12.78,
+      "sma50": 11.65,
+      "sma100": 11.25,
+      "sma200": 11.15,
       "change1M": 23.1,
       "change6M": 20.8,
       "change1Y": 23.9,
@@ -2622,8 +2622,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:01.205000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:28.689000"
     },
     {
       "symbol": "VRIG",
@@ -2646,7 +2646,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:21.598000"
+      "updated": "2026-05-13T02:00:48.452000"
     },
     {
       "symbol": "VRSK",
@@ -2669,7 +2669,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.72,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:22.918000"
+      "updated": "2026-05-13T02:00:49.952000"
     },
     {
       "symbol": "WLACU",
@@ -2692,7 +2692,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:04.898000"
+      "updated": "2026-05-13T02:01:31.548000"
     },
     {
       "symbol": "WRB",
@@ -2715,7 +2715,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T06:34:29.913000"
+      "updated": "2026-05-13T06:28:46.473000"
     },
     {
       "symbol": "YHNA",
@@ -2724,10 +2724,10 @@
       "sma20": 10.79,
       "sma50": 10.76,
       "sma100": 10.71,
-      "sma200": 10.59,
+      "sma200": 10.6,
       "change1M": 0.1,
       "change6M": 2.8,
-      "change1Y": 5.0,
+      "change1Y": 5.1,
       "high52W": 11.4,
       "low52W": 0.0,
       "distFromHigh": 5.3,
@@ -2737,8 +2737,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-05-08",
-      "updated": "2026-05-12T02:06:06.835000"
+      "dataEndDate": "2026-05-11",
+      "updated": "2026-05-13T02:01:31.133000"
     },
     {
       "symbol": "YHNAU",
@@ -2761,7 +2761,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:06:02.631000"
+      "updated": "2026-05-13T02:01:29.864000"
     },
     {
       "symbol": "Z",
@@ -2784,7 +2784,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.94,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:18.570000"
+      "updated": "2026-05-13T02:00:46.638000"
     },
     {
       "symbol": "ZG",
@@ -2807,7 +2807,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.19,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:18.929000"
+      "updated": "2026-05-13T02:00:46.981000"
     },
     {
       "symbol": "ZIONP",
@@ -2830,7 +2830,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 2.41,
       "dataEndDate": "2026-05-11",
-      "updated": "2026-05-12T02:05:18.671000"
+      "updated": "2026-05-13T02:00:47.205000"
     }
   ]
 }
