@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22 01:29 UTC",
+  "generated_at": "2026-05-22 06:03 UTC",
   "run_ids": [
     "sp500_v3"
   ],
-  "note": "Full S&P 500 run (527 tickers) with fixed MA debt filter. 142 passed fundamental gate.",
+  "note": "Full SP500 run with fixed MA debt + ETSY FCF filter. Technical entry overlay applied: stocks near 52w high (>90%) downgraded to WATCH_ENTRY.",
   "results": [
     {
       "run_id": "sp500_v3",
@@ -29,59 +29,10 @@
         "peg": 1.33
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7bd"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "GOOG",
-      "verdict": "BUY",
-      "total": 55,
-      "scores": {
-        "ladder_growth": 9,
-        "moat_quality": 10,
-        "management": 9,
-        "earnings_quality": 9,
-        "defensive": 10,
-        "aggressive": 8
-      },
-      "buy_thesis": "Alphabet demonstrates consistent revenue growth, improving net income, and healthy FCF generation with minimal debt. Strong R&D investment supports long-term innovation.\n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nLadder Growth: 9/10 \u2014 Consistent annual revenue increases over five years.\n\nMoat Quality: 10/10 \u2014 Near-monopoly pricing power with strong network effects.\n\nManagement / Capital Allocation: 9/10 \u2014 Consistent execution with high ROE and significant R&D investment.\n\nEarnings Quality: 9/10 \u2014 FCF consistently grows with net income.\n\nDefensive Strength: 10/10 \u2014 Low debt and strong cash flow cover interest comfortably.\n\nAggressive Growth: 8/10 \u2014 Strong growth track record supporting future expansion.\n\nTOTAL: 55/60\n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "risk_flags": "None material.\n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "valuation": {
-        "price": 383.47,
-        "pe_fwd": 26.5,
-        "pe_trail": 29.3,
-        "p_fcf": 26.6,
-        "ev_ebitda": 28.6,
-        "peg": 1.52
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7be"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "FTNT",
-      "verdict": "BUY",
-      "total": 53,
-      "scores": {
-        "ladder_growth": 9,
-        "moat_quality": 9,
-        "management": 9,
-        "earnings_quality": 9,
-        "defensive": 8,
-        "aggressive": 7
-      },
-      "buy_thesis": "Despite a slight dip in net income growth, Fortinet's consistent revenue and FCF growth suggest sustainable performance. The company's high R&D investment indicates strategic efforts for future innovation, supporting long-term growth potential.\n\n**Step 3: Score each dimension**\n\n- **Ladder Growth**: 9/10 \u2014 Consistent growth with minor fluctuations.\n- **Moat Quality**: 9/10 \u2014 Strong cybersecurity market position and switching costs.\n- **Management/Capital Allocation**: 9/10 \u2014 Exceptional execution without acquisitions, reliable FCF reinvestment.\n- **Earnings Quality**: 9/10 \u2014 FCF consistently exceeds net income with minimal accruals.\n- **Defensive Strength**: 8/10 \u2014 Strong FCF coverage of interest, potential for reduced revenue operation.\n- **Aggressive Growth**: 7/10 \u2014 Growth trajectory supports doubling revenue in five years.\n\n**Step 4: Final verdict**\n\nTOTAL SCORE: 53/60",
-      "risk_flags": "Possible inconsistency in net income growth from year four to five, reliance on R&D investments without clear returns, and unknown debt levels despite strong FCF.\n\n**Step 2: State the bull case**",
-      "valuation": {
-        "price": 129.46,
-        "pe_fwd": 37.8,
-        "pe_trail": 50.6,
-        "p_fcf": 33.8,
-        "ev_ebitda": 39.0,
-        "peg": 2.88
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7bf"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -20.1,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -107,59 +58,10 @@
         "peg": 0.87
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c0"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "TJX",
-      "verdict": "BUY",
-      "total": 50,
-      "scores": {
-        "ladder_growth": 9,
-        "moat_quality": 8,
-        "management": 7,
-        "earnings_quality": 8,
-        "defensive": 9,
-        "aggressive": 8
-      },
-      "buy_thesis": "TJX demonstrates consistent organic growth with strong margins and efficient capital allocation, despite concerns about R&D investment and minor FCF fluctuations.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \nLadder Growth: 9/10 \u2014 Consistent revenue and net income growth with minor, explainable dips.  \nMoat Quality: 8/10 \u2014 Strong brand loyalty and switching costs support margins.  \nManagement / Capital Allocation: 7/10 \u2014 Efficient FCF reinvestment but lacks R&D investment clarity.  \nEarnings Quality: 8/10 \u2014 High FCF conversion with minimal accruals, solid growth trends.  \nDefensive Strength: 9/10 \u2014 Low debt and strong margins enhance resilience against revenue downturns.  \nAggressive Growth: 8/10 \u2014 Potential to double revenue in five years through market expansion efforts.  \n\nTOTAL: 50/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "risk_flags": "FCF dipped in 2022 despite revenue growth; R&D spending is zero, risking innovation stagnation.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "valuation": {
-        "price": 157.46,
-        "pe_fwd": 27.6,
-        "pe_trail": 30.9,
-        "p_fcf": 22.9,
-        "ev_ebitda": 20.9,
-        "peg": 3.51
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c1"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "NVDA",
-      "verdict": "BUY",
-      "total": 49,
-      "scores": {
-        "ladder_growth": 9,
-        "moat_quality": 8,
-        "management": 7,
-        "earnings_quality": 8,
-        "defensive": 9,
-        "aggressive": 8
-      },
-      "buy_thesis": "NVIDIA demonstrates strong organic growth through product innovation, evidenced by consistent revenue and FCF trends without acquisitions. The company's strategic focus on AI and data centers supports future expansion.\n\nLadder Growth: 9/10 \u2014 Consistent FCF and NI growth with minor dips explained by external factors.\nMoat Quality: 8/10 \u2014 Strong differentiation in GPUs and AI technology, leading to high margins.\nManagement / Capital Allocation: 7/10 \u2014 Consistent execution with efficient capital allocation.\nEarnings Quality: 8/10 \u2014 FCF consistently exceeds NI with minimal accruals.\nDefensive Strength: 9/10 \u2014 Low debt and strong cash flow coverage.\nAggressive Growth: 8/10 \u2014 Potential for revenue doubling in five years due to market expansion.\n\nTOTAL: 49/60",
-      "risk_flags": "None material.",
-      "valuation": {
-        "price": 219.51,
-        "pe_fwd": 18.8,
-        "pe_trail": 34.2,
-        "p_fcf": 51.8,
-        "ev_ebitda": 40.4,
-        "peg": 0.71
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c2"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -23.5,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -185,59 +87,10 @@
         "peg": 1.82
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c3"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "ROST",
-      "verdict": "BUY",
-      "total": 47,
-      "scores": {
-        "ladder_growth": 8,
-        "moat_quality": 9,
-        "management": 8,
-        "earnings_quality": 7,
-        "defensive": 9,
-        "aggressive": 6
-      },
-      "buy_thesis": "Despite the dip in net income and FCF in 2021, strong ROE of 37% and consistent revenue growth suggest these were temporary issues. The low D/E ratio further supports a BUY thesis.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \nLadder Growth: 8/10 \u2014 Consistent growth with minor dips explained by capex or tax events.  \nMoat Quality: 9/10 \u2014 Strong brand and switching costs evident in margins.  \nManagement / Capital Allocation: 8/10 \u2014 Consistent execution with low D/E ratio.  \nEarnings Quality: 7/10 \u2014 Moderate FCF conversion but overall positive trend.  \nDefensive Strength: 9/10 \u2014 Low debt and solid FCF coverage.  \nAggressive Growth: 6/10 \u2014 Steady growth suggesting potential for expansion.  \n\nTOTAL: 47/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "risk_flags": "Net income dropped from $1.72B to $1.51B in 2021, and FCF decreased by 12% in the same year despite revenue growth.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "valuation": {
-        "price": 217.19,
-        "pe_fwd": 26.5,
-        "pe_trail": 32.9,
-        "p_fcf": 23.2,
-        "ev_ebitda": 22.0,
-        "peg": 3.16
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c4"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "ABNB",
-      "verdict": "BUY",
-      "total": 45,
-      "scores": {
-        "ladder_growth": 9,
-        "moat_quality": 8,
-        "management": 7,
-        "earnings_quality": 6,
-        "defensive": 7,
-        "aggressive": 8
-      },
-      "buy_thesis": "Despite a dip in net income after 2021, consistent revenue and FCF growth suggest underlying strength. The company's strong ROE of 40% indicates efficient equity use, supporting the idea that profitability will recover.\n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nLadder Growth: 9/10 \u2014 Consistent revenue and FCF growth without major hiccups.\nMoat Quality: 8/10 \u2014 Benefits from network effects and brand loyalty as a leading online platform.\nManagement / Capital Allocation: 7/10 \u2014 Steady revenue and FCF growth indicate competent stewardship.\nEarnings Quality: 6/10 \u2014 Net income dip after peak raises questions, despite solid FCF.\nDefensive Strength: 7/10 \u2014 Low debt level suggests financial stability.\nAggressive Growth: 8/10 \u2014 Revenue trajectory supports potential doubling in five years.\n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "risk_flags": "Net income peaked in 2021 and declined in subsequent years despite revenue growth; FCF grew steadily but net income consistency is concerning.\n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "valuation": {
-        "price": 134.25,
-        "pe_fwd": 22.2,
-        "pe_trail": 33.5,
-        "p_fcf": 17.5,
-        "ev_ebitda": 26.8,
-        "peg": 1.21
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c5"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -17.4,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -263,33 +116,10 @@
         "peg": 1.55
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c6"
-    },
-    {
-      "run_id": "sp500_v3",
-      "ticker": "GOOGL",
-      "verdict": "BUY",
-      "total": 43,
-      "scores": {
-        "ladder_growth": 10,
-        "moat_quality": 9,
-        "management": 9,
-        "earnings_quality": 9,
-        "defensive": 8,
-        "aggressive": 7
-      },
-      "buy_thesis": "Alphabet demonstrates consistent revenue and net income growth, supported by strong FCF generation. The company's high R&D investment (15% of revenue) and low debt (D/E 0.12) suggest a focus on innovation with a solid financial foundation.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \n\nLadder Growth: 10/10 \u2014 Consistent FCF and NI growth over five years, no outlier years.  \nMoat Quality: 9/10 \u2014 Strong network effects and brand loyalty in core businesses like Google Search and YouTube.  \nManagement / Capital Allocation: 9/10 \u2014 Exceptional allocators with proven strategy, consistently high ROE (30% avg).  \nEarnings Quality: 9/10 \u2014 FCF exceeds net income consistently, minimal accruals.  \nDefensive Strength: 8/10 \u2014 Low debt, strong cash position, but not a net cash hoarder.  \nAggressive Growth: 7/10 \u2014 Realistic path to revenue growth driven by AI and cloud expansion.  \n\nTOTAL: 43/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "risk_flags": "None material.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-      "valuation": {
-        "price": 387.66,
-        "pe_fwd": 26.8,
-        "pe_trail": 29.7,
-        "p_fcf": 26.9,
-        "ev_ebitda": 28.9,
-        "peg": 1.53
-      },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c7"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -17.6,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -315,7 +145,10 @@
         "peg": 3.14
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c8"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -12.6,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -341,7 +174,10 @@
         "peg": 3.55
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7c9"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -28.2,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -367,7 +203,10 @@
         "peg": 2.57
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7ca"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -31.6,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -393,7 +232,213 @@
         "peg": 1.64
       },
       "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7cb"
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_pct_from_high": -29.5,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "GOOG",
+      "verdict": "BUY",
+      "total": 55,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 10,
+        "management": 9,
+        "earnings_quality": 9,
+        "defensive": 10,
+        "aggressive": 8
+      },
+      "buy_thesis": "Alphabet demonstrates consistent revenue growth, improving net income, and healthy FCF generation with minimal debt. Strong R&D investment supports long-term innovation.\n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nLadder Growth: 9/10 \u2014 Consistent annual revenue increases over five years.\n\nMoat Quality: 10/10 \u2014 Near-monopoly pricing power with strong network effects.\n\nManagement / Capital Allocation: 9/10 \u2014 Consistent execution with high ROE and significant R&D investment.\n\nEarnings Quality: 9/10 \u2014 FCF consistently grows with net income.\n\nDefensive Strength: 10/10 \u2014 Low debt and strong cash flow cover interest comfortably.\n\nAggressive Growth: 8/10 \u2014 Strong growth track record supporting future expansion.\n\nTOTAL: 55/60\n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "risk_flags": "None material.\n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "valuation": {
+        "price": 383.47,
+        "pe_fwd": 26.5,
+        "pe_trail": 29.3,
+        "p_fcf": 26.6,
+        "ev_ebitda": 28.6,
+        "peg": 1.52
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -5.2% vs 52w high $404.47",
+      "tech_pct_from_high": -5.2,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "FTNT",
+      "verdict": "BUY",
+      "total": 53,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 9,
+        "management": 9,
+        "earnings_quality": 9,
+        "defensive": 8,
+        "aggressive": 7
+      },
+      "buy_thesis": "Despite a slight dip in net income growth, Fortinet's consistent revenue and FCF growth suggest sustainable performance. The company's high R&D investment indicates strategic efforts for future innovation, supporting long-term growth potential.\n\n**Step 3: Score each dimension**\n\n- **Ladder Growth**: 9/10 \u2014 Consistent growth with minor fluctuations.\n- **Moat Quality**: 9/10 \u2014 Strong cybersecurity market position and switching costs.\n- **Management/Capital Allocation**: 9/10 \u2014 Exceptional execution without acquisitions, reliable FCF reinvestment.\n- **Earnings Quality**: 9/10 \u2014 FCF consistently exceeds net income with minimal accruals.\n- **Defensive Strength**: 8/10 \u2014 Strong FCF coverage of interest, potential for reduced revenue operation.\n- **Aggressive Growth**: 7/10 \u2014 Growth trajectory supports doubling revenue in five years.\n\n**Step 4: Final verdict**\n\nTOTAL SCORE: 53/60",
+      "risk_flags": "Possible inconsistency in net income growth from year four to five, reliance on R&D investments without clear returns, and unknown debt levels despite strong FCF.\n\n**Step 2: State the bull case**",
+      "valuation": {
+        "price": 129.46,
+        "pe_fwd": 37.8,
+        "pe_trail": 50.6,
+        "p_fcf": 33.8,
+        "ev_ebitda": 39.0,
+        "peg": 2.88
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -0.7% vs 52w high $130.36",
+      "tech_pct_from_high": -0.7,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "TJX",
+      "verdict": "BUY",
+      "total": 50,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 8,
+        "management": 7,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 8
+      },
+      "buy_thesis": "TJX demonstrates consistent organic growth with strong margins and efficient capital allocation, despite concerns about R&D investment and minor FCF fluctuations.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \nLadder Growth: 9/10 \u2014 Consistent revenue and net income growth with minor, explainable dips.  \nMoat Quality: 8/10 \u2014 Strong brand loyalty and switching costs support margins.  \nManagement / Capital Allocation: 7/10 \u2014 Efficient FCF reinvestment but lacks R&D investment clarity.  \nEarnings Quality: 8/10 \u2014 High FCF conversion with minimal accruals, solid growth trends.  \nDefensive Strength: 9/10 \u2014 Low debt and strong margins enhance resilience against revenue downturns.  \nAggressive Growth: 8/10 \u2014 Potential to double revenue in five years through market expansion efforts.  \n\nTOTAL: 50/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "risk_flags": "FCF dipped in 2022 despite revenue growth; R&D spending is zero, risking innovation stagnation.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "valuation": {
+        "price": 157.46,
+        "pe_fwd": 27.6,
+        "pe_trail": 30.9,
+        "p_fcf": 22.9,
+        "ev_ebitda": 20.9,
+        "peg": 3.51
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -4.7% vs 52w high $165.28",
+      "tech_pct_from_high": -4.7,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "NVDA",
+      "verdict": "BUY",
+      "total": 49,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 8,
+        "management": 7,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 8
+      },
+      "buy_thesis": "NVIDIA demonstrates strong organic growth through product innovation, evidenced by consistent revenue and FCF trends without acquisitions. The company's strategic focus on AI and data centers supports future expansion.\n\nLadder Growth: 9/10 \u2014 Consistent FCF and NI growth with minor dips explained by external factors.\nMoat Quality: 8/10 \u2014 Strong differentiation in GPUs and AI technology, leading to high margins.\nManagement / Capital Allocation: 7/10 \u2014 Consistent execution with efficient capital allocation.\nEarnings Quality: 8/10 \u2014 FCF consistently exceeds NI with minimal accruals.\nDefensive Strength: 9/10 \u2014 Low debt and strong cash flow coverage.\nAggressive Growth: 8/10 \u2014 Potential for revenue doubling in five years due to market expansion.\n\nTOTAL: 49/60",
+      "risk_flags": "None material.",
+      "valuation": {
+        "price": 219.51,
+        "pe_fwd": 18.8,
+        "pe_trail": 34.2,
+        "p_fcf": 51.8,
+        "ev_ebitda": 40.4,
+        "peg": 0.71
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -7.2% vs 52w high $236.54",
+      "tech_pct_from_high": -7.2,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "ROST",
+      "verdict": "BUY",
+      "total": 47,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 9,
+        "management": 8,
+        "earnings_quality": 7,
+        "defensive": 9,
+        "aggressive": 6
+      },
+      "buy_thesis": "Despite the dip in net income and FCF in 2021, strong ROE of 37% and consistent revenue growth suggest these were temporary issues. The low D/E ratio further supports a BUY thesis.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \nLadder Growth: 8/10 \u2014 Consistent growth with minor dips explained by capex or tax events.  \nMoat Quality: 9/10 \u2014 Strong brand and switching costs evident in margins.  \nManagement / Capital Allocation: 8/10 \u2014 Consistent execution with low D/E ratio.  \nEarnings Quality: 7/10 \u2014 Moderate FCF conversion but overall positive trend.  \nDefensive Strength: 9/10 \u2014 Low debt and solid FCF coverage.  \nAggressive Growth: 6/10 \u2014 Steady growth suggesting potential for expansion.  \n\nTOTAL: 47/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "risk_flags": "Net income dropped from $1.72B to $1.51B in 2021, and FCF decreased by 12% in the same year despite revenue growth.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "valuation": {
+        "price": 217.19,
+        "pe_fwd": 26.5,
+        "pe_trail": 32.9,
+        "p_fcf": 23.2,
+        "ev_ebitda": 22.0,
+        "peg": 3.16
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -6.0% vs 52w high $231.16",
+      "tech_pct_from_high": -6.0,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "ABNB",
+      "verdict": "BUY",
+      "total": 45,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 8,
+        "management": 7,
+        "earnings_quality": 6,
+        "defensive": 7,
+        "aggressive": 8
+      },
+      "buy_thesis": "Despite a dip in net income after 2021, consistent revenue and FCF growth suggest underlying strength. The company's strong ROE of 40% indicates efficient equity use, supporting the idea that profitability will recover.\n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nLadder Growth: 9/10 \u2014 Consistent revenue and FCF growth without major hiccups.\nMoat Quality: 8/10 \u2014 Benefits from network effects and brand loyalty as a leading online platform.\nManagement / Capital Allocation: 7/10 \u2014 Steady revenue and FCF growth indicate competent stewardship.\nEarnings Quality: 6/10 \u2014 Net income dip after peak raises questions, despite solid FCF.\nDefensive Strength: 7/10 \u2014 Low debt level suggests financial stability.\nAggressive Growth: 8/10 \u2014 Revenue trajectory supports potential doubling in five years.\n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "risk_flags": "Net income peaked in 2021 and declined in subsequent years despite revenue growth; FCF grew steadily but net income consistency is concerning.\n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "valuation": {
+        "price": 134.25,
+        "pe_fwd": 22.2,
+        "pe_trail": 33.5,
+        "p_fcf": 17.5,
+        "ev_ebitda": 26.8,
+        "peg": 1.21
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -8.8% vs 52w high $147.25",
+      "tech_pct_from_high": -8.8,
+      "tech_rsi": null
+    },
+    {
+      "run_id": "sp500_v3",
+      "ticker": "GOOGL",
+      "verdict": "BUY",
+      "total": 43,
+      "scores": {
+        "ladder_growth": 10,
+        "moat_quality": 9,
+        "management": 9,
+        "earnings_quality": 9,
+        "defensive": 8,
+        "aggressive": 7
+      },
+      "buy_thesis": "Alphabet demonstrates consistent revenue and net income growth, supported by strong FCF generation. The company's high R&D investment (15% of revenue) and low debt (D/E 0.12) suggest a focus on innovation with a solid financial foundation.  \n\n\u2501\u2501\u2501 STEP 3: Score each dimension (0-10) \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501  \n\nLadder Growth: 10/10 \u2014 Consistent FCF and NI growth over five years, no outlier years.  \nMoat Quality: 9/10 \u2014 Strong network effects and brand loyalty in core businesses like Google Search and YouTube.  \nManagement / Capital Allocation: 9/10 \u2014 Exceptional allocators with proven strategy, consistently high ROE (30% avg).  \nEarnings Quality: 9/10 \u2014 FCF exceeds net income consistently, minimal accruals.  \nDefensive Strength: 8/10 \u2014 Low debt, strong cash position, but not a net cash hoarder.  \nAggressive Growth: 7/10 \u2014 Realistic path to revenue growth driven by AI and cloud expansion.  \n\nTOTAL: 43/60  \n\n\u2501\u2501\u2501 STEP 4: Final verdict \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "risk_flags": "None material.  \n\n\u2501\u2501\u2501 STEP 2: State the bull case \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+      "valuation": {
+        "price": 387.66,
+        "pe_fwd": 26.8,
+        "pe_trail": 29.7,
+        "p_fcf": 26.9,
+        "ev_ebitda": 28.9,
+        "peg": 1.53
+      },
+      "completed_at": "2026-05-22T00:54:27.941875+00:00",
+      "entry_override": "WATCH_ENTRY",
+      "entry_reason": "price -5.1% vs 52w high $408.61",
+      "tech_pct_from_high": -5.1,
+      "tech_rsi": null
     },
     {
       "run_id": "sp500_v3",
@@ -418,8 +463,7 @@
         "ev_ebitda": 17.1,
         "peg": 1.3
       },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7cc"
+      "completed_at": "2026-05-22T00:54:27.941875+00:00"
     },
     {
       "run_id": "sp500_v3",
@@ -444,8 +488,7 @@
         "ev_ebitda": 14.5,
         "peg": 4.02
       },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7cd"
+      "completed_at": "2026-05-22T00:54:27.941875+00:00"
     },
     {
       "run_id": "sp500_v3",
@@ -470,8 +513,7 @@
         "ev_ebitda": 10.0,
         "peg": 1.91
       },
-      "completed_at": "2026-05-22T00:54:27.941875+00:00",
-      "_id": "6a0fa943cc16825fc1a0e7ce"
+      "completed_at": "2026-05-22T00:54:27.941875+00:00"
     }
   ]
 }

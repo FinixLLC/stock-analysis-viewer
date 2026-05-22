@@ -122,8 +122,10 @@
             font-size: 0.8em;
             font-weight: 700;
         }
-        .tab.watch-tab.active { color: #f7971e; border-bottom-color: #f7971e; }
-        .tab.watch-tab .badge { background: #f7971e; }
+        .tab.watch-tab.active  { color: #f7971e; border-bottom-color: #f7971e; }
+        .tab.watch-tab .badge  { background: #f7971e; }
+        .tab.entry-tab.active  { color: #dc2626; border-bottom-color: #dc2626; }
+        .tab.entry-tab .badge  { background: #dc2626; }
 
         .tab-content { display: none; padding: 24px; }
         .tab-content.active { display: block; }
@@ -210,8 +212,9 @@
             font-weight: 700;
             letter-spacing: 0.05em;
         }
-        .verdict-BUY  { background: #d1fae5; color: #065f46; }
-        .verdict-WATCH { background: #fef3c7; color: #92400e; }
+        .verdict-BUY        { background: #d1fae5; color: #065f46; }
+        .verdict-WATCH      { background: #fef3c7; color: #92400e; }
+        .verdict-WATCH_ENTRY { background: #fee2e2; color: #991b1b; }
 
         .num-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
         .na { color: #bbb; }
@@ -285,11 +288,15 @@
         </div>
         <div class="summary-card">
             <div class="summary-value green" id="s-buy">—</div>
-            <div class="summary-label">BUY Verdicts</div>
+            <div class="summary-label">BUY — Actionable</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-value" style="background:linear-gradient(135deg,#dc2626,#f87171);-webkit-background-clip:text;-webkit-text-fill-color:transparent" id="s-entry">—</div>
+            <div class="summary-label">WATCH — Entry Timing</div>
         </div>
         <div class="summary-card">
             <div class="summary-value amber" id="s-watch">—</div>
-            <div class="summary-label">WATCH Verdicts</div>
+            <div class="summary-label">WATCH — Fundamental</div>
         </div>
         <div class="summary-card">
             <div class="summary-value" id="s-top">—</div>
@@ -300,10 +307,13 @@
     <div class="main-card">
         <div class="tab-bar">
             <div class="tab active" id="tab-buy" onclick="switchTab('buy')">
-                BUY <span class="badge" id="badge-buy">0</span>
+                ▶ BUY <span class="badge" id="badge-buy">0</span>
+            </div>
+            <div class="tab entry-tab" id="tab-entry" onclick="switchTab('entry')">
+                ⚡ WATCH — Entry <span class="badge" id="badge-entry">0</span>
             </div>
             <div class="tab watch-tab" id="tab-watch" onclick="switchTab('watch')">
-                WATCH <span class="badge" id="badge-watch">0</span>
+                ◎ WATCH — Fundamental <span class="badge" id="badge-watch">0</span>
             </div>
         </div>
 
@@ -325,6 +335,31 @@
                         <th>Verdict</th>
                     </tr></thead>
                     <tbody id="tbody-buy"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tab-content" id="content-entry">
+            <div style="background:#fff5f5;border:1px solid #fecaca;border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:0.88em;color:#991b1b;">
+                <strong>Quality companies at poor entry timing.</strong> These passed the full fundamental + LLM moat audit but are trading near their 52-week high and/or have elevated RSI (&gt;65). Wait for price compression before deploying capital.
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-entry" placeholder="Search ticker or thesis..." oninput="renderTable('entry')">
+            </div>
+            <div class="table-wrap">
+                <table id="table-entry">
+                    <thead><tr>
+                        <th></th>
+                        <th onclick="sortTable('entry','ticker')">Ticker</th>
+                        <th onclick="sortTable('entry','total')">Score</th>
+                        <th onclick="sortTable('entry','price')">Price</th>
+                        <th onclick="sortTable('entry','pe_fwd')">Fwd P/E</th>
+                        <th onclick="sortTable('entry','p_fcf')">P/FCF</th>
+                        <th onclick="sortTable('entry','ev_ebitda')">EV/EBITDA</th>
+                        <th onclick="sortTable('entry','peg')">PEG</th>
+                        <th>Entry Signal</th>
+                    </tr></thead>
+                    <tbody id="tbody-entry"></tbody>
                 </table>
             </div>
         </div>
@@ -355,7 +390,11 @@
 
 <script>
 let allData = [];
-let sortState = { buy: { col: 'total', dir: 'desc' }, watch: { col: 'total', dir: 'desc' } };
+let sortState = {
+    buy:   { col: 'total', dir: 'desc' },
+    entry: { col: 'total', dir: 'desc' },
+    watch: { col: 'total', dir: 'desc' },
+};
 
 async function init() {
     try {
@@ -365,18 +404,22 @@ async function init() {
         document.getElementById('gen-time').textContent =
             'Generated ' + (json.generated_at || '') + ' · Runs: ' + (json.run_ids || []).join(', ');
 
-        const buys   = allData.filter(r => r.verdict === 'BUY');
+        const buys   = allData.filter(r => r.verdict === 'BUY' && !r.entry_override);
+        const entries = allData.filter(r => r.verdict === 'BUY' && r.entry_override === 'WATCH_ENTRY');
         const watchs = allData.filter(r => r.verdict === 'WATCH');
         const topScore = Math.max(...allData.map(r => r.total || 0));
 
         document.getElementById('s-total').textContent = allData.length;
         document.getElementById('s-buy').textContent   = buys.length;
+        document.getElementById('s-entry').textContent = entries.length;
         document.getElementById('s-watch').textContent = watchs.length;
         document.getElementById('s-top').textContent   = topScore;
         document.getElementById('badge-buy').textContent   = buys.length;
+        document.getElementById('badge-entry').textContent = entries.length;
         document.getElementById('badge-watch').textContent = watchs.length;
 
         renderTable('buy');
+        renderTable('entry');
         renderTable('watch');
     } catch (e) {
         document.getElementById('gen-time').textContent = 'Error loading data: ' + e.message;
@@ -384,7 +427,7 @@ async function init() {
 }
 
 function switchTab(tab) {
-    ['buy','watch'].forEach(t => {
+    ['buy','entry','watch'].forEach(t => {
         document.getElementById('tab-' + t).classList.toggle('active', t === tab);
         document.getElementById('content-' + t).classList.toggle('active', t === tab);
     });
@@ -412,11 +455,13 @@ function sortTable(tab, col) {
 }
 
 function renderTable(tab) {
-    const verdict = tab === 'buy' ? 'BUY' : 'WATCH';
-    const query   = (document.getElementById('search-' + tab).value || '').toLowerCase();
-    const s       = sortState[tab];
+    const query = (document.getElementById('search-' + tab).value || '').toLowerCase();
+    const s     = sortState[tab];
 
-    let rows = allData.filter(r => r.verdict === verdict);
+    let rows;
+    if (tab === 'buy')   rows = allData.filter(r => r.verdict === 'BUY'   && !r.entry_override);
+    else if (tab === 'entry') rows = allData.filter(r => r.verdict === 'BUY' && r.entry_override === 'WATCH_ENTRY');
+    else                 rows = allData.filter(r => r.verdict === 'WATCH');
 
     if (query) {
         rows = rows.filter(r =>
@@ -463,6 +508,16 @@ function renderTable(tab) {
 
         const thesis    = (r.buy_thesis || '').replace(/\*\*/g,'').replace(/\n/g,'<br>');
         const riskFlags = (r.risk_flags || '').replace(/\*\*/g,'').replace(/\n/g,'<br>');
+        const isEntry   = r.entry_override === 'WATCH_ENTRY';
+        const badgeVerdict = isEntry ? 'WATCH_ENTRY' : r.verdict;
+        const badgeLabel   = isEntry ? '⚡ WATCH — Entry' : r.verdict;
+
+        const entryReasonHtml = (isEntry && r.entry_reason) ? `
+                    <div class="detail-section">
+                        <div class="detail-label" style="color:#991b1b">⚡ Entry Override Reason</div>
+                        <div class="detail-text" style="color:#991b1b;font-weight:600">${r.entry_reason}</div>
+                        <div class="detail-text" style="margin-top:4px;color:#666">This company passed the fundamental filter and LLM moat audit. The entry timing is unfavorable — add to watchlist and wait for price compression toward the 52-week low zone.</div>
+                    </div>` : '';
 
         return `
         <tr>
@@ -482,11 +537,12 @@ function renderTable(tab) {
             <td class="num-cell">${fmt(val.p_fcf)}</td>
             <td class="num-cell">${fmt(val.ev_ebitda)}</td>
             <td class="num-cell">${fmt(val.peg)}</td>
-            <td><span class="verdict-badge verdict-${r.verdict}">${r.verdict}</span></td>
+            <td><span class="verdict-badge verdict-${badgeVerdict}">${badgeLabel}</span></td>
         </tr>
         <tr class="detail-row">
             <td colspan="9" style="padding:0">
                 <div class="detail-panel" id="detail-${id}">
+                    ${entryReasonHtml}
                     ${scoreChips ? `
                     <div class="detail-section">
                         <div class="detail-label">Dimension Scores</div>
