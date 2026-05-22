@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P 500 Pipeline Results — StartupPick</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1600px; margin: 0 auto; }
+
+        header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .subtitle { color: #666; font-size: 1.1em; }
+        .timestamp { color: #999; font-size: 0.85em; margin-top: 6px; }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            white-space: nowrap;
+        }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102,126,234,0.4); }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .summary-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .summary-value {
+            font-size: 2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .summary-value.green { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .summary-value.amber { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .summary-label { color: #666; font-size: 0.85em; margin-top: 4px; }
+
+        .main-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .tab-bar {
+            display: flex;
+            border-bottom: 2px solid #f0f0f0;
+            padding: 0 24px;
+            background: #fafafa;
+        }
+
+        .tab {
+            padding: 16px 28px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #888;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            transition: color 0.2s, border-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .tab:hover { color: #667eea; }
+        .tab.active { color: #667eea; border-bottom-color: #667eea; }
+        .tab .badge {
+            background: #667eea;
+            color: white;
+            border-radius: 12px;
+            padding: 2px 8px;
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+        .tab.watch-tab.active { color: #f7971e; border-bottom-color: #f7971e; }
+        .tab.watch-tab .badge { background: #f7971e; }
+
+        .tab-content { display: none; padding: 24px; }
+        .tab-content.active { display: block; }
+
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 0.95em;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-bar input:focus { border-color: #667eea; }
+
+        .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #f0f0f0; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+
+        thead tr { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        th {
+            padding: 12px 14px;
+            text-align: left;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85em;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+        th:hover { opacity: 0.85; }
+        th.sorted-asc::after { content: ' ▲'; }
+        th.sorted-desc::after { content: ' ▼'; }
+
+        tbody tr { border-bottom: 1px solid #f5f5f5; transition: background 0.15s; }
+        tbody tr:hover { background: #f8f6ff; }
+        tbody tr.detail-row { background: #faf9ff; }
+        tbody tr.detail-row:hover { background: #f4f1ff; }
+
+        td { padding: 11px 14px; vertical-align: top; }
+
+        .ticker-cell {
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+        .ticker-cell a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .ticker-cell a:hover { border-bottom-color: #667eea; }
+
+        .score-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .score-num { font-weight: 700; min-width: 40px; }
+        .bar-bg {
+            flex: 1;
+            height: 6px;
+            background: #eee;
+            border-radius: 3px;
+            min-width: 60px;
+        }
+        .bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s;
+        }
+
+        .verdict-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .verdict-BUY  { background: #d1fae5; color: #065f46; }
+        .verdict-WATCH { background: #fef3c7; color: #92400e; }
+
+        .num-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .na { color: #bbb; }
+
+        .expand-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: #aaa;
+            padding: 0 4px;
+            transition: transform 0.2s, color 0.2s;
+        }
+        .expand-btn:hover { color: #667eea; }
+        .expand-btn.open { transform: rotate(90deg); color: #667eea; }
+
+        .detail-panel {
+            display: none;
+            padding: 16px 20px;
+        }
+        .detail-panel.open { display: block; }
+
+        .detail-section { margin-bottom: 16px; }
+        .detail-label { font-weight: 700; color: #555; font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+        .detail-text { color: #444; font-size: 0.88em; line-height: 1.6; }
+
+        .scores-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .score-chip {
+            background: #f0eeff;
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 0.82em;
+        }
+        .score-chip span { font-weight: 700; color: #667eea; }
+
+        .pipeline-note {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 6px;
+        }
+
+        .empty { text-align: center; padding: 60px 20px; color: #999; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            header { padding: 24px; }
+            .tab { padding: 12px 16px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>S&P 500 Pipeline Results</h1>
+            <p class="subtitle">4-layer funnel: SEC XBRL → fundamentals → LLM moat audit</p>
+            <p class="timestamp" id="gen-time">Loading...</p>
+        </div>
+        <a href="index.html" class="back-btn">← Dashboard</a>
+    </header>
+
+    <div class="summary-grid" id="summary-grid">
+        <div class="summary-card">
+            <div class="summary-value" id="s-total">—</div>
+            <div class="summary-label">Tickers Evaluated</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-value green" id="s-buy">—</div>
+            <div class="summary-label">BUY Verdicts</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-value amber" id="s-watch">—</div>
+            <div class="summary-label">WATCH Verdicts</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-value" id="s-top">—</div>
+            <div class="summary-label">Top Score / 60</div>
+        </div>
+    </div>
+
+    <div class="main-card">
+        <div class="tab-bar">
+            <div class="tab active" id="tab-buy" onclick="switchTab('buy')">
+                BUY <span class="badge" id="badge-buy">0</span>
+            </div>
+            <div class="tab watch-tab" id="tab-watch" onclick="switchTab('watch')">
+                WATCH <span class="badge" id="badge-watch">0</span>
+            </div>
+        </div>
+
+        <div class="tab-content active" id="content-buy">
+            <div class="search-bar">
+                <input type="text" id="search-buy" placeholder="Search ticker or thesis..." oninput="renderTable('buy')">
+            </div>
+            <div class="table-wrap">
+                <table id="table-buy">
+                    <thead><tr>
+                        <th></th>
+                        <th onclick="sortTable('buy','ticker')">Ticker</th>
+                        <th onclick="sortTable('buy','total')">Score</th>
+                        <th onclick="sortTable('buy','price')">Price</th>
+                        <th onclick="sortTable('buy','pe_fwd')">Fwd P/E</th>
+                        <th onclick="sortTable('buy','p_fcf')">P/FCF</th>
+                        <th onclick="sortTable('buy','ev_ebitda')">EV/EBITDA</th>
+                        <th onclick="sortTable('buy','peg')">PEG</th>
+                        <th>Verdict</th>
+                    </tr></thead>
+                    <tbody id="tbody-buy"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tab-content" id="content-watch">
+            <div class="search-bar">
+                <input type="text" id="search-watch" placeholder="Search ticker or thesis..." oninput="renderTable('watch')">
+            </div>
+            <div class="table-wrap">
+                <table id="table-watch">
+                    <thead><tr>
+                        <th></th>
+                        <th onclick="sortTable('watch','ticker')">Ticker</th>
+                        <th onclick="sortTable('watch','total')">Score</th>
+                        <th onclick="sortTable('watch','price')">Price</th>
+                        <th onclick="sortTable('watch','pe_fwd')">Fwd P/E</th>
+                        <th onclick="sortTable('watch','p_fcf')">P/FCF</th>
+                        <th onclick="sortTable('watch','ev_ebitda')">EV/EBITDA</th>
+                        <th onclick="sortTable('watch','peg')">PEG</th>
+                        <th>Verdict</th>
+                    </tr></thead>
+                    <tbody id="tbody-watch"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let allData = [];
+let sortState = { buy: { col: 'total', dir: 'desc' }, watch: { col: 'total', dir: 'desc' } };
+
+async function init() {
+    try {
+        const res = await fetch('sp500-results.json');
+        const json = await res.json();
+        allData = json.results || [];
+        document.getElementById('gen-time').textContent =
+            'Generated ' + (json.generated_at || '') + ' · Runs: ' + (json.run_ids || []).join(', ');
+
+        const buys   = allData.filter(r => r.verdict === 'BUY');
+        const watchs = allData.filter(r => r.verdict === 'WATCH');
+        const topScore = Math.max(...allData.map(r => r.total || 0));
+
+        document.getElementById('s-total').textContent = allData.length;
+        document.getElementById('s-buy').textContent   = buys.length;
+        document.getElementById('s-watch').textContent = watchs.length;
+        document.getElementById('s-top').textContent   = topScore;
+        document.getElementById('badge-buy').textContent   = buys.length;
+        document.getElementById('badge-watch').textContent = watchs.length;
+
+        renderTable('buy');
+        renderTable('watch');
+    } catch (e) {
+        document.getElementById('gen-time').textContent = 'Error loading data: ' + e.message;
+    }
+}
+
+function switchTab(tab) {
+    ['buy','watch'].forEach(t => {
+        document.getElementById('tab-' + t).classList.toggle('active', t === tab);
+        document.getElementById('content-' + t).classList.toggle('active', t === tab);
+    });
+}
+
+function sortTable(tab, col) {
+    const s = sortState[tab];
+    if (s.col === col) {
+        s.dir = s.dir === 'asc' ? 'desc' : 'asc';
+    } else {
+        s.col = col;
+        s.dir = col === 'ticker' ? 'asc' : 'desc';
+    }
+    // Update header classes
+    const table = document.getElementById('table-' + tab);
+    table.querySelectorAll('th').forEach(th => {
+        th.classList.remove('sorted-asc', 'sorted-desc');
+        if (th.textContent.trim().toLowerCase().replace(/\s+fwd/,'').replace('fwd ','') ===
+            col.replace('_', ' ').replace('pe fwd','fwd p/e').toLowerCase() ||
+            th.getAttribute('onclick') === `sortTable('${tab}','${col}')`) {
+            th.classList.add(s.dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+        }
+    });
+    renderTable(tab);
+}
+
+function renderTable(tab) {
+    const verdict = tab === 'buy' ? 'BUY' : 'WATCH';
+    const query   = (document.getElementById('search-' + tab).value || '').toLowerCase();
+    const s       = sortState[tab];
+
+    let rows = allData.filter(r => r.verdict === verdict);
+
+    if (query) {
+        rows = rows.filter(r =>
+            r.ticker.toLowerCase().includes(query) ||
+            (r.buy_thesis || '').toLowerCase().includes(query) ||
+            (r.risk_flags || '').toLowerCase().includes(query)
+        );
+    }
+
+    // Sort
+    rows.sort((a, b) => {
+        let av = s.col === 'ticker' ? a.ticker :
+                 s.col === 'total'  ? (a.total || 0) :
+                 (a.valuation || {})[s.col];
+        let bv = s.col === 'ticker' ? b.ticker :
+                 s.col === 'total'  ? (b.total || 0) :
+                 (b.valuation || {})[s.col];
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;
+        if (bv == null) return -1;
+        if (typeof av === 'string') return s.dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+        return s.dir === 'asc' ? av - bv : bv - av;
+    });
+
+    const tbody = document.getElementById('tbody-' + tab);
+    if (rows.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9"><div class="empty">No results found</div></td></tr>`;
+        return;
+    }
+
+    tbody.innerHTML = rows.map((r, i) => {
+        const id    = tab + '-' + i;
+        const val   = r.valuation || {};
+        const sc    = r.scores   || {};
+        const score = r.total || 0;
+        const pct   = Math.round((score / 60) * 100);
+        const price = val.price != null ? '$' + val.price.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) : '<span class="na">n/a</span>';
+
+        const fmt = (v, suffix='x') => v != null ? `${v}${suffix}` : '<span class="na">n/a</span>';
+
+        const scoreChips = Object.entries(sc).map(([k,v]) =>
+            `<div class="score-chip">${k.replace(/_/g,' ')}: <span>${v}</span></div>`
+        ).join('');
+
+        const thesis    = (r.buy_thesis || '').replace(/\*\*/g,'').replace(/\n/g,'<br>');
+        const riskFlags = (r.risk_flags || '').replace(/\*\*/g,'').replace(/\n/g,'<br>');
+
+        return `
+        <tr>
+            <td><button class="expand-btn" id="btn-${id}" onclick="toggleDetail('${id}')">&#9654;</button></td>
+            <td class="ticker-cell">
+                <a href="https://finance.yahoo.com/quote/${r.ticker}" target="_blank" rel="noopener">${r.ticker}</a>
+                <div class="pipeline-note">${r.run_id}</div>
+            </td>
+            <td>
+                <div class="score-bar">
+                    <span class="score-num">${score}/60</span>
+                    <div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div>
+                </div>
+            </td>
+            <td class="num-cell">${price}</td>
+            <td class="num-cell">${fmt(val.pe_fwd)}</td>
+            <td class="num-cell">${fmt(val.p_fcf)}</td>
+            <td class="num-cell">${fmt(val.ev_ebitda)}</td>
+            <td class="num-cell">${fmt(val.peg)}</td>
+            <td><span class="verdict-badge verdict-${r.verdict}">${r.verdict}</span></td>
+        </tr>
+        <tr class="detail-row">
+            <td colspan="9" style="padding:0">
+                <div class="detail-panel" id="detail-${id}">
+                    ${scoreChips ? `
+                    <div class="detail-section">
+                        <div class="detail-label">Dimension Scores</div>
+                        <div class="scores-grid">${scoreChips}</div>
+                    </div>` : ''}
+                    ${thesis ? `
+                    <div class="detail-section">
+                        <div class="detail-label">Buy Thesis</div>
+                        <div class="detail-text">${thesis}</div>
+                    </div>` : ''}
+                    ${riskFlags ? `
+                    <div class="detail-section">
+                        <div class="detail-label">Risk Flags</div>
+                        <div class="detail-text">${riskFlags}</div>
+                    </div>` : ''}
+                </div>
+            </td>
+        </tr>`;
+    }).join('');
+}
+
+function toggleDetail(id) {
+    const panel = document.getElementById('detail-' + id);
+    const btn   = document.getElementById('btn-' + id);
+    const open  = panel.classList.toggle('open');
+    btn.classList.toggle('open', open);
+}
+
+init();
+</script>
+</body>
+</html>

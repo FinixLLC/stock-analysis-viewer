@@ -502,6 +502,29 @@
                     🎯 View Enhanced Analysis →
                 </a>
             </div>
+
+            <div class="stat-card" role="region" aria-labelledby="sp500-pipeline-heading" style="padding: 25px;">
+                <h2 id="sp500-pipeline-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🔬 S&P 500 Pipeline</h2>
+                <div style="background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="text-align: center; margin-bottom: 10px;">
+                        <div style="font-size: 2em; font-weight: bold; color: white;" id="sp500-buy-count">—</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">BUY Verdicts</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div style="background: rgba(255,255,255,0.2); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="sp500-watch-count">—</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">WATCH</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 8px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="sp500-top-score">—</div>
+                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Top Score</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="sp500-pipeline.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); color: #333;">
+                    🔬 View Pipeline Results →
+                </a>
+            </div>
         </div>
 
         <!-- Today's Top Picks Section -->
@@ -662,6 +685,22 @@
             }
         }
         loadEnhancedTrendSummary();
+
+        async function loadSP500PipelineSummary() {
+            try {
+                const res = await fetch('sp500-results.json');
+                if (!res.ok) return;
+                const data = await res.json();
+                const results = data.results || [];
+                const buys   = results.filter(r => r.verdict === 'BUY').length;
+                const watchs = results.filter(r => r.verdict === 'WATCH').length;
+                const top    = Math.max(...results.map(r => r.total || 0));
+                document.getElementById('sp500-buy-count').textContent   = buys;
+                document.getElementById('sp500-watch-count').textContent = watchs;
+                document.getElementById('sp500-top-score').textContent   = top + '/60';
+            } catch (e) { /* silent — data file may not exist yet */ }
+        }
+        loadSP500PipelineSummary();
 
         // Calculate data freshness based on actual stock data age
         async function updateFreshnessBadge(lastUpdate) {
@@ -1093,6 +1132,7 @@
                 loadPortfolioSummary(),
                 loadCompanyProfileSummary(),
                 loadEnhancedTrendSummary(),
+                loadSP500PipelineSummary(),
                 loadFiles(),
                 loadTopPicks()
             ]).then(() => {
