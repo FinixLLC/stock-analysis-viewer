@@ -268,6 +268,173 @@
             header { padding: 24px; }
             .tab { padding: 12px 16px; font-size: 0.85em; }
         }
+
+        /* ── EVCDM ──────────────────────────────────────────────────────── */
+        .tab.evcdm-tab.active { color: #0891b2; border-bottom-color: #0891b2; }
+        .tab.evcdm-tab .badge { background: #0891b2; }
+
+        .evcdm-intro {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            font-size: 0.88em;
+            color: #0369a1;
+        }
+
+        .eco-sector {
+            background: white;
+            border-radius: 14px;
+            border: 1px solid #e8e8f0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .eco-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 20px;
+            background: linear-gradient(135deg, #f8f7ff 0%, #f0f9ff 100%);
+            border-bottom: 1px solid #e8e8f0;
+        }
+        .eco-icon { font-size: 1.3em; }
+        .eco-name { font-weight: 700; font-size: 1.0em; color: #333; }
+        .eco-count-badge {
+            margin-left: auto;
+            background: #0891b2;
+            color: white;
+            border-radius: 12px;
+            padding: 2px 10px;
+            font-size: 0.76em;
+            font-weight: 700;
+        }
+
+        .eco-flow {
+            display: grid;
+            grid-template-columns: 190px 28px 1fr 28px 190px;
+            align-items: start;
+            padding: 16px 20px;
+        }
+        .eco-layer-title {
+            font-size: 0.70em;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .eco-item {
+            font-size: 0.82em;
+            color: #666;
+            padding: 3px 0 3px 10px;
+            border-left: 2px solid #e0e0e0;
+            margin-bottom: 4px;
+        }
+        .eco-arrow-col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 26px;
+            color: #bbb;
+            font-size: 1.2em;
+        }
+        .eco-pick-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .eco-pick-row:last-child { border-bottom: none; }
+        .eco-chip {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 0.83em;
+            padding: 3px 9px;
+            border-radius: 6px;
+            min-width: 52px;
+            text-align: center;
+            flex-shrink: 0;
+            font-family: monospace;
+        }
+        .eco-chip.buy   { background: #d1fae5; color: #065f46; border: 1px solid #6ee7b7; }
+        .eco-chip.entry { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+        .eco-chip.watch { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+
+        .eco-pick-info { flex: 1; min-width: 0; }
+        .eco-pick-role  { font-size: 0.81em; color: #555; }
+        .eco-pick-score { font-size: 0.76em; color: #aaa; margin-top: 1px; }
+
+        .eco-deps {
+            padding: 9px 20px 13px;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            align-items: center;
+        }
+        .eco-deps-label {
+            font-size: 0.72em;
+            font-weight: 700;
+            color: #888;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            flex-shrink: 0;
+            margin-right: 2px;
+        }
+        .eco-dep-tag {
+            background: #f5f5f5;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 0.78em;
+            color: #555;
+        }
+
+        .cross-deps-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #f8f7ff 100%);
+            border: 1px solid #bae6fd;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+        }
+        .cross-deps-title { font-weight: 700; color: #0369a1; margin-bottom: 12px; font-size: 0.93em; }
+        .cross-dep-row {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            padding: 5px 0;
+            font-size: 0.83em;
+            color: #444;
+            border-bottom: 1px solid #dbeafe;
+        }
+        .cross-dep-row:last-child { border-bottom: none; }
+        .cross-dep-from { flex-shrink: 0; font-weight: 700; color: #0891b2; min-width: 140px; }
+
+        .coming-next-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 4px;
+        }
+        .coming-next-card {
+            border: 2px dashed #d4d4d8;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+        }
+        .coming-next-card .cn-icon  { font-size: 1.8em; margin-bottom: 8px; }
+        .coming-next-card .cn-name  { font-weight: 700; color: #888; font-size: 0.95em; margin-bottom: 6px; }
+        .coming-next-card .cn-picks { font-size: 0.79em; color: #bbb; line-height: 1.6; }
+
+        @media (max-width: 900px) {
+            .eco-flow { grid-template-columns: 1fr; }
+            .eco-arrow-col { display: none; }
+            .coming-next-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -314,6 +481,9 @@
             </div>
             <div class="tab watch-tab" id="tab-watch" onclick="switchTab('watch')">
                 ◎ WATCH — Fundamental <span class="badge" id="badge-watch">0</span>
+            </div>
+            <div class="tab evcdm-tab" id="tab-evcdm" onclick="switchTab('evcdm')">
+                🗺 Ecosystem Map
             </div>
         </div>
 
@@ -385,6 +555,10 @@
                 </table>
             </div>
         </div>
+
+        <div class="tab-content" id="content-evcdm">
+            <div class="evcdm-wrapper" id="evcdm-map"></div>
+        </div>
     </div>
 </div>
 
@@ -421,13 +595,14 @@ async function init() {
         renderTable('buy');
         renderTable('entry');
         renderTable('watch');
+        renderEVCDM();
     } catch (e) {
         document.getElementById('gen-time').textContent = 'Error loading data: ' + e.message;
     }
 }
 
 function switchTab(tab) {
-    ['buy','entry','watch'].forEach(t => {
+    ['buy','entry','watch','evcdm'].forEach(t => {
         document.getElementById('tab-' + t).classList.toggle('active', t === tab);
         document.getElementById('content-' + t).classList.toggle('active', t === tab);
     });
@@ -562,6 +737,146 @@ function renderTable(tab) {
             </td>
         </tr>`;
     }).join('');
+}
+
+const ECOSYSTEMS = [
+    {
+        icon: '🏬', name: 'Consumer & Retail',
+        upstream: ['Global supply chains', 'Apparel & surplus goods', 'Food & beverage supply', 'Warehouse logistics'],
+        picks: [
+            { ticker: 'WMT',  role: 'Full-line mega-retailer' },
+            { ticker: 'COST', role: 'Warehouse club' },
+            { ticker: 'TJX',  role: 'Off-price apparel & home' },
+            { ticker: 'ROST', role: 'Off-price retail' },
+            { ticker: 'CMG',  role: 'Fast casual food chain' },
+        ],
+        downstream: ['US households (290M+)', 'Bulk buyers & businesses', 'Value-seeking shoppers', 'Dining consumers'],
+        deps: ['WMT ↔ COST compete for same household wallet', 'TJX ↔ ROST direct off-price segment overlap', 'CMG exposed to food input cost inflation'],
+    },
+    {
+        icon: '✈️', name: 'Travel & Hospitality',
+        upstream: ['Hotel & property owners', 'Airline & transport partners', 'Experience providers'],
+        picks: [
+            { ticker: 'ABNB', role: 'Home-sharing marketplace' },
+            { ticker: 'BKNG', role: 'OTA aggregator (190+ countries)' },
+        ],
+        downstream: ['Global leisure travelers', 'Business travelers', 'Short-term rental hosts'],
+        deps: ['ABNB ↔ BKNG compete for accommodation search share', 'Both depend on PYPL payment rails for transactions', 'Demand tied to discretionary income & geopolitical stability'],
+    },
+    {
+        icon: '🏗️', name: 'Industrial & Infrastructure',
+        upstream: ['Steel & raw materials', 'Electrical components', 'Permian Basin reserves', 'Salvage vehicle supply'],
+        picks: [
+            { ticker: 'EME',  role: 'Electrical & mechanical construction' },
+            { ticker: 'FAST', role: 'Industrial fasteners & MRO distribution' },
+            { ticker: 'PCAR', role: 'Class 8 commercial truck OEM' },
+            { ticker: 'CPRT', role: 'Auto salvage & remarketing' },
+            { ticker: 'FANG', role: 'Permian Basin E&P operator' },
+        ],
+        downstream: ['Data centers & hyperscalers', 'Logistics & trucking fleets', 'Auto dealers & repair shops', 'Refineries & utilities'],
+        deps: ['EME builds hyperscaler data centers → feeds AI/Cloud ecosystem', 'FAST MRO supplies support PCAR assembly lines', 'CPRT remarketing intersects with PCAR used-truck market', 'FANG energy output powers logistics & data center ops'],
+    },
+    {
+        icon: '💼', name: 'Business Services & Fintech',
+        upstream: ['Employer relationships', 'Bank & card network rails', 'Regulatory frameworks'],
+        picks: [
+            { ticker: 'ADP',  role: 'HR, payroll & compliance SaaS' },
+            { ticker: 'PYPL', role: 'Digital payment platform' },
+        ],
+        downstream: ['~1M businesses · 41M US workers', 'E-commerce & digital merchants', 'Global consumers'],
+        deps: ['ADP payroll embedded across all ecosystem sectors', 'PYPL processes ABNB bookings & BKNG payment flows', 'ADP high switching cost — embedded in HR workflows'],
+    },
+];
+
+const CROSS_DEPS = [
+    { from: 'EME → AI/Cloud',     detail: 'EME constructs hyperscaler data centers for MSFT, AMZN, GOOGL campuses' },
+    { from: 'FANG → Industrial',  detail: 'FANG energy output fuels logistics fleets and industrial operations' },
+    { from: 'PYPL → Travel',      detail: 'PYPL processes ABNB home-sharing bookings and BKNG OTA payment flows' },
+    { from: 'ADP → All Sectors',  detail: 'ADP payroll platform is embedded across Consumer, Industrial, and B2B employers' },
+    { from: 'FAST → Industrial',  detail: 'FAST MRO distribution supplies PCAR assembly lines and EME project sites' },
+    { from: 'CPRT ↔ PCAR',        detail: 'CPRT remarketing feeds used Class 8 truck supply that competes with new PCAR sales' },
+];
+
+function getTickerMeta(ticker) {
+    const r = allData.find(d => d.ticker === ticker);
+    if (!r) return { chipClass: 'watch', score: '—', price: '' };
+    const chipClass = r.entry_override === 'WATCH_ENTRY' ? 'entry' : r.verdict === 'BUY' ? 'buy' : 'watch';
+    const price = r.valuation && r.valuation.price != null ? ' · $' + r.valuation.price.toFixed(2) : '';
+    return { chipClass, score: r.total || '—', price };
+}
+
+function renderEVCDM() {
+    const wrap = document.getElementById('evcdm-map');
+    if (!wrap) return;
+
+    let html = `<div class="evcdm-intro">
+        <strong>Ecosystem Value Chain & Dependency Map</strong> — our 29 picks positioned within their upstream–core–downstream chains.
+        Sectors shown: Consumer & Retail · Travel · Industrial · Business Services.
+        AI/Cloud (11 picks) and Healthcare (4 picks) mapped next.
+    </div>`;
+
+    for (const eco of ECOSYSTEMS) {
+        html += `<div class="eco-sector">
+        <div class="eco-header">
+            <span class="eco-icon">${eco.icon}</span>
+            <span class="eco-name">${eco.name}</span>
+            <span class="eco-count-badge">${eco.picks.length} picks</span>
+        </div>
+        <div class="eco-flow">
+            <div>
+                <div class="eco-layer-title">Upstream</div>
+                ${eco.upstream.map(u => `<div class="eco-item">${u}</div>`).join('')}
+            </div>
+            <div class="eco-arrow-col">→</div>
+            <div>
+                <div class="eco-layer-title">Our Picks</div>
+                ${eco.picks.map(p => {
+                    const m = getTickerMeta(p.ticker);
+                    return `<div class="eco-pick-row">
+                    <span class="eco-chip ${m.chipClass}">${p.ticker}</span>
+                    <div class="eco-pick-info">
+                        <div class="eco-pick-role">${p.role}</div>
+                        <div class="eco-pick-score">${m.score}/60${m.price}</div>
+                    </div>
+                </div>`;
+                }).join('')}
+            </div>
+            <div class="eco-arrow-col">→</div>
+            <div>
+                <div class="eco-layer-title">End Markets</div>
+                ${eco.downstream.map(d => `<div class="eco-item">${d}</div>`).join('')}
+            </div>
+        </div>
+        <div class="eco-deps">
+            <span class="eco-deps-label">Dependencies</span>
+            ${eco.deps.map(d => `<span class="eco-dep-tag">${d}</span>`).join('')}
+        </div>
+    </div>`;
+    }
+
+    html += `<div class="cross-deps-card">
+        <div class="cross-deps-title">⚡ Cross-Ecosystem Dependencies</div>
+        ${CROSS_DEPS.map(c => `<div class="cross-dep-row">
+            <span class="cross-dep-from">${c.from}</span>
+            <span>${c.detail}</span>
+        </div>`).join('')}
+    </div>`;
+
+    html += `<div style="font-weight:700;color:#666;font-size:0.82em;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Coming Next</div>
+    <div class="coming-next-grid">
+        <div class="coming-next-card">
+            <div class="cn-icon">🤖</div>
+            <div class="cn-name">AI / Cloud Computing</div>
+            <div class="cn-picks">11 picks<br>MSFT · META · GOOGL · NVDA · ANET<br>DDOG · PLTR · AMZN · FTNT · AMAT · MPWR</div>
+        </div>
+        <div class="coming-next-card">
+            <div class="cn-icon">🏥</div>
+            <div class="cn-name">Healthcare</div>
+            <div class="cn-picks">4 picks<br>DXCM · ISRG · IDXX · EW</div>
+        </div>
+    </div>`;
+
+    wrap.innerHTML = html;
 }
 
 function toggleDetail(id) {
