@@ -430,6 +430,18 @@
         .coming-next-card .cn-name  { font-weight: 700; color: #888; font-size: 0.95em; margin-bottom: 6px; }
         .coming-next-card .cn-picks { font-size: 0.79em; color: #bbb; line-height: 1.6; }
 
+        .eco-tier-header {
+            font-size: 0.69em;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            color: #0891b2;
+            text-transform: uppercase;
+            margin: 10px 0 4px;
+            padding-bottom: 3px;
+            border-bottom: 1px dashed #b0e0f0;
+        }
+        .eco-tier-header:first-child { margin-top: 2px; }
+
         @media (max-width: 900px) {
             .eco-flow { grid-template-columns: 1fr; }
             .eco-arrow-col { display: none; }
@@ -786,6 +798,37 @@ const ECOSYSTEMS = [
         downstream: ['~1M businesses · 41M US workers', 'E-commerce & digital merchants', 'Global consumers'],
         deps: ['ADP payroll embedded across all ecosystem sectors', 'PYPL processes ABNB bookings & BKNG payment flows', 'ADP high switching cost — embedded in HR workflows'],
     },
+    {
+        icon: '🤖', name: 'AI & Cloud Computing',
+        upstream: ['Silicon foundries (TSMC, Samsung)', 'Fab equipment & specialty materials', 'Hyperscale data center real estate', 'Power infrastructure & cooling'],
+        picks: [
+            { ticker: 'AMAT',  role: 'Semiconductor fab equipment',             tier: 'Silicon' },
+            { ticker: 'MPWR',  role: 'Power management ICs for AI servers',     tier: 'Silicon' },
+            { ticker: 'NVDA',  role: 'GPU compute — AI training & inference',   tier: 'Silicon' },
+            { ticker: 'ANET',  role: 'Data center networking & switching',      tier: 'Network' },
+            { ticker: 'MSFT',  role: 'Azure cloud + Copilot + Office 365',     tier: 'Cloud Platform' },
+            { ticker: 'AMZN',  role: 'AWS + e-commerce + Alexa AI',            tier: 'Cloud Platform' },
+            { ticker: 'GOOGL', role: 'GCP + Search AI + Gemini/DeepMind',      tier: 'Cloud Platform' },
+            { ticker: 'META',  role: 'Social AI + ad platform + Reality Labs', tier: 'Applications' },
+            { ticker: 'PLTR',  role: 'AI analytics for government & enterprise', tier: 'Applications' },
+            { ticker: 'DDOG',  role: 'Cloud observability & monitoring',        tier: 'Applications' },
+            { ticker: 'FTNT',  role: 'Network security across all cloud layers', tier: 'Applications' },
+        ],
+        downstream: ['Enterprise software buyers', 'AI application developers', 'Government & defense', 'Digital advertisers', 'Cloud-native businesses'],
+        deps: ['AMAT tools → manufacture the silicon that becomes NVDA GPUs', 'NVDA H100/B100 GPUs power MSFT/AMZN/GOOGL AI clusters', 'ANET interconnects GPU racks within hyperscaler DCs', 'DDOG observes workloads on MSFT/AMZN/GOOGL clouds', 'FTNT secures all cloud platform layers'],
+    },
+    {
+        icon: '🏥', name: 'Healthcare & MedTech',
+        upstream: ['Biosensor R&D & fabrication', 'Surgical instrument supply chains', 'FDA regulatory clearance cycles', 'Hospital procurement & GPO contracts'],
+        picks: [
+            { ticker: 'DXCM', role: 'Continuous glucose monitoring (CGM)' },
+            { ticker: 'ISRG', role: 'da Vinci robotic surgery systems' },
+            { ticker: 'IDXX', role: 'Veterinary diagnostics & instruments' },
+            { ticker: 'EW',   role: 'TAVR heart valve replacement systems' },
+        ],
+        downstream: ['Diabetic patients & endocrinologists', 'Hospitals & surgeons (minimally invasive)', 'Veterinary clinics & pet owners', 'Cardiac centers & interventional cardiologists'],
+        deps: ['ISRG & EW both sell capital equipment to the same hospital systems', 'DXCM revenue tied to insulin-dependent patients & payer coverage', 'IDXX benefits from pet humanization driving premium vet care adoption', 'All four dependent on FDA clearance cycles & reimbursement rates'],
+    },
 ];
 
 const CROSS_DEPS = [
@@ -795,6 +838,11 @@ const CROSS_DEPS = [
     { from: 'ADP → All Sectors',  detail: 'ADP payroll platform is embedded across Consumer, Industrial, and B2B employers' },
     { from: 'FAST → Industrial',  detail: 'FAST MRO distribution supplies PCAR assembly lines and EME project sites' },
     { from: 'CPRT ↔ PCAR',        detail: 'CPRT remarketing feeds used Class 8 truck supply that competes with new PCAR sales' },
+    { from: 'AMAT → NVDA',        detail: 'AMAT deposition & etch tools manufacture the silicon wafers that become NVDA GPUs' },
+    { from: 'NVDA → Cloud',       detail: 'NVDA H100/B100 GPUs are the primary compute inside MSFT Azure, AMZN AWS, and GOOGL GCP AI clusters' },
+    { from: 'EME → Healthcare',   detail: 'EME constructs hospital facilities and medical campus buildouts alongside hyperscaler data centers' },
+    { from: 'ISRG ↔ EW',         detail: 'ISRG and EW compete for the same hospital capital budgets — both require surgeon training and OR integration' },
+    { from: 'ADP → Healthcare',   detail: 'ADP processes payroll for hospital systems and healthcare employers across the sector' },
 ];
 
 function getTickerMeta(ticker) {
@@ -805,14 +853,49 @@ function getTickerMeta(ticker) {
     return { chipClass, score: r.total || '—', price };
 }
 
+function renderPicksHtml(picks) {
+    const hasTiers = picks.some(p => p.tier);
+    if (!hasTiers) {
+        return picks.map(p => {
+            const m = getTickerMeta(p.ticker);
+            return `<div class="eco-pick-row">
+                <span class="eco-chip ${m.chipClass}">${p.ticker}</span>
+                <div class="eco-pick-info">
+                    <div class="eco-pick-role">${p.role}</div>
+                    <div class="eco-pick-score">${m.score}/60${m.price}</div>
+                </div>
+            </div>`;
+        }).join('');
+    }
+    // Group by tier preserving order
+    const seen = [], groups = {};
+    for (const p of picks) {
+        const t = p.tier || 'Other';
+        if (!groups[t]) { groups[t] = []; seen.push(t); }
+        groups[t].push(p);
+    }
+    return seen.map(t => `
+        <div class="eco-tier-header">${t}</div>
+        ${groups[t].map(p => {
+            const m = getTickerMeta(p.ticker);
+            return `<div class="eco-pick-row">
+                <span class="eco-chip ${m.chipClass}">${p.ticker}</span>
+                <div class="eco-pick-info">
+                    <div class="eco-pick-role">${p.role}</div>
+                    <div class="eco-pick-score">${m.score}/60${m.price}</div>
+                </div>
+            </div>`;
+        }).join('')}
+    `).join('');
+}
+
 function renderEVCDM() {
     const wrap = document.getElementById('evcdm-map');
     if (!wrap) return;
 
     let html = `<div class="evcdm-intro">
-        <strong>Ecosystem Value Chain & Dependency Map</strong> — our 29 picks positioned within their upstream–core–downstream chains.
-        Sectors shown: Consumer & Retail · Travel · Industrial · Business Services.
-        AI/Cloud (11 picks) and Healthcare (4 picks) mapped next.
+        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 29 picks positioned within 6 upstream–core–downstream value chains.
+        Sectors: Consumer & Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare.
     </div>`;
 
     for (const eco of ECOSYSTEMS) {
@@ -830,16 +913,7 @@ function renderEVCDM() {
             <div class="eco-arrow-col">→</div>
             <div>
                 <div class="eco-layer-title">Our Picks</div>
-                ${eco.picks.map(p => {
-                    const m = getTickerMeta(p.ticker);
-                    return `<div class="eco-pick-row">
-                    <span class="eco-chip ${m.chipClass}">${p.ticker}</span>
-                    <div class="eco-pick-info">
-                        <div class="eco-pick-role">${p.role}</div>
-                        <div class="eco-pick-score">${m.score}/60${m.price}</div>
-                    </div>
-                </div>`;
-                }).join('')}
+                ${renderPicksHtml(eco.picks)}
             </div>
             <div class="eco-arrow-col">→</div>
             <div>
@@ -860,20 +934,6 @@ function renderEVCDM() {
             <span class="cross-dep-from">${c.from}</span>
             <span>${c.detail}</span>
         </div>`).join('')}
-    </div>`;
-
-    html += `<div style="font-weight:700;color:#666;font-size:0.82em;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Coming Next</div>
-    <div class="coming-next-grid">
-        <div class="coming-next-card">
-            <div class="cn-icon">🤖</div>
-            <div class="cn-name">AI / Cloud Computing</div>
-            <div class="cn-picks">11 picks<br>MSFT · META · GOOGL · NVDA · ANET<br>DDOG · PLTR · AMZN · FTNT · AMAT · MPWR</div>
-        </div>
-        <div class="coming-next-card">
-            <div class="cn-icon">🏥</div>
-            <div class="cn-name">Healthcare</div>
-            <div class="cn-picks">4 picks<br>DXCM · ISRG · IDXX · EW</div>
-        </div>
     </div>`;
 
     wrap.innerHTML = html;
