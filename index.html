@@ -551,10 +551,24 @@
                     Files show all stocks exhibiting specific technical patterns on a given date, useful for identifying
                     breakout candidates and trend reversals across different markets (NYSE, NASDAQ, AMEX).
                 </p>
-                <p>
+                <p style="margin-bottom: 15px;">
                     <strong>Key Metrics:</strong> Composite Score (overall strength), Tier (1=best, 4=lowest),
                     Pattern Score (pattern quality), Momentum (price trend), Volatility (price stability),
                     Volume (trading activity), Risk (penalty for adverse factors).
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong><a href="sp500-pipeline.html" style="color: #f7971e; text-decoration: none;">🔬 S&amp;P 500 Pipeline</a>:</strong>
+                    4-layer fundamental growth filter — SEC XBRL data → C++ metrics → fundamental filter (FCF, D/E, dilution, goodwill)
+                    → LLM moat audit (deepseek-r1 pass1 + pass2). Covers S&amp;P 500 (sp500_v4) and NASDAQ 100 (nasdaq100_v2) with
+                    29 merged results. Verdicts: <strong>BUY</strong> (actionable), <strong>WATCH — Entry</strong> (great business, bad timing — near 52w high),
+                    <strong>WATCH — Fundamental</strong> (monitor for improvement). Each row expands to show dimension scores, buy thesis, and risk flags.
+                </p>
+                <p>
+                    <strong><a href="sp500-pipeline.html" style="color: #0891b2; text-decoration: none;">🗺 Ecosystem Map</a>:</strong>
+                    Ecosystem Value Chain &amp; Dependency Map — positions all 29 pipeline picks within their upstream–core–downstream value chains
+                    across 6 sectors: Consumer &amp; Retail, Travel &amp; Hospitality, Industrial &amp; Infrastructure, Business Services &amp; Fintech,
+                    AI &amp; Cloud Computing, and Healthcare &amp; MedTech. Each sector card shows intra-sector dependencies;
+                    a cross-ecosystem panel highlights inter-sector links (e.g. EME builds hyperscaler data centers, PYPL processes ABNB/BKNG bookings).
                 </p>
             </div>
         </div>
