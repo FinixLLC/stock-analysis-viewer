@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVCDM Supply Chain Intelligence</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        /* ── HEADER ─────────────────────────────────────────────────────── */
+        header {
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 32px 40px;
+            margin-bottom: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-left { flex: 1; min-width: 0; }
+
+        h1 {
+            font-size: 2.1em;
+            background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle { color: #666; font-size: 1.0em; margin-bottom: 4px; }
+
+        .edge-counter {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82em;
+            color: #888;
+            margin-top: 4px;
+        }
+        .edge-counter strong { color: #334155; font-size: 1.05em; }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 18px;
+            background: #f1f5f9;
+            color: #475569;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.88em;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+            transition: background 0.15s, border-color 0.15s;
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+        .back-btn:hover { background: #e2e8f0; border-color: #cbd5e1; }
+
+        /* ── FILTER BAR ─────────────────────────────────────────────────── */
+        .filter-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            border: 1px solid #e8e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .filter-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-label {
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            flex-shrink: 0;
+            min-width: 64px;
+        }
+
+        /* Industry pills */
+        .industry-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.82em;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1.5px solid #e2e8f0;
+            background: #f8fafc;
+            color: #475569;
+            transition: all 0.15s;
+            user-select: none;
+            white-space: nowrap;
+        }
+        .industry-pill:hover { border-color: #94a3b8; background: #f1f5f9; }
+        .industry-pill.active {
+            color: white;
+            border-color: transparent;
+        }
+        .industry-pill .count-badge {
+            background: rgba(255,255,255,0.25);
+            border-radius: 10px;
+            padding: 1px 6px;
+            font-size: 0.85em;
+            font-weight: 700;
+        }
+        .industry-pill:not(.active) .count-badge {
+            background: #e2e8f0;
+            color: #64748b;
+        }
+
+        /* Type & layer chips */
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 11px;
+            border-radius: 20px;
+            font-size: 0.79em;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1.5px solid transparent;
+            transition: all 0.15s;
+            user-select: none;
+            white-space: nowrap;
+        }
+        .chip-supply        { background: #dbeafe; color: #1d4ed8; border-color: #bfdbfe; }
+        .chip-dependency    { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+        .chip-substitute    { background: #ede9fe; color: #5b21b6; border-color: #ddd6fe; }
+        .chip-layer         { background: #f1f5f9; color: #475569; border-color: #e2e8f0; }
+
+        .chip.off {
+            background: #f8fafc !important;
+            color: #94a3b8 !important;
+            border-color: #e2e8f0 !important;
+            text-decoration: line-through;
+        }
+        .chip:hover:not(.off) { filter: brightness(0.94); }
+        .chip:hover.off { background: #f1f5f9 !important; text-decoration: none; }
+
+        /* Search */
+        .search-input {
+            padding: 6px 12px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.85em;
+            color: #334155;
+            background: #f8fafc;
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+            width: 220px;
+        }
+        .search-input:focus {
+            border-color: #94a3b8;
+            box-shadow: 0 0 0 3px rgba(148,163,184,0.15);
+            background: white;
+        }
+        .search-input::placeholder { color: #94a3b8; }
+
+        /* ── CONTENT AREA ───────────────────────────────────────────────── */
+        .content { }
+
+        /* Loading / error / empty states */
+        .state-box {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            padding: 48px 24px;
+            text-align: center;
+            border: 1px solid #e8e8f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .state-box .state-icon { font-size: 2.5em; margin-bottom: 12px; }
+        .state-box .state-title { font-size: 1.1em; font-weight: 700; color: #475569; margin-bottom: 6px; }
+        .state-box .state-desc  { font-size: 0.88em; color: #94a3b8; }
+        .state-box.error .state-title { color: #dc2626; }
+
+        /* Industry group */
+        .industry-group { margin-bottom: 20px; }
+
+        .industry-group-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            border-radius: 10px 10px 0 0;
+            font-weight: 700;
+            font-size: 0.88em;
+            color: white;
+            letter-spacing: 0.01em;
+        }
+        .industry-group-header .group-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.25);
+            border-radius: 10px;
+            padding: 2px 8px;
+            font-size: 0.82em;
+            font-weight: 700;
+        }
+
+        /* Edge list */
+        .edge-list {
+            background: white;
+            border-radius: 0 0 14px 14px;
+            border: 1px solid #e8e8f0;
+            border-top: none;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        /* When not grouped, give full radius */
+        .edge-list.standalone {
+            border-radius: 14px;
+            border-top: 1px solid #e8e8f0;
+        }
+
+        .edge-row {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            transition: background 0.1s;
+            min-width: 0;
+        }
+        .edge-row:last-child { border-bottom: none; }
+        .edge-row:hover { background: rgba(0,0,0,0.025); }
+
+        .edge-entities {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .entity-name {
+            font-weight: 700;
+            font-size: 0.88em;
+            color: #1e293b;
+            white-space: nowrap;
+        }
+
+        .layer-badge {
+            display: inline-block;
+            font-size: 0.7em;
+            font-weight: 700;
+            padding: 1px 5px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            color: #64748b;
+            border: 1px solid #e2e8f0;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .arrow-sep {
+            color: #94a3b8;
+            font-size: 0.85em;
+            flex-shrink: 0;
+        }
+
+        .type-pill {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 20px;
+            font-size: 0.74em;
+            font-weight: 700;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .type-pill.supply     { background: #dbeafe; color: #1d4ed8; }
+        .type-pill.dependency { background: #fef3c7; color: #92400e; }
+        .type-pill.substitute { background: #ede9fe; color: #5b21b6; }
+        .type-pill.other      { background: #f1f5f9; color: #64748b; }
+
+        .edge-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+            max-width: 380px;
+        }
+        .industry-icon-small {
+            font-size: 1.05em;
+            flex-shrink: 0;
+        }
+        .snippet-text {
+            font-size: 0.78em;
+            color: #64748b;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            min-width: 0;
+            cursor: default;
+        }
+
+        /* ── FOOTER ─────────────────────────────────────────────────────── */
+        footer {
+            background: rgba(255,255,255,0.12);
+            border-radius: 14px;
+            padding: 16px 24px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .footer-source {
+            font-size: 0.79em;
+            color: rgba(255,255,255,0.6);
+        }
+        .footer-back {
+            font-size: 0.82em;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.15s;
+        }
+        .footer-back:hover { color: white; }
+
+        /* ── MOBILE ─────────────────────────────────────────────────────── */
+        @media (max-width: 640px) {
+            body { padding: 10px; }
+            header { padding: 20px; }
+            h1 { font-size: 1.5em; }
+            .filter-bar { padding: 12px 14px; top: 6px; }
+            .filter-label { min-width: auto; }
+            .search-input { width: 100%; }
+
+            .edge-row {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            .edge-right {
+                max-width: 100%;
+            }
+            .snippet-text { white-space: normal; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="header-left">
+            <h1>EVCDM Supply Chain Intelligence</h1>
+            <div class="subtitle">SEC EDGAR 10-K filings · LLM-extracted &amp; verified · <span id="total-desc">loading…</span></div>
+            <div class="edge-counter">
+                Showing <strong id="shown-count">—</strong> of <strong id="total-count">—</strong> edges
+            </div>
+        </div>
+        <a href="sp500-pipeline.html" class="back-btn">← Back to Pipeline</a>
+    </header>
+
+    <div class="filter-bar">
+        <!-- Row 1: Industry -->
+        <div class="filter-row">
+            <span class="filter-label">Industry</span>
+            <div id="industry-pills" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+        </div>
+        <!-- Row 2: Type -->
+        <div class="filter-row">
+            <span class="filter-label">Type</span>
+            <span class="chip chip-supply"     data-type="supplier_to_customer" id="chip-supply">Supply</span>
+            <span class="chip chip-dependency" data-type="critical_dependency"  id="chip-dependency">Dependency</span>
+            <span class="chip chip-substitute" data-type="substitute"           id="chip-substitute">Substitute</span>
+            <span class="chip chip-layer"      data-type="customer_to_supplier" id="chip-customer" style="display:none">Customer→Supplier</span>
+        </div>
+        <!-- Row 3: Layer -->
+        <div class="filter-row">
+            <span class="filter-label">Layer</span>
+            <div id="layer-chips" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+        </div>
+        <!-- Row 4: Search -->
+        <div class="filter-row">
+            <span class="filter-label">Search</span>
+            <input type="text" class="search-input" id="search-input" placeholder="Filter by entity name…">
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="state-box">
+            <div class="state-icon">⏳</div>
+            <div class="state-title">Loading supply chain data…</div>
+            <div class="state-desc">Fetching 5 industry JSON files</div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-source">
+            Source: SEC EDGAR 10-K filings · Extracted via qwen2.5:14b on Ollama · Filtered by LLM with 7-rule validation
+        </span>
+        <a href="sp500-pipeline.html" class="footer-back">← Back to Pipeline</a>
+    </footer>
+
+</div>
+<script>
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+
+const INDUSTRIES = {
+    ai:         { label: 'AI Technology Stack',           icon: '🤖', accent: '#7c3aed' },
+    cloud:      { label: 'Cloud Computing Stack',         icon: '☁️',  accent: '#0891b2' },
+    energy:     { label: 'Energy Value Chain',            icon: '⚡',  accent: '#d97706' },
+    finance:    { label: 'Financial Services Value Chain',icon: '🏦', accent: '#059669' },
+    healthcare: { label: 'Healthcare Value Chain',        icon: '🏥', accent: '#e11d48' },
+};
+
+const LAYER_NAMES = {
+    ai:         { L1:'Energy & Resources', L2:'Semiconductor Equipment', L3:'Foundry & Manufacturing', L4:'Chip Design & Memory', L5:'Cloud & Infrastructure', L6:'Software & End Users' },
+    cloud:      { L1:'Physical Infrastructure', L2:'Network & Connectivity', L3:'Compute & Storage HW', L4:'Cloud Platforms (IaaS)', L5:'Cloud Services (PaaS)', L6:'SaaS & End Users' },
+    energy:     { L1:'Upstream E&P', L2:'Energy Equipment', L3:'Midstream', L4:'Refining & Manufacturing', L5:'Power Generation', L6:'Transmission & End Users' },
+    finance:    { L1:'Capital Markets', L2:'Commercial Banking', L3:'Insurance & Risk', L4:'Asset Management', L5:'Payments & Processing', L6:'Fintech & Digital Finance' },
+    healthcare: { L1:'Drug Discovery & R&D', L2:'Devices & Life Sciences Tools', L3:'Pharma Manufacturing & Distribution', L4:'Payers', L5:'Care Providers', L6:'Patients & Outcomes' },
+};
+
+const TYPE_INFO = {
+    supplier_to_customer: { label: 'Supply',     cls: 'supply' },
+    critical_dependency:  { label: 'Dependency', cls: 'dependency' },
+    substitute:           { label: 'Substitute', cls: 'substitute' },
+    customer_to_supplier: { label: 'Cust→Supp',  cls: 'other' },
+};
+
+const ACCENT_BG = {};  // precomputed very-light tints
+Object.entries(INDUSTRIES).forEach(([k, v]) => {
+    // Convert hex to rgb for 5% opacity tint
+    const r = parseInt(v.accent.slice(1,3), 16);
+    const g = parseInt(v.accent.slice(3,5), 16);
+    const b = parseInt(v.accent.slice(5,7), 16);
+    ACCENT_BG[k] = `rgba(${r},${g},${b},0.05)`;
+});
+
+// ── STATE ─────────────────────────────────────────────────────────────────────
+
+let allEdges = [];            // [{...edge, industry}]
+let activeIndustry = 'all';
+let activeTypes = new Set(['supplier_to_customer', 'critical_dependency', 'substitute', 'customer_to_supplier']);
+let activeLayers = new Set(['L1','L2','L3','L4','L5','L6']);  // empty = all on
+let searchQuery = '';
+let searchTimer = null;
+
+// ── LOAD DATA ─────────────────────────────────────────────────────────────────
+
+async function loadAll() {
+    const errors = [];
+    const results = await Promise.all(
+        Object.keys(INDUSTRIES).map(async industry => {
+            try {
+                const res = await fetch(`evcdm/${industry}.json`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                return data.map(e => ({ ...e, industry }));
+            } catch (err) {
+                errors.push(`${industry}: ${err.message}`);
+                return [];
+            }
+        })
+    );
+
+    if (errors.length === Object.keys(INDUSTRIES).length) {
+        document.getElementById('content').innerHTML = `
+            <div class="state-box error">
+                <div class="state-icon">⚠️</div>
+                <div class="state-title">Failed to load data</div>
+                <div class="state-desc">${errors.join('<br>')}</div>
+            </div>`;
+        return;
+    }
+
+    allEdges = results.flat();
+
+    // Sort: industry order, then layer_from, then layer_to
+    const industryOrder = Object.keys(INDUSTRIES);
+    allEdges.sort((a, b) => {
+        const io = industryOrder.indexOf(a.industry) - industryOrder.indexOf(b.industry);
+        if (io !== 0) return io;
+        if (a.layer_from < b.layer_from) return -1;
+        if (a.layer_from > b.layer_from) return  1;
+        if (a.layer_to   < b.layer_to)   return -1;
+        if (a.layer_to   > b.layer_to)   return  1;
+        return 0;
+    });
+
+    initUI();
+    render();
+}
+
+// ── BUILD FILTER UI ───────────────────────────────────────────────────────────
+
+function initUI() {
+    const total = allEdges.length;
+    const nIndustries = Object.keys(INDUSTRIES).length;
+    document.getElementById('total-desc').textContent = `${total} edges across ${nIndustries} industries`;
+    document.getElementById('total-count').textContent = total;
+
+    // Industry pills
+    const pillsDiv = document.getElementById('industry-pills');
+    const allPill = makePill('all', '🔍', 'All', total, '#334155');
+    allPill.classList.add('active');
+    pillsDiv.appendChild(allPill);
+
+    Object.entries(INDUSTRIES).forEach(([key, info]) => {
+        const count = allEdges.filter(e => e.industry === key).length;
+        const pill = makePill(key, info.icon, info.label.split(' ')[0], count, info.accent);
+        pillsDiv.appendChild(pill);
+    });
+
+    // Check if customer_to_supplier exists in data
+    const hasCustSupp = allEdges.some(e => e.type === 'customer_to_supplier');
+    if (hasCustSupp) {
+        document.getElementById('chip-customer').style.display = '';
+    }
+
+    // Type chips
+    ['supply','dependency','substitute','customer'].forEach(id => {
+        const chip = document.getElementById(`chip-${id}`);
+        if (chip) chip.addEventListener('click', toggleTypeChip);
+    });
+
+    // Layer chips
+    const layerDiv = document.getElementById('layer-chips');
+    ['L1','L2','L3','L4','L5','L6'].forEach(l => {
+        const chip = document.createElement('span');
+        chip.className = 'chip chip-layer';
+        chip.dataset.layer = l;
+        chip.textContent = l;
+        chip.addEventListener('click', toggleLayerChip);
+        chip.addEventListener('mouseenter', updateLayerTooltip);
+        layerDiv.appendChild(chip);
+    });
+
+    // Search
+    document.getElementById('search-input').addEventListener('input', e => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+            searchQuery = e.target.value.trim().toLowerCase();
+            render();
+        }, 200);
+    });
+}
+
+function makePill(key, icon, shortLabel, count, accent) {
+    const pill = document.createElement('span');
+    pill.className = 'industry-pill';
+    pill.dataset.industry = key;
+    pill.innerHTML = `${icon} ${shortLabel} <span class="count-badge">${count}</span>`;
+    if (key === 'active') pill.classList.add('active');
+    pill.addEventListener('click', () => {
+        document.querySelectorAll('.industry-pill').forEach(p => {
+            p.classList.remove('active');
+            p.style.background = '';
+            p.style.borderColor = '';
+        });
+        pill.classList.add('active');
+        if (key !== 'all') {
+            pill.style.background = accent;
+            pill.style.borderColor = accent;
+        }
+        activeIndustry = key;
+        updateLayerChipTooltips();
+        render();
+    });
+    return pill;
+}
+
+function toggleTypeChip(e) {
+    const chip = e.currentTarget;
+    const type = chip.dataset.type;
+    if (activeTypes.has(type)) {
+        activeTypes.delete(type);
+        chip.classList.add('off');
+    } else {
+        activeTypes.add(type);
+        chip.classList.remove('off');
+    }
+    render();
+}
+
+function toggleLayerChip(e) {
+    const chip = e.currentTarget;
+    const layer = chip.dataset.layer;
+    if (activeLayers.has(layer)) {
+        activeLayers.delete(layer);
+        chip.classList.add('off');
+    } else {
+        activeLayers.add(layer);
+        chip.classList.remove('off');
+    }
+    render();
+}
+
+function updateLayerTooltip(e) {
+    updateLayerChipTooltips();
+}
+
+function updateLayerChipTooltips() {
+    const ind = activeIndustry === 'all' ? null : activeIndustry;
+    document.querySelectorAll('[data-layer]').forEach(chip => {
+        const l = chip.dataset.layer;
+        if (ind && LAYER_NAMES[ind] && LAYER_NAMES[ind][l]) {
+            chip.title = `${l}: ${LAYER_NAMES[ind][l]}`;
+        } else {
+            // Show all industries
+            const lines = Object.entries(LAYER_NAMES).map(([k, lns]) =>
+                lns[l] ? `${INDUSTRIES[k].icon} ${lns[l]}` : null
+            ).filter(Boolean);
+            chip.title = lines.join('\n');
+        }
+    });
+}
+
+// ── RENDER ────────────────────────────────────────────────────────────────────
+
+function getFilteredEdges() {
+    // Layers: if all 6 off, treat as all on
+    const layersAllOff = activeLayers.size === 0;
+
+    return allEdges.filter(e => {
+        if (activeIndustry !== 'all' && e.industry !== activeIndustry) return false;
+        if (!activeTypes.has(e.type)) return false;
+        if (!layersAllOff && !activeLayers.has(e.layer_from) && !activeLayers.has(e.layer_to)) return false;
+        if (searchQuery) {
+            const from = (e.from || '').toLowerCase();
+            const to   = (e.to   || '').toLowerCase();
+            if (!from.includes(searchQuery) && !to.includes(searchQuery)) return false;
+        }
+        return true;
+    });
+}
+
+function render() {
+    const filtered = getFilteredEdges();
+    document.getElementById('shown-count').textContent = filtered.length;
+
+    const content = document.getElementById('content');
+
+    if (filtered.length === 0) {
+        content.innerHTML = `
+            <div class="state-box">
+                <div class="state-icon">🔍</div>
+                <div class="state-title">No edges match current filters</div>
+                <div class="state-desc">Try adjusting your industry, type, layer, or search filters.</div>
+            </div>`;
+        return;
+    }
+
+    if (activeIndustry !== 'all') {
+        // Single industry — flat list
+        const list = buildEdgeList(filtered, false);
+        list.classList.add('standalone');
+        content.innerHTML = '';
+        content.appendChild(list);
+    } else {
+        // Group by industry
+        content.innerHTML = '';
+        const industryOrder = Object.keys(INDUSTRIES);
+        const grouped = {};
+        filtered.forEach(e => {
+            if (!grouped[e.industry]) grouped[e.industry] = [];
+            grouped[e.industry].push(e);
+        });
+        industryOrder.forEach(key => {
+            if (!grouped[key] || grouped[key].length === 0) return;
+            const info = INDUSTRIES[key];
+            const group = document.createElement('div');
+            group.className = 'industry-group';
+
+            const hdr = document.createElement('div');
+            hdr.className = 'industry-group-header';
+            hdr.style.background = info.accent;
+            hdr.innerHTML = `<span>${info.icon}</span><span>${info.label}</span><span class="group-count">${grouped[key].length}</span>`;
+            group.appendChild(hdr);
+
+            const list = buildEdgeList(grouped[key], false);
+            group.appendChild(list);
+            content.appendChild(group);
+        });
+    }
+}
+
+function buildEdgeList(edges, standalone) {
+    const list = document.createElement('div');
+    list.className = 'edge-list';
+    if (standalone) list.classList.add('standalone');
+
+    edges.forEach(e => {
+        const info = INDUSTRIES[e.industry];
+        const typeInfo = TYPE_INFO[e.type] || { label: e.type, cls: 'other' };
+        const snippet = (e.snippet || '').slice(0, 80) + ((e.snippet || '').length > 80 ? '…' : '');
+
+        const row = document.createElement('div');
+        row.className = 'edge-row';
+        row.style.background = ACCENT_BG[e.industry] || '';
+
+        // Left: entities
+        const entDiv = document.createElement('div');
+        entDiv.className = 'edge-entities';
+        entDiv.innerHTML = `
+            <span class="entity-name">${esc(e.from)}</span>
+            <span class="layer-badge">${esc(e.layer_from)}</span>
+            <span class="arrow-sep">→</span>
+            <span class="entity-name">${esc(e.to)}</span>
+            <span class="layer-badge">${esc(e.layer_to)}</span>
+        `;
+
+        // Center: type pill
+        const typePill = document.createElement('span');
+        typePill.className = `type-pill ${typeInfo.cls}`;
+        typePill.textContent = typeInfo.label;
+
+        // Right: icon + snippet
+        const rightDiv = document.createElement('div');
+        rightDiv.className = 'edge-right';
+        rightDiv.innerHTML = `
+            <span class="industry-icon-small">${info.icon}</span>
+            <span class="snippet-text" title="${esc(e.snippet || '')}">${esc(snippet)}</span>
+        `;
+
+        row.appendChild(entDiv);
+        row.appendChild(typePill);
+        row.appendChild(rightDiv);
+        list.appendChild(row);
+    });
+
+    return list;
+}
+
+function esc(str) {
+    return String(str)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;');
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+loadAll();
+</script>
+</body>
+</html>
