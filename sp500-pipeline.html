@@ -447,6 +447,136 @@
             .eco-arrow-col { display: none; }
             .coming-next-grid { grid-template-columns: 1fr; }
         }
+
+        /* ── Finance Supply Chain Map ──────────────────────── */
+        .finance-map-wrap {
+            background: white;
+            border-radius: 14px;
+            border: 1px solid #e8e8f0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .finance-map-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 20px;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0f9ff 100%);
+            border-bottom: 1px solid #e8e8f0;
+        }
+        .finance-map-title { font-weight: 700; font-size: 1.0em; color: #333; }
+        .finance-source-pill {
+            margin-left: auto;
+            background: #065f46;
+            color: white;
+            border-radius: 12px;
+            padding: 2px 10px;
+            font-size: 0.72em;
+            font-weight: 700;
+        }
+        .finance-map-body { padding: 16px 20px; }
+        .finance-layers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .finance-layer-card {
+            background: #fafafa;
+            border: 1px solid #e8e8f0;
+            border-radius: 10px;
+            padding: 10px 12px;
+        }
+        .finance-layer-tag {
+            display: inline-block;
+            border-radius: 4px;
+            padding: 1px 7px;
+            font-size: 0.69em;
+            font-weight: 700;
+            font-family: monospace;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .finance-layer-name-text {
+            font-size: 0.76em;
+            font-weight: 600;
+            color: #555;
+            vertical-align: middle;
+        }
+        .finance-layer-entities {
+            margin-top: 7px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .finance-entity {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            padding: 2px 7px;
+            font-size: 0.70em;
+            color: #444;
+        }
+        .finance-rel-sections { margin-top: 4px; }
+        .finance-rel-block { margin-bottom: 12px; }
+        .finance-rel-block:last-child { margin-bottom: 0; }
+        .finance-rel-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .frt-pill {
+            border-radius: 4px;
+            padding: 1px 8px;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        .frt-supply { background: #dbeafe; color: #1d4ed8; }
+        .frt-dep    { background: #fef3c7; color: #92400e; }
+        .frt-comp   { background: #f3e8ff; color: #6b21a8; }
+        .finance-edge-row {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            padding: 5px 0;
+            border-bottom: 1px solid #f7f7f7;
+            font-size: 0.82em;
+            flex-wrap: wrap;
+        }
+        .finance-edge-row:last-child { border-bottom: none; }
+        .fe-from { font-weight: 600; color: #0f172a; }
+        .fe-arrow { color: #94a3b8; font-size: 0.9em; flex-shrink: 0; }
+        .fe-to   { font-weight: 600; color: #0f172a; }
+        .fe-note { color: #64748b; font-size: 0.90em; }
+        .fe-lb {
+            display: inline-block;
+            font-size: 0.65em;
+            font-weight: 700;
+            font-family: monospace;
+            background: #f0f9ff;
+            color: #0891b2;
+            border: 1px solid #bae6fd;
+            border-radius: 3px;
+            padding: 0 4px;
+            margin-left: 2px;
+            vertical-align: middle;
+        }
+        @media (max-width: 900px) {
+            .finance-layers-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .finance-layers-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -751,6 +881,64 @@ function renderTable(tab) {
     }).join('');
 }
 
+const FINANCE_LAYERS = [
+    {id:'L1', name:'Capital Markets',           bg:'#dbeafe', tc:'#1d4ed8',
+     entities:['Goldman Sachs','CME Group','ICE','Fannie Mae','Freddie Mac','JPMorgan Chase']},
+    {id:'L2', name:'Commercial Banking',        bg:'#e0f2fe', tc:'#0369a1',
+     entities:['JPMorgan Chase','Bank of America','Capital One','Citibank','Synchrony','SoFi Technologies','Celtic Bank','Lead Bank','TD Bank']},
+    {id:'L3', name:'Insurance & Risk',          bg:'#fef3c7', tc:'#92400e',
+     entities:['Aflac Japan','Allstate','Chubb Limited','Japan Post Insurance','Renaissance Re','CEA']},
+    {id:'L4', name:'Asset Management',          bg:'#d1fae5', tc:'#065f46',
+     entities:['BlackRock','Goldman Sachs','SoFi Technologies','Affirm','AAM']},
+    {id:'L5', name:'Payments & Processing',     bg:'#ede9fe', tc:'#6d28d9',
+     entities:['Visa','Mastercard','American Express','UnionPay','JCB','Discover','Charles Schwab','Affirm']},
+    {id:'L6', name:'Fintech & Digital Finance', bg:'#fce7f3', tc:'#9d174d',
+     entities:['Amazon Web Services','Microsoft Azure','Apple','ADP','Galileo','Technisys','Klarna','Block']},
+];
+
+const FINANCE_SUPPLY = [
+    {from:'Celtic Bank',        lf:'L2', to:'Affirm',          lt:'L4', note:'originates substantially all Affirm consumer loans'},
+    {from:'Lead Bank',          lf:'L2', to:'Affirm',          lt:'L4', note:'secondary loan origination partner for Affirm'},
+    {from:'TD Bank',            lf:'L2', to:'Charles Schwab',  lt:'L5', note:'IDA agreement — sweeps uninvested brokerage cash to TD'},
+    {from:'Goldman Sachs',      lf:'L4', to:'Apple',           lt:'L6', note:'issues Apple Card (co-brand credit product)'},
+    {from:'Goldman Sachs',      lf:'L1', to:'CME Group',       lt:'L1', note:'executes & clears institutional trades on CME/ICE exchanges'},
+    {from:'AAM',                lf:'L4', to:'Aflac Japan',     lt:'L3', note:'manages Aflac Japan\'s investment portfolio'},
+    {from:'Amazon Web Services',lf:'L6', to:'BlackRock',       lt:'L4', note:'cloud infra for Aladdin risk & portfolio platform'},
+    {from:'Microsoft Azure',    lf:'L6', to:'BlackRock',       lt:'L4', note:'cloud for BlackRock corporate systems & Aladdin'},
+    {from:'CEA',                lf:'L3', to:'Allstate',        lt:'L3', note:'CA Earthquake Authority coverage offered to Allstate homeowners'},
+    {from:'Renaissance Re',     lf:'L3', to:'Allstate',        lt:'L3', note:'catastrophe reinsurance — Allstate recoverable'},
+    {from:'Tink',               lf:'L6', to:'Visa',            lt:'L5', note:'A2A open-banking network powers Visa-branded A2A products'},
+    {from:'Chubb Limited',      lf:'L3', to:'ADP',             lt:'L6', note:'reinsurance arrangements via ACE American Insurance (ADP Indemnity)'},
+];
+
+const FINANCE_DEPS = [
+    {from:'Microsoft',          lf:'L6', to:'BlackRock',             lt:'L4', note:'Aladdin runs on Microsoft infrastructure — critical cloud dependency'},
+    {from:'Japan Post Group',   lf:'L3', to:'Aflac Japan',           lt:'L3', note:'primary distribution alliance — Japan Post agent network'},
+    {from:'Japan Post Insurance',lf:'L3',to:'Aflac Japan',           lt:'L3', note:'distributes Aflac cancer insurance through Japan Post channels'},
+    {from:'Daido Life',         lf:'L3', to:'Aflac Japan',           lt:'L3', note:'~3,700 Daido agents sell Aflac products (alliance est. 2013)'},
+    {from:'Celtic Bank',        lf:'L2', to:'Affirm',                lt:'L6', note:'3-year loan program — loss of Celtic Bank would be existential'},
+    {from:'Fannie Mae',         lf:'L1', to:'SoFi Technologies',     lt:'L2', note:'GSE secondary market access underpins SoFi mortgage business'},
+    {from:'Freddie Mac',        lf:'L1', to:'SoFi Technologies',     lt:'L2', note:'GSE secondary market access underpins SoFi mortgage business'},
+    {from:'Visa',               lf:'L5', to:'Tink',                  lt:'L6', note:'Visa-owned open-banking subsidiary (acquired 2022, EU reach)'},
+    {from:'Charles Schwab',     lf:'L5', to:'TD Bank',               lt:'L2', note:'Schwab provides recordkeeping & support to TD Depository Institutions'},
+    {from:'Technisys',          lf:'L6', to:'Galileo',               lt:'L6', note:'both SoFi subsidiaries — mutual client concentration risk'},
+];
+
+const FINANCE_COMPETE = [
+    {from:'Visa',           lf:'L5', to:'Mastercard',       lt:'L5', note:'global payment network head-to-head'},
+    {from:'Visa',           lf:'L5', to:'American Express', lt:'L5', note:'network + card issuer overlap'},
+    {from:'UnionPay',       lf:'L5', to:'Visa',             lt:'L5', note:'dominant in China, expanding global footprint'},
+    {from:'JCB',            lf:'L5', to:'Mastercard',       lt:'L5', note:'Asia-originated network, global acceptance competition'},
+    {from:'Discover',       lf:'L5', to:'Mastercard',       lt:'L5', note:'US-focused network vs. global incumbents'},
+    {from:'Affirm',         lf:'L5', to:'Synchrony',        lt:'L2', note:'BNPL vs. traditional revolving credit (store cards)'},
+    {from:'Affirm',         lf:'L5', to:'J.P. Morgan Chase',lt:'L2', note:'BNPL vs. major bank credit cards'},
+    {from:'Affirm',         lf:'L5', to:'Klarna',           lt:'L6', note:'BNPL peer — installment lending at point of sale'},
+    {from:'Affirm',         lf:'L5', to:'Block',            lt:'L6', note:'BNPL peer — Square/Cash App installment products'},
+    {from:'Aflac Japan',    lf:'L3', to:'Dai-ichi Life',    lt:'L3', note:'Japanese supplemental cancer insurance market'},
+    {from:'Aflac Japan',    lf:'L3', to:'Daido Life',       lt:'L3', note:'distribution channel overlap (also an Aflac partner)'},
+    {from:'Huatai P&C',     lf:'L3', to:'Chubb International',lt:'L3',note:'China P&C insurance — Chubb\'s Huatai JV vs. standalone'},
+];
+
 const ECOSYSTEMS = [
     {
         icon: '🏬', name: 'Consumer & Retail',
@@ -889,6 +1077,65 @@ function renderPicksHtml(picks) {
     `).join('');
 }
 
+function renderFinanceHtml() {
+    const edgeRow = (e, arrowChar) => `
+        <div class="finance-edge-row">
+            <span class="fe-from">${e.from}<span class="fe-lb">${e.lf}</span></span>
+            <span class="fe-arrow">${arrowChar}</span>
+            <span class="fe-to">${e.to}<span class="fe-lb">${e.lt}</span></span>
+            <span class="fe-note">— ${e.note}</span>
+        </div>`;
+
+    const layersHtml = FINANCE_LAYERS.map(l => `
+        <div class="finance-layer-card">
+            <div>
+                <span class="finance-layer-tag" style="background:${l.bg};color:${l.tc}">${l.id}</span>
+                <span class="finance-layer-name-text">${l.name}</span>
+            </div>
+            <div class="finance-layer-entities">
+                ${l.entities.map(e => `<span class="finance-entity">${e}</span>`).join('')}
+            </div>
+        </div>`).join('');
+
+    const supplyHtml  = FINANCE_SUPPLY.map(e => edgeRow(e, '→')).join('');
+    const depsHtml    = FINANCE_DEPS.map(e => edgeRow(e, '⟶')).join('');
+    const competeHtml = FINANCE_COMPETE.map(e => edgeRow(e, '↔')).join('');
+
+    return `<div class="finance-map-wrap">
+        <div class="finance-map-header">
+            <span class="eco-icon">🏦</span>
+            <span class="finance-map-title">Finance Industry Supply Chain</span>
+            <span class="finance-source-pill">142 edges · 27 companies · SEC EDGAR</span>
+        </div>
+        <div class="finance-map-body">
+            <div class="finance-layers-grid">${layersHtml}</div>
+            <div class="finance-rel-sections">
+                <div class="finance-rel-block">
+                    <div class="finance-rel-header">
+                        <span class="frt-pill frt-supply">Supply</span>
+                        Key supply-chain flows
+                    </div>
+                    ${supplyHtml}
+                </div>
+                <div class="finance-rel-block">
+                    <div class="finance-rel-header">
+                        <span class="frt-pill frt-dep">Dependency</span>
+                        Critical dependencies
+                    </div>
+                    ${depsHtml}
+                </div>
+                <div class="finance-rel-block">
+                    <div class="finance-rel-header">
+                        <span class="frt-pill frt-comp">Compete</span>
+                        Competitive landscape
+                    </div>
+                    ${competeHtml}
+                </div>
+            </div>
+        </div>
+    </div>`;
+}
+
 function renderEVCDM() {
     const wrap = document.getElementById('evcdm-map');
     if (!wrap) return;
@@ -896,6 +1143,7 @@ function renderEVCDM() {
     let html = `<div class="evcdm-intro">
         <strong>Ecosystem Value Chain & Dependency Map</strong> — all 29 picks positioned within 6 upstream–core–downstream value chains.
         Sectors: Consumer & Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare.
+        Plus: <strong>Finance Industry Supply Chain</strong> — 142 LLM-verified edges from 27 SEC 10-K filings across 6 finance layers.
     </div>`;
 
     for (const eco of ECOSYSTEMS) {
@@ -935,6 +1183,8 @@ function renderEVCDM() {
             <span>${c.detail}</span>
         </div>`).join('')}
     </div>`;
+
+    html += renderFinanceHtml();
 
     wrap.innerHTML = html;
 }
