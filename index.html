@@ -525,6 +525,41 @@
                     🔬 View Pipeline Results →
                 </a>
             </div>
+
+            <div class="stat-card" role="region" aria-labelledby="evcdm-heading" style="padding: 25px;">
+                <h2 id="evcdm-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🕸 Supply Chain Intel</h2>
+                <div style="background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
+                    <div style="text-align: center; margin-bottom: 10px;">
+                        <div style="font-size: 2em; font-weight: bold; color: white;">535</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">Verified Edges</div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px;">
+                        <div style="background: rgba(124,58,237,0.5); padding: 5px 2px; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.9em;">🤖</div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.62em; margin-top: 1px;">AI</div>
+                        </div>
+                        <div style="background: rgba(8,145,178,0.5); padding: 5px 2px; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.9em;">☁️</div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.62em; margin-top: 1px;">Cloud</div>
+                        </div>
+                        <div style="background: rgba(217,119,6,0.5); padding: 5px 2px; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.9em;">⚡</div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.62em; margin-top: 1px;">Energy</div>
+                        </div>
+                        <div style="background: rgba(5,150,105,0.5); padding: 5px 2px; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.9em;">🏦</div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.62em; margin-top: 1px;">Finance</div>
+                        </div>
+                        <div style="background: rgba(225,29,72,0.5); padding: 5px 2px; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.9em;">🏥</div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.62em; margin-top: 1px;">Health</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="evcdm-viewer.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%); color: white;">
+                    🕸 View Supply Chain Map →
+                </a>
+            </div>
         </div>
 
         <!-- Today's Top Picks Section -->
@@ -563,12 +598,20 @@
                     29 merged results. Verdicts: <strong>BUY</strong> (actionable), <strong>WATCH — Entry</strong> (great business, bad timing — near 52w high),
                     <strong>WATCH — Fundamental</strong> (monitor for improvement). Each row expands to show dimension scores, buy thesis, and risk flags.
                 </p>
-                <p>
+                <p style="margin-bottom: 15px;">
                     <strong><a href="sp500-pipeline.html" style="color: #0891b2; text-decoration: none;">🗺 Ecosystem Map</a>:</strong>
                     Ecosystem Value Chain &amp; Dependency Map — positions all 29 pipeline picks within their upstream–core–downstream value chains
                     across 6 sectors: Consumer &amp; Retail, Travel &amp; Hospitality, Industrial &amp; Infrastructure, Business Services &amp; Fintech,
                     AI &amp; Cloud Computing, and Healthcare &amp; MedTech. Each sector card shows intra-sector dependencies;
                     a cross-ecosystem panel highlights inter-sector links (e.g. EME builds hyperscaler data centers, PYPL processes ABNB/BKNG bookings).
+                </p>
+                <p>
+                    <strong><a href="evcdm-viewer.html" style="color: #0891b2; text-decoration: none;">🕸 Supply Chain Intelligence</a>:</strong>
+                    535 LLM-verified supply-chain edges extracted from SEC 10-K filings across 5 industries
+                    (AI Technology Stack, Cloud Computing, Energy Value Chain, Financial Services, Healthcare).
+                    Each edge — supply flow, critical dependency, or competitive substitute — is sourced from a real
+                    10-K disclosure and classified by qwen2.5:14b with a 7-rule validation filter.
+                    Filter by industry, layer (L1–L6), relationship type, or search by entity name.
                 </p>
             </div>
         </div>
