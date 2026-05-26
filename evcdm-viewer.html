@@ -244,17 +244,41 @@
         }
 
         .edge-row {
+            border-bottom: 1px solid #f1f5f9;
+            transition: background 0.1s;
+        }
+        .edge-row:last-child { border-bottom: none; }
+        .edge-row:hover { background: rgba(0,0,0,0.025); }
+        .edge-row.expandable { cursor: pointer; }
+
+        .edge-row-top {
             display: grid;
             grid-template-columns: 1fr auto auto;
             align-items: center;
             gap: 12px;
             padding: 10px 16px;
-            border-bottom: 1px solid #f1f5f9;
-            transition: background 0.1s;
             min-width: 0;
         }
-        .edge-row:last-child { border-bottom: none; }
-        .edge-row:hover { background: rgba(0,0,0,0.025); }
+
+        .edge-chevron {
+            font-size: 0.65em;
+            color: #94a3b8;
+            transition: transform 0.18s;
+            flex-shrink: 0;
+            margin-left: 2px;
+            user-select: none;
+        }
+        .edge-row.expanded .edge-chevron { transform: rotate(90deg); }
+
+        .edge-snippet-full {
+            display: none;
+            padding: 4px 16px 11px 16px;
+            font-size: 0.81em;
+            color: #475569;
+            line-height: 1.55;
+            border-top: 1px dashed #e2e8f0;
+        }
+        .edge-row.expanded .edge-snippet-full { display: block; }
 
         .edge-entities {
             display: flex;
@@ -360,7 +384,7 @@
             .filter-label { min-width: auto; }
             .search-input { width: 100%; }
 
-            .edge-row {
+            .edge-row-top {
                 grid-template-columns: 1fr;
                 gap: 6px;
             }
@@ -718,11 +742,17 @@ function buildEdgeList(edges, standalone) {
     edges.forEach(e => {
         const info = INDUSTRIES[e.industry];
         const typeInfo = TYPE_INFO[e.type] || { label: e.type, cls: 'other' };
-        const snippet = (e.snippet || '').slice(0, 80) + ((e.snippet || '').length > 80 ? '…' : '');
+        const full = e.snippet || '';
+        const hasLong = full.length > 80;
+        const preview = hasLong ? full.slice(0, 80) + '…' : full;
 
         const row = document.createElement('div');
-        row.className = 'edge-row';
+        row.className = 'edge-row' + (hasLong ? ' expandable' : '');
         row.style.background = ACCENT_BG[e.industry] || '';
+
+        // Top bar (3-column grid)
+        const top = document.createElement('div');
+        top.className = 'edge-row-top';
 
         // Left: entities
         const entDiv = document.createElement('div');
@@ -740,17 +770,29 @@ function buildEdgeList(edges, standalone) {
         typePill.className = `type-pill ${typeInfo.cls}`;
         typePill.textContent = typeInfo.label;
 
-        // Right: icon + snippet
+        // Right: icon + snippet preview + optional chevron
         const rightDiv = document.createElement('div');
         rightDiv.className = 'edge-right';
         rightDiv.innerHTML = `
             <span class="industry-icon-small">${info.icon}</span>
-            <span class="snippet-text" title="${esc(e.snippet || '')}">${esc(snippet)}</span>
+            <span class="snippet-text">${esc(preview)}</span>
+            ${hasLong ? '<span class="edge-chevron">▶</span>' : ''}
         `;
 
-        row.appendChild(entDiv);
-        row.appendChild(typePill);
-        row.appendChild(rightDiv);
+        top.appendChild(entDiv);
+        top.appendChild(typePill);
+        top.appendChild(rightDiv);
+        row.appendChild(top);
+
+        // Expandable full snippet
+        if (hasLong) {
+            const expand = document.createElement('div');
+            expand.className = 'edge-snippet-full';
+            expand.textContent = full;
+            row.appendChild(expand);
+            row.addEventListener('click', () => row.classList.toggle('expanded'));
+        }
+
         list.appendChild(row);
     });
 
