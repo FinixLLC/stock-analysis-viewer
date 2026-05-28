@@ -455,19 +455,21 @@
 // ── CONFIG ────────────────────────────────────────────────────────────────────
 
 const INDUSTRIES = {
-    ai:         { label: 'AI Technology Stack',           icon: '🤖', accent: '#7c3aed' },
-    cloud:      { label: 'Cloud Computing Stack',         icon: '☁️',  accent: '#0891b2' },
-    energy:     { label: 'Energy Value Chain',            icon: '⚡',  accent: '#d97706' },
-    finance:    { label: 'Financial Services Value Chain',icon: '🏦', accent: '#059669' },
-    healthcare: { label: 'Healthcare Value Chain',        icon: '🏥', accent: '#e11d48' },
+    ai:            { label: 'AI Technology Stack',           icon: '🤖', accent: '#7c3aed' },
+    cloud:         { label: 'Cloud Computing Stack',         icon: '☁️',  accent: '#0891b2' },
+    energy:        { label: 'Energy Value Chain',            icon: '⚡',  accent: '#d97706' },
+    finance:       { label: 'Financial Services Value Chain',icon: '🏦', accent: '#059669' },
+    healthcare:    { label: 'Healthcare Value Chain',        icon: '🏥', accent: '#e11d48' },
+    semiconductor: { label: 'Semiconductor Value Chain',     icon: '💾', accent: '#1d4ed8' },
 };
 
 const LAYER_NAMES = {
-    ai:         { L1:'Energy & Resources', L2:'Semiconductor Equipment', L3:'Foundry & Manufacturing', L4:'Chip Design & Memory', L5:'Cloud & Infrastructure', L6:'Software & End Users' },
-    cloud:      { L1:'Physical Infrastructure', L2:'Network & Connectivity', L3:'Compute & Storage HW', L4:'Cloud Platforms (IaaS)', L5:'Cloud Services (PaaS)', L6:'SaaS & End Users' },
-    energy:     { L1:'Upstream E&P', L2:'Energy Equipment', L3:'Midstream', L4:'Refining & Manufacturing', L5:'Power Generation', L6:'Transmission & End Users' },
-    finance:    { L1:'Capital Markets', L2:'Commercial Banking', L3:'Insurance & Risk', L4:'Asset Management', L5:'Payments & Processing', L6:'Fintech & Digital Finance' },
-    healthcare: { L1:'Drug Discovery & R&D', L2:'Devices & Life Sciences Tools', L3:'Pharma Manufacturing & Distribution', L4:'Payers', L5:'Care Providers', L6:'Patients & Outcomes' },
+    ai:            { L1:'Energy & Resources', L2:'Semiconductor Equipment', L3:'Foundry & Manufacturing', L4:'Chip Design & Memory', L5:'Cloud & Infrastructure', L6:'Software & End Users' },
+    cloud:         { L1:'Physical Infrastructure', L2:'Network & Connectivity', L3:'Compute & Storage HW', L4:'Cloud Platforms (IaaS)', L5:'Cloud Services (PaaS)', L6:'SaaS & End Users' },
+    energy:        { L1:'Upstream E&P', L2:'Energy Equipment', L3:'Midstream', L4:'Refining & Manufacturing', L5:'Power Generation', L6:'Transmission & End Users' },
+    finance:       { L1:'Capital Markets', L2:'Commercial Banking', L3:'Insurance & Risk', L4:'Asset Management', L5:'Payments & Processing', L6:'Fintech & Digital Finance' },
+    healthcare:    { L1:'Drug Discovery & R&D', L2:'Devices & Life Sciences Tools', L3:'Pharma Manufacturing & Distribution', L4:'Payers', L5:'Care Providers', L6:'Patients & Outcomes' },
+    semiconductor: { L1:'Raw Materials', L2:'Wafer Manufacturing', L3:'Semiconductor Equipment', L4:'Chip Design / Fabless', L5:'Foundry / Manufacturing', L6:'End Applications' },
 };
 
 const TYPE_INFO = {

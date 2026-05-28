@@ -544,10 +544,10 @@
                 <p style="font-size: 0.82em; color: #888; margin-bottom: 16px;">SEC EDGAR 10-K · LLM-extracted edges · 7-rule validation · qwen2.5:14b</p>
                 <div style="background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%); padding: 18px; border-radius: 14px; margin-bottom: 16px;">
                     <div style="text-align: center; margin-bottom: 12px;">
-                        <div style="font-size: 2.6em; font-weight: bold; color: white; line-height: 1;">535</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em; margin-top: 4px;">Verified Supply-Chain Edges</div>
+                        <div style="font-size: 2.6em; font-weight: bold; color: white; line-height: 1;" id="evcdm-total-count">596</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em; margin-top: 4px;">Verified Supply-Chain Edges · 6 Industries</div>
                     </div>
-                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
                         <div style="background: rgba(124,58,237,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
                             <div style="font-size: 1.1em;">🤖</div>
                             <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">AI</div>
@@ -572,6 +572,11 @@
                             <div style="font-size: 1.1em;">🏥</div>
                             <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Health</div>
                             <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">156</div>
+                        </div>
+                        <div style="background: rgba(29,78,216,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 1.1em;">💾</div>
+                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Semis</div>
+                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;" id="semi-edge-count">61</div>
                         </div>
                     </div>
                 </div>
@@ -627,8 +632,8 @@
                 </p>
                 <p>
                     <strong><a href="evcdm-viewer.html" style="color: #0891b2; text-decoration: none;">🕸 Supply Chain Intelligence</a>:</strong>
-                    535 LLM-verified supply-chain edges extracted from SEC 10-K filings across 5 industries
-                    (AI Technology Stack, Cloud Computing, Energy Value Chain, Financial Services, Healthcare).
+                    596 LLM-verified supply-chain edges extracted from SEC 10-K filings across 6 industries
+                    (AI Technology Stack, Cloud Computing, Energy Value Chain, Financial Services, Healthcare, and Semiconductor Value Chain).
                     Each edge — supply flow, critical dependency, or competitive substitute — is sourced from a real
                     10-K disclosure and classified by qwen2.5:14b with a 7-rule validation filter.
                     Filter by industry, layer (L1–L6), relationship type, or search by entity name.
