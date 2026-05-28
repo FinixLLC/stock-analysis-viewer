@@ -577,12 +577,8 @@
         @media (max-width: 600px) {
             .finance-layers-grid { grid-template-columns: 1fr; }
         }
-        .semi-map-header {
-            background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 100%);
-        }
-        .semi-source-pill {
+        .ind-source-pill {
             margin-left: auto;
-            background: #1d4ed8;
             color: white;
             border-radius: 12px;
             padding: 2px 10px;
@@ -1152,18 +1148,23 @@ async function renderEVCDM() {
     const wrap = document.getElementById('evcdm-map');
     if (!wrap) return;
 
-    // Fetch semiconductor edges from the shared JSON (no data duplication)
-    let semiEdges = [];
-    try {
-        const res = await fetch('evcdm/semiconductor.json');
-        if (res.ok) semiEdges = await res.json();
-    } catch (_) {}
+    // Fetch all LLM-extracted industry edges in parallel (single source, no duplication)
+    const fetchEdges = async key => {
+        try { const r = await fetch(`evcdm/${key}.json`); return r.ok ? r.json() : []; }
+        catch (_) { return []; }
+    };
+    const [aiEdges, cloudEdges, energyEdges, healthcareEdges, semiEdges] = await Promise.all([
+        fetchEdges('ai'), fetchEdges('cloud'), fetchEdges('energy'),
+        fetchEdges('healthcare'), fetchEdges('semiconductor'),
+    ]);
+    const llmTotal = aiEdges.length + cloudEdges.length + energyEdges.length +
+                     healthcareEdges.length + semiEdges.length + 142; // 142 = Finance (static)
 
     let html = `<div class="evcdm-intro">
         <strong>Ecosystem Value Chain & Dependency Map</strong> — all 29 picks positioned within 6 upstream–core–downstream value chains.
-        Sectors: Consumer & Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare.
-        Plus: <strong>Finance</strong> (142 edges) &amp; <strong>Semiconductor</strong> (${semiEdges.length} edges) supply chains — LLM-verified from SEC 10-K filings.
-        &nbsp;·&nbsp; <a href="evcdm-viewer.html" style="color:#0891b2;font-weight:700;">Open full EVCDM viewer →</a> (596 edges · 6 industries)
+        Sectors: Consumer &amp; Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare.
+        Plus: <strong>${llmTotal} LLM-verified edges</strong> across 6 industries from SEC 10-K filings.
+        &nbsp;·&nbsp; <a href="evcdm-viewer.html" style="color:#0891b2;font-weight:700;">Open full EVCDM viewer →</a>
     </div>`;
 
     for (const eco of ECOSYSTEMS) {
@@ -1205,48 +1206,99 @@ async function renderEVCDM() {
     </div>`;
 
     html += renderFinanceHtml();
-    html += renderSemiHtml(semiEdges);
+    html += renderIndustrySection(IND_CONFIGS.ai,           aiEdges);
+    html += renderIndustrySection(IND_CONFIGS.cloud,        cloudEdges);
+    html += renderIndustrySection(IND_CONFIGS.energy,       energyEdges);
+    html += renderIndustrySection(IND_CONFIGS.healthcare,   healthcareEdges);
+    html += renderIndustrySection(IND_CONFIGS.semiconductor, semiEdges);
 
     wrap.innerHTML = html;
 }
 
-const SEMI_LAYERS = [
-    {id:'L1', name:'Raw Materials',         bg:'#fef9c3', tc:'#713f12'},
-    {id:'L2', name:'Wafer Manufacturing',   bg:'#dcfce7', tc:'#14532d'},
-    {id:'L3', name:'Semiconductor Equip.',  bg:'#dbeafe', tc:'#1e3a8a'},
-    {id:'L4', name:'Chip Design / Fabless', bg:'#ede9fe', tc:'#4c1d95'},
-    {id:'L5', name:'Foundry / Mfg.',        bg:'#fce7f3', tc:'#831843'},
-    {id:'L6', name:'End Applications',      bg:'#e0f2fe', tc:'#0c4a6e'},
-];
+const IND_CONFIGS = {
+    ai: {
+        icon: '🤖', title: 'AI Technology Stack',
+        headerBg: 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%)', pillBg: '#6d28d9',
+        layers: [
+            {id:'L1', name:'Energy & Resources',       bg:'#fef3c7', tc:'#92400e'},
+            {id:'L2', name:'Semiconductor Equipment',  bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L3', name:'Foundry & Manufacturing',  bg:'#dcfce7', tc:'#14532d'},
+            {id:'L4', name:'Chip Design & Memory',     bg:'#ede9fe', tc:'#4c1d95'},
+            {id:'L5', name:'Cloud & Infrastructure',   bg:'#e0f2fe', tc:'#0c4a6e'},
+            {id:'L6', name:'Software & End Users',     bg:'#fce7f3', tc:'#831843'},
+        ],
+    },
+    cloud: {
+        icon: '☁️', title: 'Cloud Computing Stack',
+        headerBg: 'linear-gradient(135deg, #ecfeff 0%, #e0f2fe 100%)', pillBg: '#0891b2',
+        layers: [
+            {id:'L1', name:'Physical Infrastructure',  bg:'#f1f5f9', tc:'#334155'},
+            {id:'L2', name:'Network & Connectivity',   bg:'#e0f2fe', tc:'#0369a1'},
+            {id:'L3', name:'Compute & Storage HW',     bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L4', name:'Cloud Platforms (IaaS)',   bg:'#ecfeff', tc:'#155e75'},
+            {id:'L5', name:'Cloud Services (PaaS)',    bg:'#cffafe', tc:'#164e63'},
+            {id:'L6', name:'SaaS & End Users',         bg:'#f0fdf4', tc:'#14532d'},
+        ],
+    },
+    energy: {
+        icon: '⚡', title: 'Energy Value Chain',
+        headerBg: 'linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%)', pillBg: '#b45309',
+        layers: [
+            {id:'L1', name:'Upstream E&P',             bg:'#fef9c3', tc:'#713f12'},
+            {id:'L2', name:'Energy Equipment',         bg:'#fef3c7', tc:'#92400e'},
+            {id:'L3', name:'Midstream',                bg:'#ffedd5', tc:'#7c2d12'},
+            {id:'L4', name:'Refining & Manufacturing', bg:'#fee2e2', tc:'#7f1d1d'},
+            {id:'L5', name:'Power Generation',         bg:'#fde68a', tc:'#78350f'},
+            {id:'L6', name:'Transmission & End Users', bg:'#d1fae5', tc:'#064e3b'},
+        ],
+    },
+    healthcare: {
+        icon: '🏥', title: 'Healthcare Value Chain',
+        headerBg: 'linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%)', pillBg: '#be123c',
+        layers: [
+            {id:'L1', name:'Drug Discovery & R&D',        bg:'#fce7f3', tc:'#831843'},
+            {id:'L2', name:'Devices & Life Sciences',     bg:'#ede9fe', tc:'#4c1d95'},
+            {id:'L3', name:'Pharma Mfg. & Distribution',  bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L4', name:'Payers',                      bg:'#dcfce7', tc:'#14532d'},
+            {id:'L5', name:'Care Providers',              bg:'#e0f2fe', tc:'#0c4a6e'},
+            {id:'L6', name:'Patients & Outcomes',         bg:'#fff7ed', tc:'#7c2d12'},
+        ],
+    },
+    semiconductor: {
+        icon: '💾', title: 'Semiconductor Value Chain',
+        headerBg: 'linear-gradient(135deg, #eff6ff 0%, #eef2ff 100%)', pillBg: '#1d4ed8',
+        layers: [
+            {id:'L1', name:'Raw Materials',            bg:'#fef9c3', tc:'#713f12'},
+            {id:'L2', name:'Wafer Manufacturing',      bg:'#dcfce7', tc:'#14532d'},
+            {id:'L3', name:'Semiconductor Equip.',     bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L4', name:'Chip Design / Fabless',    bg:'#ede9fe', tc:'#4c1d95'},
+            {id:'L5', name:'Foundry / Mfg.',           bg:'#fce7f3', tc:'#831843'},
+            {id:'L6', name:'End Applications',         bg:'#e0f2fe', tc:'#0c4a6e'},
+        ],
+    },
+};
 
-function renderSemiHtml(edges) {
+function renderIndustrySection(cfg, edges) {
     if (!edges || edges.length === 0) return '';
 
-    const edgeRow = (e, arrowChar) => `
+    const edgeRow = (e, arrow) => `
         <div class="finance-edge-row">
             <span class="fe-from">${e.from}<span class="fe-lb">${e.layer_from || ''}</span></span>
-            <span class="fe-arrow">${arrowChar}</span>
+            <span class="fe-arrow">${arrow}</span>
             <span class="fe-to">${e.to}<span class="fe-lb">${e.layer_to || ''}</span></span>
             <span class="fe-note">— ${(e.snippet || '').slice(0, 120)}</span>
         </div>`;
 
-    // Collect unique entities per layer from edges
-    const layerEntities = {};
+    // Collect unique entities per layer from both sides of every edge
+    const layerEnts = {};
     for (const e of edges) {
-        if (e.layer_from) {
-            if (!layerEntities[e.layer_from]) layerEntities[e.layer_from] = new Set();
-            layerEntities[e.layer_from].add(e.from);
-        }
-        if (e.layer_to) {
-            if (!layerEntities[e.layer_to]) layerEntities[e.layer_to] = new Set();
-            layerEntities[e.layer_to].add(e.to);
-        }
+        if (e.layer_from) { (layerEnts[e.layer_from] = layerEnts[e.layer_from] || new Set()).add(e.from); }
+        if (e.layer_to)   { (layerEnts[e.layer_to]   = layerEnts[e.layer_to]   || new Set()).add(e.to);   }
     }
 
-    const layersHtml = SEMI_LAYERS.map(l => {
-        const ents = [...(layerEntities[l.id] || [])].slice(0, 8);
-        return `
-        <div class="finance-layer-card">
+    const layersHtml = cfg.layers.map(l => {
+        const ents = [...(layerEnts[l.id] || [])].slice(0, 8);
+        return `<div class="finance-layer-card">
             <div>
                 <span class="finance-layer-tag" style="background:${l.bg};color:${l.tc}">${l.id}</span>
                 <span class="finance-layer-name-text">${l.name}</span>
@@ -1257,47 +1309,27 @@ function renderSemiHtml(edges) {
         </div>`;
     }).join('');
 
-    const supply    = edges.filter(e => e.type === 'supplier_to_customer');
-    const deps      = edges.filter(e => e.type === 'critical_dependency');
-    const compete   = edges.filter(e => e.type === 'substitute');
+    const supply  = edges.filter(e => e.type === 'supplier_to_customer');
+    const deps    = edges.filter(e => e.type === 'critical_dependency');
+    const compete = edges.filter(e => e.type === 'substitute');
 
-    const supplyHtml  = supply.slice(0, 12).map(e => edgeRow(e, '→')).join('');
-    const depsHtml    = deps.slice(0, 10).map(e => edgeRow(e, '⟶')).join('');
-    const competeHtml = compete.slice(0, 8).map(e => edgeRow(e, '↔')).join('');
+    const relHtml = [
+        supply.length  ? `<div class="finance-rel-block"><div class="finance-rel-header"><span class="frt-pill frt-supply">Supply</span> Key supply-chain flows</div>${supply.slice(0,12).map(e => edgeRow(e,'→')).join('')}</div>` : '',
+        deps.length    ? `<div class="finance-rel-block"><div class="finance-rel-header"><span class="frt-pill frt-dep">Dependency</span> Critical dependencies</div>${deps.slice(0,10).map(e => edgeRow(e,'⟶')).join('')}</div>` : '',
+        compete.length ? `<div class="finance-rel-block"><div class="finance-rel-header"><span class="frt-pill frt-comp">Compete</span> Competitive / substitute</div>${compete.slice(0,8).map(e => edgeRow(e,'↔')).join('')}</div>` : '',
+    ].join('');
 
     const companies = new Set([...edges.map(e => e.from), ...edges.map(e => e.to)]).size;
 
     return `<div class="finance-map-wrap">
-        <div class="finance-map-header semi-map-header">
-            <span class="eco-icon">💾</span>
-            <span class="finance-map-title">Semiconductor Value Chain</span>
-            <span class="semi-source-pill">${edges.length} edges · ${companies} companies · SEC EDGAR</span>
+        <div class="finance-map-header" style="background:${cfg.headerBg}">
+            <span class="eco-icon">${cfg.icon}</span>
+            <span class="finance-map-title">${cfg.title}</span>
+            <span class="ind-source-pill" style="background:${cfg.pillBg}">${edges.length} edges · ${companies} companies · SEC EDGAR</span>
         </div>
         <div class="finance-map-body">
             <div class="finance-layers-grid">${layersHtml}</div>
-            <div class="finance-rel-sections">
-                ${supply.length ? `<div class="finance-rel-block">
-                    <div class="finance-rel-header">
-                        <span class="frt-pill frt-supply">Supply</span>
-                        Key supply-chain flows
-                    </div>
-                    ${supplyHtml}
-                </div>` : ''}
-                ${deps.length ? `<div class="finance-rel-block">
-                    <div class="finance-rel-header">
-                        <span class="frt-pill frt-dep">Dependency</span>
-                        Critical dependencies
-                    </div>
-                    ${depsHtml}
-                </div>` : ''}
-                ${compete.length ? `<div class="finance-rel-block">
-                    <div class="finance-rel-header">
-                        <span class="frt-pill frt-comp">Compete</span>
-                        Competitive / substitute
-                    </div>
-                    ${competeHtml}
-                </div>` : ''}
-            </div>
+            <div class="finance-rel-sections">${relHtml}</div>
         </div>
     </div>`;
 }
