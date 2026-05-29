@@ -1,0 +1,278 @@
+[
+  {
+    "_id": {
+      "$oid": "6a193462db8c109076a971be"
+    },
+    "from": "Lockheed Martin",
+    "to": "U.S. Department of Defense",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "Orion Multi-Purpose Crew Vehicle (Orion), NASA\u2019s next generation exploration-class crewed vehicle for human exploration to the Moon and throughout the solar system."
+  },
+  {
+    "_id": {
+      "$oid": "6a193462db8c109076a971bf"
+    },
+    "from": "Northrop Grumman",
+    "to": "U.S. Department of Defense",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "Next Generation Overhead Persistent Infrared (Next Gen OPIR) system, which provides the U.S. Space Force with enhanced worldwide missile warning capabilities."
+  },
+  {
+    "_id": {
+      "$oid": "6a1935acdb8c109076a971c9"
+    },
+    "from": "Collins Aerospace",
+    "to": "Boeing",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "Collins\u2019 largest commercial customers are Boeing and Airbus"
+  },
+  {
+    "_id": {
+      "$oid": "6a1935acdb8c109076a971cb"
+    },
+    "from": "Collins Aerospace",
+    "to": "Federal Aviation Administration (FAA)",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "Collins was awarded a contract by the Federal Aviation Administration"
+  },
+  {
+    "_id": {
+      "$oid": "6a1935acdb8c109076a971cc"
+    },
+    "from": "Collins Aerospace",
+    "to": "U.S. Navy",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "Collins was selected to be the primary subcontractor for the U.S. Navy\u2019s solution"
+  },
+  {
+    "_id": {
+      "$oid": "6a1935acdb8c109076a971cd"
+    },
+    "from": "Collins Aerospace",
+    "to": "European Union\u2019s Clean Aviation Joint Undertaking (Clean Aviation)",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "Collins was selected by the European Union\u2019s Clean Aviation Joint Undertaking"
+  },
+  {
+    "_id": {
+      "$oid": "6a1935c0db8c109076a971cf"
+    },
+    "from": "Pratt & Whitney",
+    "to": "Airbus",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L2",
+    "confidence": 0.95,
+    "snippet": "Pratt & Whitney\u2019s largest commercial customer by sales is Airbus"
+  },
+  {
+    "_id": {
+      "$oid": "6a1935c0db8c109076a971d0"
+    },
+    "from": "Pratt & Whitney",
+    "to": "Lockheed Martin",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L2",
+    "confidence": 0.95,
+    "snippet": "Pratt & Whitney produces and sustains the F135 engine for the U.S. government\u2019s F-35 Joint Program Office to exclusively power the single-engine F-35 Lightning II fifth generation aircraft (commonly k"
+  },
+  {
+    "_id": {
+      "$oid": "6a1936cddb8c109076a971d2"
+    },
+    "from": "Northrop Grumman",
+    "to": "Lockheed Martin",
+    "type": "critical_dependency",
+    "layer_from": "L3",
+    "layer_to": "L2",
+    "confidence": 0.85,
+    "snippet": "F-35 fire control radar and Distributed Aperture System (DAS)"
+  },
+  {
+    "_id": {
+      "$oid": "6a1936cddb8c109076a971d3"
+    },
+    "from": "Northrop Grumman",
+    "to": "Lockheed Martin",
+    "type": "critical_dependency",
+    "layer_from": "L3",
+    "layer_to": "L2",
+    "confidence": 0.85,
+    "snippet": "F-35 Communications, Navigation and Identification (CNI) integrated avionics system"
+  },
+  {
+    "_id": {
+      "$oid": "6a193802db8c109076a971d6"
+    },
+    "from": "NASSCO",
+    "to": "DSEC Co., Ltd",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L1",
+    "confidence": 0.85,
+    "snippet": "NASSCO has partnered with a leading South Korean ship design and equipment procurement company, DSEC Co., Ltd"
+  },
+  {
+    "_id": {
+      "$oid": "6a193a57db8c109076a971d8"
+    },
+    "from": "HII",
+    "to": "U.S. Navy",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "We are the sole builder of amphibious assault ships and one of two builders of surface combatants for the U.S. Navy."
+  },
+  {
+    "_id": {
+      "$oid": "6a193a57db8c109076a971d9"
+    },
+    "from": "HII",
+    "to": "U.S. Coast Guard",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "The flagship of this program is the Legend class NSC, a multi-mission platform we designed."
+  },
+  {
+    "_id": {
+      "$oid": "6a193a57db8c109076a971da"
+    },
+    "from": "HII",
+    "to": "U.S. Navy",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "We are currently constructing Bougainville (LHA 8) and Fallujah (LHA 9)."
+  },
+  {
+    "_id": {
+      "$oid": "6a193a57db8c109076a971db"
+    },
+    "from": "HII",
+    "to": "U.S. Navy",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "We are currently constructing Jeremiah Denton (DDG 129), George M. Neal (DDG 131), Sam Nunn (DDG 133), and Thad Cochran (DDG 135)."
+  },
+  {
+    "_id": {
+      "$oid": "6a193d59db8c109076a971e1"
+    },
+    "from": "Kratos",
+    "to": "Northrop Grumman",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Kratos\u2019 engine and propulsion teams are also recognized as industry leaders in the design, engineering and development of hypersonic, space and supersonic propulsion systems"
+  },
+  {
+    "_id": {
+      "$oid": "6a193d59db8c109076a971e2"
+    },
+    "from": "Kratos",
+    "to": "Rocket Lab",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Kratos\u2019 engine and propulsion teams are also recognized as industry leaders in the design, engineering and development of hypersonic, space and supersonic propulsion systems"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971e7"
+    },
+    "from": "Rocket Lab",
+    "to": "Lockheed Martin",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971e8"
+    },
+    "from": "Rocket Lab",
+    "to": "Northrop Grumman",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971e9"
+    },
+    "from": "Rocket Lab",
+    "to": "Boeing",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971ea"
+    },
+    "from": "Rocket Lab",
+    "to": "General Dynamics",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971eb"
+    },
+    "from": "Rocket Lab",
+    "to": "RTX",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  },
+  {
+    "_id": {
+      "$oid": "6a193e69db8c109076a971ec"
+    },
+    "from": "Rocket Lab",
+    "to": "HII",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "We also provide launch services to major domestic and international commercial and government spacecraft operators"
+  }
+]

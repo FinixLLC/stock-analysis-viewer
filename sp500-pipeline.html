@@ -1026,6 +1026,22 @@ const ECOSYSTEMS = [
         deps: ['ISRG & EW both sell capital equipment to the same hospital systems', 'DXCM revenue tied to insulin-dependent patients & payer coverage', 'IDXX benefits from pet humanization driving premium vet care adoption', 'All four dependent on FDA clearance cycles & reimbursement rates'],
     },
     {
+        icon: '🛡️', name: 'Defense & Aerospace',
+        upstream: ['Titanium, composites & specialty alloys (raw materials)', 'TransDigm, Heico & sole-source subcontractors (components)', 'DoD R&D funding & DARPA programs', 'Classified technology pipelines & national labs'],
+        picks: [
+            { ticker: 'LMT',  role: 'F-35, missiles, satellites & C4ISR — largest prime' },
+            { ticker: 'RTX',  role: 'Raytheon missiles + Pratt & Whitney engines + Collins Aerospace' },
+            { ticker: 'NOC',  role: 'B-21 bomber, satellites & electronic warfare systems' },
+            { ticker: 'GD',   role: 'Submarines, land systems, Gulfstream jets & defense IT' },
+            { ticker: 'BA',   role: 'F/A-18, KC-46 tanker, satellites & commercial aviation' },
+            { ticker: 'HII',  role: 'Nuclear aircraft carriers & submarines — only US builder' },
+            { ticker: 'LDOS', role: 'Defense IT, intelligence systems & logistics services' },
+            { ticker: 'BAH',  role: 'Defense analytics, cyber & government consulting' },
+        ],
+        downstream: ['U.S. Department of Defense (DoD)', 'NATO & allied governments', 'Intelligence agencies (NRO, NSA, CIA)', 'NASA & civil space agencies', 'International FMS customers'],
+        deps: ['LMT F-35 depends on RTX Pratt & Whitney F135 engines — sole-source propulsion', 'NOC builds the B-21 fuselage; RTX & GD supply key subsystems', 'HII is the only US builder of nuclear-powered aircraft carriers and submarines', 'LDOS & BAH both compete for the same DoD IT modernization and analytics contracts', 'BA commercial & defense divisions share airframe engineering and manufacturing facilities'],
+    },
+    {
         icon: '⚛️', name: 'Quantum Computing',
         upstream: ['SkyWater Technology Foundry (superconducting wafer fab)', 'Keysight & Honeywell (quantum measurement & control HW)', 'Cryogenic system suppliers (dilution refrigerators)', 'Academic & national lab R&D pipelines'],
         picks: [
@@ -1053,6 +1069,8 @@ const CROSS_DEPS = [
     { from: 'ADP → Healthcare',     detail: 'ADP processes payroll for hospital systems and healthcare employers across the sector' },
     { from: 'Quantum → AI/Cloud',   detail: 'IONQ & RGTI QPUs are listed on AMZN AWS Braket and MSFT Azure Quantum — quantum-as-a-service rides Big Tech cloud rails' },
     { from: 'QBTS → Industrial',    detail: 'D-Wave annealing solvers target logistics & supply-chain optimization use cases alongside Industrial sector players' },
+    { from: 'Defense → AI/Cloud',   detail: 'LDOS & BAH run DoD AI/ML programs on MSFT Azure Government and AMZN AWS GovCloud infrastructure' },
+    { from: 'LMT → Quantum',        detail: 'Lockheed Martin is an investor in IonQ and a strategic customer for quantum sensing and optimization applications' },
 ];
 
 function getTickerMeta(ticker) {
@@ -1167,17 +1185,17 @@ async function renderEVCDM() {
         try { const r = await fetch(`evcdm/${key}.json`); return r.ok ? r.json() : []; }
         catch (_) { return []; }
     };
-    const [aiEdges, cloudEdges, energyEdges, healthcareEdges, semiEdges, quantumEdges] = await Promise.all([
+    const [aiEdges, cloudEdges, energyEdges, healthcareEdges, semiEdges, quantumEdges, defenseEdges] = await Promise.all([
         fetchEdges('ai'), fetchEdges('cloud'), fetchEdges('energy'),
-        fetchEdges('healthcare'), fetchEdges('semiconductor'), fetchEdges('quantum'),
+        fetchEdges('healthcare'), fetchEdges('semiconductor'), fetchEdges('quantum'), fetchEdges('defense'),
     ]);
     const llmTotal = aiEdges.length + cloudEdges.length + energyEdges.length +
-                     healthcareEdges.length + semiEdges.length + quantumEdges.length + 142; // 142 = Finance (static)
+                     healthcareEdges.length + semiEdges.length + quantumEdges.length + defenseEdges.length + 142; // 142 = Finance (static)
 
     let html = `<div class="evcdm-intro">
-        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 33 picks positioned within 7 upstream–core–downstream value chains.
-        Sectors: Consumer &amp; Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare · Quantum Computing.
-        Plus: <strong>${llmTotal} LLM-verified edges</strong> across 7 industries from SEC 10-K filings.
+        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 41 picks positioned within 8 upstream–core–downstream value chains.
+        Sectors: Consumer &amp; Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare · Defense &amp; Aerospace · Quantum Computing.
+        Plus: <strong>${llmTotal} LLM-verified edges</strong> across 8 industries from SEC 10-K filings.
         &nbsp;·&nbsp; <a href="evcdm-viewer.html" style="color:#0891b2;font-weight:700;">Open full EVCDM viewer →</a>
     </div>`;
 
@@ -1226,6 +1244,7 @@ async function renderEVCDM() {
     html += renderIndustrySection(IND_CONFIGS.healthcare,   healthcareEdges);
     html += renderIndustrySection(IND_CONFIGS.semiconductor, semiEdges);
     html += renderIndustrySection(IND_CONFIGS.quantum,       quantumEdges);
+    html += renderIndustrySection(IND_CONFIGS.defense,       defenseEdges);
 
     wrap.innerHTML = html;
 }
@@ -1301,6 +1320,18 @@ const IND_CONFIGS = {
             {id:'L4', name:'Cloud & Platforms',        bg:'#dcfce7', tc:'#14532d'},
             {id:'L5', name:'Software & Algorithms',    bg:'#ede9fe', tc:'#4c1d95'},
             {id:'L6', name:'End Applications',         bg:'#e0f2fe', tc:'#0c4a6e'},
+        ],
+    },
+    defense: {
+        icon: '🛡️', title: 'Defense & Aerospace Value Chain',
+        headerBg: 'linear-gradient(135deg, #f0f4ff 0%, #e8edf5 100%)', pillBg: '#1e3a5f',
+        layers: [
+            {id:'L1', name:'Raw Materials & Components', bg:'#fef9c3', tc:'#713f12'},
+            {id:'L2', name:'Platforms & Weapons',        bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L3', name:'Electronics & C4ISR',        bg:'#dcfce7', tc:'#14532d'},
+            {id:'L4', name:'IT & Services',              bg:'#ede9fe', tc:'#4c1d95'},
+            {id:'L5', name:'Space & Launch',             bg:'#e0f2fe', tc:'#0c4a6e'},
+            {id:'L6', name:'DoD & Gov\'t Customers',     bg:'#f1f5f9', tc:'#334155'},
         ],
     },
 };
