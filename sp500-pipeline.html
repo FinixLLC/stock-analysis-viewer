@@ -1025,20 +1025,34 @@ const ECOSYSTEMS = [
         downstream: ['Diabetic patients & endocrinologists', 'Hospitals & surgeons (minimally invasive)', 'Veterinary clinics & pet owners', 'Cardiac centers & interventional cardiologists'],
         deps: ['ISRG & EW both sell capital equipment to the same hospital systems', 'DXCM revenue tied to insulin-dependent patients & payer coverage', 'IDXX benefits from pet humanization driving premium vet care adoption', 'All four dependent on FDA clearance cycles & reimbursement rates'],
     },
+    {
+        icon: '⚛️', name: 'Quantum Computing',
+        upstream: ['SkyWater Technology Foundry (superconducting wafer fab)', 'Keysight & Honeywell (quantum measurement & control HW)', 'Cryogenic system suppliers (dilution refrigerators)', 'Academic & national lab R&D pipelines'],
+        picks: [
+            { ticker: 'IONQ', role: 'Trapped-ion QPU — AWS Braket & Azure Quantum' },
+            { ticker: 'RGTI', role: 'Superconducting QPU — cloud-accessible systems' },
+            { ticker: 'QBTS', role: 'D-Wave quantum annealing & hybrid solvers' },
+            { ticker: 'QUBT', role: 'Quantum software & optimization platform' },
+        ],
+        downstream: ['Pharmaceutical simulation & drug discovery', 'Financial portfolio & risk optimization', 'Post-quantum cryptography & national security', 'Materials science & logistics optimization'],
+        deps: ['IONQ & RGTI distribute QPU access via AMZN AWS Braket and MSFT Azure Quantum', 'QBTS (D-Wave) depends on SkyWater Technology Foundry for superconducting wafer manufacturing', 'All four compete with internal quantum programs at IBM, GOOGL, MSFT, AMZN', 'QUBT software layer runs on top of hardware from IONQ, RGTI, QBTS and IBM'],
+    },
 ];
 
 const CROSS_DEPS = [
-    { from: 'EME → AI/Cloud',     detail: 'EME constructs hyperscaler data centers for MSFT, AMZN, GOOGL campuses' },
-    { from: 'FANG → Industrial',  detail: 'FANG energy output fuels logistics fleets and industrial operations' },
-    { from: 'PYPL → Travel',      detail: 'PYPL processes ABNB home-sharing bookings and BKNG OTA payment flows' },
-    { from: 'ADP → All Sectors',  detail: 'ADP payroll platform is embedded across Consumer, Industrial, and B2B employers' },
-    { from: 'FAST → Industrial',  detail: 'FAST MRO distribution supplies PCAR assembly lines and EME project sites' },
-    { from: 'CPRT ↔ PCAR',        detail: 'CPRT remarketing feeds used Class 8 truck supply that competes with new PCAR sales' },
-    { from: 'AMAT → NVDA',        detail: 'AMAT deposition & etch tools manufacture the silicon wafers that become NVDA GPUs' },
-    { from: 'NVDA → Cloud',       detail: 'NVDA H100/B100 GPUs are the primary compute inside MSFT Azure, AMZN AWS, and GOOGL GCP AI clusters' },
-    { from: 'EME → Healthcare',   detail: 'EME constructs hospital facilities and medical campus buildouts alongside hyperscaler data centers' },
-    { from: 'ISRG ↔ EW',         detail: 'ISRG and EW compete for the same hospital capital budgets — both require surgeon training and OR integration' },
-    { from: 'ADP → Healthcare',   detail: 'ADP processes payroll for hospital systems and healthcare employers across the sector' },
+    { from: 'EME → AI/Cloud',       detail: 'EME constructs hyperscaler data centers for MSFT, AMZN, GOOGL campuses' },
+    { from: 'FANG → Industrial',    detail: 'FANG energy output fuels logistics fleets and industrial operations' },
+    { from: 'PYPL → Travel',        detail: 'PYPL processes ABNB home-sharing bookings and BKNG OTA payment flows' },
+    { from: 'ADP → All Sectors',    detail: 'ADP payroll platform is embedded across Consumer, Industrial, and B2B employers' },
+    { from: 'FAST → Industrial',    detail: 'FAST MRO distribution supplies PCAR assembly lines and EME project sites' },
+    { from: 'CPRT ↔ PCAR',          detail: 'CPRT remarketing feeds used Class 8 truck supply that competes with new PCAR sales' },
+    { from: 'AMAT → NVDA',          detail: 'AMAT deposition & etch tools manufacture the silicon wafers that become NVDA GPUs' },
+    { from: 'NVDA → Cloud',         detail: 'NVDA H100/B100 GPUs are the primary compute inside MSFT Azure, AMZN AWS, and GOOGL GCP AI clusters' },
+    { from: 'EME → Healthcare',     detail: 'EME constructs hospital facilities and medical campus buildouts alongside hyperscaler data centers' },
+    { from: 'ISRG ↔ EW',           detail: 'ISRG and EW compete for the same hospital capital budgets — both require surgeon training and OR integration' },
+    { from: 'ADP → Healthcare',     detail: 'ADP processes payroll for hospital systems and healthcare employers across the sector' },
+    { from: 'Quantum → AI/Cloud',   detail: 'IONQ & RGTI QPUs are listed on AMZN AWS Braket and MSFT Azure Quantum — quantum-as-a-service rides Big Tech cloud rails' },
+    { from: 'QBTS → Industrial',    detail: 'D-Wave annealing solvers target logistics & supply-chain optimization use cases alongside Industrial sector players' },
 ];
 
 function getTickerMeta(ticker) {
@@ -1161,8 +1175,8 @@ async function renderEVCDM() {
                      healthcareEdges.length + semiEdges.length + quantumEdges.length + 142; // 142 = Finance (static)
 
     let html = `<div class="evcdm-intro">
-        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 29 picks positioned within 6 upstream–core–downstream value chains.
-        Sectors: Consumer &amp; Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare.
+        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 33 picks positioned within 7 upstream–core–downstream value chains.
+        Sectors: Consumer &amp; Retail · Travel · Industrial · Business Services · AI &amp; Cloud · Healthcare · Quantum Computing.
         Plus: <strong>${llmTotal} LLM-verified edges</strong> across 7 industries from SEC 10-K filings.
         &nbsp;·&nbsp; <a href="evcdm-viewer.html" style="color:#0891b2;font-weight:700;">Open full EVCDM viewer →</a>
     </div>`;
