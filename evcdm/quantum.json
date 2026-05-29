@@ -1,0 +1,158 @@
+[
+  {
+    "_id": {
+      "$oid": "6a18ed03d035da76ffd6bbb8"
+    },
+    "from": "AWS",
+    "to": "IonQ",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L2",
+    "confidence": 0.9,
+    "snippet": "We currently offer our QCaaS on public clouds provided by AWS\u2019s Braket"
+  },
+  {
+    "_id": {
+      "$oid": "6a18ed03d035da76ffd6bbb9"
+    },
+    "from": "Microsoft",
+    "to": "IonQ",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L2",
+    "confidence": 0.9,
+    "snippet": "We currently offer our QCaaS on public clouds provided by Microsoft\u2019s Azure Quantum"
+  },
+  {
+    "_id": {
+      "$oid": "6a18ed03d035da76ffd6bbba"
+    },
+    "from": "Google",
+    "to": "IonQ",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L2",
+    "confidence": 0.9,
+    "snippet": "We currently offer our QCaaS on public clouds provided by the Google Cloud Marketplace"
+  },
+  {
+    "_id": {
+      "$oid": "6a18ed03d035da76ffd6bbbc"
+    },
+    "from": "IonQ",
+    "to": "AWS, Microsoft, Google",
+    "type": "substitute",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.75,
+    "snippet": "The companies that own these public clouds have internal quantum computing efforts that are competitive to our technology"
+  },
+  {
+    "_id": {
+      "$oid": "6a18eed3d035da76ffd6bbc6"
+    },
+    "from": "D-Wave",
+    "to": "AWS",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "D-Wave officially launched in AWS Marketplace, making quantum systems available to AWS customers"
+  },
+  {
+    "_id": {
+      "$oid": "6a18eed3d035da76ffd6bbc9"
+    },
+    "from": "D-Wave",
+    "to": "NEC",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "entered into a strategic investment and subsequent global re-seller agreement"
+  },
+  {
+    "_id": {
+      "$oid": "6a18eeddd035da76ffd6bbcb"
+    },
+    "from": "SkyWater Technology Foundry, Inc.",
+    "to": "D-Wave",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L2",
+    "confidence": 0.95,
+    "snippet": "D-Wave uses SkyWater Technology Foundry, Inc.'s services for manufacturing wafers for quantum processors"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957afb"
+    },
+    "from": "Rigetti",
+    "to": "AWS Braket",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "providing access to our quantum computing systems to AWS and Azure customers"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957afc"
+    },
+    "from": "Rigetti",
+    "to": "Azure Quantum",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "providing access to our quantum computing systems to AWS and Azure customers via cloud marketplace"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957afd"
+    },
+    "from": "D-Wave",
+    "to": "Davidson Technologies",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "Davidson Technologies hosts the second U.S.-based D-Wave Advantage2 quantum computer"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957afe"
+    },
+    "from": "D-Wave",
+    "to": "J\u00fclich Supercomputing Centre",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "completed the installation of an Advantage performance update quantum system at J\u00fclich Supercomputing Centre"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957aff"
+    },
+    "from": "D-Wave",
+    "to": "USC Information Sciences Institute",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "established the Quantum Computing Center at the USC Information Sciences Institute"
+  },
+  {
+    "_id": {
+      "$oid": "6a192e2ffb23924e00957b00"
+    },
+    "from": "D-Wave",
+    "to": "Quantum Circuits, Inc.",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L2",
+    "confidence": 0.85,
+    "snippet": "With this acquisition, D-Wave has solidified its position as the world's first and only commercial quantum computing company"
+  }
+]
