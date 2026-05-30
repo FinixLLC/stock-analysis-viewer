@@ -1,0 +1,158 @@
+[
+  {
+    "_id": {
+      "$oid": "6a1a377030116296db598d93"
+    },
+    "from": "QuantumScape",
+    "to": "PowerCo SE",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "we entered into a Collaboration Agreement with PowerCo SE, a battery cell company wholly owned by Volkswagen"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a39a430116296db598d9c"
+    },
+    "from": "Tesla",
+    "to": "CATL",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L2",
+    "confidence": 1.0,
+    "snippet": "Currently, we rely on suppliers such as CATL for these cells"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec591d"
+    },
+    "from": "LG Energy Solution",
+    "to": "General Motors",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.98,
+    "snippet": "Ultium Cells LLC, our joint venture with LG Energy Solution, manufactures battery cells for our Ultium-based EVs"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec591e"
+    },
+    "from": "Panasonic",
+    "to": "Tesla",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.98,
+    "snippet": "Panasonic manufactures battery cells at Gigafactory Nevada under a long-term supply agreement with Tesla"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec591f"
+    },
+    "from": "Rivian",
+    "to": "Amazon",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.97,
+    "snippet": "Amazon has agreed to purchase at least 100,000 electric delivery vehicles from us through 2030"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5920"
+    },
+    "from": "SK On",
+    "to": "Ford",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.96,
+    "snippet": "BlueOval SK, our joint venture with SK On, will manufacture battery cells for our electric vehicles in the U.S."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5921"
+    },
+    "from": "onsemi",
+    "to": "Hyundai",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "onsemi supplies silicon carbide power modules used in EV traction inverters to leading global automotive OEMs including Hyundai"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5922"
+    },
+    "from": "Wolfspeed",
+    "to": "Renault",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "Wolfspeed has entered into a long-term silicon carbide wafer supply agreement with Renault Group for EV powertrain applications"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5923"
+    },
+    "from": "onsemi",
+    "to": "Wolfspeed",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "onsemi and Wolfspeed are primary competitors in silicon carbide power semiconductors for electric vehicle drivetrains"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5924"
+    },
+    "from": "Albemarle",
+    "to": "CATL",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L2",
+    "confidence": 0.92,
+    "snippet": "Albemarle supplies battery-grade lithium to major battery cell manufacturers including CATL under long-term offtake agreements"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5925"
+    },
+    "from": "QuantumScape",
+    "to": "Volkswagen Group",
+    "type": "critical_dependency",
+    "layer_from": "L2",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "QuantumScape entered into a Collaboration Agreement with PowerCo SE, wholly owned by Volkswagen, for solid-state battery development"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5926"
+    },
+    "from": "Tesla",
+    "to": "Ford",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.93,
+    "snippet": "Ford and General Motors announced agreements to give their customers access to Tesla's Supercharger network"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a4a8dd5f52c6891ec5927"
+    },
+    "from": "Tesla",
+    "to": "General Motors",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.93,
+    "snippet": "Ford and General Motors announced agreements to give their customers access to Tesla's Supercharger network"
+  }
+]
