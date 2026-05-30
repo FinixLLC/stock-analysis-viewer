@@ -1,0 +1,254 @@
+[
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386b2"
+    },
+    "from": "AbbVie Inc.",
+    "to": "Regeneron Pharmaceuticals, Inc.",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Repatha U.S., Europe & Asia Pacific LEQVIO \u00ae Novartis AG"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386b4"
+    },
+    "from": "AbbVie Inc.",
+    "to": "Bristol Myers Squibb Company",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "ENBREL U.S. HUMIRA \u00ae (2) AbbVie Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386b6"
+    },
+    "from": "Regeneron Pharmaceuticals, Inc.",
+    "to": "Sanofi",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.8,
+    "snippet": "Repatha U.S., Europe & Asia Pacific LEQVIO \u00ae Novartis AG"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386b8"
+    },
+    "from": "Eli Lilly and Company",
+    "to": "AbbVie Inc.",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Otezla U.S. & Europe Skyrizi \u00ae AbbVie Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386bb"
+    },
+    "from": "Bristol Myers Squibb Company",
+    "to": "AbbVie Inc.",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "ENBREL U.S. HUMIRA \u00ae (2) AbbVie Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386bc"
+    },
+    "from": "Bristol Myers Squibb Company",
+    "to": "Novartis AG",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "ENBREL U.S. Cosentyx \u00ae Novartis AG"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386bd"
+    },
+    "from": "Novartis AG",
+    "to": "AbbVie Inc.",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "ENBREL U.S. HUMIRA \u00ae (2) AbbVie Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a7fbd5eaa1b00a2d386be"
+    },
+    "from": "Novartis AG",
+    "to": "Eli Lilly and Company",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "ENBREL U.S. Cosentyx \u00ae Novartis AG"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a80065eaa1b00a2d386c2"
+    },
+    "from": "Amgen",
+    "to": "UCB",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.8,
+    "snippet": "We are in a collaboration with UCB for the development and commercialization of EVENITY."
+  },
+  {
+    "_id": {
+      "$oid": "6a1a81495eaa1b00a2d386c8"
+    },
+    "from": "Gilead Sciences",
+    "to": "Cardinal Health",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "Gilead sells and distributes products exclusively through wholesaler/distributor channels including Cardinal Health"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a81495eaa1b00a2d386ca"
+    },
+    "from": "Gilead Sciences",
+    "to": "McKesson Corporation",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "Gilead sells and distributes products exclusively through wholesaler/distributor channels including McKesson Corporation"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a82225eaa1b00a2d386cc"
+    },
+    "from": "Hansoh Pharmaceuticals Group Company Limited",
+    "to": "Regeneron",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "licensed development and commercial rights for HS-20094 from Hansoh Pharmaceuticals"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87055eaa1b00a2d386d1"
+    },
+    "from": "Moderna",
+    "to": "Merck",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "We entered into a Collaboration and License Agreement with Merck for the development and commercialization of personalized mRNA cancer vaccines"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87055eaa1b00a2d386d2"
+    },
+    "from": "Moderna",
+    "to": "Vertex Pharmaceuticals",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "We entered into a Strategic Collaboration and License Agreement with Vertex for the discovery and development of potential mRNA medicines"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87205eaa1b00a2d386d4"
+    },
+    "from": "Moderna",
+    "to": "Recordati",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "collaboration with Recordati to advance our investigational PA therapeutic"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87205eaa1b00a2d386d5"
+    },
+    "from": "Moderna",
+    "to": "BARDA",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "agreement with BARDA for an award of up to $483 million"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87205eaa1b00a2d386d6"
+    },
+    "from": "Moderna",
+    "to": "CEPI",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.75,
+    "snippet": "agreed to invest up to $54.3 million to support a pivotal Phase 3 clinical trial"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a87205eaa1b00a2d386d7"
+    },
+    "from": "Moderna",
+    "to": "ILCM",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.75,
+    "snippet": "entered into a collaboration agreement with the ILCM to develop a new mRNA therapeutic"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a88115eaa1b00a2d386df"
+    },
+    "from": "Vertex Pharmaceuticals",
+    "to": "Moderna, Inc.",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.8,
+    "snippet": "collaboration with Moderna for the identification and development of mRNA therapeutics"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a88115eaa1b00a2d386e0"
+    },
+    "from": "Vertex Pharmaceuticals",
+    "to": "Entrada Therapeutics, Inc.",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L2",
+    "confidence": 0.7,
+    "snippet": "collaboration with Entrada focused on enabling efficient intracellular delivery of an oligonucleotide for DM1"
+  },
+  {
+    "_id": {
+      "$oid": "6a1a88335eaa1b00a2d386e3"
+    },
+    "from": "Lonza",
+    "to": "Vertex Pharmaceuticals",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 1.0,
+    "snippet": "We have a strategic agreement with Lonza to support the manufacture of T1D cell therapy product candidates."
+  }
+]
