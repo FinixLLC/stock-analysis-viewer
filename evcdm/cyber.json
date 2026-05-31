@@ -1,0 +1,170 @@
+[
+  {
+    "_id": {
+      "$oid": "6a1bcda3ede582312fd47e7f"
+    },
+    "from": "CrowdStrike",
+    "to": "AWS Marketplace",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.8,
+    "snippet": "free trial program of Falcon Go that is easily downloaded from our website, the AWS Marketplace"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bcda3ede582312fd47e80"
+    },
+    "from": "CrowdStrike",
+    "to": "Google Marketplace",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.8,
+    "snippet": "free trial program of Falcon Go that is easily downloaded from our website, the Google Marketplace"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bcda3ede582312fd47e81"
+    },
+    "from": "CrowdStrike",
+    "to": "Microsoft Marketplace",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.8,
+    "snippet": "free trial program of Falcon Go that is easily downloaded from our website, the Microsoft Marketplace"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bd0b8ede582312fd47e89"
+    },
+    "from": "Zscaler",
+    "to": "AWS",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L1",
+    "confidence": 0.75,
+    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bd0b8ede582312fd47e8a"
+    },
+    "from": "Zscaler",
+    "to": "Azure",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L1",
+    "confidence": 0.75,
+    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bd0b8ede582312fd47e8b"
+    },
+    "from": "Zscaler",
+    "to": "GCP",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L1",
+    "confidence": 0.75,
+    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
+  },
+  {
+    "_id": {
+      "$oid": "6a1bd0e6ede582312fd47e8d"
+    },
+    "from": "Zscaler",
+    "to": "Red Canary",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Our acquisition of Red Canary, Inc, or Red Canary, strengthens this portfolio with its agentic AI-driven threat detection"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3932"
+    },
+    "from": "CrowdStrike",
+    "to": "SentinelOne",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "We compete with...SentinelOne in the endpoint security and extended detection and response market"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3933"
+    },
+    "from": "Palo Alto Networks",
+    "to": "Fortinet",
+    "type": "substitute",
+    "layer_from": "L2",
+    "layer_to": "L2",
+    "confidence": 0.95,
+    "snippet": "Our competitors include Fortinet...in the network security and firewall market"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3934"
+    },
+    "from": "Palo Alto Networks",
+    "to": "Zscaler",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.93,
+    "snippet": "We compete with Zscaler in the cloud-delivered security and SASE market"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3935"
+    },
+    "from": "Okta",
+    "to": "Microsoft",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "Microsoft competes with us across workforce identity, including its Azure Active Directory / Entra ID product"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3936"
+    },
+    "from": "Zscaler",
+    "to": "Palo Alto Networks",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.93,
+    "snippet": "We compete with Palo Alto Networks in the cloud security and SASE market, including their Prisma Access platform"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3937"
+    },
+    "from": "CrowdStrike",
+    "to": "Amazon Web Services",
+    "type": "critical_dependency",
+    "layer_from": "L5",
+    "layer_to": "L1",
+    "confidence": 0.9,
+    "snippet": "We primarily host our services using Amazon Web Services (AWS) infrastructure across multiple regions"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c7a25ef4ffad040bc3938"
+    },
+    "from": "SentinelOne",
+    "to": "Microsoft",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.93,
+    "snippet": "We compete with Microsoft Defender for endpoint security and extended detection and response (XDR)"
+  }
+]
