@@ -1,0 +1,194 @@
+[
+  {
+    "_id": {
+      "$oid": "6a1b3e328dafdfd63b6cdf59"
+    },
+    "from": "Verizon",
+    "to": "Starry Group Holdings",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "On January 30, 2026, we completed the acquisition of Starry Group Holdings, Inc. (Starry), a fixed wireless broadband provider serving multi-dwelling units in five markets across the U.S."
+  },
+  {
+    "_id": {
+      "$oid": "6a1b3e328dafdfd63b6cdf5a"
+    },
+    "from": "Verizon",
+    "to": "Frontier Communications Parent, Inc.",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "On January 20, 2026, we completed the acquisition of Frontier Communications Parent, Inc. (Frontier), a U.S. provider of broadband internet and other communication services."
+  },
+  {
+    "_id": {
+      "$oid": "6a1b40c48dafdfd63b6cdf5f"
+    },
+    "from": "T-Mobile",
+    "to": "AT&T Inc.",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "Our wireless communications services competitors include other carriers, such as AT&T"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b40c48dafdfd63b6cdf60"
+    },
+    "from": "T-Mobile",
+    "to": "Verizon Communications, Inc.",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "Our wireless communications services competitors include other carriers, such as Verizon"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b40c48dafdfd63b6cdf62"
+    },
+    "from": "T-Mobile",
+    "to": "Charter Communications, Inc.",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "Our wireless communications services competitors include numerous smaller and regional providers, including Charter"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b43988dafdfd63b6cdf64"
+    },
+    "from": "American Tower",
+    "to": "DISH Wireless L.L.C.",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "one of our U.S. customers, DISH Wireless L.L.C., a subsidiary of DISH Network Corporation"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b43988dafdfd63b6cdf65"
+    },
+    "from": "American Tower",
+    "to": "T-Mobile",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "For the year ended December 31, 2025 T-Mobile 18 %"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b43988dafdfd63b6cdf66"
+    },
+    "from": "American Tower",
+    "to": "AT&T",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "For the year ended December 31, 2025 AT&T 17 %"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b43988dafdfd63b6cdf67"
+    },
+    "from": "American Tower",
+    "to": "Verizon Wireless",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "For the year ended December 31, 2025 Verizon Wireless 14 %"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b43988dafdfd63b6cdf68"
+    },
+    "from": "American Tower",
+    "to": "Telef\u00f3nica",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "For the year ended December 31, 2025 Telef\u00f3nica 10 %"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45358dafdfd63b6cdf6c"
+    },
+    "from": "Crown Castle",
+    "to": "T-Mobile",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "Our three largest tenants are T-Mobile, AT&T and Verizon Wireless"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45358dafdfd63b6cdf6d"
+    },
+    "from": "Crown Castle",
+    "to": "AT&T",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "Our three largest tenants are T-Mobile, AT&T and Verizon Wireless"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45358dafdfd63b6cdf6e"
+    },
+    "from": "Crown Castle",
+    "to": "Verizon Wireless",
+    "type": "supplier_to_customer",
+    "layer_from": "L1",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "Our three largest tenants are T-Mobile, AT&T and Verizon Wireless"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45358dafdfd63b6cdf6f"
+    },
+    "from": "Crown Castle",
+    "to": "American Tower Corporation",
+    "type": "substitute",
+    "layer_from": "L1",
+    "layer_to": "L1",
+    "confidence": 0.85,
+    "snippet": "Some of our largest competitors are American Tower Corporation"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45358dafdfd63b6cdf70"
+    },
+    "from": "Crown Castle",
+    "to": "SBA Communications Corporation",
+    "type": "substitute",
+    "layer_from": "L1",
+    "layer_to": "L1",
+    "confidence": 0.85,
+    "snippet": "Some of our largest competitors are American Tower Corporation and SBA Communications Corporation"
+  },
+  {
+    "_id": {
+      "$oid": "6a1b45748dafdfd63b6cdf72"
+    },
+    "from": "T-Mobile",
+    "to": "American Tower",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L1",
+    "confidence": 0.85,
+    "snippet": "we entered into an agreement with T-Mobile that addressed the T-Mobile and Sprint network consolidation"
+  }
+]
