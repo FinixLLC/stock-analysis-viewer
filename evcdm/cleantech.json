@@ -1,0 +1,242 @@
+[
+  {
+    "_id": {
+      "$oid": "6a1c848215c8b14d10552893"
+    },
+    "from": "Enphase Energy",
+    "to": "Central and string inverter manufacturers",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L2",
+    "confidence": 0.7,
+    "snippet": "We compete with central and string inverter manufacturers"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c848215c8b14d10552894"
+    },
+    "from": "Enphase Energy",
+    "to": "Storage system manufacturers",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L2",
+    "confidence": 0.65,
+    "snippet": "We compete with storage system manufacturers"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c849915c8b14d10552895"
+    },
+    "from": "Flex Ltd.",
+    "to": "Enphase Energy",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 1.0,
+    "snippet": "We utilize Flex Ltd. and affiliates (\"Flex\"), Salcomp Manufacturing India PVT and Sunwoda Electric Co. Ltd as our contract manufacturers"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c849915c8b14d10552896"
+    },
+    "from": "Enphase",
+    "to": "SolarEdge",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "Competitors in the storage market include Tesla, SolarEdge, Huawei, BYD Company Limited (\u201cBYD\u201d), Franklin Solar Battery and other producers of battery cells and integrated storage systems"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d10552899"
+    },
+    "from": "Enphase Energy",
+    "to": "SolarEdge",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.9,
+    "snippet": "Competitors in the inverter market include, among others, SolarEdge"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289a"
+    },
+    "from": "Enphase Energy",
+    "to": "Tesla",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "Competitors in the inverter market include, among others, Tesla"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289b"
+    },
+    "from": "Enphase Energy",
+    "to": "Huawei",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "Competitors in the inverter market include, among others, Huawei"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289c"
+    },
+    "from": "Enphase Energy",
+    "to": "Tesla",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the storage market include Tesla"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289d"
+    },
+    "from": "Enphase Energy",
+    "to": "SolarEdge",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the storage market include SolarEdge"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289e"
+    },
+    "from": "Enphase Energy",
+    "to": "Huawei",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the storage market include Huawei"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d1055289f"
+    },
+    "from": "Enphase Energy",
+    "to": "BYD",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the storage market include BYD"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d105528a0"
+    },
+    "from": "Enphase Energy",
+    "to": "Franklin Solar Battery",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the storage market include Franklin Solar Battery"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d105528a1"
+    },
+    "from": "Enphase Energy",
+    "to": "Wallbox",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the EV charger market include Wallbox"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d105528a2"
+    },
+    "from": "Enphase Energy",
+    "to": "ChargePoint",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the EV charger market include ChargePoint"
+  },
+  {
+    "_id": {
+      "$oid": "6a1c84ec15c8b14d105528a4"
+    },
+    "from": "Enphase Energy",
+    "to": "EVBox Group",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.7,
+    "snippet": "Competitors in the EV charger market include EVBox Group"
+  },
+  {
+    "_id": {
+      "$oid": "6a1d1928a1892f650cb501fd"
+    },
+    "from": "Enphase Energy",
+    "to": "Sunrun",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.93,
+    "snippet": "Enphase Energy is a primary supplier of microinverter systems and IQ Battery storage systems installed by Sunrun"
+  },
+  {
+    "_id": {
+      "$oid": "6a1d1928a1892f650cb501fe"
+    },
+    "from": "Vestas",
+    "to": "NextEra Energy",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L5",
+    "confidence": 0.9,
+    "snippet": "NextEra Energy has multi-year turbine supply agreements with Vestas for utility-scale wind projects"
+  },
+  {
+    "_id": {
+      "$oid": "6a1d1928a1892f650cb501ff"
+    },
+    "from": "Siemens Gamesa",
+    "to": "NextEra Energy",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L5",
+    "confidence": 0.9,
+    "snippet": "NextEra Energy procures wind turbines from Siemens Gamesa under long-term supply agreements for its wind fleet"
+  },
+  {
+    "_id": {
+      "$oid": "6a1d1928a1892f650cb50200"
+    },
+    "from": "First Solar",
+    "to": "Polysilicon-based panel manufacturers",
+    "type": "substitute",
+    "layer_from": "L2",
+    "layer_to": "L2",
+    "confidence": 0.88,
+    "snippet": "First Solar thin-film CdTe technology avoids the polysilicon supply chain, differentiating from conventional crystalline silicon manufacturers"
+  },
+  {
+    "_id": {
+      "$oid": "6a1d1928a1892f650cb50201"
+    },
+    "from": "Array Technologies",
+    "to": "Utility-scale solar project developers",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "Array Technologies provides single-axis solar tracking systems to utility-scale solar project developers globally"
+  }
+]

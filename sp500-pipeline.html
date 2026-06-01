@@ -205,6 +205,22 @@
             transition: width 0.3s;
         }
 
+        .ins-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .ins-cluster { background: #dcfce7; color: #15803d; }
+        .ins-buy     { background: #dbeafe; color: #1d4ed8; }
+        .ins-sell    { background: #fee2e2; color: #dc2626; }
+        .ins-neutral { background: #f1f5f9; color: #64748b; }
+        .ins-nodata  { background: transparent; color: #cbd5e1; font-size: 0.9em; }
+
         .verdict-badge {
             display: inline-block;
             padding: 3px 10px;
@@ -654,6 +670,7 @@
                         <th onclick="sortTable('buy','p_fcf')">P/FCF</th>
                         <th onclick="sortTable('buy','ev_ebitda')">EV/EBITDA</th>
                         <th onclick="sortTable('buy','peg')">PEG</th>
+                        <th>Insider</th>
                         <th>Verdict</th>
                     </tr></thead>
                     <tbody id="tbody-buy"></tbody>
@@ -679,6 +696,7 @@
                         <th onclick="sortTable('entry','p_fcf')">P/FCF</th>
                         <th onclick="sortTable('entry','ev_ebitda')">EV/EBITDA</th>
                         <th onclick="sortTable('entry','peg')">PEG</th>
+                        <th>Insider</th>
                         <th>Entry Signal</th>
                     </tr></thead>
                     <tbody id="tbody-entry"></tbody>
@@ -701,6 +719,7 @@
                         <th onclick="sortTable('watch','p_fcf')">P/FCF</th>
                         <th onclick="sortTable('watch','ev_ebitda')">EV/EBITDA</th>
                         <th onclick="sortTable('watch','peg')">PEG</th>
+                        <th>Insider</th>
                         <th>Verdict</th>
                     </tr></thead>
                     <tbody id="tbody-watch"></tbody>
@@ -716,6 +735,7 @@
 
 <script>
 let allData = [];
+let insiderData = {};   // keyed by ticker, from insider-activity.json
 let sortState = {
     buy:   { col: 'total', dir: 'desc' },
     entry: { col: 'total', dir: 'desc' },
@@ -724,7 +744,15 @@ let sortState = {
 
 async function init() {
     try {
-        const res = await fetch('sp500-results.json');
+        // Load insider activity in parallel with pipeline results
+        const [res, insiderRes] = await Promise.all([
+            fetch('sp500-results.json'),
+            fetch('insider-activity.json').catch(() => null),
+        ]);
+        if (insiderRes && insiderRes.ok) {
+            const insiderJson = await insiderRes.json();
+            insiderData = insiderJson.data || {};
+        }
         const json = await res.json();
         allData = json.results || [];
         document.getElementById('gen-time').textContent =
@@ -815,7 +843,7 @@ function renderTable(tab) {
 
     const tbody = document.getElementById('tbody-' + tab);
     if (rows.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="9"><div class="empty">No results found</div></td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="10"><div class="empty">No results found</div></td></tr>`;
         return;
     }
 
@@ -838,6 +866,61 @@ function renderTable(tab) {
         const isEntry   = r.entry_override === 'WATCH_ENTRY';
         const badgeVerdict = isEntry ? 'WATCH_ENTRY' : r.verdict;
         const badgeLabel   = isEntry ? '⚡ WATCH — Entry' : r.verdict;
+
+        // ── Insider signal ────────────────────────────────────────────────
+        const ins = insiderData[r.ticker] || {};
+        const insSignal = ins.signal || 'no_data';
+        const insBadgeMap = {
+            cluster_buy: { icon: '🟢', label: 'Cluster Buy',  cls: 'ins-cluster' },
+            net_buy:     { icon: '🔵', label: 'Net Buy',      cls: 'ins-buy'     },
+            net_sell:    { icon: '🔴', label: 'Net Sell',     cls: 'ins-sell'    },
+            neutral:     { icon: '⬜', label: 'Neutral',      cls: 'ins-neutral' },
+            no_data:     { icon: '—',  label: '',             cls: 'ins-nodata'  },
+        };
+        const insBadge   = insBadgeMap[insSignal] || insBadgeMap.no_data;
+        const insHtml    = insSignal === 'no_data' ? `<span class="ins-badge ins-nodata">—</span>` :
+            `<span class="ins-badge ${insBadge.cls}" title="${insBadge.label}">${insBadge.icon} ${insBadge.label}</span>`;
+
+        // Build insider detail section
+        let insDetailHtml = '';
+        if (ins.transactions && ins.transactions.length) {
+            const rows90 = ins.transactions.slice(0, 10).map(t => {
+                const typeLabel = t.code === 'P' ? '🟢 Buy' : '🔴 Sell';
+                const val = t.value ? `$${(t.value/1000).toFixed(0)}K` : '—';
+                return `<tr style="font-size:0.82em">
+                    <td style="padding:3px 6px;color:#555">${t.date}</td>
+                    <td style="padding:3px 6px;font-weight:600">${t.filer}</td>
+                    <td style="padding:3px 6px;color:#666">${t.title || '—'}</td>
+                    <td style="padding:3px 6px">${typeLabel}</td>
+                    <td style="padding:3px 6px;text-align:right">${t.shares.toLocaleString()}</td>
+                    <td style="padding:3px 6px;text-align:right;color:#888">${t.price ? '$'+t.price.toFixed(2) : '—'}</td>
+                    <td style="padding:3px 6px;text-align:right;color:#555">${val}</td>
+                </tr>`;
+            }).join('');
+            const netLabel = ins.net_shares_90d > 0
+                ? `<span style="color:#16a34a">+${ins.net_shares_90d.toLocaleString()} net bought</span>`
+                : ins.net_shares_90d < 0
+                ? `<span style="color:#dc2626">${ins.net_shares_90d.toLocaleString()} net sold</span>`
+                : `<span style="color:#666">flat</span>`;
+            insDetailHtml = `
+                    <div class="detail-section">
+                        <div class="detail-label">📋 Insider Activity — 90 days &nbsp;·&nbsp; ${netLabel}</div>
+                        <div style="overflow-x:auto;margin-top:6px">
+                        <table style="width:100%;border-collapse:collapse">
+                            <thead><tr style="background:#f1f5f9;font-size:0.78em;color:#64748b">
+                                <th style="padding:3px 6px;text-align:left">Date</th>
+                                <th style="padding:3px 6px;text-align:left">Insider</th>
+                                <th style="padding:3px 6px;text-align:left">Title</th>
+                                <th style="padding:3px 6px;text-align:left">Type</th>
+                                <th style="padding:3px 6px;text-align:right">Shares</th>
+                                <th style="padding:3px 6px;text-align:right">Price</th>
+                                <th style="padding:3px 6px;text-align:right">Value</th>
+                            </tr></thead>
+                            <tbody>${rows90}</tbody>
+                        </table>
+                        </div>
+                    </div>`;
+        }
 
         const entryReasonHtml = (isEntry && r.entry_reason) ? `
                     <div class="detail-section">
@@ -864,10 +947,11 @@ function renderTable(tab) {
             <td class="num-cell">${fmt(val.p_fcf)}</td>
             <td class="num-cell">${fmt(val.ev_ebitda)}</td>
             <td class="num-cell">${fmt(val.peg)}</td>
+            <td>${insHtml}</td>
             <td><span class="verdict-badge verdict-${badgeVerdict}">${badgeLabel}</span></td>
         </tr>
         <tr class="detail-row">
-            <td colspan="9" style="padding:0">
+            <td colspan="10" style="padding:0">
                 <div class="detail-panel" id="detail-${id}">
                     ${entryReasonHtml}
                     ${scoreChips ? `
@@ -885,6 +969,7 @@ function renderTable(tab) {
                         <div class="detail-label">Risk Flags</div>
                         <div class="detail-text">${riskFlags}</div>
                     </div>` : ''}
+                    ${insDetailHtml}
                 </div>
             </td>
         </tr>`;
@@ -1119,6 +1204,22 @@ const ECOSYSTEMS = [
         downstream: ['Enterprise IT & security operations centers (SOCs)', 'Financial services, healthcare & critical infrastructure', 'Government & federal agencies (FedRAMP workloads)', 'SMB & consumer endpoint protection'],
         deps: ['CRWD & S (SentinelOne) compete head-to-head in AI-native EDR/XDR — overlapping Fortune 500 accounts', 'PANW & FTNT compete in NGFW and SASE — FTNT leads on hardware appliances, PANW on platformization', 'ZS & PANW Prisma compete in cloud-native SASE/zero-trust network access', 'OKTA & MSFT Entra ID compete for enterprise identity — Entra bundled free in M365 is biggest competitive threat', 'QLYS competes with CRWD Falcon Spotlight and PANW Cortex XSIAM in vulnerability management'],
     },
+    {
+        icon: '🌱', name: 'Energy Storage & Clean Tech',
+        upstream: ['Albemarle & SQM (lithium for batteries)', 'CATL & Panasonic (battery cell supply)', 'Vestas & Siemens Gamesa (wind turbine components)', 'Polysilicon & wafer suppliers (Wacker Chemie, LONGi)'],
+        picks: [
+            { ticker: 'NEE',  role: 'NextEra Energy — largest US wind + solar utility (FPL)' },
+            { ticker: 'ENPH', role: 'Enphase Energy — solar microinverters + IQ Battery storage' },
+            { ticker: 'FSLR', role: 'First Solar — thin-film CdTe solar panels (US manufacturer)' },
+            { ticker: 'PLUG', role: 'Plug Power — green hydrogen + electrolyzers + fuel cells' },
+            { ticker: 'BE',   role: 'Bloom Energy — solid oxide fuel cells + electrolyzers' },
+            { ticker: 'RUN',  role: 'Sunrun — #1 residential solar + storage installer (US)' },
+            { ticker: 'ARRY', role: 'Array Technologies — single-axis solar tracker systems' },
+            { ticker: 'SEDG', role: 'SolarEdge — DC-optimized inverters + residential storage' },
+        ],
+        downstream: ['Utilities & grid operators (ISO/RTO offtakers)', 'Commercial & industrial energy buyers (PPAs)', 'Residential solar + storage homeowners', 'Green hydrogen industrial off-takers & mobility'],
+        deps: ['ENPH & SEDG compete in residential solar inverters/optimizers — both sell through same installers like RUN', 'RUN installs ENPH microinverters and SEDG systems — installer channel is critical distribution for both', 'NEE is the largest single buyer of wind turbine capacity from Vestas & Siemens Gamesa globally', 'PLUG & BE compete in fuel cell/electrolyzer market for industrial hydrogen applications', 'FSLR thin-film CdTe panels avoid polysilicon supply chain — competitive moat vs. crystalline silicon panels'],
+    },
 ];
 
 const CROSS_DEPS = [
@@ -1146,6 +1247,9 @@ const CROSS_DEPS = [
     { from: 'Cyber → AI/Cloud',    detail: 'CRWD, PANW and ZS are deeply integrated with MSFT Azure, AMZN AWS and GOOGL GCP — cloud-native security is a hyperscaler distribution channel' },
     { from: 'MSFT → Cyber',        detail: 'MSFT Defender & Entra ID compete with CRWD, OKTA and QLYS while simultaneously being the infrastructure those vendors protect' },
     { from: 'Cyber → Defense',     detail: 'CRWD and PANW hold FedRAMP authorizations and compete with LDOS & BAH for DoD cyber contracts' },
+    { from: 'CleanTech → Energy',  detail: 'NEE, ENPH, FSLR and RUN are direct participants in the energy transition alongside FANG, SO and D — renewable capacity displaces natural gas generation' },
+    { from: 'CleanTech → EV',      detail: 'PLUG green hydrogen competes with TSLA/CHPT battery-electric charging for zero-emission fleet energy; ENPH home storage competes with TSLA Powerwall' },
+    { from: 'ALB → CleanTech',     detail: 'Albemarle lithium is a critical input for battery-based storage systems deployed by NEE, RUN and utility-scale grid storage projects' },
 ];
 
 function getTickerMeta(ticker) {
@@ -1260,16 +1364,16 @@ async function renderEVCDM() {
         try { const r = await fetch(`evcdm/${key}.json`); return r.ok ? r.json() : []; }
         catch (_) { return []; }
     };
-    const [aiEdges, cloudEdges, energyEdges, healthcareEdges, semiEdges, quantumEdges, defenseEdges, evEdges, biotechEdges, telecomEdges, cyberEdges] = await Promise.all([
+    const [aiEdges, cloudEdges, energyEdges, healthcareEdges, semiEdges, quantumEdges, defenseEdges, evEdges, biotechEdges, telecomEdges, cyberEdges, cleantechEdges] = await Promise.all([
         fetchEdges('ai'), fetchEdges('cloud'), fetchEdges('energy'),
         fetchEdges('healthcare'), fetchEdges('semiconductor'), fetchEdges('quantum'),
         fetchEdges('defense'), fetchEdges('ev'), fetchEdges('biotech'), fetchEdges('telecom'),
-        fetchEdges('cyber'),
+        fetchEdges('cyber'), fetchEdges('cleantech'),
     ]);
     const llmTotal = aiEdges.length + cloudEdges.length + energyEdges.length +
                      healthcareEdges.length + semiEdges.length + quantumEdges.length +
                      defenseEdges.length + evEdges.length + biotechEdges.length +
-                     telecomEdges.length + cyberEdges.length + 142; // 142 = Finance (static)
+                     telecomEdges.length + cyberEdges.length + cleantechEdges.length + 142; // 142 = Finance (static)
 
     const sectorLinks = [
         ['Consumer &amp; Retail',    '#eco-consumer-retail'],
@@ -1284,15 +1388,16 @@ async function renderEVCDM() {
         ['Defense &amp; Aerospace',  '#eco-defense-aerospace'],
         ['Quantum Computing',        '#eco-quantum-computing'],
         ['Cybersecurity',            '#eco-cybersecurity'],
+        ['Clean Tech',               '#eco-energy-storage-clean-tech'],
     ];
     const sectorLinksHtml = sectorLinks
         .map(([label, href]) => `<a href="${href}" style="color:#0891b2;text-decoration:none;white-space:nowrap;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${label}</a>`)
         .join(' · ');
 
     let html = `<div class="evcdm-intro">
-        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 73 picks positioned within 12 upstream–core–downstream value chains.<br>
+        <strong>Ecosystem Value Chain & Dependency Map</strong> — all 81 picks positioned within 13 upstream–core–downstream value chains.<br>
         <span style="font-size:0.9em;color:#555;">Sectors: ${sectorLinksHtml}</span><br>
-        Plus: <strong>${llmTotal} LLM-verified edges</strong> across 12 industries from SEC 10-K filings.
+        Plus: <strong>${llmTotal} LLM-verified edges</strong> across 13 industries from SEC 10-K filings.
         &nbsp;·&nbsp; <a href="evcdm-viewer.html" style="color:#0891b2;font-weight:700;">Open full EVCDM viewer →</a>
     </div>`;
 
@@ -1347,6 +1452,7 @@ async function renderEVCDM() {
     html += renderIndustrySection(IND_CONFIGS.biotech,       biotechEdges);
     html += renderIndustrySection(IND_CONFIGS.telecom,       telecomEdges);
     html += renderIndustrySection(IND_CONFIGS.cyber,         cyberEdges);
+    html += renderIndustrySection(IND_CONFIGS.cleantech,     cleantechEdges);
 
     wrap.innerHTML = html;
 }
@@ -1434,6 +1540,18 @@ const IND_CONFIGS = {
             {id:'L4', name:'Cloud & Platform Security',  bg:'#ede9fe', tc:'#4c1d95'},
             {id:'L5', name:'Security Services & Ops',    bg:'#fce7f3', tc:'#831843'},
             {id:'L6', name:'End Customers',              bg:'#fee2e2', tc:'#7f1d1d'},
+        ],
+    },
+    cleantech: {
+        icon: '🌱', title: 'Energy Storage & Clean Tech',
+        headerBg: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)', pillBg: '#16a34a',
+        layers: [
+            {id:'L1', name:'Raw Materials & Minerals',   bg:'#fef9c3', tc:'#713f12'},
+            {id:'L2', name:'Components & Equipment',     bg:'#d1fae5', tc:'#064e3b'},
+            {id:'L3', name:'System Integration',         bg:'#dbeafe', tc:'#1e3a8a'},
+            {id:'L4', name:'Project Development & EPC',  bg:'#ede9fe', tc:'#4c1d95'},
+            {id:'L5', name:'Energy Generation & Storage',bg:'#fce7f3', tc:'#831843'},
+            {id:'L6', name:'End Markets & Grid',         bg:'#dcfce7', tc:'#14532d'},
         ],
     },
     biotech: {
