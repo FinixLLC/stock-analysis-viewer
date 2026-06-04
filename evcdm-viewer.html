@@ -375,6 +375,61 @@
         }
         .footer-back:hover { color: white; }
 
+        /* ── BRIDGE VIEW ───────────────────────────────────────────────── */
+        .bridge-wrap {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            border: 1px solid #e8e8f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .bridge-info {
+            padding: 13px 20px;
+            font-size: 0.85em;
+            color: #475569;
+            background: #f8fafc;
+            border-bottom: 1px solid #e8e8f0;
+            line-height: 1.5;
+        }
+        .bridge-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bridge-table thead tr {
+            background: #f1f5f9;
+            border-bottom: 1.5px solid #e2e8f0;
+        }
+        .bridge-table th {
+            padding: 9px 14px;
+            font-weight: 700;
+            font-size: 0.76em;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #64748b;
+            text-align: left;
+        }
+        .bridge-row { border-bottom: 1px solid #f1f5f9; transition: background 0.1s; }
+        .bridge-row:last-child { border-bottom: none; }
+        .bridge-row:hover { background: #f8fafc; }
+        .bridge-row td { padding: 9px 14px; vertical-align: middle; }
+        .bridge-rank { color: #94a3b8; font-weight: 700; font-size: 0.82em; text-align: center; }
+        .bridge-entity { font-weight: 700; color: #1e293b; white-space: nowrap; }
+        .bridge-industries { }
+        .bridge-edges { text-align: center; font-weight: 700; color: #475569; font-size: 0.9em; }
+        .bridge-types { display: flex; flex-wrap: wrap; gap: 3px; }
+        .ind-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.72em;
+            font-weight: 600;
+            border: 1px solid;
+            white-space: nowrap;
+            margin: 1px 2px 1px 0;
+        }
+
         /* ── MOBILE ─────────────────────────────────────────────────────── */
         @media (max-width: 640px) {
             body { padding: 10px; }
@@ -403,7 +458,7 @@
             <h1>EVCDM Supply Chain Intelligence</h1>
             <div class="subtitle">SEC EDGAR 10-K filings · LLM-extracted &amp; verified · <span id="total-desc">loading…</span></div>
             <div class="edge-counter">
-                Showing <strong id="shown-count">—</strong> of <strong id="total-count">—</strong> edges
+                Showing <strong id="shown-count">—</strong><span id="edge-unit"> of <strong id="total-count">—</strong> edges</span>
             </div>
         </div>
         <a href="sp500-pipeline.html" class="back-btn">← Back to Pipeline</a>
@@ -416,7 +471,7 @@
             <div id="industry-pills" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
         </div>
         <!-- Row 2: Type -->
-        <div class="filter-row">
+        <div class="filter-row" id="filter-row-type">
             <span class="filter-label">Type</span>
             <span class="chip chip-supply"     data-type="supplier_to_customer" id="chip-supply">Supply</span>
             <span class="chip chip-dependency" data-type="critical_dependency"  id="chip-dependency">Dependency</span>
@@ -424,7 +479,7 @@
             <span class="chip chip-layer"      data-type="customer_to_supplier" id="chip-customer" style="display:none">Customer→Supplier</span>
         </div>
         <!-- Row 3: Layer -->
-        <div class="filter-row">
+        <div class="filter-row" id="filter-row-layer">
             <span class="filter-label">Layer</span>
             <div id="layer-chips" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
         </div>
@@ -577,6 +632,28 @@ function initUI() {
         pillsDiv.appendChild(pill);
     });
 
+    // Bridges pill — cross-industry bridge entities
+    const bridgesCount = buildBridgeData().length;
+    const bridgesPill = document.createElement('span');
+    bridgesPill.className = 'industry-pill';
+    bridgesPill.dataset.industry = 'bridges';
+    bridgesPill.innerHTML = `🌐 Bridges <span class="count-badge">${bridgesCount}</span>`;
+    bridgesPill.addEventListener('click', () => {
+        document.querySelectorAll('.industry-pill').forEach(p => {
+            p.classList.remove('active');
+            p.style.background = '';
+            p.style.borderColor = '';
+        });
+        bridgesPill.classList.add('active');
+        bridgesPill.style.background = '#334155';
+        bridgesPill.style.borderColor = '#334155';
+        activeIndustry = 'bridges';
+        document.getElementById('filter-row-type').style.display = 'none';
+        document.getElementById('filter-row-layer').style.display = 'none';
+        render();
+    });
+    pillsDiv.appendChild(bridgesPill);
+
     // Check if customer_to_supplier exists in data
     const hasCustSupp = allEdges.some(e => e.type === 'customer_to_supplier');
     if (hasCustSupp) {
@@ -629,6 +706,8 @@ function makePill(key, icon, shortLabel, count, accent) {
             pill.style.borderColor = accent;
         }
         activeIndustry = key;
+        document.getElementById('filter-row-type').style.display = '';
+        document.getElementById('filter-row-layer').style.display = '';
         updateLayerChipTooltips();
         render();
     });
@@ -701,6 +780,8 @@ function getFilteredEdges() {
 }
 
 function render() {
+    if (activeIndustry === 'bridges') { renderBridges(); return; }
+    document.getElementById('edge-unit').style.display = '';
     const filtered = getFilteredEdges();
     document.getElementById('shown-count').textContent = filtered.length;
 
@@ -821,6 +902,107 @@ function esc(str) {
         .replace(/</g,'&lt;')
         .replace(/>/g,'&gt;')
         .replace(/"/g,'&quot;');
+}
+
+// ── BRIDGE VIEW ──────────────────────────────────────────────────────────────
+
+function normalizeEntity(name) {
+    return (name || '')
+        .toLowerCase()
+        .replace(/,?\s+(inc\.?|corp\.?|corporation|ltd\.?|llc|l\.l\.c\.?|co\.)(\s|$)/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function buildBridgeData() {
+    const map = new Map();
+    allEdges.forEach(e => {
+        ['from', 'to'].forEach(side => {
+            const name = (e[side] || '').trim();
+            if (name.length < 3) return;
+            const norm = normalizeEntity(name);
+            if (norm.length < 3) return;
+            if (!map.has(norm)) {
+                map.set(norm, { canonical: name, norm, industries: new Set(), edgeCount: 0, types: new Set() });
+            }
+            const b = map.get(norm);
+            b.industries.add(e.industry);
+            b.edgeCount++;
+            b.types.add(e.type);
+            if (name.length > b.canonical.length) b.canonical = name;
+        });
+    });
+    return Array.from(map.values())
+        .filter(b => b.industries.size >= 2)
+        .sort((a, b) => {
+            const di = b.industries.size - a.industries.size;
+            return di !== 0 ? di : b.edgeCount - a.edgeCount;
+        });
+}
+
+function renderBridges() {
+    const bridges = buildBridgeData();
+    const filtered = searchQuery
+        ? bridges.filter(b => b.canonical.toLowerCase().includes(searchQuery) || b.norm.includes(searchQuery))
+        : bridges;
+
+    document.getElementById('shown-count').textContent = filtered.length + ' bridge';
+    document.getElementById('edge-unit').style.display = 'none';
+
+    const content = document.getElementById('content');
+    if (filtered.length === 0) {
+        content.innerHTML = `<div class="state-box"><div class="state-icon">🔍</div><div class="state-title">No bridge entities match</div><div class="state-desc">Clear the search to see all cross-industry entities.</div></div>`;
+        return;
+    }
+
+    const wrap = document.createElement('div');
+    wrap.className = 'bridge-wrap';
+
+    const info = document.createElement('div');
+    info.className = 'bridge-info';
+    info.innerHTML = `🌐 <strong>${filtered.length}</strong> entities appear in 2 or more supply chain industries — these are cross-industry bridge nodes connecting value chains. Sorted by industry breadth, then edge count.`;
+    wrap.appendChild(info);
+
+    const table = document.createElement('table');
+    table.className = 'bridge-table';
+    table.innerHTML = `<thead><tr>
+        <th style="width:36px">#</th>
+        <th>Entity</th>
+        <th>Industries</th>
+        <th style="width:52px;text-align:center">Edges</th>
+        <th>Types</th>
+    </tr></thead>`;
+
+    const tbody = document.createElement('tbody');
+    filtered.forEach((b, i) => {
+        const tr = document.createElement('tr');
+        tr.className = 'bridge-row';
+
+        const indChips = Array.from(b.industries).map(k => {
+            const ind = INDUSTRIES[k];
+            if (!ind) return '';
+            return `<span class="ind-chip" style="background:${ind.accent}18;border-color:${ind.accent}50;color:${ind.accent}" title="${esc(ind.label)}">${ind.icon} ${k}</span>`;
+        }).join('');
+
+        const typePills = Array.from(b.types).map(t => {
+            const ti = TYPE_INFO[t] || { label: t, cls: 'other' };
+            return `<span class="type-pill ${ti.cls}" style="font-size:0.7em;padding:2px 7px">${ti.label}</span>`;
+        }).join(' ');
+
+        tr.innerHTML = `
+            <td class="bridge-rank">${i + 1}</td>
+            <td class="bridge-entity">${esc(b.canonical)}</td>
+            <td class="bridge-industries">${indChips}</td>
+            <td class="bridge-edges">${b.edgeCount}</td>
+            <td class="bridge-types">${typePills}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+    content.innerHTML = '';
+    content.appendChild(wrap);
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
