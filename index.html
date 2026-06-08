@@ -620,6 +620,37 @@
                 </a>
             </div>
 
+
+
+        <!-- PaoBull Research Reports -->
+        <div style='margin-bottom: 30px;'>
+            <div class='stat-card' role='region' aria-labelledby='paobull-heading' style='padding: 30px;'>
+                <h2 id='paobull-heading' style='font-size: 1.4em; margin-bottom: 6px; color: #333;'>&#128203; PaoBull Research Reports</h2>
+                <p style='font-size: 0.82em; color: #888; margin-bottom: 16px;'>Per-ticker synthesis &middot; RSI-14/9 &middot; BuyDeepDip moat audit &middot; Entry / Exit / Sizing &middot; deepseek-r1:32b</p>
+                <div style='background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); padding: 18px; border-radius: 14px; margin-bottom: 16px;'>
+                    <div style='display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;'>
+                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
+                            <div style='font-size: 2em; font-weight: bold; color: white;' id='pb-total'>&mdash;</div>
+                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>Reports</div>
+                        </div>
+                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
+                            <div style='font-size: 2em; font-weight: bold; color: #6ee7b7;' id='pb-buy'>&mdash;</div>
+                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>BUY</div>
+                        </div>
+                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
+                            <div style='font-size: 2em; font-weight: bold; color: #fde68a;' id='pb-watch'>&mdash;</div>
+                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>WATCH</div>
+                        </div>
+                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
+                            <div style='font-size: 1.1em; font-weight: bold; color: white;' id='pb-latest'>&mdash;</div>
+                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>Latest</div>
+                        </div>
+                    </div>
+                </div>
+                <a href='paobull-viewer.html' class='btn' style='width: 100%; text-align: center; display: block; font-size: 0.9em; padding: 12px 20px; background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: white; font-weight: 700; border-radius: 10px;'>
+                    &#128203; View Research Reports &#8594;
+                </a>
+            </div>
         </div>
 
         <!-- Today's Top Picks Section -->
@@ -755,6 +786,18 @@
             'Dashboard loaded: ' + new Date().toLocaleString();
 
         // Load portfolio summary
+
+        async function loadPaoBullSummary() {
+            try {
+                const r = await fetch('paobull/paobull-reports.json?_=' + Date.now());
+                if (!r.ok) return;
+                const reports = await r.json();
+                document.getElementById('pb-total').textContent = reports.length;
+                document.getElementById('pb-buy').textContent = reports.filter(r => r.pipeline_verdict === 'BUY').length;
+                document.getElementById('pb-watch').textContent = reports.filter(r => r.pipeline_verdict && r.pipeline_verdict.startsWith('WATCH')).length;
+                document.getElementById('pb-latest').textContent = reports[0] ? reports[0].ticker : '—';
+            } catch(e) {}
+        }
         async function loadPortfolioSummary() {
             try {
                 const response = await fetch('portfolio-summary.json');
@@ -1247,7 +1290,8 @@
                 'Dashboard loaded: ' + new Date().toLocaleString();
 
             // Reload all data
-            Promise.all([
+            loadPaoBullSummary();
+        Promise.all([
                 loadPortfolioSummary(),
                 loadCompanyProfileSummary(),
                 loadEnhancedTrendSummary(),
@@ -1265,6 +1309,7 @@
         }
 
         // Load top picks on page load
+        loadPaoBullSummary();
         loadTopPicks();
     </script>
 </body>

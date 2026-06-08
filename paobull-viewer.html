@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaoBull Research Reports</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        header {
+            background: rgba(255,255,255,0.97);
+            border-radius: 20px;
+            padding: 36px 40px;
+            margin-bottom: 28px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        h1 {
+            font-size: 2.4em;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+        }
+        .subtitle { color: #666; font-size: 1em; }
+        .timestamp { color: #aaa; font-size: 0.82em; margin-top: 5px; }
+        .back-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white; text-decoration: none; border-radius: 10px;
+            font-weight: 600; font-size: 0.9em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79,70,229,0.4); }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+        .stat-box {
+            background: rgba(255,255,255,0.96);
+            border-radius: 14px; padding: 18px;
+            text-align: center;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+        }
+        .stat-value {
+            font-size: 2em; font-weight: 700;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .stat-label { color: #888; font-size: 0.78em; margin-top: 4px; }
+
+        .filter-bar {
+            background: rgba(255,255,255,0.96);
+            border-radius: 14px; padding: 16px 20px;
+            margin-bottom: 22px;
+            display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+        }
+        .filter-bar input, .filter-bar select {
+            padding: 8px 14px; border: 1.5px solid #e5e7eb;
+            border-radius: 8px; font-size: 0.9em; outline: none;
+            transition: border-color 0.2s;
+        }
+        .filter-bar input { flex: 1; min-width: 160px; }
+        .filter-bar input:focus, .filter-bar select:focus { border-color: #7c3aed; }
+        .filter-bar label { color: #555; font-size: 0.88em; font-weight: 600; }
+
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .report-card {
+            background: rgba(255,255,255,0.97);
+            border-radius: 16px; padding: 22px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #4f46e5;
+        }
+        .report-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+        .report-card.verdict-buy { border-left-color: #10b981; }
+        .report-card.verdict-watch { border-left-color: #f59e0b; }
+        .report-card.verdict-fail { border-left-color: #ef4444; }
+
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .ticker { font-size: 1.6em; font-weight: 800; color: #1a1a2e; }
+        .card-date { color: #aaa; font-size: 0.78em; text-align: right; }
+        .verdict-badge {
+            display: inline-block; padding: 3px 10px; border-radius: 20px;
+            font-size: 0.75em; font-weight: 700; margin-top: 3px;
+        }
+        .badge-buy { background: #d1fae5; color: #065f46; }
+        .badge-watch { background: #fef3c7; color: #92400e; }
+        .badge-fail { background: #fee2e2; color: #991b1b; }
+        .badge-none { background: #f3f4f6; color: #6b7280; }
+
+        .card-metrics {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px; margin: 12px 0;
+        }
+        .metric { text-align: center; background: #f8f9fa; border-radius: 8px; padding: 8px 4px; }
+        .metric-value { font-size: 1em; font-weight: 700; color: #1a1a2e; }
+        .metric-label { font-size: 0.65em; color: #888; margin-top: 2px; }
+
+        .card-snippet {
+            font-size: 0.82em; color: #555; line-height: 1.5;
+            display: -webkit-box; -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; overflow: hidden;
+            margin-top: 10px;
+        }
+        .card-footer {
+            margin-top: 12px; display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.78em; color: #aaa;
+        }
+        .read-btn {
+            padding: 5px 14px; background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white; border: none; border-radius: 8px; cursor: pointer;
+            font-size: 0.82em; font-weight: 600;
+        }
+
+        .modal-overlay {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.75); z-index: 1000;
+            overflow-y: auto; padding: 30px 20px;
+        }
+        .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+        .modal {
+            background: white; border-radius: 20px;
+            padding: 36px; max-width: 860px; width: 100%;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .modal-close {
+            position: absolute; top: 18px; right: 22px;
+            font-size: 1.6em; color: #aaa; cursor: pointer; line-height: 1;
+            background: none; border: none;
+        }
+        .modal-close:hover { color: #333; }
+        .modal-ticker { font-size: 2em; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
+        .modal-meta { color: #888; font-size: 0.85em; margin-bottom: 20px; }
+        .modal-body {
+            font-size: 0.9em; line-height: 1.75; color: #333;
+            white-space: pre-wrap; word-wrap: break-word;
+        }
+        .modal-body h2 {
+            font-size: 0.95em; color: #4f46e5; margin: 20px 0 6px;
+            font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+            border-bottom: 1px solid #e5e7eb; padding-bottom: 4px;
+        }
+        .modal-loading { color: #aaa; text-align: center; padding: 40px; }
+
+        .no-reports { text-align: center; color: rgba(255,255,255,0.6); padding: 60px; font-size: 1.1em; }
+        .loading { color: rgba(255,255,255,0.7); text-align: center; padding: 60px; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>📋 PaoBull Research Reports</h1>
+            <p class="subtitle">Institution-grade synthesis &middot; deepseek-r1:32b &middot; Entry / Exit / Sizing</p>
+            <p class="timestamp" id="ts"></p>
+        </div>
+        <a href="index.html" class="back-btn">&#8592; Dashboard</a>
+    </header>
+
+    <div class="stats-row" id="stats-row"></div>
+
+    <div class="filter-bar">
+        <label>&#128269;</label>
+        <input type="text" id="search" placeholder="Search ticker or sector&hellip;" oninput="filterReports()">
+        <label>Verdict</label>
+        <select id="verdict-filter" onchange="filterReports()">
+            <option value="">All</option>
+            <option value="BUY">BUY</option>
+            <option value="WATCH_ENTRY">WATCH Entry</option>
+            <option value="WATCH">WATCH</option>
+            <option value="FAIL">FAIL</option>
+        </select>
+    </div>
+
+    <div class="reports-grid" id="reports-grid">
+        <div class="loading">Loading reports&hellip;</div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal(null)">&#215;</button>
+        <div class="modal-ticker" id="modal-ticker"></div>
+        <div class="modal-meta" id="modal-meta"></div>
+        <div class="modal-body" id="modal-body"><div class="modal-loading">Loading report&hellip;</div></div>
+    </div>
+</div>
+
+<script>
+let allReports = [];
+
+async function loadReports() {
+    try {
+        const r = await fetch('paobull/paobull-reports.json?_=' + Date.now());
+        if (!r.ok) throw new Error('not found');
+        allReports = await r.json();
+        renderStats(allReports);
+        renderCards(allReports);
+        document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleString();
+    } catch(e) {
+        document.getElementById('reports-grid').innerHTML =
+            '<div class="no-reports">No PaoBull reports published yet.<br>Run <code>pb TICKER</code> on M1 Max &mdash; reports sync nightly.</div>';
+        document.getElementById('stats-row').innerHTML = '';
+    }
+}
+
+function renderStats(reports) {
+    const buy   = reports.filter(r => r.pipeline_verdict === 'BUY').length;
+    const watch = reports.filter(r => ['WATCH_ENTRY','WATCH'].includes(r.pipeline_verdict)).length;
+    const total = reports.length;
+    const latest = reports[0] ? reports[0].ticker : '&mdash;';
+    document.getElementById('stats-row').innerHTML =
+        '<div class="stat-box"><div class="stat-value">' + total + '</div><div class="stat-label">Reports</div></div>' +
+        '<div class="stat-box"><div class="stat-value" style="color:#10b981;-webkit-text-fill-color:#10b981">' + buy + '</div><div class="stat-label">BUY Verdicts</div></div>' +
+        '<div class="stat-box"><div class="stat-value" style="color:#f59e0b;-webkit-text-fill-color:#f59e0b">' + watch + '</div><div class="stat-label">WATCH</div></div>' +
+        '<div class="stat-box"><div class="stat-value" style="font-size:1.3em">' + latest + '</div><div class="stat-label">Latest</div></div>';
+}
+
+function verdictClass(v) {
+    if (!v) return '';
+    if (v === 'BUY') return 'verdict-buy';
+    if (v && v.startsWith('WATCH')) return 'verdict-watch';
+    if (v === 'FAIL') return 'verdict-fail';
+    return '';
+}
+function badgeClass(v) {
+    if (!v) return 'badge-none';
+    if (v === 'BUY') return 'badge-buy';
+    if (v && v.startsWith('WATCH')) return 'badge-watch';
+    if (v === 'FAIL') return 'badge-fail';
+    return 'badge-none';
+}
+function fmtNum(v) {
+    if (v == null) return '&mdash;';
+    if (Math.abs(v) >= 1e12) return '$' + (v/1e12).toFixed(2) + 'T';
+    if (Math.abs(v) >= 1e9)  return '$' + (v/1e9).toFixed(1) + 'B';
+    if (Math.abs(v) >= 1e6)  return '$' + (v/1e6).toFixed(0) + 'M';
+    return '$' + v.toFixed(2);
+}
+
+function renderCards(reports) {
+    if (!reports.length) {
+        document.getElementById('reports-grid').innerHTML = '<div class="no-reports">No matching reports.</div>';
+        return;
+    }
+    document.getElementById('reports-grid').innerHTML = reports.map(function(r) {
+        var snippet = (r.investment_thesis || r.entry_framework || '').replace(/<[^>]+>/g, '').replace(/\*\*/g, '');
+        var ticker = r.ticker;
+        var date = r.generated_at;
+        return '<div class="report-card ' + verdictClass(r.pipeline_verdict) + '" onclick="openReport(\'' + ticker + '\',\'' + date + '\')">' +
+            '<div class="card-header">' +
+                '<div><div class="ticker">' + ticker + '</div>' +
+                '<span class="verdict-badge ' + badgeClass(r.pipeline_verdict) + '">' + (r.pipeline_verdict || 'NOT IN PIPELINE') + '</span></div>' +
+                '<div class="card-date">' + date + '<br><span style="color:#888;font-size:0.9em">' + (r.sector || '') + '</span></div>' +
+            '</div>' +
+            '<div class="card-metrics">' +
+                '<div class="metric"><div class="metric-value">' + (r.price != null ? '$'+r.price : '&mdash;') + '</div><div class="metric-label">Price</div></div>' +
+                '<div class="metric"><div class="metric-value">' + (r.roe_pct != null ? r.roe_pct.toFixed(1)+'%' : '&mdash;') + '</div><div class="metric-label">ROE</div></div>' +
+                '<div class="metric"><div class="metric-value">' + fmtNum(r.fcf_latest) + '</div><div class="metric-label">FCF</div></div>' +
+            '</div>' +
+            '<div class="card-snippet">' + snippet + '</div>' +
+            '<div class="card-footer">' +
+                '<span>Score: ' + (r.pipeline_score != null ? r.pipeline_score+'/60' : '&mdash;') + ' &middot; BDD: ' + (r.bdd_verdict || '&mdash;') + '</span>' +
+                '<button class="read-btn">Read &rarr;</button>' +
+            '</div>' +
+        '</div>';
+    }).join('');
+}
+
+function filterReports() {
+    var q = document.getElementById('search').value.toLowerCase();
+    var v = document.getElementById('verdict-filter').value;
+    var filtered = allReports.filter(function(r) {
+        var matchQ = !q || r.ticker.toLowerCase().indexOf(q) >= 0 ||
+            (r.sector || '').toLowerCase().indexOf(q) >= 0 ||
+            (r.industry || '').toLowerCase().indexOf(q) >= 0;
+        var matchV = !v || r.pipeline_verdict === v;
+        return matchQ && matchV;
+    });
+    renderCards(filtered);
+}
+
+async function openReport(ticker, date) {
+    document.getElementById('modal-ticker').textContent = ticker;
+    document.getElementById('modal-meta').textContent = date + ' · deepseek-r1:32b';
+    document.getElementById('modal-body').innerHTML = '<div class="modal-loading">Loading…</div>';
+    document.getElementById('modal-overlay').classList.add('open');
+
+    var filename = 'paobull/' + ticker + '_' + date.replace(/-/g,'') + '.pb';
+    try {
+        var r = await fetch(filename + '?_=' + Date.now());
+        if (!r.ok) throw new Error();
+        var text = await r.text();
+        var html = text
+            .replace(/^# .+$/m, '')
+            .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        document.getElementById('modal-body').innerHTML = html;
+    } catch(e) {
+        document.getElementById('modal-body').innerHTML = '<div class="modal-loading">Report file not available.</div>';
+    }
+}
+
+function closeModal(e) {
+    if (e && e.target !== document.getElementById('modal-overlay')) return;
+    document.getElementById('modal-overlay').classList.remove('open');
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(null); });
+
+loadReports();
+</script>
+</body>
+</html>
