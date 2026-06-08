@@ -401,6 +401,68 @@
             h1 { font-size: 1.6em; }
             .metric { padding: 4px 8px; font-size: 0.85em; }
         }
+
+        /* ── Tool Tabs ─────────────────────────────────────────────────────── */
+        .tool-tabs {
+            background: rgba(255,255,255,0.97);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .tab-strip {
+            display: flex;
+            background: #eef0f7;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 10px 12px 0;
+            gap: 3px;
+            border-bottom: 2px solid rgba(102,126,234,0.15);
+        }
+        .tab-strip::-webkit-scrollbar { display: none; }
+        .tab-btn {
+            flex-shrink: 0;
+            padding: 10px 20px 11px;
+            border: none;
+            border-radius: 10px 10px 0 0;
+            background: transparent;
+            color: #888;
+            font-size: 0.88em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.18s, color 0.18s;
+            white-space: nowrap;
+            font-family: inherit;
+            position: relative;
+        }
+        .tab-btn:hover { background: rgba(255,255,255,0.75); color: #555; }
+        .tab-btn.active {
+            background: white;
+            color: #333;
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        .tab-panels { padding: 28px 30px 30px; }
+        .tab-panel { display: none; }
+        .tab-panel.active {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            animation: tabFadeIn 0.18s ease;
+        }
+        .tab-panel.active.single { display: block; }
+        @keyframes tabFadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to   { opacity: 1; transform: none; }
+        }
+        @media (max-width: 768px) {
+            .tab-panels { padding: 20px 16px; }
+            .tab-btn { padding: 9px 14px 10px; font-size: 0.82em; }
+        }
     </style>
 </head>
 <body>
@@ -430,228 +492,185 @@
             <span id="freshness-badge" class="freshness-badge freshness-fresh" aria-live="polite"></span>
         </header>
 
-        <!-- Utility tools row -->
-        <div class="stats" role="region" aria-label="Quick access">
-            <div class="stat-card" role="region" aria-labelledby="portfolio-heading" style="padding: 25px;">
-                <h2 id="portfolio-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">💼 Portfolio Monitor</h2>
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
-                    <div style="text-align: center; margin-bottom: 10px;">
-                        <div style="font-size: 2em; font-weight: bold; color: white;" id="portfolio-positions">-</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">Total Positions</div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #10b981;" id="portfolio-return">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Avg Return</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #ef4444;" id="portfolio-alerts">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Alerts</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="portfolio.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px;">
-                    📊 View Dashboard →
-                </a>
+
+        <!-- ── Tool Tabs ───────────────────────────────────────────────────── -->
+        <div class="tool-tabs" role="region" aria-label="Analysis tools">
+            <div class="tab-strip" role="tablist">
+                <button class="tab-btn active" role="tab" data-tab="portfolio"   onclick="switchTab('portfolio',this)">💼 Portfolio</button>
+                <button class="tab-btn"         role="tab" data-tab="company"    onclick="switchTab('company',this)">🏢 Company Profiles</button>
+                <button class="tab-btn"         role="tab" data-tab="trends"     onclick="switchTab('trends',this)">🎯 Enhanced Trends</button>
+                <button class="tab-btn"         role="tab" data-tab="pipeline"   onclick="switchTab('pipeline',this)">🔬 S&amp;P 500 Pipeline</button>
+                <button class="tab-btn"         role="tab" data-tab="supplychain" onclick="switchTab('supplychain',this)">🕸 Supply Chain</button>
+                <button class="tab-btn"         role="tab" data-tab="paobull"    onclick="switchTab('paobull',this)">📋 PaoBull</button>
             </div>
-
-            <div class="stat-card" role="region" aria-labelledby="company-profiles-heading" style="padding: 25px;">
-                <h2 id="company-profiles-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🏢 Company Profiles</h2>
-                <div style="background: linear-gradient(135deg, #4a6fa5 0%, #2c4a7c 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
-                    <div style="text-align: center; margin-bottom: 10px;">
-                        <div style="font-size: 2em; font-weight: bold; color: white;" id="profile-total">-</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.8em;">Companies</div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="profile-analyses">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">AI Analyses</div>
+            <div class="tab-panels">
+                <div class="tab-panel active" id="panel-portfolio">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:14px;color:#333;">💼 Portfolio Monitor</h2>
+                    <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="text-align:center;margin-bottom:12px;">
+                            <div style="font-size:2.4em;font-weight:bold;color:white;" id="portfolio-positions">-</div>
+                            <div style="color:rgba(255,255,255,0.9);font-size:0.82em;">Total Positions</div>
                         </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: white;" id="profile-filings">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">SEC Filings</div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:#10b981;" id="portfolio-return">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Avg Return</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:#ef4444;" id="portfolio-alerts">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Alerts</div>
+                            </div>
                         </div>
                     </div>
+                    <a href="portfolio.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.88em;padding:11px 20px;">
+                        📊 View Dashboard →
+                    </a>
                 </div>
-                <a href="company-profile.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #4a6fa5 0%, #2c4a7c 100%);">
-                    🏢 View Profiles →
-                </a>
-            </div>
-
-            <div class="stat-card" role="region" aria-labelledby="enhanced-trends-heading" style="padding: 25px;">
-                <h2 id="enhanced-trends-heading" style="font-size: 1.3em; margin-bottom: 15px; color: #333;">🎯 Enhanced Trend Classifier</h2>
-                <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 15px; border-radius: 12px; margin-bottom: 12px;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 8px;">
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #28a745;" id="enhanced-trend-bull-count">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Bullish</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #ffc107;" id="enhanced-trend-neutral-count">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Neutral</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.3em; font-weight: bold; color: #dc3545;" id="enhanced-trend-bear-count">-</div>
-                            <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Bearish</div>
-                        </div>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.15); padding: 8px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.3em; font-weight: bold; color: white;" id="enhanced-trend-total-count">-</div>
-                        <div style="color: rgba(255,255,255,0.8); font-size: 0.7em;">Total Stocks (Performance-Based)</div>
-                    </div>
                 </div>
-                <a href="enhanced-trends.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.85em; padding: 10px 20px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-                    🎯 View Enhanced Analysis →
-                </a>
-            </div>
-        </div>
-
-        <!-- Featured analysis tools — side by side -->
-        <div class="featured-tools" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
-
-            <!-- S&P 500 Pipeline -->
-            <div class="stat-card" role="region" aria-labelledby="sp500-pipeline-heading" style="padding: 30px;">
-                <h2 id="sp500-pipeline-heading" style="font-size: 1.4em; margin-bottom: 6px; color: #333;">🔬 S&amp;P 500 + NASDAQ 100 Pipeline</h2>
-                <p style="font-size: 0.82em; color: #888; margin-bottom: 16px;">4-layer funnel: SEC XBRL → fundamentals → LLM moat audit · deepseek-r1</p>
-                <div style="background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); padding: 18px; border-radius: 14px; margin-bottom: 16px;">
-                    <div style="text-align: center; margin-bottom: 12px;">
-                        <div style="font-size: 2.6em; font-weight: bold; color: white; line-height: 1;" id="sp500-buy-count">—</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em; margin-top: 4px;">BUY Verdicts</div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
-                        <div style="background: rgba(255,255,255,0.25); padding: 10px 6px; border-radius: 10px; text-align: center;">
-                            <div style="font-size: 1.4em; font-weight: bold; color: white;" id="sp500-watch-entry-count">—</div>
-                            <div style="color: rgba(255,255,255,0.85); font-size: 0.68em;">WATCH Entry</div>
+                <div class="tab-panel" id="panel-company">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:14px;color:#333;">🏢 Company Profiles</h2>
+                    <div style="background:linear-gradient(135deg,#4a6fa5 0%,#2c4a7c 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="text-align:center;margin-bottom:12px;">
+                            <div style="font-size:2.4em;font-weight:bold;color:white;" id="profile-total">-</div>
+                            <div style="color:rgba(255,255,255,0.9);font-size:0.82em;">Companies</div>
                         </div>
-                        <div style="background: rgba(255,255,255,0.25); padding: 10px 6px; border-radius: 10px; text-align: center;">
-                            <div style="font-size: 1.4em; font-weight: bold; color: white;" id="sp500-watch-count">—</div>
-                            <div style="color: rgba(255,255,255,0.85); font-size: 0.68em;">WATCH Fund.</div>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.25); padding: 10px 6px; border-radius: 10px; text-align: center;">
-                            <div style="font-size: 1.4em; font-weight: bold; color: white;" id="sp500-top-score">—</div>
-                            <div style="color: rgba(255,255,255,0.85); font-size: 0.68em;">Top Score</div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:white;" id="profile-analyses">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">AI Analyses</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:white;" id="profile-filings">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">SEC Filings</div>
+                            </div>
                         </div>
                     </div>
+                    <a href="company-profile.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.88em;padding:11px 20px;background:linear-gradient(135deg,#4a6fa5 0%,#2c4a7c 100%);">
+                        🏢 View Profiles →
+                    </a>
                 </div>
-                <a href="sp500-pipeline.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.9em; padding: 12px 20px; background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); color: #333; font-weight: 700; border-radius: 10px;">
-                    🔬 View Pipeline Results →
-                </a>
-            </div>
-
-            <!-- EVCDM Supply Chain Intelligence -->
-            <div class="stat-card" role="region" aria-labelledby="evcdm-heading" style="padding: 30px;">
-                <h2 id="evcdm-heading" style="font-size: 1.4em; margin-bottom: 6px; color: #333;">🕸 Supply Chain Intelligence</h2>
-                <p style="font-size: 0.82em; color: #888; margin-bottom: 16px;">SEC EDGAR 10-K · LLM-extracted edges · 7-rule validation · qwen2.5:14b</p>
-                <div style="background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%); padding: 18px; border-radius: 14px; margin-bottom: 16px;">
-                    <div style="text-align: center; margin-bottom: 12px;">
-                        <div style="font-size: 2.6em; font-weight: bold; color: white; line-height: 1;" id="evcdm-total-count">716</div>
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.85em; margin-top: 4px;">Verified Supply-Chain Edges · 12 Industries</div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
-                        <div style="background: rgba(124,58,237,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🤖</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">AI</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">82</div>
-                        </div>
-                        <div style="background: rgba(8,145,178,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">☁️</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Cloud</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">101</div>
-                        </div>
-                        <div style="background: rgba(217,119,6,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">⚡</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Energy</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">54</div>
-                        </div>
-                        <div style="background: rgba(5,150,105,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🏦</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Finance</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">142</div>
-                        </div>
-                        <div style="background: rgba(225,29,72,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🏥</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Health</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">156</div>
-                        </div>
-                        <div style="background: rgba(29,78,216,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">💾</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Semis</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;" id="semi-edge-count">61</div>
-                        </div>
-                        <div style="background: rgba(126,34,206,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">⚛️</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Quantum</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">13</div>
-                        </div>
-                        <div style="background: rgba(30,58,95,0.55); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🛡️</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Defense</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">23</div>
-                        </div>
-                        <div style="background: rgba(22,163,74,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🚗</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">EV & Auto</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">13</div>
-                        </div>
-                        <div style="background: rgba(13,148,136,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🧬</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Biotech</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">21</div>
-                        </div>
-                        <div style="background: rgba(3,105,161,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">📡</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Telecom</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">16</div>
-                        </div>
-                        <div style="background: rgba(220,38,38,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🔒</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">Cyber</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">14</div>
-                        </div>
-                        <div style="background: rgba(22,163,74,0.45); padding: 8px 4px; border-radius: 8px; text-align: center;">
-                            <div style="font-size: 1.1em;">🌱</div>
-                            <div style="color: rgba(255,255,255,0.9); font-size: 0.65em; margin-top: 2px; font-weight: 600;">CleanTech</div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.6em;">20</div>
-                        </div>
-                    </div>
                 </div>
-                <a href="evcdm-viewer.html" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.9em; padding: 12px 20px; background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%); color: white; font-weight: 700; border-radius: 10px;">
-                    🕸 View Supply Chain Map →
-                </a>
-            </div>
-
-
-
-        <!-- PaoBull Research Reports -->
-        <div style='margin-bottom: 30px;'>
-            <div class='stat-card' role='region' aria-labelledby='paobull-heading' style='padding: 30px;'>
-                <h2 id='paobull-heading' style='font-size: 1.4em; margin-bottom: 6px; color: #333;'>&#128203; PaoBull Research Reports</h2>
-                <p style='font-size: 0.82em; color: #888; margin-bottom: 16px;'>Per-ticker synthesis &middot; RSI-14/9 &middot; BuyDeepDip moat audit &middot; Entry / Exit / Sizing &middot; deepseek-r1:32b</p>
-                <div style='background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); padding: 18px; border-radius: 14px; margin-bottom: 16px;'>
-                    <div style='display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px;'>
-                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
-                            <div style='font-size: 2em; font-weight: bold; color: white;' id='pb-total'>&mdash;</div>
-                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>Reports</div>
+                <div class="tab-panel" id="panel-trends">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:14px;color:#333;">🎯 Enhanced Trend Classifier</h2>
+                    <div style="background:linear-gradient(135deg,#11998e 0%,#38ef7d 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px;">
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:#28a745;" id="enhanced-trend-bull-count">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Bullish</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:#ffc107;" id="enhanced-trend-neutral-count">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Neutral</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.4em;font-weight:bold;color:#dc3545;" id="enhanced-trend-bear-count">-</div>
+                                <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Bearish</div>
+                            </div>
                         </div>
-                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
-                            <div style='font-size: 2em; font-weight: bold; color: #6ee7b7;' id='pb-buy'>&mdash;</div>
-                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>BUY</div>
-                        </div>
-                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
-                            <div style='font-size: 2em; font-weight: bold; color: #fde68a;' id='pb-watch'>&mdash;</div>
-                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>WATCH</div>
-                        </div>
-                        <div style='background: rgba(255,255,255,0.2); padding: 12px 8px; border-radius: 10px; text-align: center;'>
-                            <div style='font-size: 1.1em; font-weight: bold; color: white;' id='pb-latest'>&mdash;</div>
-                            <div style='color: rgba(255,255,255,0.85); font-size: 0.7em;'>Latest</div>
+                        <div style="background:rgba(255,255,255,0.18);padding:10px;border-radius:10px;text-align:center;">
+                            <div style="font-size:1.6em;font-weight:bold;color:white;" id="enhanced-trend-total-count">-</div>
+                            <div style="color:rgba(255,255,255,0.8);font-size:0.72em;">Total Stocks Tracked</div>
                         </div>
                     </div>
+                    <a href="enhanced-trends.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.88em;padding:11px 20px;background:linear-gradient(135deg,#11998e 0%,#38ef7d 100%);">
+                        🎯 View Enhanced Analysis →
+                    </a>
                 </div>
-                <a href='paobull-viewer.html' class='btn' style='width: 100%; text-align: center; display: block; font-size: 0.9em; padding: 12px 20px; background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: white; font-weight: 700; border-radius: 10px;'>
-                    &#128203; View Research Reports &#8594;
-                </a>
+                </div>
+                <div class="tab-panel single" id="panel-pipeline">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:6px;color:#333;">🔬 S&amp;P 500 + NASDAQ 100 Pipeline</h2>
+                    <p style="font-size:0.8em;color:#aaa;margin-bottom:14px;">4-layer funnel: SEC XBRL → fundamentals → LLM moat audit · deepseek-r1</p>
+                    <div style="background:linear-gradient(135deg,#f7971e 0%,#ffd200 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="text-align:center;margin-bottom:14px;">
+                            <div style="font-size:3em;font-weight:bold;color:white;line-height:1;" id="sp500-buy-count">—</div>
+                            <div style="color:rgba(255,255,255,0.9);font-size:0.85em;margin-top:4px;">BUY Verdicts</div>
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+                            <div style="background:rgba(255,255,255,0.25);padding:12px 6px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.5em;font-weight:bold;color:white;" id="sp500-watch-entry-count">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">WATCH Entry</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.25);padding:12px 6px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.5em;font-weight:bold;color:white;" id="sp500-watch-count">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">WATCH Fund.</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.25);padding:12px 6px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.5em;font-weight:bold;color:white;" id="sp500-top-score">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">Top Score</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="sp500-pipeline.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.9em;padding:12px 20px;background:linear-gradient(135deg,#f7971e 0%,#ffd200 100%);color:#333;font-weight:700;border-radius:10px;">
+                        🔬 View Pipeline Results →
+                    </a>
+                </div>
+                </div>
+                <div class="tab-panel single" id="panel-supplychain">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:6px;color:#333;">🕸 Supply Chain Intelligence</h2>
+                    <p style="font-size:0.8em;color:#aaa;margin-bottom:14px;">SEC EDGAR 10-K · LLM-extracted edges · 7-rule validation · qwen2.5:14b</p>
+                    <div style="background:linear-gradient(135deg,#0f172a 0%,#0891b2 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="text-align:center;margin-bottom:14px;">
+                            <div style="font-size:3em;font-weight:bold;color:white;line-height:1;" id="evcdm-total-count">716</div>
+                            <div style="color:rgba(255,255,255,0.9);font-size:0.82em;margin-top:4px;">Verified Supply-Chain Edges · 13 Industries</div>
+                        </div>
+                        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:5px;">
+                            <div style="background:rgba(124,58,237,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🤖</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">AI</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">82</div></div>
+                            <div style="background:rgba(8,145,178,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">☁️</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Cloud</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">101</div></div>
+                            <div style="background:rgba(217,119,6,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">⚡</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Energy</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">54</div></div>
+                            <div style="background:rgba(5,150,105,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🏦</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Finance</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">142</div></div>
+                            <div style="background:rgba(225,29,72,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🏥</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Health</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">156</div></div>
+                            <div style="background:rgba(29,78,216,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">💾</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Semis</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;" id="semi-edge-count">61</div></div>
+                            <div style="background:rgba(126,34,206,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">⚛️</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Quantum</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">13</div></div>
+                            <div style="background:rgba(30,58,95,0.55);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🛡️</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Defense</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">23</div></div>
+                            <div style="background:rgba(22,163,74,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🚗</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">EV</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">13</div></div>
+                            <div style="background:rgba(13,148,136,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🧬</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Biotech</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">21</div></div>
+                            <div style="background:rgba(3,105,161,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">📡</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Telecom</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">16</div></div>
+                            <div style="background:rgba(220,38,38,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🔒</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Cyber</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">14</div></div>
+                            <div style="background:rgba(22,163,74,0.45);padding:6px 3px;border-radius:7px;text-align:center;"><div style="font-size:1em;">🌱</div><div style="color:rgba(255,255,255,0.9);font-size:0.6em;font-weight:600;">Clean</div><div style="color:rgba(255,255,255,0.7);font-size:0.58em;">20</div></div>
+                        </div>
+                    </div>
+                    <a href="evcdm-viewer.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.9em;padding:12px 20px;background:linear-gradient(135deg,#0f172a 0%,#0891b2 100%);color:white;font-weight:700;border-radius:10px;">
+                        🕸 View Supply Chain Map →
+                    </a>
+                </div>
+                </div>
+                <div class="tab-panel single" id="panel-paobull">
+                <div>
+                    <h2 style="font-size:1.3em;margin-bottom:6px;color:#333;">📋 PaoBull Research Reports</h2>
+                    <p style="font-size:0.8em;color:#aaa;margin-bottom:14px;">Per-ticker synthesis · RSI-14/9 · BuyDeepDip moat audit · Entry / Exit / Sizing · deepseek-r1:32b</p>
+                    <div style="background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);padding:18px;border-radius:14px;margin-bottom:14px;">
+                        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;">
+                            <div style="background:rgba(255,255,255,0.2);padding:14px 8px;border-radius:10px;text-align:center;">
+                                <div style="font-size:2.2em;font-weight:bold;color:white;" id="pb-total">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">Reports</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.2);padding:14px 8px;border-radius:10px;text-align:center;">
+                                <div style="font-size:2.2em;font-weight:bold;color:#6ee7b7;" id="pb-buy">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">BUY</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.2);padding:14px 8px;border-radius:10px;text-align:center;">
+                                <div style="font-size:2.2em;font-weight:bold;color:#fde68a;" id="pb-watch">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">WATCH</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.2);padding:14px 8px;border-radius:10px;text-align:center;">
+                                <div style="font-size:1.2em;font-weight:bold;color:white;" id="pb-latest">—</div>
+                                <div style="color:rgba(255,255,255,0.85);font-size:0.7em;">Latest</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="paobull-viewer.html" class="btn" style="width:100%;text-align:center;display:block;font-size:0.9em;padding:12px 20px;background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);color:white;font-weight:700;border-radius:10px;">
+                        📋 View Research Reports →
+                    </a>
+                </div>
+                </div>
             </div>
         </div>
+
 
         <!-- Today's Top Picks Section -->
         <div class="top-picks" id="top-picks-section" role="region" aria-labelledby="top-picks-heading">
@@ -1278,6 +1297,24 @@
                 content.innerHTML = '<div class="no-picks">No top picks available. Check back after the next analysis run.</div>';
             }
         }
+
+
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+            document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+            btn.classList.add('active');
+            var panel = document.getElementById('panel-' + tabId);
+            if (panel) panel.classList.add('active');
+            localStorage.setItem('activeTab', tabId);
+        }
+        // Restore last active tab
+        (function() {
+            var saved = localStorage.getItem('activeTab');
+            if (saved) {
+                var btn = document.querySelector('.tab-btn[data-tab="' + saved + '"]');
+                if (btn) switchTab(saved, btn);
+            }
+        })();
 
         // Refresh dashboard function
         function refreshDashboard() {
