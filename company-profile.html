@@ -308,17 +308,33 @@
 
             try {
                 const res = await fetch(`financial_reports/${filename}`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const text = await res.text();
                 // If it's HTML (SEC filing), render it; otherwise show as text
                 if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
                     body.style.fontFamily = '-apple-system, sans-serif';
-                    body.innerHTML = text;
+                    // Fix relative SEC EDGAR links → absolute so they open correctly
+                    const tmp = document.createElement('div');
+                    tmp.innerHTML = text;
+                    tmp.querySelectorAll('a[href]').forEach(a => {
+                        const h = a.getAttribute('href');
+                        if (h && h.startsWith('/')) a.setAttribute('href', 'https://www.sec.gov' + h);
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('rel', 'noopener noreferrer');
+                    });
+                    tmp.querySelectorAll('img[src]').forEach(img => {
+                        const s = img.getAttribute('src');
+                        if (s && s.startsWith('/')) img.setAttribute('src', 'https://www.sec.gov' + s);
+                    });
+                    // Strip <script> and <style> tags that would break the modal layout
+                    tmp.querySelectorAll('script').forEach(el => el.remove());
+                    body.innerHTML = tmp.innerHTML;
                 } else {
                     body.style.fontFamily = "'SF Mono', 'Monaco', 'Menlo', monospace";
                     body.textContent = text;
                 }
             } catch (err) {
-                body.textContent = 'Failed to load report.';
+                body.textContent = `Failed to load report: ${err.message}`;
             }
         }
 
