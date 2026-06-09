@@ -189,9 +189,10 @@
         <label>Verdict</label>
         <select id="verdict-filter" onchange="filterReports()">
             <option value="">All</option>
-            <option value="BUY">BUY</option>
-            <option value="WATCH_ENTRY">WATCH Entry</option>
-            <option value="WATCH">WATCH</option>
+            <option value="BUY">BUY (Pipeline)</option>
+            <option value="WATCH_ENTRY">WATCH Entry (Pipeline)</option>
+            <option value="PASS">PASS (BDD)</option>
+            <option value="WATCH">WATCH (BDD)</option>
             <option value="FAIL">FAIL</option>
         </select>
     </div>
@@ -298,7 +299,7 @@ function filterReports() {
         var matchQ = !q || r.ticker.toLowerCase().indexOf(q) >= 0 ||
             (r.sector || '').toLowerCase().indexOf(q) >= 0 ||
             (r.industry || '').toLowerCase().indexOf(q) >= 0;
-        var matchV = !v || r.pipeline_verdict === v;
+        var matchV = !v || r.pipeline_verdict === v || r.bdd_verdict === v;
         return matchQ && matchV;
     });
     renderCards(filtered);
