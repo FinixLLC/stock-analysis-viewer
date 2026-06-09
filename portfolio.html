@@ -354,10 +354,12 @@
         }
 
         function updateStats(data) {
-            document.getElementById('totalPositions').textContent = data.total_positions;
-            document.getElementById('avgReturn').textContent = `+${data.avg_1m_return.toFixed(2)}%`;
-            document.getElementById('sellSignals').textContent = data.sell_signal_count;
-            document.getElementById('topGainer').textContent = `${data.top_gainer.symbol} +${data.top_gainer.return_1m.toFixed(0)}%`;
+            document.getElementById('totalPositions').textContent = data.total_positions || 0;
+            document.getElementById('avgReturn').textContent = `+${(data.avg_1m_return || 0).toFixed(2)}%`;
+            document.getElementById('sellSignals').textContent = data.sell_signal_count || 0;
+            document.getElementById('topGainer').textContent = data.top_gainer
+                ? `${data.top_gainer.symbol} +${data.top_gainer.return_1m.toFixed(0)}%`
+                : '—';
         }
 
         function updateGainersTable(gainers) {
