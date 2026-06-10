@@ -245,12 +245,14 @@
                     <div class="card-symbol">${p.symbol}</div>
                     <div class="card-badges">
                         ${p.analysisFile ? `<span class="badge badge-analysis">AI Analysis</span>` : ''}
-                        ${p.filingFile ? `<span class="badge badge-filing">${p.filingType || '10-Q'}</span>` : ''}
+                        ${p.filing10Q ? `<span class="badge badge-filing">10-Q</span>` : ''}
+                        ${p.filing10K ? `<span class="badge badge-filing">10-K</span>` : ''}
                     </div>
                     <div class="card-date">${p.analysisDate ? 'Report: ' + p.analysisDate : ''}</div>
                     <div class="card-actions">
-                        ${p.analysisFile ? `<a class="btn btn-analysis" onclick="viewReport('${p.symbol}', '${p.analysisFile}')">View Analysis</a>` : ''}
-                        ${p.filingFile ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - SEC Filing', '${p.filingFile}')">View Filing</a>` : ''}
+                        ${p.analysisFile ? `<a class="btn btn-analysis" onclick="viewReport('${p.symbol} - AI Analysis', '${p.analysisFile}')">AI Analysis</a>` : ''}
+                        ${p.filing10Q ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - 10-Q', '${p.filing10Q}')">10-Q</a>` : ''}
+                        ${p.filing10K ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - 10-K', '${p.filing10K}')">10-K</a>` : ''}
                     </div>
                 </div>
             `).join('');
@@ -310,8 +312,23 @@
                 const res = await fetch(`financial_reports/${filename}`);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const text = await res.text();
+                const trimmed = text.trim();
+                // XBRL/XML — not human-readable; redirect to SEC EDGAR search
+                if (trimmed.startsWith('<?xml') || trimmed.startsWith('<XBRL')) {
+                    const ticker = title.split(' - ')[0];
+                    const formType = title.includes('10-K') ? '10-K' : '10-Q';
+                    const secUrl = `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=${encodeURIComponent(ticker)}&CIK=${encodeURIComponent(ticker)}&type=${formType}&dateb=&owner=include&count=5&search_text=`;
+                    body.style.fontFamily = '-apple-system, sans-serif';
+                    body.innerHTML = `<div style="padding:24px;text-align:center;">
+                        <p style="font-size:1.1em;margin-bottom:16px;">⚠️ This filing is in <strong>XBRL format</strong> and cannot be displayed inline.</p>
+                        <a href="${secUrl}" target="_blank" rel="noopener noreferrer"
+                           style="display:inline-block;padding:10px 24px;background:#0891b2;color:white;border-radius:8px;text-decoration:none;font-weight:600;">
+                           View ${formType} Filings on SEC EDGAR →
+                        </a></div>`;
+                    return;
+                }
                 // If it's HTML (SEC filing), render it; otherwise show as text
-                if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
+                if (trimmed.startsWith('<!DOCTYPE') || trimmed.startsWith('<html')) {
                     body.style.fontFamily = '-apple-system, sans-serif';
                     // Fix relative SEC EDGAR links → absolute so they open correctly
                     const tmp = document.createElement('div');
