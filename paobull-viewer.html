@@ -241,19 +241,36 @@ function renderStats(reports) {
         '<div class="stat-box"><div class="stat-value" style="font-size:1.3em">' + latest + '</div><div class="stat-label">Latest</div></div>';
 }
 
-function verdictClass(v) {
+function verdictClass(pipeline, bdd) {
+    var v = pipeline || bdd;
     if (!v) return '';
     if (v === 'BUY') return 'verdict-buy';
+    if (v === 'PASS') return 'verdict-buy';
     if (v && v.startsWith('WATCH')) return 'verdict-watch';
     if (v === 'FAIL') return 'verdict-fail';
     return '';
 }
 function badgeClass(v) {
     if (!v) return 'badge-none';
-    if (v === 'BUY') return 'badge-buy';
+    if (v === 'BUY')  return 'badge-buy';
+    if (v === 'PASS') return 'badge-buy';
     if (v && v.startsWith('WATCH')) return 'badge-watch';
     if (v === 'FAIL') return 'badge-fail';
     return 'badge-none';
+}
+function badgesHtml(pipeline, bdd) {
+    var out = '';
+    if (pipeline) {
+        out += '<span class="verdict-badge ' + badgeClass(pipeline) + '">' + pipeline + '</span>';
+    }
+    // Show BDD badge if it exists and is different from pipeline
+    if (bdd && bdd !== pipeline) {
+        out += '<span class="verdict-badge ' + badgeClass(bdd) + '" style="margin-left:4px;opacity:0.85;font-size:0.78em">BDD:' + bdd + '</span>';
+    }
+    if (!pipeline && !bdd) {
+        out += '<span class="verdict-badge badge-none">NOT IN PIPELINE</span>';
+    }
+    return out;
 }
 function fmtNum(v) {
     if (v == null) return '&mdash;';
@@ -272,10 +289,10 @@ function renderCards(reports) {
         var snippet = (r.investment_thesis || r.entry_framework || '').replace(/<[^>]+>/g, '').replace(/\*\*/g, '');
         var ticker = r.ticker;
         var date = r.generated_at;
-        return '<div class="report-card ' + verdictClass(r.pipeline_verdict) + '" onclick="openReport(\'' + ticker + '\',\'' + date + '\')">' +
+        return '<div class="report-card ' + verdictClass(r.pipeline_verdict, r.bdd_verdict) + '" onclick="openReport(\'' + ticker + '\',\'' + date + '\')">' +
             '<div class="card-header">' +
                 '<div><div class="ticker">' + ticker + '</div>' +
-                '<span class="verdict-badge ' + badgeClass(r.pipeline_verdict) + '">' + (r.pipeline_verdict || 'NOT IN PIPELINE') + '</span></div>' +
+                '<div>' + badgesHtml(r.pipeline_verdict, r.bdd_verdict) + '</div></div>' +
                 '<div class="card-date">' + date + '<br><span style="color:#888;font-size:0.9em">' + (r.sector || '') + '</span></div>' +
             '</div>' +
             '<div class="card-metrics">' +
@@ -285,7 +302,7 @@ function renderCards(reports) {
             '</div>' +
             '<div class="card-snippet">' + snippet + '</div>' +
             '<div class="card-footer">' +
-                '<span>Score: ' + (r.pipeline_score != null ? r.pipeline_score+'/60' : '&mdash;') + ' &middot; BDD: ' + (r.bdd_verdict || '&mdash;') + '</span>' +
+                '<span>Score: ' + (r.pipeline_score != null ? r.pipeline_score+'/60' : '&mdash;') + '</span>' +
                 '<button class="read-btn">Read &rarr;</button>' +
             '</div>' +
         '</div>';
