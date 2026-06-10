@@ -1,3 +1,6 @@
+bind [127.0.0.1]:27017: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 27017
+Could not request local forwarding.
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -251,8 +254,8 @@
                     <div class="card-date">${p.analysisDate ? 'Report: ' + p.analysisDate : ''}</div>
                     <div class="card-actions">
                         ${p.analysisFile ? `<a class="btn btn-analysis" onclick="viewReport('${p.symbol} - AI Analysis', '${p.analysisFile}')">AI Analysis</a>` : ''}
-                        ${p.filing10Q ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - 10-Q', '${p.filing10Q}')">10-Q</a>` : ''}
-                        ${p.filing10K ? `<a class="btn btn-filing" onclick="viewReport('${p.symbol} - 10-K', '${p.filing10K}')">10-K</a>` : ''}
+                        ${p.filing10Q ? `<a class="btn btn-filing" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${p.symbol}&type=10-Q&dateb=&owner=include&count=5" target="_blank" rel="noopener noreferrer">10-Q ↗</a>` : ''}
+                        ${p.filing10K ? `<a class="btn btn-filing" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${p.symbol}&type=10-K&dateb=&owner=include&count=5" target="_blank" rel="noopener noreferrer">10-K ↗</a>` : ''}
                     </div>
                 </div>
             `).join('');
