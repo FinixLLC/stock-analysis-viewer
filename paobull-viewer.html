@@ -57,6 +57,15 @@
             text-align: center;
             box-shadow: 0 6px 24px rgba(0,0,0,0.2);
         }
+        .stat-box.clickable {
+            cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .stat-box.clickable:hover {
+            transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+        }
+        .stat-box.clickable.active {
+            outline: 2px solid #7c3aed;
+        }
         .stat-value {
             font-size: 2em; font-weight: 700;
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
@@ -236,9 +245,9 @@ function renderStats(reports) {
     const latest = reports[0] ? reports[0].ticker : '&mdash;';
     document.getElementById('stats-row').innerHTML =
         '<div class="stat-box"><div class="stat-value">' + total + '</div><div class="stat-label">Reports</div></div>' +
-        '<div class="stat-box"><div class="stat-value" style="color:#10b981;-webkit-text-fill-color:#10b981">' + buy + '</div><div class="stat-label">BUY Verdicts</div></div>' +
-        '<div class="stat-box"><div class="stat-value" style="color:#f59e0b;-webkit-text-fill-color:#f59e0b">' + watch + '</div><div class="stat-label">WATCH</div></div>' +
-        '<div class="stat-box"><div class="stat-value" style="font-size:1.3em">' + latest + '</div><div class="stat-label">Latest</div></div>';
+        '<div class="stat-box clickable" onclick="filterByVerdict(\'BUY\')" title="Show BUY reports"><div class="stat-value" style="color:#10b981;-webkit-text-fill-color:#10b981">' + buy + '</div><div class="stat-label">BUY Verdicts</div></div>' +
+        '<div class="stat-box clickable" onclick="filterByVerdict(\'WATCH\')" title="Show WATCH reports"><div class="stat-value" style="color:#f59e0b;-webkit-text-fill-color:#f59e0b">' + watch + '</div><div class="stat-label">WATCH</div></div>' +
+        '<div class="stat-box clickable" onclick="openLatestReport()" title="Open latest report"><div class="stat-value" style="font-size:1.3em">' + latest + '</div><div class="stat-label">Latest</div></div>';
 }
 
 function verdictClass(pipeline, bdd) {
@@ -320,6 +329,24 @@ function filterReports() {
         return matchQ && matchV;
     });
     renderCards(filtered);
+}
+
+function filterByVerdict(verdict) {
+    var sel = document.getElementById('verdict-filter');
+    sel.value = (sel.value === verdict) ? '' : verdict;
+    // Toggle active highlight on stat boxes
+    document.querySelectorAll('.stat-box.clickable').forEach(function(b) {
+        b.classList.remove('active');
+    });
+    if (sel.value) {
+        var idx = verdict === 'BUY' ? 0 : 1;
+        document.querySelectorAll('.stat-box.clickable')[idx].classList.add('active');
+    }
+    filterReports();
+}
+
+function openLatestReport() {
+    if (allReports.length) openReport(allReports[0].ticker, allReports[0].generated_at);
 }
 
 async function openReport(ticker, date) {
