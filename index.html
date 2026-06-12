@@ -749,26 +749,7 @@
 
 
 
-        <main id="main-content">
-        <div style="display:flex;justify-content:center;margin-bottom:30px;">
-            <a href="file-browser.html" style="
-                display:flex;flex-direction:column;align-items:center;gap:12px;
-                background:rgba(255,255,255,0.95);
-                backdrop-filter:blur(10px);
-                border-radius:24px;
-                padding:36px 56px;
-                box-shadow:0 20px 60px rgba(0,0,0,0.3);
-                text-decoration:none;
-                transition:transform 0.2s,box-shadow 0.2s;
-                cursor:pointer;
-            " onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 28px 72px rgba(0,0,0,0.4)'"
-               onmouseout="this.style.transform='';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3)'">
-                <span style="font-size:4em;line-height:1;">📁</span>
-                <span style="font-size:1.25em;font-weight:700;color:#333;">File Archive</span>
-                <span style="font-size:0.85em;color:#888;">Full Stock Analysis &bull; Chart Patterns &bull; ML Rankings</span>
-            </a>
-        </div>
-        </main>
+
 
         <footer>
             <p>Stock Analysis System • Built with Bayesian Learning</p>
@@ -1160,8 +1141,13 @@
                 const allPicks = [];
                 for (const file of latestFiles.slice(0, 2)) { // Limit to 2 exchanges
                     try {
-                        const csvResponse = await fetch(file.path);
-                        const csvText = await csvResponse.text();
+                        // Fetch only first 8KB — top picks are at the top, header + ~50 rows fits easily
+                        const csvResponse = await fetch(file.path, { headers: { Range: 'bytes=0-8191' } });
+                        const raw = await csvResponse.text();
+                        // Drop last line which may be truncated by the range cut
+                        const lines = raw.split('\n');
+                        if (csvResponse.status === 206) lines.pop();
+                        const csvText = lines.join('\n');
                         const picks = parseCSVForTopPicks(csvText, file.name);
                         allPicks.push(...picks);
                     } catch (e) {
