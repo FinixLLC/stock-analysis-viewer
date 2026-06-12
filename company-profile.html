@@ -90,6 +90,15 @@ Could not request local forwarding.
         .badge-analysis { background: #d4edda; color: #155724; }
         .badge-filing { background: #cce5ff; color: #004085; }
         .card-date { color: #888; font-size: 0.85em; }
+        .card-rpe {
+            display: flex; align-items: baseline; gap: 8px;
+            margin: 8px 0 4px; padding: 6px 10px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+            border-radius: 8px; border-left: 3px solid #4a6fa5;
+        }
+        .rpe-label { font-size: 0.75em; color: #4a6fa5; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+        .rpe-value { font-size: 1.05em; font-weight: 700; color: #1e3a5f; }
+        .rpe-emp   { font-size: 0.75em; color: #888; margin-left: auto; }
         .card-actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
         .btn {
             padding: 8px 18px;
@@ -209,16 +218,32 @@ Could not request local forwarding.
 
     <script>
         let allProfiles = [];
+        let rpeData = {};
         const PAGE_SIZE = 30;
         let currentPage = 1;
         let filteredProfiles = [];
 
+        function fmtRpe(rpe) {
+            if (!rpe) return null;
+            if (rpe >= 1e6)  return '$' + (rpe / 1e6).toFixed(2) + 'M';
+            if (rpe >= 1e3)  return '$' + (rpe / 1e3).toFixed(1) + 'K';
+            return '$' + Math.round(rpe);
+        }
+
         async function loadIndex() {
             try {
-                const res = await fetch(`company-profiles/index.json?t=${Date.now()}`);
-                const data = await res.json();
+                const [indexRes, rpeRes] = await Promise.all([
+                    fetch(`company-profiles/index.json?t=${Date.now()}`),
+                    fetch(`company-profiles/rpe-data.json?t=${Date.now()}`).catch(() => null),
+                ]);
+                const data = await indexRes.json();
                 allProfiles = data.profiles;
                 filteredProfiles = allProfiles;
+
+                if (rpeRes && rpeRes.ok) {
+                    const rpe = await rpeRes.json();
+                    rpeData = rpe.data || {};
+                }
 
                 document.getElementById('total-symbols').textContent = data.totalSymbols.toLocaleString();
                 document.getElementById('total-analyses').textContent = data.totalAnalyses.toLocaleString();
@@ -243,7 +268,11 @@ Could not request local forwarding.
                 return;
             }
 
-            results.innerHTML = pageData.map(p => `
+            results.innerHTML = pageData.map(p => {
+                const rd = rpeData[p.symbol] || {};
+                const rpe = fmtRpe(rd.rpe);
+                const empStr = rd.employees ? rd.employees.toLocaleString() : null;
+                return `
                 <div class="profile-card">
                     <div class="card-symbol">${p.symbol}</div>
                     <div class="card-badges">
@@ -251,14 +280,19 @@ Could not request local forwarding.
                         ${p.filing10Q ? `<span class="badge badge-filing">10-Q</span>` : ''}
                         ${p.filing10K ? `<span class="badge badge-filing">10-K</span>` : ''}
                     </div>
+                    ${rpe ? `<div class="card-rpe">
+                        <span class="rpe-label">Rev/Employee</span>
+                        <span class="rpe-value">${rpe}</span>
+                        ${empStr ? `<span class="rpe-emp">${empStr} employees</span>` : ''}
+                    </div>` : ''}
                     <div class="card-date">${p.analysisDate ? 'Report: ' + p.analysisDate : ''}</div>
                     <div class="card-actions">
                         ${p.analysisFile ? `<a class="btn btn-analysis" onclick="viewReport('${p.symbol} - AI Analysis', '${p.analysisFile}')">AI Analysis</a>` : ''}
                         ${p.filing10Q ? `<a class="btn btn-filing" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${p.symbol}&type=10-Q&dateb=&owner=include&count=5" target="_blank" rel="noopener noreferrer">10-Q ↗</a>` : ''}
                         ${p.filing10K ? `<a class="btn btn-filing" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${p.symbol}&type=10-K&dateb=&owner=include&count=5" target="_blank" rel="noopener noreferrer">10-K ↗</a>` : ''}
                     </div>
-                </div>
-            `).join('');
+                </div>`;
+            }).join('');
 
             renderPagination();
         }
