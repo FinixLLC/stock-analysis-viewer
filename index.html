@@ -1109,70 +1109,17 @@
         // Load top picks from the most recent CSV files
         async function loadTopPicks() {
             try {
-                const response = await fetch('file-list.json');
-                const data = await response.json();
-
-                const allCsvFiles = data.stock_analysis || data.top50 || [];
-                if (allCsvFiles.length === 0) {
-                    showNoPicksMessage();
-                    return;
-                }
-
-                // Sort by date and get the most recent files (one per exchange)
-                const sortedFiles = [...allCsvFiles]
-                    .filter(f => f.name.includes('Yahoo') && f.name.endsWith('.csv'))
-                    .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                // Get unique exchanges from most recent files
-                const exchanges = ['NASDAQ', 'NYSE', 'AMEX'];
-                const latestFiles = [];
-
-                for (const exchange of exchanges) {
-                    const file = sortedFiles.find(f => f.name.includes(exchange));
-                    if (file) latestFiles.push(file);
-                }
-
-                if (latestFiles.length === 0) {
-                    showNoPicksMessage();
-                    return;
-                }
-
-                // Fetch and parse the most recent file
-                const allPicks = [];
-                for (const file of latestFiles.slice(0, 2)) { // Limit to 2 exchanges
-                    try {
-                        // Fetch only first 8KB — top picks are at the top, header + ~50 rows fits easily
-                        const csvResponse = await fetch(file.path, { headers: { Range: 'bytes=0-8191' } });
-                        const raw = await csvResponse.text();
-                        // Drop last line which may be truncated by the range cut
-                        const lines = raw.split('\n');
-                        if (csvResponse.status === 206) lines.pop();
-                        const csvText = lines.join('\n');
-                        const picks = parseCSVForTopPicks(csvText, file.name);
-                        allPicks.push(...picks);
-                    } catch (e) {
-                        console.error('Error loading', file.path, e);
-                    }
-                }
-
-                // Sort all picks by composite score and take top 3
-                const topPicks = allPicks
-                    .filter(p => p.tier <= 3) // Include Tier 1, 2, and 3 (Good quality or better)
-                    .sort((a, b) => b.compositeScore - a.compositeScore)
-                    .slice(0, 3);
-
-                if (topPicks.length === 0) {
-                    // If no quality tiers, take top 3 regardless of tier
-                    const fallbackPicks = allPicks
-                        .sort((a, b) => b.compositeScore - a.compositeScore)
-                        .slice(0, 3);
-                    displayTopPicks(fallbackPicks);
-                } else {
-                    displayTopPicks(topPicks);
-                }
-
+                const res = await fetch('top-picks.json?_=' + Date.now());
+                if (!res.ok) throw new Error('not found');
+                const data = await res.json();
+                const picks = (data.picks || []).map(p => ({
+                    symbol: p.symbol, date: p.date, pattern: p.pattern,
+                    price: p.price, compositeScore: p.score, tier: p.tier,
+                    patternScore: 0, momentum: p.momentum, volume: p.volume,
+                    volatility: p.volatility, risk: p.risk, exchange: p.exchange,
+                }));
+                displayTopPicks(picks);
             } catch (err) {
-                console.error('Error loading top picks:', err);
                 showNoPicksMessage(true);
             }
         }
