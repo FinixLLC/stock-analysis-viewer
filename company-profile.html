@@ -231,14 +231,17 @@ Could not request local forwarding.
         }
 
         async function loadIndex() {
-            // Load RPE data independently — never let it break the main index load
-            fetch(`company-profiles/rpe-data.json?t=${Date.now()}`)
-                .then(r => r.ok ? r.json() : null)
-                .then(j => { if (j) rpeData = j.data || {}; })
-                .catch(() => {});
-
             try {
-                const res = await fetch(`company-profiles/index.json?t=${Date.now()}`);
+                // Fetch both in parallel; RPE failure never blocks index load
+                const [rpeRes, indexRes] = await Promise.all([
+                    fetch(`company-profiles/rpe-data.json?t=${Date.now()}`).catch(() => null),
+                    fetch(`company-profiles/index.json?t=${Date.now()}`)
+                ]);
+                if (rpeRes && rpeRes.ok) {
+                    const rpeJson = await rpeRes.json().catch(() => null);
+                    if (rpeJson) rpeData = rpeJson.data || {};
+                }
+                const res = indexRes;
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
                 allProfiles = data.profiles;
