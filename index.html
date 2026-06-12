@@ -519,15 +519,28 @@
         </header>
 
 
+
+
+        <!-- Today's Top Picks Section -->
+        <div class="top-picks" id="top-picks-section" role="region" aria-labelledby="top-picks-heading">
+            <h2 id="top-picks-heading">🎯 Today's Top Picks</h2>
+            <div id="top-picks-content" aria-live="polite">
+                <div class="loading-state"><span class="spinner"></span> Analyzing top picks...</div>
+            </div>
+        </div>
+
+
         <!-- ── Tool Tabs ───────────────────────────────────────────────────── -->
         <div class="tool-tabs" role="region" aria-label="Analysis tools">
             <div class="tab-strip" role="tablist">
+                <button class="tab-btn" role="tab" data-tab="files" onclick="location.href='file-browser.html'">📁 File Archive</button>
                 <button class="tab-btn active" role="tab" data-tab="portfolio"   onclick="switchTab('portfolio',this)">💼 Portfolio</button>
                 <button class="tab-btn"         role="tab" data-tab="company"    onclick="switchTab('company',this)">🏢 Company Profiles</button>
                 <button class="tab-btn"         role="tab" data-tab="trends"     onclick="switchTab('trends',this)">🎯 Enhanced Trends</button>
                 <button class="tab-btn"         role="tab" data-tab="pipeline"   onclick="switchTab('pipeline',this)">🔬 S&amp;P 500 Pipeline</button>
                 <button class="tab-btn"         role="tab" data-tab="supplychain" onclick="switchTab('supplychain',this)">🕸 Supply Chain</button>
                 <button class="tab-btn"         role="tab" data-tab="paobull"    onclick="switchTab('paobull',this)">📋 PaoBull</button>
+                <button class="tab-btn"         role="tab" data-tab="howto"     onclick="switchTab('howto',this)">📖 How to Read</button>
             </div>
             <div class="tab-panels">
                 <div class="tab-panel active" id="panel-portfolio">
@@ -694,63 +707,47 @@
                     </a>
                 </div>
                 </div>
+                <div class="tab-panel single" id="panel-howto">
+                <div style="line-height:1.8;color:#555;max-width:860px;">
+                    <p style="margin-bottom:15px;">
+                        <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
+                        Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom, DarvasBox), including tier classification,
+                        momentum, volatility, volume metrics, and risk assessment. Higher tiers (1-2) indicate stronger opportunities.
+                    </p>
+                    <p style="margin-bottom:15px;">
+                        <strong>Pattern Analysis:</strong> Detailed pattern detection results organized by pattern type.
+                        Files show all stocks exhibiting specific technical patterns on a given date, useful for identifying
+                        breakout candidates and trend reversals across different markets (NYSE, NASDAQ, AMEX).
+                    </p>
+                    <p style="margin-bottom:15px;">
+                        <strong>Key Metrics:</strong> Composite Score (overall strength), Tier (1=best, 4=lowest),
+                        Pattern Score (pattern quality), Momentum (price trend), Volatility (price stability),
+                        Volume (trading activity), Risk (penalty for adverse factors).
+                    </p>
+                    <p style="margin-bottom:15px;">
+                        <strong><a href="sp500-pipeline.html" style="color:#f7971e;text-decoration:none;">🔬 S&amp;P 500 Pipeline</a>:</strong>
+                        4-layer fundamental growth filter — SEC XBRL data → C++ metrics → fundamental filter (FCF, D/E, dilution, goodwill)
+                        → LLM moat audit (deepseek-r1 pass1 + pass2). Verdicts: <strong>BUY</strong> (actionable),
+                        <strong>WATCH — Entry</strong> (great business, bad timing), <strong>WATCH — Fundamental</strong> (monitor for improvement).
+                    </p>
+                    <p style="margin-bottom:15px;">
+                        <strong><a href="sp500-pipeline.html" style="color:#0891b2;text-decoration:none;">🗺 Ecosystem Map</a>:</strong>
+                        Positions all pipeline picks within their upstream–core–downstream value chains across 6 sectors.
+                        Cross-ecosystem panel highlights inter-sector links.
+                    </p>
+                    <p>
+                        <strong><a href="evcdm-viewer.html" style="color:#0891b2;text-decoration:none;">🕸 Supply Chain Intelligence</a>:</strong>
+                        716 LLM-verified supply-chain edges from SEC 10-K filings across 13 industries.
+                        Each edge is classified by qwen2.5:14b with a 7-rule validation filter.
+                        Filter by industry, layer (L1–L6), relationship type, or entity name.
+                    </p>
+                </div>
+                </div>
             </div>
         </div>
 
 
-        <!-- Today's Top Picks Section -->
-        <div class="top-picks" id="top-picks-section" role="region" aria-labelledby="top-picks-heading">
-            <h2 id="top-picks-heading">🎯 Today's Top Picks</h2>
-            <div id="top-picks-content" aria-live="polite">
-                <div class="loading-state"><span class="spinner"></span> Analyzing top picks...</div>
-            </div>
-        </div>
 
-        <div class="card" style="max-width: 1200px; margin: 0 auto 30px;">
-            <h2 onclick="toggleHowTo()" style="margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
-                📖 How to Read the Data
-                <span id="howto-arrow" style="font-size: 0.7em; color: #999; transition: transform 0.2s;">▼</span>
-            </h2>
-            <div id="howto-content" style="display: none; line-height: 1.8; color: #555; margin-top: 15px;">
-                <p style="margin-bottom: 15px;">
-                    <strong>Top 50 Composite Scores:</strong> Daily analysis of top-performing stocks ranked by composite score.
-                    Each file contains stocks with pattern signals (CupHandle, Spoon, VBottom, DarvasBox), including tier classification,
-                    momentum, volatility, volume metrics, and risk assessment. Higher tiers (1-2) indicate stronger opportunities.
-                </p>
-                <p style="margin-bottom: 15px;">
-                    <strong>Pattern Analysis:</strong> Detailed pattern detection results organized by pattern type.
-                    Files show all stocks exhibiting specific technical patterns on a given date, useful for identifying
-                    breakout candidates and trend reversals across different markets (NYSE, NASDAQ, AMEX).
-                </p>
-                <p style="margin-bottom: 15px;">
-                    <strong>Key Metrics:</strong> Composite Score (overall strength), Tier (1=best, 4=lowest),
-                    Pattern Score (pattern quality), Momentum (price trend), Volatility (price stability),
-                    Volume (trading activity), Risk (penalty for adverse factors).
-                </p>
-                <p style="margin-bottom: 15px;">
-                    <strong><a href="sp500-pipeline.html" style="color: #f7971e; text-decoration: none;">🔬 S&amp;P 500 Pipeline</a>:</strong>
-                    4-layer fundamental growth filter — SEC XBRL data → C++ metrics → fundamental filter (FCF, D/E, dilution, goodwill)
-                    → LLM moat audit (deepseek-r1 pass1 + pass2). Covers S&amp;P 500 (sp500_v4) and NASDAQ 100 (nasdaq100_v2) with
-                    29 merged results. Verdicts: <strong>BUY</strong> (actionable), <strong>WATCH — Entry</strong> (great business, bad timing — near 52w high),
-                    <strong>WATCH — Fundamental</strong> (monitor for improvement). Each row expands to show dimension scores, buy thesis, and risk flags.
-                </p>
-                <p style="margin-bottom: 15px;">
-                    <strong><a href="sp500-pipeline.html" style="color: #0891b2; text-decoration: none;">🗺 Ecosystem Map</a>:</strong>
-                    Ecosystem Value Chain &amp; Dependency Map — positions all 29 pipeline picks within their upstream–core–downstream value chains
-                    across 6 sectors: Consumer &amp; Retail, Travel &amp; Hospitality, Industrial &amp; Infrastructure, Business Services &amp; Fintech,
-                    AI &amp; Cloud Computing, and Healthcare &amp; MedTech. Each sector card shows intra-sector dependencies;
-                    a cross-ecosystem panel highlights inter-sector links (e.g. EME builds hyperscaler data centers, PYPL processes ABNB/BKNG bookings).
-                </p>
-                <p>
-                    <strong><a href="evcdm-viewer.html" style="color: #0891b2; text-decoration: none;">🕸 Supply Chain Intelligence</a>:</strong>
-                    716 LLM-verified supply-chain edges extracted from SEC 10-K filings across 13 industries
-                    (AI, Cloud, Energy, Finance, Healthcare, Semiconductor, Quantum, Defense &amp; Aerospace, EV &amp; Automotive, Biotech &amp; Pharma, Telecommunications, Cybersecurity, and Energy Storage &amp; Clean Tech).
-                    Each edge — supply flow, critical dependency, or competitive substitute — is sourced from a real
-                    10-K disclosure and classified by qwen2.5:14b with a 7-rule validation filter.
-                    Filter by industry, layer (L1–L6), relationship type, or search by entity name.
-                </p>
-            </div>
-        </div>
 
         <main id="main-content">
         <div style="display:flex;justify-content:center;margin-bottom:30px;">
