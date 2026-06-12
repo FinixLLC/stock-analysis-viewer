@@ -753,62 +753,23 @@
         </div>
 
         <main id="main-content">
-        <div class="grid">
-            <div class="card" role="region" aria-labelledby="analysis-heading">
-                <h2 id="analysis-heading" class="card-toggle" onclick="toggleCard('analysis-body','analysis-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
-                    📈 Full Stock Analysis
-                    <span id="analysis-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
-                </h2>
-                <div id="analysis-body">
-                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">Complete analysis of all stocks with pattern signals, momentum, and risk metrics</p>
-                    <input type="search" class="search-box" id="analysis-search" placeholder="Search files..." aria-label="Search analysis files">
-                    <ul class="file-list" id="analysis-list" role="list" aria-live="polite">
-                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card" role="region" aria-labelledby="top-patterns-heading">
-                <h2 id="top-patterns-heading" class="card-toggle" onclick="toggleCard('top-patterns-body','top-patterns-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
-                    🏆 Top Chart Patterns
-                    <span id="top-patterns-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
-                </h2>
-                <div id="top-patterns-body">
-                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">Top 20/50 stocks with strongest pattern signals</p>
-                    <input type="search" class="search-box" id="top-patterns-search" placeholder="Search files..." aria-label="Search Top Pattern files">
-                    <ul class="file-list" id="top-patterns-list" role="list" aria-live="polite">
-                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card" role="region" aria-labelledby="pattern-heading">
-                <h2 id="pattern-heading" class="card-toggle" onclick="toggleCard('pattern-body','pattern-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
-                    📊 Pattern Detection Lists
-                    <span id="pattern-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
-                </h2>
-                <div id="pattern-body">
-                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">All stocks with Spoon, Cup&Handle, VBottom, DarvasBox, or POS patterns</p>
-                    <input type="search" class="search-box" id="pattern-search" placeholder="Search files..." aria-label="Search Pattern files">
-                    <ul class="file-list" id="pattern-list" role="list" aria-live="polite">
-                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card" role="region" aria-labelledby="top50-heading">
-                <h2 id="top50-heading" class="card-toggle" onclick="toggleCard('top50-body','top50-arrow')" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;margin-bottom:0;">
-                    🤖 Top 50 ML Rankings
-                    <span id="top50-arrow" style="font-size:0.7em;color:#999;transition:transform 0.2s;">▼</span>
-                </h2>
-                <div id="top50-body">
-                    <p style="color: #666; font-size: 0.85em; margin-bottom: 10px; margin-top: 12px;">ML-ranked top 50 stocks by composite score (60% technical + 40% fundamental)</p>
-                    <input type="search" class="search-box" id="top50-search" placeholder="Search files..." aria-label="Search Top 50 ML files">
-                    <ul class="file-list" id="top50-list" role="list" aria-live="polite">
-                        <li class="loading-state"><span class="spinner"></span> Loading files...</li>
-                    </ul>
-                </div>
-            </div>
+        <div style="display:flex;justify-content:center;margin-bottom:30px;">
+            <a href="file-browser.html" style="
+                display:flex;flex-direction:column;align-items:center;gap:12px;
+                background:rgba(255,255,255,0.95);
+                backdrop-filter:blur(10px);
+                border-radius:24px;
+                padding:36px 56px;
+                box-shadow:0 20px 60px rgba(0,0,0,0.3);
+                text-decoration:none;
+                transition:transform 0.2s,box-shadow 0.2s;
+                cursor:pointer;
+            " onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 28px 72px rgba(0,0,0,0.4)'"
+               onmouseout="this.style.transform='';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.3)'">
+                <span style="font-size:4em;line-height:1;">📁</span>
+                <span style="font-size:1.25em;font-weight:700;color:#333;">File Archive</span>
+                <span style="font-size:0.85em;color:#888;">Full Stock Analysis &bull; Chart Patterns &bull; ML Rankings</span>
+            </a>
         </div>
         </main>
 
