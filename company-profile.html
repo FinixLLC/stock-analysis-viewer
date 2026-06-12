@@ -231,19 +231,18 @@ Could not request local forwarding.
         }
 
         async function loadIndex() {
+            // Load RPE data independently — never let it break the main index load
+            fetch(`company-profiles/rpe-data.json?t=${Date.now()}`)
+                .then(r => r.ok ? r.json() : null)
+                .then(j => { if (j) rpeData = j.data || {}; })
+                .catch(() => {});
+
             try {
-                const [indexRes, rpeRes] = await Promise.all([
-                    fetch(`company-profiles/index.json?t=${Date.now()}`),
-                    fetch(`company-profiles/rpe-data.json?t=${Date.now()}`).catch(() => null),
-                ]);
-                const data = await indexRes.json();
+                const res = await fetch(`company-profiles/index.json?t=${Date.now()}`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
                 allProfiles = data.profiles;
                 filteredProfiles = allProfiles;
-
-                if (rpeRes && rpeRes.ok) {
-                    const rpe = await rpeRes.json();
-                    rpeData = rpe.data || {};
-                }
 
                 document.getElementById('total-symbols').textContent = data.totalSymbols.toLocaleString();
                 document.getElementById('total-analyses').textContent = data.totalAnalyses.toLocaleString();
