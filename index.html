@@ -379,6 +379,32 @@
             top: 0;
         }
 
+
+        /* ── Date Folders ──────────────────────────────────────────────────── */
+        .date-folder { margin: 6px 0; }
+        .folder-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 8px 12px; border-radius: 8px;
+            background: #f0f2f8; cursor: pointer;
+            font-size: 0.88em; font-weight: 600; color: #555;
+            user-select: none; transition: background 0.15s;
+        }
+        .folder-header:hover { background: #e4e7f3; }
+        .folder-icon { font-size: 1em; flex-shrink: 0; }
+        .folder-date { flex: 1; }
+        .folder-count {
+            font-size: 0.8em; color: #888; font-weight: 400;
+            background: white; padding: 1px 7px; border-radius: 10px;
+        }
+        .folder-arrow {
+            font-size: 0.7em; color: #aaa;
+            transition: transform 0.18s; display: inline-block;
+        }
+        .folder-arrow.open { transform: rotate(90deg); }
+        .folder-files { display: none; padding-left: 4px; }
+        .folder-files.open { display: block; }
+        .folder-files .file-list { margin: 0; }
+        .folder-files li { margin: 4px 0; padding: 10px 12px; }
         @media (max-width: 1024px) {
             .grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -1074,20 +1100,51 @@
             }
 
             // Sort by date descending (newest first)
-            const sortedFiles = [...filteredFiles].sort((a, b) => {
-                const dateA = new Date(a.date || '1970-01-01');
-                const dateB = new Date(b.date || '1970-01-01');
-                return dateB - dateA;
-            });
+            const sorted = [...filteredFiles].sort((a, b) =>
+                new Date(b.date || '1970-01-01') - new Date(a.date || '1970-01-01'));
 
-            list.innerHTML = sortedFiles.map(file => `
-                <li role="listitem">
-                    <a href="viewer.html?file=${encodeURIComponent(file.path)}" aria-label="${file.name}, dated ${file.date || 'unknown'}">
-                        <span>${file.name}</span>
-                        <span class="file-meta">${file.date || ''}</span>
-                    </a>
-                </li>
-            `).join('');
+            // Group by date
+            const groups = [];
+            const seen = {};
+            for (const f of sorted) {
+                const d = f.date || 'Unknown';
+                if (!seen[d]) { seen[d] = []; groups.push(d); }
+                seen[d].push(f);
+            }
+
+            // Render as folders; first (latest) date is open by default
+            list.innerHTML = groups.map((date, gi) => {
+                const files = seen[date];
+                const isOpen = gi === 0;
+                const folderId = list.id + '_' + gi;
+                const filesHtml = files.map(file => `
+                    <li role="listitem">
+                        <a href="viewer.html?file=${encodeURIComponent(file.path)}" aria-label="${file.name}">
+                            <span>${file.name}</span>
+                        </a>
+                    </li>`).join('');
+                return `<li class="date-folder">
+                    <div class="folder-header" onclick="toggleFolder('${folderId}')">
+                        <span class="folder-icon">${isOpen ? '📂' : '📁'}</span>
+                        <span class="folder-date">${date}</span>
+                        <span class="folder-count">${files.length} file${files.length > 1 ? 's' : ''}</span>
+                        <span class="folder-arrow${isOpen ? ' open' : ''}">▶</span>
+                    </div>
+                    <div id="${folderId}" class="folder-files${isOpen ? ' open' : ''}">
+                        <ul class="file-list">${filesHtml}</ul>
+                    </div>
+                </li>`;
+            }).join('');
+        }
+
+        function toggleFolder(id) {
+            const files = document.getElementById(id);
+            const header = files.previousElementSibling;
+            const arrow = header.querySelector('.folder-arrow');
+            const icon  = header.querySelector('.folder-icon');
+            const isOpen = files.classList.toggle('open');
+            arrow.classList.toggle('open', isOpen);
+            icon.textContent = isOpen ? '📂' : '📁';
         }
 
         // Search functionality
