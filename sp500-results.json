@@ -1,8 +1,37 @@
 {
-  "generated": "2026-06-10T17:08:15.568669+00:00",
+  "generated": "2026-06-20T19:05:43.272636+00:00",
   "run_id": "sp500_v5",
-  "total": 20,
+  "total": 37,
   "results": [
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "MSFT",
+      "verdict": "BUY",
+      "total": 56,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 10,
+        "management": 9,
+        "earnings_quality": 9,
+        "defensive": 10,
+        "aggressive": 9
+      },
+      "buy_thesis": "Microsoft's Azure-driven revenue (143B\u2192281B in 6 years) compounds alongside near-monopoly Office 365 and Copilot AI integration. FCF reached $71.6B in FY2025 while D/E collapsed from 0.54 to 0.13 \u2014 a rare combination of platform dominance and balance sheet improvement. Every new AI workload is incremental Azure revenue.",
+      "risk_flags": "ROE declined from 43% to 30% as equity base expanded post-Activision acquisition. Azure capex is accelerating sharply ($64.6B in FY2025) and must convert to revenue at scale.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
     {
       "run_id": "sp500_v5",
       "ticker": "GOOGL",
@@ -31,6 +60,64 @@
       "tech_rsi": null,
       "tech_pct_from_high": null,
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "CDNS",
+      "verdict": "BUY",
+      "total": 53,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 10,
+        "management": 9,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 9
+      },
+      "buy_thesis": "Cadence holds half the EDA duopoly that every semiconductor company depends on \u2014 chip design flows, once established, do not change mid-cycle. Revenue compounded at 15-20%/yr for 6 years with ROE consistently above 20% and essentially zero debt. AI chip design demand is a structural multi-year tailwind.",
+      "risk_flags": "FCF dipped in FY2024 from acquisition overhead. Synopsys-Ansys combination could eventually challenge Cadence in AI-specific simulation tooling.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "AAPL",
+      "verdict": "BUY",
+      "total": 52,
+      "scores": {
+        "ladder_growth": 6,
+        "moat_quality": 10,
+        "management": 10,
+        "earnings_quality": 9,
+        "defensive": 8,
+        "aggressive": 9
+      },
+      "buy_thesis": "Apple's Services segment (App Store, iCloud, Apple Pay) generates 25-30% margins on a $416B revenue base while the hardware ecosystem creates unparalleled switching costs. Relentless buyback discipline has driven ROE above 150% with $98B FCF in FY2025. Every iPhone sold extends the Services annuity.",
+      "risk_flags": "Revenue growth slowed to ~6% with a FY2023 YoY decline. FCF has plateaued below the FY2022 peak of $111B. China regulatory and manufacturing concentration risk remains structural.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
     },
     {
       "run_id": "sp500_v5",
@@ -91,6 +178,35 @@
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
     },
     {
+      "run_id": "nasdaq100_v3",
+      "ticker": "DXCM",
+      "verdict": "BUY",
+      "total": 51,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 8,
+        "management": 9,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 9
+      },
+      "buy_thesis": "DexCom's CGM devices are embedded in diabetic patients' daily lives, creating near-irreversible switching costs reinforced by physician relationships and FDA approvals. ROE improved from 7% to 30% over 5 years while consistent R&D investment (12-21% of revenue) maintains the technology lead in a structurally growing market.",
+      "risk_flags": "Revenue growth decelerated to ~17% in FY2025. Abbott's FreeStyle Libre and new entrants could compress margins if DexCom loses the accuracy/wear-time advantage.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
       "run_id": "sp500_v5",
       "ticker": "TJX",
       "verdict": "BUY",
@@ -149,6 +265,64 @@
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
     },
     {
+      "run_id": "nasdaq100_v3",
+      "ticker": "ISRG",
+      "verdict": "BUY",
+      "total": 50,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 10,
+        "management": 8,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 7
+      },
+      "buy_thesis": "Intuitive Surgical's da Vinci platform is the global standard for robotic surgery \u2014 surgeons train on it, hospitals invest millions in it, and procedure volumes compound 10-15% annually regardless of economic cycles. Revenue grew from $4.4B to $10.1B in 6 years with zero debt and ROE crossing 16%.",
+      "risk_flags": "ROE is still below 20% (16% in FY2025) from heavy capex on Ion and SP platforms. Medtronic and J&J are investing billions to challenge the da Vinci monopoly in next-generation systems.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "PLTR",
+      "verdict": "BUY",
+      "total": 50,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 9,
+        "management": 7,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 9
+      },
+      "buy_thesis": "Palantir's AIP platform triggered commercial re-acceleration \u2014 revenue grew from $2.9B to $4.5B in a single year (FY2024-2025) as enterprises adopted the AI layer built on top of Foundry. Deep operational data integration creates near-permanent switching costs: clients' workflows run on Palantir. FCF reached $2.1B in FY2025 with zero debt.",
+      "risk_flags": "Profitability only matured in FY2025 (22% ROE). Stock-based compensation remains high relative to revenue. Commercial momentum must sustain as government contract growth matures.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
       "run_id": "sp500_v5",
       "ticker": "ROST",
       "verdict": "BUY",
@@ -205,6 +379,122 @@
       "tech_rsi": null,
       "tech_pct_from_high": null,
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "AMZN",
+      "verdict": "BUY",
+      "total": 49,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 10,
+        "management": 8,
+        "earnings_quality": 7,
+        "defensive": 8,
+        "aggressive": 8
+      },
+      "buy_thesis": "Amazon's two-engine model (Retail + AWS) drives operating cash flow that grew from $66B (2020) to $139B (2025) with D/E collapsing from 0.48 to 0.17. AWS compounds at 17-20% annually while the advertising business has grown into a $50B+ high-margin segment layered on top of existing Prime infrastructure.",
+      "risk_flags": "Capex is not separately broken out in XBRL filings, obscuring true FCF. The FY2022 net loss (-$2.7B) from supply chain overexpansion showed execution risk. Antitrust scrutiny across Marketplace and AWS remains a long-dated risk.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "AVGO",
+      "verdict": "BUY",
+      "total": 48,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 9,
+        "management": 7,
+        "earnings_quality": 9,
+        "defensive": 6,
+        "aggressive": 8
+      },
+      "buy_thesis": "Broadcom generates $26.9B FCF on $63.9B revenue in FY2025 \u2014 extraordinary conversion from custom AI ASIC partnerships with hyperscalers (Google, Meta, Apple) and VMware's entrenched enterprise infrastructure position. FCF has grown every year for 6 consecutive years; the AI silicon design win pipeline is multi-year locked.",
+      "risk_flags": "VMware acquisition added significant debt not cleanly captured in XBRL. FY2024 net income of $5.9B vs $14.1B in FY2023 reflects heavy amortization \u2014 FCF is the real signal. Customer concentration in hyperscaler custom silicon is a structural risk.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "DDOG",
+      "verdict": "BUY",
+      "total": 48,
+      "scores": {
+        "ladder_growth": 9,
+        "moat_quality": 8,
+        "management": 7,
+        "earnings_quality": 9,
+        "defensive": 8,
+        "aggressive": 7
+      },
+      "buy_thesis": "Datadog's FCF grew from $0.1B to $1.0B over 6 years while maintaining 30%+ revenue growth \u2014 positive FCF from year one validates the unit economics. R&D investment at 40%+ of revenue is building a compounding platform moat across logs, metrics, traces, and security that raises switching costs with every new integration.",
+      "risk_flags": "Net income only turned meaningfully positive in FY2024 ($0.2B on $2.7B revenue) \u2014 ROE at 6.8% is modest. High R&D spend must sustain growth acceleration or margin expansion becomes the only path.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "TTD",
+      "verdict": "BUY",
+      "total": 48,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 8,
+        "management": 7,
+        "earnings_quality": 8,
+        "defensive": 9,
+        "aggressive": 8
+      },
+      "buy_thesis": "The Trade Desk is the largest independent DSP \u2014 its buy-side-only model eliminates agency conflicts and Unified ID 2.0 is becoming the industry standard as third-party cookies erode. Revenue has grown 20%+ for 6 consecutive years with zero debt, consistently positive FCF, and ROE crossing 15% in FY2025.",
+      "risk_flags": "FCF is modest in absolute terms ($0.8B on $2.9B revenue). Advertising spend is cyclical. Google's own DSP ecosystem structurally disadvantages TTD in search and YouTube inventory \u2014 growth depends on CTV and programmatic gaining share.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
     },
     {
       "run_id": "sp500_v5",
@@ -439,6 +729,35 @@
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
     },
     {
+      "run_id": "nasdaq100_v3",
+      "ticker": "CRWD",
+      "verdict": "WATCH",
+      "total": 44,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 9,
+        "management": 6,
+        "earnings_quality": 8,
+        "defensive": 8,
+        "aggressive": 5
+      },
+      "buy_thesis": "CrowdStrike's Falcon platform generates $1.3B FCF on $4.8B revenue (FY2026) with net revenue retention consistently above 120% \u2014 existing customers expand spend every year. Zero debt and positive FCF for 5+ years validate the unit economics. AI-native architecture creates widening detection advantages.",
+      "risk_flags": "ROE negative in FY2026 (-3.7%) despite $1.3B FCF \u2014 stock-based compensation inflates GAAP losses. The July 2024 global outage caused net losses and customer relationship damage; growth is re-accelerating but trust requires time to rebuild.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
       "run_id": "sp500_v5",
       "ticker": "FIX",
       "verdict": "BUY",
@@ -497,6 +816,64 @@
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
     },
     {
+      "run_id": "nasdaq100_v3",
+      "ticker": "BKNG",
+      "verdict": "WATCH",
+      "total": 41,
+      "scores": {
+        "ladder_growth": 8,
+        "moat_quality": 9,
+        "management": 6,
+        "earnings_quality": 8,
+        "defensive": 4,
+        "aggressive": 6
+      },
+      "buy_thesis": "Booking Holdings dominates European online travel with Booking.com's scale moat \u2014 28M+ listings and verified review depth create compounding network effects. FCF grew from $2.5B (2021) to $9.1B (2025) as travel fully recovered post-COVID, with revenue up 150% from trough levels.",
+      "risk_flags": "D/E reached 4.49 in FY2022 (technically from negative equity via aggressive buybacks) and FCF was -$0.2B in COVID year 2020. Net income not in XBRL filings. The business is highly cyclical and operationally leveraged to travel volumes.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "LULU",
+      "verdict": "WATCH",
+      "total": 41,
+      "scores": {
+        "ladder_growth": 6,
+        "moat_quality": 7,
+        "management": 9,
+        "earnings_quality": 6,
+        "defensive": 7,
+        "aggressive": 6
+      },
+      "buy_thesis": "Lululemon's premium positioning and community-driven brand sustain ROE of 30-42% with zero debt. Revenue grew from $4.4B to $11.1B in 6 years through international expansion (China +30%) and men's/footwear categories that open new addressable markets beyond core yoga.",
+      "risk_flags": "Revenue growth decelerated sharply to ~5% in FY2026. FCF fell to $0.9B from $1.6B \u2014 margin compression as supply chain costs normalize. Premium apparel brand moats are not unassailable; On Running and Vuori are gaining share at younger demographics.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
       "run_id": "sp500_v5",
       "ticker": "COST",
       "verdict": "WATCH",
@@ -524,6 +901,122 @@
       "tech_rsi": null,
       "tech_pct_from_high": null,
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "SNPS",
+      "verdict": "WATCH",
+      "total": 40,
+      "scores": {
+        "ladder_growth": 7,
+        "moat_quality": 10,
+        "management": 5,
+        "earnings_quality": 6,
+        "defensive": 6,
+        "aggressive": 6
+      },
+      "buy_thesis": "Synopsys holds half the EDA duopoly that underpins all semiconductor design. Ansys adds physics simulation to create the most complete semiconductor-to-systems design suite. R&D at 35% of revenue funds continuous expansion into AI chip design flows where demand is structural and multi-decade.",
+      "risk_flags": "ROE crashed from 25% to 4.7% in FY2025 from Ansys acquisition dilution and amortization. D/E jumped to 0.48. FCF stagnated at $1.3B despite revenue growing to $7.1B \u2014 integration overhead is significant. Watch FY2026-27 FCF normalization.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "PANW",
+      "verdict": "WATCH",
+      "total": 40,
+      "scores": {
+        "ladder_growth": 7,
+        "moat_quality": 8,
+        "management": 6,
+        "earnings_quality": 7,
+        "defensive": 6,
+        "aggressive": 6
+      },
+      "buy_thesis": "Palo Alto Networks' platformization strategy is consolidating enterprise security spend onto a single vendor \u2014 operating cash flow grew from $1B to $3.7B over 6 years on 20%+ annual revenue growth. SASE and XDR architecture creates deep customer integration and growing switching costs across network, cloud, and endpoint.",
+      "risk_flags": "Volatile ROE (-127% to +50% to +14.5%) reflects years of GAAP losses from stock compensation. Capex data gaps in XBRL. The billings/RPO shift from upfront to subscription complicates near-term margin visibility and creates bookings noise.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "PYPL",
+      "verdict": "WATCH",
+      "total": 40,
+      "scores": {
+        "ladder_growth": 7,
+        "moat_quality": 6,
+        "management": 7,
+        "earnings_quality": 8,
+        "defensive": 6,
+        "aggressive": 6
+      },
+      "buy_thesis": "PayPal's 435M active account base and merchant network create durable payment infrastructure. FCF has been $4-7B annually for 6 uninterrupted years. The new CEO's shift toward profitable growth is showing results \u2014 ROE reached 26% in FY2025 and branded checkout focus is stabilizing the core business.",
+      "risk_flags": "Core branded checkout is losing share to Apple Pay and Google Pay. D/E at 0.49. Revenue not in XBRL format. The network effect is real but no longer widening \u2014 the competitive moat is narrowing while Stripe and fintech challengers capture new merchant cohorts.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
+    },
+    {
+      "run_id": "nasdaq100_v3",
+      "ticker": "WMT",
+      "verdict": "WATCH",
+      "total": 40,
+      "scores": {
+        "ladder_growth": 6,
+        "moat_quality": 8,
+        "management": 8,
+        "earnings_quality": 5,
+        "defensive": 7,
+        "aggressive": 6
+      },
+      "buy_thesis": "Walmart's $700B revenue scale and supply chain superiority create structural cost advantages no competitor can replicate at this size. ROE improved from 15% to 22% over 5 years as Walmart+ and the advertising business begin monetizing the traffic base that drives 200M+ weekly customers.",
+      "risk_flags": "FCF dropped from $25.8B to the $11-15B range as Walmart invests heavily in automation, e-commerce infrastructure, and store remodels. This is a deliberate capex cycle, but FCF yield has compressed materially and must recover as investments mature.",
+      "valuation": {
+        "price": null,
+        "pe_fwd": null,
+        "pe_trail": null,
+        "p_fcf": null,
+        "ev_ebitda": null,
+        "peg": null
+      },
+      "entry_override": null,
+      "entry_reason": null,
+      "tech_rsi": null,
+      "tech_pct_from_high": null,
+      "completed_at": "2026-06-20T19:05:26.326012+00:00"
     },
     {
       "run_id": "sp500_v5",
@@ -583,5 +1076,9 @@
       "tech_pct_from_high": null,
       "completed_at": "2026-06-10T08:05:53.775351+00:00"
     }
+  ],
+  "run_ids": [
+    "nasdaq100_v3",
+    "sp500_v5"
   ]
 }
