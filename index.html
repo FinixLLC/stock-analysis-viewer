@@ -1094,25 +1094,8 @@
             icon.textContent = isOpen ? '📂' : '📁';
         }
 
-        // Search functionality
-        document.getElementById('top50-search').addEventListener('input', (e) => {
-            populateList('top50-list', fileData.top50, e.target.value);
-        });
-
-        document.getElementById('analysis-search').addEventListener('input', (e) => {
-            populateList('analysis-list', fileData.analysis, e.target.value);
-        });
-
-        document.getElementById('top-patterns-search').addEventListener('input', (e) => {
-            populateList('top-patterns-list', fileData.topPatterns, e.target.value);
-        });
-
-        document.getElementById('pattern-search').addEventListener('input', (e) => {
-            populateList('pattern-list', fileData.detectionLists, e.target.value, true);
-        });
-
-        // Load files on page load
-        loadFiles();
+        // Update freshness badge from enhanced-trends data
+        updateFreshnessBadge(null);
 
         // Load top picks from the most recent CSV files
         async function loadTopPicks() {
