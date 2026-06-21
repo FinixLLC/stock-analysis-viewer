@@ -1,0 +1,1164 @@
+{
+  "generated": "2026-06-21",
+  "signal_count": 24,
+  "signals": [
+    {
+      "id": "ORCL-capex_surge-2025",
+      "company": "Oracle Corporation",
+      "ticker": "ORCL",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 209% YoY ($6.9B \u2192 $21.2B)",
+      "observable_value": 2.0899,
+      "hidden_cause": "Accelerating capital investment at Oracle Corporation signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Okta",
+          "ticker": "OKTA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Oracle Cloud Services",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "cloud",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Oracle Cloud",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "AMAT-capex_surge-2025",
+      "company": "Applied Materials, Inc.",
+      "ticker": "AMAT",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 90% YoY ($1.2B \u2192 $2.3B)",
+      "observable_value": 0.8992,
+      "hidden_cause": "Accelerating capital investment at Applied Materials, Inc. signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "MU-capex_surge-2025",
+      "company": "Micron Technology",
+      "ticker": "MU",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 89% YoY ($8.4B \u2192 $15.9B)",
+      "observable_value": 0.8909,
+      "hidden_cause": "Accelerating capital investment at Micron Technology signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Lam Research",
+          "ticker": "LRCX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "inference": "Capacity expansion at Micron Technology will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "inference": "Capital commitment by Micron Technology confirms its customers are in a growth phase."
+        },
+        {
+          "company": "[Company Name]",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "inference": "Capital commitment by Micron Technology confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "GOOGL-capex_surge-2025",
+      "company": "Google Cloud",
+      "ticker": "GOOGL",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 74% YoY ($52.5B \u2192 $91.4B)",
+      "observable_value": 0.7407,
+      "hidden_cause": "Accelerating capital investment at Google Cloud signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Micron",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Oracle",
+          "ticker": "ORCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "NET-capex_surge-2025",
+      "company": "Cloudflare",
+      "ticker": "NET",
+      "industry": "cloud",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 71% YoY ($0.2B \u2192 $0.3B)",
+      "observable_value": 0.7057,
+      "hidden_cause": "Accelerating capital investment at Cloudflare signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "AMGN-capex_surge-2025",
+      "company": "Amgen",
+      "ticker": "AMGN",
+      "industry": "biotech",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 70% YoY ($1.1B \u2192 $1.9B)",
+      "observable_value": 0.6953,
+      "hidden_cause": "Accelerating capital investment at Amgen signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Becton Dickinson",
+          "ticker": "BDX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "healthcare",
+          "inference": "Capacity expansion at Amgen will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "UCB",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "biotech",
+          "inference": "Capital commitment by Amgen confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "AMD-capex_surge-2025",
+      "company": "AMD",
+      "ticker": "AMD",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 53% YoY ($0.6B \u2192 $1.0B)",
+      "observable_value": 0.5314,
+      "hidden_cause": "Accelerating capital investment at AMD signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "GLOBALFOUNDRIES Inc.",
+          "ticker": "GFS",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "critical_dependency",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "United Microelectronics Corporation",
+          "ticker": "UMC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        },
+        {
+          "company": "OpenAI",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Sony",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Valve",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        },
+        {
+          "company": "OpenAI OpCo, LLC",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "BLK-capex_surge-2025",
+      "company": "BlackRock",
+      "ticker": "BLK",
+      "industry": "finance",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 47% YoY ($0.3B \u2192 $0.4B)",
+      "observable_value": 0.4706,
+      "hidden_cause": "Accelerating capital investment at BlackRock signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "third-party service providers",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "third-party providers of technology solutions",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "third parties",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "key third-party providers",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "third-party index providers",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "finance",
+          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Insurance companies",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "finance",
+          "inference": "Capital commitment by BlackRock confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "MSFT-capex_surge-2025",
+      "company": "Microsoft Azure",
+      "ticker": "MSFT",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 45% YoY ($44.5B \u2192 $64.6B)",
+      "observable_value": 0.4513,
+      "hidden_cause": "Accelerating capital investment at Microsoft Azure signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "upstream_beneficiaries": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+        },
+        {
+          "company": "Micron",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+        },
+        {
+          "company": "Oracle",
+          "ticker": "ORCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+        },
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Atlas",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+        },
+        {
+          "company": "Okta",
+          "ticker": "OKTA",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "cloud",
+          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+        },
+        {
+          "company": "BlackRock",
+          "ticker": "BLK",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "finance",
+          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "NVDA-revenue_acceleration-2026",
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "industry": "ai",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 65% YoY ($130.5B \u2192 $215.9B)",
+      "observable_value": 0.6547,
+      "hidden_cause": "Revenue acceleration at NVIDIA reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "GF",
+          "ticker": "GFS",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Hon Hai Precision Industry Co., Ltd.",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Micron Technology, Inc.",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "UMC",
+          "ticker": "UMC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to NVIDIA will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Alibaba Cloud",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Oracle Cloud",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "HPE",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "MU-revenue_acceleration-2025",
+      "company": "Micron Technology",
+      "ticker": "MU",
+      "industry": "ai",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 49% YoY ($25.1B \u2192 $37.4B)",
+      "observable_value": 0.4885,
+      "hidden_cause": "Revenue acceleration at Micron Technology reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Lam Research",
+          "ticker": "LRCX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "[Company Name]",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "MRVL-revenue_acceleration-2026",
+      "company": "Marvell",
+      "ticker": "MRVL",
+      "industry": "semiconductor",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 42% YoY ($5.8B \u2192 $8.2B)",
+      "observable_value": 0.4209,
+      "hidden_cause": "Revenue acceleration at Marvell reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Huawei Technologies Co. Ltd.",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "AFRM-revenue_acceleration-2025",
+      "company": "Affirm",
+      "ticker": "AFRM",
+      "industry": "finance",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 35% YoY ($0.8B \u2192 $1.1B)",
+      "observable_value": 0.3486,
+      "hidden_cause": "Revenue acceleration at Affirm reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Celtic Bank",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "finance",
+          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Lead Bank",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "finance",
+          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [],
+      "confidence": 0.68
+    },
+    {
+      "id": "AMD-revenue_acceleration-2025",
+      "company": "AMD",
+      "ticker": "AMD",
+      "industry": "ai",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 34% YoY ($25.8B \u2192 $34.6B)",
+      "observable_value": 0.3434,
+      "hidden_cause": "Revenue acceleration at AMD reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "GLOBALFOUNDRIES Inc.",
+          "ticker": "GFS",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "critical_dependency",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "United Microelectronics Corporation",
+          "ticker": "UMC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "OpenAI",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Sony",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Valve",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "OpenAI OpCo, LLC",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "SEDG-revenue_acceleration-2025",
+      "company": "SolarEdge",
+      "ticker": "SEDG",
+      "industry": "cleantech",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 31% YoY ($0.9B \u2192 $1.2B)",
+      "observable_value": 0.3139,
+      "hidden_cause": "Revenue acceleration at SolarEdge reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Consolidated Electrical Distributors, Inc",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "energy",
+          "inference": "Revenue surge at SolarEdge implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "NET-revenue_acceleration-2025",
+      "company": "Cloudflare",
+      "ticker": "NET",
+      "industry": "cloud",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 30% YoY ($1.7B \u2192 $2.2B)",
+      "observable_value": 0.2985,
+      "hidden_cause": "Revenue acceleration at Cloudflare reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "confidence": 0.68
+    },
+    {
+      "id": "SNOW-revenue_acceleration-2026",
+      "company": "Snowflake",
+      "ticker": "SNOW",
+      "industry": "cloud",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 29% YoY ($3.6B \u2192 $4.7B)",
+      "observable_value": 0.2916,
+      "hidden_cause": "Revenue acceleration at Snowflake reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "confidence": 0.68
+    },
+    {
+      "id": "ANET-revenue_acceleration-2025",
+      "company": "Arista Networks",
+      "ticker": "ANET",
+      "industry": "cloud",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 29% YoY ($7.0B \u2192 $9.0B)",
+      "observable_value": 0.286,
+      "hidden_cause": "Revenue acceleration at Arista Networks reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Broadcom",
+          "ticker": "AVGO",
+          "relationship": "critical_dependency",
+          "layer": "L3",
+          "industry": "cloud",
+          "inference": "Strong demand flowing to Arista Networks will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Oracle Cloud Infrastructure",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "GCP",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "OCI",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "VRT-revenue_acceleration-2025",
+      "company": "Vertiv",
+      "ticker": "VRT",
+      "industry": "cloud",
+      "signal_type": "revenue_acceleration",
+      "period": "2025",
+      "observable": "Revenue grew 28% YoY ($8.0B \u2192 $10.2B)",
+      "observable_value": 0.2769,
+      "hidden_cause": "Revenue acceleration at Vertiv reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Caterpillar",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "inference": "Strong demand flowing to Vertiv will ripple upstream to its key suppliers."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "GCP",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "confidence": 0.68
+    },
+    {
+      "id": "MDB-rd_spike-2026",
+      "company": "MongoDB",
+      "ticker": "MDB",
+      "industry": "cloud",
+      "signal_type": "rd_spike",
+      "period": "2026",
+      "observable": "R&D intensity 29% of revenue with 20% YoY R&D growth",
+      "observable_value": 0.2907,
+      "hidden_cause": "A R&D intensity spike at MongoDB indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Accenture",
+          "ticker": "ACN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "cloud",
+          "inference": "New product development at MongoDB requires specialized upstream inputs."
+        },
+        {
+          "company": "Alibaba Cloud",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "New product development at MongoDB requires specialized upstream inputs."
+        },
+        {
+          "company": "Tencent Cloud",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "New product development at MongoDB requires specialized upstream inputs."
+        }
+      ],
+      "downstream_implications": [],
+      "confidence": 0.62
+    },
+    {
+      "id": "ZS-rd_spike-2025",
+      "company": "Zscaler",
+      "ticker": "ZS",
+      "industry": "cyber",
+      "signal_type": "rd_spike",
+      "period": "2025",
+      "observable": "R&D intensity 25% of revenue with 35% YoY R&D growth",
+      "observable_value": 0.2516,
+      "hidden_cause": "A R&D intensity spike at Zscaler indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "critical_dependency",
+          "layer": "L1",
+          "industry": "cyber",
+          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Azure",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L1",
+          "industry": "cyber",
+          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "GCP",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L1",
+          "industry": "cyber",
+          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Red Canary",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "cyber",
+          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+        }
+      ],
+      "confidence": 0.62
+    },
+    {
+      "id": "NET-rd_spike-2025",
+      "company": "Cloudflare",
+      "ticker": "NET",
+      "industry": "cloud",
+      "signal_type": "rd_spike",
+      "period": "2025",
+      "observable": "R&D intensity 24% of revenue with 22% YoY R&D growth",
+      "observable_value": 0.2364,
+      "hidden_cause": "A R&D intensity spike at Cloudflare indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "confidence": 0.62
+    },
+    {
+      "id": "AMD-rd_spike-2025",
+      "company": "AMD",
+      "ticker": "AMD",
+      "industry": "ai",
+      "signal_type": "rd_spike",
+      "period": "2025",
+      "observable": "R&D intensity 23% of revenue with 25% YoY R&D growth",
+      "observable_value": 0.2336,
+      "hidden_cause": "A R&D intensity spike at AMD indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "upstream_beneficiaries": [
+        {
+          "company": "GLOBALFOUNDRIES Inc.",
+          "ticker": "GFS",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "critical_dependency",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        },
+        {
+          "company": "United Microelectronics Corporation",
+          "ticker": "UMC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "OpenAI",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Sony",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Valve",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "OpenAI OpCo, LLC",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        }
+      ],
+      "confidence": 0.62
+    },
+    {
+      "id": "NOW-rd_spike-2025",
+      "company": "ServiceNow",
+      "ticker": "NOW",
+      "industry": "cloud",
+      "signal_type": "rd_spike",
+      "period": "2025",
+      "observable": "R&D intensity 22% of revenue with 16% YoY R&D growth",
+      "observable_value": 0.2229,
+      "hidden_cause": "A R&D intensity spike at ServiceNow indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "upstream_beneficiaries": [
+        {
+          "company": "Accenture",
+          "ticker": "ACN",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "inference": "New product development at ServiceNow requires specialized upstream inputs."
+        }
+      ],
+      "downstream_implications": [],
+      "confidence": 0.62
+    }
+  ]
+}

@@ -430,6 +430,89 @@
             margin: 1px 2px 1px 0;
         }
 
+        /* ── SIGNALS VIEW ──────────────────────────────────────────────── */
+        .signals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
+            gap: 16px;
+        }
+        .signal-card {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            border: 1px solid #e8e8f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .signal-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 18px 12px;
+            border-bottom: 1px solid #f1f5f9;
+            flex-wrap: wrap;
+        }
+        .signal-company { font-weight: 800; font-size: 1.05em; color: #1e293b; }
+        .signal-ticker {
+            font-size: 0.82em; font-weight: 700; color: #64748b;
+            background: #f1f5f9; padding: 2px 8px; border-radius: 6px;
+        }
+        .signal-type-badge {
+            font-size: 0.73em; font-weight: 700; letter-spacing: 0.05em;
+            text-transform: uppercase; padding: 3px 9px; border-radius: 10px;
+        }
+        .signal-type-badge.capex_surge      { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .signal-type-badge.revenue_acceleration { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .signal-type-badge.rd_spike         { background: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
+        .signal-period   { font-size: 0.8em; color: #94a3b8; margin-left: auto; }
+        .signal-conf     { font-size: 0.78em; color: #94a3b8; white-space: nowrap; }
+
+        .signal-body { padding: 14px 18px; display: flex; flex-direction: column; gap: 12px; }
+
+        .signal-section-label {
+            font-size: 0.68em; font-weight: 800; letter-spacing: 0.1em;
+            text-transform: uppercase; color: #94a3b8; margin-bottom: 4px;
+        }
+        .signal-observable {
+            font-size: 0.9em; font-weight: 700; color: #1e293b;
+        }
+        .signal-cause {
+            font-size: 0.85em; color: #475569; line-height: 1.55;
+            font-style: italic;
+        }
+        .signal-bens { display: flex; flex-direction: column; gap: 5px; }
+        .signal-ben {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: start;
+            gap: 8px;
+            padding: 6px 10px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #f1f5f9;
+        }
+        .signal-ben-arrow { font-size: 0.8em; color: #94a3b8; padding-top: 1px; }
+        .signal-ben-name  { font-weight: 700; font-size: 0.85em; color: #1e293b; }
+        .signal-ben-inf   { font-size: 0.77em; color: #64748b; line-height: 1.4; }
+        .signal-ben-ticker {
+            font-size: 0.72em; font-weight: 700; color: #64748b;
+            background: #e2e8f0; padding: 1px 6px; border-radius: 5px;
+            white-space: nowrap;
+        }
+        .signal-ben-wrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+        .signals-empty {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            padding: 48px 24px;
+            text-align: center;
+            color: #64748b;
+        }
+        .signals-meta {
+            padding: 13px 0 4px;
+            font-size: 0.82em;
+            color: #94a3b8;
+        }
+
         /* ── MOBILE ─────────────────────────────────────────────────────── */
         @media (max-width: 640px) {
             body { padding: 10px; }
@@ -560,6 +643,8 @@ Object.entries(INDUSTRIES).forEach(([k, v]) => {
 // ── STATE ─────────────────────────────────────────────────────────────────────
 
 let allEdges = [];            // [{...edge, industry}]
+let allSignals = [];          // from signals.json
+let signalsMeta = null;       // {generated, signal_count}
 let activeIndustry = 'all';
 let activeTypes = new Set(['supplier_to_customer', 'critical_dependency', 'substitute', 'customer_to_supplier']);
 let activeLayers = new Set(['L1','L2','L3','L4','L5','L6']);  // empty = all on
@@ -570,8 +655,12 @@ let searchTimer = null;
 
 async function loadAll() {
     const errors = [];
-    const results = await Promise.all(
-        Object.keys(INDUSTRIES).map(async industry => {
+
+    // Load sector JSONs + signals.json in parallel
+    const sectorKeys = Object.keys(INDUSTRIES);
+    const [signalsResult, ...sectorResults] = await Promise.all([
+        fetch('evcdm/signals.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        ...sectorKeys.map(async industry => {
             try {
                 const res = await fetch(`evcdm/${industry}.json`);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -582,9 +671,14 @@ async function loadAll() {
                 return [];
             }
         })
-    );
+    ]);
 
-    if (errors.length === Object.keys(INDUSTRIES).length) {
+    if (signalsResult) {
+        allSignals = signalsResult.signals || [];
+        signalsMeta = { generated: signalsResult.generated, signal_count: signalsResult.signal_count };
+    }
+
+    if (errors.length === sectorKeys.length) {
         document.getElementById('content').innerHTML = `
             <div class="state-box error">
                 <div class="state-icon">⚠️</div>
@@ -594,7 +688,7 @@ async function loadAll() {
         return;
     }
 
-    allEdges = results.flat();
+    allEdges = sectorResults.flat();
 
     // Sort: industry order, then layer_from, then layer_to
     const industryOrder = Object.keys(INDUSTRIES);
@@ -653,6 +747,30 @@ function initUI() {
         render();
     });
     pillsDiv.appendChild(bridgesPill);
+
+    // Signals pill — causal inference view
+    if (allSignals.length > 0) {
+        const sigPill = document.createElement('span');
+        sigPill.className = 'industry-pill';
+        sigPill.dataset.industry = 'signals';
+        sigPill.innerHTML = `&#x26A1; Signals <span class="count-badge">${allSignals.length}</span>`;
+        sigPill.style.borderColor = '#d97706';
+        sigPill.addEventListener('click', () => {
+            document.querySelectorAll('.industry-pill').forEach(p => {
+                p.classList.remove('active');
+                p.style.background = '';
+                p.style.borderColor = '';
+            });
+            sigPill.classList.add('active');
+            sigPill.style.background = '#d97706';
+            sigPill.style.borderColor = '#d97706';
+            activeIndustry = 'signals';
+            document.getElementById('filter-row-type').style.display = 'none';
+            document.getElementById('filter-row-layer').style.display = 'none';
+            render();
+        });
+        pillsDiv.appendChild(sigPill);
+    }
 
     // Check if customer_to_supplier exists in data
     const hasCustSupp = allEdges.some(e => e.type === 'customer_to_supplier');
@@ -781,6 +899,7 @@ function getFilteredEdges() {
 
 function render() {
     if (activeIndustry === 'bridges') { renderBridges(); return; }
+    if (activeIndustry === 'signals') { renderSignals(); return; }
     document.getElementById('edge-unit').style.display = '';
     const filtered = getFilteredEdges();
     document.getElementById('shown-count').textContent = filtered.length;
@@ -902,6 +1021,129 @@ function esc(str) {
         .replace(/</g,'&lt;')
         .replace(/>/g,'&gt;')
         .replace(/"/g,'&quot;');
+}
+
+// ── SIGNALS VIEW ─────────────────────────────────────────────────────────────
+
+const SIGNAL_LABELS = {
+    capex_surge:           'Capex Surge',
+    revenue_acceleration:  'Revenue Accel.',
+    rd_spike:              'R&D Spike',
+};
+
+function renderSignals() {
+    document.getElementById('edge-unit').style.display = 'none';
+    const content = document.getElementById('content');
+
+    const filtered = searchQuery
+        ? allSignals.filter(s =>
+            s.company.toLowerCase().includes(searchQuery) ||
+            (s.ticker || '').toLowerCase().includes(searchQuery) ||
+            s.signal_type.toLowerCase().includes(searchQuery))
+        : allSignals;
+
+    document.getElementById('shown-count').textContent = filtered.length + ' signal';
+
+    if (filtered.length === 0) {
+        content.innerHTML = allSignals.length === 0
+            ? `<div class="signals-empty"><div style="font-size:2em;margin-bottom:12px">&#x26A1;</div><strong>No signals generated yet</strong><br><br>Run <code>python3 scripts/evcdm_causal_signals.py</code> to generate causal inference signals from SEC filings.</div>`
+            : `<div class="signals-empty">No signals match "<em>${esc(searchQuery)}</em>".</div>`;
+        return;
+    }
+
+    const wrap = document.createElement('div');
+
+    if (signalsMeta) {
+        const meta = document.createElement('div');
+        meta.className = 'signals-meta';
+        meta.textContent = `${signalsMeta.signal_count} causal signals · generated ${signalsMeta.generated} · Observable Effect → Hidden Cause → Future Beneficiary`;
+        wrap.appendChild(meta);
+    }
+
+    const grid = document.createElement('div');
+    grid.className = 'signals-grid';
+
+    filtered.forEach(sig => {
+        const card = document.createElement('div');
+        card.className = 'signal-card';
+
+        // Header
+        const hdr = document.createElement('div');
+        hdr.className = 'signal-header';
+        hdr.innerHTML = `
+            <span class="signal-company">${esc(sig.company)}</span>
+            ${sig.ticker ? `<span class="signal-ticker">${esc(sig.ticker)}</span>` : ''}
+            <span class="signal-type-badge ${sig.signal_type}">${esc(SIGNAL_LABELS[sig.signal_type] || sig.signal_type)}</span>
+            <span class="signal-period">${esc(sig.period)}</span>
+            <span class="signal-conf">Confidence&nbsp;${Math.round((sig.confidence||0)*100)}%</span>
+        `;
+        card.appendChild(hdr);
+
+        // Body
+        const body = document.createElement('div');
+        body.className = 'signal-body';
+
+        // Observable
+        body.innerHTML += `
+            <div>
+                <div class="signal-section-label">Observable</div>
+                <div class="signal-observable">${esc(sig.observable)}</div>
+            </div>
+            <div>
+                <div class="signal-section-label">Hidden Cause</div>
+                <div class="signal-cause">${esc(sig.hidden_cause)}</div>
+            </div>
+        `;
+
+        // Upstream beneficiaries
+        if (sig.upstream_beneficiaries && sig.upstream_beneficiaries.length > 0) {
+            const sec = document.createElement('div');
+            sec.innerHTML = `<div class="signal-section-label">Upstream Beneficiaries (suppliers likely to see more orders)</div>`;
+            const bens = document.createElement('div');
+            bens.className = 'signal-bens';
+            sig.upstream_beneficiaries.slice(0, 6).forEach(b => {
+                bens.innerHTML += `
+                    <div class="signal-ben">
+                        <span class="signal-ben-arrow">&#x2191;</span>
+                        <div class="signal-ben-wrap">
+                            <span class="signal-ben-name">${esc(b.company)}</span>
+                            <span class="signal-ben-inf">${esc(b.inference)}</span>
+                        </div>
+                        ${b.ticker ? `<span class="signal-ben-ticker">${esc(b.ticker)}</span>` : ''}
+                    </div>`;
+            });
+            sec.appendChild(bens);
+            body.appendChild(sec);
+        }
+
+        // Downstream implications
+        if (sig.downstream_implications && sig.downstream_implications.length > 0) {
+            const sec = document.createElement('div');
+            sec.innerHTML = `<div class="signal-section-label">Downstream Context (what this tells us about end markets)</div>`;
+            const bens = document.createElement('div');
+            bens.className = 'signal-bens';
+            sig.downstream_implications.slice(0, 6).forEach(b => {
+                bens.innerHTML += `
+                    <div class="signal-ben">
+                        <span class="signal-ben-arrow">&#x2193;</span>
+                        <div class="signal-ben-wrap">
+                            <span class="signal-ben-name">${esc(b.company)}</span>
+                            <span class="signal-ben-inf">${esc(b.inference)}</span>
+                        </div>
+                        ${b.ticker ? `<span class="signal-ben-ticker">${esc(b.ticker)}</span>` : ''}
+                    </div>`;
+            });
+            sec.appendChild(bens);
+            body.appendChild(sec);
+        }
+
+        card.appendChild(body);
+        grid.appendChild(card);
+    });
+
+    wrap.appendChild(grid);
+    content.innerHTML = '';
+    content.appendChild(wrap);
 }
 
 // ── BRIDGE VIEW ──────────────────────────────────────────────────────────────

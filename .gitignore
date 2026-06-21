@@ -5,3 +5,6 @@
 # Temporary files
 *.tmp
 *.log
+
+# SEC metrics cache (local only — re-fetched by evcdm_causal_signals.py)
+evcdm/metrics_cache.json
