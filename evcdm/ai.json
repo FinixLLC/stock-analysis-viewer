@@ -157,30 +157,6 @@
   },
   {
     "_id": {
-      "$oid": "69fc54ff3851528e4d0f358b"
-    },
-    "from": "Advanced Micro Devices, Inc.",
-    "to": "Huawei Technologies Co. Ltd.",
-    "type": "supplier_to_customer",
-    "layer_from": "L4",
-    "layer_to": "L5",
-    "confidence": 0.85,
-    "snippet": "suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies Co. Ltd., or Huawei, and Intel Corporation, or Intel;"
-  },
-  {
-    "_id": {
-      "$oid": "69fc54ff3851528e4d0f358c"
-    },
-    "from": "Advanced Micro Devices, Inc.",
-    "to": "Microsoft Corporation",
-    "type": "supplier_to_customer",
-    "layer_from": "L4",
-    "layer_to": "L5",
-    "confidence": 0.85,
-    "snippet": "suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies Co. Ltd., or Huawei, and Intel Corporation, or Intel;"
-  },
-  {
-    "_id": {
       "$oid": "69fc54ff3851528e4d0f358d"
     },
     "from": "Advanced Micro Devices, Inc.",
@@ -308,8 +284,8 @@
     "type": "supplier_to_customer",
     "layer_from": "L3",
     "layer_to": "L4",
-    "confidence": 0.95,
-    "snippet": "We rely primarily on GLOBALFOUNDRIES Inc. (GF) for wafers for microprocessor and GPU products manufactured at process nodes larger than 7 nm"
+    "confidence": 0.5,
+    "snippet": "GlobalFoundries manufactures AMD processors at mature nodes under long-term supply agreements. GFS is not a leading-edge AI accelerator foundry \u2014 the majority of AMD's Instinct MI-series and EPYC CPUs are manufactured at TSMC."
   },
   {
     "_id": {
@@ -829,18 +805,6 @@
   },
   {
     "_id": {
-      "$oid": "69fc54ff3851528e4d0f3631"
-    },
-    "from": "TSMC",
-    "to": "AMD",
-    "type": "critical_dependency",
-    "layer_from": "L3",
-    "layer_to": "L4",
-    "confidence": 0.95,
-    "snippet": "If TSMC is not able to manufacture wafers for our microprocessor and GPU products at 7 nm or smaller nodes and our newest IC products in sufficient quantities to meet customer demand, it could have a material adverse effect on our business"
-  },
-  {
-    "_id": {
       "$oid": "69fc54ff3851528e4d0f3632"
     },
     "from": "TSMC",
@@ -920,8 +884,8 @@
     "type": "supplier_to_customer",
     "layer_from": "L3",
     "layer_to": "L4",
-    "confidence": 0.95,
-    "snippet": "We also utilize TSMC, United Microelectronics Corporation (UMC) and Samsung Electronics Co., Ltd. for our integrated circuits (IC) in the form of programmable logic devices"
+    "confidence": 0.4,
+    "snippet": "United Microelectronics Corporation (UMC) manufactures certain AMD products at mature semiconductor nodes. UMC is not involved in AMD's leading-edge AI GPU or high-performance CPU manufacturing, which is handled by TSMC."
   },
   {
     "_id": {
@@ -994,5 +958,32 @@
     "layer_to": "L3",
     "confidence": 0.85,
     "snippet": "Micron's advanced DRAM node production depends on EUV and DUV lithography systems supplied by ASML. Access to next-generation lithography is critical for competitive memory scaling."
+  },
+  {
+    "from": "SK Hynix",
+    "to": "AMD",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.88,
+    "snippet": "SK Hynix supplies HBM (High Bandwidth Memory) stacked on AMD Instinct MI-series AI accelerators. Each MI300X GPU uses 192GB of HBM3 requiring multiple SK Hynix or Micron memory stacks \u2014 AMD's AI GPU ramp directly drives SK Hynix HBM demand."
+  },
+  {
+    "from": "Micron Technology",
+    "to": "AMD",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "Micron Technology supplies GDDR6 and GDDR7 memory for AMD Radeon gaming GPUs, and HBM3 for select Instinct MI-series AI accelerators. Micron is a qualified HBM supplier alongside SK Hynix for AMD's AI accelerator roadmap."
+  },
+  {
+    "from": "ASE Technology Holding",
+    "to": "AMD",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.8,
+    "snippet": "ASE Technology Holding provides advanced semiconductor packaging services for AMD processors, including chip-on-wafer-on-substrate (CoWoS-like) and 3D packaging technologies critical to AMD's chiplet-based CPU and GPU designs."
   }
 ]

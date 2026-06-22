@@ -175,6 +175,15 @@
           "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         },
         {
+          "company": "AMD",
+          "ticker": "AMD",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
+        },
+        {
           "company": "AWS",
           "ticker": "AMZN",
           "relationship": "supplier_to_customer",
@@ -394,12 +403,12 @@
       "period": "2025",
       "observable": "Capex grew 53% YoY ($0.6B \u2192 $1.0B)",
       "observable_value": 0.5314,
-      "hidden_cause": "Capital expansion at AMD signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "hidden_cause": "AMD is a fabless semiconductor company \u2014 it designs chips but contracts all manufacturing to external foundries, primarily TSMC. CapEx at AMD reflects investment in engineering labs, AI development clusters, chip packaging and testing infrastructure, and software ecosystem tooling \u2014 not production manufacturing capacity. The actual manufacturing supply signal flows through TSMC's capacity decisions, not AMD's CapEx directly. AMD's investment level still signals management conviction in sustained AI data center and x86 CPU demand cycles.",
       "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
+        "AI data center acceleration \u2014 Instinct MI-series GPU demand from hyperscalers (Azure, AWS, Google)",
+        "x86 server CPU market share gains vs. Intel in enterprise and cloud data centers",
+        "Gaming console cycle \u2014 next-generation PlayStation and Xbox both use AMD APUs",
+        "AI PC ecosystem investment ahead of next-generation Ryzen and Radeon client platforms"
       ],
       "upstream_beneficiaries": [
         {
@@ -408,13 +417,13 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.5,
           "inference": "Capacity expansion at AMD will require additional equipment and materials."
         },
         {
           "company": "TSMC",
           "ticker": "TSM",
-          "relationship": "critical_dependency",
+          "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
           "edge_confidence": 0.95,
@@ -426,7 +435,34 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.4,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "SK Hynix",
+          "ticker": "HXSCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "ASE Technology Holding",
+          "ticker": "ASX",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.8,
           "inference": "Capacity expansion at AMD will require additional equipment and materials."
         }
       ],
@@ -459,33 +495,6 @@
           "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
-          "company": "Sanmina",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
-          "company": "OpenAI OpCo, LLC",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Huawei Technologies Co. Ltd.",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
           "company": "Tesla, Inc.",
           "ticker": "TSLA",
           "relationship": "supplier_to_customer",
@@ -495,8 +504,18 @@
           "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         }
       ],
-      "partner_context": [],
-      "confidence": 0.75
+      "partner_context": [
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 1.0,
+          "inference": "AMD competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        }
+      ],
+      "confidence": 0.65
     },
     {
       "id": "BLK-capex_surge-2025",
@@ -938,6 +957,15 @@
           "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
         },
         {
+          "company": "AMD",
+          "ticker": "AMD",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
           "company": "AWS",
           "ticker": "AMZN",
           "relationship": "supplier_to_customer",
@@ -1097,13 +1125,13 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.5,
           "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
         },
         {
           "company": "TSMC",
           "ticker": "TSM",
-          "relationship": "critical_dependency",
+          "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
           "edge_confidence": 0.95,
@@ -1115,7 +1143,34 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.4,
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "SK Hynix",
+          "ticker": "HXSCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "ASE Technology Holding",
+          "ticker": "ASX",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.8,
           "inference": "Strong demand flowing to AMD will ripple upstream to its key suppliers."
         }
       ],
@@ -1148,33 +1203,6 @@
           "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
         },
         {
-          "company": "Sanmina",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "OpenAI OpCo, LLC",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Huawei Technologies Co. Ltd.",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
-        },
-        {
           "company": "Tesla, Inc.",
           "ticker": "TSLA",
           "relationship": "supplier_to_customer",
@@ -1184,7 +1212,17 @@
           "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
         }
       ],
-      "partner_context": [],
+      "partner_context": [
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 1.0,
+          "inference": "AMD's growth may increase or decrease workload overlap with this platform depending on customer migration patterns."
+        }
+      ],
       "confidence": 0.8
     },
     {
@@ -1568,13 +1606,13 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.5,
           "inference": "New product development at AMD requires specialized upstream inputs."
         },
         {
           "company": "TSMC",
           "ticker": "TSM",
-          "relationship": "critical_dependency",
+          "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
           "edge_confidence": 0.95,
@@ -1586,7 +1624,34 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "ai",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.4,
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        },
+        {
+          "company": "SK Hynix",
+          "ticker": "HXSCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "New product development at AMD requires specialized upstream inputs."
+        },
+        {
+          "company": "ASE Technology Holding",
+          "ticker": "ASX",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.8,
           "inference": "New product development at AMD requires specialized upstream inputs."
         }
       ],
@@ -1619,33 +1684,6 @@
           "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
         },
         {
-          "company": "Sanmina",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
-        },
-        {
-          "company": "OpenAI OpCo, LLC",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
-        },
-        {
-          "company": "Huawei Technologies Co. Ltd.",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
-        },
-        {
           "company": "Tesla, Inc.",
           "ticker": "TSLA",
           "relationship": "supplier_to_customer",
@@ -1655,7 +1693,17 @@
           "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
         }
       ],
-      "partner_context": [],
+      "partner_context": [
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 1.0,
+          "inference": "New AMD products may integrate with or compete against this platform's offerings."
+        }
+      ],
       "confidence": 0.62
     },
     {
