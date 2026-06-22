@@ -145,6 +145,42 @@
           "industry": "semiconductor",
           "edge_confidence": 1.0,
           "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
+        },
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
+        },
+        {
+          "company": "companies headquartered in mainland China and Hong Kong",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         }
       ],
       "partner_context": [],
@@ -168,15 +204,6 @@
       ],
       "upstream_beneficiaries": [
         {
-          "company": "NVIDIA",
-          "ticker": "NVDA",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
           "company": "Micron",
           "ticker": "MU",
           "relationship": "supplier_to_customer",
@@ -184,9 +211,46 @@
           "industry": "ai",
           "edge_confidence": 0.85,
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Broadcom",
+          "ticker": "AVGO",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         }
       ],
-      "downstream_implications": [],
+      "downstream_implications": [
+        {
+          "company": "Okta",
+          "ticker": "OKTA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        },
+        {
+          "company": "IonQ",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "quantum",
+          "edge_confidence": 0.9,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        }
+      ],
       "partner_context": [
         {
           "company": "Oracle",
@@ -352,6 +416,24 @@
           "industry": "semiconductor",
           "edge_confidence": 1.0,
           "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Huawei Technologies Co. Ltd.",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         }
       ],
       "partner_context": [],
@@ -409,14 +491,14 @@
     },
     {
       "id": "MSFT-capex_surge-2025",
-      "company": "Microsoft Azure",
+      "company": "Microsoft",
       "ticker": "MSFT",
       "industry": "ai",
       "signal_type": "capex_surge",
       "period": "2025",
       "observable": "Capex grew 45% YoY ($44.5B \u2192 $64.6B)",
       "observable_value": 0.4513,
-      "hidden_cause": "Capital expansion at Microsoft Azure signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "hidden_cause": "Capital expansion at Microsoft signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
         "Strategic capacity grab ahead of competitors",
         "AI infrastructure arms race (speculative buildout)",
@@ -431,7 +513,7 @@
           "layer": "L5",
           "industry": "ai",
           "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         },
         {
           "company": "Micron",
@@ -440,7 +522,7 @@
           "layer": "L4",
           "industry": "ai",
           "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         },
         {
           "company": "Arista Networks",
@@ -449,7 +531,61 @@
           "layer": "L3",
           "industry": "cloud",
           "edge_confidence": 0.9,
-          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "AMD",
+          "ticker": "AMD",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.9166666666666666,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "OpenAI",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "Digital Realty",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "Vertiv",
+          "ticker": "VRT",
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "Zscaler",
+          "ticker": "ZS",
+          "relationship": "critical_dependency",
+          "layer": "L4",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "Rigetti",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "quantum",
+          "edge_confidence": 0.95,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         }
       ],
       "downstream_implications": [
@@ -460,7 +596,7 @@
           "layer": "L6",
           "industry": "cloud",
           "edge_confidence": 0.95,
-          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
         },
         {
           "company": "Okta",
@@ -469,7 +605,7 @@
           "layer": "L5",
           "industry": "cloud",
           "edge_confidence": 0.85,
-          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
         },
         {
           "company": "BlackRock",
@@ -478,7 +614,61 @@
           "layer": "L4",
           "industry": "finance",
           "edge_confidence": 0.95,
-          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Lenovo",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Dell",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Hewlett-Packard",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "IonQ",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "quantum",
+          "edge_confidence": 0.9,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "[Company Name]",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
         }
       ],
       "partner_context": [
@@ -489,7 +679,16 @@
           "layer": "L5",
           "industry": "ai",
           "edge_confidence": 0.95,
-          "inference": "Microsoft Azure competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+          "inference": "Microsoft competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "cooperates_with",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Microsoft competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
       "confidence": 0.75
@@ -576,15 +775,6 @@
           "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
         },
         {
-          "company": "Google Cloud",
-          "ticker": "GOOGL",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
-        },
-        {
           "company": "Microsoft Azure",
           "ticker": "MSFT",
           "relationship": "supplier_to_customer",
@@ -596,6 +786,15 @@
         {
           "company": "Oracle Cloud",
           "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "ai",
@@ -658,6 +857,42 @@
           "layer": "L4",
           "industry": "semiconductor",
           "edge_confidence": 1.0,
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "companies headquartered in mainland China and Hong Kong",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "semiconductor",
+          "edge_confidence": 0.95,
           "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
         }
       ],
@@ -821,6 +1056,24 @@
           "layer": "L6",
           "industry": "semiconductor",
           "edge_confidence": 1.0,
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Huawei Technologies Co. Ltd.",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.85,
           "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
         }
       ],
@@ -1244,6 +1497,24 @@
           "layer": "L6",
           "industry": "semiconductor",
           "edge_confidence": 1.0,
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Huawei Technologies Co. Ltd.",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
+        },
+        {
+          "company": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.85,
           "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
         }
       ],

@@ -73,18 +73,6 @@
   },
   {
     "_id": {
-      "$oid": "69f823c78a5e4e3176029cf3"
-    },
-    "from": "NVIDIA",
-    "to": "Google Cloud",
-    "type": "supplier_to_customer",
-    "layer_from": "L5",
-    "layer_to": "L5",
-    "confidence": 0.85,
-    "snippet": "All major cloud service providers, or CSPs, AI model makers, and enterprises use our data center-scale infrastructure and computing platforms"
-  },
-  {
-    "_id": {
       "$oid": "69f823c78a5e4e3176029cf8"
     },
     "from": "NVIDIA",
@@ -982,5 +970,14 @@
     "layer_to": "L6",
     "confidence": 0.85,
     "snippet": "Our enterprise cloud, license and hardware offerings compete directly with certain offerings from some of the largest and most competitive companies in the world, including Workday, Inc..."
+  },
+  {
+    "from": "Broadcom",
+    "to": "Google Cloud",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Google deploys Broadcom ethernet switching ASICs (Tomahawk/StrataXGS family) as the foundation of its Jupiter data center network fabric and Andromeda SDN stack."
   }
 ]
