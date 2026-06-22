@@ -75,15 +75,6 @@
           "industry": "ai",
           "edge_confidence": 0.95,
           "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
-        },
-        {
-          "company": "AWS",
-          "ticker": "AMZN",
-          "relationship": "cooperates_with",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.95,
-          "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
       "confidence": 0.75
@@ -327,15 +318,6 @@
           "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
-          "company": "OpenAI",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
           "company": "Sony",
           "ticker": null,
           "relationship": "supplier_to_customer",
@@ -384,59 +366,14 @@
       "period": "2025",
       "observable": "Capex grew 47% YoY ($0.3B \u2192 $0.4B)",
       "observable_value": 0.4706,
-      "hidden_cause": "Capital expansion at BlackRock signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "hidden_cause": "Increased capital spending at BlackRock suggests investment in technology platforms, data infrastructure, and operational scale. For a financial services firm, CapEx typically reflects digital modernization, AI/analytics buildout, and platform expansion \u2014 not committed customer orders, as it would for a manufacturer or cloud provider.",
       "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
+        "Technology platform modernization (Aladdin, trading systems, risk infrastructure)",
+        "Regulatory and cybersecurity compliance requirements",
+        "AI and data analytics investment",
+        "Acquisition integration or real estate / office buildout"
       ],
       "upstream_beneficiaries": [
-        {
-          "company": "third-party service providers",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "finance",
-          "edge_confidence": 0.9,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
-        {
-          "company": "third-party providers of technology solutions",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "finance",
-          "edge_confidence": 0.9,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
-        {
-          "company": "third parties",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "finance",
-          "edge_confidence": 0.9,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
-        {
-          "company": "key third-party providers",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
-        {
-          "company": "third-party index providers",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
         {
           "company": "Microsoft",
           "ticker": "MSFT",
@@ -444,7 +381,7 @@
           "layer": "L6",
           "industry": "finance",
           "edge_confidence": 0.95,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
         },
         {
           "company": "Amazon Web Services",
@@ -453,16 +390,7 @@
           "layer": "L6",
           "industry": "finance",
           "edge_confidence": 0.95,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
-        },
-        {
-          "company": "Microsoft Azure",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at BlackRock will require additional equipment and materials."
+          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
         }
       ],
       "downstream_implications": [
@@ -477,7 +405,7 @@
         }
       ],
       "partner_context": [],
-      "confidence": 0.75
+      "confidence": 0.58
     },
     {
       "id": "MSFT-capex_surge-2025",
@@ -593,7 +521,7 @@
         },
         {
           "company": "Hon Hai Precision Industry Co., Ltd.",
-          "ticker": null,
+          "ticker": "HNHPF",
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "ai",
@@ -668,24 +596,6 @@
         {
           "company": "Oracle Cloud",
           "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Amazon Web Services",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Microsoft",
-          "ticker": "MSFT",
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "ai",
@@ -878,15 +788,6 @@
           "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
         },
         {
-          "company": "OpenAI",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
-        },
-        {
           "company": "Sony",
           "ticker": null,
           "relationship": "supplier_to_customer",
@@ -1048,24 +949,6 @@
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.8,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "AWS",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.9,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Azure",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.9,
           "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
         },
         {
@@ -1325,15 +1208,6 @@
           "layer": "L6",
           "industry": "ai",
           "edge_confidence": 0.9166666666666666,
-          "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
-        },
-        {
-          "company": "OpenAI",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
           "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
         },
         {
