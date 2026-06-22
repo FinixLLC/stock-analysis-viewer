@@ -845,7 +845,7 @@
         },
         {
           "company": "Alibaba Cloud",
-          "ticker": null,
+          "ticker": "BABA",
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "ai",
@@ -1438,44 +1438,45 @@
       "period": "2026",
       "observable": "R&D intensity 29% of revenue with 20% YoY R&D growth",
       "observable_value": 0.2907,
-      "hidden_cause": "A R&D intensity spike at MongoDB indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "hidden_cause": "MongoDB is investing aggressively to expand its database and AI platform capabilities \u2014 Atlas Vector Search, Stream Processing, and AI-native developer tooling. Unlike semiconductor R&D which generates immediate design-in orders for foundries and equipment suppliers, software R&D spending creates no direct upstream supplier demand. The signal here is forward-looking: management believes future customer adoption justifies near-term engineering spending before revenue becomes visible. This is a 12\u201336 month leading indicator for MongoDB's own revenue acceleration, not a supply chain catalyst.",
       "alternative_explanations": [
-        "M&A-driven headcount increase classified as R&D",
-        "One-time product refresh cycle, not sustained investment",
-        "Regulatory compliance spend misclassified as R&D"
+        "Atlas AI and vector search features \u2014 competitive response to pgvector, Pinecone, and Weaviate",
+        "Atlas Stream Processing \u2014 real-time data pipeline to compete with Confluent and Apache Kafka",
+        "Engineering headcount growth creating one-time step-up in R&D expense",
+        "No supply chain propagation expected \u2014 software R&D does not generate upstream equipment orders"
       ],
-      "upstream_beneficiaries": [
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [
         {
           "company": "Accenture",
           "ticker": "ACN",
-          "relationship": "supplier_to_customer",
+          "relationship": "cooperates_with",
           "layer": "L5",
           "industry": "cloud",
           "edge_confidence": 0.85,
-          "inference": "New product development at MongoDB requires specialized upstream inputs."
+          "inference": "New MongoDB products may integrate with or compete against this platform's offerings."
         },
         {
           "company": "Alibaba Cloud",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
+          "ticker": "BABA",
+          "relationship": "cooperates_with",
+          "layer": "L5",
           "industry": "cloud",
           "edge_confidence": 0.95,
-          "inference": "New product development at MongoDB requires specialized upstream inputs."
+          "inference": "New MongoDB products may integrate with or compete against this platform's offerings."
         },
         {
           "company": "Tencent Cloud",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
+          "ticker": "TCEHY",
+          "relationship": "cooperates_with",
+          "layer": "L5",
           "industry": "cloud",
           "edge_confidence": 0.95,
-          "inference": "New product development at MongoDB requires specialized upstream inputs."
+          "inference": "New MongoDB products may integrate with or compete against this platform's offerings."
         }
       ],
-      "downstream_implications": [],
-      "partner_context": [],
-      "confidence": 0.62
+      "confidence": 0.5
     },
     {
       "id": "META-rd_spike-2025",

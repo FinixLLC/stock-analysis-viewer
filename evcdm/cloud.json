@@ -137,11 +137,11 @@
     },
     "from": "Accenture",
     "to": "MongoDB",
-    "type": "supplier_to_customer",
+    "type": "cooperates_with",
     "layer_from": "L5",
     "layer_to": "L5",
     "confidence": 0.85,
-    "snippet": "We have also expanded our existing partnerships with independent software vendors and global systems integrators including Accenture"
+    "snippet": "Accenture is a global systems integrator (GSI) and MongoDB go-to-market partner. Accenture builds enterprise solutions on MongoDB Atlas \u2014 this is a distribution/consulting partnership, not a supply chain relationship where Accenture supplies inputs to MongoDB."
   },
   {
     "_id": {
@@ -161,11 +161,11 @@
     },
     "from": "Alibaba Cloud",
     "to": "MongoDB",
-    "type": "supplier_to_customer",
+    "type": "cooperates_with",
     "layer_from": "L4",
     "layer_to": "L5",
     "confidence": 0.95,
-    "snippet": "We have expanded our global partner ecosystem with Alibaba Cloud and Tencent Cloud to offer an authorized MongoDB-as-a-Service solution in China"
+    "snippet": "Alibaba Cloud offers an authorized MongoDB-as-a-Service product in its cloud marketplace, reselling MongoDB Atlas in China and Asia-Pacific markets. This is a distribution/licensing partnership \u2014 Alibaba Cloud is a channel partner, not a supplier of inputs to MongoDB."
   },
   {
     "_id": {
@@ -1037,11 +1037,11 @@
     },
     "from": "Tencent Cloud",
     "to": "MongoDB",
-    "type": "supplier_to_customer",
+    "type": "cooperates_with",
     "layer_from": "L4",
     "layer_to": "L5",
     "confidence": 0.95,
-    "snippet": "We have expanded our global partner ecosystem with Alibaba Cloud and Tencent Cloud to offer an authorized MongoDB-as-a-Service solution in China"
+    "snippet": "Tencent Cloud offers authorized MongoDB-as-a-Service in China, providing localized MongoDB Atlas to Chinese enterprises under a distribution agreement. Tencent Cloud is a channel reseller, not a component supplier in MongoDB's production stack."
   },
   {
     "_id": {
