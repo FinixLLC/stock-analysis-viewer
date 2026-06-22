@@ -493,18 +493,6 @@
   },
   {
     "_id": {
-      "$oid": "69fc54ff3851528e4d0f35c6"
-    },
-    "from": "Lam Research",
-    "to": "Micron Technology",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L3",
-    "confidence": 0.85,
-    "snippet": "Our customer base includes leading semiconductor memory, foundry, and integrated device manufacturers (\"IDMs\") that make products such as non-volatile memory (\"NVM\"), dynamic random-access memory (\"DRAM\"), and logic devices."
-  },
-  {
-    "_id": {
       "$oid": "69fc54ff3851528e4d0f35c7"
     },
     "from": "Lam Research",
@@ -979,5 +967,32 @@
     "layer_to": "L5",
     "confidence": 0.85,
     "snippet": "Google deploys Broadcom ethernet switching ASICs (Tomahawk/StrataXGS family) as the foundation of its Jupiter data center network fabric and Andromeda SDN stack."
+  },
+  {
+    "from": "Applied Materials",
+    "to": "Micron Technology",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.9,
+    "snippet": "Micron relies on semiconductor equipment suppliers, including Applied Materials, for CVD, PVD, etch, and CMP operations across its DRAM and NAND memory fabs."
+  },
+  {
+    "from": "KLA Corporation",
+    "to": "Micron Technology",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.88,
+    "snippet": "Micron depends on process control and inspection equipment from KLA Corporation to maintain yield and quality targets in its memory manufacturing processes."
+  },
+  {
+    "from": "ASML",
+    "to": "Micron Technology",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "Micron's advanced DRAM node production depends on EUV and DUV lithography systems supplied by ASML. Access to next-generation lithography is critical for competitive memory scaling."
   }
 ]

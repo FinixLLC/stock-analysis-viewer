@@ -96,7 +96,17 @@
         "Potential overbuilding if demand growth decelerates"
       ],
       "upstream_beneficiaries": [],
-      "downstream_implications": [],
+      "downstream_implications": [
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        }
+      ],
       "partner_context": [],
       "confidence": 0.75
     },
@@ -111,15 +121,42 @@
       "observable_value": 0.8909,
       "hidden_cause": "Capital expansion at Micron Technology signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
+        "HBM capacity expansion ahead of NVIDIA Blackwell demand",
+        "DRAM/NAND node transition requiring new fab equipment",
+        "Geopolitical redundancy \u2014 building fabs outside Asia-Pacific",
+        "Potential overbuilding if AI demand growth decelerates"
       ],
       "upstream_beneficiaries": [
         {
           "company": "Lam Research",
           "ticker": "LRCX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Micron Technology will require additional equipment and materials."
+        },
+        {
+          "company": "Applied Materials",
+          "ticker": "AMAT",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Micron Technology will require additional equipment and materials."
+        },
+        {
+          "company": "KLA Corporation",
+          "ticker": "KLAC",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Capacity expansion at Micron Technology will require additional equipment and materials."
+        },
+        {
+          "company": "ASML",
+          "ticker": "ASML",
           "relationship": "supplier_to_customer",
           "layer": "L2",
           "industry": "ai",
@@ -135,15 +172,6 @@
           "layer": "L4",
           "industry": "ai",
           "edge_confidence": 0.95,
-          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
-        },
-        {
-          "company": "[Company Name]",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
           "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         },
         {
@@ -171,15 +199,6 @@
           "layer": "L5",
           "industry": "ai",
           "edge_confidence": 0.85,
-          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
-        },
-        {
-          "company": "companies headquartered in mainland China and Hong Kong",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "semiconductor",
-          "edge_confidence": 0.95,
           "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         }
       ],
@@ -653,15 +672,6 @@
           "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
         },
         {
-          "company": "[Company Name]",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L4",
-          "industry": "semiconductor",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
-        },
-        {
           "company": "Microsoft",
           "ticker": "MSFT",
           "relationship": "critical_dependency",
@@ -825,14 +835,42 @@
       "observable_value": 0.4885,
       "hidden_cause": "Revenue acceleration at Micron Technology confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
       "alternative_explanations": [
-        "One-time large deal or unexpected customer ramp",
-        "Favorable macro lifting all competitors equally",
-        "Price increases masking flat unit volumes"
+        "AI server deployments driving HBM and DRAM demand",
+        "Memory pricing recovery cycle (higher ASPs, not just volume growth)",
+        "Market share gains vs. Samsung and SK Hynix",
+        "Hyperscaler inventory restocking after prior drawdown"
       ],
       "upstream_beneficiaries": [
         {
           "company": "Lam Research",
           "ticker": "LRCX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Applied Materials",
+          "ticker": "AMAT",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "KLA Corporation",
+          "ticker": "KLAC",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "ASML",
+          "ticker": "ASML",
           "relationship": "supplier_to_customer",
           "layer": "L2",
           "industry": "ai",
@@ -848,15 +886,6 @@
           "layer": "L4",
           "industry": "ai",
           "edge_confidence": 0.95,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "[Company Name]",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
           "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
         },
         {
@@ -884,15 +913,6 @@
           "layer": "L5",
           "industry": "ai",
           "edge_confidence": 0.85,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "companies headquartered in mainland China and Hong Kong",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "semiconductor",
-          "edge_confidence": 0.95,
           "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
         }
       ],
