@@ -500,6 +500,11 @@
             background: #e2e8f0; padding: 1px 6px; border-radius: 5px;
             white-space: nowrap;
         }
+        .signal-ben-conf {
+            font-size: 0.68em; font-weight: 600; color: #94a3b8;
+            background: #f1f5f9; padding: 1px 5px; border-radius: 4px;
+            white-space: nowrap; align-self: center;
+        }
         .signal-ben-wrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 
         .signals-empty {
@@ -1117,6 +1122,9 @@ function renderSignals() {
             const bens = document.createElement('div');
             bens.className = 'signal-bens';
             sig.upstream_beneficiaries.slice(0, 6).forEach(b => {
+                const confBadge = b.edge_confidence != null
+                    ? `<span class="signal-ben-conf">${Math.round(b.edge_confidence * 100)}%</span>`
+                    : '';
                 bens.innerHTML += `
                     <div class="signal-ben">
                         <span class="signal-ben-arrow">&#x2191;</span>
@@ -1125,6 +1133,7 @@ function renderSignals() {
                             <span class="signal-ben-inf">${esc(b.inference)}</span>
                         </div>
                         ${b.ticker ? `<span class="signal-ben-ticker">${esc(b.ticker)}</span>` : ''}
+                        ${confBadge}
                     </div>`;
             });
             sec.appendChild(bens);

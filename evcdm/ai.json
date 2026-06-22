@@ -689,7 +689,7 @@
     },
     "from": "Microsoft",
     "to": "NVIDIA",
-    "type": "critical_dependency",
+    "type": "cooperates_with",
     "layer_from": "L6",
     "layer_to": "L4",
     "confidence": 0.95,
