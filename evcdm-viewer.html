@@ -158,6 +158,7 @@
         .chip-supply        { background: #dbeafe; color: #1d4ed8; border-color: #bfdbfe; }
         .chip-dependency    { background: #fef3c7; color: #92400e; border-color: #fde68a; }
         .chip-substitute    { background: #ede9fe; color: #5b21b6; border-color: #ddd6fe; }
+        .chip-cooperates    { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
         .chip-layer         { background: #f1f5f9; color: #475569; border-color: #e2e8f0; }
 
         .chip.off {
@@ -324,10 +325,11 @@
             white-space: nowrap;
             flex-shrink: 0;
         }
-        .type-pill.supply     { background: #dbeafe; color: #1d4ed8; }
-        .type-pill.dependency { background: #fef3c7; color: #92400e; }
-        .type-pill.substitute { background: #ede9fe; color: #5b21b6; }
-        .type-pill.other      { background: #f1f5f9; color: #64748b; }
+        .type-pill.supply      { background: #dbeafe; color: #1d4ed8; }
+        .type-pill.dependency  { background: #fef3c7; color: #92400e; }
+        .type-pill.substitute  { background: #ede9fe; color: #5b21b6; }
+        .type-pill.cooperates  { background: #e0f2fe; color: #0369a1; }
+        .type-pill.other       { background: #f1f5f9; color: #64748b; }
 
         .edge-right {
             display: flex;
@@ -512,6 +514,14 @@
             font-size: 0.82em;
             color: #94a3b8;
         }
+        .signal-ben-arrow.coop { color: #0369a1; }
+        .signal-alternatives {
+            margin: 2px 0 0 14px;
+            padding: 0;
+            font-size: 0.8em;
+            color: #64748b;
+            line-height: 1.6;
+        }
 
         /* ── MOBILE ─────────────────────────────────────────────────────── */
         @media (max-width: 640px) {
@@ -556,10 +566,11 @@
         <!-- Row 2: Type -->
         <div class="filter-row" id="filter-row-type">
             <span class="filter-label">Type</span>
-            <span class="chip chip-supply"     data-type="supplier_to_customer" id="chip-supply">Supply</span>
-            <span class="chip chip-dependency" data-type="critical_dependency"  id="chip-dependency">Dependency</span>
-            <span class="chip chip-substitute" data-type="substitute"           id="chip-substitute">Substitute</span>
-            <span class="chip chip-layer"      data-type="customer_to_supplier" id="chip-customer" style="display:none">Customer→Supplier</span>
+            <span class="chip chip-supply"      data-type="supplier_to_customer" id="chip-supply">Supply</span>
+            <span class="chip chip-dependency"  data-type="critical_dependency"  id="chip-dependency">Dependency</span>
+            <span class="chip chip-substitute"  data-type="substitute"           id="chip-substitute">Substitute</span>
+            <span class="chip chip-cooperates"  data-type="cooperates_with"      id="chip-cooperates" style="display:none">Cooperates</span>
+            <span class="chip chip-layer"       data-type="customer_to_supplier" id="chip-customer"   style="display:none">Customer→Supplier</span>
         </div>
         <!-- Row 3: Layer -->
         <div class="filter-row" id="filter-row-layer">
@@ -628,6 +639,7 @@ const TYPE_INFO = {
     supplier_to_customer: { label: 'Supply',     cls: 'supply' },
     critical_dependency:  { label: 'Dependency', cls: 'dependency' },
     substitute:           { label: 'Substitute', cls: 'substitute' },
+    cooperates_with:      { label: 'Cooperates', cls: 'cooperates' },
     customer_to_supplier: { label: 'Cust→Supp',  cls: 'other' },
 };
 
@@ -772,14 +784,17 @@ function initUI() {
         pillsDiv.appendChild(sigPill);
     }
 
-    // Check if customer_to_supplier exists in data
-    const hasCustSupp = allEdges.some(e => e.type === 'customer_to_supplier');
-    if (hasCustSupp) {
+    // Show optional type chips only when that edge type exists in data
+    if (allEdges.some(e => e.type === 'customer_to_supplier')) {
         document.getElementById('chip-customer').style.display = '';
+    }
+    if (allEdges.some(e => e.type === 'cooperates_with')) {
+        document.getElementById('chip-cooperates').style.display = '';
+        activeTypes.add('cooperates_with');
     }
 
     // Type chips
-    ['supply','dependency','substitute','customer'].forEach(id => {
+    ['supply','dependency','substitute','cooperates','customer'].forEach(id => {
         const chip = document.getElementById(`chip-${id}`);
         if (chip) chip.addEventListener('click', toggleTypeChip);
     });
@@ -1134,6 +1149,42 @@ function renderSignals() {
                     </div>`;
             });
             sec.appendChild(bens);
+            body.appendChild(sec);
+        }
+
+        // Partner / competitor context (cooperates_with edges)
+        if (sig.partner_context && sig.partner_context.length > 0) {
+            const sec = document.createElement('div');
+            sec.innerHTML = `<div class="signal-section-label">Partner / Competitor Context</div>`;
+            const bens = document.createElement('div');
+            bens.className = 'signal-bens';
+            sig.partner_context.forEach(b => {
+                bens.innerHTML += `
+                    <div class="signal-ben">
+                        <span class="signal-ben-arrow coop">&#x21C4;</span>
+                        <div class="signal-ben-wrap">
+                            <span class="signal-ben-name">${esc(b.company)}</span>
+                            <span class="signal-ben-inf">${esc(b.inference)}</span>
+                        </div>
+                        ${b.ticker ? `<span class="signal-ben-ticker">${esc(b.ticker)}</span>` : ''}
+                    </div>`;
+            });
+            sec.appendChild(bens);
+            body.appendChild(sec);
+        }
+
+        // Alternative explanations
+        if (sig.alternative_explanations && sig.alternative_explanations.length > 0) {
+            const sec = document.createElement('div');
+            sec.innerHTML = `<div class="signal-section-label">Alternative Explanations</div>`;
+            const ul = document.createElement('ul');
+            ul.className = 'signal-alternatives';
+            sig.alternative_explanations.forEach(alt => {
+                const li = document.createElement('li');
+                li.textContent = alt;
+                ul.appendChild(li);
+            });
+            sec.appendChild(ul);
             body.appendChild(sec);
         }
 

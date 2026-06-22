@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-21",
+  "generated": "2026-06-22",
   "signal_count": 24,
   "signals": [
     {
@@ -11,48 +11,22 @@
       "period": "2025",
       "observable": "Capex grew 209% YoY ($6.9B \u2192 $21.2B)",
       "observable_value": 2.0899,
-      "hidden_cause": "Accelerating capital investment at Oracle Corporation signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Oracle Corporation signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
-        {
-          "company": "Amazon Web Services",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
-        },
-        {
-          "company": "Google Cloud",
-          "ticker": "GOOGL",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
-        },
-        {
-          "company": "Microsoft Azure",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
-        },
-        {
-          "company": "AWS",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
-        },
         {
           "company": "Okta",
           "ticker": "OKTA",
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "cloud",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Oracle Corporation suggests its customers are in a growth phase."
         },
         {
           "company": "Oracle Cloud Services",
@@ -60,7 +34,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "cloud",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Oracle Corporation suggests its customers are in a growth phase."
         },
         {
           "company": "Oracle Cloud",
@@ -68,7 +42,41 @@
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "cloud",
-          "inference": "Capital commitment by Oracle Corporation confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Oracle Corporation suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "cooperates_with",
+          "layer": "L4",
+          "industry": "cloud",
+          "inference": "Oracle Corporation competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
       "confidence": 0.75
@@ -82,9 +90,16 @@
       "period": "2025",
       "observable": "Capex grew 90% YoY ($1.2B \u2192 $2.3B)",
       "observable_value": 0.8992,
-      "hidden_cause": "Accelerating capital investment at Applied Materials, Inc. signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Applied Materials, Inc. signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -96,7 +111,13 @@
       "period": "2025",
       "observable": "Capex grew 89% YoY ($8.4B \u2192 $15.9B)",
       "observable_value": 0.8909,
-      "hidden_cause": "Accelerating capital investment at Micron Technology signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Micron Technology signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Lam Research",
@@ -114,7 +135,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "ai",
-          "inference": "Capital commitment by Micron Technology confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         },
         {
           "company": "[Company Name]",
@@ -122,9 +143,10 @@
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "semiconductor",
-          "inference": "Capital commitment by Micron Technology confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Micron Technology suggests its customers are in a growth phase."
         }
       ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -136,7 +158,13 @@
       "period": "2025",
       "observable": "Capex grew 74% YoY ($52.5B \u2192 $91.4B)",
       "observable_value": 0.7407,
-      "hidden_cause": "Accelerating capital investment at Google Cloud signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Google Cloud signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "NVIDIA",
@@ -153,17 +181,19 @@
           "layer": "L4",
           "industry": "ai",
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Oracle",
-          "ticker": "ORCL",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         }
       ],
       "downstream_implications": [],
+      "partner_context": [
+        {
+          "company": "Oracle",
+          "ticker": "ORCL",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        }
+      ],
       "confidence": 0.75
     },
     {
@@ -175,9 +205,16 @@
       "period": "2025",
       "observable": "Capex grew 71% YoY ($0.2B \u2192 $0.3B)",
       "observable_value": 0.7057,
-      "hidden_cause": "Accelerating capital investment at Cloudflare signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Cloudflare signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -189,7 +226,13 @@
       "period": "2025",
       "observable": "Capex grew 70% YoY ($1.1B \u2192 $1.9B)",
       "observable_value": 0.6953,
-      "hidden_cause": "Accelerating capital investment at Amgen signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Amgen signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Becton Dickinson",
@@ -207,9 +250,10 @@
           "relationship": "critical_dependency",
           "layer": "L6",
           "industry": "biotech",
-          "inference": "Capital commitment by Amgen confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Amgen suggests its customers are in a growth phase."
         }
       ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -221,7 +265,13 @@
       "period": "2025",
       "observable": "Capex grew 53% YoY ($0.6B \u2192 $1.0B)",
       "observable_value": 0.5314,
-      "hidden_cause": "Accelerating capital investment at AMD signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at AMD signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "GLOBALFOUNDRIES Inc.",
@@ -255,7 +305,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "ai",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
           "company": "OpenAI",
@@ -263,7 +313,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "ai",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
           "company": "Sony",
@@ -271,7 +321,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "ai",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
           "company": "Valve",
@@ -279,7 +329,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "ai",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
           "company": "Sanmina",
@@ -287,7 +337,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "semiconductor",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         },
         {
           "company": "OpenAI OpCo, LLC",
@@ -295,9 +345,10 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "semiconductor",
-          "inference": "Capital commitment by AMD confirms its customers are in a growth phase."
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
         }
       ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -309,7 +360,13 @@
       "period": "2025",
       "observable": "Capex grew 47% YoY ($0.3B \u2192 $0.4B)",
       "observable_value": 0.4706,
-      "hidden_cause": "Accelerating capital investment at BlackRock signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at BlackRock signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "third-party service providers",
@@ -383,9 +440,10 @@
           "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "finance",
-          "inference": "Capital commitment by BlackRock confirms its customers are in a growth phase."
+          "inference": "Capital commitment by BlackRock suggests its customers are in a growth phase."
         }
       ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -397,7 +455,13 @@
       "period": "2025",
       "observable": "Capex grew 45% YoY ($44.5B \u2192 $64.6B)",
       "observable_value": 0.4513,
-      "hidden_cause": "Accelerating capital investment at Microsoft Azure signals that downstream customers have already committed to large orders \u2014 capacity expansion precedes announced demand.",
+      "hidden_cause": "Capital expansion at Microsoft Azure signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "NVIDIA",
@@ -412,14 +476,6 @@
           "ticker": "MU",
           "relationship": "supplier_to_customer",
           "layer": "L4",
-          "industry": "ai",
-          "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
-        },
-        {
-          "company": "Oracle",
-          "ticker": "ORCL",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
           "industry": "ai",
           "inference": "Capacity expansion at Microsoft Azure will require additional equipment and materials."
         },
@@ -439,7 +495,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L6",
           "industry": "cloud",
-          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
         },
         {
           "company": "Okta",
@@ -447,7 +503,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "cloud",
-          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
         },
         {
           "company": "BlackRock",
@@ -455,7 +511,17 @@
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "finance",
-          "inference": "Capital commitment by Microsoft Azure confirms its customers are in a growth phase."
+          "inference": "Capital commitment by Microsoft Azure suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [
+        {
+          "company": "Oracle",
+          "ticker": "ORCL",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "inference": "Microsoft Azure competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
       "confidence": 0.75
@@ -470,6 +536,11 @@
       "observable": "Revenue grew 65% YoY ($130.5B \u2192 $215.9B)",
       "observable_value": 0.6547,
       "hidden_cause": "Revenue acceleration at NVIDIA reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "GF",
@@ -586,6 +657,7 @@
           "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -598,6 +670,11 @@
       "observable": "Revenue grew 49% YoY ($25.1B \u2192 $37.4B)",
       "observable_value": 0.4885,
       "hidden_cause": "Revenue acceleration at Micron Technology reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Lam Research",
@@ -626,6 +703,7 @@
           "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -638,6 +716,11 @@
       "observable": "Revenue grew 42% YoY ($5.8B \u2192 $8.2B)",
       "observable_value": 0.4209,
       "hidden_cause": "Revenue acceleration at Marvell reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
         {
@@ -649,6 +732,7 @@
           "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -661,6 +745,11 @@
       "observable": "Revenue grew 35% YoY ($0.8B \u2192 $1.1B)",
       "observable_value": 0.3486,
       "hidden_cause": "Revenue acceleration at Affirm reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Celtic Bank",
@@ -680,6 +769,7 @@
         }
       ],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -692,6 +782,11 @@
       "observable": "Revenue grew 34% YoY ($25.8B \u2192 $34.6B)",
       "observable_value": 0.3434,
       "hidden_cause": "Revenue acceleration at AMD reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "GLOBALFOUNDRIES Inc.",
@@ -768,6 +863,7 @@
           "inference": "Revenue surge at AMD implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -780,6 +876,11 @@
       "observable": "Revenue grew 31% YoY ($0.9B \u2192 $1.2B)",
       "observable_value": 0.3139,
       "hidden_cause": "Revenue acceleration at SolarEdge reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
         {
@@ -791,6 +892,7 @@
           "inference": "Revenue surge at SolarEdge implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -803,8 +905,14 @@
       "observable": "Revenue grew 30% YoY ($1.7B \u2192 $2.2B)",
       "observable_value": 0.2985,
       "hidden_cause": "Revenue acceleration at Cloudflare reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -817,8 +925,14 @@
       "observable": "Revenue grew 29% YoY ($3.6B \u2192 $4.7B)",
       "observable_value": 0.2916,
       "hidden_cause": "Revenue acceleration at Snowflake reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -831,6 +945,11 @@
       "observable": "Revenue grew 29% YoY ($7.0B \u2192 $9.0B)",
       "observable_value": 0.286,
       "hidden_cause": "Revenue acceleration at Arista Networks reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Broadcom",
@@ -899,6 +1018,7 @@
           "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -911,6 +1031,11 @@
       "observable": "Revenue grew 28% YoY ($8.0B \u2192 $10.2B)",
       "observable_value": 0.2769,
       "hidden_cause": "Revenue acceleration at Vertiv reveals that downstream customers are in an active buying cycle. The parent has already started walking; you just can't see them yet.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Caterpillar",
@@ -947,6 +1072,7 @@
           "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
         }
       ],
+      "partner_context": [],
       "confidence": 0.68
     },
     {
@@ -959,6 +1085,11 @@
       "observable": "R&D intensity 29% of revenue with 20% YoY R&D growth",
       "observable_value": 0.2907,
       "hidden_cause": "A R&D intensity spike at MongoDB indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Accenture",
@@ -986,6 +1117,7 @@
         }
       ],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.62
     },
     {
@@ -998,6 +1130,11 @@
       "observable": "R&D intensity 25% of revenue with 35% YoY R&D growth",
       "observable_value": 0.2516,
       "hidden_cause": "A R&D intensity spike at Zscaler indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
         {
@@ -1033,6 +1170,7 @@
           "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
         }
       ],
+      "partner_context": [],
       "confidence": 0.62
     },
     {
@@ -1045,8 +1183,14 @@
       "observable": "R&D intensity 24% of revenue with 22% YoY R&D growth",
       "observable_value": 0.2364,
       "hidden_cause": "A R&D intensity spike at Cloudflare indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.62
     },
     {
@@ -1059,6 +1203,11 @@
       "observable": "R&D intensity 23% of revenue with 25% YoY R&D growth",
       "observable_value": 0.2336,
       "hidden_cause": "A R&D intensity spike at AMD indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "GLOBALFOUNDRIES Inc.",
@@ -1135,6 +1284,7 @@
           "inference": "R&D investment at AMD will create next-generation products for downstream buyers."
         }
       ],
+      "partner_context": [],
       "confidence": 0.62
     },
     {
@@ -1147,6 +1297,11 @@
       "observable": "R&D intensity 22% of revenue with 16% YoY R&D growth",
       "observable_value": 0.2229,
       "hidden_cause": "A R&D intensity spike at ServiceNow indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
       "upstream_beneficiaries": [
         {
           "company": "Accenture",
@@ -1158,6 +1313,7 @@
         }
       ],
       "downstream_implications": [],
+      "partner_context": [],
       "confidence": 0.62
     }
   ]
