@@ -1,1 +1,767 @@
-[{"_id":{"$oid":"6a169bb4640f4f6e255ac4c6"},"from":"AMD","to":"Sanmina","type":"supplier_to_customer","layer_from":"L4","layer_to":"L5","confidence":1.0,"snippet":"In October 2025, we sold the ZT data center infrastructure manufacturing business (ZT Manufacturing Business) to Sanmina Corporation (Sanmina)."},{"_id":{"$oid":"6a169bb4640f4f6e255ac4c7"},"from":"AMD","to":"OpenAI OpCo, LLC","type":"supplier_to_customer","layer_from":"L4","layer_to":"L6","confidence":1.0,"snippet":"In October 2025, we entered into a product purchase agreement with OpenAI OpCo, LLC, (OpenAI) to deploy 6 gigawatts of AMD GPUs, with the deployment of the first gigawatt of capacity powered by our AMD Instinct MI450 series products."},{"_id":{"$oid":"6a169bb4640f4f6e255ac4ce"},"from":"Altera","to":"[Company Name]","type":"critical_dependency","layer_from":"L4","layer_to":"L4","confidence":0.85,"snippet":"In the Data Center segment, we compete against Altera with our FPGA and adaptive SoC server products."},{"_id":{"$oid":"6a169bb4640f4f6e255ac4d1"},"from":"Altera","to":"Company","type":"critical_dependency","layer_from":"L4","layer_to":"L4","confidence":0.85,"snippet":"We expect continued competition from our primary FPGA competitors such as Altera"},{"_id":{"$oid":"6a169bb4640f4f6e255ac4d3"},"from":"TSMC","to":"[unnamed company]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We utilize Taiwan Semiconductor Manufacturing Company Limited (TSMC) for the production of wafers for our HPC, FPGA and adaptive SoC products"},{"_id":{"$oid":"6a169bb4640f4f6e255ac4d4"},"from":"GLOBALFOUNDRIES Inc.","to":"[unnamed company]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We utilize GLOBALFOUNDRIES Inc. (GF), with respect to wafer purchases for our HPC products at the 12 nm and 14 nm technology nodes"},{"_id":{"$oid":"6a169bb4640f4f6e255ac4dc"},"from":"Microsoft Corporation","to":"[Company Name]","type":"critical_dependency","layer_from":"L6","layer_to":"L4","confidence":0.95,"snippet":"If Microsoft Corporation's support for our products is lost, our ability to sell our products could be materially adversely affected."},{"_id":{"$oid":"6a169d6b640f4f6e255ac4de"},"from":"TSMC","to":"Broadcom","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;)."},{"_id":{"$oid":"6a169d6b640f4f6e255ac4df"},"from":"Advanced Semiconductor Engineering","to":"Broadcom","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."},{"_id":{"$oid":"6a169d6b640f4f6e255ac4e0"},"from":"Foxconn Technology Group","to":"Broadcom","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."},{"_id":{"$oid":"6a169d6b640f4f6e255ac4e1"},"from":"Amkor Technology","to":"Broadcom","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."},{"_id":{"$oid":"6a169d6b640f4f6e255ac4e2"},"from":"Siliconware Precision Industries","to":"Broadcom","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."},{"_id":{"$oid":"6a169df7640f4f6e255ac4e8"},"from":"Intel","to":"TSMC","type":"critical_dependency","layer_from":"L4","layer_to":"L5","confidence":0.95,"snippet":"We expect to continue to use TSMC and other third-party foundry suppliers for various key tiles in a number of current and future products."},{"_id":{"$oid":"6a169df7640f4f6e255ac4e9"},"from":"Intel","to":"UMC","type":"supplier_to_customer","layer_from":"L5","layer_to":"L5","confidence":0.95,"snippet":"In 2024, we announced a strategic collaboration with UMC to develop a 12 nm process platform that expands our mature&#8209;node process portfolio and strengthens our U.S.-based manufacturing foundry capabilities, with production expected to begin in 2027."},{"_id":{"$oid":"6a169df7640f4f6e255ac4ed"},"from":"ASML","to":"Intel","type":"critical_dependency","layer_from":"L3","layer_to":"L5","confidence":0.95,"snippet":"We are reliant upon sole-source providers, such as with the EUV lithography tools manufactured by ASML that are required for leading-edge process technologies"},{"_id":{"$oid":"6a169f5f640f4f6e255ac4f5"},"from":"Applied Materials, Inc.","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"Our primary competitor in the dielectric and metals deposition market is Applied Materials, Inc."},{"_id":{"$oid":"6a169f5f640f4f6e255ac4f6"},"from":"ASM International","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"For ALD and PECVD, we also compete against ASM International"},{"_id":{"$oid":"6a169f5f640f4f6e255ac4f7"},"from":"Wonik IPS","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"For ALD and PECVD, we also compete against Wonik IPS"},{"_id":{"$oid":"6a169f5f640f4f6e255ac4f8"},"from":"Hitachi, Ltd.","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"In the etch market, our primary competitors are Applied Materials, Inc.; Hitachi, Ltd.; and Tokyo Electron, Ltd."},{"_id":{"$oid":"6a169f5f640f4f6e255ac4f9"},"from":"Tokyo Electron, Ltd.","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"In the etch market, our primary competitors are Applied Materials, Inc.; Hitachi, Ltd.; and Tokyo Electron, Ltd."},{"_id":{"$oid":"6a169f5f640f4f6e255ac4fa"},"from":"Screen Holding Co., Ltd.","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"In the wet clean market, our primary competitors are Screen Holding Co., Ltd.; Semes Co., Ltd.; and Tokyo Electron, Ltd."},{"_id":{"$oid":"6a169f5f640f4f6e255ac4fb"},"from":"Semes Co., Ltd.","to":"Lam Research Corporation","type":"substitute","layer_from":"L3","layer_to":"L3","confidence":0.95,"snippet":"In the wet clean market, our primary competitors are Screen Holding Co., Ltd.; Semes Co., Ltd.; and Tokyo Electron, Ltd."},{"_id":{"$oid":"6a16a042640f4f6e255ac50c"},"from":"Micron","to":"companies headquartered in mainland China and Hong Kong","type":"supplier_to_customer","layer_from":"L5","layer_to":"L6","confidence":0.95,"snippet":"the CAC determined that critical information infrastructure operators in China may not purchase Micron products, impacting our revenue with companies headquartered in mainland China and Hong Kong"},{"_id":{"$oid":"6a16a042640f4f6e255ac50e"},"from":"Samsung Electronics Co., Ltd.","to":"Micron","type":"substitute","layer_from":"L5","layer_to":"L5","confidence":0.95,"snippet":"We face intense competition in the semiconductor memory and storage markets from a number of companies, including Samsung Electronics Co., Ltd."},{"_id":{"$oid":"6a16a042640f4f6e255ac50f"},"from":"SK hynix Inc.","to":"Micron","type":"substitute","layer_from":"L5","layer_to":"L5","confidence":0.95,"snippet":"We face intense competition in the semiconductor memory and storage markets from a number of companies, including SK hynix Inc."},{"_id":{"$oid":"6a16a042640f4f6e255ac510"},"from":"Kioxia Holdings Corporation","to":"Micron","type":"substitute","layer_from":"L5","layer_to":"L5","confidence":0.95,"snippet":"We face intense competition in the semiconductor memory and storage markets from a number of companies, including Kioxia Holdings Corporation"},{"_id":{"$oid":"6a16a163640f4f6e255ac512"},"from":"Taiwan Semiconductor Manufacturing Company Limited","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":1.0,"snippet":"We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers."},{"_id":{"$oid":"6a16a163640f4f6e255ac513"},"from":"Samsung Electronics Co., Ltd.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":1.0,"snippet":"We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers."},{"_id":{"$oid":"6a16a163640f4f6e255ac514"},"from":"SK Hynix Inc.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":1.0,"snippet":"We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung."},{"_id":{"$oid":"6a16a163640f4f6e255ac515"},"from":"Micron Technology, Inc.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":1.0,"snippet":"We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung."},{"_id":{"$oid":"6a16a163640f4f6e255ac516"},"from":"Hon Hai Precision Industry Co., Ltd.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L6","layer_to":"L5","confidence":1.0,"snippet":"We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."},{"_id":{"$oid":"6a16a163640f4f6e255ac517"},"from":"Wistron Corporation","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L6","layer_to":"L5","confidence":1.0,"snippet":"We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."},{"_id":{"$oid":"6a16a163640f4f6e255ac518"},"from":"Fabrinet","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L6","layer_to":"L5","confidence":1.0,"snippet":"We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."},{"_id":{"$oid":"6a16a265640f4f6e255ac52d"},"from":"TSMC","to":"fabless IC design companies","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"We provide customers, including both fabless IC design companies and system companies, with leading-edge logic process technologies such as 2-nanometer Nanosheet Transistor (\"N2\"), 3-nanometer Fin Field-Effect Transistor (\"FinFET\"),"},{"_id":{"$oid":"6a16a265640f4f6e255ac53a"},"from":"Xintec","to":"TSMC","type":"supplier_to_customer","layer_from":"L5","layer_to":"L5","confidence":0.95,"snippet":"In January 2007, we acquired a 51.2% equity interest in Xintec, a supplier of wafer level packaging service, to support our CMOS image sensor manufacturing business."},{"_id":{"$oid":"6a16a673640f4f6e255ac53d"},"from":"Taiwan Semiconductor Manufacturing Company (TSMC)","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L4","confidence":0.95,"snippet":"The primary foundry suppliers for our various digital, analog/mixed-signal, RF and PM integrated circuits include Taiwan Semiconductor Manufacturing Company (TSMC)"},{"_id":{"$oid":"6a16a673640f4f6e255ac545"},"from":"Apple","to":"Qualcomm","type":"substitute","layer_from":"L6","layer_to":"L4","confidence":0.95,"snippet":"Additionally, we expect that Apple will increasingly use its own modem products, rather than our products, in its future devices"},{"_id":{"$oid":"6a16a673640f4f6e255ac547"},"from":"Huawei","to":"Company_Name","type":"customer_to_supplier","layer_from":"L6","layer_to":"L5","confidence":0.95,"snippet":"the U.S. Department of Commerce revoked the export license under which we previously sold 4G and certain other integrated circuit products to Huawei, which is one of the largest smartphone OEMs in China."},{"_id":{"$oid":"6a16a673640f4f6e255ac548"},"from":"Company_Name","to":"Huawei","type":"supplier_to_customer","layer_from":"L5","layer_to":"L6","confidence":0.95,"snippet":"the U.S. Department of Commerce revoked the export license under which we previously sold 4G and certain other integrated circuit products to Huawei, which is one of the largest smartphone OEMs in China."},{"_id":{"$oid":"6a16ab1d640f4f6e255ac561"},"from":"Advanced Ion Beam Technology, Inc.","to":"Chinese chip manufacturers","type":"substitute","layer_from":"L3","layer_to":"L5","confidence":0.85,"snippet":"Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Advanced Ion Beam Technology, Inc."},{"_id":{"$oid":"6a16ab1d640f4f6e255ac562"},"from":"Nissin Ion Equipment Co., Ltd.","to":"Chinese chip manufacturers","type":"substitute","layer_from":"L3","layer_to":"L5","confidence":0.85,"snippet":"Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Nissin Ion Equipment Co., Ltd."},{"_id":{"$oid":"6a16ab1d640f4f6e255ac563"},"from":"Sumitomo Heavy Industries Ion Technology Co., Ltd.","to":"Chinese chip manufacturers","type":"substitute","layer_from":"L3","layer_to":"L5","confidence":0.85,"snippet":"Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Sumitomo Heavy Industries Ion Technology Co., Ltd."},{"_id":{"$oid":"6a16ac79640f4f6e255ac56b"},"from":"Flex Ltd.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L6","confidence":0.95,"snippet":"We depend on Flex Ltd. (“Flex”) to manufacture and test our FLEX and J750 family of products from its facility in Malaysia"},{"_id":{"$oid":"6a16ac79640f4f6e255ac56c"},"from":"Plexus Corp.","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L6","confidence":0.95,"snippet":"We depend on Plexus Corp. (“Plexus”) to manufacture and test our FLEX and Magnum products from its facilities in Malaysia and Thailand"},{"_id":{"$oid":"6a16ac79640f4f6e255ac56d"},"from":"SAM Meerkat","to":"[Company Name]","type":"supplier_to_customer","layer_from":"L5","layer_to":"L6","confidence":0.95,"snippet":"We depend on SAM Meerkat to manufacture and test our storage test family of products from its facilities in Malaysia and Thailand"},{"_id":{"$oid":"6a16ad9b640f4f6e255ac56e"},"from":"Marvell","to":"Huawei Technologies Co. Ltd.","type":"supplier_to_customer","layer_from":"L4","layer_to":"L6","confidence":0.95,"snippet":"An increasing number of Marvell products require licenses for export to Huawei and other companies on the Entity List"},{"_id":{"$oid":"6a16ad9b640f4f6e255ac575"},"from":"SSD and other storage technology manufacturers","to":"HDD manufacturers","type":"substitute","layer_from":"L5","layer_to":"L5","confidence":0.85,"snippet":"products using alternative technologies, such as SSD and other storage technologies are a source of competition to manufacturers of HDDs"},{"_id":{"$oid":"6a16aed8640f4f6e255ac578"},"from":"Analog Devices","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16aed8640f4f6e255ac579"},"from":"Infineon Technologies","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16aed8640f4f6e255ac57a"},"from":"NXP Semiconductors","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16aed8640f4f6e255ac57b"},"from":"ON Semiconductor","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16aed8640f4f6e255ac57c"},"from":"Power Integrations","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16aed8640f4f6e255ac57d"},"from":"Renesas Electronics","to":"[company]","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.85,"snippet":"We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."},{"_id":{"$oid":"6a16b0e5640f4f6e255ac589"},"from":"company","to":"EDA vendors","type":"substitute","layer_from":"L4","layer_to":"L4","confidence":0.9,"snippet":"In our Design Automation segment, we compete against a variety of different EDA vendors, including publicly traded companies that offer a variety of products and services as well as other EDA vendors."},{"_id":{"$oid":"6a16b0e5640f4f6e255ac58a"},"from":"company","to":"silicon IP providers","type":"substitute","layer_from":"L4","layer_to":"L6","confidence":0.9,"snippet":"In our Design IP segment, we compete against silicon IP providers as well as our customers’ internally developed IP."},{"_id":{"$oid":"6a16b502640f4f6e255ac593"},"from":"Arm China","to":"[unnamed company]","type":"critical_dependency","layer_from":"L4","layer_to":"L6","confidence":0.95,"snippet":"our top five customers (including Arm China and SoftBank Group) collectively accounted for approximately 57%, 56% and 54% of our total revenue for the fiscal years ended March 31, 2026, 2025 and 2024, respectively"},{"_id":{"$oid":"6a16b502640f4f6e255ac594"},"from":"SoftBank Group","to":"[unnamed company]","type":"critical_dependency","layer_from":"L4","layer_to":"L6","confidence":0.95,"snippet":"our top five customers (including Arm China and SoftBank Group) collectively accounted for approximately 57%, 56% and 54% of our total revenue for the fiscal years ended March 31, 2026, 2025 and 2024, respectively"},{"_id":{"$oid":"6a16b502640f4f6e255ac596"},"from":"Arm","to":"Arm China","type":"supplier_to_customer","layer_from":"L6","layer_to":"L4","confidence":0.95,"snippet":"We utilize our commercial relationship with Arm China to access the PRC market for IP revenue."},{"_id":{"$oid":"6a16b502640f4f6e255ac598"},"from":"Arm China","to":"Arm Holdings","type":"critical_dependency","layer_from":"L4","layer_to":"L4","confidence":0.95,"snippet":"We are dependent on Arm China providing us with reliable and timely information."},{"_id":{"$oid":"6a16b739640f4f6e255ac599"},"from":"Panasonic","to":"Tesla","type":"supplier_to_customer","layer_from":"L6","layer_to":"L5","confidence":0.95,"snippet":"Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co. Limited (CATL) for these cells."},{"_id":{"$oid":"6a16b739640f4f6e255ac59a"},"from":"Contemporary Amperex Technology Co. Limited (CATL)","to":"Tesla","type":"supplier_to_customer","layer_from":"L6","layer_to":"L5","confidence":0.95,"snippet":"Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co. Limited (CATL) for these cells."}]
+[
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4c6"
+    },
+    "from": "AMD",
+    "to": "Sanmina",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 1.0,
+    "snippet": "In October 2025, we sold the ZT data center infrastructure manufacturing business (ZT Manufacturing Business) to Sanmina Corporation (Sanmina)."
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4c7"
+    },
+    "from": "AMD",
+    "to": "OpenAI OpCo, LLC",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 1.0,
+    "snippet": "In October 2025, we entered into a product purchase agreement with OpenAI OpCo, LLC, (OpenAI) to deploy 6 gigawatts of AMD GPUs, with the deployment of the first gigawatt of capacity powered by our AMD Instinct MI450 series products."
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4ce"
+    },
+    "from": "Altera",
+    "to": "[Company Name]",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "In the Data Center segment, we compete against Altera with our FPGA and adaptive SoC server products."
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4d1"
+    },
+    "from": "Altera",
+    "to": "Company",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.85,
+    "snippet": "We expect continued competition from our primary FPGA competitors such as Altera"
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4d3"
+    },
+    "from": "TSMC",
+    "to": "[unnamed company]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We utilize Taiwan Semiconductor Manufacturing Company Limited (TSMC) for the production of wafers for our HPC, FPGA and adaptive SoC products"
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4d4"
+    },
+    "from": "GLOBALFOUNDRIES Inc.",
+    "to": "[unnamed company]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We utilize GLOBALFOUNDRIES Inc. (GF), with respect to wafer purchases for our HPC products at the 12 nm and 14 nm technology nodes"
+  },
+  {
+    "_id": {
+      "$oid": "6a169bb4640f4f6e255ac4dc"
+    },
+    "from": "Microsoft Corporation",
+    "to": "[Company Name]",
+    "type": "critical_dependency",
+    "layer_from": "L6",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "If Microsoft Corporation's support for our products is lost, our ability to sell our products could be materially adversely affected."
+  },
+  {
+    "_id": {
+      "$oid": "6a169d6b640f4f6e255ac4de"
+    },
+    "from": "TSMC",
+    "to": "Broadcom",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "The majority of our front-end wafer manufacturing operations is outsourced to external foundries, including Taiwan Semiconductor Manufacturing Company Limited (&#8220;TSMC&#8221;)."
+  },
+  {
+    "_id": {
+      "$oid": "6a169d6b640f4f6e255ac4df"
+    },
+    "from": "Advanced Semiconductor Engineering",
+    "to": "Broadcom",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169d6b640f4f6e255ac4e0"
+    },
+    "from": "Foxconn Technology Group",
+    "to": "Broadcom",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169d6b640f4f6e255ac4e1"
+    },
+    "from": "Amkor Technology",
+    "to": "Broadcom",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169d6b640f4f6e255ac4e2"
+    },
+    "from": "Siliconware Precision Industries",
+    "to": "Broadcom",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We use third-party CMs for a significant majority of our assembly and test operations, including TSMC, Advanced Semiconductor Engineering, Inc., Foxconn Technology Group, Amkor Technology, Inc. and Siliconware Precision Industries Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169df7640f4f6e255ac4e8"
+    },
+    "from": "Intel",
+    "to": "TSMC",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "We expect to continue to use TSMC and other third-party foundry suppliers for various key tiles in a number of current and future products."
+  },
+  {
+    "_id": {
+      "$oid": "6a169df7640f4f6e255ac4e9"
+    },
+    "from": "Intel",
+    "to": "UMC",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "In 2024, we announced a strategic collaboration with UMC to develop a 12 nm process platform that expands our mature&#8209;node process portfolio and strengthens our U.S.-based manufacturing foundry capabilities, with production expected to begin in 2027."
+  },
+  {
+    "_id": {
+      "$oid": "6a169df7640f4f6e255ac4ed"
+    },
+    "from": "ASML",
+    "to": "Intel",
+    "type": "critical_dependency",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "We are reliant upon sole-source providers, such as with the EUV lithography tools manufactured by ASML that are required for leading-edge process technologies"
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4f5"
+    },
+    "from": "Applied Materials, Inc.",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "Our primary competitor in the dielectric and metals deposition market is Applied Materials, Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4f6"
+    },
+    "from": "ASM International",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "For ALD and PECVD, we also compete against ASM International"
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4f7"
+    },
+    "from": "Wonik IPS",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "For ALD and PECVD, we also compete against Wonik IPS"
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4f8"
+    },
+    "from": "Hitachi, Ltd.",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "In the etch market, our primary competitors are Applied Materials, Inc.; Hitachi, Ltd.; and Tokyo Electron, Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4f9"
+    },
+    "from": "Tokyo Electron, Ltd.",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "In the etch market, our primary competitors are Applied Materials, Inc.; Hitachi, Ltd.; and Tokyo Electron, Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4fa"
+    },
+    "from": "Screen Holding Co., Ltd.",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "In the wet clean market, our primary competitors are Screen Holding Co., Ltd.; Semes Co., Ltd.; and Tokyo Electron, Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a169f5f640f4f6e255ac4fb"
+    },
+    "from": "Semes Co., Ltd.",
+    "to": "Lam Research Corporation",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L3",
+    "confidence": 0.95,
+    "snippet": "In the wet clean market, our primary competitors are Screen Holding Co., Ltd.; Semes Co., Ltd.; and Tokyo Electron, Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a042640f4f6e255ac50c"
+    },
+    "from": "Micron",
+    "to": "companies headquartered in mainland China and Hong Kong",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "the CAC determined that critical information infrastructure operators in China may not purchase Micron products, impacting our revenue with companies headquartered in mainland China and Hong Kong"
+  },
+  {
+    "_id": {
+      "$oid": "6a16a042640f4f6e255ac50e"
+    },
+    "from": "Samsung Electronics Co., Ltd.",
+    "to": "Micron",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "We face intense competition in the semiconductor memory and storage markets from a number of companies, including Samsung Electronics Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a042640f4f6e255ac50f"
+    },
+    "from": "SK hynix Inc.",
+    "to": "Micron",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "We face intense competition in the semiconductor memory and storage markets from a number of companies, including SK hynix Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a042640f4f6e255ac510"
+    },
+    "from": "Kioxia Holdings Corporation",
+    "to": "Micron",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "We face intense competition in the semiconductor memory and storage markets from a number of companies, including Kioxia Holdings Corporation"
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac512"
+    },
+    "from": "Taiwan Semiconductor Manufacturing Company Limited",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac513"
+    },
+    "from": "Samsung Electronics Co., Ltd.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac514"
+    },
+    "from": "SK Hynix Inc.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac515"
+    },
+    "from": "Micron Technology, Inc.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 1.0,
+    "snippet": "We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac516"
+    },
+    "from": "Hon Hai Precision Industry Co., Ltd.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 1.0,
+    "snippet": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac517"
+    },
+    "from": "Wistron Corporation",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 1.0,
+    "snippet": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a163640f4f6e255ac518"
+    },
+    "from": "Fabrinet",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 1.0,
+    "snippet": "We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a265640f4f6e255ac52d"
+    },
+    "from": "TSMC",
+    "to": "fabless IC design companies",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We provide customers, including both fabless IC design companies and system companies, with leading-edge logic process technologies such as 2-nanometer Nanosheet Transistor (\"N2\"), 3-nanometer Fin Field-Effect Transistor (\"FinFET\"),"
+  },
+  {
+    "_id": {
+      "$oid": "6a16a265640f4f6e255ac53a"
+    },
+    "from": "Xintec",
+    "to": "TSMC",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "In January 2007, we acquired a 51.2% equity interest in Xintec, a supplier of wafer level packaging service, to support our CMOS image sensor manufacturing business."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a673640f4f6e255ac53d"
+    },
+    "from": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "The primary foundry suppliers for our various digital, analog/mixed-signal, RF and PM integrated circuits include Taiwan Semiconductor Manufacturing Company (TSMC)"
+  },
+  {
+    "_id": {
+      "$oid": "6a16a673640f4f6e255ac545"
+    },
+    "from": "Apple",
+    "to": "Qualcomm",
+    "type": "substitute",
+    "layer_from": "L6",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "Additionally, we expect that Apple will increasingly use its own modem products, rather than our products, in its future devices"
+  },
+  {
+    "_id": {
+      "$oid": "6a16a673640f4f6e255ac547"
+    },
+    "from": "Huawei",
+    "to": "Company_Name",
+    "type": "customer_to_supplier",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "the U.S. Department of Commerce revoked the export license under which we previously sold 4G and certain other integrated circuit products to Huawei, which is one of the largest smartphone OEMs in China."
+  },
+  {
+    "_id": {
+      "$oid": "6a16a673640f4f6e255ac548"
+    },
+    "from": "Company_Name",
+    "to": "Huawei",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "the U.S. Department of Commerce revoked the export license under which we previously sold 4G and certain other integrated circuit products to Huawei, which is one of the largest smartphone OEMs in China."
+  },
+  {
+    "_id": {
+      "$oid": "6a16ab1d640f4f6e255ac561"
+    },
+    "from": "Advanced Ion Beam Technology, Inc.",
+    "to": "Chinese chip manufacturers",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Advanced Ion Beam Technology, Inc."
+  },
+  {
+    "_id": {
+      "$oid": "6a16ab1d640f4f6e255ac562"
+    },
+    "from": "Nissin Ion Equipment Co., Ltd.",
+    "to": "Chinese chip manufacturers",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Nissin Ion Equipment Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a16ab1d640f4f6e255ac563"
+    },
+    "from": "Sumitomo Heavy Industries Ion Technology Co., Ltd.",
+    "to": "Chinese chip manufacturers",
+    "type": "substitute",
+    "layer_from": "L3",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Increased U.S. export controls and other political and trade tensions exacerbate the risk that Chinese customers will change suppliers to non-U.S. vendors, such as Sumitomo Heavy Industries Ion Technology Co., Ltd."
+  },
+  {
+    "_id": {
+      "$oid": "6a16ac79640f4f6e255ac56b"
+    },
+    "from": "Flex Ltd.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "We depend on Flex Ltd. (\u201cFlex\u201d) to manufacture and test our FLEX and J750 family of products from its facility in Malaysia"
+  },
+  {
+    "_id": {
+      "$oid": "6a16ac79640f4f6e255ac56c"
+    },
+    "from": "Plexus Corp.",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "We depend on Plexus Corp. (\u201cPlexus\u201d) to manufacture and test our FLEX and Magnum products from its facilities in Malaysia and Thailand"
+  },
+  {
+    "_id": {
+      "$oid": "6a16ac79640f4f6e255ac56d"
+    },
+    "from": "SAM Meerkat",
+    "to": "[Company Name]",
+    "type": "supplier_to_customer",
+    "layer_from": "L5",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "We depend on SAM Meerkat to manufacture and test our storage test family of products from its facilities in Malaysia and Thailand"
+  },
+  {
+    "_id": {
+      "$oid": "6a16ad9b640f4f6e255ac575"
+    },
+    "from": "SSD and other storage technology manufacturers",
+    "to": "HDD manufacturers",
+    "type": "substitute",
+    "layer_from": "L5",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "products using alternative technologies, such as SSD and other storage technologies are a source of competition to manufacturers of HDDs"
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac578"
+    },
+    "from": "Analog Devices",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac579"
+    },
+    "from": "Infineon Technologies",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac57a"
+    },
+    "from": "NXP Semiconductors",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac57b"
+    },
+    "from": "ON Semiconductor",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac57c"
+    },
+    "from": "Power Integrations",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16aed8640f4f6e255ac57d"
+    },
+    "from": "Renesas Electronics",
+    "to": "[company]",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.85,
+    "snippet": "We consider our primary competitors to include Analog Devices, Infineon Technologies, NXP Semiconductors, ON Semiconductor, Power Integrations, Renesas Electronics, ROHM Semiconductor, Semtech, STMicroelectronics and Texas Instruments."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b0e5640f4f6e255ac589"
+    },
+    "from": "company",
+    "to": "EDA vendors",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.9,
+    "snippet": "In our Design Automation segment, we compete against a variety of different EDA vendors, including publicly traded companies that offer a variety of products and services as well as other EDA vendors."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b0e5640f4f6e255ac58a"
+    },
+    "from": "company",
+    "to": "silicon IP providers",
+    "type": "substitute",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.9,
+    "snippet": "In our Design IP segment, we compete against silicon IP providers as well as our customers\u2019 internally developed IP."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b502640f4f6e255ac593"
+    },
+    "from": "Arm China",
+    "to": "[unnamed company]",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "our top five customers (including Arm China and SoftBank Group) collectively accounted for approximately 57%, 56% and 54% of our total revenue for the fiscal years ended March 31, 2026, 2025 and 2024, respectively"
+  },
+  {
+    "_id": {
+      "$oid": "6a16b502640f4f6e255ac594"
+    },
+    "from": "SoftBank Group",
+    "to": "[unnamed company]",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L6",
+    "confidence": 0.95,
+    "snippet": "our top five customers (including Arm China and SoftBank Group) collectively accounted for approximately 57%, 56% and 54% of our total revenue for the fiscal years ended March 31, 2026, 2025 and 2024, respectively"
+  },
+  {
+    "_id": {
+      "$oid": "6a16b502640f4f6e255ac596"
+    },
+    "from": "Arm",
+    "to": "Arm China",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We utilize our commercial relationship with Arm China to access the PRC market for IP revenue."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b502640f4f6e255ac598"
+    },
+    "from": "Arm China",
+    "to": "Arm Holdings",
+    "type": "critical_dependency",
+    "layer_from": "L4",
+    "layer_to": "L4",
+    "confidence": 0.95,
+    "snippet": "We are dependent on Arm China providing us with reliable and timely information."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b739640f4f6e255ac599"
+    },
+    "from": "Panasonic",
+    "to": "Tesla",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co. Limited (CATL) for these cells."
+  },
+  {
+    "_id": {
+      "$oid": "6a16b739640f4f6e255ac59a"
+    },
+    "from": "Contemporary Amperex Technology Co. Limited (CATL)",
+    "to": "Tesla",
+    "type": "supplier_to_customer",
+    "layer_from": "L6",
+    "layer_to": "L5",
+    "confidence": 0.95,
+    "snippet": "Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co. Limited (CATL) for these cells."
+  },
+  {
+    "from": "Marvell",
+    "to": "Amazon Web Services",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.9,
+    "snippet": "Marvell supplies custom AI inference and networking ASICs to Amazon Web Services, including silicon for AWS Trainium and Inferentia platforms and high-speed Ethernet switching."
+  },
+  {
+    "from": "Marvell",
+    "to": "Microsoft Azure",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.88,
+    "snippet": "Marvell provides Ethernet switching and networking silicon used in Microsoft Azure's data center fabric, supporting high-bandwidth AI cluster interconnects."
+  },
+  {
+    "from": "Marvell",
+    "to": "Google Cloud",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.88,
+    "snippet": "Marvell supplies networking ASICs and custom silicon to Google Cloud, supporting data center fabric for AI training workloads and TPU cluster interconnects."
+  },
+  {
+    "from": "Marvell",
+    "to": "Meta",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.85,
+    "snippet": "Marvell provides high-speed Ethernet switching and optical networking silicon used in Meta's AI infrastructure for training large language models and recommendation systems."
+  },
+  {
+    "from": "TSMC",
+    "to": "Marvell",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.92,
+    "snippet": "Marvell relies on TSMC as its primary contract foundry for advanced node production of networking ASICs, custom AI silicon, and storage controllers."
+  }
+]

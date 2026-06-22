@@ -1,6 +1,6 @@
 {
   "generated": "2026-06-22",
-  "signal_count": 24,
+  "signal_count": 26,
   "signals": [
     {
       "id": "ORCL-capex_surge-2025",
@@ -206,6 +206,37 @@
       "confidence": 0.75
     },
     {
+      "id": "META-capex_surge-2025",
+      "company": "Meta",
+      "ticker": "META",
+      "industry": "semiconductor",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 87% YoY ($37.3B \u2192 $69.7B)",
+      "observable_value": 0.8706,
+      "hidden_cause": "Capital expansion at Meta signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Meta will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
       "id": "GOOGL-capex_surge-2025",
       "company": "Google Cloud",
       "ticker": "GOOGL",
@@ -247,6 +278,15 @@
           "layer": "L4",
           "industry": "ai",
           "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.88,
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         }
       ],
@@ -550,6 +590,15 @@
           "layer": "L3",
           "industry": "cloud",
           "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
+        },
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.88,
           "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         },
         {
@@ -928,21 +977,59 @@
       "period": "2026",
       "observable": "Revenue grew 42% YoY ($5.8B \u2192 $8.2B)",
       "observable_value": 0.4209,
-      "hidden_cause": "Revenue acceleration at Marvell confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "hidden_cause": "Revenue acceleration at Marvell reflects confirmed hyperscaler purchases of AI networking silicon \u2014 Ethernet switching ASICs, optical interconnect chipsets, and custom AI inference silicon. This is a lagging confirmation that the AI infrastructure buildout cycle has reached volume production, not a leading predictor of the next cycle. Key uncertainty: whether demand continues to accelerate or plateaus as hyperscaler capex peaks.",
       "alternative_explanations": [
-        "One-time large deal or unexpected customer ramp",
-        "Favorable macro lifting all competitors equally",
-        "Price increases masking flat unit volumes"
+        "Hyperscaler concentration \u2014 a few customers (AWS, Google, Microsoft, Meta) drive most of growth",
+        "Product mix shift to higher-ASP AI networking (Ethernet, custom ASIC) vs. storage and carrier",
+        "Inventory normalization / catch-up ordering after prior destocking",
+        "Broad semiconductor upcycle masking mix-specific drivers"
       ],
-      "upstream_beneficiaries": [],
+      "upstream_beneficiaries": [
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "semiconductor",
+          "edge_confidence": 0.92,
+          "inference": "Strong demand flowing to Marvell will ripple upstream to its key suppliers."
+        }
+      ],
       "downstream_implications": [
         {
-          "company": "Huawei Technologies Co. Ltd.",
-          "ticker": null,
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
           "relationship": "supplier_to_customer",
-          "layer": "L6",
+          "layer": "L5",
           "industry": "semiconductor",
-          "edge_confidence": 0.95,
+          "edge_confidence": 0.9,
+          "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Microsoft Azure",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 0.88,
+          "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Google Cloud",
+          "ticker": "GOOGL",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 0.88,
+          "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Meta",
+          "ticker": "META",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 0.85,
           "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
         }
       ],
@@ -1346,6 +1433,36 @@
           "industry": "cloud",
           "edge_confidence": 0.95,
           "inference": "New product development at MongoDB requires specialized upstream inputs."
+        }
+      ],
+      "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.62
+    },
+    {
+      "id": "META-rd_spike-2025",
+      "company": "Meta",
+      "ticker": "META",
+      "industry": "semiconductor",
+      "signal_type": "rd_spike",
+      "period": "2025",
+      "observable": "R&D intensity 29% of revenue with 31% YoY R&D growth",
+      "observable_value": 0.2855,
+      "hidden_cause": "A R&D intensity spike at Meta indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.85,
+          "inference": "New product development at Meta requires specialized upstream inputs."
         }
       ],
       "downstream_implications": [],
