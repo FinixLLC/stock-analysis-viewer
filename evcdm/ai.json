@@ -1012,5 +1012,23 @@
     "layer_to": "L3",
     "confidence": 0.85,
     "snippet": "Intel purchases significant volumes of Applied Materials equipment for its IDM 2.0 strategy and Intel Foundry Services. Intel 18A node development and domestic fab expansion under the CHIPS Act represent meaningful demand for Applied Materials systems."
+  },
+  {
+    "from": "NVIDIA",
+    "to": "Meta",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.9,
+    "snippet": "Meta has deployed hundreds of thousands of NVIDIA H100 and H200 GPUs across AI training clusters for Llama model development, recommendation system training, and content ranking. NVIDIA is Meta's primary compute supplier for large-scale AI workloads."
+  },
+  {
+    "from": "Broadcom",
+    "to": "Meta",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.8,
+    "snippet": "Broadcom supplies AI networking ASICs and custom silicon to Meta's data center fabric. Meta is also developing its MTIA (Meta Training and Inference Accelerator) custom AI chip using Broadcom's advanced packaging and networking ecosystem."
   }
 ]

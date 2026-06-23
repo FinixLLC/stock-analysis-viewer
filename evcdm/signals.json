@@ -255,7 +255,7 @@
       "id": "META-capex_surge-2025",
       "company": "Meta",
       "ticker": "META",
-      "industry": "semiconductor",
+      "industry": "ai",
       "signal_type": "capex_surge",
       "period": "2025",
       "observable": "Capex grew 87% YoY ($37.3B \u2192 $69.7B)",
@@ -269,12 +269,30 @@
       ],
       "upstream_beneficiaries": [
         {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Meta will require additional equipment and materials."
+        },
+        {
+          "company": "Broadcom",
+          "ticker": "AVGO",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.8,
+          "inference": "Capacity expansion at Meta will require additional equipment and materials."
+        },
+        {
           "company": "Marvell",
           "ticker": "MRVL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "semiconductor",
-          "edge_confidence": 0.85,
+          "edge_confidence": 0.65,
           "inference": "Capacity expansion at Meta will require additional equipment and materials."
         }
       ],
@@ -1024,6 +1042,15 @@
           "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
         },
         {
+          "company": "Meta",
+          "ticker": "META",
+          "relationship": "supplier_to_customer",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Revenue surge at NVIDIA implies its downstream customers are expanding rapidly."
+        },
+        {
           "company": "HPE",
           "ticker": null,
           "relationship": "supplier_to_customer",
@@ -1210,7 +1237,7 @@
           "relationship": "supplier_to_customer",
           "layer": "L5",
           "industry": "semiconductor",
-          "edge_confidence": 0.85,
+          "edge_confidence": 0.65,
           "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
         }
       ],
@@ -1655,31 +1682,50 @@
       "id": "META-rd_spike-2025",
       "company": "Meta",
       "ticker": "META",
-      "industry": "semiconductor",
+      "industry": "ai",
       "signal_type": "rd_spike",
       "period": "2025",
       "observable": "R&D intensity 29% of revenue with 31% YoY R&D growth",
       "observable_value": 0.2855,
-      "hidden_cause": "A R&D intensity spike at Meta indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "hidden_cause": "Meta's R&D investment reflects two distinct programs with different supply chain implications. The hardware-facing portion \u2014 AI training infrastructure, custom ASIC development (MTIA), and AR/VR hardware (Quest, smart glasses) \u2014 creates direct demand for AI compute silicon, networking chipsets, and optical components from real upstream suppliers. The software-facing portion \u2014 Llama model development, recommendation systems, and feed algorithms \u2014 generates no direct supplier orders. Management is betting that today's engineering investment will position Meta across AI platforms, wearables, and next-generation computing before revenue is visible.",
       "alternative_explanations": [
-        "M&A-driven headcount increase classified as R&D",
-        "One-time product refresh cycle, not sustained investment",
-        "Regulatory compliance spend misclassified as R&D"
+        "Llama AI model development \u2014 training frontier LLMs requires massive GPU cluster investment and engineering talent",
+        "Reality Labs / AR-VR investment cycle \u2014 Quest headsets, Ray-Ban smart glasses, and future mixed-reality platform",
+        "AI infrastructure and training cluster buildout \u2014 scaling compute for recommendation systems, ads ranking, and content",
+        "Competitive response to OpenAI, Google (Gemini), and xAI (Grok) in foundational AI capabilities"
       ],
       "upstream_beneficiaries": [
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Meta's AI training infrastructure and custom silicon programs create direct demand for GPU compute, networking ASICs, and data-center components \u2014 the hardware portion of Meta's R&D does ripple upstream to physical suppliers, unlike pure software R&D."
+        },
+        {
+          "company": "Broadcom",
+          "ticker": "AVGO",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.8,
+          "inference": "Meta's AI training infrastructure and custom silicon programs create direct demand for GPU compute, networking ASICs, and data-center components \u2014 the hardware portion of Meta's R&D does ripple upstream to physical suppliers, unlike pure software R&D."
+        },
         {
           "company": "Marvell",
           "ticker": "MRVL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "semiconductor",
-          "edge_confidence": 0.85,
-          "inference": "New product development at Meta requires specialized upstream inputs."
+          "edge_confidence": 0.65,
+          "inference": "Meta's AI training infrastructure and custom silicon programs create direct demand for GPU compute, networking ASICs, and data-center components \u2014 the hardware portion of Meta's R&D does ripple upstream to physical suppliers, unlike pure software R&D."
         }
       ],
       "downstream_implications": [],
       "partner_context": [],
-      "confidence": 0.62
+      "confidence": 0.65
     },
     {
       "id": "ZS-rd_spike-2025",
