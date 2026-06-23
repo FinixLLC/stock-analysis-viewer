@@ -1,6 +1,6 @@
 {
   "generated": "2026-06-22",
-  "signal_count": 27,
+  "signal_count": 28,
   "signals": [
     {
       "id": "ORCL-capex_surge-2025",
@@ -18,7 +18,17 @@
         "Signed customer contracts not yet publicly announced",
         "Potential overbuilding if demand growth decelerates"
       ],
-      "upstream_beneficiaries": [],
+      "upstream_beneficiaries": [
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.8,
+          "inference": "Capacity expansion at Oracle Corporation will require additional equipment and materials."
+        }
+      ],
       "downstream_implications": [
         {
           "company": "Okta",
@@ -317,21 +327,21 @@
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         },
         {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
           "company": "Marvell",
           "ticker": "MRVL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "semiconductor",
           "edge_confidence": 0.88,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Arista",
-          "ticker": "ANET",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "cloud",
-          "edge_confidence": 0.9,
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         },
         {
@@ -402,6 +412,37 @@
           "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
+      "confidence": 0.75
+    },
+    {
+      "id": "LITE-capex_surge-2025",
+      "company": "Lumentum Holdings",
+      "ticker": "LITE",
+      "industry": "cloud",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 74% YoY ($0.1B \u2192 $0.2B)",
+      "observable_value": 0.7368,
+      "hidden_cause": "Capital expansion at Lumentum Holdings signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.8,
+          "inference": "Capital commitment by Lumentum Holdings suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -1103,7 +1144,7 @@
       "id": "MRVL-revenue_acceleration-2026",
       "company": "Marvell",
       "ticker": "MRVL",
-      "industry": "semiconductor",
+      "industry": "cloud",
       "signal_type": "revenue_acceleration",
       "period": "2026",
       "observable": "Revenue grew 42% YoY ($5.8B \u2192 $8.2B)",
@@ -1127,6 +1168,15 @@
         }
       ],
       "downstream_implications": [
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.88,
+          "inference": "Revenue surge at Marvell implies its downstream customers are expanding rapidly."
+        },
         {
           "company": "Amazon Web Services",
           "ticker": "AMZN",
@@ -1407,20 +1457,48 @@
       "period": "2025",
       "observable": "Revenue grew 29% YoY ($7.0B \u2192 $9.0B)",
       "observable_value": 0.286,
-      "hidden_cause": "Revenue acceleration at Arista Networks confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "hidden_cause": "Revenue acceleration at Arista Networks reflects hyperscalers and large AI infrastructure operators deploying high-performance Ethernet switching capacity to support AI training clusters. The causal chain is direct: AI training workloads generate dramatically more east-west traffic than traditional cloud \u2192 more Ethernet switching capacity required \u2192 Arista ships more systems \u2192 revenue recognized. Unlike many semiconductor signals where inventory and channel effects muddy interpretation, Arista sits close to actual network deployment \u2014 shipments correspond to infrastructure actively being brought online.",
       "alternative_explanations": [
-        "One-time large deal or unexpected customer ramp",
-        "Favorable macro lifting all competitors equally",
-        "Price increases masking flat unit volumes"
+        "AI networking buildout \u2014 AI GPU clusters require dramatically more east-west traffic than traditional cloud, driving 400G/800G Ethernet switch deployments",
+        "Customer concentration \u2014 a few hyperscalers (Microsoft, Amazon, Google, Meta) drive most of Arista revenue; a few large deployments materially shift growth",
+        "Product mix upgrade to higher-ASP 400G/800G switches \u2014 revenue grows faster than unit shipments as customers upgrade bandwidth",
+        "Industry-wide networking cycle \u2014 general cloud infrastructure upturn benefits all networking equipment vendors, not AI-specific demand alone"
       ],
       "upstream_beneficiaries": [
         {
           "company": "Broadcom",
           "ticker": "AVGO",
-          "relationship": "critical_dependency",
+          "relationship": "supplier_to_customer",
           "layer": "L3",
           "industry": "cloud",
           "edge_confidence": 0.95,
+          "inference": "Strong demand flowing to Arista Networks will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.88,
+          "inference": "Strong demand flowing to Arista Networks will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Coherent Corp",
+          "ticker": "COHR",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.82,
+          "inference": "Strong demand flowing to Arista Networks will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Lumentum Holdings",
+          "ticker": "LITE",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "cloud",
+          "edge_confidence": 0.8,
           "inference": "Strong demand flowing to Arista Networks will ripple upstream to its key suppliers."
         }
       ],
@@ -1432,7 +1510,7 @@
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.9,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Arista Networks confirms these operators are increasing networking deployment intensity \u2014 specifically high-performance Ethernet switching for AI cluster interconnects. This signals network infrastructure buildout, not necessarily general cloud revenue acceleration."
         },
         {
           "company": "Microsoft Azure",
@@ -1441,34 +1519,25 @@
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.9,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Arista Networks confirms these operators are increasing networking deployment intensity \u2014 specifically high-performance Ethernet switching for AI cluster interconnects. This signals network infrastructure buildout, not necessarily general cloud revenue acceleration."
         },
         {
           "company": "Oracle Cloud Infrastructure",
-          "ticker": null,
+          "ticker": "ORCL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.8,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Arista Networks confirms these operators are increasing networking deployment intensity \u2014 specifically high-performance Ethernet switching for AI cluster interconnects. This signals network infrastructure buildout, not necessarily general cloud revenue acceleration."
         },
         {
-          "company": "GCP",
+          "company": "Google Cloud",
           "ticker": "GOOGL",
           "relationship": "supplier_to_customer",
-          "layer": "L4",
+          "layer": "L5",
           "industry": "cloud",
           "edge_confidence": 0.9,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "OCI",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.9,
-          "inference": "Revenue surge at Arista Networks implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Arista Networks confirms these operators are increasing networking deployment intensity \u2014 specifically high-performance Ethernet switching for AI cluster interconnects. This signals network infrastructure buildout, not necessarily general cloud revenue acceleration."
         }
       ],
       "partner_context": [],

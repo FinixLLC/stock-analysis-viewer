@@ -49,54 +49,6 @@
   },
   {
     "_id": {
-      "$oid": "69f6d2da0fa2d457570a788b"
-    },
-    "from": "Arista",
-    "to": "AWS",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.9,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
-      "$oid": "69f6d2da0fa2d457570a788c"
-    },
-    "from": "Arista",
-    "to": "Azure",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.9,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
-      "$oid": "69f6d2da0fa2d457570a788d"
-    },
-    "from": "Arista",
-    "to": "GCP",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.9,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
-      "$oid": "69f6d2da0fa2d457570a788e"
-    },
-    "from": "Arista",
-    "to": "OCI",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.9,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
       "$oid": "69fb03451aa3c4f897029b73"
     },
     "from": "Ablecom Technology, Inc.",
@@ -217,30 +169,6 @@
   },
   {
     "_id": {
-      "$oid": "69fb03451aa3c4f897029b88"
-    },
-    "from": "Arista",
-    "to": "AWS",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.85,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
-      "$oid": "69fb03451aa3c4f897029b89"
-    },
-    "from": "Arista",
-    "to": "Azure",
-    "type": "supplier_to_customer",
-    "layer_from": "L2",
-    "layer_to": "L4",
-    "confidence": 0.85,
-    "snippet": "Arista established itself as a market leader with platforms, products, and people to enable some of these hyperscalers\u2019 most consequential networks."
-  },
-  {
-    "_id": {
       "$oid": "69fb03451aa3c4f897029b8e"
     },
     "from": "Arista",
@@ -301,18 +229,6 @@
   },
   {
     "_id": {
-      "$oid": "69fb03451aa3c4f897029b9e"
-    },
-    "from": "Broadcom",
-    "to": "Arista",
-    "type": "critical_dependency",
-    "layer_from": "L3",
-    "layer_to": "L3",
-    "confidence": 0.95,
-    "snippet": "We are primarily reliant upon our predominant merchant silicon vendor, Broadcom, for our switching chips."
-  },
-  {
-    "_id": {
       "$oid": "69fb03451aa3c4f897029b9f"
     },
     "from": "Broadcom",
@@ -320,7 +236,7 @@
     "type": "supplier_to_customer",
     "layer_from": "L3",
     "layer_to": "L3",
-    "confidence": 0.9499999999999998,
+    "confidence": 0.95,
     "snippet": "We are primarily reliant upon our predominant merchant silicon vendor, Broadcom, for our switching chips."
   },
   {
@@ -1210,5 +1126,41 @@
     "layer_to": "L6",
     "confidence": 0.85,
     "snippet": "Following our acquisition of Cerner Corporation, we also face competition from large healthcare IT providers such as athenahealth, Inc..."
+  },
+  {
+    "from": "Arista Networks",
+    "to": "Google Cloud",
+    "type": "supplier_to_customer",
+    "layer_from": "L4",
+    "layer_to": "L5",
+    "confidence": 0.9,
+    "snippet": "Arista Networks supplies high-performance Ethernet switching infrastructure to Google Cloud for AI training cluster fabric, enabling the east-west traffic demands of large-scale machine learning workloads."
+  },
+  {
+    "from": "Marvell",
+    "to": "Arista Networks",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.88,
+    "snippet": "Marvell supplies DSPs, optical networking chipsets, and PAM4 retimer ICs used in Arista's high-speed network line cards and optical interconnects for 400G and 800G data center deployments."
+  },
+  {
+    "from": "Coherent Corp",
+    "to": "Arista Networks",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.82,
+    "snippet": "Coherent Corp (formerly II-VI) supplies optical transceivers and coherent pluggable modules used in Arista's data center interconnect solutions, enabling high-bandwidth 400G/800G optical links between switches."
+  },
+  {
+    "from": "Lumentum Holdings",
+    "to": "Arista Networks",
+    "type": "supplier_to_customer",
+    "layer_from": "L3",
+    "layer_to": "L4",
+    "confidence": 0.8,
+    "snippet": "Lumentum Holdings supplies laser components, VCSELs, and photonic components used in optical transceivers integrated into Arista's high-speed switching platforms for AI data center applications."
   }
 ]
