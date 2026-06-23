@@ -985,5 +985,32 @@
     "layer_to": "L4",
     "confidence": 0.8,
     "snippet": "ASE Technology Holding provides advanced semiconductor packaging services for AMD processors, including chip-on-wafer-on-substrate (CoWoS-like) and 3D packaging technologies critical to AMD's chiplet-based CPU and GPU designs."
+  },
+  {
+    "from": "Applied Materials",
+    "to": "TSMC",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.92,
+    "snippet": "TSMC is Applied Materials' largest customer, purchasing CVD, PVD, etch, CMP, and inspection systems for its leading-edge N3/N2 nodes. As TSMC expands capacity for AI GPU production, Applied Materials is a direct primary beneficiary."
+  },
+  {
+    "from": "Applied Materials",
+    "to": "Samsung Electronics",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.88,
+    "snippet": "Samsung Electronics is a major Applied Materials customer across DRAM, NAND, and logic fab operations. Samsung's HBM capacity expansion and gate-all-around (GAA) node transitions drive demand for Applied Materials' deposition and etch equipment."
+  },
+  {
+    "from": "Applied Materials",
+    "to": "Intel",
+    "type": "supplier_to_customer",
+    "layer_from": "L2",
+    "layer_to": "L3",
+    "confidence": 0.85,
+    "snippet": "Intel purchases significant volumes of Applied Materials equipment for its IDM 2.0 strategy and Intel Foundry Services. Intel 18A node development and domestic fab expansion under the CHIPS Act represent meaningful demand for Applied Materials systems."
   }
 ]

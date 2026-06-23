@@ -88,12 +88,12 @@
       "period": "2025",
       "observable": "Capex grew 90% YoY ($1.2B \u2192 $2.3B)",
       "observable_value": 0.8992,
-      "hidden_cause": "Capital expansion at Applied Materials, Inc. signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "hidden_cause": "Applied Materials is a semiconductor equipment supplier \u2014 it sits two steps upstream of AI end demand. The causal chain runs: AI compute demand \u2192 foundries and chipmakers plan fab expansions \u2192 wafer-fab-equipment demand improves \u2192 Applied Materials builds capacity ahead of anticipated orders. This is an expectation signal, not a confirmation: CapEx reflects management's assessment of customer capacity plans, not booked orders. The inference strengthens materially when accompanied by rising bookings, backlog growth, or revenue acceleration at downstream foundry customers.",
       "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
+        "AI semiconductor capacity expansion \u2014 demand propagates: AI models \u2192 GPUs \u2192 foundry capacity \u2192 equipment",
+        "Technology node transitions \u2014 gate-all-around (GAA), CoWoS advanced packaging, HBM manufacturing, advanced DRAM",
+        "CHIPS Act and government incentive programs \u2014 domestic fab investments subsidized by industrial policy",
+        "Overbuilding risk \u2014 semiconductor cycles show excess capacity after aggressive investment (2000, 2008, 2022)"
       ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
@@ -104,6 +104,33 @@
           "layer": "L3",
           "industry": "ai",
           "edge_confidence": 0.9,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.92,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Samsung Electronics",
+          "ticker": "SSNNF",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Intel",
+          "ticker": "INTC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
           "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
         }
       ],
