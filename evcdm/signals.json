@@ -1785,16 +1785,17 @@
       "period": "2025",
       "observable": "R&D intensity 24% of revenue with 22% YoY R&D growth",
       "observable_value": 0.2364,
-      "hidden_cause": "A R&D intensity spike at Cloudflare indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "hidden_cause": "Cloudflare's R&D investment reflects management's conviction that edge-based AI inference, zero-trust security, and developer infrastructure will grow significantly. Unlike semiconductor R&D which produces identifiable new product generations with design-in supplier orders, Cloudflare typically launches dozens of incremental services simultaneously \u2014 Workers AI, AI Gateway, R2 storage, Zero Trust, browser isolation, and more. The signal is platform ambition and addressable market expansion, not a single product cycle. No direct upstream supplier demand is created; this is a 12\u201324 month leading indicator for Cloudflare's own product breadth and future pricing power.",
       "alternative_explanations": [
-        "M&A-driven headcount increase classified as R&D",
-        "One-time product refresh cycle, not sustained investment",
-        "Regulatory compliance spend misclassified as R&D"
+        "AI inference at the edge \u2014 Workers AI and AI Gateway position Cloudflare as distributed inference infrastructure",
+        "Edge computing expansion \u2014 Workers platform pushing beyond CDN/security into application infrastructure vs. AWS Lambda",
+        "Security platform investment \u2014 competition with Zscaler, Palo Alto Networks, and CrowdStrike in SASE/SSE/browser isolation",
+        "Global network expansion \u2014 software engineering to support a growing edge footprint, not a single new product generation"
       ],
       "upstream_beneficiaries": [],
       "downstream_implications": [],
       "partner_context": [],
-      "confidence": 0.62
+      "confidence": 0.55
     },
     {
       "id": "AMD-rd_spike-2025",
