@@ -1,6 +1,6 @@
 {
   "generated": "2026-06-22",
-  "signal_count": 26,
+  "signal_count": 27,
   "signals": [
     {
       "id": "ORCL-capex_surge-2025",
@@ -324,9 +324,54 @@
           "industry": "semiconductor",
           "edge_confidence": 0.88,
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Arista",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "cloud",
+          "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Digital Realty",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Vertiv",
+          "ticker": "VRT",
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Zscaler",
+          "ticker": "ZS",
+          "relationship": "critical_dependency",
+          "layer": "L4",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         }
       ],
       "downstream_implications": [
+        {
+          "company": "Atlas",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        },
         {
           "company": "Okta",
           "ticker": "OKTA",
@@ -796,6 +841,37 @@
           "inference": "Microsoft competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
+      "confidence": 0.75
+    },
+    {
+      "id": "CAT-capex_surge-2025",
+      "company": "Caterpillar",
+      "ticker": "CAT",
+      "industry": "cloud",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 42% YoY ($2.0B \u2192 $2.8B)",
+      "observable_value": 0.419,
+      "hidden_cause": "Capital expansion at Caterpillar signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Vertiv",
+          "ticker": "VRT",
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Caterpillar suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -1378,7 +1454,7 @@
         },
         {
           "company": "GCP",
-          "ticker": null,
+          "ticker": "GOOGL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "cloud",
@@ -1407,16 +1483,17 @@
       "period": "2025",
       "observable": "Revenue grew 28% YoY ($8.0B \u2192 $10.2B)",
       "observable_value": 0.2769,
-      "hidden_cause": "Revenue acceleration at Vertiv confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "hidden_cause": "Vertiv sells physical power and cooling infrastructure \u2014 systems must be manufactured, shipped, and installed on-site before revenue is recognized. A surge at this scale confirms AI data-center construction has moved from planning to active deployment: AI GPU cluster power density has risen to levels where traditional air cooling is insufficient, driving immediate demand for liquid cooling, precision power distribution, and high-density UPS systems. This is a physical deployment confirmation signal \u2014 one step closer to actual AI infrastructure activation than semiconductor CapEx or hyperscaler capex announcements.",
       "alternative_explanations": [
-        "One-time large deal or unexpected customer ramp",
-        "Favorable macro lifting all competitors equally",
-        "Price increases masking flat unit volumes"
+        "AI data-center buildout \u2014 AI GPU clusters require 10\u2013100x more power density than traditional racks, driving liquid cooling and precision power demand",
+        "Liquid cooling secular adoption \u2014 as rack power exceeds 30\u201360kW, air cooling reaches thermal limits and liquid cooling deployment accelerates",
+        "Backlog conversion timing \u2014 large data-center infrastructure projects shift revenue between quarters; growth may partly reflect prior backlog",
+        "Customer concentration \u2014 a few hyperscalers (Microsoft, Amazon, Google) drive the majority of Vertiv's data center revenue"
       ],
       "upstream_beneficiaries": [
         {
           "company": "Caterpillar",
-          "ticker": null,
+          "ticker": "CAT",
           "relationship": "supplier_to_customer",
           "layer": "L1",
           "industry": "cloud",
@@ -1432,7 +1509,7 @@
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.85,
-          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Vertiv confirms hyperscaler AI infrastructure deployment has moved from planning to active build-out \u2014 power and cooling systems must be physically installed before Vertiv can recognize revenue. This signals infrastructure deployment intensity, not merely cloud revenue growth."
         },
         {
           "company": "Azure",
@@ -1441,16 +1518,16 @@
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.85,
-          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Vertiv confirms hyperscaler AI infrastructure deployment has moved from planning to active build-out \u2014 power and cooling systems must be physically installed before Vertiv can recognize revenue. This signals infrastructure deployment intensity, not merely cloud revenue growth."
         },
         {
           "company": "GCP",
-          "ticker": null,
+          "ticker": "GOOGL",
           "relationship": "supplier_to_customer",
           "layer": "L4",
           "industry": "cloud",
           "edge_confidence": 0.85,
-          "inference": "Revenue surge at Vertiv implies its downstream customers are expanding rapidly."
+          "inference": "Revenue surge at Vertiv confirms hyperscaler AI infrastructure deployment has moved from planning to active build-out \u2014 power and cooling systems must be physically installed before Vertiv can recognize revenue. This signals infrastructure deployment intensity, not merely cloud revenue growth."
         }
       ],
       "partner_context": [],
@@ -1572,7 +1649,7 @@
         },
         {
           "company": "GCP",
-          "ticker": null,
+          "ticker": "GOOGL",
           "relationship": "critical_dependency",
           "layer": "L1",
           "industry": "cyber",
