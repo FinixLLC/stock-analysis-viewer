@@ -351,15 +351,6 @@
           "industry": "cloud",
           "edge_confidence": 0.85,
           "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Zscaler",
-          "ticker": "ZS",
-          "relationship": "critical_dependency",
-          "layer": "L4",
-          "industry": "cyber",
-          "edge_confidence": 0.75,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
         }
       ],
       "downstream_implications": [
@@ -399,6 +390,15 @@
           "layer": "L5",
           "industry": "ai",
           "edge_confidence": 0.95,
+          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Zscaler",
+          "ticker": "ZS",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
           "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
@@ -729,15 +729,6 @@
           "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         },
         {
-          "company": "Zscaler",
-          "ticker": "ZS",
-          "relationship": "critical_dependency",
-          "layer": "L4",
-          "industry": "cyber",
-          "edge_confidence": 0.75,
-          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
-        },
-        {
           "company": "Rigetti",
           "ticker": null,
           "relationship": "supplier_to_customer",
@@ -838,6 +829,15 @@
           "layer": "L4",
           "industry": "ai",
           "edge_confidence": 0.95,
+          "inference": "Microsoft competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Zscaler",
+          "ticker": "ZS",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
           "inference": "Microsoft competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
@@ -1621,53 +1621,45 @@
       "period": "2025",
       "observable": "R&D intensity 25% of revenue with 35% YoY R&D growth",
       "observable_value": 0.2516,
-      "hidden_cause": "A R&D intensity spike at Zscaler indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "hidden_cause": "Zscaler is accelerating investment in AI-driven threat detection, zero-trust architecture, and cloud security platform capabilities (SSE, SASE, DSPM). Unlike semiconductor R&D, cybersecurity R&D funds hundreds of incremental improvements \u2014 threat intelligence models, detection algorithms, policy engines \u2014 rather than a single identifiable product generation. The signal is platform ambition under competitive pressure from CrowdStrike, Palo Alto Networks, and Microsoft. No direct supply chain demand is generated. This is a 12\u201324 month leading indicator for Zscaler's own product capability and customer retention, not a supply chain catalyst.",
       "alternative_explanations": [
-        "M&A-driven headcount increase classified as R&D",
-        "One-time product refresh cycle, not sustained investment",
-        "Regulatory compliance spend misclassified as R&D"
+        "AI security platform development \u2014 AI copilots, autonomous threat detection, AI workload protection",
+        "Platform expansion \u2014 broadening from SASE/SSE into data security posture management (DSPM) and cloud security",
+        "Competitive response to CrowdStrike, Palo Alto Networks, and Microsoft Defender ecosystem",
+        "Acquisition integration of Red Canary (agentic AI threat detection) adding R&D headcount"
       ],
       "upstream_beneficiaries": [],
-      "downstream_implications": [
+      "downstream_implications": [],
+      "partner_context": [
         {
           "company": "AWS",
           "ticker": "AMZN",
-          "relationship": "critical_dependency",
+          "relationship": "cooperates_with",
           "layer": "L1",
           "industry": "cyber",
           "edge_confidence": 0.75,
-          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+          "inference": "New Zscaler products may integrate with or compete against this platform's offerings."
         },
         {
           "company": "Azure",
           "ticker": "MSFT",
-          "relationship": "critical_dependency",
+          "relationship": "cooperates_with",
           "layer": "L1",
           "industry": "cyber",
           "edge_confidence": 0.75,
-          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+          "inference": "New Zscaler products may integrate with or compete against this platform's offerings."
         },
         {
           "company": "GCP",
           "ticker": "GOOGL",
-          "relationship": "critical_dependency",
+          "relationship": "cooperates_with",
           "layer": "L1",
           "industry": "cyber",
           "edge_confidence": 0.75,
-          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
-        },
-        {
-          "company": "Red Canary",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "cyber",
-          "edge_confidence": 0.85,
-          "inference": "R&D investment at Zscaler will create next-generation products for downstream buyers."
+          "inference": "New Zscaler products may integrate with or compete against this platform's offerings."
         }
       ],
-      "partner_context": [],
-      "confidence": 0.62
+      "confidence": 0.5
     },
     {
       "id": "NET-rd_spike-2025",

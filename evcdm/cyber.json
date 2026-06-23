@@ -41,11 +41,11 @@
     },
     "from": "Zscaler",
     "to": "AWS",
-    "type": "critical_dependency",
+    "type": "cooperates_with",
     "layer_from": "L4",
     "layer_to": "L1",
     "confidence": 0.75,
-    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
+    "snippet": "Zscaler's Zero Trust Exchange security platform runs on AWS infrastructure and enables enterprise customers to securely access applications hosted in AWS. AWS is a cloud hosting partner and ecosystem enabler, not a downstream buyer of Zscaler products."
   },
   {
     "_id": {
@@ -53,11 +53,11 @@
     },
     "from": "Zscaler",
     "to": "Azure",
-    "type": "critical_dependency",
+    "type": "cooperates_with",
     "layer_from": "L4",
     "layer_to": "L1",
     "confidence": 0.75,
-    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
+    "snippet": "Zscaler's Zero Trust Exchange security platform runs on Azure infrastructure and enables enterprise customers to securely access applications hosted in Azure. Azure is a cloud hosting partner and ecosystem enabler, not a downstream buyer of Zscaler products."
   },
   {
     "_id": {
@@ -65,23 +65,11 @@
     },
     "from": "Zscaler",
     "to": "GCP",
-    "type": "critical_dependency",
+    "type": "cooperates_with",
     "layer_from": "L4",
     "layer_to": "L1",
     "confidence": 0.75,
-    "snippet": "direct-to-cloud access to internally managed applications hosted in public cloud environments, such as Azure, AWS and GCP"
-  },
-  {
-    "_id": {
-      "$oid": "6a1bd0e6ede582312fd47e8d"
-    },
-    "from": "Zscaler",
-    "to": "Red Canary",
-    "type": "critical_dependency",
-    "layer_from": "L5",
-    "layer_to": "L5",
-    "confidence": 0.85,
-    "snippet": "Our acquisition of Red Canary, Inc, or Red Canary, strengthens this portfolio with its agentic AI-driven threat detection"
+    "snippet": "Zscaler's Zero Trust Exchange security platform runs on GCP infrastructure and enables enterprise customers to securely access applications hosted in GCP. GCP is a cloud hosting partner and ecosystem enabler, not a downstream buyer of Zscaler products."
   },
   {
     "_id": {
