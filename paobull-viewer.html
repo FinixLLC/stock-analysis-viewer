@@ -134,6 +134,25 @@
             -webkit-box-orient: vertical; overflow: hidden;
             margin-top: 10px;
         }
+        .pb-price-row {
+            display: flex; justify-content: space-between; align-items: center;
+            margin: 10px 0; padding: 9px 12px;
+            background: linear-gradient(135deg, #f0f4ff 0%, #f5f0ff 100%);
+            border-radius: 9px; border: 1px solid #e0e7ff;
+        }
+        .pb-score-block { display: flex; flex-direction: column; }
+        .pb-score-label { font-size: 0.65em; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; }
+        .pb-score-value { font-size: 1.15em; font-weight: 800; color: #4f46e5; }
+        .pb-price-block { display: flex; flex-direction: column; align-items: flex-end; }
+        .pb-price-label { font-size: 0.65em; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; }
+        .pb-price-value { font-size: 1.15em; font-weight: 800; }
+        .pb-price-value.up   { color: #10b981; }
+        .pb-price-value.down { color: #ef4444; }
+        .pb-price-value.na   { color: #aaa; }
+        .pb-upside { font-size: 0.72em; font-weight: 600; margin-left: 4px; }
+        .pb-upside.up   { color: #10b981; }
+        .pb-upside.down { color: #ef4444; }
+
         .card-footer {
             margin-top: 12px; display: flex; justify-content: space-between; align-items: center;
             font-size: 0.78em; color: #aaa;
@@ -204,6 +223,13 @@
             <option value="WATCH">WATCH (BDD)</option>
             <option value="FAIL">FAIL</option>
         </select>
+        <label>Sort</label>
+        <select id="sort-by" onchange="filterReports()">
+            <option value="ticker">Ticker A–Z</option>
+            <option value="score_desc">PaoBull Score ↓</option>
+            <option value="upside_desc">Predicted Upside ↓</option>
+            <option value="date_desc">Date (newest)</option>
+        </select>
     </div>
 
     <div class="reports-grid" id="reports-grid">
@@ -228,15 +254,29 @@ async function loadReports() {
         const r = await fetch('paobull/paobull-reports.json?_=' + Date.now());
         if (!r.ok) throw new Error('not found');
         allReports = await r.json();
-        allReports.sort((a, b) => a.ticker.localeCompare(b.ticker));
         renderStats(allReports);
-        renderCards(allReports);
+        filterReports();
         document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleString();
     } catch(e) {
         document.getElementById('reports-grid').innerHTML =
             '<div class="no-reports">No PaoBull reports published yet.<br>Run <code>pb TICKER</code> on M1 Max &mdash; reports sync nightly.</div>';
         document.getElementById('stats-row').innerHTML = '';
     }
+}
+
+function sortReports(reports) {
+    var by = document.getElementById('sort-by') ? document.getElementById('sort-by').value : 'ticker';
+    var copy = reports.slice();
+    if (by === 'score_desc') {
+        copy.sort((a, b) => (b.paobull_score || 0) - (a.paobull_score || 0));
+    } else if (by === 'upside_desc') {
+        copy.sort((a, b) => (b.predicted_upside_pct || -999) - (a.predicted_upside_pct || -999));
+    } else if (by === 'date_desc') {
+        copy.sort((a, b) => (b.generated_at || '').localeCompare(a.generated_at || ''));
+    } else {
+        copy.sort((a, b) => a.ticker.localeCompare(b.ticker));
+    }
+    return copy;
 }
 
 function renderStats(reports) {
@@ -290,6 +330,22 @@ function fmtNum(v) {
     return '$' + v.toFixed(2);
 }
 
+function pbPriceRowHtml(r) {
+    var hasScore = r.paobull_score != null;
+    var hasPrice = r.predicted_price != null;
+    if (!hasScore && !hasPrice) return '';
+    var scoreHtml = hasScore
+        ? '<div class="pb-score-block"><div class="pb-score-label">PaoBull Score</div><div class="pb-score-value">' + r.paobull_score.toFixed(1) + '/100</div></div>'
+        : '<div class="pb-score-block"><div class="pb-score-label">PaoBull Score</div><div class="pb-score-value" style="color:#aaa">&mdash;</div></div>';
+    var upside = r.predicted_upside_pct;
+    var upsideClass = upside != null ? (upside >= 0 ? 'up' : 'down') : '';
+    var upsideStr  = upside != null ? '<span class="pb-upside ' + upsideClass + '">(' + (upside >= 0 ? '+' : '') + upside.toFixed(1) + '%)</span>' : '';
+    var priceClass = upside != null ? (upside >= 0 ? 'up' : 'down') : 'na';
+    var priceStr   = hasPrice ? '$' + r.predicted_price.toFixed(2) : '&mdash;';
+    var priceHtml = '<div class="pb-price-block"><div class="pb-price-label">Predicted Price ' + upsideStr + '</div><div class="pb-price-value ' + priceClass + '">' + priceStr + '</div></div>';
+    return '<div class="pb-price-row">' + scoreHtml + priceHtml + '</div>';
+}
+
 function renderCards(reports) {
     if (!reports.length) {
         document.getElementById('reports-grid').innerHTML = '<div class="no-reports">No matching reports.</div>';
@@ -310,9 +366,10 @@ function renderCards(reports) {
                 '<div class="metric"><div class="metric-value">' + (r.roe_pct != null ? r.roe_pct.toFixed(1)+'%' : '&mdash;') + '</div><div class="metric-label">ROE</div></div>' +
                 '<div class="metric"><div class="metric-value">' + fmtNum(r.fcf_latest) + '</div><div class="metric-label">FCF</div></div>' +
             '</div>' +
+            pbPriceRowHtml(r) +
             '<div class="card-snippet">' + snippet + '</div>' +
             '<div class="card-footer">' +
-                '<span>Score: ' + (r.pipeline_score != null ? r.pipeline_score+'/60' : '&mdash;') + '</span>' +
+                '<span>SP Score: ' + (r.pipeline_score != null ? r.pipeline_score+'/60' : '&mdash;') + '</span>' +
                 '<button class="read-btn">Read &rarr;</button>' +
             '</div>' +
         '</div>';
@@ -329,7 +386,7 @@ function filterReports() {
         var matchV = !v || r.pipeline_verdict === v || r.bdd_verdict === v;
         return matchQ && matchV;
     });
-    renderCards(filtered);
+    renderCards(sortReports(filtered));
 }
 
 function filterByVerdict(verdict) {
