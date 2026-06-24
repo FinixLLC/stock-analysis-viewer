@@ -228,6 +228,7 @@ async function loadReports() {
         const r = await fetch('paobull/paobull-reports.json?_=' + Date.now());
         if (!r.ok) throw new Error('not found');
         allReports = await r.json();
+        allReports.sort((a, b) => a.ticker.localeCompare(b.ticker));
         renderStats(allReports);
         renderCards(allReports);
         document.getElementById('ts').textContent = 'Updated: ' + new Date().toLocaleString();
