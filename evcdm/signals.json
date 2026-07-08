@@ -1,16 +1,16 @@
 {
-  "generated": "2026-06-22",
+  "generated": "2026-07-08",
   "signal_count": 28,
   "signals": [
     {
-      "id": "ORCL-capex_surge-2025",
+      "id": "ORCL-capex_surge-2026",
       "company": "Oracle Corporation",
       "ticker": "ORCL",
       "industry": "ai",
       "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 209% YoY ($6.9B \u2192 $21.2B)",
-      "observable_value": 2.0899,
+      "period": "2026",
+      "observable": "Capex grew 162% YoY ($21.2B \u2192 $55.7B)",
+      "observable_value": 1.6238,
       "hidden_cause": "Capital expansion at Oracle Corporation signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
         "Strategic capacity grab ahead of competitors",
