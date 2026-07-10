@@ -1,101 +1,101 @@
 {
-  "generated_at": "2026-07-08T21:00:08.685449",
+  "generated_at": "2026-07-09T21:00:08.665838",
   "total_positions": 95,
-  "avg_1m_return": 0.08,
+  "avg_1m_return": 1.47,
   "sell_signal_count": 0,
   "top_gainer": {
     "symbol": "KYMR",
-    "return_1m": 48.43
+    "return_1m": 45.93
   },
   "top_gainers": [
     {
       "symbol": "KYMR",
       "price": 114.16000366210938,
-      "return_1m": 48.43,
-      "return_3m": 34.23,
+      "return_1m": 45.93,
+      "return_3m": 28.95,
       "return_6m": 56.19,
-      "return_1y": 152.68,
+      "return_1y": 152.51,
       "signal_count": 0
     },
     {
       "symbol": "HOOD",
       "price": 113.52999877929688,
-      "return_1m": 35.53,
-      "return_3m": 64.08,
+      "return_1m": 31.46,
+      "return_3m": 58.41,
       "return_6m": -3.4,
-      "return_1y": 20.09,
+      "return_1y": 15.03,
       "signal_count": 0
     },
     {
       "symbol": "ENVA",
       "price": 224.89999389648438,
-      "return_1m": 25.36,
-      "return_3m": 55.16,
+      "return_1m": 25.0,
+      "return_3m": 49.23,
       "return_6m": 42.13,
-      "return_1y": 93.06,
-      "signal_count": 0
-    },
-    {
-      "symbol": "SMX",
-      "price": 15.550000190734863,
-      "return_1m": 18.79,
-      "return_3m": 144.11,
-      "return_6m": -41.34,
-      "return_1y": -95.03,
-      "signal_count": 0
-    },
-    {
-      "symbol": "TEM",
-      "price": 57.27000045776367,
-      "return_1m": 17.31,
-      "return_3m": 33.37,
-      "return_6m": -17.31,
-      "return_1y": -1.95,
-      "signal_count": 0
-    },
-    {
-      "symbol": "WGS",
-      "price": 65.62000274658203,
-      "return_1m": 16.49,
-      "return_3m": 10.06,
-      "return_6m": -44.97,
-      "return_1y": -28.58,
+      "return_1y": 91.89,
       "signal_count": 0
     },
     {
       "symbol": "GEV",
       "price": 1070.989990234375,
-      "return_1m": 16.39,
-      "return_3m": 8.04,
+      "return_1m": 23.52,
+      "return_3m": 8.06,
       "return_6m": 67.4,
-      "return_1y": 100.22,
+      "return_1y": 98.88,
       "signal_count": 0
     },
     {
-      "symbol": "PD",
-      "price": 10.039999961853027,
-      "return_1m": 14.87,
-      "return_3m": 75.22,
-      "return_6m": -18.11,
-      "return_1y": -37.09,
+      "symbol": "SMX",
+      "price": 15.550000190734863,
+      "return_1m": 20.82,
+      "return_3m": 157.45,
+      "return_6m": -41.34,
+      "return_1y": -93.5,
+      "signal_count": 0
+    },
+    {
+      "symbol": "WGS",
+      "price": 65.62000274658203,
+      "return_1m": 20.8,
+      "return_3m": 7.61,
+      "return_6m": -44.97,
+      "return_1y": -24.5,
       "signal_count": 0
     },
     {
       "symbol": "MOH",
       "price": 230.94000244140625,
-      "return_1m": 13.73,
-      "return_3m": 58.31,
+      "return_1m": 16.7,
+      "return_3m": 53.98,
       "return_6m": 27.02,
-      "return_1y": -2.65,
+      "return_1y": 1.03,
       "signal_count": 0
     },
     {
-      "symbol": "WELL",
-      "price": 233.89999389648438,
-      "return_1m": 13.12,
-      "return_3m": 12.67,
-      "return_6m": 25.29,
-      "return_1y": 54.91,
+      "symbol": "TEM",
+      "price": 57.27000045776367,
+      "return_1m": 15.74,
+      "return_3m": 24.55,
+      "return_6m": -17.31,
+      "return_1y": -3.91,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMD",
+      "price": 517.405029296875,
+      "return_1m": 14.37,
+      "return_3m": 109.62,
+      "return_6m": 149.12,
+      "return_1y": 258.91,
+      "signal_count": 0
+    },
+    {
+      "symbol": "PD",
+      "price": 10.039999961853027,
+      "return_1m": 14.09,
+      "return_3m": 65.68,
+      "return_6m": -18.11,
+      "return_1y": -36.54,
       "signal_count": 0
     }
   ],
@@ -103,71 +103,71 @@
     {
       "symbol": "MX",
       "price": 3.680000066757202,
-      "return_1m": -41.4,
-      "return_3m": 23.08,
+      "return_1m": -39.47,
+      "return_3m": 19.87,
       "signal_count": 0
     },
     {
       "symbol": "ORCL",
       "price": 140.49000549316406,
-      "return_1m": -31.74,
-      "return_3m": 1.74,
+      "return_1m": -30.19,
+      "return_3m": -9.72,
       "signal_count": 0
     },
     {
       "symbol": "YDDL",
       "price": 2.0,
-      "return_1m": -27.01,
-      "return_3m": -61.24,
-      "signal_count": 0
-    },
-    {
-      "symbol": "APLD",
-      "price": 31.440000534057617,
-      "return_1m": -24.98,
-      "return_3m": 19.73,
+      "return_1m": -29.82,
+      "return_3m": -58.51,
       "signal_count": 0
     },
     {
       "symbol": "NBR",
       "price": 80.72000122070312,
-      "return_1m": -16.31,
-      "return_3m": 0.62,
+      "return_1m": -21.53,
+      "return_3m": -4.61,
       "signal_count": 0
     },
     {
-      "symbol": "LGN",
-      "price": 71.94999694824219,
-      "return_1m": -15.93,
-      "return_3m": 13.84,
-      "signal_count": 0
-    },
-    {
-      "symbol": "DDS",
-      "price": 516.4199829101562,
-      "return_1m": -15.23,
-      "return_3m": -13.31,
+      "symbol": "APLD",
+      "price": 31.440000534057617,
+      "return_1m": -19.22,
+      "return_3m": 13.91,
       "signal_count": 0
     },
     {
       "symbol": "KODK",
       "price": 8.140000343322754,
-      "return_1m": -14.14,
-      "return_3m": -32.67,
+      "return_1m": -16.17,
+      "return_3m": -31.88,
+      "signal_count": 0
+    },
+    {
+      "symbol": "MUR",
+      "price": 34.59000015258789,
+      "return_1m": -13.18,
+      "return_3m": -11.35,
       "signal_count": 0
     },
     {
       "symbol": "SATS",
       "price": null,
-      "return_1m": -13.09,
-      "return_3m": -21.07,
+      "return_1m": -11.93,
+      "return_3m": -19.16,
       "signal_count": 0
     },
     {
-      "symbol": "NUE",
-      "price": 226.67999267578125,
-      "return_1m": -10.87,
-      "return_3m": 21.79,
+      "symbol": "DDS",
+      "price": 516.4199829101562,
+      "return_1m": -11.35,
+      "return_3m": -13.02,
+      "signal_count": 0
+    },
+    {
+      "symbol": "LGN",
+      "price": 71.94999694824219,
+      "return_1m": -10.83,
+      "return_3m": 10.05,
       "signal_count": 0
     }
   ],
