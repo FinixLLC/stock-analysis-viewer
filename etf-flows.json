@@ -1,0 +1,27 @@
+{
+  "generated": "2026-07-22T00:00:00+00:00",
+  "tickers": ["SPY", "QQQ"],
+  "history": [
+    {
+      "date": "2026-07-20",
+      "report_url": "https://www.etfchannel.com/article/202607/etf-flows-report-for-07-20-2026-spy-spy-ivv-tfflowreport07202026.htm",
+      "flows": {
+        "SPY": { "weekly_usd": 7700000000, "daily_usd": null, "direction": "inflow" },
+        "QQQ": { "weekly_usd": null, "daily_usd": null, "direction": null }
+      },
+      "market_context": {
+        "total_weekly_usd": 18800000000,
+        "total_daily_usd": 10600000000,
+        "other_top_movers": [
+          { "ticker": "EWY", "category": "Asia", "weekly_usd": 2400000000, "direction": "inflow" },
+          { "ticker": "EFV", "category": "Global", "weekly_usd": 1400000000, "direction": "inflow" },
+          { "ticker": "XLF", "category": "Financial", "weekly_usd": 759300000, "direction": "inflow" },
+          { "ticker": "TLT", "category": "Government Debt", "weekly_usd": 693100000, "direction": "inflow" },
+          { "ticker": "HYG", "category": "Corporate Debt", "weekly_usd": -462000000, "direction": "outflow" },
+          { "ticker": "GLD", "category": "Metals", "weekly_usd": -442100000, "direction": "outflow" },
+          { "ticker": "USO", "category": "Energy", "weekly_usd": -322300000, "direction": "outflow" }
+        ]
+      }
+    }
+  ]
+}
