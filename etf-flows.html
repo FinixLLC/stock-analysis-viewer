@@ -118,7 +118,7 @@
     <header>
         <div>
             <h1>ETF Flows — SPY / QQQ</h1>
-            <p class="subtitle">Daily fund-flow sentiment for S&amp;P 500 (SPY) &amp; NASDAQ 100 (QQQ), sourced from etfchannel.com</p>
+            <p class="subtitle">Daily estimated fund flow for S&amp;P 500 (SPY) &amp; NASDAQ 100 (QQQ), computed from shares-outstanding changes</p>
             <p class="timestamp" id="gen-time">Loading...</p>
         </div>
         <a href="sp500-pipeline.html" class="back-btn">← Pipeline Results</a>
@@ -127,15 +127,19 @@
     <div class="summary-grid" id="summary-grid">
         <div class="summary-card">
             <div class="summary-value" id="s-spy">—</div>
-            <div class="summary-label">Latest SPY Weekly Flow</div>
+            <div class="summary-label">Latest SPY Est. Daily Flow</div>
         </div>
         <div class="summary-card">
             <div class="summary-value" id="s-qqq">—</div>
-            <div class="summary-label">Latest QQQ Weekly Flow</div>
+            <div class="summary-label">Latest QQQ Est. Daily Flow</div>
         </div>
         <div class="summary-card">
-            <div class="summary-value" id="s-total">—</div>
-            <div class="summary-label">Market-wide Weekly Total</div>
+            <div class="summary-value" id="s-spy-aum">—</div>
+            <div class="summary-label">SPY AUM</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-value" id="s-qqq-aum">—</div>
+            <div class="summary-label">QQQ AUM</div>
         </div>
         <div class="summary-card">
             <div class="summary-value" id="s-days">—</div>
@@ -144,19 +148,21 @@
     </div>
 
     <div class="main-card">
-        <div class="info-box">
-            <strong>SPY</strong> tracks the S&amp;P 500, <strong>QQQ</strong> tracks the NASDAQ 100. Flow data is fetched daily
-            (weekdays) from <a href="https://www.etfchannel.com" target="_blank">etfchannel.com</a>'s ETF flows reports as a market-sentiment
-            signal alongside the fundamental picks in the <a href="sp500-pipeline.html">Pipeline Results</a>.
+        <div class="info-box" id="info-box">
+            <strong>SPY</strong> tracks the S&amp;P 500, <strong>QQQ</strong> tracks the NASDAQ 100. Estimated daily flow is computed as
+            <code>(shares outstanding today − shares outstanding yesterday) × price today</code> — the standard creation/redemption-unit method —
+            using free daily data from <a href="https://stockanalysis.com" target="_blank">stockanalysis.com</a>. Shown as a market-sentiment
+            signal alongside the fundamental picks in the <a href="sp500-pipeline.html">Pipeline Results</a>. The first tracked day for each
+            ticker has no flow figure since there's no prior day to compare against.
         </div>
         <div class="table-wrap">
             <table id="table-etf">
                 <thead><tr>
                     <th>Date</th>
-                    <th>SPY Weekly Flow</th>
-                    <th>QQQ Weekly Flow</th>
-                    <th>Market Weekly Total</th>
-                    <th>Other Top Movers</th>
+                    <th>SPY Est. Flow</th>
+                    <th>SPY Shares Out.</th>
+                    <th>QQQ Est. Flow</th>
+                    <th>QQQ Shares Out.</th>
                     <th>Source</th>
                 </tr></thead>
                 <tbody id="tbody-etf"></tbody>
@@ -183,31 +189,31 @@ async function init() {
             const sign = withSign ? (v >= 0 ? '+' : '-') : '';
             return `<span class="${v >= 0 ? 'flow-in' : 'flow-out'}">${sign}${s}</span>`;
         };
+        const fmtShares = v => v === null || v === undefined ? '—' : (v / 1e6).toFixed(1) + 'M';
 
         const latest = history[0];
-        if (latest) {
-            document.getElementById('s-spy').innerHTML = fmtUsd(latest.flows && latest.flows.SPY ? latest.flows.SPY.weekly_usd : null, true);
-            document.getElementById('s-qqq').innerHTML = fmtUsd(latest.flows && latest.flows.QQQ ? latest.flows.QQQ.weekly_usd : null, true);
-            document.getElementById('s-total').textContent = latest.market_context && latest.market_context.total_weekly_usd
-                ? '$' + (latest.market_context.total_weekly_usd / 1e9).toFixed(1) + 'B' : '—';
+        if (latest && latest.data) {
+            const spy = latest.data.SPY || {};
+            const qqq = latest.data.QQQ || {};
+            document.getElementById('s-spy').innerHTML = fmtUsd(spy.flow_usd, true);
+            document.getElementById('s-qqq').innerHTML = fmtUsd(qqq.flow_usd, true);
+            document.getElementById('s-spy-aum').textContent = spy.aum_usd ? '$' + (spy.aum_usd / 1e9).toFixed(1) + 'B' : '—';
+            document.getElementById('s-qqq-aum').textContent = qqq.aum_usd ? '$' + (qqq.aum_usd / 1e9).toFixed(1) + 'B' : '—';
         }
 
         const tbody = document.getElementById('tbody-etf');
         tbody.innerHTML = history.map(h => {
-            const spy = h.flows && h.flows.SPY ? h.flows.SPY.weekly_usd : null;
-            const qqq = h.flows && h.flows.QQQ ? h.flows.QQQ.weekly_usd : null;
-            const total = h.market_context ? h.market_context.total_weekly_usd : null;
-            const movers = (h.market_context && h.market_context.other_top_movers) || [];
-            const moversHtml = movers.map(m =>
-                `${m.ticker} ${fmtUsd(m.weekly_usd, true)}`
-            ).join(', ') || '<span style="color:#999">—</span>';
+            const spy = (h.data && h.data.SPY) || {};
+            const qqq = (h.data && h.data.QQQ) || {};
+            const srcSpy = (h.source_url && h.source_url.SPY) || 'https://stockanalysis.com/etf/spy/';
+            const srcQqq = (h.source_url && h.source_url.QQQ) || 'https://stockanalysis.com/etf/qqq/';
             return `<tr>
                 <td>${h.date}</td>
-                <td>${fmtUsd(spy, true)}</td>
-                <td>${fmtUsd(qqq, true)}</td>
-                <td>${total ? '$' + (total / 1e9).toFixed(1) + 'B' : '—'}</td>
-                <td class="movers">${moversHtml}</td>
-                <td><a href="${h.report_url}" target="_blank" style="color:#059669;">report →</a></td>
+                <td>${fmtUsd(spy.flow_usd, true)}</td>
+                <td>${fmtShares(spy.shares_outstanding)}</td>
+                <td>${fmtUsd(qqq.flow_usd, true)}</td>
+                <td>${fmtShares(qqq.shares_outstanding)}</td>
+                <td><a href="${srcSpy}" target="_blank" style="color:#059669;">SPY</a> / <a href="${srcQqq}" target="_blank" style="color:#059669;">QQQ</a></td>
             </tr>`;
         }).join('') || '<tr><td colspan="6">No ETF flow data yet.</td></tr>';
     } catch (e) {
