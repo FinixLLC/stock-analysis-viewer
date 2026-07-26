@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T23:55:00+00:00",
+  "generated": "2026-07-26T18:36:15+00:00",
   "tickers": ["SPY", "QQQ"],
   "methodology": "Daily flow is estimated as (shares_outstanding_today - shares_outstanding_yesterday) * price_today, the standard creation/redemption-unit method. Source: stockanalysis.com/etf/{ticker}/, fetched daily after US market close (no registration/paywall). flow_usd is null on a ticker's first tracked day since there is no prior day to diff against.",
   "history": [
@@ -12,6 +12,17 @@
       "data": {
         "SPY": { "shares_outstanding": 1050000000, "price": 738.18, "aum_usd": 784560000000, "flow_usd": null, "direction": null },
         "QQQ": { "shares_outstanding": 658250000, "price": 691.96, "aum_usd": 465900000000, "flow_usd": null, "direction": null }
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "source_url": {
+        "SPY": "https://stockanalysis.com/etf/spy/",
+        "QQQ": "https://stockanalysis.com/etf/qqq/"
+      },
+      "data": {
+        "SPY": { "shares_outstanding": 1060000000, "price": 738.93, "aum_usd": 780710000000, "flow_usd": 7389300000, "direction": "inflow" },
+        "QQQ": { "shares_outstanding": 661000000, "price": 684.23, "aum_usd": 455510000000, "flow_usd": 1881632500, "direction": "inflow" }
       }
     }
   ]
