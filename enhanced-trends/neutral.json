@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-18T00:42:29.781720",
+  "generated": "2026-08-18T20:46:49.513721",
   "category": "neutral",
-  "count": 618,
+  "count": 617,
   "stocks": [
     {
       "symbol": "AAP",
@@ -24,7 +24,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.26,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:18.112000"
+      "updated": "2026-08-19T03:18:51.080000"
     },
     {
       "symbol": "ABI",
@@ -47,7 +47,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:52.452000"
+      "updated": "2026-08-19T02:11:51.020000"
     },
     {
       "symbol": "ABM",
@@ -70,7 +70,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:17.300000"
+      "updated": "2026-08-19T03:18:50.004000"
     },
     {
       "symbol": "ACLO",
@@ -93,7 +93,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.520000"
+      "updated": "2026-08-19T03:20:08.886000"
     },
     {
       "symbol": "ADTN",
@@ -116,7 +116,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:31.275000"
+      "updated": "2026-08-19T02:09:26.822000"
     },
     {
       "symbol": "ADUS",
@@ -139,7 +139,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:28.180000"
+      "updated": "2026-08-19T02:09:27.895000"
     },
     {
       "symbol": "AEAE",
@@ -148,7 +148,7 @@
       "sma20": 12.01,
       "sma50": 12.01,
       "sma100": 12.01,
-      "sma200": 12.6,
+      "sma200": 12.57,
       "change1M": 0.0,
       "change6M": 0.0,
       "change1Y": 0.8,
@@ -161,8 +161,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:47.860000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:49.036000"
     },
     {
       "symbol": "AFRM",
@@ -185,7 +185,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.93,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:28.468000"
+      "updated": "2026-08-19T02:09:38.048000"
     },
     {
       "symbol": "AGGA",
@@ -208,7 +208,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:40.836000"
+      "updated": "2026-08-19T02:11:42.638000"
     },
     {
       "symbol": "AGNCL",
@@ -231,7 +231,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 3.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.240000"
+      "updated": "2026-08-19T02:10:55.587000"
     },
     {
       "symbol": "ALCY",
@@ -254,40 +254,17 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-10",
-      "updated": "2026-08-18T06:06:04.529000"
-    },
-    {
-      "symbol": "ALDFU",
-      "sector": "Financial Services",
-      "price": 10.82,
-      "sma20": 10.82,
-      "sma50": 10.83,
-      "sma100": 10.79,
-      "sma200": 10.73,
-      "change1M": 0.1,
-      "change6M": 0.6,
-      "change1Y": 2.5,
-      "high52W": 13.1,
-      "low52W": 0.0,
-      "distFromHigh": 17.4,
-      "distFromLow": 0.0,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:27.100000"
+      "updated": "2026-08-19T02:11:01.690000"
     },
     {
       "symbol": "ALFUU",
       "sector": "Financial Services",
       "price": 10.91,
-      "sma20": 10.97,
+      "sma20": 10.96,
       "sma50": 11.01,
       "sma100": 10.91,
       "sma200": 10.9,
-      "change1M": -0.7,
+      "change1M": -1.7,
       "change6M": 1.1,
       "change1Y": 2.9,
       "high52W": 12.79,
@@ -299,8 +276,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:13.550000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:15.916000"
     },
     {
       "symbol": "ALV",
@@ -323,7 +300,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:18.885000"
+      "updated": "2026-08-19T03:18:51.851000"
     },
     {
       "symbol": "AMH",
@@ -346,7 +323,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:06.271000"
+      "updated": "2026-08-19T03:19:38.409000"
     },
     {
       "symbol": "AN",
@@ -369,7 +346,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:22.599000"
+      "updated": "2026-08-19T03:18:54.909000"
     },
     {
       "symbol": "ANGL",
@@ -392,16 +369,16 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:44.733000"
+      "updated": "2026-08-19T02:08:50.823000"
     },
     {
       "symbol": "ANSCU",
       "sector": "Financial Services",
       "price": 11.69,
-      "sma20": 11.64,
-      "sma50": 11.66,
-      "sma100": 11.51,
-      "sma200": 11.25,
+      "sma20": 11.65,
+      "sma50": 11.67,
+      "sma100": 11.52,
+      "sma200": 11.26,
       "change1M": 1.7,
       "change6M": 5.3,
       "change1Y": 0.4,
@@ -414,8 +391,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:06.187000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:06.201000"
     },
     {
       "symbol": "AOGOU",
@@ -437,8 +414,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:49.516000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:49.070000"
     },
     {
       "symbol": "AOHY",
@@ -461,7 +438,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:12.095000"
+      "updated": "2026-08-19T02:11:10.554000"
     },
     {
       "symbol": "AOMD",
@@ -484,7 +461,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:41.034000"
+      "updated": "2026-08-19T03:20:14.415000"
     },
     {
       "symbol": "AOMN",
@@ -507,7 +484,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:36.690000"
+      "updated": "2026-08-19T03:20:10.149000"
     },
     {
       "symbol": "AOMR",
@@ -530,30 +507,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 2.19,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:22.024000"
-    },
-    {
-      "symbol": "AONC",
-      "sector": "Healthcare",
-      "price": 12.2,
-      "sma20": 10.12,
-      "sma50": 10.29,
-      "sma100": 10.02,
-      "sma200": 10.58,
-      "change1M": 1.7,
-      "change6M": 6.1,
-      "change1Y": 1.7,
-      "high52W": 13.95,
-      "low52W": 0.0,
-      "distFromHigh": 12.5,
-      "distFromLow": 1219899.9,
-      "longTerm": "neutral",
-      "midTerm": "bull_weak",
-      "shortTerm": "neutral",
-      "pattern": "Sideways/Neutral",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:20.010000"
+      "updated": "2026-08-19T03:19:54.177000"
     },
     {
       "symbol": "APO",
@@ -576,7 +530,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:23.376000"
+      "updated": "2026-08-19T03:18:56.816000"
     },
     {
       "symbol": "APOG",
@@ -599,7 +553,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.03,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:30.327000"
+      "updated": "2026-08-19T02:08:28.374000"
     },
     {
       "symbol": "APOS",
@@ -622,7 +576,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.39,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:31.846000"
+      "updated": "2026-08-19T03:20:05.286000"
     },
     {
       "symbol": "AQN",
@@ -645,7 +599,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:23.625000"
+      "updated": "2026-08-19T03:18:56.561000"
     },
     {
       "symbol": "AQNB",
@@ -668,7 +622,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.48,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:02.546000"
+      "updated": "2026-08-19T03:19:34.710000"
     },
     {
       "symbol": "AQWA",
@@ -691,7 +645,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.52,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:34.559000"
+      "updated": "2026-08-19T02:10:34.319000"
     },
     {
       "symbol": "ARL",
@@ -714,7 +668,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 2.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:19.917000"
+      "updated": "2026-08-19T03:18:53.384000"
     },
     {
       "symbol": "ASBA",
@@ -737,7 +691,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:29.759000"
+      "updated": "2026-08-19T03:20:03.450000"
     },
     {
       "symbol": "ASPC",
@@ -760,7 +714,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:32.624000"
+      "updated": "2026-08-19T02:11:29.450000"
     },
     {
       "symbol": "ASTE",
@@ -783,7 +737,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.47,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:28.535000"
+      "updated": "2026-08-19T02:08:28.672000"
     },
     {
       "symbol": "ASUR",
@@ -806,7 +760,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:28.517000"
+      "updated": "2026-08-19T02:08:30.441000"
     },
     {
       "symbol": "ATHS",
@@ -829,30 +783,30 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:33.722000"
+      "updated": "2026-08-19T03:20:04.455000"
     },
     {
       "symbol": "AVB",
       "sector": "Real Estate",
       "price": 184.06,
-      "sma20": 187.21,
-      "sma50": 187.94,
-      "sma100": 183.04,
-      "sma200": 179.61,
-      "change1M": -4.4,
-      "change6M": 3.4,
-      "change1Y": -2.1,
+      "sma20": 186.88,
+      "sma50": 187.82,
+      "sma100": 183.29,
+      "sma200": 179.66,
+      "change1M": -4.1,
+      "change6M": 3.7,
+      "change1Y": -1.6,
       "high52W": 198.63,
       "low52W": 158.58,
       "distFromHigh": 7.3,
       "distFromLow": 16.1,
       "longTerm": "neutral",
-      "midTerm": "bull",
-      "shortTerm": "bear",
+      "midTerm": "bull_weak",
+      "shortTerm": "bear_weak",
       "pattern": "Sideways/Neutral",
-      "volumeRatio": 2.57,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:14:07.429000"
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:18:04.085000"
     },
     {
       "symbol": "AVGB",
@@ -875,7 +829,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:44.448000"
+      "updated": "2026-08-19T02:11:42.388000"
     },
     {
       "symbol": "AVY",
@@ -898,7 +852,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:06.213000"
+      "updated": "2026-08-19T03:18:40.048000"
     },
     {
       "symbol": "AXAC",
@@ -921,7 +875,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-02",
-      "updated": "2026-08-18T07:15:27.280000"
+      "updated": "2026-08-19T03:20:01.010000"
     },
     {
       "symbol": "AZN",
@@ -944,7 +898,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:33.323000"
+      "updated": "2026-08-19T02:08:35.976000"
     },
     {
       "symbol": "BA",
@@ -967,7 +921,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:08.370000"
+      "updated": "2026-08-19T03:18:41.634000"
     },
     {
       "symbol": "BBAR",
@@ -990,7 +944,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 1.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:08.014000"
+      "updated": "2026-08-19T03:18:40.949000"
     },
     {
       "symbol": "BBB",
@@ -1013,7 +967,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.26,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:31.937000"
+      "updated": "2026-08-19T02:11:31.083000"
     },
     {
       "symbol": "BBN",
@@ -1036,7 +990,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:07.727000"
+      "updated": "2026-08-19T03:18:41.119000"
     },
     {
       "symbol": "BBNX",
@@ -1059,7 +1013,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:30.675000"
+      "updated": "2026-08-19T02:11:33.774000"
     },
     {
       "symbol": "BCC",
@@ -1082,7 +1036,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:03.694000"
+      "updated": "2026-08-19T03:19:35.741000"
     },
     {
       "symbol": "BCLO",
@@ -1105,7 +1059,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:36.205000"
+      "updated": "2026-08-19T02:11:32.838000"
     },
     {
       "symbol": "BCO",
@@ -1128,7 +1082,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:04.166000"
+      "updated": "2026-08-19T03:18:36.643000"
     },
     {
       "symbol": "BEPH",
@@ -1151,7 +1105,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:19.375000"
+      "updated": "2026-08-19T03:19:51.153000"
     },
     {
       "symbol": "BEPI",
@@ -1174,7 +1128,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.5,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:25.934000"
+      "updated": "2026-08-19T03:19:58.567000"
     },
     {
       "symbol": "BEPJ",
@@ -1197,7 +1151,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:34.274000"
+      "updated": "2026-08-19T03:20:04.975000"
     },
     {
       "symbol": "BGRN",
@@ -1220,7 +1174,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:24.003000"
+      "updated": "2026-08-19T02:10:25.837000"
     },
     {
       "symbol": "BHK",
@@ -1243,7 +1197,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:12.594000"
+      "updated": "2026-08-19T03:18:45.971000"
     },
     {
       "symbol": "BIPJ",
@@ -1266,7 +1220,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.39,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:35.625000"
+      "updated": "2026-08-19T03:20:08.496000"
     },
     {
       "symbol": "BLCN",
@@ -1289,7 +1243,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-21",
-      "updated": "2026-08-18T06:05:30.429000"
+      "updated": "2026-08-19T02:10:29.710000"
     },
     {
       "symbol": "BLK",
@@ -1312,7 +1266,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:13.634000"
+      "updated": "2026-08-19T03:18:46.871000"
     },
     {
       "symbol": "BN",
@@ -1335,7 +1289,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:09.926000"
+      "updated": "2026-08-19T03:18:44.044000"
     },
     {
       "symbol": "BND",
@@ -1358,7 +1312,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.99,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:37.267000"
+      "updated": "2026-08-19T02:09:39.116000"
     },
     {
       "symbol": "BNDW",
@@ -1381,7 +1335,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:54.782000"
+      "updated": "2026-08-19T02:09:59.930000"
     },
     {
       "symbol": "BNDX",
@@ -1404,7 +1358,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:55.595000"
+      "updated": "2026-08-19T02:09:58.910000"
     },
     {
       "symbol": "BNJ",
@@ -1427,7 +1381,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.23,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:09.671000"
+      "updated": "2026-08-19T03:18:42.901000"
     },
     {
       "symbol": "BNT",
@@ -1450,7 +1404,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:22.536000"
+      "updated": "2026-08-19T03:19:54.529000"
     },
     {
       "symbol": "BNTC",
@@ -1473,7 +1427,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:54.492000"
+      "updated": "2026-08-19T02:09:59.688000"
     },
     {
       "symbol": "BOND",
@@ -1496,7 +1450,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:07.381000"
+      "updated": "2026-08-19T03:19:40.510000"
     },
     {
       "symbol": "BOOT",
@@ -1519,7 +1473,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:07.912000"
+      "updated": "2026-08-19T03:19:39.995000"
     },
     {
       "symbol": "BOWN",
@@ -1542,7 +1496,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T06:06:05.781000"
+      "updated": "2026-08-19T02:11:03.036000"
     },
     {
       "symbol": "BOX",
@@ -1565,7 +1519,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:07.095000"
+      "updated": "2026-08-19T03:19:40.179000"
     },
     {
       "symbol": "BRHY",
@@ -1588,7 +1542,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.41,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:17.846000"
+      "updated": "2026-08-19T02:11:14.070000"
     },
     {
       "symbol": "BRSP",
@@ -1634,7 +1588,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:10.957000"
+      "updated": "2026-08-19T03:18:44.190000"
     },
     {
       "symbol": "BRTR",
@@ -1657,7 +1611,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:06.172000"
+      "updated": "2026-08-19T02:11:06.344000"
     },
     {
       "symbol": "BSBK",
@@ -1680,7 +1634,7 @@
       "pattern": "Mid-Term Momentum - Bullish (Near 52W High)",
       "volumeRatio": 2.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:51.891000"
+      "updated": "2026-08-19T02:09:53.736000"
     },
     {
       "symbol": "BSCQ",
@@ -1703,7 +1657,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:51.644000"
+      "updated": "2026-08-19T02:09:50.120000"
     },
     {
       "symbol": "BSCR",
@@ -1726,7 +1680,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:51.379000"
+      "updated": "2026-08-19T02:09:56.108000"
     },
     {
       "symbol": "BSCS",
@@ -1749,7 +1703,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:50.867000"
+      "updated": "2026-08-19T02:09:43.471000"
     },
     {
       "symbol": "BSCT",
@@ -1772,7 +1726,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:50.361000"
+      "updated": "2026-08-19T02:09:44.865000"
     },
     {
       "symbol": "BSCU",
@@ -1795,7 +1749,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:50.361000"
+      "updated": "2026-08-19T02:09:42.687000"
     },
     {
       "symbol": "BSCV",
@@ -1818,7 +1772,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:44.587000"
+      "updated": "2026-08-19T02:10:44.235000"
     },
     {
       "symbol": "BSCW",
@@ -1841,7 +1795,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:56.678000"
+      "updated": "2026-08-19T02:10:54.717000"
     },
     {
       "symbol": "BSCX",
@@ -1864,7 +1818,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:06.017000"
+      "updated": "2026-08-19T02:11:04.527000"
     },
     {
       "symbol": "BSCY",
@@ -1887,7 +1841,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.22,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:15.833000"
+      "updated": "2026-08-19T02:11:15.596000"
     },
     {
       "symbol": "BSCZ",
@@ -1910,7 +1864,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:49.281000"
+      "updated": "2026-08-19T02:11:46.900000"
     },
     {
       "symbol": "BSJQ",
@@ -1933,7 +1887,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:27.640000"
+      "updated": "2026-08-19T02:09:37.766000"
     },
     {
       "symbol": "BSJR",
@@ -1956,7 +1910,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:58.711000"
+      "updated": "2026-08-19T02:09:49.022000"
     },
     {
       "symbol": "BSJS",
@@ -1979,7 +1933,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:58.158000"
+      "updated": "2026-08-19T02:09:48.760000"
     },
     {
       "symbol": "BSJT",
@@ -2002,7 +1956,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:44.331000"
+      "updated": "2026-08-19T02:10:43.404000"
     },
     {
       "symbol": "BSJU",
@@ -2025,7 +1979,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:56.919000"
+      "updated": "2026-08-19T02:10:55.175000"
     },
     {
       "symbol": "BSJV",
@@ -2048,7 +2002,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:03.109000"
+      "updated": "2026-08-19T02:11:04.833000"
     },
     {
       "symbol": "BSJW",
@@ -2071,7 +2025,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 3.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:16.831000"
+      "updated": "2026-08-19T02:11:15.340000"
     },
     {
       "symbol": "BSJX",
@@ -2094,7 +2048,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.2,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:49.538000"
+      "updated": "2026-08-19T02:11:48.158000"
     },
     {
       "symbol": "BSMQ",
@@ -2117,7 +2071,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.9,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:00.891000"
+      "updated": "2026-08-19T02:09:42.687000"
     },
     {
       "symbol": "BSMR",
@@ -2140,7 +2094,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:00.365000"
+      "updated": "2026-08-19T02:09:45.124000"
     },
     {
       "symbol": "BSMS",
@@ -2163,7 +2117,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:01.144000"
+      "updated": "2026-08-19T02:09:45.363000"
     },
     {
       "symbol": "BSMT",
@@ -2186,7 +2140,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:00.072000"
+      "updated": "2026-08-19T02:09:45.377000"
     },
     {
       "symbol": "BSMU",
@@ -2209,7 +2163,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:00.878000"
+      "updated": "2026-08-19T02:09:44.846000"
     },
     {
       "symbol": "BSMV",
@@ -2232,7 +2186,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:46.220000"
+      "updated": "2026-08-19T02:10:44.663000"
     },
     {
       "symbol": "BTI",
@@ -2255,7 +2209,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:10.180000"
+      "updated": "2026-08-19T03:18:43.411000"
     },
     {
       "symbol": "BTT",
@@ -2278,7 +2232,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.63,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:09.451000"
+      "updated": "2026-08-19T03:19:40.255000"
     },
     {
       "symbol": "BTZ",
@@ -2301,7 +2255,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:34.412000"
+      "updated": "2026-08-19T03:19:07.219000"
     },
     {
       "symbol": "BUSEP",
@@ -2324,7 +2278,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:44.341000"
+      "updated": "2026-08-19T02:11:45.354000"
     },
     {
       "symbol": "BUXX",
@@ -2347,7 +2301,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:31.328000"
+      "updated": "2026-08-19T03:20:04.418000"
     },
     {
       "symbol": "BWBBP",
@@ -2370,7 +2324,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:43.592000"
+      "updated": "2026-08-19T02:10:42.608000"
     },
     {
       "symbol": "BXP",
@@ -2393,7 +2347,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:32.098000"
+      "updated": "2026-08-19T03:19:05.423000"
     },
     {
       "symbol": "BYD",
@@ -2416,7 +2370,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.5,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:32.612000"
+      "updated": "2026-08-19T03:19:05.678000"
     },
     {
       "symbol": "CAE",
@@ -2439,7 +2393,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:33.121000"
+      "updated": "2026-08-19T03:19:06.963000"
     },
     {
       "symbol": "CALI",
@@ -2462,7 +2416,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:00.595000"
+      "updated": "2026-08-19T02:11:00.971000"
     },
     {
       "symbol": "CAPR",
@@ -2485,7 +2439,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:30.511000"
+      "updated": "2026-08-19T02:09:26.535000"
     },
     {
       "symbol": "CARY",
@@ -2508,7 +2462,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.599000"
+      "updated": "2026-08-19T02:10:56.225000"
     },
     {
       "symbol": "CBRL",
@@ -2531,7 +2485,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:34.799000"
+      "updated": "2026-08-19T02:08:35.457000"
     },
     {
       "symbol": "CBSH",
@@ -2554,7 +2508,30 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:35.108000"
+      "updated": "2026-08-19T02:08:35.490000"
+    },
+    {
+      "symbol": "CCII",
+      "sector": "Financial Services",
+      "price": 10.33,
+      "sma20": 10.34,
+      "sma50": 10.34,
+      "sma100": 10.3,
+      "sma200": 10.28,
+      "change1M": -0.5,
+      "change6M": 0.9,
+      "change1Y": 0.0,
+      "high52W": 10.5,
+      "low52W": 10.07,
+      "distFromHigh": 1.6,
+      "distFromLow": 2.6,
+      "longTerm": "neutral",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Sideways/Neutral (Near 52W High)",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:57.492000"
     },
     {
       "symbol": "CCIXU",
@@ -2577,7 +2554,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-04",
-      "updated": "2026-08-18T06:06:15.553000"
+      "updated": "2026-08-19T02:11:12.416000"
     },
     {
       "symbol": "CCNEP",
@@ -2600,7 +2577,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:31.812000"
+      "updated": "2026-08-19T02:08:30.338000"
     },
     {
       "symbol": "CCRN",
@@ -2623,7 +2600,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-28",
-      "updated": "2026-08-18T06:05:30.531000"
+      "updated": "2026-08-19T02:10:29.472000"
     },
     {
       "symbol": "CCSB",
@@ -2646,7 +2623,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 2.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:14.006000"
+      "updated": "2026-08-19T02:11:11.118000"
     },
     {
       "symbol": "CE",
@@ -2669,7 +2646,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:23.988000"
+      "updated": "2026-08-19T03:17:57.901000"
     },
     {
       "symbol": "CEPI",
@@ -2692,7 +2669,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.57,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:25.627000"
+      "updated": "2026-08-19T02:11:28.398000"
     },
     {
       "symbol": "CEPO",
@@ -2715,7 +2692,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:32.887000"
+      "updated": "2026-08-19T02:11:30.542000"
     },
     {
       "symbol": "CHCT",
@@ -2738,7 +2715,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 1.27,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:34.440000"
+      "updated": "2026-08-19T03:19:07.698000"
     },
     {
       "symbol": "CHSCL",
@@ -2761,7 +2738,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:38.277000"
+      "updated": "2026-08-19T02:08:38.181000"
     },
     {
       "symbol": "CHSCM",
@@ -2784,7 +2761,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.97,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:39.275000"
+      "updated": "2026-08-19T02:08:38.944000"
     },
     {
       "symbol": "CHSCN",
@@ -2807,7 +2784,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:38.776000"
+      "updated": "2026-08-19T02:08:38.658000"
     },
     {
       "symbol": "CHSCO",
@@ -2830,7 +2807,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:38.527000"
+      "updated": "2026-08-19T02:08:38.408000"
     },
     {
       "symbol": "CICB",
@@ -2853,7 +2830,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.15,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.256000"
+      "updated": "2026-08-19T03:20:08.624000"
     },
     {
       "symbol": "CLOA",
@@ -2876,7 +2853,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:57.309000"
+      "updated": "2026-08-19T02:10:56.867000"
     },
     {
       "symbol": "CLW",
@@ -2899,7 +2876,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:26.699000"
+      "updated": "2026-08-19T03:17:59.709000"
     },
     {
       "symbol": "CME",
@@ -2922,7 +2899,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:32.802000"
+      "updated": "2026-08-19T02:09:27.895000"
     },
     {
       "symbol": "CMS",
@@ -2945,7 +2922,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:29.393000"
+      "updated": "2026-08-19T03:18:02.309000"
     },
     {
       "symbol": "CNGLU",
@@ -2966,18 +2943,18 @@
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 10.0,
+      "volumeRatio": 5.0,
       "dataEndDate": "2026-08-13",
-      "updated": "2026-08-18T06:05:49.085000"
+      "updated": "2026-08-19T02:10:48.177000"
     },
     {
       "symbol": "COLAU",
       "sector": "Financial Services",
       "price": 11.05,
       "sma20": 11.05,
-      "sma50": 11.15,
+      "sma50": 11.14,
       "sma100": 11.01,
-      "sma200": 11.01,
+      "sma200": 11.02,
       "change1M": 0.0,
       "change6M": -11.6,
       "change1Y": 2.8,
@@ -2990,8 +2967,8 @@
       "shortTerm": "neutral",
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:30.100000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:32.368000"
     },
     {
       "symbol": "COLD",
@@ -3014,7 +2991,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:27.596000"
+      "updated": "2026-08-19T03:18:59.927000"
     },
     {
       "symbol": "CONI",
@@ -3037,7 +3014,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:20.629000"
+      "updated": "2026-08-19T02:11:20.069000"
     },
     {
       "symbol": "COO",
@@ -3060,7 +3037,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.67,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:28.707000"
+      "updated": "2026-08-19T03:18:02.055000"
     },
     {
       "symbol": "COST",
@@ -3083,7 +3060,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:36.232000"
+      "updated": "2026-08-19T02:09:30.447000"
     },
     {
       "symbol": "CPAG",
@@ -3106,7 +3083,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.38,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:58.996000"
+      "updated": "2026-08-19T02:11:56.351000"
     },
     {
       "symbol": "CPLS",
@@ -3129,7 +3106,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:06.753000"
+      "updated": "2026-08-19T02:11:08.464000"
     },
     {
       "symbol": "CPT",
@@ -3152,30 +3129,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:25.699000"
-    },
-    {
-      "symbol": "CRAQU",
-      "sector": "Financial Services",
-      "price": 10.53,
-      "sma20": 10.54,
-      "sma50": 10.51,
-      "sma100": 10.41,
-      "sma200": 10.48,
-      "change1M": -3.3,
-      "change6M": 1.2,
-      "change1Y": 3.0,
-      "high52W": 11.5,
-      "low52W": 0.0,
-      "distFromHigh": 8.4,
-      "distFromLow": 0.0,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "bear_weak",
-      "pattern": "Sideways/Neutral (Near 52W Low)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:43.577000"
+      "updated": "2026-08-19T03:18:58.131000"
     },
     {
       "symbol": "CRBG",
@@ -3198,7 +3152,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:29.658000"
+      "updated": "2026-08-19T03:19:59.238000"
     },
     {
       "symbol": "CRCT",
@@ -3221,7 +3175,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:33.806000"
+      "updated": "2026-08-19T02:10:33.332000"
     },
     {
       "symbol": "CRSP",
@@ -3244,7 +3198,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:26.306000"
+      "updated": "2026-08-19T02:09:28.916000"
     },
     {
       "symbol": "CSR",
@@ -3267,7 +3221,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:30.760000"
+      "updated": "2026-08-19T03:19:02.457000"
     },
     {
       "symbol": "CXSE",
@@ -3290,7 +3244,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.16,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:09.704000"
+      "updated": "2026-08-19T02:10:00.761000"
     },
     {
       "symbol": "CZAR",
@@ -3313,7 +3267,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-31",
-      "updated": "2026-08-18T06:06:08.616000"
+      "updated": "2026-08-19T02:11:06.929000"
     },
     {
       "symbol": "DAAQ",
@@ -3336,7 +3290,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:48.054000"
+      "updated": "2026-08-19T02:11:47.123000"
     },
     {
       "symbol": "DAAQU",
@@ -3347,7 +3301,7 @@
       "sma100": 10.32,
       "sma200": 10.41,
       "change1M": -3.0,
-      "change6M": 0.5,
+      "change6M": 2.4,
       "change1Y": 0.6,
       "high52W": 11.0,
       "low52W": 0.0,
@@ -3357,9 +3311,9 @@
       "midTerm": "neutral",
       "shortTerm": "bear_weak",
       "pattern": "Sideways/Neutral (Near 52W High)",
-      "volumeRatio": 1.08,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:40.061000"
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:40.989000"
     },
     {
       "symbol": "DADS",
@@ -3382,7 +3336,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.47,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:58.261000"
+      "updated": "2026-08-19T02:11:55.826000"
     },
     {
       "symbol": "DEC",
@@ -3405,7 +3359,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:18.612000"
+      "updated": "2026-08-19T03:19:50.894000"
     },
     {
       "symbol": "DFGP",
@@ -3428,7 +3382,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.330000"
+      "updated": "2026-08-19T02:11:05.574000"
     },
     {
       "symbol": "DFGX",
@@ -3451,7 +3405,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.620000"
+      "updated": "2026-08-19T02:11:04.808000"
     },
     {
       "symbol": "DGCB",
@@ -3474,7 +3428,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.497000"
+      "updated": "2026-08-19T02:11:06.075000"
     },
     {
       "symbol": "DHR",
@@ -3497,7 +3451,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.33,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:00.439000"
+      "updated": "2026-08-19T03:19:32.530000"
     },
     {
       "symbol": "DKNX",
@@ -3520,7 +3474,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.27,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:57.527000"
+      "updated": "2026-08-19T02:11:54.773000"
     },
     {
       "symbol": "DRDBU",
@@ -3532,7 +3486,7 @@
       "sma200": 10.69,
       "change1M": 0.0,
       "change6M": -1.6,
-      "change1Y": 1.2,
+      "change1Y": 0.2,
       "high52W": 12.2,
       "low52W": 0.0,
       "distFromHigh": 12.9,
@@ -3542,8 +3496,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:31.682000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:30.330000"
     },
     {
       "symbol": "DT",
@@ -3566,7 +3520,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:00.764000"
+      "updated": "2026-08-19T03:19:33.327000"
     },
     {
       "symbol": "DUK",
@@ -3589,7 +3543,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:01.277000"
+      "updated": "2026-08-19T03:19:33.048000"
     },
     {
       "symbol": "DUKH",
@@ -3612,7 +3566,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.32,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:36.460000"
+      "updated": "2026-08-19T03:20:09.630000"
     },
     {
       "symbol": "DVXP",
@@ -3635,7 +3589,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:57.395000"
+      "updated": "2026-08-19T02:11:54.619000"
     },
     {
       "symbol": "DYFI",
@@ -3658,7 +3612,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.47,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.013000"
+      "updated": "2026-08-19T02:11:08.744000"
     },
     {
       "symbol": "EBAY",
@@ -3681,7 +3635,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:53.864000"
+      "updated": "2026-08-19T02:08:53.706000"
     },
     {
       "symbol": "ECAT",
@@ -3704,7 +3658,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.67,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:23.886000"
+      "updated": "2026-08-19T03:19:55.209000"
     },
     {
       "symbol": "ECL",
@@ -3727,7 +3681,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.97,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:34.181000"
+      "updated": "2026-08-19T03:19:07.192000"
     },
     {
       "symbol": "EEX",
@@ -3750,7 +3704,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-14",
-      "updated": "2026-08-18T07:15:16.652000"
+      "updated": "2026-08-19T03:19:48.532000"
     },
     {
       "symbol": "EFSCP",
@@ -3773,7 +3727,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 2.41,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:45.693000"
+      "updated": "2026-08-19T02:10:45.435000"
     },
     {
       "symbol": "EHC",
@@ -3796,7 +3750,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:24.154000"
+      "updated": "2026-08-19T03:19:04.363000"
     },
     {
       "symbol": "EMCB",
@@ -3819,7 +3773,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.37,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:53.840000"
+      "updated": "2026-08-19T02:08:51.578000"
     },
     {
       "symbol": "ENTR",
@@ -3842,7 +3796,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T06:05:33.003000"
+      "updated": "2026-08-19T02:10:32.705000"
     },
     {
       "symbol": "EOI",
@@ -3865,7 +3819,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:39.505000"
+      "updated": "2026-08-19T03:18:13.326000"
     },
     {
       "symbol": "EPSN",
@@ -3888,7 +3842,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:45.242000"
+      "updated": "2026-08-19T02:08:47.036000"
     },
     {
       "symbol": "EQH",
@@ -3911,7 +3865,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:57.320000"
+      "updated": "2026-08-19T03:19:29.423000"
     },
     {
       "symbol": "EQR",
@@ -3934,7 +3888,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 2.13,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:38.718000"
+      "updated": "2026-08-19T03:18:12.555000"
     },
     {
       "symbol": "ETJ",
@@ -3957,7 +3911,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:34.939000"
+      "updated": "2026-08-19T03:18:08.941000"
     },
     {
       "symbol": "ETX",
@@ -3980,7 +3934,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.48,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:58.543000"
+      "updated": "2026-08-19T03:19:31.177000"
     },
     {
       "symbol": "EVER",
@@ -4003,7 +3957,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:07.910000"
+      "updated": "2026-08-19T02:09:58.910000"
     },
     {
       "symbol": "EVG",
@@ -4026,7 +3980,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.93,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:36.385000"
+      "updated": "2026-08-19T03:18:10.567000"
     },
     {
       "symbol": "EVR",
@@ -4049,7 +4003,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:36.516000"
+      "updated": "2026-08-19T03:18:10.063000"
     },
     {
       "symbol": "EVSD",
@@ -4072,7 +4026,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.14,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:13.813000"
+      "updated": "2026-08-19T02:11:16.101000"
     },
     {
       "symbol": "EVTR",
@@ -4095,7 +4049,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:33.989000"
+      "updated": "2026-08-19T03:20:06.845000"
     },
     {
       "symbol": "EWZS",
@@ -4118,7 +4072,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 3.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:59.189000"
+      "updated": "2026-08-19T02:09:00.050000"
     },
     {
       "symbol": "EXC",
@@ -4141,7 +4095,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:58.795000"
+      "updated": "2026-08-19T02:09:00.050000"
     },
     {
       "symbol": "EXE",
@@ -4164,7 +4118,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.85,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:27.869000"
+      "updated": "2026-08-19T02:10:21.935000"
     },
     {
       "symbol": "EYEG",
@@ -4187,30 +4141,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.230000"
-    },
-    {
-      "symbol": "FACTU",
-      "sector": "Financial Services",
-      "price": 10.83,
-      "sma20": 10.84,
-      "sma50": 11.11,
-      "sma100": 11.04,
-      "sma200": 10.85,
-      "change1M": 0.0,
-      "change6M": 1.1,
-      "change1Y": 0.7,
-      "high52W": 15.0,
-      "low52W": 0.0,
-      "distFromHigh": 27.8,
-      "distFromLow": 0.0,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Sideways/Neutral (Near 52W Low)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:27.601000"
+      "updated": "2026-08-19T02:11:06.866000"
     },
     {
       "symbol": "FALN",
@@ -4233,7 +4164,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:10.779000"
+      "updated": "2026-08-19T02:10:03.165000"
     },
     {
       "symbol": "FATN",
@@ -4256,7 +4187,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:38.679000"
+      "updated": "2026-08-19T02:11:39.956000"
     },
     {
       "symbol": "FC",
@@ -4279,7 +4210,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:44.396000"
+      "updated": "2026-08-19T03:18:17.895000"
     },
     {
       "symbol": "FCA",
@@ -4302,7 +4233,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 1.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:57.970000"
+      "updated": "2026-08-19T02:08:51.310000"
     },
     {
       "symbol": "FCPT",
@@ -4325,7 +4256,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.38,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:59.134000"
+      "updated": "2026-08-19T03:19:31.177000"
     },
     {
       "symbol": "FCT",
@@ -4348,7 +4279,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-11",
-      "updated": "2026-08-18T07:15:14.204000"
+      "updated": "2026-08-19T03:19:46.773000"
     },
     {
       "symbol": "FDFF",
@@ -4371,7 +4302,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.4,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:59.640000"
+      "updated": "2026-08-19T02:11:00.024000"
     },
     {
       "symbol": "FEPI",
@@ -4394,7 +4325,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:03.634000"
+      "updated": "2026-08-19T02:11:04.041000"
     },
     {
       "symbol": "FERAU",
@@ -4405,7 +4336,7 @@
       "sma100": 10.63,
       "sma200": 10.6,
       "change1M": -0.5,
-      "change6M": 1.7,
+      "change6M": 1.0,
       "change1Y": 1.8,
       "high52W": 11.5,
       "low52W": 0.0,
@@ -4416,8 +4347,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:36.025000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:35.405000"
     },
     {
       "symbol": "FFIN",
@@ -4440,7 +4371,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:57.712000"
+      "updated": "2026-08-19T02:08:51.639000"
     },
     {
       "symbol": "FIGX",
@@ -4463,7 +4394,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:58.513000"
+      "updated": "2026-08-19T02:11:56.539000"
     },
     {
       "symbol": "FIGXU",
@@ -4486,7 +4417,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:48.860000"
+      "updated": "2026-08-19T02:11:51.536000"
     },
     {
       "symbol": "FINS",
@@ -4509,7 +4440,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.42,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:57.401000"
+      "updated": "2026-08-19T03:19:30.158000"
     },
     {
       "symbol": "FIXD",
@@ -4532,7 +4463,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:05.283000"
+      "updated": "2026-08-19T02:10:15.122000"
     },
     {
       "symbol": "FIXT",
@@ -4555,7 +4486,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.37,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:43.049000"
+      "updated": "2026-08-19T03:20:15.440000"
     },
     {
       "symbol": "FLC",
@@ -4578,7 +4509,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:45.790000"
+      "updated": "2026-08-19T03:18:18.146000"
     },
     {
       "symbol": "FLDB",
@@ -4601,7 +4532,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:11.838000"
+      "updated": "2026-08-19T02:11:11.070000"
     },
     {
       "symbol": "FLXN",
@@ -4624,7 +4555,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.14,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:54.335000"
+      "updated": "2026-08-19T02:11:52.313000"
     },
     {
       "symbol": "FLXR",
@@ -4647,7 +4578,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:35.916000"
+      "updated": "2026-08-19T03:20:09.214000"
     },
     {
       "symbol": "FMO",
@@ -4670,7 +4601,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:17.273000"
+      "updated": "2026-08-19T03:19:49.701000"
     },
     {
       "symbol": "FMY",
@@ -4693,7 +4624,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:58.599000"
+      "updated": "2026-08-19T03:19:30.668000"
     },
     {
       "symbol": "FPF",
@@ -4716,7 +4647,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:57.884000"
+      "updated": "2026-08-19T03:19:30.194000"
     },
     {
       "symbol": "FRMEP",
@@ -4739,7 +4670,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.28,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:24.623000"
+      "updated": "2026-08-19T02:08:24.175000"
     },
     {
       "symbol": "FSS",
@@ -4762,7 +4693,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:41.549000"
+      "updated": "2026-08-19T03:18:15.120000"
     },
     {
       "symbol": "FT",
@@ -4785,7 +4716,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:41.913000"
+      "updated": "2026-08-19T03:18:08.685000"
     },
     {
       "symbol": "FTII",
@@ -4807,8 +4738,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:53.012000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:50.843000"
     },
     {
       "symbol": "FTIIU",
@@ -4830,8 +4761,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:50.670000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:49.132000"
     },
     {
       "symbol": "FTSL",
@@ -4854,7 +4785,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:59.605000"
+      "updated": "2026-08-19T02:08:59.191000"
     },
     {
       "symbol": "FTSM",
@@ -4877,7 +4808,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.34,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:00.646000"
+      "updated": "2026-08-19T02:08:59.027000"
     },
     {
       "symbol": "FTXG",
@@ -4900,19 +4831,19 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:52.219000"
+      "updated": "2026-08-19T02:08:59.278000"
     },
     {
       "symbol": "FVNNU",
       "sector": "Financial Services",
       "price": 10.67,
-      "sma20": 11.14,
-      "sma50": 11.1,
+      "sma20": 11.17,
+      "sma50": 11.09,
       "sma100": 10.96,
       "sma200": 11.04,
-      "change1M": 5.6,
+      "change1M": 4.6,
       "change6M": -1.1,
-      "change1Y": 1.2,
+      "change1Y": 1.6,
       "high52W": 14.95,
       "low52W": 0.0,
       "distFromHigh": 28.6,
@@ -4922,8 +4853,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:22.590000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:21.358000"
     },
     {
       "symbol": "FWONK",
@@ -4946,7 +4877,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:52.997000"
+      "updated": "2026-08-19T02:08:53.134000"
     },
     {
       "symbol": "FXED",
@@ -4969,7 +4900,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.4,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:59.487000"
+      "updated": "2026-08-19T03:19:31.473000"
     },
     {
       "symbol": "GAB",
@@ -4992,7 +4923,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:42.839000"
+      "updated": "2026-08-19T03:18:15.912000"
     },
     {
       "symbol": "GAINI",
@@ -5015,7 +4946,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:27.436000"
+      "updated": "2026-08-19T02:11:30.832000"
     },
     {
       "symbol": "GAP",
@@ -5038,7 +4969,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.86,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:43.186000"
+      "updated": "2026-08-19T03:18:16.634000"
     },
     {
       "symbol": "GBX",
@@ -5061,7 +4992,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:40.232000"
+      "updated": "2026-08-19T03:18:13.602000"
     },
     {
       "symbol": "GDOT",
@@ -5084,7 +5015,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.03,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:18.358000"
+      "updated": "2026-08-19T03:17:55.898000"
     },
     {
       "symbol": "GDSTU",
@@ -5107,7 +5038,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-07-22",
-      "updated": "2026-08-18T06:05:51.447000"
+      "updated": "2026-08-19T02:10:49.776000"
     },
     {
       "symbol": "GECCH",
@@ -5130,30 +5061,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 2.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:23.101000"
-    },
-    {
-      "symbol": "GECCI",
-      "sector": "Other",
-      "price": 25.32,
-      "sma20": 25.27,
-      "sma50": 25.24,
-      "sma100": 25.3,
-      "sma200": 25.23,
-      "change1M": 0.4,
-      "change6M": -0.2,
-      "change1Y": 3.0,
-      "high52W": 25.58,
-      "low52W": 24.52,
-      "distFromHigh": 1.0,
-      "distFromLow": 3.3,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:13.750000"
+      "updated": "2026-08-19T02:11:19.970000"
     },
     {
       "symbol": "GEHC",
@@ -5176,7 +5084,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:58.871000"
+      "updated": "2026-08-19T02:10:56.520000"
     },
     {
       "symbol": "GF",
@@ -5199,7 +5107,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:28.198000"
+      "updated": "2026-08-19T03:17:54.003000"
     },
     {
       "symbol": "GIL",
@@ -5222,7 +5130,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:24.254000"
+      "updated": "2026-08-19T03:18:02.853000"
     },
     {
       "symbol": "GJO",
@@ -5245,15 +5153,15 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.26,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:16.743000"
+      "updated": "2026-08-19T03:17:50.701000"
     },
     {
       "symbol": "GJP",
       "sector": "Other",
       "price": 24.72,
-      "sma20": 24.53,
-      "sma50": 24.47,
-      "sma100": 24.49,
+      "sma20": 24.54,
+      "sma50": 24.48,
+      "sma100": 24.5,
       "sma200": 24.6,
       "change1M": 0.4,
       "change6M": 0.8,
@@ -5267,20 +5175,20 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:13:25.554000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:17:51.174000"
     },
     {
       "symbol": "GJR",
       "sector": "Other",
       "price": 24.72,
-      "sma20": 24.96,
+      "sma20": 24.94,
       "sma50": 24.87,
       "sma100": 24.8,
       "sma200": 24.78,
       "change1M": -1.5,
       "change6M": -0.5,
-      "change1Y": 1.2,
+      "change1Y": 0.2,
       "high52W": 25.28,
       "low52W": 24.17,
       "distFromHigh": 2.2,
@@ -5290,8 +5198,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:14:58.045000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:18:11.778000"
     },
     {
       "symbol": "GLCR",
@@ -5314,7 +5222,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.37,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:41.975000"
+      "updated": "2026-08-19T02:11:39.833000"
     },
     {
       "symbol": "GLDI",
@@ -5337,7 +5245,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:26.218000"
+      "updated": "2026-08-19T02:10:22.445000"
     },
     {
       "symbol": "GLP",
@@ -5360,7 +5268,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:25.959000"
+      "updated": "2026-08-19T03:17:59.482000"
     },
     {
       "symbol": "GNMA",
@@ -5383,7 +5291,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:25.712000"
+      "updated": "2026-08-19T02:10:22.697000"
     },
     {
       "symbol": "GOVI",
@@ -5406,7 +5314,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:15.769000"
+      "updated": "2026-08-19T02:09:47.405000"
     },
     {
       "symbol": "GPC",
@@ -5429,7 +5337,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:24.760000"
+      "updated": "2026-08-19T03:17:57.449000"
     },
     {
       "symbol": "GPRF",
@@ -5452,7 +5360,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.03,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:16.382000"
+      "updated": "2026-08-19T02:11:19.032000"
     },
     {
       "symbol": "GRND",
@@ -5475,7 +5383,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:58.285000"
+      "updated": "2026-08-19T03:18:31.140000"
     },
     {
       "symbol": "GRW",
@@ -5498,7 +5406,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:15.781000"
+      "updated": "2026-08-19T02:11:14.057000"
     },
     {
       "symbol": "GSHRU",
@@ -5520,31 +5428,31 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:40.499000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:37.513000"
     },
     {
       "symbol": "GTERU",
       "sector": "Financial Services",
-      "price": 10.45,
-      "sma20": 10.44,
+      "price": 10.46,
+      "sma20": 10.45,
       "sma50": 10.43,
       "sma100": 10.4,
       "sma200": 10.37,
-      "change1M": 0.4,
-      "change6M": 0.9,
-      "change1Y": 3.0,
+      "change1M": 0.5,
+      "change6M": 1.0,
+      "change1Y": 2.9,
       "high52W": 10.9,
       "low52W": 0.0,
-      "distFromHigh": 4.1,
+      "distFromHigh": 4.0,
       "distFromLow": 0.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:53.757000"
+      "volumeRatio": 0.58,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:11:51.413000"
     },
     {
       "symbol": "GUG",
@@ -5567,7 +5475,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 2.28,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:26.559000"
+      "updated": "2026-08-19T03:19:57.918000"
     },
     {
       "symbol": "HBANL",
@@ -5590,7 +5498,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:57.422000"
+      "updated": "2026-08-19T02:10:58.170000"
     },
     {
       "symbol": "HBDC",
@@ -5613,7 +5521,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:51.105000"
+      "updated": "2026-08-19T02:11:48.976000"
     },
     {
       "symbol": "HCA",
@@ -5636,7 +5544,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.56,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:27.436000"
+      "updated": "2026-08-19T03:18:01.051000"
     },
     {
       "symbol": "HCXY",
@@ -5659,7 +5567,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.5,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:59.163000"
+      "updated": "2026-08-19T03:18:32.434000"
     },
     {
       "symbol": "HE",
@@ -5682,7 +5590,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.88,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:27.944000"
+      "updated": "2026-08-19T03:18:01.512000"
     },
     {
       "symbol": "HESM",
@@ -5705,7 +5613,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.98,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:59.163000"
+      "updated": "2026-08-19T03:18:32.177000"
     },
     {
       "symbol": "HGV",
@@ -5728,7 +5636,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:54.937000"
+      "updated": "2026-08-19T03:18:29.111000"
     },
     {
       "symbol": "HIG",
@@ -5751,7 +5659,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.46,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:28.524000"
+      "updated": "2026-08-19T03:18:02.280000"
     },
     {
       "symbol": "HISF",
@@ -5774,7 +5682,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:26.837000"
+      "updated": "2026-08-19T02:10:26.138000"
     },
     {
       "symbol": "HLN",
@@ -5797,7 +5705,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:27.823000"
+      "updated": "2026-08-19T03:20:00.654000"
     },
     {
       "symbol": "HNNAZ",
@@ -5805,11 +5713,11 @@
       "price": 24.9,
       "sma20": 24.9,
       "sma50": 24.9,
-      "sma100": 24.97,
+      "sma100": 24.96,
       "sma200": 24.97,
       "change1M": 0.0,
-      "change6M": 0.2,
-      "change1Y": 0.8,
+      "change6M": 0.3,
+      "change1Y": 2.1,
       "high52W": 26.48,
       "low52W": 23.95,
       "distFromHigh": 6.0,
@@ -5820,7 +5728,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-06-29",
-      "updated": "2026-08-18T06:05:44.691000"
+      "updated": "2026-08-19T02:10:43.237000"
     },
     {
       "symbol": "HOG",
@@ -5843,7 +5751,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:19.403000"
+      "updated": "2026-08-19T03:17:52.968000"
     },
     {
       "symbol": "HPF",
@@ -5866,7 +5774,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.9,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:18.918000"
+      "updated": "2026-08-19T03:17:52.845000"
     },
     {
       "symbol": "HPK",
@@ -5889,7 +5797,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:46.420000"
+      "updated": "2026-08-19T02:09:57.127000"
     },
     {
       "symbol": "HPS",
@@ -5912,7 +5820,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.65,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:19.148000"
+      "updated": "2026-08-19T03:17:53.227000"
     },
     {
       "symbol": "HRB",
@@ -5935,7 +5843,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:20.158000"
+      "updated": "2026-08-19T03:17:53.623000"
     },
     {
       "symbol": "HSEB",
@@ -5958,7 +5866,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:18.287000"
+      "updated": "2026-08-19T03:19:49.927000"
     },
     {
       "symbol": "HSY",
@@ -5981,7 +5889,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.57,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:17.831000"
+      "updated": "2026-08-19T03:17:51.196000"
     },
     {
       "symbol": "HUN",
@@ -6004,30 +5912,30 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:22.480000"
+      "updated": "2026-08-19T03:17:52.338000"
     },
     {
       "symbol": "HVMCU",
       "sector": "Financial Services",
-      "price": 10.31,
+      "price": 10.35,
       "sma20": 10.31,
       "sma50": 10.3,
       "sma100": 10.29,
       "sma200": 10.24,
-      "change1M": 0.0,
-      "change6M": 1.1,
-      "change1Y": 2.5,
+      "change1M": 0.4,
+      "change6M": 1.5,
+      "change1Y": 2.9,
       "high52W": 11.0,
       "low52W": 0.0,
-      "distFromHigh": 6.3,
+      "distFromHigh": 5.9,
       "distFromLow": 0.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
-      "pattern": "Sideways/Neutral (Near 52W Low)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:53.968000"
+      "pattern": "Mean Reversion Setup - Bottoming",
+      "volumeRatio": 20.0,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:11:55.496000"
     },
     {
       "symbol": "HYBI",
@@ -6050,7 +5958,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.993000"
+      "updated": "2026-08-19T02:11:21.783000"
     },
     {
       "symbol": "HYBX",
@@ -6073,7 +5981,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.401000"
+      "updated": "2026-08-19T03:20:11.148000"
     },
     {
       "symbol": "HYLS",
@@ -6096,7 +6004,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:47.699000"
+      "updated": "2026-08-19T02:09:50.613000"
     },
     {
       "symbol": "HYTR",
@@ -6119,7 +6027,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:56.942000"
+      "updated": "2026-08-19T03:18:29.876000"
     },
     {
       "symbol": "HYXF",
@@ -6142,7 +6050,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:46.922000"
+      "updated": "2026-08-19T02:09:50.626000"
     },
     {
       "symbol": "IBGA",
@@ -6165,7 +6073,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:15.575000"
+      "updated": "2026-08-19T02:11:13.804000"
     },
     {
       "symbol": "IBGB",
@@ -6188,7 +6096,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:36.107000"
+      "updated": "2026-08-19T02:11:37.393000"
     },
     {
       "symbol": "IBTG",
@@ -6211,7 +6119,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 4.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:19.510000"
+      "updated": "2026-08-19T02:09:18.994000"
     },
     {
       "symbol": "IBTH",
@@ -6234,7 +6142,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 4.85,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:43.536000"
+      "updated": "2026-08-19T02:09:51.890000"
     },
     {
       "symbol": "IBTI",
@@ -6257,7 +6165,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:43.536000"
+      "updated": "2026-08-19T02:09:52.418000"
     },
     {
       "symbol": "IBTJ",
@@ -6280,7 +6188,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:44.362000"
+      "updated": "2026-08-19T02:09:52.932000"
     },
     {
       "symbol": "IBTK",
@@ -6303,7 +6211,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:00.633000"
+      "updated": "2026-08-19T02:09:52.661000"
     },
     {
       "symbol": "IBTL",
@@ -6326,7 +6234,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:43.817000"
+      "updated": "2026-08-19T02:10:42.458000"
     },
     {
       "symbol": "IBTM",
@@ -6349,7 +6257,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.84,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:54.581000"
+      "updated": "2026-08-19T02:10:52.827000"
     },
     {
       "symbol": "IBTO",
@@ -6372,7 +6280,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:00.328000"
+      "updated": "2026-08-19T02:11:00.708000"
     },
     {
       "symbol": "IBTP",
@@ -6395,7 +6303,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.2,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:16.315000"
+      "updated": "2026-08-19T02:11:13.265000"
     },
     {
       "symbol": "IBTQ",
@@ -6418,7 +6326,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:38.760000"
+      "updated": "2026-08-19T02:11:38.389000"
     },
     {
       "symbol": "IBUY",
@@ -6441,7 +6349,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:57.646000"
+      "updated": "2026-08-19T02:09:52.920000"
     },
     {
       "symbol": "IEF",
@@ -6464,7 +6372,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:19.765000"
+      "updated": "2026-08-19T02:09:18.743000"
     },
     {
       "symbol": "IEI",
@@ -6487,7 +6395,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:19.288000"
+      "updated": "2026-08-19T02:09:18.491000"
     },
     {
       "symbol": "IFGL",
@@ -6510,7 +6418,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:19.030000"
+      "updated": "2026-08-19T02:09:18.239000"
     },
     {
       "symbol": "IGCB",
@@ -6533,7 +6441,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.782000"
+      "updated": "2026-08-19T03:20:11.416000"
     },
     {
       "symbol": "IGI",
@@ -6556,7 +6464,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:22.982000"
+      "updated": "2026-08-19T03:17:57.125000"
     },
     {
       "symbol": "IGIB",
@@ -6579,7 +6487,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:16.093000"
+      "updated": "2026-08-19T02:09:14.874000"
     },
     {
       "symbol": "IGOV",
@@ -6602,7 +6510,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.37,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:15.306000"
+      "updated": "2026-08-19T02:09:14.874000"
     },
     {
       "symbol": "IGSB",
@@ -6625,7 +6533,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:16.062000"
+      "updated": "2026-08-19T02:09:15.152000"
     },
     {
       "symbol": "INACU",
@@ -6637,7 +6545,7 @@
       "sma200": 10.26,
       "change1M": 0.0,
       "change6M": 0.5,
-      "change1Y": 2.3,
+      "change1Y": 2.6,
       "high52W": 12.85,
       "low52W": 0.0,
       "distFromHigh": 19.6,
@@ -6647,8 +6555,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:47.740000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:49.983000"
     },
     {
       "symbol": "INR",
@@ -6671,7 +6579,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:40.360000"
+      "updated": "2026-08-19T03:20:10.469000"
     },
     {
       "symbol": "INSG",
@@ -6717,7 +6625,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:14.274000"
+      "updated": "2026-08-19T02:09:13.783000"
     },
     {
       "symbol": "INTE",
@@ -6739,8 +6647,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:50.121000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:49.294000"
     },
     {
       "symbol": "INV",
@@ -6786,7 +6694,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.9,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:14.016000"
+      "updated": "2026-08-19T02:09:13.526000"
     },
     {
       "symbol": "INVH",
@@ -6809,7 +6717,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.63,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:01.741000"
+      "updated": "2026-08-19T03:18:34.856000"
     },
     {
       "symbol": "IPAR",
@@ -6832,7 +6740,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.29,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:14.567000"
+      "updated": "2026-08-19T02:09:16.461000"
     },
     {
       "symbol": "IPB",
@@ -6855,7 +6763,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:16.191000"
+      "updated": "2026-08-19T03:17:50.091000"
     },
     {
       "symbol": "IRS",
@@ -6878,7 +6786,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:20.679000"
+      "updated": "2026-08-19T03:17:54.810000"
     },
     {
       "symbol": "IRT",
@@ -6901,7 +6809,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:02.412000"
+      "updated": "2026-08-19T03:18:35.135000"
     },
     {
       "symbol": "ISHG",
@@ -6924,7 +6832,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:16.870000"
+      "updated": "2026-08-19T02:09:16.205000"
     },
     {
       "symbol": "ISP",
@@ -6947,7 +6855,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:17.925000"
+      "updated": "2026-08-19T03:19:49.701000"
     },
     {
       "symbol": "ISTB",
@@ -6970,7 +6878,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.16,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:58.968000"
+      "updated": "2026-08-19T02:09:49.320000"
     },
     {
       "symbol": "IUSB",
@@ -6993,7 +6901,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:58.951000"
+      "updated": "2026-08-19T02:09:45.620000"
     },
     {
       "symbol": "J",
@@ -7016,7 +6924,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:21.506000"
+      "updated": "2026-08-19T03:17:55.101000"
     },
     {
       "symbol": "JBK",
@@ -7039,7 +6947,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.4,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:16.527000"
+      "updated": "2026-08-19T03:17:50.681000"
     },
     {
       "symbol": "JBLU",
@@ -7062,7 +6970,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:16.093000"
+      "updated": "2026-08-19T02:09:15.417000"
     },
     {
       "symbol": "JBND",
@@ -7085,30 +6993,30 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:33.359000"
+      "updated": "2026-08-19T03:20:05.210000"
     },
     {
       "symbol": "JENA",
       "sector": "Financial Services",
-      "price": 10.41,
+      "price": 10.4,
       "sma20": 10.39,
       "sma50": 10.38,
       "sma100": 10.33,
       "sma200": 10.28,
-      "change1M": -0.3,
-      "change6M": 0.9,
-      "change1Y": 2.7,
+      "change1M": 0.1,
+      "change6M": 1.1,
+      "change1Y": 2.8,
       "high52W": 10.6,
       "low52W": 10.06,
-      "distFromHigh": 1.8,
-      "distFromLow": 3.5,
+      "distFromHigh": 1.9,
+      "distFromLow": 3.4,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
-      "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:43.799000"
+      "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
+      "volumeRatio": 11.72,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T03:20:16.777000"
     },
     {
       "symbol": "JHI",
@@ -7131,7 +7039,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:33.029000"
+      "updated": "2026-08-19T03:18:08.169000"
     },
     {
       "symbol": "JHS",
@@ -7154,7 +7062,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 2.23,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:32.980000"
+      "updated": "2026-08-19T03:18:07.528000"
     },
     {
       "symbol": "JL",
@@ -7200,7 +7108,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:34.289000"
+      "updated": "2026-08-19T03:18:07.273000"
     },
     {
       "symbol": "JRI",
@@ -7223,7 +7131,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:03.273000"
+      "updated": "2026-08-19T03:18:36.387000"
     },
     {
       "symbol": "KAI",
@@ -7246,7 +7154,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.56,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:30.322000"
+      "updated": "2026-08-19T03:18:05.452000"
     },
     {
       "symbol": "KE",
@@ -7269,7 +7177,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:49.848000"
+      "updated": "2026-08-19T02:09:45.124000"
     },
     {
       "symbol": "KMX",
@@ -7292,7 +7200,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:33.909000"
+      "updated": "2026-08-19T03:18:06.212000"
     },
     {
       "symbol": "KTN",
@@ -7315,7 +7223,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.25,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:16.484000"
+      "updated": "2026-08-19T03:17:50.588000"
     },
     {
       "symbol": "KTOS",
@@ -7338,7 +7246,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:25.747000"
+      "updated": "2026-08-19T02:09:25.224000"
     },
     {
       "symbol": "KYIV",
@@ -7361,7 +7269,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:30.326000"
+      "updated": "2026-08-19T02:11:26.504000"
     },
     {
       "symbol": "LDP",
@@ -7384,7 +7292,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:53.106000"
+      "updated": "2026-08-19T03:19:25.196000"
     },
     {
       "symbol": "LDSF",
@@ -7407,7 +7315,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:23.401000"
+      "updated": "2026-08-19T02:10:21.178000"
     },
     {
       "symbol": "LFMDP",
@@ -7430,7 +7338,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:45.137000"
+      "updated": "2026-08-19T02:10:43.611000"
     },
     {
       "symbol": "LIN",
@@ -7453,7 +7361,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:56.088000"
+      "updated": "2026-08-19T03:19:28.372000"
     },
     {
       "symbol": "LKFN",
@@ -7476,7 +7384,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.2,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:52.401000"
+      "updated": "2026-08-19T02:10:04.173000"
     },
     {
       "symbol": "LMBS",
@@ -7499,7 +7407,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:53.955000"
+      "updated": "2026-08-19T02:10:16.445000"
     },
     {
       "symbol": "LOGO",
@@ -7522,7 +7430,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.46,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:48.703000"
+      "updated": "2026-08-19T02:11:45.719000"
     },
     {
       "symbol": "LPAA",
@@ -7545,7 +7453,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.09,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.270000"
+      "updated": "2026-08-19T02:11:20.326000"
     },
     {
       "symbol": "LPBBU",
@@ -7567,8 +7475,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:21.767000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:22.299000"
     },
     {
       "symbol": "LW",
@@ -7591,7 +7499,30 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:11.520000"
+      "updated": "2026-08-19T03:19:46.074000"
+    },
+    {
+      "symbol": "LWACU",
+      "sector": "Financial Services",
+      "price": 10.36,
+      "sma20": 10.34,
+      "sma50": 10.34,
+      "sma100": 10.3,
+      "sma200": 10.25,
+      "change1M": 0.4,
+      "change6M": 1.5,
+      "change1Y": 3.0,
+      "high52W": 10.68,
+      "low52W": 0.0,
+      "distFromHigh": 3.0,
+      "distFromLow": 0.0,
+      "longTerm": "neutral",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:50.765000"
     },
     {
       "symbol": "MAQCU",
@@ -7613,8 +7544,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:37.289000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:35.954000"
     },
     {
       "symbol": "MAS",
@@ -7637,7 +7568,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:09.451000"
+      "updated": "2026-08-19T03:19:41.720000"
     },
     {
       "symbol": "MATW",
@@ -7660,7 +7591,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:57.646000"
+      "updated": "2026-08-19T02:09:51.121000"
     },
     {
       "symbol": "MBAV",
@@ -7683,7 +7614,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-07-29",
-      "updated": "2026-08-18T06:06:26.346000"
+      "updated": "2026-08-19T02:11:25.197000"
     },
     {
       "symbol": "MBB",
@@ -7706,7 +7637,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:56.633000"
+      "updated": "2026-08-19T02:09:52.676000"
     },
     {
       "symbol": "MBINN",
@@ -7729,7 +7660,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 2.5,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:33.102000"
+      "updated": "2026-08-19T02:10:31.714000"
     },
     {
       "symbol": "MBS",
@@ -7752,7 +7683,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.31,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:12.354000"
+      "updated": "2026-08-19T02:11:10.801000"
     },
     {
       "symbol": "MBSD",
@@ -7775,19 +7706,19 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:42.738000"
+      "updated": "2026-08-19T02:09:53.454000"
     },
     {
       "symbol": "MBVIU",
       "sector": "Financial Services",
       "price": 10.29,
-      "sma20": 10.26,
+      "sma20": 10.27,
       "sma50": 10.27,
       "sma100": 10.23,
       "sma200": 10.23,
-      "change1M": -0.9,
+      "change1M": -0.1,
       "change6M": 1.0,
-      "change1Y": 0.0,
+      "change1Y": 2.9,
       "high52W": 10.5,
       "low52W": 0.0,
       "distFromHigh": 2.0,
@@ -7797,8 +7728,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:56.131000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:57.215000"
     },
     {
       "symbol": "MCAGU",
@@ -7820,31 +7751,31 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:49.346000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:47.593000"
     },
     {
-      "symbol": "MCOW",
+      "symbol": "MCOw",
       "sector": "Other",
-      "price": 22.59,
-      "sma20": 21.6,
-      "sma50": 21.32,
-      "sma100": 20.75,
-      "sma200": 20.15,
-      "change1M": 7.5,
-      "change6M": 15.4,
+      "price": 22.49,
+      "sma20": 21.66,
+      "sma50": 21.35,
+      "sma100": 20.79,
+      "sma200": 20.16,
+      "change1M": 7.1,
+      "change6M": 16.1,
       "change1Y": 0.0,
       "high52W": 22.65,
       "low52W": 17.7,
-      "distFromHigh": 0.3,
-      "distFromLow": 27.6,
+      "distFromHigh": 0.7,
+      "distFromLow": 27.1,
       "longTerm": "neutral",
       "midTerm": "bull_weak",
       "shortTerm": "bull_weak",
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
-      "volumeRatio": 0.38,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:44.961000"
+      "volumeRatio": 0.6,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:20:14.572000"
     },
     {
       "symbol": "MDLZ",
@@ -7867,7 +7798,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:22.908000"
+      "updated": "2026-08-19T02:09:22.421000"
     },
     {
       "symbol": "MDT",
@@ -7890,7 +7821,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.72,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:08.431000"
+      "updated": "2026-08-19T03:19:41.281000"
     },
     {
       "symbol": "METCZ",
@@ -7913,7 +7844,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:30.584000"
+      "updated": "2026-08-19T02:11:26.253000"
     },
     {
       "symbol": "MFA",
@@ -7936,7 +7867,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:10.217000"
+      "updated": "2026-08-19T03:19:42.321000"
     },
     {
       "symbol": "MFSB",
@@ -7959,7 +7890,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.895000"
+      "updated": "2026-08-19T03:20:12.226000"
     },
     {
       "symbol": "MGNI",
@@ -7982,7 +7913,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:15.257000"
+      "updated": "2026-08-19T02:10:13.242000"
     },
     {
       "symbol": "MGRC",
@@ -8005,7 +7936,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:22.066000"
+      "updated": "2026-08-19T02:09:21.586000"
     },
     {
       "symbol": "MHF",
@@ -8028,7 +7959,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:52.905000"
+      "updated": "2026-08-19T03:18:27.300000"
     },
     {
       "symbol": "MITP",
@@ -8051,7 +7982,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.39,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:36.379000"
+      "updated": "2026-08-19T03:20:08.682000"
     },
     {
       "symbol": "MITT",
@@ -8074,7 +8005,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:02.275000"
+      "updated": "2026-08-19T03:19:34.453000"
     },
     {
       "symbol": "MMI",
@@ -8097,7 +8028,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.76,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:13.442000"
+      "updated": "2026-08-19T03:19:42.782000"
     },
     {
       "symbol": "MMKT",
@@ -8120,7 +8051,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 1.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:37.559000"
+      "updated": "2026-08-19T03:20:10.921000"
     },
     {
       "symbol": "MMSI",
@@ -8143,7 +8074,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:06.424000"
+      "updated": "2026-08-19T02:09:05.779000"
     },
     {
       "symbol": "MO",
@@ -8166,7 +8097,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 1.26,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:06.535000"
+      "updated": "2026-08-19T03:19:38.680000"
     },
     {
       "symbol": "MRP",
@@ -8189,7 +8120,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:40.458000"
+      "updated": "2026-08-19T03:20:13.888000"
     },
     {
       "symbol": "MSCI",
@@ -8212,7 +8143,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:04.673000"
+      "updated": "2026-08-19T03:19:37.214000"
     },
     {
       "symbol": "MSD",
@@ -8235,7 +8166,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:05.493000"
+      "updated": "2026-08-19T03:19:37.555000"
     },
     {
       "symbol": "MSFD",
@@ -8258,7 +8189,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:54.072000"
+      "updated": "2026-08-19T02:10:54.431000"
     },
     {
       "symbol": "MSI",
@@ -8281,7 +8212,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:04.935000"
+      "updated": "2026-08-19T03:19:37.474000"
     },
     {
       "symbol": "MTCH",
@@ -8304,7 +8235,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:36.225000"
+      "updated": "2026-08-19T02:08:34.475000"
     },
     {
       "symbol": "MTN",
@@ -8327,7 +8258,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:40.353000"
+      "updated": "2026-08-19T03:19:12.787000"
     },
     {
       "symbol": "MUA",
@@ -8350,7 +8281,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:52.677000"
+      "updated": "2026-08-19T03:18:25.931000"
     },
     {
       "symbol": "MUSE",
@@ -8373,7 +8304,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 3.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.634000"
+      "updated": "2026-08-19T03:20:10.921000"
     },
     {
       "symbol": "MYCF",
@@ -8396,7 +8327,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.23,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:19.706000"
+      "updated": "2026-08-19T02:11:21.265000"
     },
     {
       "symbol": "MYCG",
@@ -8419,7 +8350,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.613000"
+      "updated": "2026-08-19T02:11:22.567000"
     },
     {
       "symbol": "MYCH",
@@ -8442,7 +8373,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.32,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:20.493000"
+      "updated": "2026-08-19T02:11:23.097000"
     },
     {
       "symbol": "MYCI",
@@ -8465,7 +8396,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.685000"
+      "updated": "2026-08-19T02:11:23.365000"
     },
     {
       "symbol": "MYCJ",
@@ -8488,7 +8419,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.407000"
+      "updated": "2026-08-19T02:11:21.008000"
     },
     {
       "symbol": "MYCK",
@@ -8511,7 +8442,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.2,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.937000"
+      "updated": "2026-08-19T02:11:21.516000"
     },
     {
       "symbol": "MYCL",
@@ -8534,7 +8465,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.23,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.904000"
+      "updated": "2026-08-19T02:11:22.807000"
     },
     {
       "symbol": "MYCM",
@@ -8557,7 +8488,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.46,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.144000"
+      "updated": "2026-08-19T02:11:22.796000"
     },
     {
       "symbol": "MYCN",
@@ -8580,7 +8511,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.425000"
+      "updated": "2026-08-19T02:11:20.749000"
     },
     {
       "symbol": "MYMF",
@@ -8603,7 +8534,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:21.908000"
+      "updated": "2026-08-19T02:11:22.039000"
     },
     {
       "symbol": "MYMG",
@@ -8626,7 +8557,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:19.971000"
+      "updated": "2026-08-19T02:11:22.504000"
     },
     {
       "symbol": "MYMH",
@@ -8649,7 +8580,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.168000"
+      "updated": "2026-08-19T02:11:20.481000"
     },
     {
       "symbol": "MYMI",
@@ -8672,7 +8603,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:23.618000"
+      "updated": "2026-08-19T02:11:22.238000"
     },
     {
       "symbol": "MYMJ",
@@ -8695,7 +8626,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:24.327000"
+      "updated": "2026-08-19T02:11:21.779000"
     },
     {
       "symbol": "NBB",
@@ -8718,7 +8649,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:51.432000"
+      "updated": "2026-08-19T03:18:24.393000"
     },
     {
       "symbol": "NBSTU",
@@ -8740,8 +8671,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:32.367000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:30.953000"
     },
     {
       "symbol": "NCPB",
@@ -8764,7 +8695,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:09.459000"
+      "updated": "2026-08-19T02:11:10.847000"
     },
     {
       "symbol": "NEWTH",
@@ -8787,7 +8718,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.08,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:22.846000"
+      "updated": "2026-08-19T02:11:22.016000"
     },
     {
       "symbol": "NHI",
@@ -8810,7 +8741,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:54.684000"
+      "updated": "2026-08-19T03:18:27.769000"
     },
     {
       "symbol": "NI",
@@ -8833,7 +8764,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:54.807000"
+      "updated": "2026-08-19T03:18:27.830000"
     },
     {
       "symbol": "NIQ",
@@ -8856,19 +8787,19 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:43.661000"
+      "updated": "2026-08-19T03:20:15.843000"
     },
     {
       "symbol": "NMPAU",
       "sector": "Financial Services",
       "price": 10.35,
-      "sma20": 10.46,
+      "sma20": 10.45,
       "sma50": 10.41,
       "sma100": 10.4,
       "sma200": 10.32,
       "change1M": -0.1,
-      "change6M": 1.6,
-      "change1Y": 2.9,
+      "change6M": 1.8,
+      "change1Y": 2.7,
       "high52W": 11.41,
       "low52W": 0.0,
       "distFromHigh": 9.3,
@@ -8878,8 +8809,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:51.605000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:49.209000"
     },
     {
       "symbol": "NNI",
@@ -8902,7 +8833,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.48,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:53.725000"
+      "updated": "2026-08-19T03:18:27.022000"
     },
     {
       "symbol": "NOC",
@@ -8925,19 +8856,19 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.65,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:53.413000"
+      "updated": "2026-08-19T03:18:26.371000"
     },
     {
       "symbol": "NPACU",
       "sector": "Financial Services",
       "price": 10.47,
       "sma20": 10.47,
-      "sma50": 10.44,
+      "sma50": 10.45,
       "sma100": 10.42,
       "sma200": 10.42,
       "change1M": 0.2,
-      "change6M": 0.5,
-      "change1Y": 2.2,
+      "change6M": 0.7,
+      "change1Y": 2.3,
       "high52W": 10.8,
       "low52W": 0.0,
       "distFromHigh": 3.1,
@@ -8947,8 +8878,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:39.525000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:41.304000"
     },
     {
       "symbol": "NPFD",
@@ -8971,7 +8902,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:25.451000"
+      "updated": "2026-08-19T03:19:56.500000"
     },
     {
       "symbol": "NPFI",
@@ -8994,7 +8925,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:12.354000"
+      "updated": "2026-08-19T02:11:11.328000"
     },
     {
       "symbol": "NPV",
@@ -9017,7 +8948,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 1.05,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:48.378000"
+      "updated": "2026-08-19T03:18:22.103000"
     },
     {
       "symbol": "NRP",
@@ -9040,30 +8971,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:48.461000"
-    },
-    {
-      "symbol": "NTWOU",
-      "sector": "Financial Services",
-      "price": 10.65,
-      "sma20": 10.65,
-      "sma50": 10.65,
-      "sma100": 10.63,
-      "sma200": 10.71,
-      "change1M": 0.0,
-      "change6M": 0.4,
-      "change1Y": 1.5,
-      "high52W": 10.99,
-      "low52W": 0.0,
-      "distFromHigh": 3.1,
-      "distFromLow": 0.0,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Sideways/Neutral (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:28.987000"
+      "updated": "2026-08-19T03:18:21.574000"
     },
     {
       "symbol": "NUSB",
@@ -9086,7 +8994,30 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.23,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:11.431000"
+      "updated": "2026-08-19T02:11:11.311000"
+    },
+    {
+      "symbol": "NUTR",
+      "sector": "Consumer Cyclical",
+      "price": 9.0,
+      "sma20": 9.0,
+      "sma50": 9.0,
+      "sma100": 9.0,
+      "sma200": 9.0,
+      "change1M": 0.0,
+      "change6M": 0.0,
+      "change1Y": 0.0,
+      "high52W": 10.14,
+      "low52W": 0.0,
+      "distFromHigh": 11.2,
+      "distFromLow": 0.0,
+      "longTerm": "neutral",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Sideways/Neutral (Near 52W Low)",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:58.962000"
     },
     {
       "symbol": "NXPI",
@@ -9109,7 +9040,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:02.182000"
+      "updated": "2026-08-19T02:09:02.310000"
     },
     {
       "symbol": "OBIL",
@@ -9132,7 +9063,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:56.529000"
+      "updated": "2026-08-19T02:10:56.039000"
     },
     {
       "symbol": "OC",
@@ -9155,7 +9086,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:47.090000"
+      "updated": "2026-08-19T03:18:20.740000"
     },
     {
       "symbol": "OCSL",
@@ -9178,7 +9109,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.08,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:04.792000"
+      "updated": "2026-08-19T02:09:03.736000"
     },
     {
       "symbol": "OMAB",
@@ -9201,7 +9132,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:03.564000"
+      "updated": "2026-08-19T02:09:03.472000"
     },
     {
       "symbol": "ONBPO",
@@ -9224,7 +9155,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.24,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:21.806000"
+      "updated": "2026-08-19T02:10:25.278000"
     },
     {
       "symbol": "ONBPP",
@@ -9247,30 +9178,30 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:24.193000"
+      "updated": "2026-08-19T02:10:25.035000"
     },
     {
       "symbol": "ONCHU",
       "sector": "Financial Services",
-      "price": 10.36,
-      "sma20": 10.41,
+      "price": 10.4,
+      "sma20": 10.4,
       "sma50": 10.4,
       "sma100": 10.35,
       "sma200": 10.37,
-      "change1M": -0.9,
-      "change6M": 0.1,
-      "change1Y": -1.1,
+      "change1M": -0.5,
+      "change6M": 0.7,
+      "change1Y": -1.2,
       "high52W": 11.35,
       "low52W": 0.0,
-      "distFromHigh": 8.8,
+      "distFromHigh": 8.4,
       "distFromLow": 0.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:52.985000"
+      "volumeRatio": 4.02,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:11:50.258000"
     },
     {
       "symbol": "OPXS",
@@ -9293,7 +9224,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.52,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:02.421000"
+      "updated": "2026-08-19T02:10:16.957000"
     },
     {
       "symbol": "ORIQU",
@@ -9315,8 +9246,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:54.082000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:52.056000"
     },
     {
       "symbol": "OSIS",
@@ -9339,7 +9270,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:18.707000"
+      "updated": "2026-08-19T02:10:10.135000"
     },
     {
       "symbol": "OTTW",
@@ -9362,7 +9293,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.22,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:24.363000"
+      "updated": "2026-08-19T02:08:24.266000"
     },
     {
       "symbol": "PCAP",
@@ -9385,53 +9316,53 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:54.531000"
+      "updated": "2026-08-19T02:11:51.936000"
     },
     {
       "symbol": "PCAPU",
       "sector": "Financial Services",
-      "price": 10.44,
+      "price": 10.41,
       "sma20": 10.4,
       "sma50": 10.38,
-      "sma100": 10.34,
+      "sma100": 10.35,
       "sma200": 10.33,
       "change1M": 0.3,
-      "change6M": 1.7,
-      "change1Y": 0.5,
+      "change6M": 1.4,
+      "change1Y": -0.3,
       "high52W": 11.0,
       "low52W": 0.0,
-      "distFromHigh": 5.1,
+      "distFromHigh": 5.4,
       "distFromLow": 0.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:43.071000"
+      "volumeRatio": 0.06,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:11:44.680000"
     },
     {
       "symbol": "PCI",
       "sector": "Other",
-      "price": 49.11,
-      "sma20": 49.27,
-      "sma50": 49.62,
-      "sma100": 49.85,
-      "sma200": 50.19,
-      "change1M": -1.1,
+      "price": 49.15,
+      "sma20": 49.23,
+      "sma50": 49.6,
+      "sma100": 49.84,
+      "sma200": 50.18,
+      "change1M": -0.7,
       "change6M": -4.0,
-      "change1Y": 0.1,
+      "change1Y": -0.2,
       "high52W": 51.33,
-      "low52W": 48.93,
-      "distFromHigh": 4.3,
-      "distFromLow": 0.4,
+      "low52W": 49.01,
+      "distFromHigh": 4.2,
+      "distFromLow": 0.3,
       "longTerm": "neutral",
       "midTerm": "bear_weak",
       "shortTerm": "neutral",
-      "pattern": "Trend Breakdown - Warning (Near 52W High)",
-      "volumeRatio": 0.09,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:44.296000"
+      "pattern": "Sideways/Neutral (Near 52W High)",
+      "volumeRatio": 0.97,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T03:20:13.960000"
     },
     {
       "symbol": "PCMM",
@@ -9454,7 +9385,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:29.580000"
+      "updated": "2026-08-19T02:11:27.194000"
     },
     {
       "symbol": "PDO",
@@ -9477,7 +9408,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:00.187000"
+      "updated": "2026-08-19T03:18:33.010000"
     },
     {
       "symbol": "PDPA",
@@ -9500,7 +9431,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.49,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:39.568000"
+      "updated": "2026-08-19T03:20:09.689000"
     },
     {
       "symbol": "PDT",
@@ -9523,53 +9454,53 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:00.187000"
+      "updated": "2026-08-19T03:18:32.434000"
     },
     {
       "symbol": "PEGPX",
       "sector": "Other",
-      "price": 9.35,
+      "price": 9.33,
       "sma20": 9.34,
       "sma50": 9.4,
       "sma100": 9.42,
       "sma200": 9.45,
-      "change1M": -0.4,
-      "change6M": -2.3,
-      "change1Y": 2.0,
+      "change1M": -0.7,
+      "change6M": -2.4,
+      "change1Y": 1.6,
       "high52W": 9.64,
       "low52W": 9.15,
-      "distFromHigh": 3.0,
-      "distFromLow": 2.2,
+      "distFromHigh": 3.2,
+      "distFromLow": 2.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:20.660000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:53.162000"
     },
     {
       "symbol": "PEGpX",
       "sector": "Other",
-      "price": 9.35,
+      "price": 9.33,
       "sma20": 9.34,
       "sma50": 9.4,
       "sma100": 9.42,
       "sma200": 9.48,
-      "change1M": -0.4,
-      "change6M": -2.7,
-      "change1Y": 1.2,
+      "change1M": -0.7,
+      "change6M": -2.8,
+      "change1Y": 0.9,
       "high52W": 9.68,
       "low52W": 9.22,
-      "distFromHigh": 3.4,
-      "distFromLow": 1.4,
+      "distFromHigh": 3.6,
+      "distFromLow": 1.2,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:17.271000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:49.020000"
     },
     {
       "symbol": "PENN",
@@ -9592,7 +9523,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:12.688000"
+      "updated": "2026-08-19T02:09:12.257000"
     },
     {
       "symbol": "PEZ",
@@ -9615,7 +9546,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.12,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:12.688000"
+      "updated": "2026-08-19T02:09:12.257000"
     },
     {
       "symbol": "PFD",
@@ -9638,7 +9569,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.75,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:03.372000"
+      "updated": "2026-08-19T03:18:36.643000"
     },
     {
       "symbol": "PFF",
@@ -9661,7 +9592,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:12.965000"
+      "updated": "2026-08-19T02:09:12.509000"
     },
     {
       "symbol": "PFN",
@@ -9684,7 +9615,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.22,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:02.821000"
+      "updated": "2026-08-19T03:18:35.876000"
     },
     {
       "symbol": "PFO",
@@ -9707,7 +9638,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.31,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:02.993000"
+      "updated": "2026-08-19T03:18:35.904000"
     },
     {
       "symbol": "PGZ",
@@ -9730,7 +9661,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:41.904000"
+      "updated": "2026-08-19T03:19:14.075000"
     },
     {
       "symbol": "PHG",
@@ -9753,7 +9684,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.57,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:01.896000"
+      "updated": "2026-08-19T03:18:34.877000"
     },
     {
       "symbol": "PHM",
@@ -9776,7 +9707,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:01.637000"
+      "updated": "2026-08-19T03:18:31.403000"
     },
     {
       "symbol": "PHO",
@@ -9799,7 +9730,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:09.067000"
+      "updated": "2026-08-19T02:09:08.434000"
     },
     {
       "symbol": "PIO",
@@ -9822,7 +9753,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.67,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:08.312000"
+      "updated": "2026-08-19T02:09:08.168000"
     },
     {
       "symbol": "PLMK",
@@ -9845,7 +9776,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:31.185000"
+      "updated": "2026-08-19T02:11:33.128000"
     },
     {
       "symbol": "PLMR",
@@ -9868,7 +9799,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:06.078000"
+      "updated": "2026-08-19T02:10:18.507000"
     },
     {
       "symbol": "PMBS",
@@ -9891,7 +9822,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:20.235000"
+      "updated": "2026-08-19T02:11:22.299000"
     },
     {
       "symbol": "PMTR",
@@ -9914,18 +9845,18 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.03,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:46.984000"
+      "updated": "2026-08-19T02:11:47.991000"
     },
     {
       "symbol": "PMTRU",
       "sector": "Financial Services",
       "price": 11.14,
-      "sma20": 10.89,
-      "sma50": 10.82,
+      "sma20": 10.91,
+      "sma50": 10.83,
       "sma100": 10.74,
       "sma200": 10.71,
       "change1M": 3.3,
-      "change6M": 3.6,
+      "change6M": 5.0,
       "change1Y": 2.3,
       "high52W": 12.4,
       "low52W": 0.0,
@@ -9936,8 +9867,8 @@
       "shortTerm": "bull_weak",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:44.632000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:43.379000"
     },
     {
       "symbol": "PMTW",
@@ -9960,7 +9891,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.88,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:42.802000"
+      "updated": "2026-08-19T03:20:14.892000"
     },
     {
       "symbol": "PPG",
@@ -9983,7 +9914,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:59.057000"
+      "updated": "2026-08-19T03:18:32.177000"
     },
     {
       "symbol": "PPL",
@@ -10006,7 +9937,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:59.057000"
+      "updated": "2026-08-19T03:18:31.920000"
     },
     {
       "symbol": "PPYA",
@@ -10028,8 +9959,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:51.794000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:51.532000"
     },
     {
       "symbol": "PPYAU",
@@ -10051,8 +9982,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:49.971000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:48.360000"
     },
     {
       "symbol": "PRDO",
@@ -10075,7 +10006,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:09.320000"
+      "updated": "2026-08-19T02:09:09.215000"
     },
     {
       "symbol": "PRHIZ",
@@ -10098,7 +10029,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.88,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:45.730000"
+      "updated": "2026-08-19T02:11:43.695000"
     },
     {
       "symbol": "PRIFPG",
@@ -10121,7 +10052,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:19.595000"
+      "updated": "2026-08-19T03:19:52.109000"
     },
     {
       "symbol": "PRIFpG",
@@ -10144,7 +10075,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:20.928000"
+      "updated": "2026-08-19T03:19:54.243000"
     },
     {
       "symbol": "PRMB",
@@ -10167,7 +10098,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:58.395000"
+      "updated": "2026-08-19T03:18:31.399000"
     },
     {
       "symbol": "PRVA",
@@ -10190,7 +10121,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:36.972000"
+      "updated": "2026-08-19T02:10:35.722000"
     },
     {
       "symbol": "PSF",
@@ -10213,7 +10144,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.95,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:57.760000"
+      "updated": "2026-08-19T03:18:30.887000"
     },
     {
       "symbol": "PSL",
@@ -10236,7 +10167,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:10.836000"
+      "updated": "2026-08-19T02:09:10.743000"
     },
     {
       "symbol": "PUCKU",
@@ -10258,8 +10189,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:29.910000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:29.472000"
     },
     {
       "symbol": "PVH",
@@ -10282,7 +10213,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.08,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:44.977000"
+      "updated": "2026-08-19T03:18:15.876000"
     },
     {
       "symbol": "PYT",
@@ -10305,7 +10236,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.08,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:16.782000"
+      "updated": "2026-08-19T03:17:50.925000"
     },
     {
       "symbol": "QCLR",
@@ -10328,7 +10259,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:43.811000"
+      "updated": "2026-08-19T02:10:43.441000"
     },
     {
       "symbol": "QDTY",
@@ -10351,7 +10282,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:34.743000"
+      "updated": "2026-08-19T02:11:35.406000"
     },
     {
       "symbol": "QQLV",
@@ -10374,7 +10305,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:30.117000"
+      "updated": "2026-08-19T02:11:27.459000"
     },
     {
       "symbol": "QRMI",
@@ -10397,7 +10328,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:44.351000"
+      "updated": "2026-08-19T02:10:42.871000"
     },
     {
       "symbol": "QSEAU",
@@ -10406,7 +10337,7 @@
       "sma20": 10.71,
       "sma50": 10.71,
       "sma100": 10.8,
-      "sma200": 10.6,
+      "sma200": 10.61,
       "change1M": 0.0,
       "change6M": 3.1,
       "change1Y": 3.0,
@@ -10419,8 +10350,31 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:39.453000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:38.304000"
+    },
+    {
+      "symbol": "QUMSU",
+      "sector": "Financial Services",
+      "price": 10.33,
+      "sma20": 10.34,
+      "sma50": 10.37,
+      "sma100": 10.36,
+      "sma200": 10.28,
+      "change1M": -0.8,
+      "change6M": 0.9,
+      "change1Y": 3.0,
+      "high52W": 10.99,
+      "low52W": 0.0,
+      "distFromHigh": 6.0,
+      "distFromLow": 0.0,
+      "longTerm": "neutral",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Sideways/Neutral (Near 52W Low)",
+      "volumeRatio": 0.0,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:55.034000"
     },
     {
       "symbol": "RA",
@@ -10443,7 +10397,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:49.240000"
+      "updated": "2026-08-19T03:19:22.033000"
     },
     {
       "symbol": "RAC",
@@ -10466,7 +10420,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 4.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:41.362000"
+      "updated": "2026-08-19T03:20:13.620000"
     },
     {
       "symbol": "RBIL",
@@ -10489,7 +10443,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.25,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:37.313000"
+      "updated": "2026-08-19T02:11:36.379000"
     },
     {
       "symbol": "RBKB",
@@ -10512,7 +10466,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:06.424000"
+      "updated": "2026-08-19T02:09:06.288000"
     },
     {
       "symbol": "RCD",
@@ -10535,7 +10489,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.937000"
+      "updated": "2026-08-19T03:20:11.944000"
     },
     {
       "symbol": "RCP",
@@ -10558,7 +10512,7 @@
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T07:15:16.227000"
+      "updated": "2026-08-19T03:19:49.046000"
     },
     {
       "symbol": "RDAG",
@@ -10566,10 +10520,10 @@
       "price": 10.38,
       "sma20": 10.36,
       "sma50": 10.35,
-      "sma100": 10.3,
+      "sma100": 10.31,
       "sma200": 10.26,
       "change1M": 0.3,
-      "change6M": 1.8,
+      "change6M": 1.7,
       "change1Y": 1.8,
       "high52W": 10.43,
       "low52W": 0.0,
@@ -10580,8 +10534,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.07,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:51.643000"
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:11:49.843000"
     },
     {
       "symbol": "RDAGU",
@@ -10604,7 +10558,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.97,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:42.788000"
+      "updated": "2026-08-19T02:11:43.648000"
     },
     {
       "symbol": "REGCO",
@@ -10627,7 +10581,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:03.027000"
+      "updated": "2026-08-19T02:11:02.719000"
     },
     {
       "symbol": "REGCP",
@@ -10650,7 +10604,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:04.746000"
+      "updated": "2026-08-19T02:11:01.932000"
     },
     {
       "symbol": "REXR",
@@ -10673,7 +10627,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:47.108000"
+      "updated": "2026-08-19T03:19:19.955000"
     },
     {
       "symbol": "RFI",
@@ -10696,7 +10650,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.5,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:45.526000"
+      "updated": "2026-08-19T03:18:18.907000"
     },
     {
       "symbol": "RGCO",
@@ -10719,7 +10673,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.22,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:34.851000"
+      "updated": "2026-08-19T02:08:34.682000"
     },
     {
       "symbol": "RIGL",
@@ -10742,7 +10696,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:36.225000"
+      "updated": "2026-08-19T02:08:35.233000"
     },
     {
       "symbol": "RIV",
@@ -10765,7 +10719,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:48.891000"
+      "updated": "2026-08-19T03:19:20.637000"
     },
     {
       "symbol": "RTAC",
@@ -10788,7 +10742,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.48,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:46.756000"
+      "updated": "2026-08-19T02:11:46.646000"
     },
     {
       "symbol": "RUNN",
@@ -10811,7 +10765,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.36,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:59.384000"
+      "updated": "2026-08-19T02:10:59.756000"
     },
     {
       "symbol": "RWAYL",
@@ -10834,7 +10788,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.095000"
+      "updated": "2026-08-19T02:10:53.184000"
     },
     {
       "symbol": "RWTN",
@@ -10857,7 +10811,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:34.767000"
+      "updated": "2026-08-19T03:20:07.465000"
     },
     {
       "symbol": "RWTO",
@@ -10880,7 +10834,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.47,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:36.679000"
+      "updated": "2026-08-19T03:20:06.412000"
     },
     {
       "symbol": "RWTP",
@@ -10903,7 +10857,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.31,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:40.307000"
+      "updated": "2026-08-19T03:20:12.485000"
     },
     {
       "symbol": "RZC",
@@ -10926,7 +10880,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:28.936000"
+      "updated": "2026-08-19T03:20:01.718000"
     },
     {
       "symbol": "SAJ",
@@ -10949,7 +10903,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:29.007000"
+      "updated": "2026-08-19T03:20:01.830000"
     },
     {
       "symbol": "SAT",
@@ -10972,7 +10926,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.86,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:27.295000"
+      "updated": "2026-08-19T03:20:00.123000"
     },
     {
       "symbol": "SAY",
@@ -10995,7 +10949,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.27,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:29.484000"
+      "updated": "2026-08-19T03:20:03.172000"
     },
     {
       "symbol": "SAZ",
@@ -11018,7 +10972,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.16,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:30.294000"
+      "updated": "2026-08-19T03:20:03.990000"
     },
     {
       "symbol": "SCI",
@@ -11041,7 +10995,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:13:30.844000"
+      "updated": "2026-08-19T03:18:06.042000"
     },
     {
       "symbol": "SDHIU",
@@ -11064,7 +11018,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 20.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:42.235000"
+      "updated": "2026-08-19T02:11:40.089000"
     },
     {
       "symbol": "SDHY",
@@ -11087,7 +11041,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:35.019000"
+      "updated": "2026-08-19T03:19:08.242000"
     },
     {
       "symbol": "SDSI",
@@ -11110,7 +11064,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 5.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:57.762000"
+      "updated": "2026-08-19T02:10:55.461000"
     },
     {
       "symbol": "SDTY",
@@ -11133,7 +11087,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:35.952000"
+      "updated": "2026-08-19T02:11:33.685000"
     },
     {
       "symbol": "SFBC",
@@ -11156,7 +11110,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.35,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:48.778000"
+      "updated": "2026-08-19T02:09:44.583000"
     },
     {
       "symbol": "SHEN",
@@ -11179,7 +11133,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.67,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:59.510000"
+      "updated": "2026-08-19T02:09:46.896000"
     },
     {
       "symbol": "SHV",
@@ -11202,7 +11156,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:58.711000"
+      "updated": "2026-08-19T02:09:49.832000"
     },
     {
       "symbol": "SHY",
@@ -11225,7 +11179,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.91,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:02.168000"
+      "updated": "2026-08-19T02:09:47.926000"
     },
     {
       "symbol": "SJCP",
@@ -11248,7 +11202,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:23.031000"
+      "updated": "2026-08-19T02:11:20.585000"
     },
     {
       "symbol": "SJLD",
@@ -11271,7 +11225,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:40.317000"
+      "updated": "2026-08-19T02:11:41.243000"
     },
     {
       "symbol": "SKOR",
@@ -11294,7 +11248,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:28.001000"
+      "updated": "2026-08-19T02:10:27.193000"
     },
     {
       "symbol": "SKYH",
@@ -11317,7 +11271,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:25.941000"
+      "updated": "2026-08-19T03:18:58.640000"
     },
     {
       "symbol": "SLNZ",
@@ -11340,7 +11294,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.28,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.365000"
+      "updated": "2026-08-19T03:20:11.700000"
     },
     {
       "symbol": "SLQD",
@@ -11363,7 +11317,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:25.712000"
+      "updated": "2026-08-19T02:10:27.452000"
     },
     {
       "symbol": "SLVO",
@@ -11386,7 +11340,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.48,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:24.698000"
+      "updated": "2026-08-19T02:10:25.292000"
     },
     {
       "symbol": "SMA",
@@ -11409,7 +11363,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.43,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:40.496000"
+      "updated": "2026-08-19T03:20:11.514000"
     },
     {
       "symbol": "SMG",
@@ -11432,7 +11386,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:30.182000"
+      "updated": "2026-08-19T03:19:02.467000"
     },
     {
       "symbol": "SMP",
@@ -11455,7 +11409,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:30.441000"
+      "updated": "2026-08-19T03:19:02.719000"
     },
     {
       "symbol": "SMWB",
@@ -11478,7 +11432,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:20.268000"
+      "updated": "2026-08-19T03:19:53.620000"
     },
     {
       "symbol": "SNFCA",
@@ -11501,7 +11455,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 3.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:45.151000"
+      "updated": "2026-08-19T02:09:58.390000"
     },
     {
       "symbol": "SO",
@@ -11524,7 +11478,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:28.122000"
+      "updated": "2026-08-19T03:19:03.801000"
     },
     {
       "symbol": "SOJF",
@@ -11547,30 +11501,30 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.78,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:40.046000"
+      "updated": "2026-08-19T03:20:12.223000"
     },
     {
       "symbol": "SPEPC",
       "sector": "Other",
-      "price": 24.8,
+      "price": 24.77,
       "sma20": 24.78,
       "sma50": 24.82,
-      "sma100": 24.88,
+      "sma100": 24.87,
       "sma200": 24.9,
-      "change1M": -0.0,
-      "change6M": -0.9,
-      "change1Y": 2.0,
+      "change1M": -0.2,
+      "change6M": -1.6,
+      "change1Y": 2.2,
       "high52W": 25.29,
       "low52W": 24.05,
-      "distFromHigh": 1.9,
-      "distFromLow": 3.1,
+      "distFromHigh": 2.1,
+      "distFromLow": 3.0,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
-      "volumeRatio": 1.88,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:26.231000"
+      "volumeRatio": 0.45,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:59.279000"
     },
     {
       "symbol": "SPH",
@@ -11593,7 +11547,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:27.594000"
+      "updated": "2026-08-19T03:19:01.693000"
     },
     {
       "symbol": "SPMA",
@@ -11616,7 +11570,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.46,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:38.486000"
+      "updated": "2026-08-19T03:20:10.663000"
     },
     {
       "symbol": "STC",
@@ -11639,7 +11593,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.57,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:36.868000"
+      "updated": "2026-08-19T03:19:23.344000"
     },
     {
       "symbol": "STIP",
@@ -11662,7 +11616,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:19.780000"
+      "updated": "2026-08-19T03:19:51.522000"
     },
     {
       "symbol": "STIp",
@@ -11685,7 +11639,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:15.507000"
+      "updated": "2026-08-19T03:19:47.616000"
     },
     {
       "symbol": "STXT",
@@ -11708,7 +11662,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:31.508000"
+      "updated": "2026-08-19T03:20:05.029000"
     },
     {
       "symbol": "SUI",
@@ -11731,7 +11685,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.16,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:47.519000"
+      "updated": "2026-08-19T03:19:19.325000"
     },
     {
       "symbol": "SUSB",
@@ -11754,7 +11708,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.71,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:17.840000"
+      "updated": "2026-08-19T02:10:09.029000"
     },
     {
       "symbol": "SUSC",
@@ -11777,18 +11731,18 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:16.281000"
+      "updated": "2026-08-19T02:10:10.672000"
     },
     {
       "symbol": "SVACU",
       "sector": "Financial Services",
       "price": 10.0,
       "sma20": 10.0,
-      "sma50": 10.11,
-      "sma100": 10.57,
+      "sma50": 10.08,
+      "sma100": 10.55,
       "sma200": 10.64,
       "change1M": 0.0,
-      "change6M": -5.5,
+      "change6M": -5.7,
       "change1Y": -0.4,
       "high52W": 13.5,
       "low52W": 0.0,
@@ -11800,7 +11754,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-07-10",
-      "updated": "2026-08-18T06:06:57.070000"
+      "updated": "2026-08-19T02:11:56.285000"
     },
     {
       "symbol": "SWSS",
@@ -11822,8 +11776,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:44.880000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:43.529000"
     },
     {
       "symbol": "SWZ",
@@ -11846,7 +11800,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 2.02,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:47.483000"
+      "updated": "2026-08-19T03:19:19.697000"
     },
     {
       "symbol": "TAC",
@@ -11869,7 +11823,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.44,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:50.038000"
+      "updated": "2026-08-19T03:19:22.827000"
     },
     {
       "symbol": "TACO",
@@ -11892,7 +11846,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.74,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:49.313000"
+      "updated": "2026-08-19T02:11:46.384000"
     },
     {
       "symbol": "TACOU",
@@ -11914,15 +11868,15 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:42.535000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:42.357000"
     },
     {
       "symbol": "TAVIU",
       "sector": "Financial Services",
       "price": 10.8,
       "sma20": 10.74,
-      "sma50": 10.84,
+      "sma50": 10.83,
       "sma100": 10.8,
       "sma200": 10.65,
       "change1M": 0.7,
@@ -11937,8 +11891,8 @@
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:06:31.356000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:29.794000"
     },
     {
       "symbol": "TAXI",
@@ -11961,7 +11915,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:55.845000"
+      "updated": "2026-08-19T02:11:59.197000"
     },
     {
       "symbol": "TAXS",
@@ -11984,7 +11938,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:07:00.462000"
+      "updated": "2026-08-19T02:11:57.769000"
     },
     {
       "symbol": "TAXT",
@@ -12007,7 +11961,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.01,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:58.288000"
+      "updated": "2026-08-19T02:11:57.952000"
     },
     {
       "symbol": "TBIL",
@@ -12030,7 +11984,30 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.642000"
+      "updated": "2026-08-19T02:10:53.529000"
+    },
+    {
+      "symbol": "TDSPU",
+      "sector": "Other",
+      "price": 20.8,
+      "sma20": 0,
+      "sma50": 0,
+      "sma100": 0,
+      "sma200": 0,
+      "change1M": 2.0,
+      "change6M": -6.1,
+      "change1Y": 2.8,
+      "high52W": 23.36,
+      "low52W": 19.43,
+      "distFromHigh": 10.9,
+      "distFromLow": 7.1,
+      "longTerm": "neutral",
+      "midTerm": "bear_weak",
+      "shortTerm": "neutral",
+      "pattern": "Sideways/Neutral",
+      "volumeRatio": 0.61,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:49.560000"
     },
     {
       "symbol": "TGS",
@@ -12053,7 +12030,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:42.881000"
+      "updated": "2026-08-19T03:19:15.558000"
     },
     {
       "symbol": "TIC",
@@ -12076,7 +12053,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.68,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:39.978000"
+      "updated": "2026-08-19T03:20:13.064000"
     },
     {
       "symbol": "TMB",
@@ -12099,7 +12076,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:36.719000"
+      "updated": "2026-08-19T02:11:34.726000"
     },
     {
       "symbol": "TPLS",
@@ -12122,7 +12099,30 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 2.29,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:35.691000"
+      "updated": "2026-08-19T02:11:34.305000"
+    },
+    {
+      "symbol": "TRINI",
+      "sector": "Other",
+      "price": 25.25,
+      "sma20": 25.27,
+      "sma50": 25.25,
+      "sma100": 25.28,
+      "sma200": 25.28,
+      "change1M": 0.0,
+      "change6M": -1.0,
+      "change1Y": 2.8,
+      "high52W": 25.58,
+      "low52W": 24.45,
+      "distFromHigh": 1.3,
+      "distFromLow": 3.3,
+      "longTerm": "neutral",
+      "midTerm": "neutral",
+      "shortTerm": "neutral",
+      "pattern": "Sideways/Neutral (Near 52W High)",
+      "volumeRatio": 3.1,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:11:17.674000"
     },
     {
       "symbol": "TSL",
@@ -12145,7 +12145,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.93,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.346000"
+      "updated": "2026-08-19T02:10:53.603000"
     },
     {
       "symbol": "TTAM",
@@ -12168,7 +12168,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 0.4,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:39.718000"
+      "updated": "2026-08-19T03:20:12.769000"
     },
     {
       "symbol": "TTEK",
@@ -12191,7 +12191,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.65,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:31.305000"
+      "updated": "2026-08-19T02:08:30.947000"
     },
     {
       "symbol": "TVC",
@@ -12214,7 +12214,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.17,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:32.865000"
+      "updated": "2026-08-19T03:19:06.430000"
     },
     {
       "symbol": "TVE",
@@ -12237,7 +12237,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 1.39,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:33.121000"
+      "updated": "2026-08-19T03:19:05.678000"
     },
     {
       "symbol": "TWOD",
@@ -12260,7 +12260,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:41.674000"
+      "updated": "2026-08-19T03:20:15.273000"
     },
     {
       "symbol": "TXO",
@@ -12283,7 +12283,7 @@
       "pattern": "Mid-Term Momentum - Bullish",
       "volumeRatio": 1.94,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:29.838000"
+      "updated": "2026-08-19T03:20:02.621000"
     },
     {
       "symbol": "UAE",
@@ -12306,7 +12306,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.61,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:45.503000"
+      "updated": "2026-08-19T02:08:47.346000"
     },
     {
       "symbol": "UBND",
@@ -12329,7 +12329,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:45.388000"
+      "updated": "2026-08-19T02:10:44.706000"
     },
     {
       "symbol": "UCRD",
@@ -12352,7 +12352,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:43.779000"
+      "updated": "2026-08-19T02:10:44.440000"
     },
     {
       "symbol": "UDR",
@@ -12375,7 +12375,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.52,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:10.688000"
+      "updated": "2026-08-19T03:18:43.933000"
     },
     {
       "symbol": "UFIV",
@@ -12398,7 +12398,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.77,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:58.005000"
+      "updated": "2026-08-19T02:10:59.814000"
     },
     {
       "symbol": "UITB",
@@ -12421,7 +12421,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.67,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:49.692000"
+      "updated": "2026-08-19T02:08:48.953000"
     },
     {
       "symbol": "UNIY",
@@ -12444,7 +12444,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:59.659000"
+      "updated": "2026-08-19T02:10:57.384000"
     },
     {
       "symbol": "USA",
@@ -12467,7 +12467,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.12,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:12.857000"
+      "updated": "2026-08-19T03:18:46.100000"
     },
     {
       "symbol": "USFI",
@@ -12490,7 +12490,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:02.463000"
+      "updated": "2026-08-19T02:11:01.906000"
     },
     {
       "symbol": "USIG",
@@ -12513,7 +12513,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.04,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:38.277000"
+      "updated": "2026-08-19T02:08:37.655000"
     },
     {
       "symbol": "USIN",
@@ -12536,7 +12536,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:12.639000"
+      "updated": "2026-08-19T02:11:11.665000"
     },
     {
       "symbol": "USOI",
@@ -12559,7 +12559,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:28.453000"
+      "updated": "2026-08-19T02:09:34.648000"
     },
     {
       "symbol": "USSH",
@@ -12582,7 +12582,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.27,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:13.207000"
+      "updated": "2026-08-19T02:11:11.593000"
     },
     {
       "symbol": "USTB",
@@ -12605,7 +12605,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:27.880000"
+      "updated": "2026-08-19T02:09:35.164000"
     },
     {
       "symbol": "USVN",
@@ -12628,7 +12628,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:59.472000"
+      "updated": "2026-08-19T02:10:58.964000"
     },
     {
       "symbol": "UTEN",
@@ -12651,7 +12651,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:52.860000"
+      "updated": "2026-08-19T02:10:53.270000"
     },
     {
       "symbol": "UTI",
@@ -12674,7 +12674,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.82,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:13.887000"
+      "updated": "2026-08-19T03:18:44.622000"
     },
     {
       "symbol": "UTRE",
@@ -12697,7 +12697,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.29,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:00.686000"
+      "updated": "2026-08-19T02:10:58.706000"
     },
     {
       "symbol": "UTWO",
@@ -12720,7 +12720,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.1,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:55.384000"
+      "updated": "2026-08-19T02:10:53.436000"
     },
     {
       "symbol": "UYLD",
@@ -12743,7 +12743,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.96,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:57.745000"
+      "updated": "2026-08-19T02:10:56.907000"
     },
     {
       "symbol": "UZD",
@@ -12766,7 +12766,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.12,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:12.299000"
+      "updated": "2026-08-19T03:18:45.203000"
     },
     {
       "symbol": "UZE",
@@ -12789,7 +12789,7 @@
       "pattern": "Trend Breakdown - Warning",
       "volumeRatio": 2.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:46.432000"
+      "updated": "2026-08-19T03:19:18.410000"
     },
     {
       "symbol": "UZF",
@@ -12812,7 +12812,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 5.13,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:21.797000"
+      "updated": "2026-08-19T03:19:53.578000"
     },
     {
       "symbol": "VALU",
@@ -12835,7 +12835,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:33.826000"
+      "updated": "2026-08-19T02:08:33.217000"
     },
     {
       "symbol": "VBIL",
@@ -12858,7 +12858,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 0.98,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:36.205000"
+      "updated": "2026-08-19T02:11:33.955000"
     },
     {
       "symbol": "VBND",
@@ -12881,7 +12881,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.6,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:41.461000"
+      "updated": "2026-08-19T02:09:32.244000"
     },
     {
       "symbol": "VCIT",
@@ -12904,7 +12904,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.06,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:03:36.492000"
+      "updated": "2026-08-19T02:08:36.541000"
     },
     {
       "symbol": "VCRB",
@@ -12927,7 +12927,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:09.267000"
+      "updated": "2026-08-19T02:11:07.664000"
     },
     {
       "symbol": "VCSH",
@@ -12950,7 +12950,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.8,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:40.686000"
+      "updated": "2026-08-19T02:09:31.722000"
     },
     {
       "symbol": "VGIT",
@@ -12973,7 +12973,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.52,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:34.447000"
+      "updated": "2026-08-19T02:09:30.697000"
     },
     {
       "symbol": "VGSH",
@@ -12996,7 +12996,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:32.032000"
+      "updated": "2026-08-19T02:09:41.662000"
     },
     {
       "symbol": "VGUS",
@@ -13019,7 +13019,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 1.29,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:34.461000"
+      "updated": "2026-08-19T02:11:33.445000"
     },
     {
       "symbol": "VHI",
@@ -13042,7 +13042,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:05.701000"
+      "updated": "2026-08-19T03:18:38.951000"
     },
     {
       "symbol": "VMBS",
@@ -13065,7 +13065,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.88,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:38.017000"
+      "updated": "2026-08-19T02:09:37.207000"
     },
     {
       "symbol": "VNET",
@@ -13088,30 +13088,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:37.013000"
-    },
-    {
-      "symbol": "VNME",
-      "sector": "Financial Services",
-      "price": 10.23,
-      "sma20": 10.22,
-      "sma50": 10.21,
-      "sma100": 10.17,
-      "sma200": 10.12,
-      "change1M": 0.6,
-      "change6M": 1.5,
-      "change1Y": 0.0,
-      "high52W": 10.27,
-      "low52W": 0.0,
-      "distFromHigh": 0.4,
-      "distFromLow": 0.0,
-      "longTerm": "neutral",
-      "midTerm": "neutral",
-      "shortTerm": "neutral",
-      "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:07:00.226000"
+      "updated": "2026-08-19T02:09:32.513000"
     },
     {
       "symbol": "VNQI",
@@ -13134,7 +13111,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 1.13,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:36.740000"
+      "updated": "2026-08-19T02:09:32.236000"
     },
     {
       "symbol": "VPLS",
@@ -13157,7 +13134,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.63,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:05.407000"
+      "updated": "2026-08-19T02:11:05.574000"
     },
     {
       "symbol": "VRIG",
@@ -13180,7 +13157,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.89,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:51.891000"
+      "updated": "2026-08-19T02:10:06.957000"
     },
     {
       "symbol": "VRSN",
@@ -13203,7 +13180,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.81,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:38.531000"
+      "updated": "2026-08-19T02:09:41.155000"
     },
     {
       "symbol": "VTC",
@@ -13226,7 +13203,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.94,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:47.699000"
+      "updated": "2026-08-19T02:09:50.094000"
     },
     {
       "symbol": "VTIP",
@@ -13249,7 +13226,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.73,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:04:40.948000"
+      "updated": "2026-08-19T02:09:26.254000"
     },
     {
       "symbol": "VWOB",
@@ -13272,7 +13249,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W High)",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:14.748000"
+      "updated": "2026-08-19T02:09:45.890000"
     },
     {
       "symbol": "WABF",
@@ -13295,7 +13272,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.07,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:03.370000"
+      "updated": "2026-08-19T02:11:05.096000"
     },
     {
       "symbol": "WAL",
@@ -13318,30 +13295,30 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.53,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:22.040000"
+      "updated": "2026-08-19T03:18:54.392000"
     },
     {
       "symbol": "WBSpG",
       "sector": "Other",
-      "price": 24.12,
-      "sma20": 23.64,
-      "sma50": 23.7,
+      "price": 24.06,
+      "sma20": 23.67,
+      "sma50": 23.69,
       "sma100": 23.84,
       "sma200": 23.92,
-      "change1M": 2.8,
-      "change6M": -2.5,
-      "change1Y": 1.7,
+      "change1M": 2.9,
+      "change6M": -2.7,
+      "change1Y": 2.2,
       "high52W": 24.88,
       "low52W": 23.1,
-      "distFromHigh": 3.1,
-      "distFromLow": 4.4,
+      "distFromHigh": 3.3,
+      "distFromLow": 4.1,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
-      "volumeRatio": 0.5,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:26.453000"
+      "volumeRatio": 0.26,
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:57.294000"
     },
     {
       "symbol": "WEA",
@@ -13364,7 +13341,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 1.11,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:20.172000"
+      "updated": "2026-08-19T03:18:52.623000"
     },
     {
       "symbol": "WEC",
@@ -13387,7 +13364,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:19.671000"
+      "updated": "2026-08-19T03:18:53.131000"
     },
     {
       "symbol": "WENN",
@@ -13410,7 +13387,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 10.86,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:51.773000"
+      "updated": "2026-08-19T02:11:50.874000"
     },
     {
       "symbol": "WENNU",
@@ -13433,53 +13410,53 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 4.38,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:44.908000"
+      "updated": "2026-08-19T02:11:45.868000"
     },
     {
       "symbol": "WFCpX",
       "sector": "Other",
-      "price": 16.7,
-      "sma20": 16.69,
-      "sma50": 16.79,
-      "sma100": 16.85,
+      "price": 16.67,
+      "sma20": 16.68,
+      "sma50": 16.78,
+      "sma100": 16.84,
       "sma200": 16.95,
-      "change1M": -0.4,
+      "change1M": -0.8,
       "change6M": -2.7,
-      "change1Y": 0.5,
+      "change1Y": 0.3,
       "high52W": 17.29,
       "low52W": 16.6,
-      "distFromHigh": 3.4,
-      "distFromLow": 0.6,
+      "distFromHigh": 3.6,
+      "distFromLow": 0.4,
       "longTerm": "neutral",
       "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T07:15:17.184000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T03:19:48.964000"
     },
     {
       "symbol": "WHLRD",
       "sector": "Real Estate",
-      "price": 36.32,
-      "sma20": 36.55,
-      "sma50": 37.14,
+      "price": 35.9,
+      "sma20": 36.4,
+      "sma50": 37.09,
       "sma100": 36.89,
-      "sma200": 37.24,
-      "change1M": -3.8,
-      "change6M": -4.5,
-      "change1Y": 2.3,
+      "sma200": 37.25,
+      "change1M": -4.5,
+      "change6M": -6.4,
+      "change1Y": 0.7,
       "high52W": 42.0,
       "low52W": 0.0,
-      "distFromHigh": 13.5,
+      "distFromHigh": 14.5,
       "distFromLow": 0.0,
       "longTerm": "neutral",
-      "midTerm": "bear_weak",
-      "shortTerm": "bear_weak",
+      "midTerm": "bear",
+      "shortTerm": "bear",
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
-      "volumeRatio": 0.1,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:03:23.944000"
+      "volumeRatio": 2.63,
+      "dataEndDate": "2026-08-18",
+      "updated": "2026-08-19T02:08:23.586000"
     },
     {
       "symbol": "WIA",
@@ -13502,7 +13479,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.55,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:24.411000"
+      "updated": "2026-08-19T03:18:56.562000"
     },
     {
       "symbol": "WINV",
@@ -13524,8 +13501,8 @@
       "shortTerm": "neutral",
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:43.522000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:43.350000"
     },
     {
       "symbol": "WINVU",
@@ -13536,19 +13513,19 @@
       "sma100": 11.32,
       "sma200": 11.34,
       "change1M": 0.0,
-      "change6M": -8.8,
+      "change6M": 0.0,
       "change1Y": 0.0,
       "high52W": 11.32,
       "low52W": 11.32,
       "distFromHigh": 0.0,
       "distFromLow": 0.0,
       "longTerm": "neutral",
-      "midTerm": "bear_weak",
+      "midTerm": "neutral",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout (Near 52W Low)",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-08-14",
-      "updated": "2026-08-18T06:05:43.016000"
+      "dataEndDate": "2026-08-17",
+      "updated": "2026-08-19T02:10:43.672000"
     },
     {
       "symbol": "WISE",
@@ -13571,7 +13548,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.92,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:08.737000"
+      "updated": "2026-08-19T02:11:07.117000"
     },
     {
       "symbol": "WIW",
@@ -13594,7 +13571,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 1.21,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:24.411000"
+      "updated": "2026-08-19T03:18:57.360000"
     },
     {
       "symbol": "WLKP",
@@ -13617,7 +13594,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.69,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:38.162000"
+      "updated": "2026-08-19T03:19:08.752000"
     },
     {
       "symbol": "WM",
@@ -13640,7 +13617,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.79,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:22.587000"
+      "updated": "2026-08-19T03:18:55.167000"
     },
     {
       "symbol": "WMK",
@@ -13663,7 +13640,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.65,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:21.754000"
+      "updated": "2026-08-19T03:18:55.181000"
     },
     {
       "symbol": "WOOD",
@@ -13686,7 +13663,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 2.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:07.709000"
+      "updated": "2026-08-19T02:09:58.894000"
     },
     {
       "symbol": "WPP",
@@ -13709,7 +13686,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 1.22,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:16.106000"
+      "updated": "2026-08-19T03:18:48.915000"
     },
     {
       "symbol": "WRB",
@@ -13732,7 +13709,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.42,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:15.683000"
+      "updated": "2026-08-19T03:18:49.097000"
     },
     {
       "symbol": "WRBY",
@@ -13755,7 +13732,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.66,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:15:24.425000"
+      "updated": "2026-08-19T03:19:56.947000"
     },
     {
       "symbol": "WSC",
@@ -13778,7 +13755,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.7,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:20.769000"
+      "updated": "2026-08-19T02:10:21.935000"
     },
     {
       "symbol": "WTBN",
@@ -13801,7 +13778,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.64,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:09.525000"
+      "updated": "2026-08-19T02:11:07.955000"
     },
     {
       "symbol": "WTFCN",
@@ -13824,7 +13801,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 3.83,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:41.797000"
+      "updated": "2026-08-19T02:11:42.845000"
     },
     {
       "symbol": "WTMU",
@@ -13847,7 +13824,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.25,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:38.125000"
+      "updated": "2026-08-19T02:11:41.125000"
     },
     {
       "symbol": "WTRG",
@@ -13870,7 +13847,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.58,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T07:14:17.002000"
+      "updated": "2026-08-19T03:18:49.716000"
     },
     {
       "symbol": "WTW",
@@ -13893,7 +13870,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.94,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:02.421000"
+      "updated": "2026-08-19T02:10:08.772000"
     },
     {
       "symbol": "XBIL",
@@ -13916,7 +13893,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.87,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:58.685000"
+      "updated": "2026-08-19T02:10:58.198000"
     },
     {
       "symbol": "XFIX",
@@ -13939,7 +13916,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 2.11,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T06:06:03.893000"
+      "updated": "2026-08-19T02:11:05.451000"
     },
     {
       "symbol": "XOMAO",
@@ -13962,7 +13939,7 @@
       "pattern": "Sideways/Neutral (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-21",
-      "updated": "2026-08-18T06:05:37.230000"
+      "updated": "2026-08-19T02:10:36.077000"
     },
     {
       "symbol": "XOMAP",
@@ -13985,7 +13962,7 @@
       "pattern": "Trend Breakdown - Warning (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-07-21",
-      "updated": "2026-08-18T06:05:31.474000"
+      "updated": "2026-08-19T02:10:30.221000"
     },
     {
       "symbol": "XONE",
@@ -14008,7 +13985,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.54,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:54.329000"
+      "updated": "2026-08-19T02:10:54.688000"
     },
     {
       "symbol": "XOVR",
@@ -14031,7 +14008,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.51,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:05:12.369000"
+      "updated": "2026-08-19T02:10:04.187000"
     },
     {
       "symbol": "XRPN",
@@ -14054,7 +14031,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.62,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:52.327000"
+      "updated": "2026-08-19T02:11:50.238000"
     },
     {
       "symbol": "XRPNU",
@@ -14077,7 +14054,7 @@
       "pattern": "Mean Reversion Setup - Bottoming",
       "volumeRatio": 16.44,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:45.468000"
+      "updated": "2026-08-19T02:11:43.909000"
     },
     {
       "symbol": "YSPY",
@@ -14100,7 +14077,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.59,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:42.616000"
+      "updated": "2026-08-19T02:11:40.603000"
     },
     {
       "symbol": "ZTEN",
@@ -14123,7 +14100,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:10.252000"
+      "updated": "2026-08-19T02:11:08.773000"
     },
     {
       "symbol": "ZTOP",
@@ -14146,7 +14123,7 @@
       "pattern": "Mean Reversion Setup - Bottoming (Near 52W High)",
       "volumeRatio": 0.2,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:44.184000"
+      "updated": "2026-08-19T02:11:41.043000"
     },
     {
       "symbol": "ZTRE",
@@ -14169,7 +14146,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.25,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:08.873000"
+      "updated": "2026-08-19T02:11:07.185000"
     },
     {
       "symbol": "ZTWO",
@@ -14192,7 +14169,7 @@
       "pattern": "Sideways/Neutral (Near 52W High)",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-08-17",
-      "updated": "2026-08-18T06:06:07.273000"
+      "updated": "2026-08-19T02:11:07.450000"
     },
     {
       "symbol": "ZZZ",
@@ -14215,7 +14192,7 @@
       "pattern": "Sideways/Neutral",
       "volumeRatio": 0.72,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-08-18T06:06:08.971000"
+      "updated": "2026-08-19T02:11:09.177000"
     }
   ]
 }
