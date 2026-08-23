@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-23",
+  "generated": "2026-07-29 21:35",
+  "picks": [
+    {
+      "rank": 1,
+      "symbol": "BLFS",
+      "label": "Best Overall",
+      "setup_type": "Breakout",
+      "sector": "Unknown",
+      "composite_score": 64.2,
+      "tier": 1,
+      "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
+      "entry": 31.15,
+      "stop": 29.75,
+      "target": 33.95,
+      "rr_ratio": 2.0,
+      "risk_pct": 4.5,
+      "why": "Strongest combination of pattern quality + momentum + favorable risk"
+    },
+    {
+      "rank": 2,
+      "symbol": "CDW",
+      "label": "Different Driver",
+      "setup_type": "Continuation",
+      "sector": "Unknown",
+      "composite_score": 58.1,
+      "tier": 1,
+      "setup_description": "Cup & Handle continuation \u2014 handle pullback completing in established uptrend",
+      "entry": 140.21,
+      "stop": 137.41,
+      "target": 145.82,
+      "rr_ratio": 2.0,
+      "risk_pct": 2.0,
+      "why": "Complementary Unknown exposure + continuation setup diversifies the portfolio"
+    },
+    {
+      "rank": 3,
+      "symbol": "WAB",
+      "label": "Higher Risk/Reward",
+      "setup_type": "Breakout",
+      "sector": "Unknown",
+      "composite_score": 57.5,
+      "tier": 1,
+      "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
+      "entry": 290.0,
+      "stop": 276.95,
+      "target": 316.1,
+      "rr_ratio": 2.0,
+      "risk_pct": 4.5,
+      "why": "Different sector + setup offers uncorrelated return potential"
+    }
+  ]
+}
