@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticker Research Reports</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header {
+            background: rgba(255,255,255,0.97);
+            border-radius: 20px;
+            padding: 32px 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        h1 {
+            font-size: 2.1em;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+        }
+        .subtitle { color: #666; font-size: 0.95em; }
+        .back-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white; text-decoration: none; border-radius: 10px;
+            font-weight: 600; font-size: 0.9em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79,70,229,0.4); }
+
+        .search-bar {
+            background: rgba(255,255,255,0.96);
+            border-radius: 14px; padding: 14px 18px;
+            margin-bottom: 22px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+        }
+        .search-bar input {
+            width: 100%; border: none; outline: none;
+            font-size: 1em; font-family: inherit; color: #222;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 14px;
+        }
+        .card {
+            background: rgba(255,255,255,0.96);
+            border-radius: 14px; padding: 18px 20px;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.28); }
+        .card .ticker {
+            font-size: 1.3em; font-weight: 700;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .card .date { color: #888; font-size: 0.82em; margin-top: 4px; }
+
+        .empty, .loading {
+            color: rgba(255,255,255,0.85);
+            text-align: center; padding: 60px 20px; font-size: 1.05em;
+        }
+
+        .report-panel {
+            background: rgba(255,255,255,0.97);
+            border-radius: 20px; padding: 40px 44px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            display: none;
+            color: #222;
+            line-height: 1.65;
+        }
+        .report-panel.open { display: block; }
+        .report-panel h1 { font-size: 1.7em; background: none; -webkit-text-fill-color: initial; color: #222; margin-bottom: 4px; }
+        .report-panel h2 {
+            font-size: 1.25em; color: #4f46e5; margin: 28px 0 10px;
+            padding-bottom: 6px; border-bottom: 2px solid #eee;
+        }
+        .report-panel h3 { font-size: 1.05em; color: #333; margin: 18px 0 8px; }
+        .report-panel p { margin: 8px 0; color: #333; }
+        .report-panel ul, .report-panel ol { margin: 8px 0 8px 24px; color: #333; }
+        .report-panel li { margin: 4px 0; }
+        .report-panel strong { color: #111; }
+        .report-panel code {
+            background: #f2f2f7; padding: 1px 6px; border-radius: 4px;
+            font-size: 0.92em;
+        }
+        .report-panel .meta { color: #999; font-size: 0.85em; margin-bottom: 20px; }
+        #listView.hidden, #reportView.hidden { display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>Ticker Research Reports</h1>
+            <div class="subtitle">Independent deep-dive reports — price/technicals, fundamentals, business profile, supply chain, news</div>
+        </div>
+        <a class="back-btn" href="index.html">&larr; Back to Dashboard</a>
+    </header>
+
+    <div id="listView">
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="Filter by ticker...">
+        </div>
+        <div id="grid" class="grid"></div>
+        <div id="empty" class="empty" style="display:none;">No reports found yet.</div>
+    </div>
+
+    <div id="reportView" class="hidden">
+        <a class="back-btn" href="#" id="backToList" style="margin-bottom:16px; display:inline-flex;">&larr; All reports</a>
+        <div id="reportPanel" class="report-panel open"></div>
+    </div>
+</div>
+
+<script>
+const listView = document.getElementById('listView');
+const reportView = document.getElementById('reportView');
+const grid = document.getElementById('grid');
+const emptyMsg = document.getElementById('empty');
+const searchBox = document.getElementById('search');
+const reportPanel = document.getElementById('reportPanel');
+let reports = [];
+
+function showList() {
+    reportView.classList.add('hidden');
+    listView.classList.remove('hidden');
+    history.replaceState(null, '', location.pathname);
+}
+
+function renderGrid(filter) {
+    const f = (filter || '').toUpperCase();
+    const filtered = reports.filter(r => r.ticker.toUpperCase().includes(f));
+    grid.innerHTML = '';
+    emptyMsg.style.display = filtered.length ? 'none' : 'block';
+    for (const r of filtered) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<div class="ticker">${r.ticker}</div><div class="date">${r.date}</div>`;
+        card.onclick = () => openReport(r);
+        grid.appendChild(card);
+    }
+}
+
+// Minimal markdown -> HTML (headers, bold, italics, lists, paragraphs).
+// Reports are machine-generated with predictable structure, so this covers
+// what the ticker-research agent actually produces without pulling in a
+// full markdown library.
+function mdToHtml(md) {
+    const lines = md.replace(/\r\n/g, '\n').split('\n');
+    let html = '';
+    let inList = false;
+    const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
+    const inline = (s) => s
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`(.+?)`/g, '<code>$1</code>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>');
+    for (const raw of lines) {
+        const line = raw.trimEnd();
+        if (/^###\s+/.test(line)) { closeList(); html += `<h3>${inline(line.replace(/^###\s+/, ''))}</h3>`; continue; }
+        if (/^##\s+/.test(line)) { closeList(); html += `<h2>${inline(line.replace(/^##\s+/, ''))}</h2>`; continue; }
+        if (/^#\s+/.test(line)) { closeList(); html += `<h1>${inline(line.replace(/^#\s+/, ''))}</h1>`; continue; }
+        if (/^[-*]\s+/.test(line)) {
+            if (!inList) { html += '<ul>'; inList = true; }
+            html += `<li>${inline(line.replace(/^[-*]\s+/, ''))}</li>`;
+            continue;
+        }
+        closeList();
+        if (line.trim() === '') continue;
+        html += `<p>${inline(line)}</p>`;
+    }
+    closeList();
+    return html;
+}
+
+async function openReport(r) {
+    reportPanel.innerHTML = '<div class="loading">Loading report&hellip;</div>';
+    listView.classList.add('hidden');
+    reportView.classList.remove('hidden');
+    history.replaceState(null, '', '#' + r.ticker);
+    try {
+        const res = await fetch('ticker-research/' + r.file + '?_=' + Date.now());
+        const text = await res.text();
+        reportPanel.innerHTML = `<div class="meta">${r.ticker} &middot; report date ${r.date}</div>` + mdToHtml(text);
+    } catch (e) {
+        reportPanel.innerHTML = '<div class="loading">Failed to load report.</div>';
+    }
+}
+
+document.getElementById('backToList').onclick = (e) => { e.preventDefault(); showList(); };
+searchBox.oninput = () => renderGrid(searchBox.value);
+
+fetch('ticker-research/index.json?_=' + Date.now())
+    .then(res => res.json())
+    .then(data => {
+        reports = data;
+        // Most recent first.
+        reports.sort((a, b) => b.date.localeCompare(a.date) || a.ticker.localeCompare(b.ticker));
+        renderGrid('');
+        const hashTicker = location.hash.replace('#', '');
+        if (hashTicker) {
+            const match = reports.find(r => r.ticker.toUpperCase() === hashTicker.toUpperCase());
+            if (match) openReport(match);
+        }
+    })
+    .catch(() => {
+        grid.innerHTML = '';
+        emptyMsg.textContent = 'No reports published yet.';
+        emptyMsg.style.display = 'block';
+    });
+</script>
+</body>
+</html>
