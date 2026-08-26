@@ -55,25 +55,34 @@
             font-size: 1em; font-family: inherit; color: #222;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 14px;
-        }
-        .card {
+        .index-list {
             background: rgba(255,255,255,0.96);
-            border-radius: 14px; padding: 18px 20px;
-            cursor: pointer;
+            border-radius: 14px;
             box-shadow: 0 6px 24px rgba(0,0,0,0.2);
-            transition: transform 0.15s, box-shadow 0.15s;
+            padding: 8px 0;
         }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.28); }
-        .card .ticker {
-            font-size: 1.3em; font-weight: 700;
+        .letter-group {
+            padding: 10px 24px;
+            border-bottom: 1px solid #eee;
+        }
+        .letter-group:last-child { border-bottom: none; }
+        .letter-heading {
+            font-size: 1.1em; font-weight: 700;
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
         }
-        .card .date { color: #888; font-size: 0.82em; margin-top: 4px; }
+        .ticker-row {
+            display: flex; align-items: baseline; justify-content: space-between;
+            gap: 12px;
+            padding: 7px 4px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.12s;
+        }
+        .ticker-row:hover { background: #f2f0fb; }
+        .ticker-row .ticker { font-weight: 600; color: #222; }
+        .ticker-row .date { color: #888; font-size: 0.82em; }
 
         .empty, .loading {
             color: rgba(255,255,255,0.85);
@@ -121,7 +130,7 @@
         <div class="search-bar">
             <input id="search" type="text" placeholder="Filter by ticker...">
         </div>
-        <div id="grid" class="grid"></div>
+        <div id="grid" class="index-list"></div>
         <div id="empty" class="empty" style="display:none;">No reports found yet.</div>
     </div>
 
@@ -151,12 +160,28 @@ function renderGrid(filter) {
     const filtered = reports.filter(r => r.ticker.toUpperCase().includes(f));
     grid.innerHTML = '';
     emptyMsg.style.display = filtered.length ? 'none' : 'block';
+
+    let currentLetter = null;
+    let list = null;
     for (const r of filtered) {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `<div class="ticker">${r.ticker}</div><div class="date">${r.date}</div>`;
-        card.onclick = () => openReport(r);
-        grid.appendChild(card);
+        const letter = /[A-Z]/.test(r.ticker[0]) ? r.ticker[0].toUpperCase() : '#';
+        if (letter !== currentLetter) {
+            currentLetter = letter;
+            const group = document.createElement('div');
+            group.className = 'letter-group';
+            const heading = document.createElement('div');
+            heading.className = 'letter-heading';
+            heading.textContent = letter + '.';
+            list = document.createElement('div');
+            group.appendChild(heading);
+            group.appendChild(list);
+            grid.appendChild(group);
+        }
+        const row = document.createElement('div');
+        row.className = 'ticker-row';
+        row.innerHTML = `<span class="ticker">${r.ticker}</span><span class="date">${r.date}</span>`;
+        row.onclick = () => openReport(r);
+        list.appendChild(row);
     }
 }
 
@@ -213,8 +238,8 @@ fetch('ticker-research/index.json?_=' + Date.now())
     .then(res => res.json())
     .then(data => {
         reports = data;
-        // Most recent first.
-        reports.sort((a, b) => b.date.localeCompare(a.date) || a.ticker.localeCompare(b.ticker));
+        // Alphabetical by ticker for the A-Z index.
+        reports.sort((a, b) => a.ticker.localeCompare(b.ticker) || b.date.localeCompare(a.date));
         renderGrid('');
         const hashTicker = location.hash.replace('#', '');
         if (hashTicker) {
