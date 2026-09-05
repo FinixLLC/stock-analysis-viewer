@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-03
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      DYNB        80.00   100.00     0.2540   POS         
+2      LKSP        80.00   100.00     0.3190   POS         
+3      CHAR        80.00   100.00     0.2798   POS         
+4      TRUD        80.00   100.00     0.2995   POS         
+5      FCAL        80.00   100.00     0.0955   POS         
+6      PC          80.00   100.00     0.1554   POS         
+7      MCGAU       80.00   100.00     0.1278   POS         
+8      BHFAP       80.00   100.00     0.1154   POS         
+9      SCDS        80.00   100.00     0.0440   POS         
+10     CHI         80.00   100.00     0.1528   POS         
+11     SBFG        80.00   100.00     0.1258   POS         
+12     DSCO        80.00   100.00     0.5150   POS         
+13     CHPG        80.00   100.00     0.3230   POS         
+14     FCNCA       80.00   100.00     1.0000   CupHandle   
+15     MCHPP       80.00   100.00     0.1840   POS         
+16     PANL        80.00   100.00     1.0000   CupHandle   
+17     AONC        80.00   100.00     0.2497   POS         
+18     CHRI        80.00   100.00     0.1682   POS         
+19     QBUF        80.00   100.00     0.2010   POS         
+20     PAMT        80.00   100.00     0.1592   POS         
+21     JMID        80.00   100.00     0.1009   POS         
+22     CHSCL       80.00   100.00     0.2338   POS         
+23     FDIF        80.00   100.00     0.0887   nan         
+24     CHSCM       80.00   100.00     0.1063   POS         
+25     TUG         80.00   100.00     0.0564   POS         
+26     TURF        80.00   100.00     0.2640   POS         
+27     CHSCN       80.00   100.00     0.2508   POS         
+28     APACU       80.00   100.00     0.3946   POS         
+29     RWAYL       80.00   100.00     0.1980   POS         
+30     RUNN        80.00   100.00     0.0968   POS         
+31     PCAP        80.00   100.00     0.1953   POS         
+32     BHFAN       80.00   100.00     0.1445   POS         
+33     DEMZ        80.00   100.00     0.0960   POS         
+34     TRINI       80.00   100.00     0.1321   POS         
+35     CGABL       80.00   100.00     0.1230   POS         
+36     DSAC        80.00   100.00     0.4089   POS         
+37     THRV        80.00   100.00     0.1468   POS         
+38     DYFI        80.00   100.00     0.0723   POS         
+39     SEEM        80.00   100.00     0.1101   POS         
+40     TLNCU       80.00   100.00     0.2936   POS         
+41     PEGA        80.00   100.00     1.0000   CupHandle   
+42     PEBK        80.00   100.00     0.1510   POS         
+43     TMB         80.00   100.00     0.2375   POS         
+44     BGRO        80.00   100.00     0.1224   POS         
+45     TMUSI       80.00   100.00     0.3493   POS         
+46     EMPG        80.00   100.00     0.7005   nan         
+47     MBVIU       80.00   100.00     0.0894   POS         
+48     MBWM        80.00   100.00     0.1762   POS         
+49     JAPN        80.00   100.00     0.1125   POS         
+50     HWSM        80.00   100.00     0.2589   POS         
+
+================================================================================
