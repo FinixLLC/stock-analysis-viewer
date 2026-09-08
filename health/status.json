@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T02:15:03.091279",
+  "generated_at": "2026-09-08T03:15:02.114307",
   "overall": "critical",
   "checks": [
     {
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "None due yet today",
+      "detail": "1/3 due so far, all logged",
       "last_success": null
     }
   ]
