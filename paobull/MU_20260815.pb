@@ -10,7 +10,7 @@ ROE: 15.8% | D/E: 0.21 | FCF: $1.7B
 ---
 
 ## 1. Price Context & Technical Picture
-Micron is trading near its mid-52-week range at $971.66, implying neutral sentiment. RSI-14 of 54.4 and RSI-9 of 62.7 suggest moderate bullish momentum but no overextension. The short-term MA (883.92) is below the mid-term MA (949.62), indicating a sideways-neutral trend. Price action lacks clear patterns, suggesting consolidation rather than distribution or oversold conditions. **Stance:** Neutral; wait for better entry level.
+Micron is trading near its mid-52-week range at $971.66, implying neutral sentiment. RSI-14 of 54.4 and RSI-9 of 62.7 suggest moderate bullish momentum but no overextension. The short-term MA (883.92) is below the mid-term MA (949.62), indicating a sideways-neutral trend. Price action lacks clear patterns, suggesting consolidation rather than distribution or oversold conditions. Stance: Neutral; wait for better entry level.
 
 ---
 
@@ -19,30 +19,30 @@ Micron is trading near its mid-52-week range at $971.66, implying neutral sentim
 - FCF: $1.7B (1,278.5% YoY recovery).  
 - Debt/Equity: 0.21 (low leverage).  
 
-MU’s capital efficiency is driven by its IDM model, allowing control over production and pricing in cyclical memory markets. Strong R&D investment (10.2% of revenue) supports innovation but risks dilution during downturns. **Verdict:** Compounding engine intact but cyclical.
+MU’s capital efficiency is driven by its IDM model, allowing control over production and pricing in cyclical memory markets. Strong R&D investment (10.2% of revenue) supports innovation but risks dilution during downturns. Verdict: Compounding engine intact but cyclical.
 
 ---
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 AI/semiconductor growth → MU’s IDM scale → high market share in DRAM/NAND → FCF reinvestment into R&D and capacity → strengthens leadership.  
 
-**Part B — CapEx Cycle Risk:**  
+Part B — CapEx Cycle Risk:  
 - Foundry dependency: IDM model reduces risk but ties MU to cyclical memory demand.  
 - CapEx cycle: 2023 inventory overhang, 2024 recovery.  
 - Customer concentration: Data center (70%+ revenue) vs consumer (declining).  
 
-**Severity:** **HIGH** — Heavy reliance on data-center spending and inventory digestion risks.
+Severity: HIGH — Heavy reliance on data-center spending and inventory digestion risks.
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
-**Core Thesis:** MU is a leading memory supplier with improving FCF but faces cyclical risks. Peers like NVIDIA or Samsung face similar challenges but lack MU’s valuation upside.  
+Core Thesis: MU is a leading memory supplier with improving FCF but faces cyclical risks. Peers like NVIDIA or Samsung face similar challenges but lack MU’s valuation upside.  
 
-**Bull Case:** AI-driven demand lifts margins, FCF grows sustainably.  
-**Bear Case:** Inventory overhang persists, pricing pressure resumes.  
+Bull Case: AI-driven demand lifts margins, FCF grows sustainably.  
+Bear Case: Inventory overhang persists, pricing pressure resumes.  
 
-**Verdict:** **BUY** — Positive FCF trend and low D/E support entry.  
+Verdict: BUY — Positive FCF trend and low D/E support entry.  
 
 BUSINESS QUALITY:  
   Moat              85  Strong IDM model in memory.  
@@ -55,17 +55,17 @@ BUSINESS QUALITY:
 ---
 
 ## 5. Entry / Add-on / Exit Framework
-**Entry Ladder Justification:**  
+Entry Ladder Justification:  
 - $949.62 (mid-MA): Neutral support, aligns with FCF recovery.  
 - $883.92 (short-MA): Potential pullback from resistance.  
 - Stop Loss ($847.0): 10.8% below entry to limit cyclical risk.  
 - Target ($1255.0): 52-week high, aligns with bull case.  
 
-**Position Sizing:** Starter position (3–5% of portfolio). **Timeframe:** 18 months.  
+Position Sizing: Starter position (3–5% of portfolio). Timeframe: 18 months.  
 
-**BuyDeepDip Phase1 Failure:** MU failed due to only two years of positive FCF; needs three for qualification.  
+BuyDeepDip Phase1 Failure: MU failed due to only two years of positive FCF; needs three for qualification.  
 
-**Action Zones (PaoBull Predicted: $1255):**  
+Action Zones (PaoBull Predicted: $1255):  
   🟢 Add Aggressively   ≤ $1,004 — thesis intact       +1–2% portfolio  
   🟡 Add                $1,004 – $1,130               +0.5–1%  
   ⚪ Hold               $1,130 – $1,380               no change  
@@ -83,7 +83,7 @@ Supply Chain / Customer Chain: 65
 Sell-the-News Risk: 75  
 Other Factors: 70  
 
-**Key Driver:** AI/semiconductor adoption and MU’s IDM model are primary tailwinds, offset by cyclical risks.  
+Key Driver: AI/semiconductor adoption and MU’s IDM model are primary tailwinds, offset by cyclical risks.  
 
 --- 
 

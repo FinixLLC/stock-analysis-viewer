@@ -10,38 +10,38 @@ ROE: 4.4% | D/E: — | FCF: $17.6B
 ---
 
 ## 1. Price Context & Technical Picture
-GM is trading near its 52-week high, indicating strong investor sentiment. The RSI-9 of 52.8 suggests neutral momentum without overbought or oversold signals. With no moving averages available, the price position implies a healthy consolidation phase. **Stance:** Watch for a pullback before entering.
+GM is trading near its 52-week high, indicating strong investor sentiment. The RSI-9 of 52.8 suggests neutral momentum without overbought or oversold signals. With no moving averages available, the price position implies a healthy consolidation phase. Stance: Watch for a pullback before entering.
 
 ---
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue:** $185.0B (FY23), growing despite -1.3% YoY dip in FY24.
-- **FCF:** $17.6B (FY25), up 88.9% YoY, showing strong cash flow generation.
-- **R&D Investment:** 3.9% of revenue, supporting innovation.
+- Revenue: $185.0B (FY23), growing despite -1.3% YoY dip in FY24.
+- FCF: $17.6B (FY25), up 88.9% YoY, showing strong cash flow generation.
+- R&D Investment: 3.9% of revenue, supporting innovation.
 
-GM's capital efficiency is moderate due to low ROE (4.4%) and high reinvestment needs. While FCF growth is positive, the return on invested capital remains underwhelming. **Verdict:** Cautious compounding potential.
+GM's capital efficiency is moderate due to low ROE (4.4%) and high reinvestment needs. While FCF growth is positive, the return on invested capital remains underwhelming. Verdict: Cautious compounding potential.
 
 ---
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**
+Part A — Why This Company Can Compound:
 EV tech investment → Market leadership → Higher margins → More R&D funding.
 
-**Durability Verdict:** Strong, contingent on successful execution of EV strategy.
+Durability Verdict: Strong, contingent on successful execution of EV strategy.
 
-**Part B — Business Model Risks:**
-1. **Transition Risk:** High investment in EVs with uncertain returns.
-2. **Supply Chain Complexity:** Managing EV components is challenging.
-3. **Regulatory Uncertainty:** Varying global regulations pose risks.
+Part B — Business Model Risks:
+1. Transition Risk: High investment in EVs with uncertain returns.
+2. Supply Chain Complexity: Managing EV components is challenging.
+3. Regulatory Uncertainty: Varying global regulations pose risks.
 
-**Severity:** Medium, due to execution challenges and market competition.
+Severity: Medium, due to execution challenges and market competition.
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
-GM is transitioning well to EVs with strong FCF growth but faces high debt levels. Compared to Tesla, GM's valuation seems reasonable but hinges on execution. **Bull Case:** Successful EV transition boosts margins. **Bear Case:** High debt slows growth amid competition.
+GM is transitioning well to EVs with strong FCF growth but faces high debt levels. Compared to Tesla, GM's valuation seems reasonable but hinges on execution. Bull Case: Successful EV transition boosts margins. Bear Case: High debt slows growth amid competition.
 
-**Verdict:** WATCH — stock near 52-week high without pullback.
+Verdict: WATCH — stock near 52-week high without pullback.
 
 ---
 
@@ -59,10 +59,10 @@ Management        70  Competent leadership driving EV strategy.
 ---
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($84.5):** Support near historical lows, good risk-reward.
-- **Add-on ($82.0):** Further pullback to test support levels.
-- **Stop Loss ($79.5):** Protects against significant downside.
-- **Target ($101.5):** Reflects upside potential from EV growth.
+- Entry ($84.5): Support near historical lows, good risk-reward.
+- Add-on ($82.0): Further pullback to test support levels.
+- Stop Loss ($79.5): Protects against significant downside.
+- Target ($101.5): Reflects upside potential from EV growth.
 
 Position sizing: Starter position (3-4% of portfolio) with an 18-month horizon.
 
@@ -78,7 +78,7 @@ Sell-the-News Risk: 70
 Other Factors: 65
 ```
 
-**Key Driver:** Strong fundamentals and industry trends support GM's growth, but market headwinds and regulatory risks temper expectations.
+Key Driver: Strong fundamentals and industry trends support GM's growth, but market headwinds and regulatory risks temper expectations.
 
 ---
 

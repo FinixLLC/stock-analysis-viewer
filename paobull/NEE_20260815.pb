@@ -12,7 +12,7 @@ ROE: 12.5% | D/E: 1.7 | FCF: $12.5B
 ## 1. Price Context & Technical Picture
 NEE is trading ~24.5% above its 52-week low but -12.7% below its high, suggesting a cautious market sentiment. With RSI-9 at 46.1 (below 50), momentum is neutral to bearish, and no divergence signals are present. The lack of MA data leaves us inferring from price action: the stock has retraced ~80% of its peak-to-trough decline since mid-2023, indicating consolidation rather than a clear trend.  
 
-Stance: **Supports entry now** — the pullback aligns with technical consolidation, and fundamentals remain intact.
+Stance: Supports entry now — the pullback aligns with technical consolidation, and fundamentals remain intact.
 
 ---
 
@@ -23,7 +23,7 @@ Stance: **Supports entry now** — the pullback aligns with technical consolidat
 
 NEE’s capital efficiency stems from its regulated utility model, which locks in pricing and cash flows via long-term contracts. Its partnerships with suppliers like Vestas and Siemens Gamesa reinforce operational scale. However, revenue decline signals potential execution challenges or regulatory headwinds.  
 
-Verdict: **Compounding engine is intact but slowing**.
+Verdict: Compounding engine is intact but slowing.
 
 ---
 
@@ -31,24 +31,24 @@ Verdict: **Compounding engine is intact but slowing**.
 ### Part A — Why This Company Can Compound:  
 Supplier partnerships ( Vestas → Siemens Gamesa ) → Long-term contracts → Steady cash flows → Regulatory asset base growth → Higher rate-base applications.  
 
-Durability verdict: **Strong** — NEE’s ecosystem reinforces its market position through locked-in supply chains and regulatory tailwinds.  
+Durability verdict: Strong — NEE’s ecosystem reinforces its market position through locked-in supply chains and regulatory tailwinds.  
 
 ### Part B — Leverage Rate Risk  
 - Rate-base growth is moderate, with FFO/debt coverage stable but not exceptional.  
 - Debt maturity schedule is manageable, but D/E ratio of 1.7 leaves limited margin for rising discount rates or regulatory lag.  
 
-Severity: **MEDIUM** — Regulatory delays could strain cash flow reinvestment and asset valuations.
+Severity: MEDIUM — Regulatory delays could strain cash flow reinvestment and asset valuations.
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
 Core thesis: NEE’s regulated utility model provides stable cash flows, supported by long-term contracts and partnerships. Its FCF growth outpaces peers like Duke Energy (DUK) and Dominion Energy (D).  
 
-**Bull Case:** Regulatory approvals accelerate, unlocking higher rate-base growth and valuation expansion.  
+Bull Case: Regulatory approvals accelerate, unlocking higher rate-base growth and valuation expansion.  
 
-**Bear Case:** Regulatory lag delays rate hikes, compressing margins and cash flow reinvestment.  
+Bear Case: Regulatory lag delays rate hikes, compressing margins and cash flow reinvestment.  
 
-Verdict: **BUY** — FCF is growing, D/E < 2, and fundamentals justify entry despite technical consolidation.  
+Verdict: BUY — FCF is growing, D/E < 2, and fundamentals justify entry despite technical consolidation.  
 
 BUSINESS QUALITY:  
   Moat              85  Strong supplier partnerships and regulatory tailwinds.  
@@ -62,12 +62,12 @@ BUSINESS QUALITY:
 
 ## 5. Entry / Add-on / Exit Framework
 Entry ladder rationale:  
-- **$84.5**: Support near 2023 lows, aligning with FCF growth and technical consolidation.  
-- **$83.0**: Additional pullback to test long-term support levels.  
-- **$81.5**: Stop loss at 3.6% below entry to limit downside risk.  
-- **$98.75**: Target at 52-week high, reflecting potential valuation expansion.  
+- $84.5: Support near 2023 lows, aligning with FCF growth and technical consolidation.  
+- $83.0: Additional pullback to test long-term support levels.  
+- $81.5: Stop loss at 3.6% below entry to limit downside risk.  
+- $98.75: Target at 52-week high, reflecting potential valuation expansion.  
 
-Position sizing: **Starter** (3–4% of portfolio). Timeframe: 18 months.  
+Position sizing: Starter (3–4% of portfolio). Timeframe: 18 months.  
 
 BuyDeepDip phase1 failed due to D/E > 0.6; requalification requires D/E < 0.6 or significant regulatory tailwinds.  
 

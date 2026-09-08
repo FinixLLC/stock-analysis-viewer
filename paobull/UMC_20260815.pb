@@ -12,7 +12,7 @@ ROE: — | D/E: — | FCF: —
 ## 1. Price Context & Technical Picture
 UMC is trading at $19.15, down 34% from its 52-week high of $28.96 but up 192% from its low of $6.56. This wide range suggests significant volatility and investor uncertainty. The RSI-9 of 45.3 indicates moderate undervaluation or consolidation, while the lack of RSI-14 data leaves momentum unclear. With no moving average or trend signals available, we infer that UMC is in a healthy consolidation phase after a sharp rally from its lows.  
 
-**Stance:** Wait for better level — current price sits near resistance but lacks clear momentum confirmation.
+Stance: Wait for better level — current price sits near resistance but lacks clear momentum confirmation.
 
 ---
 
@@ -22,32 +22,32 @@ UMC is trading at $19.15, down 34% from its 52-week high of $28.96 but up 192% f
 
 UMC’s fundamentals are opaque due to missing data on revenue, FCF growth, and net income. However, its role as a key semiconductor foundry suggests potential capital efficiency through scale and customer stickiness. The lack of financial trend data limits confidence in compounding ability.  
 
-**Verdict:** Limited visibility but attractive P/FCF ratio if cash flow is stable.
+Verdict: Limited visibility but attractive P/FCF ratio if cash flow is stable.
 
 ---
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 AMD → UMC (supplier) → Xilinx (customer) → AI-driven demand → UMC expands capacity → strengthens AMD/Xilinx partnerships → reinforces UMC’s position as a critical foundry.  
 
-**Durability Verdict:** Strong if UMC maintains its role in high-growth semiconductor supply chains.  
+Durability Verdict: Strong if UMC maintains its role in high-growth semiconductor supply chains.  
 
-**Part B — Capex Cycle Risk:**  
+Part B — Capex Cycle Risk:  
 - Foundry dependency: Fab-lite model exposes UMC to external capacity constraints and pricing power from customers.  
 - Customer concentration: Heavy reliance on AMD and Xilinx in AI/data center markets introduces risk if demand falters.  
 
-**Severity:** **MEDIUM** — dependency on a few key customers and limited control over capacity could amplify cyclical risks.
+Severity: MEDIUM — dependency on a few key customers and limited control over capacity could amplify cyclical risks.
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
 Core thesis: UMC benefits from secular growth in semiconductors, particularly AI-driven demand, but faces execution risk due to foundry dependency.  
 
-**Bull Case:** Strong AI adoption drives AMD/Xilinx revenue, reinforcing UMC’s position as a critical supplier.  
+Bull Case: Strong AI adoption drives AMD/Xilinx revenue, reinforcing UMC’s position as a critical supplier.  
 
-**Bear Case:** Semiconductor demand slows, leading to inventory buildup and pricing pressure on UMC.  
+Bear Case: Semiconductor demand slows, leading to inventory buildup and pricing pressure on UMC.  
 
-**Verdict:** PASS — limited fundamental visibility and high capex cycle risk outweigh current valuation appeal.  
+Verdict: PASS — limited fundamental visibility and high capex cycle risk outweigh current valuation appeal.  
 
 BUSINESS QUALITY:  
   Moat              50  [Dependent on AMD/Xilinx relationships]  
@@ -62,14 +62,14 @@ BUSINESS QUALITY:
 ## 5. Entry / Add-on / Exit Framework
 The entry ladder reflects UMC’s technical support levels and potential reversal points:  
 
-- **Entry:** $18.0 — justified by consolidation near key support after a sharp rally.  
-- **Add-on:** $16.5 — represents deeper undervaluation, potentially signaling capitulation.  
-- **Stop Loss:** $15.5 — 13.9% below entry, capturing downside risk.  
-- **Target:** $28.96 — 52-week high, aligning with potential upside from AI demand.  
+- Entry: $18.0 — justified by consolidation near key support after a sharp rally.  
+- Add-on: $16.5 — represents deeper undervaluation, potentially signaling capitulation.  
+- Stop Loss: $15.5 — 13.9% below entry, capturing downside risk.  
+- Target: $28.96 — 52-week high, aligning with potential upside from AI demand.  
 
-**Position Sizing:** Starter (2–3% of portfolio) — limited to reflect high risk and uncertainty.  
+Position Sizing: Starter (2–3% of portfolio) — limited to reflect high risk and uncertainty.  
 
-**BuyDeepDip Phase1 Failure:** UMC failed due to insufficient FCF positivity (only 0 years). Re-qualification requires at least 3 years of positive FCF.  
+BuyDeepDip Phase1 Failure: UMC failed due to insufficient FCF positivity (only 0 years). Re-qualification requires at least 3 years of positive FCF.  
 
 ACTION ZONES (PaoBull Predicted: $28.96):  
   🟢 Add Aggressively   ≤ $23.17 — thesis intact       +1–2% portfolio  
@@ -88,5 +88,5 @@ Supply Chain / Customer Chain: 60
 Sell-the-News Risk: 80  
 Other Factors: 50  
 
-**Key Driver:** UMC’s exposure to AI-driven semiconductor demand provides a tailwind, but execution risk and limited visibility temper optimism.
+Key Driver: UMC’s exposure to AI-driven semiconductor demand provides a tailwind, but execution risk and limited visibility temper optimism.
 

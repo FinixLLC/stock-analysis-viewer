@@ -20,22 +20,22 @@ WELL is trading at $239.22, 6.3% below its 52-week high of $255.2 but 46.1% abov
 WELL demonstrates strong revenue and FCF growth, driven by a healthcare-focused real estate model with consistent demand. However, the low ROE reflects poor capital efficiency, despite manageable leverage (DE ratio 0.46). While fundamentals are solid, inefficiencies in capital use remain a concern.
 
 ## 3. Industry-Specific Risk
-**Severity:** MEDIUM  
+Severity: MEDIUM  
 WELL faces moderate refinancing rate risk due to potential interest rate hikes affecting borrowing costs and profitability. The healthcare REIT sector is sensitive to cap rate expansion, which could impact NAV relative to peers. While debt levels are manageable, rising rates pose a significant challenge.
 
 ## 4. Investment Thesis & Peer Comparison
-**Core Thesis:** WELL benefits from strong demand in healthcare real estate but faces risks from rising interest rates. Valuation at P/FCF of 62.54x is reasonable compared to peers like HCP and UHS.
+Core Thesis: WELL benefits from strong demand in healthcare real estate but faces risks from rising interest rates. Valuation at P/FCF of 62.54x is reasonable compared to peers like HCP and UHS.
 
-**Bull Case:** Continued revenue growth and FCF expansion underpin long-term value.
-**Bear Case:** Rising interest rates could strain financial performance and valuation multiples.
+Bull Case: Continued revenue growth and FCF expansion underpin long-term value.
+Bear Case: Rising interest rates could strain financial performance and valuation multiples.
 
-**Verdict:** WATCH (Speculative)
+Verdict: WATCH (Speculative)
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($237.06):** Near short MA, indicating potential support.
-- **Add-on ($230.78):** Mid MA suggests further consolidation.
-- **Stop Loss ($228.5):** Mitigates risk below key support levels.
-- **Target ($284.5):** Reflects upside potential with a favorable R/R ratio of 5.5:1.
+- Entry ($237.06): Near short MA, indicating potential support.
+- Add-on ($230.78): Mid MA suggests further consolidation.
+- Stop Loss ($228.5): Mitigates risk below key support levels.
+- Target ($284.5): Reflects upside potential with a favorable R/R ratio of 5.5:1.
 
 WELL does not qualify for dip entry due to high dilution (12.4%/yr). Requalification may occur if dilution slows, improving shareholder value alignment.
 

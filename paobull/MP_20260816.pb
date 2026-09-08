@@ -10,7 +10,7 @@ ROE: -4.3% | D/E: 0.5 | FCF: $-328M
 ---
 
 ## 1. Price Context & Technical Picture
-MP is trading at $58.74, down 41.4% from its 52-week high of $100.25 but up 55.4% from its low of $37.81. The stock has retraced nearly half its drawdown, suggesting some sentiment recovery. RSI_9 at 76.2 indicates short-term overbought conditions, while the absence of RSI_14 and MA data limits momentum analysis. Price action shows a consolidation phase after a sharp decline, with no clear trend reversal signals. **Stance:** Avoid — MP is trading near its 52-week low but lacks strong technical confirmation for a bottom.
+MP is trading at $58.74, down 41.4% from its 52-week high of $100.25 but up 55.4% from its low of $37.81. The stock has retraced nearly half its drawdown, suggesting some sentiment recovery. RSI_9 at 76.2 indicates short-term overbought conditions, while the absence of RSI_14 and MA data limits momentum analysis. Price action shows a consolidation phase after a sharp decline, with no clear trend reversal signals. Stance: Avoid — MP is trading near its 52-week low but lacks strong technical confirmation for a bottom.
 
 ## 2. Fundamentals & Capital Efficiency
 - Revenue: $224M (10.1% YoY growth)
@@ -18,26 +18,26 @@ MP is trading at $58.74, down 41.4% from its 52-week high of $100.25 but up 55.4
 - Net Income: -$86M
 - Debt/Equity: 0.5x
 
-MP's revenue growth is positive but overshadowed by deteriorating free cash flow, which has turned negative in recent years. The company’s ability to generate sustainable profits is questionable, given the negative ROE and lack of pricing power. **Verdict:** MP lacks capital efficiency and struggles to compound value.
+MP's revenue growth is positive but overshadowed by deteriorating free cash flow, which has turned negative in recent years. The company’s ability to generate sustainable profits is questionable, given the negative ROE and lack of pricing power. Verdict: MP lacks capital efficiency and struggles to compound value.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**
+Part A — Why This Company Can Compound:
 MP’s business model relies on raw material sourcing → processing into finished products → selling to manufacturers. However, without pricing power or a moat, this chain does not reinforce competitive advantages.
 
-**Part B — Business Model Risks:**
-1. **Cyclicality in Basic Materials:** MP operates in a cyclical sector with volatile demand and margins.
-2. **Negative FCF Trend:** Persistent cash flow issues threaten financial flexibility and growth.
-3. **Lack of Pricing Power:** MP faces intense competition, limiting its ability to pass costs onto customers.
+Part B — Business Model Risks:
+1. Cyclicality in Basic Materials: MP operates in a cyclical sector with volatile demand and margins.
+2. Negative FCF Trend: Persistent cash flow issues threaten financial flexibility and growth.
+3. Lack of Pricing Power: MP faces intense competition, limiting its ability to pass costs onto customers.
 
-**Severity: HIGH** — MP’s structural risks are severe due to poor capital efficiency and competitive pressures.
+Severity: HIGH — MP’s structural risks are severe due to poor capital efficiency and competitive pressures.
 
 ## 4. Investment Thesis & Peer Comparison
 MP Materials is a speculative play on recovering demand in the basic materials sector. While revenue growth suggests some underlying strength, negative FCF and weak profitability make it a high-risk investment. Comparing to peers like NEM or MKT, MP appears undervalued but lacks their financial stability.
 
-**Bull Case:** Improved market conditions could drive revenue growth and cash flow recovery.
-**Bear Case:** Prolonged weakness in the sector could exacerbate losses and debt concerns.
+Bull Case: Improved market conditions could drive revenue growth and cash flow recovery.
+Bear Case: Prolonged weakness in the sector could exacerbate losses and debt concerns.
 
-**Verdict:** PASS — MP’s fundamentals are weak, with negative FCF and high business model risks. Avoid until clear signs of improvement emerge.
+Verdict: PASS — MP’s fundamentals are weak, with negative FCF and high business model risks. Avoid until clear signs of improvement emerge.
 
 BUSINESS QUALITY:
   Moat              20  [No significant competitive advantage]

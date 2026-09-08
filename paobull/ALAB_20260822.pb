@@ -20,18 +20,18 @@ ALAB is trading at $284.97, down 43% from its 52-week high but up nearly 191% fr
 ALAB's strong revenue and FCF growth, driven by innovation in semiconductors, highlights efficient capital allocation. The high R&D investment suggests focus on maintaining a competitive edge. ROE of 16.1% is solid but could improve with scale. Overall, the company demonstrates robust cash flow generation.
 
 ## 3. Industry-Specific Risk
-ALAB operates as fab-lite, relying on foundries which poses risk during capex cycles. Their revenue concentration in data centers (stable) versus consumer markets (volatile) mitigates some risk but not entirely. Inventory digestion could be a challenge if demand falters. **Risk Severity: MEDIUM** due to foundry dependency and market concentration.
+ALAB operates as fab-lite, relying on foundries which poses risk during capex cycles. Their revenue concentration in data centers (stable) versus consumer markets (volatile) mitigates some risk but not entirely. Inventory digestion could be a challenge if demand falters. Risk Severity: MEDIUM due to foundry dependency and market concentration.
 
 ## 4. Investment Thesis & Peer Comparison
 Core thesis: ALAB's strong growth and cash flow make it attractive despite technical weakness. Compared to SK Hynix, ALAB offers higher revenue growth but at a lower valuation. Bull case: Continued growth in data center solutions drives sustained FCF. Bear case: Inventory issues or macroeconomic downturns could hurt performance.
 
-**Verdict:** BUY
+Verdict: BUY
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($255):** Support level near long-term MA, indicating potential reversal.
-- **Add-on ($219.11):** Long-term MA anchor, signaling further consolidation.
-- **Stop Loss ($204):** Protects against significant downside.
-- **Target ($499.476):** 52-week high, reflecting upside potential.
+- Entry ($255): Support level near long-term MA, indicating potential reversal.
+- Add-on ($219.11): Long-term MA anchor, signaling further consolidation.
+- Stop Loss ($204): Protects against significant downside.
+- Target ($499.476): 52-week high, reflecting upside potential.
 
 Position sizing: Starter (5% of portfolio). Timeframe: 18 months for growth realization. ALAB doesn't qualify for dip entry due to insufficient FCF years; requalification requires three consecutive positive FCF years.
 

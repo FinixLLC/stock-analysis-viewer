@@ -12,46 +12,46 @@ ROE: -69.2% | D/E: — | FCF: $1.1B
 ## 1. Price Context & Technical Picture
 Snowflake (SNOW) is trading near its 52-week high, with a modest pullback of -3.8% from the peak. The stock has rebounded strongly (+178%) from its 52-week low, signaling investor confidence despite elevated valuations. RSI-9 at 69.8 suggests moderate momentum but no overbought conditions yet. With limited MA data, we infer that the price action reflects a healthy uptrend with no signs of distribution or capitulation.  
 
-**Stance:** Supports entry now — fundamentals justify current levels, and the stock remains in a strong technical zone.
+Stance: Supports entry now — fundamentals justify current levels, and the stock remains in a strong technical zone.
 
 ---
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue Growth (5y CAGR):** ~30% YoY, accelerating to $4.7B in FY26.  
-- **FCF Growth:** Improved from $94M in 2022 to $1.1B in 2026, with a healthy FCF/Revenue ratio (~23%).  
-- **Net Income:** Negative ($-1.3B latest), but improving as scale benefits kick in.  
+- Revenue Growth (5y CAGR): ~30% YoY, accelerating to $4.7B in FY26.  
+- FCF Growth: Improved from $94M in 2022 to $1.1B in 2026, with a healthy FCF/Revenue ratio (~23%).  
+- Net Income: Negative ($-1.3B latest), but improving as scale benefits kick in.  
 
 Snowflake’s business model is asset-light and highly scalable, driven by switching costs embedded in its cloud data platform. Pricing power is strong due to the criticality of its product for modern enterprises. The company reinvests heavily (42% R&D) to maintain its competitive edge, which supports long-term growth but weighs on near-term profitability.  
 
-**Verdict:** Strong compounding engine with improving capital efficiency.
+Verdict: Strong compounding engine with improving capital efficiency.
 
 ---
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 Cloud adoption → Snowflake’s data warehousing platform → increased customer reliance → recurring revenue streams → reinvested in R&D and marketing → stronger competitive position.  
 
 This virtuous cycle is reinforced by the growing importance of data analytics in enterprise decision-making, creating a flywheel effect for Snowflake.  
 
-**Durability Verdict:** High — structural advantages are durable, but execution matters.  
+Durability Verdict: High — structural advantages are durable, but execution matters.  
 
-**Part B — Business Model Risks:**  
-1. **Competition from hyperscalers (AWS, Google Cloud):** Direct substitutes with pricing power. (**HIGH**)  
-2. **Dependence on cloud trends:** Cyclical demand risks if enterprise IT spending slows. (**MEDIUM**)  
-3. **High R&D costs:** Sustaining growth requires significant reinvestment, which could strain margins. (**MEDIUM**)  
+Part B — Business Model Risks:  
+1. Competition from hyperscalers (AWS, Google Cloud): Direct substitutes with pricing power. (HIGH)  
+2. Dependence on cloud trends: Cyclical demand risks if enterprise IT spending slows. (MEDIUM)  
+3. High R&D costs: Sustaining growth requires significant reinvestment, which could strain margins. (MEDIUM)  
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
-**Core Thesis:** Snowflake is a leader in the cloud data platform market with strong FCF growth and a defensible moat. Its ability to monetize enterprise data needs positions it well for long-term compounding.  
+Core Thesis: Snowflake is a leader in the cloud data platform market with strong FCF growth and a defensible moat. Its ability to monetize enterprise data needs positions it well for long-term compounding.  
 
-**Bull Case:** Accelerating cloud adoption and AI-driven data demand could supercharge revenue growth, driving FCF expansion beyond expectations.  
+Bull Case: Accelerating cloud adoption and AI-driven data demand could supercharge revenue growth, driving FCF expansion beyond expectations.  
 
-**Bear Case:** Intensified competition from hyperscalers or a slowdown in enterprise IT spending could pressure margins and market share.  
+Bear Case: Intensified competition from hyperscalers or a slowdown in enterprise IT spending could pressure margins and market share.  
 
-**Verdict:** **BUY — Strong fundamentals with improving FCF and manageable debt.**  
+Verdict: BUY — Strong fundamentals with improving FCF and manageable debt.  
 
-**Business Quality Scorecard:**  
+Business Quality Scorecard:  
   Moat              85  Strong switching costs and network effects.  
   Capital Alloc     70  High R&D investment, but FCF conversion improving.  
   Balance Sheet     75  Low leverage (no D/E data), healthy cash flow.  
@@ -62,15 +62,15 @@ This virtuous cycle is reinforced by the growing importance of data analytics in
 ---
 
 ## 5. Entry / Add-on / Exit Framework
-**Entry Ladder Justification:**  
-- **$315.5 (Entry):** Near-term support level, aligns with FCF-driven valuation.  
-- **$301.5 (Add-on):** Reflects a pullback to consolidate gains, supported by strong fundamentals.  
-- **$288.0 (Stop Loss):** 8.7% below entry, marks capitulation or fundamental deterioration.  
-- **$378.5 (Target):** Based on FCF growth and market expansion potential.  
+Entry Ladder Justification:  
+- $315.5 (Entry): Near-term support level, aligns with FCF-driven valuation.  
+- $301.5 (Add-on): Reflects a pullback to consolidate gains, supported by strong fundamentals.  
+- $288.0 (Stop Loss): 8.7% below entry, marks capitulation or fundamental deterioration.  
+- $378.5 (Target): Based on FCF growth and market expansion potential.  
 
-**Position Sizing:** Starter position (~1–2% of portfolio).  
+Position Sizing: Starter position (~1–2% of portfolio).  
 
-**Action Zones (PaoBull Predicted: $378.5):**  
+Action Zones (PaoBull Predicted: $378.5):  
   🟢 Add Aggressively   ≤ $303 — thesis intact       +1–2% portfolio  
   🟡 Add                $303 – $340                 +0.5–1%  
   ⚪ Hold               $340 – $417                 no change  
@@ -88,5 +88,5 @@ Supply Chain / Customer Chain: 75
 Sell-the-News Risk: 70  
 Other Factors: 70  
 
-**Key Driver:** Strong fundamentals and industry tailwinds outweigh near-term valuation concerns, supporting a bullish outlook.
+Key Driver: Strong fundamentals and industry tailwinds outweigh near-term valuation concerns, supporting a bullish outlook.
 

@@ -10,7 +10,7 @@ ROE: 2.3% | D/E: 2.12 | FCF: $-105M
 ---
 
 ## 1. Price Context & Technical Picture
-LITE is trading near its 52-week low, down 72% from its high, suggesting significant investor skepticism. The RSI-9 of 61.2 indicates neutral momentum, neither overbought nor oversold. With no MA data available, the price action reflects a consolidation phase following a sharp decline. Sentiment appears cautious but not panic-driven. **Stance:** Wait for better entry level.
+LITE is trading near its 52-week low, down 72% from its high, suggesting significant investor skepticism. The RSI-9 of 61.2 indicates neutral momentum, neither overbought nor oversold. With no MA data available, the price action reflects a consolidation phase following a sharp decline. Sentiment appears cautious but not panic-driven. Stance: Wait for better entry level.
 
 ## 2. Fundamentals & Capital Efficiency
 - Revenue: $1.6B (21% YoY growth)  
@@ -18,13 +18,13 @@ LITE is trading near its 52-week low, down 72% from its high, suggesting signifi
 - Debt/Equity: 2.12 (high leverage)  
 - R&D: 18.5% of revenue (significant investment in innovation)  
 
-LITE’s business model relies on high R&D spending to maintain technological leadership, but its inability to convert growth into positive free cash flow raises concerns about capital efficiency. The company’s heavy debt load further strains financial flexibility. **Verdict:** Poor capital efficiency due to negative FCF and high leverage.
+LITE’s business model relies on high R&D spending to maintain technological leadership, but its inability to convert growth into positive free cash flow raises concerns about capital efficiency. The company’s heavy debt load further strains financial flexibility. Verdict: Poor capital efficiency due to negative FCF and high leverage.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
-LITE’s laser technology leadership → attracts cloud infrastructure customers → drives revenue growth → funds R&D for next-gen solutions → reinforces market position. **Durability Verdict:** Moderate, as execution risks could disrupt the cycle.
+Part A — Why This Company Can Compound:  
+LITE’s laser technology leadership → attracts cloud infrastructure customers → drives revenue growth → funds R&D for next-gen solutions → reinforces market position. Durability Verdict: Moderate, as execution risks could disrupt the cycle.
 
-**Part B — Business Model Risk:**
+Part B — Business Model Risk:
 - Cyclicality in optics demand (MEDIUM)  
 - High debt levels (MEDIUM)  
 - Inefficient R&D spending (HIGH)
@@ -32,10 +32,10 @@ LITE’s laser technology leadership → attracts cloud infrastructure customers
 ## 4. Investment Thesis & Peer Comparison
 LITE is a cloud infrastructure supplier benefiting from AI-driven data growth, but its execution risks and financial health concerns weigh on the thesis. Comparing to Ciena (a peer), LITE trades at similar multiples but with weaker FCF and higher debt.  
 
-**Bull Case:** Strong AI demand could drive revenue growth and improve margins.  
-**Bear Case:** Weak FCF and high leverage could limit growth and trigger investor skepticism.  
+Bull Case: Strong AI demand could drive revenue growth and improve margins.  
+Bear Case: Weak FCF and high leverage could limit growth and trigger investor skepticism.  
 
-**Verdict:** PASS — Thesis is weak due to negative FCF, high D/E, and execution risks.  
+Verdict: PASS — Thesis is weak due to negative FCF, high D/E, and execution risks.  
 
 BUSINESS QUALITY:  
   Moat              50  Strong tech leadership but unproven moat.  

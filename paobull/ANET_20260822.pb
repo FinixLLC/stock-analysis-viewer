@@ -20,22 +20,22 @@ ANET is trading near its short-term moving average at $187.25, suggesting potent
 ANET's asset-light model and high R&D investment (13.7%) drive innovation and market leadership. The company's strong ROE and revenue growth indicate efficient capital use, though FCF dips warrant monitoring.
 
 ## 3. Industry-Specific Risk
-- **High R&D Intensity**: Risk of technological obsolescence.
-- **Intense Competition**: From Cisco, Huawei, etc., threatening market share.
-- **Cloud Dependence**: Exposure to cyclicality in cloud infrastructure spending.
+- High R&D Intensity: Risk of technological obsolescence.
+- Intense Competition: From Cisco, Huawei, etc., threatening market share.
+- Cloud Dependence: Exposure to cyclicality in cloud infrastructure spending.
 
-**Severity: MEDIUM** - Risks are significant but manageable with strong R&D and market positioning.
+Severity: MEDIUM - Risks are significant but manageable with strong R&D and market positioning.
 
 ## 4. Investment Thesis & Peer Comparison
 ANET's fundamentals are robust, but valuation is a headwind compared to peers like CSCO (P/FCF 20x vs ANET's 35x). Bull case: sustained growth and leadership in cloud networking. Bear case: FCF issues and competitive pressures.
 
-**Verdict:** BUY
+Verdict: BUY
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($187.25)**: Near short MA, indicating support.
-- **Add-on ($176.62)**: Mid-term average, potential reversal point.
-- **Stop Loss ($172.0)**: Protects against significant downside.
-- **Target ($224.5)**: Reflects growth potential.
+- Entry ($187.25): Near short MA, indicating support.
+- Add-on ($176.62): Mid-term average, potential reversal point.
+- Stop Loss ($172.0): Protects against significant downside.
+- Target ($224.5): Reflects growth potential.
 
 Position sizing: Starter position (5% of portfolio). Timeframe: 18 months for growth realization.
 

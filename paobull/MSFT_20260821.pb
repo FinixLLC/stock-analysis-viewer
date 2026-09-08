@@ -23,18 +23,18 @@ MSFT is trading at $483.24, above its 52-week low of $349.20 but below its high 
 MSFT's efficiency stems from high switching costs and a robust ecosystem, despite minor FCF fluctuations. The company's prudent capital allocation supports strong profitability trends.
 
 ## 3. Industry-Specific Risk
-**HIGH**: Intense cloud competition from AWS and Google could erode market share.
-**MEDIUM**: Reliance on AI advancements for growth poses technological risks.
-**LOW**: Regulatory scrutiny, though a concern, is manageable with current strategies.
+HIGH: Intense cloud competition from AWS and Google could erode market share.
+MEDIUM: Reliance on AI advancements for growth poses technological risks.
+LOW: Regulatory scrutiny, though a concern, is manageable with current strategies.
 
 ## 4. Investment Thesis & Peer Comparison
 MSFT's strong fundamentals and strategic investments position it well despite minor FCF dips. Compared to AWS (AMZN) and Google (GOOGL), MSFT offers better ROE and lower debt. Bull case: Continued cloud growth and AI innovation drive revenue. Bear case: Intense competition and regulatory challenges impact margins. Verdict: BUY with a favorable 5.9:1 R/R ratio.
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($471)**: Near short-term MA support, aligning with technical strength.
-- **Add-on ($463.04)**: Short MA level, reinforcing support.
-- **Stop Loss ($457)**: Provides a 3% buffer below entry.
-- **Target ($553.72)**: Aims for the 52-week high.
+- Entry ($471): Near short-term MA support, aligning with technical strength.
+- Add-on ($463.04): Short MA level, reinforcing support.
+- Stop Loss ($457): Provides a 3% buffer below entry.
+- Target ($553.72): Aims for the 52-week high.
 
 Position sizing建议：3-5% of portfolio as a core holding, with an 18-month timeframe to capture growth opportunities.
 

@@ -13,14 +13,14 @@ ROE: 6.9% | D/E: 0.0 | FCF: $6.7B
 AMD is trading at $473.25, down 19% from its 52-week high but up 217% from its low, indicating a strong recovery but cautious sentiment. RSI signals bearish momentum with both 14-day and 9-day below 50. Moving averages suggest resistance at $483.55 (short-term) and $509.82 (mid-term), while the long-term MA at $330.36 is far below, showing a neutral trend. Sentiment is cautious; wait for better entry levels.
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue Growth**: 34.3% YoY, strong expansion.
-- **FCF Growth**: 180% YoY, improving cash flow.
-- **ROE**: 6.9%, below sector average.
+- Revenue Growth: 34.3% YoY, strong expansion.
+- FCF Growth: 180% YoY, improving cash flow.
+- ROE: 6.9%, below sector average.
   
 AMD's revenue growth and FCF improvement highlight efficient operations, but ROE is underwhelming. High R&D investment (23.4%) drives innovation but may strain margins. Verdict: Solid fundamentals with room for efficiency gains.
 
 ## 3. Industry-Specific Risk
-**Severity: MEDIUM**
+Severity: MEDIUM
 AMD's fab-lite model makes it dependent on foundries, posing supply risks. Focus on data centers offers stability, while consumer exposure adds volatility. Inventory and customer concentration risks are moderate but significant in a cyclical industry.
 
 ## 4. Investment Thesis & Peer Comparison

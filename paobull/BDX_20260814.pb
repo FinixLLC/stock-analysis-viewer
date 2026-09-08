@@ -12,18 +12,18 @@ ROE: 6.6% | D/E: 0.69 | FCF: $3.5B
 ## 1. Price Context & Technical Picture
 BDX is trading near its 52-week high at $183.4, just below the peak of $187.35. This suggests strong recent sentiment but limited upside momentum given the stock has retraced only 2.1% from its high. The RSI-9 at 80.1 indicates overbought conditions in the short term, with no pullback to confirm strength. The lack of MA or trend data limits technical analysis, but the price action implies a healthy consolidation near resistance.  
 
-**Stance:** Avoid — wait for a 5% pullback from highs before considering entry.  
+Stance: Avoid — wait for a 5% pullback from highs before considering entry.  
 
 ---
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue:** $19.4B in 2023, growing at 8.2% YoY.  
-- **FCF:** $3.5B latest, but FCF growth is negative (-2.4% YoY).  
-- **D/E Ratio:** 0.69, below the threshold for BuyDeepDip eligibility (D/E > 0.6).  
+- Revenue: $19.4B in 2023, growing at 8.2% YoY.  
+- FCF: $3.5B latest, but FCF growth is negative (-2.4% YoY).  
+- D/E Ratio: 0.69, below the threshold for BuyDeepDip eligibility (D/E > 0.6).  
 
 BDX’s capital efficiency is driven by its asset-light model and recurring revenue streams in healthcare supplies. However, FCF growth has stalled, raising concerns about reinvestment returns. The balance sheet remains strong, but the lack of FCF momentum weakens compounding potential.  
 
-**Verdict:** Compounding engine shows signs of strain; quality over quantity is key.  
+Verdict: Compounding engine shows signs of strain; quality over quantity is key.  
 
 ---
 
@@ -31,24 +31,24 @@ BDX’s capital efficiency is driven by its asset-light model and recurring reve
 ### Part A — Why This Company Can Compound:  
 R&D investment → medical innovation leadership → increased market share → higher FCF → reinvested in R&D and acquisitions.  
 
-**Durability Verdict:** Strong, but slowing FCF growth signals potential execution challenges.  
+Durability Verdict: Strong, but slowing FCF growth signals potential execution challenges.  
 
 ### Part B — Business Model Risks:  
-1. **Dependence on healthcare spending cyclicality**: Medium severity; healthcare demand is resilient but not immune to economic downturns.  
-2. **Regulatory hurdles in medical devices**: Medium severity; compliance costs and delays could impact margins.  
-3. **Competition from generics and emerging markets**: Low severity; BDX’s brand strength provides a buffer.  
+1. Dependence on healthcare spending cyclicality: Medium severity; healthcare demand is resilient but not immune to economic downturns.  
+2. Regulatory hurdles in medical devices: Medium severity; compliance costs and delays could impact margins.  
+3. Competition from generics and emerging markets: Low severity; BDX’s brand strength provides a buffer.  
 
 ---
 
 ## 4. Investment Thesis & Peer Comparison
-**Core Thesis:** BDX benefits from secular growth in healthcare spending, strong FCF generation, and a fortress balance sheet. However, near-term valuation risks limit appeal.  
+Core Thesis: BDX benefits from secular growth in healthcare spending, strong FCF generation, and a fortress balance sheet. However, near-term valuation risks limit appeal.  
 
-**Bull Case:** Healthcare demand accelerates post-pandemic, driving revenue and margin expansion.  
-**Bear Case:** Regulatory headwinds or slower innovation erode market share and FCF growth.  
+Bull Case: Healthcare demand accelerates post-pandemic, driving revenue and margin expansion.  
+Bear Case: Regulatory headwinds or slower innovation erode market share and FCF growth.  
 
-**Verdict:** **WATCH** — stock is within 5% of its 52-week high with no pullback; fundamentals are sound but entry timing is suboptimal.  
+Verdict: WATCH — stock is within 5% of its 52-week high with no pullback; fundamentals are sound but entry timing is suboptimal.  
 
-**Business Quality Scorecard:**  
+Business Quality Scorecard:  
 BUSINESS QUALITY:  
   Moat              70  [Strong brand and innovation pipeline, but facing competition]  
   Capital Alloc     60  [Decent FCF generation, but growth has stalled]  
@@ -60,17 +60,17 @@ BUSINESS QUALITY:
 ---
 
 ## 5. Entry / Add-on / Exit Framework
-**Entry Ladder Justification:**  
-- **Entry ($179):** Near a key support level from Q3 2023 lows, aligning with potential pullback.  
-- **Add-on ($174.5):** Further confirmation of support after a 5% retracement.  
-- **Stop Loss ($170):** 5% below entry to limit downside risk.  
-- **Target ($215):** Reflects 20% upside from current levels, aligning with FCF growth potential.  
+Entry Ladder Justification:  
+- Entry ($179): Near a key support level from Q3 2023 lows, aligning with potential pullback.  
+- Add-on ($174.5): Further confirmation of support after a 5% retracement.  
+- Stop Loss ($170): 5% below entry to limit downside risk.  
+- Target ($215): Reflects 20% upside from current levels, aligning with FCF growth potential.  
 
 BDX failed BuyDeepDip phase1 due to D/E > 0.6; requalification would require D/E < 0.6 or a significant pullback.  
 
-**Position Sizing:** Starter allocation (3–5% of portfolio). **Timeframe:** 18 months.  
+Position Sizing: Starter allocation (3–5% of portfolio). Timeframe: 18 months.  
 
-**Action Zones (PaoBull Predicted: $215):**  
+Action Zones (PaoBull Predicted: $215):  
   🟢 Add Aggressively   ≤ $172 — thesis intact       +1–2% portfolio  
   🟡 Add                $172 – $194                 +0.5–1%  
   ⚪ Hold               $194 – $236                 no change  
@@ -87,5 +87,5 @@ Supply Chain / Customer Chain: 65
 Sell-the-News Risk: 80  
 Other Factors: 65  
 
-**Key Driver:** Strong revenue and FCF growth offset by valuation near highs and slowing innovation.
+Key Driver: Strong revenue and FCF growth offset by valuation near highs and slowing innovation.
 

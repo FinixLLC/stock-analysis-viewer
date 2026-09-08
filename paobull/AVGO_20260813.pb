@@ -13,21 +13,21 @@ ROE: 23.6% | D/E: 1.59 | FCF: $26.9B
 Broadcom (AVGO) is trading near the mid-point of its 52-week range, suggesting neutral sentiment. The stock has corrected about 16% from its high, indicating a consolidation phase rather than a bearish trend. With RSI_9 at 61.1, momentum is moderate but not overbought. Given the lack of strong technical signals and the current price position, it's prudent to wait for a more favorable entry point.
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue Growth**: 23.9% YoY in 2025.
-- **FCF**: $26.9B with 38.6% YoY growth.
-- **ROE**: 23.6%, reflecting strong capital efficiency.
+- Revenue Growth: 23.9% YoY in 2025.
+- FCF: $26.9B with 38.6% YoY growth.
+- ROE: 23.6%, reflecting strong capital efficiency.
 
 Broadcom's success is driven by high R&D investment and strategic focus on AI and cloud solutions, enabling pricing power and switching costs. The D/E ratio of 1.59 is manageable but slightly elevated. Fundamentals strongly support compounding growth.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**
+Part A — Why This Company Can Compound:
 R&D investment → innovative semiconductors → adoption by cloud providers → revenue growth → reinvestment in R&D, creating a self-reinforcing loop.
 
-**Part B — Capex Cycle Risk:**
-Severity: **MEDIUM**. Broadcom's reliance on foundries and high data center exposure pose risks during capex downturns.
+Part B — Capex Cycle Risk:
+Severity: MEDIUM. Broadcom's reliance on foundries and high data center exposure pose risks during capex downturns.
 
 ## 4. Investment Thesis & Peer Comparison
-Broadcom leads in AI and cloud infrastructure with robust FCF growth. Compared to peers like NVIDIA, AVGO offers a larger market cap and different focus. Bull case: AI demand boosts margins. Bear case: semiconductor slowdown or inventory issues. Verdict: **BUY** due to strong fundamentals and manageable debt.
+Broadcom leads in AI and cloud infrastructure with robust FCF growth. Compared to peers like NVIDIA, AVGO offers a larger market cap and different focus. Bull case: AI demand boosts margins. Bear case: semiconductor slowdown or inventory issues. Verdict: BUY due to strong fundamentals and manageable debt.
 
 BUSINESS QUALITY:
   Moat              85  Strong ecosystem ties

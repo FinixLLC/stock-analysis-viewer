@@ -17,23 +17,23 @@ PFE is near its 52-week high, suggesting strong recent sentiment but potential o
 - FCF: $9.1B (FY2025), showing recovery but inconsistent growth.
 - D/E Ratio: 0.75, manageable leverage.
 
-PFE's efficiency stems from high-margin products and pricing power, though revenue volatility is concerning. The company's ability to sustain cash flows despite challenges will be key. **Verdict:** Mixed signals on compounding potential.
+PFE's efficiency stems from high-margin products and pricing power, though revenue volatility is concerning. The company's ability to sustain cash flows despite challenges will be key. Verdict: Mixed signals on compounding potential.
 
 ## 3. Industry-Specific Risk
-- **High**: Patent expirations threaten revenue streams.
-- **High**: Reliance on blockbuster drugs like Eliquis and Xtandi.
-- **High**: Regulatory scrutiny and pricing pressures in healthcare.
+- High: Patent expirations threaten revenue streams.
+- High: Reliance on blockbuster drugs like Eliquis and Xtandi.
+- High: Regulatory scrutiny and pricing pressures in healthcare.
 
 These risks are critical as they directly impact PFE's future earnings and market position.
 
 ## 4. Investment Thesis & Peer Comparison
-PFE has a strong pipeline but faces significant risks from drug expirations. Compared to peers like JNJ, it offers moderate growth at a reasonable valuation. **Bull Case:** Pipeline success and cost-cutting boost margins. **Bear Case:** Patent losses and pricing pressures erode revenue. **Verdict:** WATCH.
+PFE has a strong pipeline but faces significant risks from drug expirations. Compared to peers like JNJ, it offers moderate growth at a reasonable valuation. Bull Case: Pipeline success and cost-cutting boost margins. Bear Case: Patent losses and pricing pressures erode revenue. Verdict: WATCH.
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($27.5):** Near short MA support, indicating a pullback.
-- **Add-on ($25.98):** Mid MA level, suggesting further consolidation.
-- **Stop Loss ($25.5):** Protects against significant downside.
-- **Target ($33.0):** Reflects 18-month growth potential.
+- Entry ($27.5): Near short MA support, indicating a pullback.
+- Add-on ($25.98): Mid MA level, suggesting further consolidation.
+- Stop Loss ($25.5): Protects against significant downside.
+- Target ($33.0): Reflects 18-month growth potential.
 
 Position sizing: Start with a small position (5% of portfolio) and scale in if it reaches the add-on level. Monitor closely for risks and adjust accordingly.
 

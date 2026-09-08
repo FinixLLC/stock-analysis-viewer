@@ -13,20 +13,20 @@ ROE: -2.3% | D/E: 0.63 | FCF: $808M
 ZS is trading at $183.6, down 45.5% from its 52-week high but up 60.2% from the low. The RSI-14 of 76.5 suggests overbought conditions, while moving averages indicate a neutral trend. This implies cautious optimism with potential for consolidation or pullback.
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue Growth**: 23.3% YoY to $2.7B.
-- **FCF Growth**: 27.2% YoY to $808M.
-- **R&D Spend**: 25.2% of revenue, driving innovation.
+- Revenue Growth: 23.3% YoY to $2.7B.
+- FCF Growth: 27.2% YoY to $808M.
+- R&D Spend: 25.2% of revenue, driving innovation.
 
 ZS's asset-light model and network effects from partnerships enhance capital efficiency. Pricing power is strong due to competition in cloud security. Verdict: Strong fundamentals support growth.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**
+Part A — Why This Company Can Compound:
 Investments → Product Innovation → Customer Acquisition → FCF Growth → More Investment.
 
-**Part B — Business Model Risks:**
-- **Competition**: Intense from AWS, Azure, GCP.
-- **Cyclicality**: Enterprise spending fluctuations.
-- **Costs**: High R&D expenses could strain margins.
+Part B — Business Model Risks:
+- Competition: Intense from AWS, Azure, GCP.
+- Cyclicality: Enterprise spending fluctuations.
+- Costs: High R&D expenses could strain margins.
 
 ## 4. Investment Thesis & Peer Comparison
 ZS leverages partnerships to dominate cloud security, expanding in the SASE market. Compared to Palo Alto Networks, ZS has better growth and FCF trends but faces valuation headwinds. Bull case: Continued growth. Bear case: Market saturation or competition surge. Verdict: BUY due to strong FCF and manageable debt.

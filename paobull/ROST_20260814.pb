@@ -17,9 +17,9 @@ Stance: Supports entry now — the stock is well-positioned within its range, an
 ---
 
 ## 2. Fundamentals & Capital Efficiency
-- **Revenue Growth:** 7.7% YoY to $22.8B in 2026, with steady expansion over five years.  
-- **FCF Growth:** 34.9% YoY to $2.2B in 2026, despite a minor dip in year 4.  
-- **Capital Efficiency:** ROE of 34.7%, low D/E ratio (0.25), and minimal goodwill (0.02% of assets).  
+- Revenue Growth: 7.7% YoY to $22.8B in 2026, with steady expansion over five years.  
+- FCF Growth: 34.9% YoY to $2.2B in 2026, despite a minor dip in year 4.  
+- Capital Efficiency: ROE of 34.7%, low D/E ratio (0.25), and minimal goodwill (0.02% of assets).  
 
 ROST’s business model benefits from a disciplined capital allocation strategy, evidenced by consistent FCF generation despite modest revenue growth. The company’s focus on store expansion and efficient inventory management drives organic growth while maintaining strong returns on equity. Minimal debt and negligible goodwill further highlight balance sheet strength.  
 
@@ -28,17 +28,17 @@ Verdict: ROST is a high-quality compounder with durable capital efficiency.
 ---
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 Store expansion → drives revenue growth → increases FCF → funds further store openings and inventory optimization → reinforces market position.  
 
 This virtuous cycle is underpinned by ROST’s ability to open new locations profitably, leveraging its low-cost business model and strong brand loyalty in the off-price retail sector.  
 
 Durability Verdict: High — ROST’s model has proven resilient over cycles, with consistent growth despite macro challenges.
 
-**Part B — Business Model Risk:**  
-1. **Consumer Spending Shifts (MEDIUM):** Off-price retailers rely on consumer trade-down behavior, which can weaken during economic upswings or inflationary periods.  
-2. **Supply Chain Disruptions (MEDIUM):** ROST’s inventory model depends on timely sourcing of discounted goods; delays could impact margins and sales.  
-3. **Competition Intensification (LOW):** While private-label competition is rising, ROST’s brand strength and geographic focus mitigate this risk.  
+Part B — Business Model Risk:  
+1. Consumer Spending Shifts (MEDIUM): Off-price retailers rely on consumer trade-down behavior, which can weaken during economic upswings or inflationary periods.  
+2. Supply Chain Disruptions (MEDIUM): ROST’s inventory model depends on timely sourcing of discounted goods; delays could impact margins and sales.  
+3. Competition Intensification (LOW): While private-label competition is rising, ROST’s brand strength and geographic focus mitigate this risk.  
 
 ---
 
@@ -48,7 +48,7 @@ Core Thesis: ROST combines consistent revenue growth, strong FCF generation, and
 Bull Case: Continued store openings and margin stability drive FCF growth, supporting dividend increases and share buybacks.  
 Bear Case: Economic weakness or inflation could reduce consumer trade-down behavior, impacting sales and margins.  
 
-Verdict: **BUY** — ROST’s fundamentals are strong, with growing revenue and improving FCF despite minor dips. The balance sheet is rock-solid, and the thesis supports a full position (5% of portfolio).  
+Verdict: BUY — ROST’s fundamentals are strong, with growing revenue and improving FCF despite minor dips. The balance sheet is rock-solid, and the thesis supports a full position (5% of portfolio).  
 
 BUSINESS QUALITY:  
   Moat              80  Strong brand loyalty in off-price retail.  
@@ -63,10 +63,10 @@ BUSINESS QUALITY:
 ## 5. Entry / Add-on / Exit Framework
 The entry ladder reflects support levels and ATR-based risk management:  
 
-- **Entry ($240):** Justifies as the stock is near its 52-week high but not overbought, with fundamentals intact.  
-- **Add-on ($234.5):** Represents a moderate pullback, aligning with potential consolidation.  
-- **Stop Loss ($229.5):** Protects against significant downside while allowing room for normal volatility.  
-- **Target ($288):** Reflects 18-month growth expectations based on revenue and FCF trends.  
+- Entry ($240): Justifies as the stock is near its 52-week high but not overbought, with fundamentals intact.  
+- Add-on ($234.5): Represents a moderate pullback, aligning with potential consolidation.  
+- Stop Loss ($229.5): Protects against significant downside while allowing room for normal volatility.  
+- Target ($288): Reflects 18-month growth expectations based on revenue and FCF trends.  
 
 Position Sizing: Full position (5% of portfolio) at entry, with potential to add on pullbacks. Timeframe: 18 months.  
 

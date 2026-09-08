@@ -14,23 +14,23 @@ IAU is trading at $82.98, down 20.5% from its 52-week high of $104.4 but up 32.8
 
 The price action reflects investor caution amid macroeconomic uncertainty and gold’s safe-haven appeal. While the short-term overbought signal raises flags, the absence of definitive trend signals leaves room for further upside if sentiment improves.  
 
-**Stance:** Wait for better level — RSI-9 above 70 suggests near-term risk of correction, but long-term fundamentals could justify a pullback entry.
+Stance: Wait for better level — RSI-9 above 70 suggests near-term risk of correction, but long-term fundamentals could justify a pullback entry.
 
 ---
 
 ## 2. Fundamentals & Capital Efficiency
 ### Key Metrics:  
-- **Revenue (latest):** $-606M (YoY growth: -475%)  
-- **FCF (past 5 years):** $0 annually  
-- **Net Income:** $24.3B (likely driven by asset valuation changes)  
-- **ROE:** 465.7%  
+- Revenue (latest): $-606M (YoY growth: -475%)  
+- FCF (past 5 years): $0 annually  
+- Net Income: $24.3B (likely driven by asset valuation changes)  
+- ROE: 465.7%  
 
 ### Analysis:  
 IAU’s business model relies on tracking gold prices, generating revenue through management fees. However, the negative revenue and zero FCF highlight structural inefficiencies — it operates as an ETF, not a profit-generating entity. The high ROE is misleading due to low equity base rather than operational excellence.  
 
 The lack of free cash flow growth raises concerns about capital allocation quality. While IAU benefits from gold’s safe-haven appeal, its inability to generate meaningful FCF limits its ability to compound value for shareholders.  
 
-**Compounding Verdict:** PASS — No evidence of sustainable compounding due to zero FCF and negative revenue trends.
+Compounding Verdict: PASS — No evidence of sustainable compounding due to zero FCF and negative revenue trends.
 
 ---
 
@@ -38,12 +38,12 @@ The lack of free cash flow growth raises concerns about capital allocation quali
 ### Part A — Why This Company Can Compound:  
 IAU’s business model is tied to gold prices → custodian partnerships ensure liquidity → investor demand drives asset growth → higher assets under management (AUM) increase fee revenue. However, this engine lacks self-reinforcement since fees are a small portion of total revenue and FCF remains zero.  
 
-**Durability Verdict:** LOW — Reliant on external factors like gold prices and macroeconomic conditions.
+Durability Verdict: LOW — Reliant on external factors like gold prices and macroeconomic conditions.
 
 ### Part B — Business Model Risk:  
-1. **Zero Free Cash Flow (FCF):** IAU generates no meaningful cash flow, limiting its ability to invest in growth or return capital to shareholders. (**SEVERITY:** HIGH)  
-2. **Dependence on Custodians:** Critical dependency on custodian partners creates operational and counterparty risks. (**SEVERITY:** MEDIUM)  
-3. **Market Cyclicality:** Gold prices are highly cyclical, exposing IAU to significant volatility. (**SEVERITY:** HIGH)  
+1. Zero Free Cash Flow (FCF): IAU generates no meaningful cash flow, limiting its ability to invest in growth or return capital to shareholders. (SEVERITY: HIGH)  
+2. Dependence on Custodians: Critical dependency on custodian partners creates operational and counterparty risks. (SEVERITY: MEDIUM)  
+3. Market Cyclicality: Gold prices are highly cyclical, exposing IAU to significant volatility. (SEVERITY: HIGH)  
 
 ---
 
@@ -51,10 +51,10 @@ IAU’s business model is tied to gold prices → custodian partnerships ensure 
 ### Core Thesis:  
 IAU offers exposure to gold’s safe-haven appeal but lacks a sustainable compounding engine due to zero FCF and negative revenue. While it benefits from macroeconomic uncertainty, its structural inefficiencies make it a speculative bet rather than a core holding.  
 
-**Bull Case:** Gold prices rally on geopolitical tensions or inflation fears, driving IAU higher despite lack of FCF.  
-**Bear Case:** Weak gold demand or rising interest rates cause outflows, pressuring the stock further.  
+Bull Case: Gold prices rally on geopolitical tensions or inflation fears, driving IAU higher despite lack of FCF.  
+Bear Case: Weak gold demand or rising interest rates cause outflows, pressuring the stock further.  
 
-**Verdict:** PASS — Thesis is weak due to zero FCF and negative revenue trends. Despite potential macro tailwinds, the structural issues outweigh upside potential.  
+Verdict: PASS — Thesis is weak due to zero FCF and negative revenue trends. Despite potential macro tailwinds, the structural issues outweigh upside potential.  
 
 ### Business Quality Scorecard:  
   Moat              20  [No sustainable competitive advantage]  
@@ -68,10 +68,10 @@ IAU offers exposure to gold’s safe-haven appeal but lacks a sustainable compou
 
 ## 5. Entry / Add-on / Exit Framework
 ### Entry Ladder Justification:  
-- **Entry ($81.5):** Near-term support level, aligns with RSI overbought correction.  
-- **Add-on ($80.0):** Further pullback to ATR-based support.  
-- **Stop Loss ($78.5):** 3.7% below entry to limit downside risk.  
-- **Target ($104.4):** Reversal of the 52-week high.  
+- Entry ($81.5): Near-term support level, aligns with RSI overbought correction.  
+- Add-on ($80.0): Further pullback to ATR-based support.  
+- Stop Loss ($78.5): 3.7% below entry to limit downside risk.  
+- Target ($104.4): Reversal of the 52-week high.  
 
 IAU failed BuyDeepDip phase1 due to zero FCF for three years. It would requalify only if it generates positive FCF consistently, which is unlikely given its ETF structure.  
 
@@ -94,5 +94,5 @@ Supply Chain / Customer Chain: 70
 Sell-the-News Risk: 80  
 Other Factors: 60  
 
-**Key Driver:** The composite picture reflects weak fundamentals and structural inefficiencies, offset by moderate macro tailwinds. Gold’s safe-haven appeal provides some support, but the lack of FCF growth limits upside potential.
+Key Driver: The composite picture reflects weak fundamentals and structural inefficiencies, offset by moderate macro tailwinds. Gold’s safe-haven appeal provides some support, but the lack of FCF growth limits upside potential.
 

@@ -12,31 +12,31 @@ ROE: — | D/E: — | FCF: —
 ## 1. Price Context & Technical Picture
 ARM is trading at $279.44, down 38% from its 52-week high of $452.70 but up 179% from its low of $100.02. The stock sits in the lower half of its range, suggesting weak sentiment despite a rebound from lows. RSI-14 (49.8) and RSI-9 (54.4) indicate neutral momentum with no significant divergence. Moving averages show short-term resistance at $266.05 and long-term support at $195.19, suggesting consolidation in a bear market.  
 
-**Stance:** Avoid — price is neither oversold nor attractively valued, and technicals suggest sideways trading.
+Stance: Avoid — price is neither oversold nor attractively valued, and technicals suggest sideways trading.
 
 ---
 
 ## 2. Fundamentals & Capital Efficiency
-- **Price-to-FCF (P/FCF):** 223.64x (highly rich).  
-- **Debt-to-Equity Ratio:** N/A (no data available).  
+- Price-to-FCF (P/FCF): 223.64x (highly rich).  
+- Debt-to-Equity Ratio: N/A (no data available).  
 
 ARM’s asset-light model and recurring IP licensing business drive high margins and capital efficiency. Its ecosystem partnerships reinforce switching costs, but limited visibility on revenue growth or FCF trends raises concerns about compounding ability.  
 
-**Compounding Verdict:** Neutral — moat exists, but fundamentals are unclear due to missing data.
+Compounding Verdict: Neutral — moat exists, but fundamentals are unclear due to missing data.
 
 ---
 
 ## 3. Industry-Specific Risk
-### **Part A — Why This Company Can Compound:**  
+### Part A — Why This Company Can Compound:  
 Arm → IP Licensing → Chipmakers (e.g., Arm China) → Design Wins → ARM’s market share grows → Reinforces ecosystem dominance.  
 
-**Durability Verdict:** High — structural advantages in semiconductor IP licensing are durable, but execution risk remains due to missing financial data.
+Durability Verdict: High — structural advantages in semiconductor IP licensing are durable, but execution risk remains due to missing financial data.
 
-### **Part B — Capex Cycle Risk:**  
+### Part B — Capex Cycle Risk:  
 - Foundry dependency: Fab-lite model exposes ARM to supply chain risks and pricing volatility.  
 - Customer concentration: Heavy reliance on Arm China for PRC market access introduces geopolitical and operational risks.  
 
-**Severity Rating:** **HIGH** — dependency on a single critical supplier (Arm China) creates significant execution risk.
+Severity Rating: HIGH — dependency on a single critical supplier (Arm China) creates significant execution risk.
 
 ---
 
@@ -44,11 +44,11 @@ Arm → IP Licensing → Chipmakers (e.g., Arm China) → Design Wins → ARM’
 ### Core Thesis:  
 ARM is a leader in semiconductor IP licensing with high margins and recurring revenue, but its valuation is rich, and financial data gaps raise concerns about compounding ability.  
 
-**Bull Case:** ARM’s moat and ecosystem partnerships position it for long-term growth as AI and IoT adoption accelerates.  
+Bull Case: ARM’s moat and ecosystem partnerships position it for long-term growth as AI and IoT adoption accelerates.  
 
-**Bear Case:** Weak visibility on FCF trends, high P/FCF ratio, and dependency on Arm China could lead to underperformance.  
+Bear Case: Weak visibility on FCF trends, high P/FCF ratio, and dependency on Arm China could lead to underperformance.  
 
-**Verdict:** **PASS** — Thesis is weak due to missing financial data and high execution risk.  
+Verdict: PASS — Thesis is weak due to missing financial data and high execution risk.  
 
 ### BUSINESS QUALITY:  
   Moat              85  Strong IP licensing moat but dependent on ecosystem partnerships.  
@@ -62,10 +62,10 @@ ARM is a leader in semiconductor IP licensing with high margins and recurring re
 
 ## 5. Entry / Add-on / Exit Framework
 ### Entry Ladder Justification:  
-- **Entry ($266.05):** Short-term MA resistance level, aligning with potential consolidation support.  
-- **Add-on ($195.19):** Long-term MA and historical low cluster, signaling deeper pullback.  
-- **Stop Loss ($184.0):** 30.8% below entry, protecting against significant downside.  
-- **Target ($452.7):** 52-week high, reflecting potential upside if sentiment improves.  
+- Entry ($266.05): Short-term MA resistance level, aligning with potential consolidation support.  
+- Add-on ($195.19): Long-term MA and historical low cluster, signaling deeper pullback.  
+- Stop Loss ($184.0): 30.8% below entry, protecting against significant downside.  
+- Target ($452.7): 52-week high, reflecting potential upside if sentiment improves.  
 
 ### BuyDeepDip Phase1 Failure:  
 ARM failed to qualify due to FCF positive for only 0 years (requires 3). Requalification would require consistent FCF growth over three years.  
@@ -88,5 +88,5 @@ Supply Chain / Customer Chain: 50
 Sell-the-News Risk: 80  
 Other Factors: 60  
 
-**Key Driver:** ARM’s strong moat and recurring revenue model offset risks, but high valuation and missing financial data weigh on the composite picture.
+Key Driver: ARM’s strong moat and recurring revenue model offset risks, but high valuation and missing financial data weigh on the composite picture.
 

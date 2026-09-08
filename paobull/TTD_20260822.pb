@@ -10,7 +10,7 @@ ROE: 17.8% | D/E: — | FCF: $796M
 ---
 
 ## 1. Price Context & Technical Picture
-TTD is trading near its 52-week low at $13.18, indicating bearish sentiment. RSI signals oversold but with bearish momentum. Moving averages are in a downtrend, confirming weakness. **Stance:** Avoid until technicals improve.
+TTD is trading near its 52-week low at $13.18, indicating bearish sentiment. RSI signals oversold but with bearish momentum. Moving averages are in a downtrend, confirming weakness. Stance: Avoid until technicals improve.
 
 ## 2. Fundamentals & Capital Efficiency
 - Revenue: Consistent growth to $2.9B.
@@ -18,17 +18,17 @@ TTD is trading near its 52-week low at $13.18, indicating bearish sentiment. RSI
 - ROE: Strong at 17.8%.
 - R&D: High at 18.1% of revenue.
 
-Efficient capital use, but high R&D could signal cost pressures. **Verdict:** Solid fundamentals with caution on expenses.
+Efficient capital use, but high R&D could signal cost pressures. Verdict: Solid fundamentals with caution on expenses.
 
 ## 3. Industry-Specific Risk
 - Regulatory challenges in digital advertising.
 - Privacy concerns affecting targeting.
 - Intense competition from tech giants.
 
-**Severity: MEDIUM** due to direct impact on business model and profitability.
+Severity: MEDIUM due to direct impact on business model and profitability.
 
 ## 4. Investment Thesis & Peer Comparison
-TTD benefits from programmatic ad growth but faces industry risks. Compared to PubMatic, TTD's valuation is reasonable. **Bull Case:** Continued FCF growth. **Bear Case:** Regulatory issues. **Verdict: BUY**
+TTD benefits from programmatic ad growth but faces industry risks. Compared to PubMatic, TTD's valuation is reasonable. Bull Case: Continued FCF growth. Bear Case: Regulatory issues. Verdict: BUY
 
 ## 5. Entry / Add-on / Exit Framework
 - Entry at $12 (near 52-week low).

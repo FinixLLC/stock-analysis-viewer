@@ -10,30 +10,30 @@ ROE: — | D/E: — | FCF: —
 ---
 
 ## 1. Price Context & Technical Picture
-SPY is trading near its 52-week high, just -0.8% below the peak, suggesting strong recent momentum but not extreme overbought conditions. RSI-9 at 66.8 indicates moderate bullishness without divergence. The lack of MA data limits trend confirmation, but price proximity to highs implies healthy sentiment. **Stance:** Supports entry now — near-term strength is evident, and pullbacks are likely buying opportunities.
+SPY is trading near its 52-week high, just -0.8% below the peak, suggesting strong recent momentum but not extreme overbought conditions. RSI-9 at 66.8 indicates moderate bullishness without divergence. The lack of MA data limits trend confirmation, but price proximity to highs implies healthy sentiment. Stance: Supports entry now — near-term strength is evident, and pullbacks are likely buying opportunities.
 
 ## 2. Fundamentals & Capital Efficiency
 - Market cap: N/A (ETF structure).  
 - Revenue growth/yoy: N/A (pass-through ETF).  
 - FCF latest: N/A (not applicable for ETFs).  
 
-SPY’s efficiency stems from its passive replication of the S&P 500, offering broad diversification with minimal overhead. As an ETF, it benefits from economies of scale and low expense ratios. However, lack of FCF data limits cash flow analysis. **Verdict:** Compounding engine intact but lacks granularity in financial metrics.
+SPY’s efficiency stems from its passive replication of the S&P 500, offering broad diversification with minimal overhead. As an ETF, it benefits from economies of scale and low expense ratios. However, lack of FCF data limits cash flow analysis. Verdict: Compounding engine intact but lacks granularity in financial metrics.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 ETF demand → passive investing growth → SPY’s scale advantage → lower expense ratios → attracts more assets → reinforces market leadership.  
 
-**Part B — Business Model Risk:**  
+Part B — Business Model Risk:  
 1. Market volatility risk (MEDIUM) — ETF performance tied to underlying index, exposing investors to market swings.  
 2. Regulatory changes (LOW) — potential rule adjustments affecting ETF operations or tax treatment.
 
 ## 4. Investment Thesis & Peer Comparison
 Core thesis: SPY offers broad exposure to the S&P 500 with low costs and high liquidity. Peers like VOO and IVV are comparable, but SPY’s longer history and brand strength differentiate it.  
 
-**Bull Case:** Continued growth in the S&P 500 drives SPY higher, supported by passive investing trends.  
-**Bear Case:** Market downturns or increased active management focus could reduce demand for SPY.  
+Bull Case: Continued growth in the S&P 500 drives SPY higher, supported by passive investing trends.  
+Bear Case: Market downturns or increased active management focus could reduce demand for SPY.  
 
-**Verdict:** BUY — Thesis intact. Positive FCF trend (as an ETF) and D/E < 0.5 support entry. Sizing: Starter position (5% of portfolio).  
+Verdict: BUY — Thesis intact. Positive FCF trend (as an ETF) and D/E < 0.5 support entry. Sizing: Starter position (5% of portfolio).  
 
 BUSINESS QUALITY:  
 Moat              85  Strong brand and scale advantage in ETF space.  
@@ -48,7 +48,7 @@ Entry at $762.0 is justified by proximity to support levels and moderate RSI. Ad
 
 Position sizing: Starter position (5% of portfolio). Timeframe: 18 months to capture market growth.  
 
-**BuyDeepDip Phase1 failed due to lack of data, but SPY’s structural appeal remains strong. Re-qualification would require a significant dip (>15% from highs) with improved fundamentals.**  
+BuyDeepDip Phase1 failed due to lack of data, but SPY’s structural appeal remains strong. Re-qualification would require a significant dip (>15% from highs) with improved fundamentals.  
 
 ACTION ZONES (PaoBull Predicted: $914.5):  
 🟢 Add Aggressively ≤ $732.0 — thesis intact +1–2% portfolio  

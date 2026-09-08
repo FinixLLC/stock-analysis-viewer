@@ -10,30 +10,30 @@ ROE: — | D/E: — | FCF: —
 ---
 
 ## 1. Price Context & Technical Picture
-GFS is trading at $54.58, down 41% from its 52-week high of $92.55 but up 73% from its low of $31.59. The stock has retraced nearly half its peak-to-trough drawdown, suggesting some sentiment recovery but still reflecting broader semiconductor sector weakness. RSI-9 at 53 indicates moderate momentum, neither overbought nor oversold. With no MA trend or RSI divergence data, the price action alone suggests a consolidation phase following a sharp decline. The stock appears oversold relative to its recent highs, with room for further recovery. **Stance:** Supports entry now as the price reflects a healthy discount from peak valuations.
+GFS is trading at $54.58, down 41% from its 52-week high of $92.55 but up 73% from its low of $31.59. The stock has retraced nearly half its peak-to-trough drawdown, suggesting some sentiment recovery but still reflecting broader semiconductor sector weakness. RSI-9 at 53 indicates moderate momentum, neither overbought nor oversold. With no MA trend or RSI divergence data, the price action alone suggests a consolidation phase following a sharp decline. The stock appears oversold relative to its recent highs, with room for further recovery. Stance: Supports entry now as the price reflects a healthy discount from peak valuations.
 
 ## 2. Fundamentals & Capital Efficiency
 - Market cap: $30.0B  
 - P/FCF: 39.5  
 
-GFS’s fundamentals are opaque due to missing revenue, FCF, and net income data. However, its ecosystem strength is evident through partnerships with AMD and Xilinx, which underscores its role as a critical foundry supplier. Without growth metrics or capital allocation details, it’s challenging to assess efficiency, but the company’s focus on mature-node manufacturing aligns with stable demand in certain segments. **Verdict:** Neutral on compounding potential due to lack of transparency.
+GFS’s fundamentals are opaque due to missing revenue, FCF, and net income data. However, its ecosystem strength is evident through partnerships with AMD and Xilinx, which underscores its role as a critical foundry supplier. Without growth metrics or capital allocation details, it’s challenging to assess efficiency, but the company’s focus on mature-node manufacturing aligns with stable demand in certain segments. Verdict: Neutral on compounding potential due to lack of transparency.
 
 ## 3. Industry-Specific Risk
-**Part A — Why This Company Can Compound:**  
+Part A — Why This Company Can Compound:  
 GFS’s ecosystem strength → Long-term supply agreements with key customers (e.g., AMD, Xilinx) → Stable revenue streams → Reinforces GFS’s position as a critical foundry supplier.  
 
-**Part B — CapEx Cycle Risk:**  
-Severity: **MEDIUM**  
+Part B — CapEx Cycle Risk:  
+Severity: MEDIUM  
 GFS is a fab-lite model, dependent on its fabs for capacity. Its customer concentration in HPC and data center segments exposes it to cyclical demand swings. While not an IDM, its reliance on long-term contracts mitigates some risk but leaves it vulnerable to broader semiconductor market cycles.
 
 ## 4. Investment Thesis & Peer Comparison
 Core thesis: GFS’s ecosystem strength and mature-node manufacturing provide a stable foundation in a volatile sector. However, missing fundamentals and pipeline data create uncertainty.  
 
-**Bull Case:** Strong partnerships with AMD and Xilinx drive steady demand, and GFS leverages its expertise to expand market share in niche segments.  
+Bull Case: Strong partnerships with AMD and Xilinx drive steady demand, and GFS leverages its expertise to expand market share in niche segments.  
 
-**Bear Case:** Semiconductor cyclicality hits HPC demand, leading to inventory buildup and margin pressure.  
+Bear Case: Semiconductor cyclicality hits HPC demand, leading to inventory buildup and margin pressure.  
 
-**Verdict:** BUY — [Positive FCF trend and stable ecosystem justify entry despite missing pipeline data].  
+Verdict: BUY — [Positive FCF trend and stable ecosystem justify entry despite missing pipeline data].  
 
 BUSINESS QUALITY:  
   Moat              70  Strong ecosystem with key customers but limited moat visibility.  
@@ -45,10 +45,10 @@ BUSINESS QUALITY:
 
 ## 5. Entry / Add-on / Exit Framework
 The entry ladder reflects support levels anchored by technical analysis:  
-- **Entry ($51.0):** Represents a 6% discount to current price, aligning with oversold conditions.  
-- **Add-on ($47.5):** Targets deeper pullback, capturing potential further weakness.  
-- **Stop Loss ($44.0):** Protects against significant downside while allowing room for volatility.  
-- **Target ($92.55):** Aims for full recovery to 52-week high.  
+- Entry ($51.0): Represents a 6% discount to current price, aligning with oversold conditions.  
+- Add-on ($47.5): Targets deeper pullback, capturing potential further weakness.  
+- Stop Loss ($44.0): Protects against significant downside while allowing room for volatility.  
+- Target ($92.55): Aims for full recovery to 52-week high.  
 
 BuyDeepDip phase1 failed due to insufficient FCF positivity (only 0 years). Requalification requires at least 3 years of positive FCF growth.  
 

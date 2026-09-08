@@ -17,27 +17,27 @@ JPM is trading near the middle of its 52-week range, suggesting neither extreme 
 - Free cash flow (FCF) turned negative ($-147.8B latest), a significant deterioration from prior years.  
 - Return on equity (ROE) remains strong at 15.7%, and debt-to-equity ratio is low at 0.74.  
 
-JPM's capital efficiency benefits from its diversified revenue streams and strong ROE, but the sharp FCF decline raises concerns about cash flow sustainability. **Verdict:** Compounding potential is tempered by FCF issues.
+JPM's capital efficiency benefits from its diversified revenue streams and strong ROE, but the sharp FCF decline raises concerns about cash flow sustainability. Verdict: Compounding potential is tempered by FCF issues.
 
 ## 3. Industry-Specific Risk
 - CRE loans represent a significant portion of JPM's loan book, exposing it to credit cycle risks.  
 - NIM may compress as the Fed continues rate hikes.  
 - ACLs appear adequate relative to charge-off history, but CRE concentration remains a concern.  
 
-**Severity:** **MEDIUM** due to CRE exposure and potential NIM compression.
+Severity: MEDIUM due to CRE exposure and potential NIM compression.
 
 ## 4. Investment Thesis & Peer Comparison
 JPM's core thesis rests on its revenue growth and capital return discipline despite FCF challenges. Compared to peers like BAC or C, JPM offers better ROE but faces higher valuation concerns.  
 
-**Bull Case:** Strong balance sheet and revenue growth drive sustained profitability.  
-**Bear Case:** Credit cycle risks materialize, pressuring NIM and asset quality.  
-**Verdict:** BUY with cautious optimism.
+Bull Case: Strong balance sheet and revenue growth drive sustained profitability.  
+Bear Case: Credit cycle risks materialize, pressuring NIM and asset quality.  
+Verdict: BUY with cautious optimism.
 
 ## 5. Entry / Add-on / Exit Framework
-- **Entry ($345.5):** Supported by mid-MA crossover and FCF stabilization hopes.  
-- **Add-on ($342.32):** Mid-MA level, reinforcing support.  
-- **Stop Loss ($339.0):** 1.9% below entry, guarding against sharp declines.  
-- **Target ($414.5):** Reflects potential from revenue growth and multiple expansion.  
+- Entry ($345.5): Supported by mid-MA crossover and FCF stabilization hopes.  
+- Add-on ($342.32): Mid-MA level, reinforcing support.  
+- Stop Loss ($339.0): 1.9% below entry, guarding against sharp declines.  
+- Target ($414.5): Reflects potential from revenue growth and multiple expansion.  
 
 Position sizing: Start with a starter position (5% of portfolio). Reassess after 6 months for potential scaling up. JPM fails BuyDeepDip due to FCF issues; requalification requires three years of positive FCF.
 
