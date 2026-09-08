@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T18:17:36.726789",
-  "overall": "ok",
+  "generated_at": "2026-09-07T19:15:03.003524",
+  "overall": "warn",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -28,8 +28,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
@@ -41,7 +41,7 @@
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-04 (2d ago)",
+      "detail": "last changed 2026-09-04 (3d ago)",
       "last_success": "2026-09-04T18:30:01"
     },
     {
