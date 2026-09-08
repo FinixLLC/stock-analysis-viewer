@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-09-07T18:14:37.264789",
+  "summary": {
+    "total_snapshots": 936,
+    "unique_tickers": 265,
+    "too_recent_to_judge": 13,
+    "judged": 577,
+    "unparseable_entry_target": 345,
+    "parse_rate_pct": 62.6,
+    "hit_rate_pct": 69.3,
+    "hit_rate_note": "of calls that moved meaningfully either way (excludes flat, unparseable, too-recent)",
+    "on_track": 276,
+    "off_track": 122,
+    "flat": 179
+  },
+  "biggest_misses": [
+    {
+      "ticker": "AAOI",
+      "generated_at": "2026-06-15",
+      "entry": 180.0,
+      "target": 200.0,
+      "price_then": 191.0199,
+      "price_now": 105.53,
+      "progress_pct": -372.4,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "NWPX",
+      "generated_at": "2026-06-11",
+      "entry": 126.87,
+      "target": 135.0,
+      "price_then": 126.87,
+      "price_now": 107.68,
+      "progress_pct": -236.0,
+      "verdict": "WATCH",
+      "status": "off_track"
+    },
+    {
+      "ticker": "AMAT",
+      "generated_at": "2026-06-11",
+      "entry": 549.47,
+      "target": 600.0,
+      "price_then": 549.47,
+      "price_now": 454.71,
+      "progress_pct": -187.5,
+      "verdict": "WATCH",
+      "status": "off_track"
+    },
+    {
+      "ticker": "POWL",
+      "generated_at": "2026-06-24",
+      "entry": 271.0,
+      "target": 328.0,
+      "price_then": 291.5,
+      "price_now": 181.17,
+      "progress_pct": -157.6,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "COHR",
+      "generated_at": "2026-06-09",
+      "entry": 380.0,
+      "target": 450.0,
+      "price_then": 401.93,
+      "price_now": 281.86,
+      "progress_pct": -140.2,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "TJX",
+      "generated_at": "2026-06-10",
+      "entry": 160.0,
+      "target": 180.0,
+      "price_then": 164.87,
+      "price_now": 132.08,
+      "progress_pct": -139.6,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "CW",
+      "generated_at": "2026-07-06",
+      "entry": 762.5,
+      "target": 915.0,
+      "price_then": 789.525,
+      "price_now": 566.75,
+      "progress_pct": -128.4,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "LII",
+      "generated_at": "2026-06-10",
+      "entry": 480.0,
+      "target": 550.0,
+      "price_then": 512.41,
+      "price_now": 390.53,
+      "progress_pct": -127.8,
+      "verdict": "BUY",
+      "status": "off_track"
+    },
+    {
+      "ticker": "SNDK",
+      "generated_at": "2026-06-18",
+      "entry": 2100.0,
+      "target": 2400.0,
+      "price_then": 2184.75,
+      "price_now": 1740.0,
+      "progress_pct": -120.0,
+      "verdict": "PA",
+      "status": "off_track"
+    },
+    {
+      "ticker": "AMAT",
+      "generated_at": "2026-06-25",
+      "entry": 586.5,
+      "target": 704.0,
+      "price_then": 621.645,
+      "price_now": 454.71,
+      "progress_pct": -112.2,
+      "verdict": null,
+      "status": "off_track"
+    }
+  ],
+  "best_calls": [
+    {
+      "ticker": "SNOW",
+      "generated_at": "2026-06-09",
+      "entry": 230.0,
+      "target": 260.0,
+      "price_then": 235.9,
+      "price_now": 337.18,
+      "progress_pct": 357.3,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "ABNB",
+      "generated_at": "2026-06-12",
+      "entry": 120.0,
+      "target": 140.0,
+      "price_then": 130.87,
+      "price_now": 181.94,
+      "progress_pct": 309.7,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "OPHC",
+      "generated_at": "2026-07-07",
+      "entry": 5.7,
+      "target": 7.0,
+      "price_then": 5.81,
+      "price_now": 8.98,
+      "progress_pct": 252.3,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "VOYA",
+      "generated_at": "2026-06-12",
+      "entry": 89.0,
+      "target": 95.0,
+      "price_then": 90.9,
+      "price_now": 104.09,
+      "progress_pct": 251.5,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "ADBE",
+      "generated_at": "2026-06-13",
+      "entry": 204.02,
+      "target": 230.0,
+      "price_then": 204.02,
+      "price_now": 266.51,
+      "progress_pct": 240.5,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "HFBL",
+      "generated_at": "2026-06-09",
+      "entry": 19.0,
+      "target": 22.0,
+      "price_then": 19.99,
+      "price_now": 25.99,
+      "progress_pct": 233.0,
+      "verdict": "WATCH",
+      "status": "on_track"
+    },
+    {
+      "ticker": "PLTR",
+      "generated_at": "2026-06-09",
+      "entry": 122.68,
+      "target": 145.0,
+      "price_then": 132.18,
+      "price_now": 174.33,
+      "progress_pct": 231.4,
+      "verdict": "WATCH",
+      "status": "on_track"
+    },
+    {
+      "ticker": "WPM",
+      "generated_at": "2026-06-09",
+      "entry": 105.0,
+      "target": 130.0,
+      "price_then": 114.87,
+      "price_now": 154.98,
+      "progress_pct": 199.9,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "AMP",
+      "generated_at": "2026-06-12",
+      "entry": 430.0,
+      "target": 500.0,
+      "price_then": 450.38,
+      "price_now": 560.56,
+      "progress_pct": 186.5,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "MSFT",
+      "generated_at": "2026-06-09",
+      "entry": 390.0,
+      "target": 450.0,
+      "price_then": 411.74,
+      "price_now": 499.7,
+      "progress_pct": 182.8,
+      "verdict": "WATCH",
+      "status": "on_track"
+    }
+  ],
+  "flip_floppers": [
+    {
+      "ticker": "SNDK",
+      "verdict_sequence": [
+        "PA",
+        "PASS",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-06-18",
+        "2026-06-25",
+        "2026-08-22"
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-11",
+        "2026-06-24",
+        "2026-08-13",
+        "2026-08-14",
+        "2026-08-21",
+        "2026-08-22"
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "verdict_sequence": [
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "WATCH",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-06-10",
+        "2026-06-24",
+        "2026-06-25",
+        "2026-07-02",
+        "2026-08-21"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "verdict_sequence": [
+        "BUY",
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-09",
+        "2026-06-11",
+        "2026-06-24",
+        "2026-08-22"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-23",
+        "2026-06-25",
+        "2026-07-16",
+        "2026-08-13",
+        "2026-08-21"
+      ]
+    },
+    {
+      "ticker": "MDB",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-09",
+        "2026-06-24",
+        "2026-08-15",
+        "2026-08-22"
+      ]
+    }
+  ]
+}
