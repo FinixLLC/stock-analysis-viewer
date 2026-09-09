@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T23:15:02.211112",
-  "overall": "ok",
+  "generated_at": "2026-09-09T00:15:02.223795",
+  "overall": "warn",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
-      "status": "ok",
+      "status": "warn",
       "detail": "last changed 2026-09-07 (1d ago)",
       "last_success": "2026-09-07T21:11:03"
     },
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
