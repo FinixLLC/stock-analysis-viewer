@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T22:15:03.141033",
-  "overall": "warn",
+  "generated_at": "2026-09-08T23:15:02.211112",
+  "overall": "ok",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -28,8 +28,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "1 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
