@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T20:15:02.172760",
+  "generated_at": "2026-09-09T21:15:03.111809",
   "overall": "warn",
   "checks": [
     {
@@ -28,14 +28,14 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
       "status": "warn",
-      "detail": "last changed 2026-09-07 (1d ago)",
+      "detail": "last changed 2026-09-07 (2d ago)",
       "last_success": "2026-09-07T21:11:03"
     },
     {
