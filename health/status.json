@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T21:15:03.111809",
+  "generated_at": "2026-09-09T22:15:02.621454",
   "overall": "warn",
   "checks": [
     {
@@ -34,9 +34,9 @@
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
-      "status": "warn",
-      "detail": "last changed 2026-09-07 (2d ago)",
-      "last_success": "2026-09-07T21:11:03"
+      "status": "ok",
+      "detail": "last changed 2026-09-09 (0d ago)",
+      "last_success": "2026-09-09T20:49:25"
     },
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "1/3 due so far, all logged",
+      "detail": "3/3 due so far, all logged",
       "last_success": null
     }
   ]
