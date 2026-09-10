@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-08
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      KEAT        80.00   100.00     0.0816   POS         
+2      CRACU       80.00   100.00     0.2217   POS         
+3      SMCO        80.00   100.00     0.1319   POS         
+4      SMCP        80.00   100.00     0.1162   POS         
+5      TSMX        80.00   100.00     1.0000   CupHandle   
+6      RILYT       80.00   100.00     0.1659   POS         
+7      EGHAU       80.00   100.00     0.3431   POS         
+8      RILYN       80.00   100.00     0.2345   POS         
+9      LCCCU       80.00   100.00     0.3863   POS         
+10     LCDS        80.00   100.00     0.1342   POS         
+11     MMTXU       80.00   100.00     0.3228   POS         
+12     TSMG        80.00   100.00     1.0000   nan         
+13     PAACU       80.00   100.00     0.5027   POS         
+14     MLYS        80.00   100.00     1.0000   CupHandle   
+15     APLM        80.00   100.00     1.0000   CupHandle   
+16     APLD        80.00   100.00     1.0000   nan         
+17     RILYG       80.00   100.00     0.2047   POS         
+18     OXSQG       80.00   100.00     0.1205   POS         
+19     VTWG        80.00   100.00     1.0000   CupHandle   
+20     PNTG        80.00   100.00     1.0000   nan         
+21     ISBA        80.00   100.00     0.1993   POS         
+22     RIFR        80.00   100.00     0.1314   POS         
+23     HIDE        80.00   100.00     0.1359   POS         
+24     APACU       80.00   100.00     0.3952   POS         
+25     SMTC        80.00   100.00     1.0000   nan         
+26     OXLCZ       80.00   100.00     0.2414   POS         
+27     OXLCP       80.00   100.00     0.4413   POS         
+28     OXLCN       80.00   100.00     0.2384   POS         
+29     VUSE        80.00   100.00     0.1353   POS         
+30     BOOM        80.00   100.00     1.0000   CupHandle   
+31     BOTJ        80.00   100.00     1.0000   nan         
+32     HEQQ        80.00   100.00     0.1459   POS         
+33     EFTY        80.00   100.00     0.4285   POS         
+34     APXTU       80.00   100.00     0.3154   POS         
+35     NEWTI       80.00   100.00     0.3374   POS         
+36     ARQT        80.00   100.00     1.0000   CupHandle   
+37     VNMEU       80.00   100.00     0.4476   POS         
+38     NEWTG       80.00   100.00     0.3456   POS         
+39     EASY        80.00   100.00     0.1417   POS         
+40     LAFAU       80.00   100.00     0.2877   POS         
+41     ARMG        80.00   100.00     1.0000   nan         
+42     BKHAU       80.00   100.00     0.3054   POS         
+43     PLMR        80.00   100.00     1.0000   CupHandle   
+44     BKSC        80.00   100.00     0.1851   POS         
+45     LANDO       80.00   100.00     0.1162   POS         
+46     HCICU       80.00   100.00     0.2964   POS         
+47     RNRG        80.00   100.00     1.0000   nan         
+48     GIWWU       80.00   100.00     0.2668   POS         
+49     RNGTU       80.00   100.00     0.4866   POS         
+50     EFSI        80.00   100.00     0.0398   DarvasBox   
+
+================================================================================
