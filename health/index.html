@@ -12,10 +12,10 @@ td { padding: 10px 8px; border-bottom: 1px solid #d9d2bd; vertical-align: top; }
 .meta { color: #6b6455; font-size: 0.82rem; margin-top: 6px; }
 </style></head><body><div class="wrap">
 <h1>Pipeline Health <span class="overall">CRITICAL</span></h1>
-<p class="meta">Generated 2026-09-11 06:15:06 on M1 Max &middot;
+<p class="meta">Generated 2026-09-11 07:15:07 on M1 Max &middot;
 <a href="paobull-eval.html">PaoBull verdict audit &rarr;</a></p>
 <table><tr><td><span class="dot" style="background:#b5533f"></span>Mongo tunnel (M1 Max → Lenovo)</td><td>CRITICAL</td><td>Not responding — LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)</td></tr>
-<tr><td><span class="dot" style="background:#b5533f"></span>Price data freshness (Lenovo Mongo)</td><td>CRITICAL</td><td>Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aa3fed455972ddb3d122b28, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]></td></tr>
+<tr><td><span class="dot" style="background:#b5533f"></span>Price data freshness (Lenovo Mongo)</td><td>CRITICAL</td><td>Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aa40ce5010be458183cd2b5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]></td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Ollama (local LLM)</td><td>OK</td><td>Responding, 7 models available</td></tr>
 <tr><td><span class="dot" style="background:#b5843f"></span>PaoBull cache: working vs. published</td><td>WARN</td><td>working 274 tickers, published 272 tickers — 2 tickers pending publish</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>m1max's own ~/viewer checkout</td><td>OK</td><td>Up to date with origin/main</td></tr>
