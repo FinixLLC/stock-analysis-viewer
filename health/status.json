@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-10T23:15:02.759446",
+  "generated_at": "2026-09-11T00:15:07.650555",
   "overall": "critical",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
-      "status": "ok",
-      "detail": "Responding on localhost:27017",
+      "status": "critical",
+      "detail": "Not responding \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
       "last_success": null
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Expected at least 2026-09-09. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-10; AMEX_Yahoo: 2026-09-08",
+      "detail": "Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aa3aa755d35cf35dd7d7b4c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
