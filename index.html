@@ -549,6 +549,7 @@
                 <button class="tab-btn"         role="tab" data-tab="supplychain" onclick="switchTab('supplychain',this)">🕸 Supply Chain</button>
                 <button class="tab-btn"         role="tab" data-tab="paobull"    onclick="switchTab('paobull',this)">📋 PaoBull</button>
                 <button class="tab-btn" role="tab" data-tab="tickerresearch" onclick="location.href='ticker-research.html'">🔎 Ticker Research</button>
+                <button class="tab-btn" role="tab" data-tab="inflationpulse" onclick="location.href='macro/index.html'">📊 Inflation Pulse</button>
                 <button class="tab-btn"         role="tab" data-tab="howto"     onclick="switchTab('howto',this)">📖 How to Read</button>
             </div>
             <div class="tab-panels">
@@ -759,11 +760,19 @@
                         Positions all pipeline picks within their upstream–core–downstream value chains across 6 sectors.
                         Cross-ecosystem panel highlights inter-sector links.
                     </p>
-                    <p>
+                    <p style="margin-bottom:15px;">
                         <strong><a href="evcdm-viewer.html" style="color:#0891b2;text-decoration:none;">🕸 Supply Chain Intelligence</a>:</strong>
                         716 LLM-verified supply-chain edges from SEC 10-K filings across 13 industries.
                         Each edge is classified by qwen2.5:14b with a 7-rule validation filter.
                         Filter by industry, layer (L1–L6), relationship type, or entity name.
+                    </p>
+                    <p>
+                        <strong><a href="macro/index.html" style="color:#0891b2;text-decoration:none;">📊 Inflation Pulse</a>:</strong>
+                        A macro regime read, not just a headline number — tracks CPI, PPI, shelter, Median CPI,
+                        breakevens, real yields, oil/gas, wages, and Cleveland Fed's daily inflation nowcast
+                        (a leading read on CPI days to weeks before the official BLS release). Computes a
+                        deterministic Pressure Index (accelerating vs. decelerating) and has deepseek-r1:32b
+                        narrate the regime and what it implies for a rate-sensitive growth portfolio. Updated daily.
                     </p>
                 </div>
                 </div>
