@@ -1,0 +1,114 @@
+{
+  "cpi_headline": {
+    "latest_date": "2026-07-01",
+    "mom_pct": 0.07,
+    "ann_3m_pct": 0.49,
+    "ann_6m_pct": 3.85,
+    "yoy_pct": 3.54
+  },
+  "cpi_core": {
+    "latest_date": "2026-07-01",
+    "mom_pct": 0.22,
+    "ann_3m_pct": 1.64,
+    "ann_6m_pct": 2.42,
+    "yoy_pct": 2.79
+  },
+  "cpi_shelter": {
+    "latest_date": "2026-07-01",
+    "mom_pct": 0.14,
+    "ann_3m_pct": 2.32,
+    "ann_6m_pct": 3.41,
+    "yoy_pct": 3.4
+  },
+  "cpi_ex_shelter": {
+    "latest_date": "2026-07-01",
+    "mom_pct": 0.04,
+    "ann_3m_pct": -0.5,
+    "ann_6m_pct": 4.09,
+    "yoy_pct": 3.62
+  },
+  "ppi_final_demand": {
+    "latest_date": "2026-08-01",
+    "mom_pct": 0.4,
+    "ann_3m_pct": 1.4,
+    "ann_6m_pct": 5.57,
+    "yoy_pct": 5.41
+  },
+  "median_cpi_saar": {
+    "latest": 3.11,
+    "latest_date": "2026-07-01"
+  },
+  "sticky_core_cpi_saar": {
+    "latest": 2.72,
+    "latest_date": "2026-07-01"
+  },
+  "breakeven_5y": {
+    "latest": 2.46,
+    "latest_date": "2026-09-10"
+  },
+  "breakeven_10y": {
+    "latest": 2.4,
+    "latest_date": "2026-09-10"
+  },
+  "real_yield_10y": {
+    "latest": 2.46,
+    "latest_date": "2026-09-09"
+  },
+  "oil": {
+    "latest": 97.26,
+    "chg_3m_pct": 5.83
+  },
+  "gasoline": {
+    "latest": 4.157,
+    "chg_3m_pct": 0.27
+  },
+  "wages": {
+    "latest": 37.75,
+    "yoy_pct": 3.09
+  },
+  "philly_fed_prices_paid": {
+    "latest": 47.4,
+    "latest_date": "2026-08-01"
+  },
+  "cf_nowcast": {
+    "mom": {
+      "month": "September 2026",
+      "cpi": 0.36,
+      "core_cpi": 0.19,
+      "pce": 0.37,
+      "core_pce": 0.28
+    },
+    "yoy": {
+      "month": "September 2026",
+      "cpi": 3.41,
+      "core_cpi": 2.32,
+      "pce": 3.9,
+      "core_pce": 3.49
+    },
+    "quarterly_annualized": {
+      "quarter": "2026:Q3",
+      "cpi": 1.24,
+      "core_cpi": 1.91,
+      "pce": 2.47,
+      "core_pce": 3.0
+    }
+  },
+  "pressure_index": {
+    "signals": {
+      "oil": 1,
+      "gasoline": 0,
+      "shelter": -1,
+      "core_cpi_3m_vs_6m": -1,
+      "wage_growth": 0,
+      "philly_fed_prices_paid": 1,
+      "median_cpi_trend": 1
+    },
+    "total": 1,
+    "regime": "MILD INFLATIONARY"
+  },
+  "energy_trend": {
+    "oil": "rising",
+    "gasoline": "flat"
+  },
+  "generated_at": "2026-09-11T03:00:37.239800+00:00"
+}
