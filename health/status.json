@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:15:07.013253",
+  "generated_at": "2026-09-11T10:15:07.336016",
   "overall": "critical",
   "checks": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aa42904c3baa3b179567f53, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aa43715e009e1b2808ce9a0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
