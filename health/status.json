@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T18:15:02.518134",
+  "generated_at": "2026-09-10T19:15:02.844063",
   "overall": "critical",
   "checks": [
     {
@@ -28,8 +28,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
@@ -41,7 +41,7 @@
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-09 (0d ago)",
+      "detail": "last changed 2026-09-09 (1d ago)",
       "last_success": "2026-09-09T18:30:03"
     },
     {

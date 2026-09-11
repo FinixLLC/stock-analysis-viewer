@@ -12,15 +12,15 @@ td { padding: 10px 8px; border-bottom: 1px solid #d9d2bd; vertical-align: top; }
 .meta { color: #6b6455; font-size: 0.82rem; margin-top: 6px; }
 </style></head><body><div class="wrap">
 <h1>Pipeline Health <span class="overall">CRITICAL</span></h1>
-<p class="meta">Generated 2026-09-10 18:15:02 on M1 Max &middot;
+<p class="meta">Generated 2026-09-10 19:15:02 on M1 Max &middot;
 <a href="paobull-eval.html">PaoBull verdict audit &rarr;</a></p>
 <table><tr><td><span class="dot" style="background:#3f7a56"></span>Mongo tunnel (M1 Max → Lenovo)</td><td>OK</td><td>Responding on localhost:27017</td></tr>
 <tr><td><span class="dot" style="background:#b5533f"></span>Price data freshness (Lenovo Mongo)</td><td>CRITICAL</td><td>Expected at least 2026-09-09. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-10; AMEX_Yahoo: 2026-09-08</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Ollama (local LLM)</td><td>OK</td><td>Responding, 7 models available</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>PaoBull cache: working vs. published</td><td>OK</td><td>working 272 tickers, published 272 tickers</td></tr>
-<tr><td><span class="dot" style="background:#3f7a56"></span>m1max's own ~/viewer checkout</td><td>OK</td><td>Up to date with origin/main</td></tr>
+<tr><td><span class="dot" style="background:#b5843f"></span>m1max's own ~/viewer checkout</td><td>WARN</td><td>1 commit(s) behind origin/main</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Portfolio summary (Lenovo, 9pm weekdays)</td><td>OK</td><td>last changed 2026-09-09 (0d ago)</td></tr>
-<tr><td><span class="dot" style="background:#3f7a56"></span>Top picks (Lenovo, 6:30pm weekdays)</td><td>OK</td><td>last changed 2026-09-09 (0d ago)</td></tr>
+<tr><td><span class="dot" style="background:#3f7a56"></span>Top picks (Lenovo, 6:30pm weekdays)</td><td>OK</td><td>last changed 2026-09-09 (1d ago)</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Ticker-research index (weekly, Sun 1am)</td><td>OK</td><td>last changed 2026-09-06 (4d ago)</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>NewsAgent dashboard</td><td>OK</td><td>Last generated 2026-09-10 06:00</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Today's scheduled cron jobs</td><td>OK</td><td>1/3 due so far, all logged</td></tr></table>
