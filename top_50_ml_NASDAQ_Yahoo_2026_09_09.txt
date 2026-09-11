@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-09
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      INBKZ       80.00   100.00     0.1627   POS         
+2      DMIIU       80.00   100.00     0.2398   POS         
+3      DAAQU       80.00   100.00     0.4168   POS         
+4      DAK         80.00   100.00     0.1338   POS         
+5      ARMG        80.00   100.00     1.0000   nan         
+6      DDOG        80.00   100.00     1.0000   nan         
+7      LAFAU       80.00   100.00     0.2864   POS         
+8      VLYPN       80.00   100.00     0.1735   POS         
+9      DGRE        80.00   100.00     1.0000   CupHandle   
+10     RNGTU       80.00   100.00     0.4891   POS         
+11     VNMEU       80.00   100.00     0.4476   POS         
+12     INKT        80.00   100.00     1.0000   CupHandle   
+13     DMAA        80.00   100.00     1.0000   nan         
+14     DMAAU       80.00   100.00     0.4185   POS         
+15     DNMXU       80.00   100.00     0.3721   POS         
+16     DWUS        80.00   100.00     0.1300   POS         
+17     RILYT       80.00   100.00     0.1659   POS         
+18     APXTU       80.00   100.00     0.3134   POS         
+19     RILYN       80.00   100.00     0.2345   POS         
+20     RILYG       80.00   100.00     0.2047   POS         
+21     DRDB        80.00   100.00     0.1723   POS         
+22     LATAU       80.00   100.00     0.2300   POS         
+23     DRDBU       80.00   100.00     0.3889   POS         
+24     RIFR        80.00   100.00     0.1285   POS         
+25     DSAC        80.00   100.00     0.4073   POS         
+26     DUKX        80.00   100.00     0.1198   POS         
+27     REGCP       80.00   100.00     0.1381   POS         
+28     REAI        80.00   100.00     0.0769   POS         
+29     SBAC        80.00   100.00     1.0000   CupHandle   
+30     MSBIP       80.00   100.00     0.3743   POS         
+31     SBRA        80.00   100.00     1.0000   CupHandle   
+32     VIAV        80.00   100.00     1.0000   nan         
+33     SMTC        80.00   100.00     1.0000   nan         
+34     ISBA        80.00   100.00     0.1992   POS         
+35     LRGE        80.00   100.00     0.0905   POS         
+36     ATLCZ       80.00   100.00     0.2647   POS         
+37     ATLCP       80.00   100.00     0.1534   POS         
+38     ATLCL       80.00   100.00     0.2838   POS         
+39     IRTC        80.00   100.00     1.0000   CupHandle   
+40     SMCP        80.00   100.00     0.1163   POS         
+41     MMTXU       80.00   100.00     0.3228   POS         
+42     KTWO        80.00   100.00     0.3573   POS         
+43     ATHA        80.00   100.00     0.0945   nan         
+44     COHR        80.00   100.00     1.0000   nan         
+45     NUTR        80.00   100.00     0.4108   POS         
+46     SLMBP       80.00   100.00     0.2441   POS         
+47     COPP        80.00   100.00     1.0000   nan         
+48     CPLS        80.00   100.00     0.1165   POS         
+49     CRACU       80.00   100.00     0.2220   POS         
+50     VCYT        80.00   100.00     1.0000   nan         
+
+================================================================================
