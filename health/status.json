@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:15:02.626666",
+  "generated_at": "2026-09-12T00:15:02.379169",
   "overall": "critical",
   "checks": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Expected at least 2026-09-10. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-10; AMEX_Yahoo: 2026-09-08",
+      "detail": "Expected at least 2026-09-11. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-10; AMEX_Yahoo: 2026-09-08",
       "last_success": null
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None scheduled today (weekend)",
       "last_success": null
     }
   ]
