@@ -64,6 +64,12 @@
     "avg_3m": 2.48,
     "avg_6m": 2.46
   },
+  "mich_inflation_expectations": {
+    "latest": 4.2,
+    "latest_date": "2026-07-01",
+    "avg_3m": 4.53,
+    "avg_6m": 4.25
+  },
   "oil": {
     "latest": 97.26,
     "chg_3m_pct": 5.83
@@ -111,15 +117,17 @@
       "core_cpi_3m_vs_6m": -1,
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
-      "median_cpi_trend": -1
+      "median_cpi_trend": -1,
+      "inflation_expectations": 1
     },
-    "total": -1,
-    "regime": "MILD DISINFLATIONARY"
+    "total": 0,
+    "regime": "NEUTRAL"
   },
   "energy_trend": {
     "oil": "rising",
     "gasoline": "flat"
   },
   "median_cpi_trend_word": "falling",
-  "generated_at": "2026-09-12T13:45:08.309710+00:00"
+  "inflation_expectations_trend_word": "rising",
+  "generated_at": "2026-09-12T16:46:03.971627+00:00"
 }
