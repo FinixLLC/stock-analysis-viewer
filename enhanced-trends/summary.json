@@ -1,31 +1,31 @@
 {
-  "generated": "2026-09-10T20:50:58.783247",
-  "total_stocks": 5573,
-  "bullish": 1677,
-  "neutral": 404,
-  "bearish": 3492,
+  "generated": "2026-09-11T20:53:13.719039",
+  "total_stocks": 5564,
+  "bullish": 1662,
+  "neutral": 411,
+  "bearish": 3491,
   "sector_counts": {
-    "Healthcare": 620,
+    "Healthcare": 617,
     "Basic Materials": 172,
     "Financial Services": 1265,
-    "Other": 1271,
+    "Other": 1270,
     "Industrials": 496,
-    "Technology": 530,
-    "Consumer Cyclical": 378,
-    "Real Estate": 225,
+    "Technology": 527,
+    "Consumer Cyclical": 377,
+    "Real Estate": 224,
     "Energy": 194,
     "Consumer Defensive": 155,
     "Communication Services": 176,
     "Utilities": 91
   },
   "categories": {
-    "Strong Bull": 156,
-    "Bull": 1521,
-    "Neutral": 404,
-    "Bear": 3049,
+    "Strong Bull": 154,
+    "Bull": 1508,
+    "Neutral": 411,
+    "Bear": 3048,
     "Strong Bear": 443,
-    "Blue Sky Candidates": 61,
-    "Bottoming": 158
+    "Blue Sky Candidates": 58,
+    "Bottoming": 153
   },
   "top_performers_1y": [
     {
@@ -49,7 +49,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 2.41,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:24:08.932000"
+      "updated": "2026-09-12T03:26:25.030000"
     },
     {
       "symbol": "GRTX",
@@ -60,28 +60,28 @@
       "sma100": 0,
       "sma200": 0,
       "change1M": 0.0,
-      "change6M": 15939.4,
-      "change1Y": 101650.0,
+      "change6M": 15404.8,
+      "change1Y": 67733.3,
       "high52W": 16.7,
       "low52W": 0.02,
       "distFromHigh": 2.5,
-      "distFromLow": 95664.7,
+      "distFromLow": 81300.0,
       "longTerm": "bull_weak",
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Long-Term Uptrend (Near 52W High)",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-07-20",
-      "updated": "2026-09-11T02:10:18.944000"
+      "updated": "2026-09-12T02:11:26.608000"
     },
     {
       "symbol": "ALCE",
       "sector": "Utilities",
       "price": 150.0,
       "sma20": 150.0,
-      "sma50": 66.04,
-      "sma100": 33.02,
-      "sma200": 16.51,
+      "sma50": 72.04,
+      "sma100": 36.02,
+      "sma200": 18.01,
       "change1M": 0.0,
       "change6M": 14999899.3,
       "change1Y": 14900.0,
@@ -93,9 +93,9 @@
       "midTerm": "bull_weak",
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
-      "volumeRatio": 1.25,
+      "volumeRatio": 1.11,
       "dataEndDate": "2026-08-27",
-      "updated": "2026-09-11T02:13:10.489000"
+      "updated": "2026-09-12T02:14:13.983000"
     },
     {
       "symbol": "AGL",
@@ -118,19 +118,19 @@
       "pattern": "Long-Term Uptrend",
       "volumeRatio": 1.33,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:40.340000"
+      "updated": "2026-09-12T03:25:57.439000"
     },
     {
       "symbol": "VYNE",
       "sector": "Healthcare",
       "price": 28.56,
       "sma20": 28.56,
-      "sma50": 28.0,
-      "sma100": 14.34,
-      "sma200": 7.47,
+      "sma50": 28.56,
+      "sma100": 14.9,
+      "sma200": 7.75,
       "change1M": 0.0,
-      "change6M": 4716.2,
-      "change1Y": 7577.4,
+      "change6M": 4559.1,
+      "change1Y": 6934.5,
       "high52W": 28.56,
       "low52W": 0.32,
       "distFromHigh": 0.0,
@@ -141,30 +141,7 @@
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 1.0,
       "dataEndDate": "2026-07-27",
-      "updated": "2026-09-11T02:10:19.680000"
-    },
-    {
-      "symbol": "CFNB",
-      "sector": "Financial Services",
-      "price": 1402.72,
-      "sma20": 321.05,
-      "sma50": 698.75,
-      "sma100": 414.23,
-      "sma200": 220.14,
-      "change1M": 4031.7,
-      "change6M": 4982.3,
-      "change1Y": 6938.2,
-      "high52W": 1697.5,
-      "low52W": 19.6,
-      "distFromHigh": 17.4,
-      "distFromLow": 7056.7,
-      "longTerm": "strong_bull",
-      "midTerm": "strong_bull",
-      "shortTerm": "strong_bull",
-      "pattern": "Mid-Term Momentum - Bullish",
-      "volumeRatio": 2.6,
-      "dataEndDate": "2026-09-09",
-      "updated": "2026-09-11T02:12:44.814000"
+      "updated": "2026-09-12T02:11:27.436000"
     },
     {
       "symbol": "COOK",
@@ -187,7 +164,7 @@
       "pattern": "Long-Term Uptrend",
       "volumeRatio": 0.56,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:46.417000"
+      "updated": "2026-09-12T03:26:03.282000"
     },
     {
       "symbol": "CNTM",
@@ -210,7 +187,7 @@
       "pattern": "Long-Term Uptrend",
       "volumeRatio": 0.3,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T02:13:10.909000"
+      "updated": "2026-09-12T02:14:17.660000"
     },
     {
       "symbol": "QMMM",
@@ -233,30 +210,30 @@
       "pattern": "Long-Term Uptrend (Near 52W Low)",
       "volumeRatio": 0.0,
       "dataEndDate": "2026-08-27",
-      "updated": "2026-09-11T02:13:43.754000"
+      "updated": "2026-09-12T02:14:45.955000"
     },
     {
       "symbol": "ARTC",
       "sector": "Other",
-      "price": 9.98,
+      "price": 10.0,
       "sma20": 9.98,
       "sma50": 9.97,
       "sma100": 9.93,
-      "sma200": 6.9,
-      "change1M": 0.1,
-      "change6M": 1.7,
-      "change1Y": 1782.1,
+      "sma200": 6.95,
+      "change1M": 0.3,
+      "change6M": 1.9,
+      "change1Y": 1786.8,
       "high52W": 10.0,
       "low52W": 0.53,
-      "distFromHigh": 0.2,
-      "distFromLow": 1782.1,
-      "longTerm": "strong_bull",
+      "distFromHigh": 0.0,
+      "distFromLow": 1786.8,
+      "longTerm": "bull_weak",
       "midTerm": "neutral",
       "shortTerm": "neutral",
-      "pattern": "Strong Long-Term Uptrend (Near 52W High)",
-      "volumeRatio": 18.67,
-      "dataEndDate": "2026-09-09",
-      "updated": "2026-09-11T02:14:10.708000"
+      "pattern": "Blue Sky Breakout",
+      "volumeRatio": 0.01,
+      "dataEndDate": "2026-09-10",
+      "updated": "2026-09-12T02:15:10.136000"
     },
     {
       "symbol": "ACAT",
@@ -278,8 +255,8 @@
       "shortTerm": "neutral",
       "pattern": "Blue Sky Breakout",
       "volumeRatio": 0.0,
-      "dataEndDate": "2026-09-09",
-      "updated": "2026-09-11T02:10:20.375000"
+      "dataEndDate": "2026-09-10",
+      "updated": "2026-09-12T02:11:28.345000"
     },
     {
       "symbol": "WORX",
@@ -325,7 +302,7 @@
       "pattern": "Full Alignment - Strong Uptrend (Near 52W High)",
       "volumeRatio": 1.04,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:22:25.981000"
+      "updated": "2026-09-12T03:24:57.202000"
     },
     {
       "symbol": "CRTD",
@@ -371,7 +348,7 @@
       "pattern": "Long-Term Uptrend",
       "volumeRatio": 0.35,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:36.474000"
+      "updated": "2026-09-12T03:25:53.304000"
     },
     {
       "symbol": "BARK",
@@ -394,7 +371,7 @@
       "pattern": "Strong Long-Term Uptrend",
       "volumeRatio": 1.86,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:09.857000"
+      "updated": "2026-09-12T03:25:25.475000"
     },
     {
       "symbol": "SKK",
@@ -440,7 +417,7 @@
       "pattern": "Long-Term Uptrend",
       "volumeRatio": 0.45,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:39.817000"
+      "updated": "2026-09-12T03:25:56.563000"
     },
     {
       "symbol": "RLMD",
@@ -466,27 +443,50 @@
       "updated": "2026-08-08T02:11:13.871000"
     },
     {
-      "symbol": "SILO",
+      "symbol": "CRE",
+      "sector": "Industrials",
+      "price": 6.81,
+      "sma20": 2.83,
+      "sma50": 2.96,
+      "sma100": 2.75,
+      "sma200": 2.03,
+      "change1M": 162.9,
+      "change6M": 197.4,
+      "change1Y": 751.2,
+      "high52W": 8.59,
+      "low52W": 0.23,
+      "distFromHigh": 20.7,
+      "distFromLow": 2848.1,
+      "longTerm": "strong_bull",
+      "midTerm": "strong_bull",
+      "shortTerm": "strong_bull",
+      "pattern": "Mid-Term Momentum - Bullish",
+      "volumeRatio": 19.8,
+      "dataEndDate": "2026-08-26",
+      "updated": "2026-08-28T02:11:33.411000"
+    },
+    {
+      "symbol": "ANRO",
       "sector": "Healthcare",
-      "price": 5.28,
-      "sma20": 6.18,
-      "sma50": 3.63,
-      "sma100": 2.01,
-      "sma200": 1.23,
-      "change1M": -17.5,
-      "change6M": 1236.7,
-      "change1Y": 787.4,
-      "high52W": 7.95,
-      "low52W": 0.22,
-      "distFromHigh": 33.6,
-      "distFromLow": 2289.1,
-      "longTerm": "bull_weak",
-      "midTerm": "bull_weak",
-      "shortTerm": "bear",
-      "pattern": "Long-Term Uptrend",
-      "volumeRatio": 0.36,
-      "dataEndDate": "2026-07-13",
-      "updated": "2026-07-15T02:12:31.061000"
+      "price": 31.68,
+      "sma20": 35.17,
+      "sma50": 30.66,
+      "sma100": 26.67,
+      "sma200": 22.78,
+      "change1M": -1.9,
+      "change6M": 30.4,
+      "change1Y": 740.3,
+      "high52W": 37.48,
+      "low52W": 3.59,
+      "distFromHigh": 15.5,
+      "distFromLow": 782.5,
+      "longTerm": "strong_bull",
+      "midTerm": "strong_bull",
+      "shortTerm": "neutral",
+      "pattern": "Strong Long-Term Uptrend",
+      "volumeRatio": 1.76,
+      "dataEndDate": "2026-09-10",
+      "updated": "2026-09-12T03:26:15.390000"
     }
   ],
   "worst_performers_1y": [
@@ -511,7 +511,7 @@
       "pattern": "Long-Term Downtrend",
       "volumeRatio": 1.45,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:24:08.532000"
+      "updated": "2026-09-12T03:26:24.416000"
     },
     {
       "symbol": "VRC",
@@ -534,7 +534,7 @@
       "pattern": "Strong Long-Term Downtrend",
       "volumeRatio": 5.4,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:24:10.108000"
+      "updated": "2026-09-12T03:26:26.900000"
     },
     {
       "symbol": "RVSN",
@@ -672,7 +672,7 @@
       "pattern": "Long-Term Downtrend (Near 52W Low)",
       "volumeRatio": 1.01,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:22:57.542000"
+      "updated": "2026-09-12T03:25:16.205000"
     },
     {
       "symbol": "LENZ",
@@ -718,7 +718,7 @@
       "pattern": "Long-Term Downtrend",
       "volumeRatio": 0.04,
       "dataEndDate": "2026-07-17",
-      "updated": "2026-09-11T02:12:54.977000"
+      "updated": "2026-09-12T02:13:59.649000"
     },
     {
       "symbol": "SNWV",
@@ -856,7 +856,7 @@
       "pattern": "Long-Term Downtrend",
       "volumeRatio": 0.94,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:23.415000"
+      "updated": "2026-09-12T03:25:45.109000"
     },
     {
       "symbol": "NVVE",
@@ -902,7 +902,7 @@
       "pattern": "Long-Term Downtrend",
       "volumeRatio": 1.04,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:22:23.710000"
+      "updated": "2026-09-12T03:24:41.709000"
     },
     {
       "symbol": "COE",
@@ -925,7 +925,7 @@
       "pattern": "Strong Long-Term Downtrend (Near 52W Low)",
       "volumeRatio": 1.52,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:23:32.618000"
+      "updated": "2026-09-12T03:25:52.174000"
     },
     {
       "symbol": "SBS",
@@ -948,7 +948,7 @@
       "pattern": "Long-Term Downtrend",
       "volumeRatio": 0.74,
       "dataEndDate": "2026-09-10",
-      "updated": "2026-09-11T03:21:26.320000"
+      "updated": "2026-09-12T03:23:46.684000"
     }
   ]
 }

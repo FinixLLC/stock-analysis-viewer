@@ -1,173 +1,173 @@
 {
-  "generated_at": "2026-09-09T21:00:08.869962",
+  "generated_at": "2026-09-10T21:00:09.169247",
   "total_positions": 94,
   "avg_1m_return": NaN,
   "sell_signal_count": 0,
   "top_gainer": {
-    "symbol": "CRM",
-    "return_1m": 26.16
+    "symbol": "AAPL",
+    "return_1m": NaN
   },
   "top_gainers": [
     {
-      "symbol": "CRM",
-      "price": 249.1199951171875,
-      "return_1m": 26.16,
-      "return_3m": 50.17,
-      "return_6m": 25.6,
-      "return_1y": 3.05,
-      "signal_count": 0
-    },
-    {
-      "symbol": "HOOD",
-      "price": 117.33999633789062,
-      "return_1m": 24.33,
-      "return_3m": 25.91,
-      "return_6m": 55.81,
-      "return_1y": -0.1,
-      "signal_count": 0
-    },
-    {
-      "symbol": "HL",
-      "price": 20.459999084472656,
-      "return_1m": 15.2,
-      "return_3m": 33.81,
-      "return_6m": 2.92,
-      "return_1y": 86.56,
-      "signal_count": 0
-    },
-    {
-      "symbol": "HUM",
-      "price": 403.0899963378906,
-      "return_1m": 8.12,
-      "return_3m": 6.29,
-      "return_6m": 137.13,
-      "return_1y": 48.36,
-      "signal_count": 0
-    },
-    {
-      "symbol": "AUMI",
-      "price": 102.37079620361328,
-      "return_1m": 7.32,
-      "return_3m": 25.98,
-      "return_6m": 3.01,
-      "return_1y": 41.69,
-      "signal_count": 0
-    },
-    {
-      "symbol": "APA",
-      "price": 43.54999923706055,
-      "return_1m": 7.21,
-      "return_3m": 17.64,
-      "return_6m": 26.09,
-      "return_1y": 90.88,
-      "signal_count": 0
-    },
-    {
-      "symbol": "INTC",
-      "price": 104.47000122070312,
-      "return_1m": 6.92,
-      "return_3m": -16.14,
-      "return_6m": 128.3,
-      "return_1y": 321.76,
-      "signal_count": 0
-    },
-    {
-      "symbol": "CVX",
-      "price": 209.8000030517578,
-      "return_1m": 6.68,
-      "return_3m": 12.06,
+      "symbol": "AAPL",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
       "return_6m": NaN,
-      "return_1y": 34.45,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "ADBE",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
       "signal_count": 0
     },
     {
       "symbol": "AMD",
-      "price": 505.739990234375,
-      "return_1m": 6.62,
-      "return_3m": -1.14,
-      "return_6m": 157.27,
-      "return_1y": 217.0,
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
       "signal_count": 0
     },
     {
-      "symbol": "AAPL",
-      "price": 316.2200012207031,
-      "return_1m": 3.71,
-      "return_3m": 8.62,
-      "return_6m": 25.08,
-      "return_1y": 39.57,
+      "symbol": "AMZN",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APA",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APLD",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APP",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AUMI",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "BKR",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "CRM",
+      "price": 243.0,
+      "return_1m": 25.7,
+      "return_3m": 47.68,
+      "return_6m": 22.52,
+      "return_1y": -1.0,
       "signal_count": 0
     }
   ],
   "top_losers": [
     {
-      "symbol": "MX",
-      "price": 3.119999885559082,
-      "return_1m": -20.0,
-      "return_3m": -50.08,
-      "signal_count": 0
-    },
-    {
-      "symbol": "MDB",
-      "price": 356.0,
-      "return_1m": -18.94,
-      "return_3m": 3.85,
-      "signal_count": 0
-    },
-    {
-      "symbol": "LGN",
-      "price": 57.040000915527344,
-      "return_1m": -16.95,
-      "return_3m": -33.67,
-      "signal_count": 0
-    },
-    {
-      "symbol": "DGII",
-      "price": 69.91000366210938,
-      "return_1m": -16.36,
-      "return_3m": 1.79,
-      "signal_count": 0
-    },
-    {
-      "symbol": "CCL",
-      "price": 23.200000762939453,
-      "return_1m": -16.34,
-      "return_3m": -20.49,
-      "signal_count": 0
-    },
-    {
-      "symbol": "VIK",
-      "price": 88.08000183105469,
-      "return_1m": -15.46,
-      "return_3m": -4.52,
+      "symbol": "AAPL",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
       "signal_count": 0
     },
     {
       "symbol": "ACHR",
-      "price": 5.829999923706055,
-      "return_1m": -14.14,
-      "return_3m": 14.76,
+      "price": 5.449999809265137,
+      "return_1m": -13.35,
+      "return_3m": -1.8,
       "signal_count": 0
     },
     {
-      "symbol": "ENVA",
-      "price": 225.7899932861328,
-      "return_1m": -13.29,
-      "return_3m": 19.26,
+      "symbol": "ADBE",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
       "signal_count": 0
     },
     {
-      "symbol": "HD",
-      "price": 313.70001220703125,
-      "return_1m": -11.5,
-      "return_3m": -4.47,
+      "symbol": "AMCR",
+      "price": 43.0,
+      "return_1m": -7.65,
+      "return_3m": 4.6,
       "signal_count": 0
     },
     {
-      "symbol": "BA",
-      "price": 210.72999572753906,
-      "return_1m": -9.65,
-      "return_3m": -3.8,
+      "symbol": "AMD",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMG",
+      "price": 354.5299987792969,
+      "return_1m": -2.17,
+      "return_3m": 0.45,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMZN",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APA",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APLD",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APP",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
       "signal_count": 0
     }
   ],
