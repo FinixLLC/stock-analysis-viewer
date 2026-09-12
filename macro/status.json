@@ -35,24 +35,34 @@
     "yoy_pct": 5.41
   },
   "median_cpi_saar": {
-    "latest": 3.11,
-    "latest_date": "2026-07-01"
+    "latest": 2.1,
+    "latest_date": "2026-08-01",
+    "avg_3m": 2.44,
+    "avg_6m": 3.04
   },
   "sticky_core_cpi_saar": {
-    "latest": 2.72,
-    "latest_date": "2026-07-01"
+    "latest": 2.7,
+    "latest_date": "2026-08-01",
+    "avg_3m": 2.74,
+    "avg_6m": 2.88
   },
   "breakeven_5y": {
-    "latest": 2.46,
-    "latest_date": "2026-09-10"
+    "latest": 2.4,
+    "latest_date": "2026-09-11",
+    "avg_3m": 2.42,
+    "avg_6m": 2.4
   },
   "breakeven_10y": {
-    "latest": 2.4,
-    "latest_date": "2026-09-10"
+    "latest": 2.36,
+    "latest_date": "2026-09-11",
+    "avg_3m": 2.38,
+    "avg_6m": 2.37
   },
   "real_yield_10y": {
-    "latest": 2.46,
-    "latest_date": "2026-09-09"
+    "latest": 2.55,
+    "latest_date": "2026-09-10",
+    "avg_3m": 2.48,
+    "avg_6m": 2.46
   },
   "oil": {
     "latest": 97.26,
@@ -73,23 +83,23 @@
   "cf_nowcast": {
     "mom": {
       "month": "September 2026",
-      "cpi": 0.36,
-      "core_cpi": 0.19,
+      "cpi": 0.37,
+      "core_cpi": 0.2,
       "pce": 0.37,
       "core_pce": 0.28
     },
     "yoy": {
       "month": "September 2026",
-      "cpi": 3.41,
-      "core_cpi": 2.32,
-      "pce": 3.9,
+      "cpi": 3.43,
+      "core_cpi": 2.39,
+      "pce": 3.89,
       "core_pce": 3.49
     },
     "quarterly_annualized": {
       "quarter": "2026:Q3",
-      "cpi": 1.24,
-      "core_cpi": 1.91,
-      "pce": 2.47,
+      "cpi": 1.35,
+      "core_cpi": 2.16,
+      "pce": 2.44,
       "core_pce": 3.0
     }
   },
@@ -101,14 +111,15 @@
       "core_cpi_3m_vs_6m": -1,
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
-      "median_cpi_trend": 1
+      "median_cpi_trend": -1
     },
-    "total": 1,
-    "regime": "MILD INFLATIONARY"
+    "total": -1,
+    "regime": "MILD DISINFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
     "gasoline": "flat"
   },
-  "generated_at": "2026-09-11T13:45:07.877319+00:00"
+  "median_cpi_trend_word": "falling",
+  "generated_at": "2026-09-12T04:30:49.696348+00:00"
 }
