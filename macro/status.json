@@ -109,6 +109,21 @@
       "core_pce": 3.0
     }
   },
+  "nyfed_infl_exp_1y": {
+    "latest": 3.58,
+    "avg_3m": 3.63,
+    "avg_6m": 3.57
+  },
+  "nyfed_infl_exp_3y": {
+    "latest": 3.19,
+    "avg_3m": 3.26,
+    "avg_6m": 3.19
+  },
+  "nyfed_infl_exp_5y": {
+    "latest": 3.01,
+    "avg_3m": 3.01,
+    "avg_6m": 3.02
+  },
   "pressure_index": {
     "signals": {
       "oil": 1,
@@ -129,5 +144,5 @@
   },
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "rising",
-  "generated_at": "2026-09-12T16:46:03.971627+00:00"
+  "generated_at": "2026-09-13T03:42:22.018650+00:00"
 }
