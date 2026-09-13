@@ -443,6 +443,18 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.25);
             margin-bottom: 30px;
             overflow: hidden;
+            position: relative;
+        }
+        /* Fade the right edge so an overflowing tab strip reads as
+           "scroll for more" instead of the last tab looking cut off /
+           broken — the strip itself still just horizontally scrolls,
+           this only adds a visible affordance that it can. */
+        .tool-tabs::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; width: 36px; height: 45px;
+            background: linear-gradient(90deg, rgba(238,240,247,0), #eef0f7);
+            pointer-events: none;
         }
         .tab-strip {
             display: flex;
@@ -450,18 +462,18 @@
             overflow-x: auto;
             scrollbar-width: none;
             padding: 10px 12px 0;
-            gap: 3px;
+            gap: 2px;
             border-bottom: 2px solid rgba(102,126,234,0.15);
         }
         .tab-strip::-webkit-scrollbar { display: none; }
         .tab-btn {
             flex-shrink: 0;
-            padding: 10px 20px 11px;
+            padding: 9px 14px 10px;
             border: none;
             border-radius: 10px 10px 0 0;
             background: transparent;
             color: #888;
-            font-size: 0.88em;
+            font-size: 0.82em;
             font-weight: 600;
             cursor: pointer;
             transition: background 0.18s, color 0.18s;
