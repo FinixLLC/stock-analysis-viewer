@@ -1,0 +1,527 @@
+<title>NewsAgent Wire Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --page:       #f9f9f7;
+    --surface:    #fcfcfb;
+    --ink:        #0b0b0b;
+    --ink-2:      #52514e;
+    --muted:      #898781;
+    --grid:       #e1e0d9;
+    --border:     rgba(11,11,11,0.10);
+    --accent:     #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page:     #0d0d0d;
+      --surface:  #1a1a19;
+      --ink:      #ffffff;
+      --ink-2:    #c3c2b7;
+      --muted:    #898781;
+      --grid:     #2c2c2a;
+      --border:   rgba(255,255,255,0.10);
+      --accent:   #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page:     #0d0d0d;
+    --surface:  #1a1a19;
+    --ink:      #ffffff;
+    --ink-2:    #c3c2b7;
+    --muted:    #898781;
+    --grid:     #2c2c2a;
+    --border:   rgba(255,255,255,0.10);
+    --accent:   #3987e5;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+  .tile {
+    background: var(--surface);
+    padding: 1.1rem 1.2rem;
+  }
+  .tile .n {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    font-variant-numeric: proportional-nums;
+  }
+  .tile .l {
+    margin-top: 0.35rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+  }
+
+  section { margin-bottom: 2.75rem; }
+  h2 {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-2);
+    border-bottom: 1px solid var(--grid);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.1rem;
+  }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 0.6rem 1.1rem; margin-bottom: 1.2rem; }
+  .chip { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; color: var(--ink-2); }
+  .chip i { width: 9px; height: 9px; border-radius: 2px; background: var(--l); display: inline-block; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip i { background: var(--d); } }
+  :root[data-theme="dark"] .chip i { background: var(--d); }
+
+  .bar-row { display: grid; grid-template-columns: 130px 1fr 3.5ch; align-items: center; gap: 0.75rem; padding: 0.3rem 0; }
+  .bar-label { font-size: 0.85rem; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { background: var(--grid); border-radius: 4px; height: 14px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--l); border-radius: 4px; transition: width 0.2s ease; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bar-fill { background: var(--d); } }
+  :root[data-theme="dark"] .bar-fill { background: var(--d); }
+  .bar-row:hover .bar-track { box-shadow: 0 0 0 1px var(--border) inset; }
+  .bar-value { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.8rem; text-align: right; font-variant-numeric: tabular-nums; }
+
+  .timeline { display: flex; align-items: flex-end; gap: 0.9rem; height: 140px; padding-top: 1.2rem; }
+  .tl-col { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
+  .tl-value { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem; color: var(--ink-2); margin-bottom: 0.3rem; font-variant-numeric: tabular-nums; }
+  .tl-track { width: 100%; max-width: 32px; height: 90px; display: flex; align-items: flex-end; background: var(--grid); border-radius: 4px 4px 0 0; overflow: hidden; }
+  .tl-fill { width: 100%; background: var(--l); border-radius: 4px 4px 0 0; min-height: 2px; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tl-fill { background: var(--d); } }
+  :root[data-theme="dark"] .tl-fill { background: var(--d); }
+  .tl-day { margin-top: 0.4rem; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.68rem; color: var(--muted); }
+
+  details { margin-top: 0.75rem; }
+  summary { cursor: pointer; font-size: 0.78rem; color: var(--ink-2); }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; font-size: 0.82rem; }
+  th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--grid); }
+  th { font-family: "IBM Plex Mono", ui-monospace, monospace; text-transform: uppercase; font-size: 0.68rem; letter-spacing: 0.05em; color: var(--muted); }
+  td:last-child, th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .table-wrap { overflow-x: auto; }
+
+  .briefs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.75rem 2rem; }
+  .brief-group h3 {
+    display: flex; align-items: center; gap: 0.5rem;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--ink-2); margin: 0 0 0.7rem;
+  }
+  .brief-group h3 i { width: 8px; height: 8px; border-radius: 2px; background: var(--l); display: inline-block; flex-shrink: 0; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brief-group h3 i { background: var(--d); } }
+  :root[data-theme="dark"] .brief-group h3 i { background: var(--d); }
+  .brief-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
+  .brief-list li { padding-bottom: 1rem; border-bottom: 1px solid var(--grid); }
+  .brief-list li:last-child { border-bottom: none; padding-bottom: 0; }
+  .brief-title {
+    display: block; color: var(--ink); text-decoration: none;
+    font-weight: 500; font-size: 0.92rem; line-height: 1.35;
+  }
+  .brief-title:hover { text-decoration: underline; }
+  .brief-byline {
+    display: block; margin-top: 0.25rem;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted);
+  }
+  .brief-summary { margin: 0.4rem 0 0; font-size: 0.84rem; line-height: 1.5; color: var(--ink-2); }
+
+  .empty { color: var(--muted); font-size: 0.85rem; }
+  footer { margin-top: 3rem; font-size: 0.72rem; color: var(--muted); font-family: "IBM Plex Mono", ui-monospace, monospace; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>NewsAgent Wire Desk</h1>
+    <span class="meta">Generated 2026-09-13 03:39 UTC</span>
+  </header>
+
+  <div class="tiles">
+    <div class="tile"><div class="n">3654</div><div class="l">Articles tracked</div></div>
+    <div class="tile"><div class="n">8</div><div class="l">Categories active</div></div>
+    <div class="tile"><div class="n">9</div><div class="l">Sources tracked</div></div>
+    <div class="tile"><div class="n">Sports</div><div class="l">Top category &middot; 913</div></div>
+  </div>
+
+  <section>
+    <h2>Articles by category</h2>
+    <div class="legend"><span class="chip" style="--l:#2a78d6;--d:#3987e5"><i></i>World</span><span class="chip" style="--l:#eb6834;--d:#d95926"><i></i>Politics</span><span class="chip" style="--l:#1baf7a;--d:#199e70"><i></i>Business</span><span class="chip" style="--l:#eda100;--d:#c98500"><i></i>Technology</span><span class="chip" style="--l:#e87ba4;--d:#d55181"><i></i>Science</span><span class="chip" style="--l:#008300;--d:#008300"><i></i>Health</span><span class="chip" style="--l:#4a3aa7;--d:#9085e9"><i></i>Sports</span><span class="chip" style="--l:#e34948;--d:#e66767"><i></i>Entertainment</span></div>
+    
+        <div class="bar-row" style="--l:#4a3aa7;--d:#9085e9">
+          <span class="bar-label">Sports</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:100.0%"></div>
+          </div>
+          <span class="bar-value">913</span>
+        </div>
+        <div class="bar-row" style="--l:#eb6834;--d:#d95926">
+          <span class="bar-label">Politics</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:63.0%"></div>
+          </div>
+          <span class="bar-value">575</span>
+        </div>
+        <div class="bar-row" style="--l:#1baf7a;--d:#199e70">
+          <span class="bar-label">Business</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:61.2%"></div>
+          </div>
+          <span class="bar-value">559</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">World</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:59.5%"></div>
+          </div>
+          <span class="bar-value">543</span>
+        </div>
+        <div class="bar-row" style="--l:#eda100;--d:#c98500">
+          <span class="bar-label">Technology</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:50.2%"></div>
+          </div>
+          <span class="bar-value">458</span>
+        </div>
+        <div class="bar-row" style="--l:#e34948;--d:#e66767">
+          <span class="bar-label">Entertainment</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:26.6%"></div>
+          </div>
+          <span class="bar-value">243</span>
+        </div>
+        <div class="bar-row" style="--l:#e87ba4;--d:#d55181">
+          <span class="bar-label">Science</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:23.5%"></div>
+          </div>
+          <span class="bar-value">215</span>
+        </div>
+        <div class="bar-row" style="--l:#008300;--d:#008300">
+          <span class="bar-label">Health</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:16.2%"></div>
+          </div>
+          <span class="bar-value">148</span>
+        </div>
+    <details>
+      <summary>View as table</summary>
+      <div class="table-wrap"><table><thead><tr><th>Category</th><th>Count</th></tr></thead><tbody><tr><td>Sports</td><td>913</td></tr><tr><td>Politics</td><td>575</td></tr><tr><td>Business</td><td>559</td></tr><tr><td>World</td><td>543</td></tr><tr><td>Technology</td><td>458</td></tr><tr><td>Entertainment</td><td>243</td></tr><tr><td>Science</td><td>215</td></tr><tr><td>Health</td><td>148</td></tr></tbody></table></div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Top stories by category</h2>
+    <div class="briefs">
+        <div class="brief-group">
+          <h3 style="--l:#2a78d6;--d:#3987e5"><i></i>World</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">They lost their jobs after posting about Charlie Kirk, but some have no regrets</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">Some people fired in the wake of Kirk&#x27;s assassination have won big settlements from employers, others have had to start over from scratch.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.nytimes.com/2026/09/12/world/europe/trump-ireland-unification-remarks.html" target="_blank" rel="noopener">Trump Says Irish Unification Would Be ‘Fantastic,’ Breaking With Precedent</a>
+              <span class="brief-byline">NYT &middot; 2026-09-13</span>
+              <p class="brief-summary">The United States has been officially neutral on an issue that was a source of decades of violence in Northern Ireland until a 1998 peace deal.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/c5y6z72z9lno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Best friends for decades - until a DNA test revealed they were sisters</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">Meena Geltink and Minal Tijssen were adopted from orphanages in Mumbai in the 1980s and grew up in the Netherlands.</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#eb6834;--d:#d95926"><i></i>Politics</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bloomberg.com/news/articles/2026-09-12/carney-to-meet-uk-s-burnham-as-canada-deepens-europe-ties" target="_blank" rel="noopener">Carney to Meet UK’s Burnham as Canada Deepens Europe Ties</a>
+              <span class="brief-byline">Bloomberg &middot; 2026-09-13</span>
+              <p class="brief-summary">Canada’s Prime Minister Mark Carney will meet new UK leader Andy Burnham for the first time in Liverpool, England.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.nytimes.com/2026/09/12/us/politics/husted-political-director-nazi-photo.html" target="_blank" rel="noopener">Republican Campaign Aide Is Fired Over Nazi Photo</a>
+              <span class="brief-byline">NYT &middot; 2026-09-13</span>
+              <p class="brief-summary">Senator Jon Husted, running in a high-stakes race in Ohio, dismissed his political director because of social media activity displaying a “complete lack” of judgment, a…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.bloomberg.com/news/videos/2026-09-12/trump-says-he-d-love-to-see-a-united-ireland-video" target="_blank" rel="noopener">Trump Says He’d Love to See a ‘United’ Ireland During Visit</a>
+              <span class="brief-byline">Bloomberg &middot; 2026-09-12</span>
+              <p class="brief-summary">US President Donald Trump says he would like to see Ireland “unified,” a remark that puts him at odds with UK Prime Minister Andy Burnham who recently said the issue is off the…</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#1baf7a;--d:#199e70"><i></i>Business</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bloomberg.com/news/articles/2026-09-13/korea-tests-global-investor-appetite-with-longer-trading-hours" target="_blank" rel="noopener">Korea Tests Global Investor Appetite With Longer Trading Hours</a>
+              <span class="brief-byline">Bloomberg &middot; 2026-09-13</span>
+              <p class="brief-summary">South Korea’s main stock exchange is extending into evening sessions, breaking with Asia’s trading-hour norms to tap what it hopes will be sustained demand from global investors.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/crm9xk9eg88o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">&#x27;Skimpflation&#x27; warning as tinned mackerel alternative hits more supermarket shelves</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">Consumer group Which? has called the sale of jack mackerel, a cheaper, less nutritious species of fish, an example of &quot;skimpflation&quot;.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.nytimes.com/2026/09/12/insider/60-minutes-former-nyt-colleagues-media.html" target="_blank" rel="noopener">How The Times Covers ‘60 Minutes’ and Other Journalists</a>
+              <span class="brief-byline">NYT &middot; 2026-09-13</span>
+              <p class="brief-summary">Journalists don’t want to become the story. But newsrooms — and the people who run them — are the story for Times media reporters.</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#eda100;--d:#c98500"><i></i>Technology</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">AI staff &#x27;genuinely frightened&#x27; for humanity&#x27;s future, ex-Anthropic researcher tells BBC</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">Jacob Coxon tells the BBC that there&#x27;s a strong chance AI could end humanity if the rate of development is not reined in.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.bloomberg.com/news/articles/2026-09-13/brazil-s-top-court-gives-police-deadline-on-banker-s-phone-data" target="_blank" rel="noopener">Brazil’s Top Court Gives Police Deadline on Banker’s Phone Data</a>
+              <span class="brief-byline">Bloomberg &middot; 2026-09-13</span>
+              <p class="brief-summary">Brazil’s Chief Justice Edson Fachin has given the Federal Police 24 hours to provide information regarding the custody and condition of the data extracted from the mobile phone of…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/" target="_blank" rel="noopener">Automattic confirms Mullenweg has returned as CEO after attempted ouster by board</a>
+              <span class="brief-byline">TechCrunch &middot; 2026-09-13</span>
+              <p class="brief-summary">Automattic says Mullenweg is back as &quot;chairman and CEO of Automattic, with full support of the board.&quot;</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#e87ba4;--d:#d55181"><i></i>Science</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/cvgy4w3mnpvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Five night sky events to look out for this autumn</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">From meteor showers to a November supermoon, there are a number of impressive sights to behold in the autumn night sky.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.nytimes.com/2026/09/12/us/bird-seasonal-migration-lights.html" target="_blank" rel="noopener">As Millions of Birds Migrate, Residents Are Asked to Turn Off the Lights</a>
+              <span class="brief-byline">NYT &middot; 2026-09-13</span>
+              <p class="brief-summary">Birds are drawn to lights, and more than a billion die each year after crashing into buildings, experts said.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.nytimes.com/2026/09/12/us/ice-age-mastodon-tooth-bay-area.html" target="_blank" rel="noopener">A Mastodon Tooth Is Discovered in a California Creek</a>
+              <span class="brief-byline">NYT &middot; 2026-09-13</span>
+              <p class="brief-summary">A researcher surveying a San Mateo County creek stumbled upon a preserved Pacific mastodon molar estimated to be at least 10,000 years old.</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#008300;--d:#008300"><i></i>Health</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.bbc.co.uk/news/articles/ckgwe8dk6z6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Some dentists say more young people are grinding their teeth - are you one of them?</a>
+              <span class="brief-byline">BBC &middot; 2026-09-13</span>
+              <p class="brief-summary">Millions of us do it, though few of us realise we do - but getting the right treatment can be life-changing.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.npr.org/2026/09/12/g-s1-142404/hiv-aids-brazil-stigma" target="_blank" rel="noopener">&#x27;People are still afraid of those three letters&#x27;: Fighting the stigma of HIV</a>
+              <span class="brief-byline">NPR &middot; 2026-09-12</span>
+              <p class="brief-summary">That&#x27;s a quote from former rugby star Gareth Thomas, who is HIV positive. At the International AIDS Conference in Rio this year, he spoke out about the isolation and…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.npr.org/2026/09/12/nx-s1-5966884/insurance-coverage-cancer-disability-medicaid" target="_blank" rel="noopener">A cancer survivor hoped to work — then she lost her Medicaid disability coverage</a>
+              <span class="brief-byline">NPR &middot; 2026-09-12</span>
+              <p class="brief-summary">As state governments grapple with how to determine who&#x27;s sick enough to be excused from new Medicaid work requirements, some families are already struggling with what illnesses…</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#4a3aa7;--d:#9085e9"><i></i>Sports</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://www.espn.com/boxing/story/_/id/49892403/ryan-garcia-vs-conor-benn-live-updates-results-analysis" target="_blank" rel="noopener">Ryan Garcia vs. Conor Benn live updates, results and analysis</a>
+              <span class="brief-byline">ESPN &middot; 2026-09-13</span>
+              <p class="brief-summary">Ryan Garcia defends his WBC welterweight world title against Conor Benn on Saturday. Follow live.</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.espn.com/college-football/story/_/id/49923197/no-4-texas-mounts-fourth-quarter-rally-stuns-no-1-ohio-state" target="_blank" rel="noopener">No. 4 Texas mounts late rally, shocks No. 1 Ohio State</a>
+              <span class="brief-byline">ESPN &middot; 2026-09-13</span>
+              <p class="brief-summary">Hollywood Smothers scored on a 1-yard run with a leap over the pile with 25 seconds left and No. 4 Texas rallied from 20 points down in the fourth quarter to beat No. 1 Ohio State…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://www.espn.com/tennis/story/_/id/49920080/elena-rybakina-world-no-1-secures-first-us-open-title" target="_blank" rel="noopener">Rybakina defeats Sabalenka, wins first US Open title</a>
+              <span class="brief-byline">ESPN &middot; 2026-09-13</span>
+              <p class="brief-summary">Elena Rybakina won her first US Open championship and punctuated her climb to the top of women&#x27;s tennis by defeating Aryna Sabalenka 6-4, 5-7, 6-2 Saturday at Arthur Ashe Stadium…</p>
+            </li></ul>
+        </div>
+        <div class="brief-group">
+          <h3 style="--l:#e34948;--d:#e66767"><i></i>Entertainment</h3>
+          <ul class="brief-list">
+            <li>
+              <a class="brief-title" href="https://variety.com/2026/film/reviews/misty-green-review-chris-rock-rosiland-eleazar-1236859541/" target="_blank" rel="noopener">‘Misty Green’ Review: Chris Rock Tells the Story of a Party-Girl Actress, Brilliantly Played by Rosalind Eleazar, in The Best Movie About Hollywood in Years</a>
+              <span class="brief-byline">Variety &middot; 2026-09-13</span>
+              <p class="brief-summary">&quot;Misty Green&quot; is an amazing slice of showbiz sociology, riveting in the details of what a contemporary Hollywood actress — even a successful one — is up against. Rock isn’t…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://variety.com/2026/film/reviews/i-play-rocky-review-anthony-ippolito-peter-farrelly-1236859563/" target="_blank" rel="noopener">‘I Play Rocky’ Review: Anthony Ippolito Channels Sylvester Stallone in Peter Farrelly’s Cleverly Crafted Crowd-Pleaser About the Making of ‘Rocky’</a>
+              <span class="brief-byline">Variety &middot; 2026-09-13</span>
+              <p class="brief-summary">For a biographical drama to work, it’s not required that the central actor do a pinpoint uncanny, so-close-to- the-real-thing-you-might-think-it’s-the-real-thing impersonation of…</p>
+            </li>
+            <li>
+              <a class="brief-title" href="https://variety.com/2026/film/awards/i-play-rocky-tiff-premiere-peter-farrelly-stallone-oscars-1236859905/" target="_blank" rel="noopener">‘I Play Rocky’ Premieres at TIFF: A Movie About a Best Picture Winner That’s a Best Picture Contender?</a>
+              <span class="brief-byline">Variety &middot; 2026-09-13</span>
+              <p class="brief-summary">Yo Adrian, Rocky did it … again! Only this time, the famed character is at TIFF in biopic form, thanks to director Peter Farrelly, screenwriter Peter Gamble and a star-making turn…</p>
+            </li></ul>
+        </div></div>
+  </section>
+
+  <section>
+    <h2>Articles by source</h2>
+    
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">BBC</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:100.0%"></div>
+          </div>
+          <span class="bar-value">1430</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">NYT</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:52.2%"></div>
+          </div>
+          <span class="bar-value">746</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">Bloomberg</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:45.0%"></div>
+          </div>
+          <span class="bar-value">644</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">ESPN</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:23.8%"></div>
+          </div>
+          <span class="bar-value">341</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">TechCrunch</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:10.3%"></div>
+          </div>
+          <span class="bar-value">147</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">Variety</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:8.8%"></div>
+          </div>
+          <span class="bar-value">126</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">Ars Technica</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:8.2%"></div>
+          </div>
+          <span class="bar-value">117</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">WSJ</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:4.2%"></div>
+          </div>
+          <span class="bar-value">60</span>
+        </div>
+        <div class="bar-row" style="--l:#2a78d6;--d:#3987e5">
+          <span class="bar-label">NPR</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:3.0%"></div>
+          </div>
+          <span class="bar-value">43</span>
+        </div>
+    <details>
+      <summary>View as table</summary>
+      <div class="table-wrap"><table><thead><tr><th>Source</th><th>Count</th></tr></thead><tbody><tr><td>BBC</td><td>1430</td></tr><tr><td>NYT</td><td>746</td></tr><tr><td>Bloomberg</td><td>644</td></tr><tr><td>ESPN</td><td>341</td></tr><tr><td>TechCrunch</td><td>147</td></tr><tr><td>Variety</td><td>126</td></tr><tr><td>Ars Technica</td><td>117</td></tr><tr><td>WSJ</td><td>60</td></tr><tr><td>NPR</td><td>43</td></tr></tbody></table></div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Last 7 days</h2>
+    <div class="timeline" style="--l:#2a78d6;--d:#3987e5">
+        <div class="tl-col">
+          <span class="tl-value">239</span>
+          <div class="tl-track"><div class="tl-fill" style="height:70.3%"></div></div>
+          <span class="tl-day">09-07</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">236</span>
+          <div class="tl-track"><div class="tl-fill" style="height:69.4%"></div></div>
+          <span class="tl-day">09-08</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">288</span>
+          <div class="tl-track"><div class="tl-fill" style="height:84.7%"></div></div>
+          <span class="tl-day">09-09</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">340</span>
+          <div class="tl-track"><div class="tl-fill" style="height:100.0%"></div></div>
+          <span class="tl-day">09-10</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">310</span>
+          <div class="tl-track"><div class="tl-fill" style="height:91.2%"></div></div>
+          <span class="tl-day">09-11</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">243</span>
+          <div class="tl-track"><div class="tl-fill" style="height:71.5%"></div></div>
+          <span class="tl-day">09-12</span>
+        </div>
+        <div class="tl-col">
+          <span class="tl-value">101</span>
+          <div class="tl-track"><div class="tl-fill" style="height:29.7%"></div></div>
+          <span class="tl-day">09-13</span>
+        </div></div>
+    <details>
+      <summary>View as table</summary>
+      <div class="table-wrap"><table><thead><tr><th>Day</th><th>Count</th></tr></thead><tbody><tr><td>2026-09-07</td><td>239</td></tr><tr><td>2026-09-08</td><td>236</td></tr><tr><td>2026-09-09</td><td>288</td></tr><tr><td>2026-09-10</td><td>340</td></tr><tr><td>2026-09-11</td><td>310</td></tr><tr><td>2026-09-12</td><td>243</td></tr><tr><td>2026-09-13</td><td>101</td></tr></tbody></table></div>
+    </details>
+  </section>
+
+  <footer>NewsAgent &middot; local sqlite snapshot &middot; regenerate with <code>python -m newsagent dashboard</code></footer>
+</div>
