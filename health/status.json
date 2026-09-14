@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T15:15:02.359121",
+  "generated_at": "2026-09-14T16:15:02.422353",
   "overall": "critical",
   "checks": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Expected at least 2026-09-11. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-10; AMEX_Yahoo: 2026-09-14",
+      "detail": "Expected at least 2026-09-11. NASDAQ_Yahoo: 2026-09-10; NYSE_Yahoo: 2026-09-14; AMEX_Yahoo: 2026-09-14",
       "last_success": null
     },
     {
