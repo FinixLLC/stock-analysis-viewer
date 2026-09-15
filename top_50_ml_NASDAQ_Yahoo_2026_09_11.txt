@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-11
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      GAINI       80.00   100.00     0.0803   POS         
+2      IGAC        80.00   100.00     0.3236   POS         
+3      RIFR        80.00   100.00     0.1178   POS         
+4      AONC        80.00   100.00     0.2491   POS         
+5      TACOU       80.00   100.00     0.1271   POS         
+6      TXUG        80.00   100.00     0.2107   POS         
+7      IDCC        80.00   100.00     1.0000   CupHandle   
+8      CHI         80.00   100.00     0.1452   POS         
+9      DSCO        80.00   100.00     0.5133   POS         
+10     PFXNZ       80.00   100.00     0.2767   POS         
+11     CHPG        80.00   100.00     0.3272   POS         
+12     VSMV        80.00   100.00     0.1632   POS         
+13     GBNY        80.00   100.00     0.0706   POS         
+14     NMPAU       80.00   100.00     0.3085   POS         
+15     UAL         80.00   100.00     1.0000   CupHandle   
+16     BEEX        80.00   100.00     0.1104   POS         
+17     NIXT        80.00   100.00     0.1167   POS         
+18     BEEZ        80.00   100.00     0.1003   POS         
+19     NHPBP       80.00   100.00     0.1260   POS         
+20     QETA        80.00   100.00     0.2418   POS         
+21     TAPR        80.00   100.00     0.1652   POS         
+22     CHRI        80.00   100.00     0.1700   POS         
+23     RILYN       80.00   100.00     0.2345   POS         
+24     IMAQ        80.00   100.00     0.2819   POS         
+25     NEWTP       80.00   100.00     0.2469   POS         
+26     NEWTI       80.00   100.00     0.3357   POS         
+27     NOEMU       80.00   100.00     0.3278   nan         
+28     NPACU       80.00   100.00     0.1409   POS         
+29     TAXT        80.00   100.00     0.1365   POS         
+30     UCRD        80.00   100.00     0.0917   POS         
+31     SYZ         80.00   100.00     0.1569   POS         
+32     BCOR        80.00   100.00     1.0000   CupHandle   
+33     CAFG        80.00   100.00     0.0939   POS         
+34     GECCG       80.00   100.00     0.1701   POS         
+35     APXTU       80.00   100.00     0.3090   POS         
+36     IBCP        80.00   100.00     0.0952   POS         
+37     VNME        80.00   100.00     0.3185   POS         
+38     VNMEU       80.00   100.00     0.4476   POS         
+39     IBEX        80.00   100.00     1.0000   CupHandle   
+40     DVOL        80.00   100.00     0.1165   POS         
+41     DVLU        80.00   100.00     0.0717   POS         
+42     UCFI        80.00   100.00     0.3581   POS         
+43     PFI         80.00   100.00     0.1163   POS         
+44     NSI         80.00   100.00     0.1984   POS         
+45     SZZLU       80.00   100.00     0.3029   POS         
+46     DVAL        80.00   100.00     0.1171   POS         
+47     TACHU       80.00   100.00     0.2758   POS         
+48     BDCIU       80.00   100.00     0.3622   POS         
+49     ETHM        80.00   100.00     0.2581   nan         
+50     UBFO        80.00   100.00     0.2032   nan         
+
+================================================================================
