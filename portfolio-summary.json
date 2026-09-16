@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T21:00:08.969418",
+  "generated_at": "2026-09-14T21:00:09.500956",
   "total_positions": 94,
   "avg_1m_return": NaN,
   "sell_signal_count": 0,
@@ -33,6 +33,15 @@
       "return_3m": NaN,
       "return_6m": NaN,
       "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMG",
+      "price": 349.9800109863281,
+      "return_1m": -5.77,
+      "return_3m": -1.6,
+      "return_6m": 25.59,
+      "return_1y": 49.01,
       "signal_count": 0
     },
     {
@@ -88,15 +97,6 @@
       "return_6m": NaN,
       "return_1y": NaN,
       "signal_count": 0
-    },
-    {
-      "symbol": "CRM",
-      "price": 243.0,
-      "return_1m": 20.67,
-      "return_3m": 47.68,
-      "return_6m": 22.52,
-      "return_1y": 0.44,
-      "signal_count": 0
     }
   ],
   "top_losers": [
@@ -109,9 +109,9 @@
     },
     {
       "symbol": "ACHR",
-      "price": 5.449999809265137,
-      "return_1m": -21.81,
-      "return_3m": -1.8,
+      "price": 5.510000228881836,
+      "return_1m": -13.77,
+      "return_3m": 2.8,
       "signal_count": 0
     },
     {
@@ -123,9 +123,9 @@
     },
     {
       "symbol": "AMCR",
-      "price": 43.0,
-      "return_1m": -7.29,
-      "return_3m": 4.6,
+      "price": 42.25,
+      "return_1m": -7.2,
+      "return_3m": 3.63,
       "signal_count": 0
     },
     {
@@ -137,9 +137,9 @@
     },
     {
       "symbol": "AMG",
-      "price": 354.5299987792969,
-      "return_1m": -3.42,
-      "return_3m": 0.45,
+      "price": 349.9800109863281,
+      "return_1m": -5.77,
+      "return_3m": -1.6,
       "signal_count": 0
     },
     {
