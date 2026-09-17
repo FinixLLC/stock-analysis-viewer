@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-15
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      NEWTG       80.00   100.00     0.3330   POS         
+2      EXAS        80.00   100.00     0.1062   nan         
+3      FIGXU       80.00   100.00     0.4663   POS         
+4      NEWTI       80.00   100.00     0.3306   POS         
+5      BDCIU       80.00   100.00     0.3482   POS         
+6      FITBI       80.00   100.00     0.1788   nan         
+7      RDAGU       80.00   100.00     0.1701   POS         
+8      NEOG        80.00   100.00     1.0000   CupHandle   
+9      TLNCU       80.00   100.00     0.2879   POS         
+10     FNLC        80.00   100.00     0.1781   POS         
+11     NAMSW       80.00   100.00     0.1381   POS         
+12     BASG        80.00   100.00     0.1091   POS         
+13     BANX        80.00   100.00     0.1533   POS         
+14     TPLS        80.00   100.00     0.2457   POS         
+15     BANFP       80.00   100.00     0.4841   POS         
+16     MYMK        80.00   100.00     0.1838   POS         
+17     FORL        80.00   100.00     0.2507   POS         
+18     MYMI        80.00   100.00     0.1049   POS         
+19     BACCU       80.00   100.00     0.1260   POS         
+20     MYCO        80.00   100.00     0.2208   POS         
+21     MYCN        80.00   100.00     0.1638   POS         
+22     MYCM        80.00   100.00     0.1638   POS         
+23     MYCL        80.00   100.00     0.1569   POS         
+24     FRBA        80.00   100.00     0.1587   POS         
+25     MYCK        80.00   100.00     0.1733   POS         
+26     MYCJ        80.00   100.00     0.1580   POS         
+27     MYCI        80.00   100.00     0.1662   POS         
+28     FRMEP       80.00   100.00     0.2296   POS         
+29     MYCH        80.00   100.00     0.1278   POS         
+30     MYCG        80.00   100.00     0.1924   POS         
+31     FSCS        80.00   100.00     0.0864   POS         
+32     NFXS        80.00   100.00     1.0000   CupHandle   
+33     NHPBP       80.00   100.00     0.1256   POS         
+34     BFC         80.00   100.00     0.3431   POS         
+35     TACHU       80.00   100.00     0.2758   POS         
+36     EYES        80.00   100.00     0.5270   POS         
+37     SUSB        80.00   100.00     0.0942   POS         
+38     BLZRU       80.00   100.00     0.2241   POS         
+39     FAB         80.00   100.00     0.1149   POS         
+40     FACTU       80.00   100.00     0.3589   POS         
+41     NUTR        80.00   100.00     0.4104   POS         
+42     NUSB        80.00   100.00     0.3999   POS         
+43     NTRA        80.00   100.00     1.0000   DarvasBox   
+44     SWSS        80.00   100.00     0.5014   POS         
+45     BKSC        80.00   100.00     0.1848   POS         
+46     FCAL        80.00   100.00     0.1032   POS         
+47     SYZ         80.00   100.00     0.1454   POS         
+48     SZZLU       80.00   100.00     0.3031   POS         
+49     TACOU       80.00   100.00     0.1270   POS         
+50     FFIN        80.00   100.00     1.0000   CupHandle   
+
+================================================================================
