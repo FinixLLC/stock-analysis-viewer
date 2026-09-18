@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T22:15:02.876131",
+  "generated_at": "2026-09-17T23:15:03.405144",
   "overall": "critical",
   "checks": [
     {
@@ -17,7 +17,7 @@
     {
       "name": "Ollama (local LLM)",
       "status": "ok",
-      "detail": "Responding, 7 models available",
+      "detail": "Responding, 8 models available",
       "last_success": null
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "1 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
