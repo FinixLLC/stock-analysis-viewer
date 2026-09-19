@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-17
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      REAI        80.00   100.00     0.0715   POS         
+2      FNX         80.00   100.00     0.0930   POS         
+3      FULTP       80.00   100.00     0.2260   POS         
+4      ILMN        80.00   100.00     1.0000   DarvasBox   
+5      IMAQ        80.00   100.00     0.2820   POS         
+6      BPACU       80.00   100.00     0.4080   POS         
+7      BPYPN       80.00   100.00     0.1498   POS         
+8      BPYPO       80.00   100.00     0.1236   POS         
+9      BPYPP       80.00   100.00     0.1270   POS         
+10     FTII        80.00   100.00     0.2535   POS         
+11     BRKU        80.00   100.00     1.0000   CupHandle   
+12     TDSC        80.00   100.00     0.1255   POS         
+13     TDSB        80.00   100.00     0.0865   POS         
+14     CUBWU       80.00   100.00     0.4144   POS         
+15     FTAIM       80.00   100.00     0.2686   POS         
+16     ANEL        80.00   100.00     1.0000   CupHandle   
+17     TCBIO       80.00   100.00     0.0882   POS         
+18     FSGS        80.00   100.00     0.1145   POS         
+19     BSCT        80.00   100.00     0.0975   POS         
+20     BSCU        80.00   100.00     0.0993   POS         
+21     INACU       80.00   100.00     0.2808   POS         
+22     BSCW        80.00   100.00     0.0997   POS         
+23     INBKZ       80.00   100.00     0.1619   POS         
+24     FRMEP       80.00   100.00     0.2305   POS         
+25     AMUN        80.00   100.00     0.2214   POS         
+26     FORL        80.00   100.00     0.2507   POS         
+27     BSJW        80.00   100.00     0.0674   POS         
+28     FUSB        80.00   100.00     0.1949   POS         
+29     THMZ        80.00   100.00     0.1188   POS         
+30     THRV        80.00   100.00     0.1323   POS         
+31     PACHU       80.00   100.00     0.2931   POS         
+32     GEME        80.00   100.00     0.0984   POS         
+33     VNMEU       80.00   100.00     0.4475   POS         
+34     GEGGL       80.00   100.00     0.3336   POS         
+35     APLD        80.00   100.00     1.0000   CupHandle   
+36     GECCI       80.00   100.00     0.2751   POS         
+37     GECCH       80.00   100.00     0.3105   POS         
+38     MYCI        80.00   100.00     0.1582   POS         
+39     GECCG       80.00   100.00     0.1905   POS         
+40     VOD         80.00   100.00     1.0000   CupHandle   
+41     MYCH        80.00   100.00     0.1197   POS         
+42     MYCG        80.00   100.00     0.1896   POS         
+43     APACU       80.00   100.00     0.3945   POS         
+44     FVC         80.00   100.00     0.0492   POS         
+45     MYCF        80.00   100.00     0.2313   POS         
+46     PANL        80.00   100.00     1.0000   CupHandle   
+47     GASS        80.00   100.00     1.0000   CupHandle   
+48     TMB         80.00   100.00     0.2293   POS         
+49     PC          80.00   100.00     0.1552   POS         
+50     AONC        80.00   100.00     0.2483   POS         
+
+================================================================================
