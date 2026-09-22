@@ -47,22 +47,22 @@
     "avg_6m": 2.88
   },
   "breakeven_5y": {
-    "latest": 2.31,
-    "latest_date": "2026-09-18",
-    "avg_3m": 2.33,
-    "avg_6m": 2.37
+    "latest": 2.33,
+    "latest_date": "2026-09-21",
+    "avg_3m": 2.32,
+    "avg_6m": 2.35
   },
   "breakeven_10y": {
-    "latest": 2.33,
-    "latest_date": "2026-09-18",
+    "latest": 2.34,
+    "latest_date": "2026-09-21",
     "avg_3m": 2.33,
     "avg_6m": 2.35
   },
   "real_yield_10y": {
-    "latest": 2.61,
-    "latest_date": "2026-09-17",
-    "avg_3m": 2.64,
-    "avg_6m": 2.61
+    "latest": 2.68,
+    "latest_date": "2026-09-18",
+    "avg_3m": 2.66,
+    "avg_6m": 2.63
   },
   "mich_inflation_expectations": {
     "latest": 4.2,
@@ -75,8 +75,8 @@
     "chg_3m_pct": 26.43
   },
   "gasoline": {
-    "latest": 4.319,
-    "chg_3m_pct": 6.59
+    "latest": 4.157,
+    "chg_3m_pct": 0.27
   },
   "wages": {
     "latest": 37.75,
@@ -127,7 +127,7 @@
   "pressure_index": {
     "signals": {
       "oil": 1,
-      "gasoline": 1,
+      "gasoline": 0,
       "shelter": -1,
       "core_cpi_3m_vs_6m": -1,
       "wage_growth": 0,
@@ -135,15 +135,15 @@
       "median_cpi_trend": -1,
       "inflation_expectations": 0
     },
-    "total": 0,
-    "regime": "NEUTRAL"
+    "total": -1,
+    "regime": "MILD DISINFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
-    "gasoline": "rising"
+    "gasoline": "flat"
   },
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "flat",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-09-21T13:45:06.513176+00:00"
+  "generated_at": "2026-09-22T13:45:06.978422+00:00"
 }
