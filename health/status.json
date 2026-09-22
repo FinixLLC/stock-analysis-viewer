@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T14:15:03.451983",
-  "overall": "critical",
+  "generated_at": "2026-09-22T15:15:03.472599",
+  "overall": "ok",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -10,8 +10,8 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "critical",
-      "detail": "Expected at least 2026-09-21. NASDAQ_Yahoo: 2026-09-21; NYSE_Yahoo: 2026-09-21; AMEX_Yahoo: 2026-09-18",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: 2026-09-21; NYSE_Yahoo: 2026-09-21; AMEX_Yahoo: 2026-09-22",
       "last_success": null
     },
     {
