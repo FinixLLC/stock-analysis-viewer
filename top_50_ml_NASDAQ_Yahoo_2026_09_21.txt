@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-21
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      FIGXU       80.00   100.00     0.4641   POS         
+2      SITM        80.00   100.00     1.0000   CupHandle   
+3      LRGE        80.00   100.00     0.0907   POS         
+4      BKSC        80.00   100.00     0.1837   POS         
+5      SND         80.00   100.00     1.0000   CupHandle   
+6      FIVN        80.00   100.00     1.0000   DarvasBox   
+7      FITBI       80.00   100.00     0.1788   nan         
+8      SMOM        80.00   100.00     0.1854   POS         
+9      SMHX        80.00   100.00     1.0000   CupHandle   
+10     SMH         80.00   100.00     1.0000   CupHandle   
+11     SMCO        80.00   100.00     0.1020   POS         
+12     BLZRU       80.00   100.00     0.2367   POS         
+13     SMCF        80.00   100.00     0.1117   POS         
+14     MACIU       80.00   100.00     0.2837   POS         
+15     FGSI        80.00   100.00     0.2781   POS         
+16     MAGH        80.00   100.00     0.3185   nan         
+17     MAGS        80.00   100.00     1.0000   CupHandle   
+18     MAQCU       80.00   100.00     0.2892   POS         
+19     FGI         80.00   100.00     1.0000   CupHandle   
+20     FGBIP       80.00   100.00     0.0439   POS         
+21     SJLD        80.00   100.00     0.1419   POS         
+22     BKCH        80.00   100.00     1.0000   CupHandle   
+23     SOCA        80.00   100.00     0.2912   POS         
+24     SOCAU       80.00   100.00     0.2003   POS         
+25     BGRO        80.00   100.00     0.1228   POS         
+26     LNGR        80.00   100.00     1.0000   nan         
+27     STRK        80.00   100.00     1.0000   CupHandle   
+28     FNX         80.00   100.00     0.0915   POS         
+29     BEEX        80.00   100.00     0.1215   POS         
+30     BEEZ        80.00   100.00     0.0938   POS         
+31     FNLC        80.00   100.00     0.1783   POS         
+32     LOGO        80.00   100.00     0.1689   POS         
+33     SPLS        80.00   100.00     0.1160   POS         
+34     SPIT        80.00   100.00     0.2752   POS         
+35     BITS        80.00   100.00     1.0000   CupHandle   
+36     SPEGU       80.00   100.00     0.4476   POS         
+37     SPCT        80.00   100.00     0.2046   POS         
+38     BHFAM       80.00   100.00     0.0961   POS         
+39     BHFAO       80.00   100.00     0.1549   POS         
+40     BHFAP       80.00   100.00     0.1238   POS         
+41     FMET        80.00   100.00     1.0000   CupHandle   
+42     FLXN        80.00   100.00     0.2053   POS         
+43     SOLZ        80.00   100.00     1.0000   CupHandle   
+44     SJCP        80.00   100.00     0.0952   POS         
+45     BPACU       80.00   100.00     0.4081   POS         
+46     RNIN        80.00   100.00     0.2464   POS         
+47     FFBW        80.00   100.00     0.1418   POS         
+48     SCDS        80.00   100.00     0.0650   POS         
+49     METCZ       80.00   100.00     0.0769   POS         
+50     BTF         80.00   100.00     1.0000   CupHandle   
+
+================================================================================
