@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T23:15:02.764964",
-  "overall": "ok",
+  "generated_at": "2026-09-24T00:15:02.624856",
+  "overall": "critical",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -10,8 +10,8 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: 2026-09-23; NYSE_Yahoo: 2026-09-23; AMEX_Yahoo: 2026-09-22",
+      "status": "critical",
+      "detail": "Expected at least 2026-09-23. NASDAQ_Yahoo: 2026-09-23; NYSE_Yahoo: 2026-09-23; AMEX_Yahoo: 2026-09-22",
       "last_success": null
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
