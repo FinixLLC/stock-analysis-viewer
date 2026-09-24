@@ -47,22 +47,22 @@
     "avg_6m": 2.88
   },
   "breakeven_5y": {
-    "latest": 2.32,
-    "latest_date": "2026-09-22",
-    "avg_3m": 2.32,
-    "avg_6m": 2.34
+    "latest": 2.34,
+    "latest_date": "2026-09-23",
+    "avg_3m": 2.33,
+    "avg_6m": 2.33
   },
   "breakeven_10y": {
-    "latest": 2.33,
-    "latest_date": "2026-09-22",
-    "avg_3m": 2.33,
-    "avg_6m": 2.34
+    "latest": 2.35,
+    "latest_date": "2026-09-23",
+    "avg_3m": 2.34,
+    "avg_6m": 2.33
   },
   "real_yield_10y": {
-    "latest": 2.62,
-    "latest_date": "2026-09-21",
+    "latest": 2.63,
+    "latest_date": "2026-09-22",
     "avg_3m": 2.64,
-    "avg_6m": 2.63
+    "avg_6m": 2.64
   },
   "mich_inflation_expectations": {
     "latest": 4.2,
@@ -71,8 +71,8 @@
     "avg_6m": 4.25
   },
   "oil": {
-    "latest": 107.02,
-    "chg_3m_pct": 26.43
+    "latest": 96.41,
+    "chg_3m_pct": 29.2
   },
   "gasoline": {
     "latest": 4.478,
@@ -89,23 +89,23 @@
   "cf_nowcast": {
     "mom": {
       "month": "September 2026",
-      "cpi": 0.43,
+      "cpi": 0.5,
       "core_cpi": 0.2,
-      "pce": 0.4,
+      "pce": 0.44,
       "core_pce": 0.28
     },
     "yoy": {
       "month": "September 2026",
-      "cpi": 3.5,
+      "cpi": 3.57,
       "core_cpi": 2.39,
-      "pce": 3.93,
+      "pce": 3.97,
       "core_pce": 3.49
     },
     "quarterly_annualized": {
       "quarter": "2026:Q3",
-      "cpi": 1.44,
+      "cpi": 1.53,
       "core_cpi": 2.16,
-      "pce": 2.5,
+      "pce": 2.55,
       "core_pce": 3.0
     }
   },
@@ -133,17 +133,17 @@
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
-      "inflation_expectations": 0
+      "inflation_expectations": 1
     },
-    "total": 0,
-    "regime": "NEUTRAL"
+    "total": 1,
+    "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
     "gasoline": "rising"
   },
   "median_cpi_trend_word": "falling",
-  "inflation_expectations_trend_word": "flat",
+  "inflation_expectations_trend_word": "rising",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-09-23T13:45:08.467183+00:00"
+  "generated_at": "2026-09-24T13:45:09.641823+00:00"
 }
