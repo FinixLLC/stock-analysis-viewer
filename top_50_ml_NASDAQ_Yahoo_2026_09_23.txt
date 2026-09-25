@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-23
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      OXLCG       80.00   100.00     0.1921   POS         
+2      NMPAU       80.00   100.00     0.2916   POS         
+3      JMID        80.00   100.00     0.0970   POS         
+4      TKNO        80.00   100.00     1.0000   nan         
+5      CAFG        80.00   100.00     0.0881   POS         
+6      JOYY        80.00   100.00     1.0000   CupHandle   
+7      MYCI        80.00   100.00     0.1466   POS         
+8      ASMG        80.00   100.00     1.0000   nan         
+9      RAUS        80.00   100.00     0.1814   POS         
+10     FGSI        80.00   100.00     0.2769   POS         
+11     MYCH        80.00   100.00     0.1090   POS         
+12     DVOL        80.00   100.00     0.0974   POS         
+13     MYCG        80.00   100.00     0.1856   POS         
+14     THRV        80.00   100.00     0.1309   POS         
+15     THMZ        80.00   100.00     0.1175   POS         
+16     JXG         80.00   100.00     1.0000   nan         
+17     RCGE        80.00   100.00     0.2179   POS         
+18     CAI         80.00   100.00     1.0000   nan         
+19     TLNCU       80.00   100.00     0.2855   POS         
+20     FIGXU       80.00   100.00     0.4639   POS         
+21     DUKH        80.00   100.00     0.1345   POS         
+22     TRI         80.00   100.00     1.0000   CupHandle   
+23     TQQY        80.00   100.00     1.0000   nan         
+24     MYCM        80.00   100.00     0.1555   POS         
+25     ARMG        80.00   100.00     1.0000   nan         
+26     TQQQ        80.00   100.00     1.0000   nan         
+27     TPLS        80.00   100.00     0.2442   POS         
+28     MYCL        80.00   100.00     0.1433   POS         
+29     TMB         80.00   100.00     0.2189   POS         
+30     MYCK        80.00   100.00     0.1570   POS         
+31     RANG        80.00   100.00     0.2441   POS         
+32     MYCJ        80.00   100.00     0.1420   POS         
+33     DVAL        80.00   100.00     0.1159   POS         
+34     RARE        80.00   100.00     1.0000   nan         
+35     CAKE        80.00   100.00     1.0000   nan         
+36     KALU        80.00   100.00     1.0000   nan         
+37     ASTC        80.00   100.00     1.0000   nan         
+38     MYCF        80.00   100.00     0.2277   POS         
+39     MSBIP       80.00   100.00     0.3740   POS         
+40     BUFM        80.00   100.00     0.1401   POS         
+41     KGEI        80.00   100.00     1.0000   CupHandle   
+42     BUFI        80.00   100.00     0.3657   POS         
+43     KLIC        80.00   100.00     1.0000   nan         
+44     FDTX        80.00   100.00     1.0000   CupHandle   
+45     BTSGU       80.00   100.00     0.0855   POS         
+46     TAYD        80.00   100.00     1.0000   nan         
+47     KEAT        80.00   100.00     0.0981   POS         
+48     KMTS        80.00   100.00     1.0000   nan         
+49     RILYG       80.00   100.00     0.2048   POS         
+50     TAXS        80.00   100.00     0.1430   POS         
+
+================================================================================
