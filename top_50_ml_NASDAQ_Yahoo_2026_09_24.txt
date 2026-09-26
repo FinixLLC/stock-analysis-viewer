@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-24
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      EDHL        80.00   100.00     1.0000   nan         
+2      TQQY        80.00   100.00     1.0000   nan         
+3      TRINZ       80.00   100.00     0.2129   POS         
+4      TRINI       80.00   100.00     0.1409   POS         
+5      FSBW        80.00   100.00     1.0000   nan         
+6      PTIR        80.00   100.00     1.0000   nan         
+7      NUTR        80.00   100.00     0.4099   POS         
+8      FRMEP       80.00   100.00     0.2318   POS         
+9      NUSB        80.00   100.00     0.4059   POS         
+10     BPACU       80.00   100.00     0.4082   POS         
+11     APACU       80.00   100.00     0.3911   POS         
+12     BPOPM       80.00   100.00     0.4060   POS         
+13     FRBA        80.00   100.00     0.1580   POS         
+14     BPYPN       80.00   100.00     0.1453   POS         
+15     AOSL        80.00   100.00     1.0000   nan         
+16     AONC        80.00   100.00     0.2459   POS         
+17     WABC        80.00   100.00     1.0000   nan         
+18     IOYY        80.00   100.00     1.0000   nan         
+19     VTRS        80.00   100.00     1.0000   CupHandle   
+20     IPAR        80.00   100.00     1.0000   nan         
+21     PUCK        80.00   100.00     0.1722   POS         
+22     FORL        80.00   100.00     0.2507   POS         
+23     NSIT        80.00   100.00     1.0000   nan         
+24     NSI         80.00   100.00     0.1991   POS         
+25     BRKL        80.00   100.00     0.0907   POS         
+26     VUSE        80.00   100.00     0.1324   POS         
+27     NPACU       80.00   100.00     0.1658   POS         
+28     BRKR        80.00   100.00     1.0000   nan         
+29     VWAV        80.00   100.00     1.0000   nan         
+30     FNX         80.00   100.00     0.0874   POS         
+31     VSMV        80.00   100.00     0.1610   POS         
+32     TRNS        80.00   100.00     1.0000   CupHandle   
+33     INOV        80.00   100.00     0.2417   POS         
+34     TRS         80.00   100.00     1.0000   nan         
+35     ILMN        80.00   100.00     1.0000   nan         
+36     OBA         80.00   100.00     1.0000   nan         
+37     IMAQ        80.00   100.00     0.2818   POS         
+38     GECCG       80.00   100.00     0.1842   POS         
+39     OACCU       80.00   100.00     0.3395   POS         
+40     GCT         80.00   100.00     1.0000   CupHandle   
+41     TTEQ        80.00   100.00     1.0000   CupHandle   
+42     PSC         80.00   100.00     0.1181   POS         
+43     IMOS        80.00   100.00     1.0000   nan         
+44     PSCF        80.00   100.00     0.0854   POS         
+45     GAINZ       80.00   100.00     0.3147   POS         
+46     BKSC        80.00   100.00     0.1840   POS         
+47     APXTU       80.00   100.00     0.3010   POS         
+48     BLFS        80.00   100.00     1.0000   nan         
+49     BLLN        80.00   100.00     1.0000   nan         
+50     INACU       80.00   100.00     0.2795   POS         
+
+================================================================================
