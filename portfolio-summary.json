@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:00:08.625891",
+  "generated_at": "2026-09-25T21:00:08.910169",
   "total_positions": 94,
   "avg_1m_return": NaN,
   "sell_signal_count": 0,
@@ -36,7 +36,25 @@
       "signal_count": 0
     },
     {
+      "symbol": "AMG",
+      "price": 373.69000244140625,
+      "return_1m": 0.87,
+      "return_3m": 9.12,
+      "return_6m": 38.47,
+      "return_1y": 56.34,
+      "signal_count": 0
+    },
+    {
       "symbol": "AMZN",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APA",
       "price": NaN,
       "return_1m": NaN,
       "return_3m": NaN,
@@ -54,48 +72,30 @@
       "signal_count": 0
     },
     {
-      "symbol": "CRM",
-      "price": 237.5800018310547,
-      "return_1m": 15.54,
-      "return_3m": 50.43,
-      "return_6m": 28.72,
-      "return_1y": -1.24,
+      "symbol": "APP",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
       "signal_count": 0
     },
     {
-      "symbol": "APA",
-      "price": 43.70000076293945,
-      "return_1m": 6.09,
-      "return_3m": 32.58,
-      "return_6m": -0.09,
-      "return_1y": 83.28,
+      "symbol": "AUMI",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
       "signal_count": 0
     },
     {
-      "symbol": "BRKRP",
-      "price": 439.1600036621094,
-      "return_1m": 3.52,
-      "return_3m": -0.36,
-      "return_6m": 59.42,
-      "return_1y": 69.75,
-      "signal_count": 0
-    },
-    {
-      "symbol": "EWJV",
-      "price": 48.66999816894531,
-      "return_1m": 2.79,
-      "return_3m": 10.34,
-      "return_6m": 18.05,
-      "return_1y": 29.53,
-      "signal_count": 0
-    },
-    {
-      "symbol": "CVX",
-      "price": 205.50999450683594,
-      "return_1m": 2.65,
-      "return_3m": 21.99,
-      "return_6m": -2.47,
-      "return_1y": 29.3,
+      "symbol": "BKR",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "return_6m": NaN,
+      "return_1y": NaN,
       "signal_count": 0
     }
   ],
@@ -108,38 +108,10 @@
       "signal_count": 0
     },
     {
-      "symbol": "ENVA",
-      "price": 168.3699951171875,
-      "return_1m": -28.84,
-      "return_3m": -28.56,
-      "signal_count": 0
-    },
-    {
-      "symbol": "CCJ",
-      "price": 90.80000305175781,
-      "return_1m": -15.42,
-      "return_3m": -12.25,
-      "signal_count": 0
-    },
-    {
-      "symbol": "GE",
-      "price": 319.79998779296875,
-      "return_1m": -9.76,
-      "return_3m": -14.43,
-      "signal_count": 0
-    },
-    {
-      "symbol": "BMY",
-      "price": 61.150001525878906,
-      "return_1m": -9.5,
-      "return_3m": 4.42,
-      "signal_count": 0
-    },
-    {
       "symbol": "ACHR",
-      "price": 5.710000038146973,
-      "return_1m": -3.22,
-      "return_3m": 22.01,
+      "price": 5.610000133514404,
+      "return_1m": -5.4,
+      "return_3m": 19.87,
       "signal_count": 0
     },
     {
@@ -151,9 +123,9 @@
     },
     {
       "symbol": "AMCR",
-      "price": 42.79999923706055,
-      "return_1m": -9.23,
-      "return_3m": -0.33,
+      "price": 42.5099983215332,
+      "return_1m": -8.62,
+      "return_3m": -1.0,
       "signal_count": 0
     },
     {
@@ -164,10 +136,38 @@
       "signal_count": 0
     },
     {
-      "symbol": "CCL",
-      "price": 21.799999237060547,
-      "return_1m": -14.81,
-      "return_3m": -25.32,
+      "symbol": "ENVA",
+      "price": 173.47999572753906,
+      "return_1m": -26.89,
+      "return_3m": -26.39,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMG",
+      "price": 373.69000244140625,
+      "return_1m": 0.87,
+      "return_3m": 9.12,
+      "signal_count": 0
+    },
+    {
+      "symbol": "AMZN",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APA",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
+      "signal_count": 0
+    },
+    {
+      "symbol": "APLD",
+      "price": NaN,
+      "return_1m": NaN,
+      "return_3m": NaN,
       "signal_count": 0
     }
   ],
