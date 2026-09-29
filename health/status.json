@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-28T21:15:02.236927",
-  "overall": "ok",
+  "generated_at": "2026-09-28T22:15:03.479055",
+  "overall": "critical",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
-      "status": "ok",
-      "detail": "Responding on localhost:27017",
+      "status": "critical",
+      "detail": "Not responding \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
       "last_success": null
     },
     {
@@ -28,14 +28,14 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "2 commit(s) behind origin/main",
       "last_success": null
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-25 (2d ago)",
+      "detail": "last changed 2026-09-25 (3d ago)",
       "last_success": "2026-09-25T21:35:17"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "1/3 due so far, all logged",
+      "detail": "3/3 due so far, all logged",
       "last_success": null
     }
   ]
