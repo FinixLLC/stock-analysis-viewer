@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-28T22:15:03.479055",
-  "overall": "critical",
+  "generated_at": "2026-09-28T23:15:02.998378",
+  "overall": "ok",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
-      "status": "critical",
-      "detail": "Not responding \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
+      "status": "ok",
+      "detail": "Responding on localhost:27017",
       "last_success": null
     },
     {
@@ -28,15 +28,15 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "2 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-25 (3d ago)",
-      "last_success": "2026-09-25T21:35:17"
+      "detail": "last changed 2026-09-28 (0d ago)",
+      "last_success": "2026-09-28T21:35:17"
     },
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
