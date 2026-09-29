@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T12:15:02.994115",
-  "overall": "ok",
+  "generated_at": "2026-09-29T13:15:02.175673",
+  "overall": "warn",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
@@ -22,8 +22,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 280 tickers, published 280 tickers",
+      "status": "warn",
+      "detail": "working 281 tickers, published 280 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
