@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-09-28
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      OCCIN       80.00   100.00     0.2417   POS         
+2      MYCJ        80.00   100.00     0.1315   POS         
+3      HECO        80.00   100.00     0.1165   POS         
+4      ULVM        80.00   100.00     0.0812   POS         
+5      MYCN        80.00   100.00     0.1454   POS         
+6      UMBFO       80.00   100.00     0.1337   POS         
+7      HERD        80.00   100.00     0.1635   POS         
+8      MYCM        80.00   100.00     0.1456   POS         
+9      PLBC        80.00   100.00     0.1609   POS         
+10     MYCL        80.00   100.00     0.1327   POS         
+11     PLMKU       80.00   100.00     0.2623   POS         
+12     ATLCP       80.00   100.00     0.1527   POS         
+13     ATLCL       80.00   100.00     0.2839   POS         
+14     MYCK        80.00   100.00     0.1454   POS         
+15     ATIIU       80.00   100.00     0.3230   POS         
+16     MYCI        80.00   100.00     0.1347   POS         
+17     EXUS        80.00   100.00     0.2514   POS         
+18     MYCH        80.00   100.00     0.1005   POS         
+19     ATHA        80.00   100.00     0.0945   nan         
+20     MYCG        80.00   100.00     0.1829   POS         
+21     MYCF        80.00   100.00     0.2266   POS         
+22     SG          80.00   100.00     1.0000   CupHandle   
+23     OXLCI       80.00   100.00     0.1137   POS         
+24     ETHM        80.00   100.00     0.2581   nan         
+25     USMD        80.00   100.00     0.1277   POS         
+26     ASCI        80.00   100.00     0.2650   POS         
+27     USVM        80.00   100.00     0.0643   POS         
+28     SFBC        80.00   100.00     0.0567   POS         
+29     MQQQ        80.00   100.00     1.0000   CupHandle   
+30     CLOD        80.00   100.00     1.0000   CupHandle   
+31     CHSCO       80.00   100.00     0.2706   POS         
+32     MYMI        80.00   100.00     0.1406   POS         
+33     HCMAU       80.00   100.00     0.2836   POS         
+34     HCICU       80.00   100.00     0.3103   POS         
+35     GSHR        80.00   100.00     0.2272   POS         
+36     GSHRU       80.00   100.00     0.3939   POS         
+37     GSRF        80.00   100.00     0.1687   POS         
+38     GSRFU       80.00   100.00     0.1559   POS         
+39     NEWTP       80.00   100.00     0.2351   POS         
+40     BACCU       80.00   100.00     0.1120   POS         
+41     TXUG        80.00   100.00     0.2050   POS         
+42     NEWTG       80.00   100.00     0.3128   POS         
+43     EXAS        80.00   100.00     0.1062   nan         
+44     CHAR        80.00   100.00     0.2778   POS         
+45     AXINU       80.00   100.00     0.1195   POS         
+46     UBFO        80.00   100.00     0.2032   nan         
+47     UBOH        80.00   100.00     0.1444   POS         
+48     AVUQ        80.00   100.00     0.1416   POS         
+49     NDAQ        80.00   100.00     1.0000   CupHandle   
+50     UCFI        80.00   100.00     0.3581   POS         
+
+================================================================================
