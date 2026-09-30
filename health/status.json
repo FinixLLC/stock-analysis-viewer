@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-29T22:15:02.534028",
-  "overall": "warn",
+  "generated_at": "2026-09-29T23:15:06.671723",
+  "overall": "critical",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
-      "status": "ok",
-      "detail": "Responding on localhost:27017",
+      "status": "critical",
+      "detail": "Not responding \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
       "last_success": null
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: 2026-09-28; NYSE_Yahoo: 2026-09-28; AMEX_Yahoo: 2026-09-28",
+      "status": "critical",
+      "detail": "Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6abca8e4c85b0ede06abc8c0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
@@ -28,15 +28,15 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "2 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-28 (1d ago)",
-      "last_success": "2026-09-28T21:35:17"
+      "detail": "last changed 2026-09-29 (0d ago)",
+      "last_success": "2026-09-29T21:35:16"
     },
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
