@@ -246,6 +246,28 @@
             font-weight: 600;
         }
 
+        /* Top 3 Picks of the Day -- M1Max's diversified, sector-balanced
+           selection. Blue accent, distinct from the green/confirmed-tier
+           styling above, so the two "confirmed" sections read as related
+           but clearly different sources. */
+        .pick-card.top3 { border-left-color: #3b82f6; }
+        .pick-badge.top3 { background: #3b82f6; color: white; }
+
+        /* Forming / Early Watch -- Cup & Handle setups whose handle has
+           completed but has NOT broken out yet. Amber/dashed border is
+           deliberately the odd one out of the three sections: this is the
+           only one showing UNCONFIRMED candidates, and it must never read
+           as equivalent in confidence to the two confirmed sections above. */
+        .forming-picks {
+            background: rgba(255, 251, 235, 0.95);
+        }
+        .pick-card.forming {
+            border-left-color: #f59e0b;
+            border-left-style: dashed;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+        }
+        .pick-badge.forming { background: #f59e0b; color: white; }
+
         .pick-description {
             color: #555;
             line-height: 1.6;
@@ -544,8 +566,30 @@
         <!-- Today's Top Picks Section -->
         <div class="top-picks" id="top-picks-section" role="region" aria-labelledby="top-picks-heading">
             <h2 id="top-picks-heading">🎯 Today's Top Picks</h2>
+            <p style="color:#777;font-size:0.85em;margin:-12px 0 16px;">Source: full-universe scan, ranked by composite score &mdash; confirmed breakouts</p>
             <div id="top-picks-content" aria-live="polite">
                 <div class="loading-state"><span class="spinner"></span> Analyzing top picks...</div>
+            </div>
+        </div>
+
+        <!-- Top 3 Picks of the Day -- diversified, sector-balanced selection,
+             distinct from the broader Today's Top Picks list above -->
+        <div class="top-picks" id="top3-picks-section" role="region" aria-labelledby="top3-picks-heading">
+            <h2 id="top3-picks-heading">📊 Top 3 Picks of the Day</h2>
+            <p style="color:#777;font-size:0.85em;margin:-12px 0 16px;">Source: diversified 3-pick selection (one per setup type, sector-balanced) &mdash; confirmed breakouts, with entry/stop/target levels</p>
+            <div id="top3-picks-content" aria-live="polite">
+                <div class="loading-state"><span class="spinner"></span> Loading today's 3 picks...</div>
+            </div>
+        </div>
+
+        <!-- Forming / Early Watch -- Cup & Handle setups whose handle has
+             completed but has NOT broken out yet. Deliberately styled and
+             labeled as the odd one out: these are NOT confirmed signals. -->
+        <div class="top-picks forming-picks" id="forming-picks-section" role="region" aria-labelledby="forming-picks-heading">
+            <h2 id="forming-picks-heading">👀 Forming / Early Watch</h2>
+            <p style="color:#92400e;font-size:0.85em;margin:-12px 0 16px;">Source: Cup &amp; Handle pre-breakout watch &mdash; <strong>not yet confirmed</strong>; handle has formed but price has not broken out, and may never trigger</p>
+            <div id="forming-picks-content" aria-live="polite">
+                <div class="loading-state"><span class="spinner"></span> Checking for forming setups...</div>
             </div>
         </div>
 
@@ -1282,6 +1326,115 @@
             }
         }
 
+        // ── Top 3 Picks of the Day (daily-picks.json, M1Max's diversified
+        // selection) -- a separate source from Today's Top Picks above, so
+        // kept as its own fetch/render pair rather than merged in. ──────────
+
+        async function loadTop3Picks() {
+            try {
+                const res = await fetch('daily-picks.json?_=' + Date.now());
+                // A 404 means the file hasn't been generated yet (e.g. before
+                // the first scheduled run) -- that's the normal "no picks
+                // yet" state, not a malfunction, so it must not show the red
+                // error alert.
+                if (res.status === 404) { showNoTop3PicksMessage(false); return; }
+                if (!res.ok) throw new Error('fetch failed: ' + res.status);
+                const data = await res.json();
+                displayTop3Picks(data.picks || []);
+            } catch (err) {
+                showNoTop3PicksMessage(true);
+            }
+        }
+
+        function displayTop3Picks(picks) {
+            const container = document.getElementById('top3-picks-content');
+            if (picks.length === 0) {
+                showNoTop3PicksMessage();
+                return;
+            }
+            container.innerHTML = picks.map(pick => `
+                <div class="pick-card top3">
+                    <div class="pick-header">
+                        <span class="pick-symbol">#${pick.rank} <a href="https://finance.yahoo.com/quote/${pick.symbol}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid currentColor;">${pick.symbol}</a></span>
+                        <span class="pick-badge top3" style="padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;">${pick.label || 'Diversified Pick'}</span>
+                        <span class="pick-score">Score: ${(pick.composite_score ?? 0).toFixed(1)}</span>
+                    </div>
+                    <div class="pick-description">${pick.why || ''} &mdash; ${pick.setup_description || ''} (${pick.sector || 'Unknown sector'})</div>
+                    <div class="pick-metrics">
+                        <span class="metric"><strong>$${(pick.entry ?? 0).toFixed(2)}</strong> Entry</span>
+                        <span class="metric"><strong>$${(pick.stop ?? 0).toFixed(2)}</strong> Stop</span>
+                        <span class="metric"><strong>$${(pick.target ?? 0).toFixed(2)}</strong> Target</span>
+                        <span class="metric"><strong>${(pick.rr_ratio ?? 0).toFixed(1)}:1</strong> R/R</span>
+                        <span class="metric"><strong>${(pick.risk_pct ?? 0).toFixed(1)}%</strong> Risk</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showNoTop3PicksMessage(isError = false) {
+            const content = document.getElementById('top3-picks-content');
+            content.innerHTML = isError
+                ? '<div class="error-alert">Unable to load today\'s 3 picks. Please try refreshing the page.</div>'
+                : '<div class="no-picks">No picks available today. Check back after the next analysis run.</div>';
+        }
+
+        // ── Forming / Early Watch (forming-picks.json, Cup & Handle
+        // pre-breakout candidates) -- deliberately NOT styled or worded like
+        // a confirmed pick; this closes the gap where a handle could form
+        // for days with zero visibility until the day it broke out (or
+        // didn't). ─────────────────────────────────────────────────────────
+
+        async function loadFormingPicks() {
+            try {
+                const res = await fetch('forming-picks.json?_=' + Date.now());
+                // Same reasoning as loadTop3Picks(): a 404 here is the
+                // expected state before the export has run at least once,
+                // not a real failure -- must not read as an error.
+                if (res.status === 404) { showNoFormingPicksMessage(false); return; }
+                if (!res.ok) throw new Error('fetch failed: ' + res.status);
+                const data = await res.json();
+                displayFormingPicks(data.picks || []);
+            } catch (err) {
+                showNoFormingPicksMessage(true);
+            }
+        }
+
+        function displayFormingPicks(picks) {
+            const container = document.getElementById('forming-picks-content');
+            if (picks.length === 0) {
+                showNoFormingPicksMessage();
+                return;
+            }
+            container.innerHTML = picks.map(pick => `
+                <div class="pick-card forming">
+                    <div class="pick-header">
+                        <span class="pick-symbol"><a href="https://finance.yahoo.com/quote/${pick.symbol}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid currentColor;">${pick.symbol}</a></span>
+                        <span class="pick-badge forming" style="padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;">⏳ Not Yet Confirmed</span>
+                        <span class="pick-score">Forming score: ${pick.formingScore ?? '—'}</span>
+                    </div>
+                    <div class="pick-description">
+                        Cup &amp; Handle on ${pick.exchange}: handle completed ${pick.handleEndDate}.
+                        Watching for a breakout above <strong>$${pick.triggerPrice.toFixed(2)}</strong>
+                        (currently $${pick.currentPrice.toFixed(2)}, ${pick.distanceToTriggerPct >= 0 ? pick.distanceToTriggerPct.toFixed(1) + '% below trigger' : Math.abs(pick.distanceToTriggerPct).toFixed(1) + '% above trigger'}) &mdash;
+                        day ${pick.watchWindow} of the watch window. <strong>May never break out.</strong>
+                    </div>
+                    <div class="pick-metrics">
+                        <span class="metric"><strong>${pick.cupDepthPct}%</strong> Cup depth</span>
+                        <span class="metric"><strong>${pick.handleDepthPct}%</strong> Handle depth</span>
+                        <span class="metric"><strong>${pick.watchWindow}</strong> Watch window</span>
+                        <span class="metric"><strong>${pick.exchange}</strong></span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showNoFormingPicksMessage(isError = false) {
+            const content = document.getElementById('forming-picks-content');
+            content.innerHTML = isError
+                ? '<div class="error-alert">Unable to load forming candidates. Please try refreshing the page.</div>'
+                : '<div class="no-picks">No Cup &amp; Handle setups currently forming. Check back after the next analysis run.</div>';
+        }
+
 
         function switchTab(tabId, btn) {
             document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -1318,7 +1471,9 @@
                 loadEnhancedTrendSummary(),
                 loadSP500PipelineSummary(),
                 loadFiles(),
-                loadTopPicks()
+                loadTopPicks(),
+                loadTop3Picks(),
+                loadFormingPicks()
             ]).then(() => {
                 btn.disabled = false;
                 btn.innerHTML = '🔄 Refresh';
@@ -1332,6 +1487,8 @@
         // Load top picks on page load
         loadPaoBullSummary();
         loadTopPicks();
+        loadTop3Picks();
+        loadFormingPicks();
     </script>
 </body>
 </html>
