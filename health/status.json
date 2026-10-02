@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T19:15:02.718972",
+  "generated_at": "2026-10-01T20:15:02.752853",
   "overall": "critical",
   "checks": [
     {
@@ -22,14 +22,14 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 284 tickers, published 284 tickers",
+      "status": "warn",
+      "detail": "working 285 tickers, published 284 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "2 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
@@ -41,8 +41,8 @@
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-09-30 (1d ago)",
-      "last_success": "2026-09-30T18:30:03"
+      "detail": "last changed 2026-10-01 (0d ago)",
+      "last_success": "2026-10-01T18:30:02"
     },
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
