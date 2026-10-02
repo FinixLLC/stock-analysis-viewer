@@ -48,21 +48,21 @@
   },
   "breakeven_5y": {
     "latest": 2.36,
-    "latest_date": "2026-09-30",
-    "avg_3m": 2.34,
+    "latest_date": "2026-10-01",
+    "avg_3m": 2.35,
     "avg_6m": 2.34
   },
   "breakeven_10y": {
     "latest": 2.36,
-    "latest_date": "2026-09-30",
-    "avg_3m": 2.35,
-    "avg_6m": 2.34
+    "latest_date": "2026-10-01",
+    "avg_3m": 2.36,
+    "avg_6m": 2.35
   },
   "real_yield_10y": {
-    "latest": 2.91,
-    "latest_date": "2026-09-29",
-    "avg_3m": 2.88,
-    "avg_6m": 2.81
+    "latest": 2.93,
+    "latest_date": "2026-09-30",
+    "avg_3m": 2.91,
+    "avg_6m": 2.86
   },
   "mich_inflation_expectations": {
     "latest": 4.0,
@@ -79,8 +79,8 @@
     "chg_3m_pct": 16.55
   },
   "wages": {
-    "latest": 37.75,
-    "yoy_pct": 3.09
+    "latest": 37.81,
+    "yoy_pct": 3.02
   },
   "philly_fed_prices_paid": {
     "latest": 37.8,
@@ -88,18 +88,18 @@
   },
   "cf_nowcast": {
     "mom": {
-      "month": "September 2026",
-      "cpi": 0.53,
+      "month": "October 2026",
+      "cpi": 0.25,
       "core_cpi": 0.2,
-      "pce": 0.43,
+      "pce": 0.27,
       "core_pce": 0.25
     },
     "yoy": {
-      "month": "September 2026",
-      "cpi": 3.6,
-      "core_cpi": 2.39,
-      "pce": 3.56,
-      "core_pce": 3.02
+      "month": "October 2026",
+      "cpi": 3.61,
+      "core_cpi": 2.3,
+      "pce": 3.68,
+      "core_pce": 3.1
     },
     "quarterly_annualized": {
       "quarter": "2026:Q3",
@@ -145,5 +145,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "rising",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-01T13:45:09.627076+00:00"
+  "generated_at": "2026-10-02T13:45:06.677879+00:00"
 }
