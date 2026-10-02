@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T09:15:06.364841",
+  "generated_at": "2026-10-02T10:15:03.841422",
   "overall": "critical",
   "checks": [
     {
       "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
-      "status": "critical",
-      "detail": "Not responding \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
+      "status": "ok",
+      "detail": "Responding on localhost:27017",
       "last_success": null
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Could not query: localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6abfd884a3a21abc8aa4988d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Expected at least 2026-10-01. NASDAQ_Yahoo: NO DATA; NYSE_Yahoo: NO DATA; AMEX_Yahoo: NO DATA",
       "last_success": null
     },
     {
