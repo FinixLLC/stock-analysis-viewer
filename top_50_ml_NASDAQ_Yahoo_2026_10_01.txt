@@ -1,0 +1,64 @@
+================================================================================
+TOP 50 STOCKS - ML + FUNDAMENTAL RANKING
+Database: NASDAQ_Yahoo
+Date: 2026-10-01
+Ranking Method: Baseline (Rule-Based)
+Fallback Reason: model_stale
+Scoring: Technical Only (Fundamental scoring disabled)
+Fundamental Filter: DISABLED
+================================================================================
+
+Rank  Symbol    Score   Baseline  IC_10d  Pattern     
+--------------------------------------------------------------------------------
+1      BKHAU       80.00   100.00     0.3080   POS         
+2      MYMI        80.00   100.00     0.1539   POS         
+3      TVACU       80.00   100.00     0.1076   POS         
+4      PCAP        80.00   100.00     0.1930   POS         
+5      TURF        80.00   100.00     0.2760   POS         
+6      AXINU       80.00   100.00     0.1124   POS         
+7      TUG         80.00   100.00     0.0620   POS         
+8      CNOBP       80.00   100.00     0.2784   POS         
+9      BACCU       80.00   100.00     0.1114   POS         
+10     TTEQ        80.00   100.00     1.0000   CupHandle   
+11     PQOC        80.00   100.00     0.1225   POS         
+12     GIWWU       80.00   100.00     0.2750   POS         
+13     NEWTG       80.00   100.00     0.3080   POS         
+14     PQJA        80.00   100.00     0.1025   POS         
+15     NEWTI       80.00   100.00     0.3135   POS         
+16     GGLS        80.00   100.00     1.0000   CupHandle   
+17     PQAP        80.00   100.00     0.0963   POS         
+18     MYMK        80.00   100.00     0.2786   nan         
+19     AVUQ        80.00   100.00     0.1487   POS         
+20     GEME        80.00   100.00     0.0958   POS         
+21     MYMH        80.00   100.00     0.0609   POS         
+22     MU          80.00   100.00     1.0000   CupHandle   
+23     UBFO        80.00   100.00     0.2032   nan         
+24     UBCP        80.00   100.00     0.2245   POS         
+25     MYCF        80.00   100.00     0.2263   POS         
+26     TXUG        80.00   100.00     0.2141   POS         
+27     PRTC        80.00   100.00     0.3056   nan         
+28     MYCI        80.00   100.00     0.1229   POS         
+29     TWLV        80.00   100.00     0.3752   POS         
+30     MYCJ        80.00   100.00     0.1194   POS         
+31     MYCK        80.00   100.00     0.1318   POS         
+32     MYCL        80.00   100.00     0.1196   POS         
+33     MYCM        80.00   100.00     0.1303   POS         
+34     MYCN        80.00   100.00     0.1304   POS         
+35     AVO         80.00   100.00     1.0000   CupHandle   
+36     AVPT        80.00   100.00     1.0000   CupHandle   
+37     PPYA        80.00   100.00     0.5364   POS         
+38     BBLGW       80.00   100.00     0.1148   nan         
+39     DRDBU       80.00   100.00     0.3890   POS         
+40     BFC         80.00   100.00     0.3418   POS         
+41     TMTSU       80.00   100.00     0.2042   POS         
+42     TMTS        80.00   100.00     0.1647   POS         
+43     RUNN        80.00   100.00     0.0813   POS         
+44     TMB         80.00   100.00     0.1679   POS         
+45     GAINZ       80.00   100.00     0.3144   POS         
+46     TLNCU       80.00   100.00     0.2906   POS         
+47     BGRO        80.00   100.00     0.1269   POS         
+48     FYT         80.00   100.00     0.0763   POS         
+49     CMBO        80.00   100.00     0.1410   POS         
+50     FVCB        80.00   100.00     0.1081   POS         
+
+================================================================================

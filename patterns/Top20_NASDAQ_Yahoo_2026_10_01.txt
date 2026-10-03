@@ -1,0 +1,24 @@
+# Top 20 Chart Patterns - Last 20 Days
+# Market: NASDAQ_Yahoo | End Date: 2026-10-01
+# Format: Rank,Symbol,Date,Pattern,Price,VolumeRatio,Score,Details
+#
+1,ACET,2026-09-11,CupHandle,9.52,1.36x,33.6,Depth:35.0% Handle:2.5% Vol:1.36x Target:12.76
+2,IBRX,2026-09-17,CupHandle,8.46,2.68x,46.8,Depth:20.1% Handle:13.2% Vol:2.68x Target:10.13
+3,AMZZ,2026-09-21,CupHandle,34.43,1.73x,42.3,Depth:24.7% Handle:7.8% Vol:1.73x Target:43.43
+4,PDBC,2026-09-15,CupHandle,20.10,1.62x,36.2,Depth:16.7% Handle:9.2% Vol:1.62x Target:23.26
+5,JEPQ,2026-09-21,CupHandle,61.01,1.43x,39.3,Depth:12.1% Handle:2.8% Vol:1.43x Target:68.29
+6,FTGC,2026-09-15,CupHandle,31.57,2.21x,42.1,Depth:13.4% Handle:4.8% Vol:2.21x Target:35.69
+7,FTGC,2026-09-11,CupHandle,31.31,1.34x,33.4,Depth:13.0% Handle:1.4% Vol:1.34x Target:35.31
+8,EEMA,2026-09-21,CupHandle,119.27,3.52x,60.2,Depth:12.3% Handle:5.8% Vol:3.52x Target:134.19
+9,WMG,2026-09-15,CupHandle,29.05,1.59x,35.9,Depth:18.5% Handle:9.0% Vol:1.59x Target:34.35
+10,HALO,2026-09-24,DarvasBox,115.22,1.74x,40.4,Box:[106.07-111.15] Ht:4.6% Vol:1.74x Boxes:6 Stop:106.07
+11,APLD,2026-09-17,CupHandle,26.38,1.56x,35.6,Depth:21.6% Handle:3.5% Vol:1.56x Target:31.88
+12,DMAC,2026-09-17,CupHandle,6.85,1.93x,39.3,Depth:23.7% Handle:11.4% Vol:1.93x Target:8.47
+13,SONO,2026-09-17,CupHandle,16.07,1.31x,33.1,Depth:16.0% Handle:13.3% Vol:1.31x Target:18.56
+14,UAL,2026-09-11,CupHandle,109.82,1.85x,38.5,Depth:28.7% Handle:11.3% Vol:1.85x Target:143.88
+15,REFI,2026-09-17,Spoon,11.15,1.83x,33.3,Depth:10.2% Roundness:1.00 Vol:1.83x Days:45
+16,AMPH,2026-09-21,CupHandle,24.48,1.38x,38.8,Depth:28.5% Handle:10.0% Vol:1.38x Target:31.10
+17,EGBN,2026-09-28,Spoon,28.45,1.52x,40.2,Depth:15.7% Roundness:1.00 Vol:1.52x Days:158
+18,GLBE,2026-09-21,CupHandle,39.69,1.35x,38.5,Depth:32.8% Handle:0.8% Vol:1.35x Target:52.80
+19,WCBR,2026-09-17,DarvasBox,44.44,3.26x,50.6,Box:[37.55-43.80] Ht:14.3% Vol:3.26x Boxes:3 Stop:37.55
+20,BUG,2026-09-15,DarvasBox,45.30,2.92x,47.2,Box:[38.52-44.55] Ht:13.5% Vol:2.92x Boxes:6 Stop:38.52
