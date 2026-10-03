@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:15:02.365519",
+  "generated_at": "2026-10-02T19:15:02.960640",
   "overall": "critical",
   "checks": [
     {
@@ -28,8 +28,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "2 commit(s) behind origin/main",
       "last_success": null
     },
     {
@@ -41,13 +41,13 @@
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-10-01 (0d ago)",
+      "detail": "last changed 2026-10-01 (1d ago)",
       "last_success": "2026-10-01T18:30:02"
     },
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-09-28 (3d ago)",
+      "detail": "last changed 2026-09-28 (4d ago)",
       "last_success": "2026-09-28T18:30:03"
     },
     {
