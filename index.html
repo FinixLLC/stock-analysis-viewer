@@ -957,34 +957,40 @@
                     const stocks = data.stocks || [];
 
                     if (stocks.length > 0) {
-                        const now = new Date();
-                        let oldestDays = 0;
-                        let veryStaleCount = 0;
-
-                        // Sample first 100 stocks to check data age
-                        const sample = stocks.slice(0, Math.min(100, stocks.length));
-                        sample.forEach(stock => {
+                        // Age the dataset by its most common dataEndDate (the
+                        // date the bulk of the universe was refreshed through),
+                        // not the single oldest stock -- one delisted ticker
+                        // shouldn't turn the whole dashboard yellow.
+                        const dateCounts = {};
+                        stocks.forEach(stock => {
                             if (stock.dataEndDate) {
-                                const endDate = new Date(stock.dataEndDate);
-                                const daysOld = Math.floor((now - endDate) / (1000 * 60 * 60 * 24));
-                                if (daysOld > oldestDays) oldestDays = daysOld;
-                                if (daysOld > 365) veryStaleCount++;
+                                dateCounts[stock.dataEndDate] = (dateCounts[stock.dataEndDate] || 0) + 1;
                             }
                         });
+                        const dates = Object.keys(dateCounts);
+                        if (dates.length === 0) throw new Error('no dataEndDate in all_trends.json');
+                        const asOf = dates.reduce((a, b) => dateCounts[b] > dateCounts[a] ? b : a);
+                        const [y, m, d] = asOf.split('-').map(Number);
+                        const asOfDate = new Date(y, m - 1, d);  // local midnight, not UTC
+                        const today = new Date();
+                        today.setHours(0, 0, 0, 0);
+                        const daysOld = Math.round((today - asOfDate) / (1000 * 60 * 60 * 24));
+                        const total = dates.reduce((n, k) => n + dateCounts[k], 0);
+                        const lagging = total - dateCounts[asOf];
+                        const asOfLabel = asOfDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
 
-                        // Set badge based on actual data age
-                        if (veryStaleCount > sample.length * 0.1 || oldestDays > 365) {
-                            badge.className = 'freshness-badge freshness-old';
-                            badge.textContent = '🔴 Data is ' + Math.floor(oldestDays / 30) + ' months old';
-                            badge.title = veryStaleCount + ' stocks have data over 1 year old';
-                        } else if (oldestDays > 30) {
-                            badge.className = 'freshness-badge freshness-stale';
-                            badge.textContent = '🟡 Data is ' + oldestDays + ' days old';
-                            badge.title = 'Some stock data is over 30 days old';
-                        } else {
+                        badge.title = dateCounts[asOf] + ' of ' + total + ' stocks have data through ' + asOf +
+                            (lagging > 0 ? '; ' + lagging + ' lag behind (halted/delisted or late bars)' : '');
+                        // 4 days covers a weekend plus a market holiday
+                        if (daysOld <= 4) {
                             badge.className = 'freshness-badge freshness-fresh';
-                            badge.textContent = '🟢 Data is fresh';
-                            badge.title = 'All data is less than 30 days old';
+                            badge.textContent = '🟢 Data as of ' + asOfLabel;
+                        } else if (daysOld <= 30) {
+                            badge.className = 'freshness-badge freshness-stale';
+                            badge.textContent = '🟡 Data is ' + daysOld + ' days old';
+                        } else {
+                            badge.className = 'freshness-badge freshness-old';
+                            badge.textContent = '🔴 Data is ' + daysOld + ' days old';
                         }
                         badge.style.display = 'inline-flex';
                         return;
