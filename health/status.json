@@ -1,17 +1,29 @@
 {
-  "generated_at": "2026-10-04T22:15:02.886555",
-  "overall": "critical",
+  "generated_at": "2026-10-04T23:16:24.910566",
+  "overall": "warn",
   "checks": [
     {
-      "name": "Mongo tunnel (M1 Max \u2192 Lenovo)",
+      "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
       "status": "ok",
-      "detail": "Responding on localhost:27017",
+      "detail": "Identity verified (NASDAQ_Yahoo \u2713)",
+      "last_success": null
+    },
+    {
+      "name": "Local Mongo (m1max): localhost:27017 \u2192 LOCAL",
+      "status": "ok",
+      "detail": "Identity verified (sec_cache \u2713)",
       "last_success": null
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "critical",
-      "detail": "Expected at least 2026-10-02. NASDAQ_Yahoo: NO DATA; NYSE_Yahoo: NO DATA; AMEX_Yahoo: NO DATA",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: 2026-10-02; NYSE_Yahoo: 2026-10-02",
+      "last_success": null
+    },
+    {
+      "name": "Exchange coverage (share of tickers current)",
+      "status": "ok",
+      "detail": "Through 2026-10-02. NASDAQ_Yahoo: 4327/5040 active current (86%), 4327/5942 of all; NYSE_Yahoo: 2365/2466 active current (96%), 2365/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
       "last_success": null
     },
     {
