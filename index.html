@@ -1405,6 +1405,31 @@
             }
         }
 
+        // Why a forming pick isn't confirmed: a breakout needs a close above
+        // the trigger AFTER the handle, on volume >= requiredVolumeRatio x the
+        // pre-breakout average (the same per-bar test CupHandlePattern.cpp's
+        // detectBreakout() applies). Price above trigger alone is not enough.
+        function formingChecklist(pick) {
+            if (pick.closesAboveTrigger == null) return '';  // older forming-picks.json
+            const trig = '$' + pick.triggerPrice.toFixed(2);
+            const need = pick.requiredVolumeRatio.toFixed(1) + '× avg';
+            let price, volume;
+            if (pick.closesAboveTrigger > 0) {
+                price = `✓ Price: closed above ${trig} on ${pick.closesAboveTrigger} day(s) since the handle`;
+                volume = `✗ Volume: best on those days was ${pick.bestVolumeRatio.toFixed(1)}× avg, needs ${need}`;
+            } else {
+                price = pick.watchWindow.startsWith('0/')
+                    ? `✗ Price: handle completed on the latest bar &mdash; no post-handle close yet`
+                    : `✗ Price: no close above ${trig} since the handle`;
+                volume = `&ndash; Volume: checked only on a close above ${trig} (needs ${need})`;
+            }
+            return `
+                    <div class="pick-description" style="font-size:0.88em;">
+                        ${price}<br>${volume}<br>
+                        <strong>Overall: not confirmed</strong> &mdash; both must happen on the same day within the watch window.
+                    </div>`;
+        }
+
         function displayFormingPicks(picks) {
             const container = document.getElementById('forming-picks-content');
             if (picks.length === 0) {
@@ -1420,10 +1445,11 @@
                     </div>
                     <div class="pick-description">
                         Cup &amp; Handle on ${pick.exchange}: handle completed ${pick.handleEndDate}.
-                        Watching for a breakout above <strong>$${pick.triggerPrice.toFixed(2)}</strong>
+                        Trigger <strong>$${pick.triggerPrice.toFixed(2)}</strong>
                         (currently $${pick.currentPrice.toFixed(2)}, ${pick.distanceToTriggerPct >= 0 ? pick.distanceToTriggerPct.toFixed(1) + '% below trigger' : Math.abs(pick.distanceToTriggerPct).toFixed(1) + '% above trigger'}) &mdash;
                         day ${pick.watchWindow} of the watch window. <strong>May never break out.</strong>
                     </div>
+                    ${formingChecklist(pick)}
                     <div class="pick-metrics">
                         <span class="metric"><strong>${pick.cupDepthPct}%</strong> Cup depth</span>
                         <span class="metric"><strong>${pick.handleDepthPct}%</strong> Handle depth</span>
