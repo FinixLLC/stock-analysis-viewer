@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T18:17:28.979104",
-  "overall": "ok",
+  "generated_at": "2026-10-05T19:17:07.121070",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -46,8 +46,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "3 commit(s) behind origin/main",
       "last_success": null
     },
     {
@@ -59,13 +59,13 @@
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-10-02 (2d ago)",
+      "detail": "last changed 2026-10-02 (3d ago)",
       "last_success": "2026-10-02T18:30:03"
     },
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-09-28 (6d ago)",
+      "detail": "last changed 2026-09-28 (7d ago)",
       "last_success": "2026-09-28T18:30:03"
     },
     {
