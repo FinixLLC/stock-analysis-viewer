@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T23:17:08.019093",
+  "generated_at": "2026-10-06T00:17:07.732546",
   "overall": "warn",
   "checks": [
     {
@@ -23,13 +23,13 @@
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "ok",
-      "detail": "Through 2026-10-02. NASDAQ_Yahoo: 4900/5041 active current (97%), 4900/5943 of all; NYSE_Yahoo: 2436/2467 active current (99%), 2436/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
+      "detail": "Through 2026-10-05. NASDAQ_Yahoo: 4711/5018 active current (94%), 4711/5943 of all; NYSE_Yahoo: 2416/2466 active current (98%), 2416/2727 of all; AMEX_Yahoo: 273/288 active current (95%), 273/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "ok",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-21 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-09-21 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-21 0.0%, 0 symbols with duplicate bars",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-23 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-09-22 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-22 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
@@ -77,7 +77,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
