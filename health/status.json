@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T23:17:53.672078",
-  "overall": "warn",
+  "generated_at": "2026-10-07T00:17:52.478153",
+  "overall": "critical",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -22,14 +22,14 @@
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "ok",
-      "detail": "Through 2026-10-05. NASDAQ_Yahoo: 4909/5018 active current (98%), 4909/5943 of all; NYSE_Yahoo: 2433/2466 active current (99%), 2433/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
+      "status": "critical",
+      "detail": "Through 2026-10-06. NASDAQ_Yahoo: 1933/5018 active current (39%), 1933/5943 of all; NYSE_Yahoo: 2397/2466 active current (97%), 2397/2727 of all; AMEX_Yahoo: 273/288 active current (95%), 273/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-23 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-09-22 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-22 0.0%, 0 symbols with duplicate bars",
+      "status": "critical",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-23 0.0%, 0 symbols with duplicate bars, thin days 2026-10-06 (1933/4838); NYSE_Yahoo: worst NaN day 2026-09-23 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-23 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
@@ -40,14 +40,14 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 291 tickers, published 291 tickers",
+      "status": "warn",
+      "detail": "working 292 tickers, published 291 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "2 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
@@ -60,7 +60,7 @@
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
       "detail": "last changed 2026-10-06 (0d ago)",
-      "last_success": "2026-10-06T18:30:02"
+      "last_success": "2026-10-06T22:54:06"
     },
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
@@ -77,7 +77,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
