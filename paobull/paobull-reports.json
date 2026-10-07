@@ -1,5 +1,39 @@
 [
   {
+    "ticker": "BUG",
+    "generated_at": "2026-10-07",
+    "price": 48.73,
+    "market_cap": null,
+    "sector": null,
+    "industry": null,
+    "pipeline_verdict": null,
+    "pipeline_score": null,
+    "bdd_verdict": null,
+    "moat_intact": null,
+    "roe_pct": null,
+    "de_ratio": null,
+    "fcf_latest": null,
+    "entry_framework": "\ud83d\udfe2 Entry: $47.0 \u2014 aligns with support levels and ATR-based calculations.  \n\ud83d\udfe1 Add-on: $44.77 \u2014 mid-term moving average offers additional support.  \n\ud83d\udd34 Stop Loss: $44.0 \u2014 6.4% below entry, capturing potential downside risk.  \n\ud83d\udd35 Target: $56.5 \u2014 extrapolated 20% upside from entry, reflecting strong sector tailwinds.  \n\nPosition Sizing: Starter position (5% of portfolio). Timeframe: 18 months.  \n\nBuyDeep",
+    "investment_thesis": "CORE Thesis: BUG offers exposure to a high-growth sector (cybersecurity) with strong secular tailwinds, but its current price is above the entry level, suggesting a pullback is needed for a more attractive entry.  \n\nPeer Comparison: Compared to other cybersecurity ETFs like HAKS or CYBR, BUG benefits from a diversified portfolio and strong thematic focus. However, its valuation relative to peers i"
+  },
+  {
+    "ticker": "MG",
+    "generated_at": "2026-10-07",
+    "price": 21.03,
+    "market_cap": 670023232,
+    "sector": "Industrials",
+    "industry": "Security & Protection Services",
+    "pipeline_verdict": null,
+    "pipeline_score": null,
+    "bdd_verdict": null,
+    "moat_intact": null,
+    "roe_pct": 7.2,
+    "de_ratio": 0.76,
+    "fcf_latest": 8307000.0,
+    "entry_framework": "\ud83d\udfe2 Entry: $20.46 \u2014 Anchored by the 20-day MA, offering a reasonable entry point.  \n\ud83d\udfe1 Add-on: $18.74 \u2014 Supported by the 50-day MA, indicating a pullback level.  \n\ud83d\udd34 Stop Loss: $18.5 \u2014 9.6% below entry, guarding against significant downside.  \n\ud83d\udd35 Target: $24.5 \u2014 20% extrapolation from entry, balancing risk and reward.  \n\nPosition sizing: Starter (3% of portfolio). Timeframe: 18 months.  \n\nBuyDeepDip ph",
+    "investment_thesis": "MG offers a niche security services business with moderate cyclicality risks. However, weak FCF and ROE weigh on the thesis. Peers like RKT and BKG have stronger margins and FCF generation.  \n\n\ud83d\udfe2 Bull Case: MG's asset-light model and stable revenue provide a moat, with potential for margin improvement.  \n\ud83d\udd34 Bear Case: Weak FCF, low ROE, and cyclicality risks could limit growth.  \n\u2605 Verdict: WATCH \u2014 "
+  },
+  {
     "ticker": "JNJ",
     "generated_at": "2026-10-06",
     "price": 252.93,
@@ -321,23 +355,6 @@
     "fcf_latest": -17649250,
     "entry_framework": "\ud83d\udfe2 Entry: $8.0 \u2014 aligns with support levels and ATR-based framework.  \n\ud83d\udfe1 Add-on: $7.5 \u2014 lower support level for scaling in.  \n\ud83d\udd34 Stop Loss: $7.0 \u2014 12.5% below entry to limit risk.  \n\ud83d\udd35 Target: $10.4195 \u2014 prior 52-week high, a technical reference.  \n\nBuyDeepDip phase1 failed due to lack of SEC cache data. Re-qualification would require a pullback to the entry level.  \n\nPosition sizing: Starter (5% of ",
     "investment_thesis": "Core thesis: DMAC has potential in the biotech sector, but its speculative nature and financial stress make it a high-risk bet.  \n\n\ud83d\udfe2 Bull Case: Biotech innovation could yield breakthroughs; potential partnerships could unlock value.  \n\ud83d\udd34 Bear Case: Negative cash flow, no clear pipeline, and high execution risk.  \n\u2605 Verdict: WATCH \u2014 Speculative  \n\n---"
-  },
-  {
-    "ticker": "MG",
-    "generated_at": "2026-09-30",
-    "price": 21.17,
-    "market_cap": 674483648,
-    "sector": "Industrials",
-    "industry": "Security & Protection Services",
-    "pipeline_verdict": null,
-    "pipeline_score": null,
-    "bdd_verdict": null,
-    "moat_intact": null,
-    "roe_pct": 11.2,
-    "de_ratio": 1.02,
-    "fcf_latest": 30275000,
-    "entry_framework": "\ud83d\udfe2 Entry: $20.5 \u2014 Anchored at the short-term moving average (19.92) and ATR support.  \n\ud83d\udfe1 Add-on: $19.92 \u2014 Price aligns with the short-term MA, offering a lower-risk entry point.  \n\ud83d\udd34 Stop Loss: $19.5 \u2014 4.9% below entry, capturing downside risk without overexposure.  \n\ud83d\udd35 Target: $24.5 \u2014 20% extrapolation from entry, balancing upside potential with risk.  \n\nBuyDeepDip phase1 failed as MG is not in the ",
-    "investment_thesis": "MG has a strong market position in security services with solid FCF and ROE. However, its valuation appears high relative to peers like FLIR (FLIR) or Teledyne (TDY), which have similar business models but better growth profiles.  \n\n\ud83d\udfe2 Bull Case: MG's asset-light model and stable FCF provide a moat in a fragmented industry.  \n\ud83d\udd34 Bear Case: High valuation and lack of growth data raise concerns about "
   },
   {
     "ticker": "MTRN",
