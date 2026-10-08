@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T17:18:44.720164",
-  "overall": "ok",
+  "generated_at": "2026-10-07T18:17:17.251333",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -23,7 +23,7 @@
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "ok",
-      "detail": "Through 2026-10-06. NASDAQ_Yahoo: 4207/5018 active current (84%), 4207/5943 of all; NYSE_Yahoo: 2433/2466 active current (99%), 2433/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
+      "detail": "Through 2026-10-06. NASDAQ_Yahoo: 4896/5018 active current (98%), 4896/5943 of all; NYSE_Yahoo: 2433/2466 active current (99%), 2433/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
       "last_success": null
     },
     {
@@ -40,14 +40,14 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 292 tickers, published 292 tickers",
+      "status": "warn",
+      "detail": "working 293 tickers, published 292 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
