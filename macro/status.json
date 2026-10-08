@@ -48,20 +48,20 @@
   },
   "breakeven_5y": {
     "latest": 2.37,
-    "latest_date": "2026-10-06",
+    "latest_date": "2026-10-07",
     "avg_3m": 2.37,
-    "avg_6m": 2.36
+    "avg_6m": 2.37
   },
   "breakeven_10y": {
     "latest": 2.36,
-    "latest_date": "2026-10-06",
+    "latest_date": "2026-10-07",
     "avg_3m": 2.36,
     "avg_6m": 2.36
   },
   "real_yield_10y": {
-    "latest": 2.95,
-    "latest_date": "2026-10-05",
-    "avg_3m": 2.92,
+    "latest": 2.91,
+    "latest_date": "2026-10-06",
+    "avg_3m": 2.93,
     "avg_6m": 2.92
   },
   "mich_inflation_expectations": {
@@ -71,8 +71,8 @@
     "avg_6m": 4.35
   },
   "oil": {
-    "latest": 96.16,
-    "chg_3m_pct": 36.28
+    "latest": 96.24,
+    "chg_3m_pct": 29.08
   },
   "gasoline": {
     "latest": 4.354,
@@ -110,19 +110,13 @@
     }
   },
   "nyfed_infl_exp_1y": {
-    "latest": 3.58,
-    "avg_3m": 3.63,
-    "avg_6m": 3.57
+    "error": "Worksheet named 'Five-year ahead Infl Exp' not found"
   },
   "nyfed_infl_exp_3y": {
-    "latest": 3.19,
-    "avg_3m": 3.26,
-    "avg_6m": 3.19
+    "error": "Worksheet named 'Five-year ahead Infl Exp' not found"
   },
   "nyfed_infl_exp_5y": {
-    "latest": 3.01,
-    "avg_3m": 3.01,
-    "avg_6m": 3.02
+    "error": "Worksheet named 'Five-year ahead Infl Exp' not found"
   },
   "pressure_index": {
     "signals": {
@@ -133,17 +127,17 @@
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
-      "inflation_expectations": 1
+      "inflation_expectations": -1
     },
-    "total": 1,
-    "regime": "MILD INFLATIONARY"
+    "total": -1,
+    "regime": "MILD DISINFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
     "gasoline": "rising"
   },
   "median_cpi_trend_word": "falling",
-  "inflation_expectations_trend_word": "rising",
+  "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-07T13:45:10.301758+00:00"
+  "generated_at": "2026-10-08T13:45:06.836069+00:00"
 }
