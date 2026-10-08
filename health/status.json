@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T20:17:01.288114",
-  "overall": "ok",
+  "generated_at": "2026-10-07T21:17:03.317209",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -46,8 +46,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "3 commit(s) behind origin/main",
       "last_success": null
     },
     {
