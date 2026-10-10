@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T23:17:34.635380",
-  "overall": "warn",
+  "generated_at": "2026-10-10T00:17:34.733352",
+  "overall": "critical",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -16,20 +16,20 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: 2026-10-08; NYSE_Yahoo: 2026-10-09",
+      "status": "critical",
+      "detail": "Expected at least 2026-10-09. NASDAQ_Yahoo: 2026-10-08; NYSE_Yahoo: 2026-10-09",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "ok",
-      "detail": "Through 2026-10-08. NASDAQ_Yahoo: 4880/5021 active current (97%), 4880/5943 of all; NYSE_Yahoo: 2433/2466 active current (99%), 2433/2727 of all; AMEX_Yahoo: 286/288 active current (99%), 286/317 of all",
+      "status": "critical",
+      "detail": "Through 2026-10-09. NASDAQ_Yahoo: 635/5018 active current (13%), 635/5943 of all; NYSE_Yahoo: 2383/2466 active current (97%), 2383/2727 of all; AMEX_Yahoo: 271/287 active current (94%), 271/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-28 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-09-25 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-25 0.0%, 0 symbols with duplicate bars",
+      "status": "critical",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-09-28 0.0%, 0 symbols with duplicate bars, thin days 2026-10-09 (635/4839); NYSE_Yahoo: worst NaN day 2026-09-28 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-09-28 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
@@ -77,7 +77,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None scheduled today (weekend)",
       "last_success": null
     }
   ]
