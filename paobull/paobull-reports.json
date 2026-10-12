@@ -1,24 +1,7 @@
 [
   {
-    "ticker": "DAC",
-    "generated_at": "2026-10-10",
-    "price": 169.09,
-    "market_cap": 3078041344,
-    "sector": "Industrials",
-    "industry": "Marine Shipping",
-    "pipeline_verdict": null,
-    "pipeline_score": null,
-    "bdd_verdict": null,
-    "moat_intact": null,
-    "roe_pct": null,
-    "de_ratio": null,
-    "fcf_latest": null,
-    "entry_framework": "\ud83d\udfe2 Entry: $165.0 \u2014 just below the current price, aligning with support levels and ATR.  \n\ud83d\udfe1 Add-on: $159.71 \u2014 anchored to the short-term moving average.  \n\ud83d\udd34 Stop Loss: $157.5 \u2014 4.5% below entry, protecting against sharp declines.  \n\ud83d\udd35 Target: $198.0 \u2014 extrapolated 20% upside from entry.  \n\nBuyDeepDip phase1 failed because FCF has been positive for fewer than three years. Re-qualification would requir",
-    "investment_thesis": "Core thesis: DAC is well-positioned in a growing marine shipping sector, but its high valuation and lack of fundamentals raise concerns.  \n\nPeer comparison: While DAC's business model aligns with peers like TAL and NCLH, its valuation appears stretched without clear differentiators.  \n\n\ud83d\udfe2 Bull Case: Strong market position and potential for recovery in shipping rates.  \n\ud83d\udd34 Bear Case: High valuation, "
-  },
-  {
     "ticker": "EDU",
-    "generated_at": "2026-10-10",
+    "generated_at": "2026-10-12",
     "price": 58.63,
     "market_cap": 9089384448,
     "sector": "Consumer Defensive",
@@ -30,8 +13,25 @@
     "roe_pct": null,
     "de_ratio": null,
     "fcf_latest": null,
-    "entry_framework": "\ud83d\udfe2 Entry: $57.0 \u2014 reflects support near short-term MA and RSI consolidation.  \n\ud83d\udfe1 Add-on: $56.35 \u2014 mid-term MA convergence.  \n\ud83d\udd34 Stop Loss: $55.5 \u2014 2.6% below entry, aligns with ATR-based risk.  \n\ud83d\udd35 Target: $68.5 \u2014 20% upside from entry, extrapolated target.  \n\nBuyDeepDip phase1 failed: FCF positive for only 0 years (needs 3). Re-qualification requires sustained FCF positivity.  \n\nPosition sizing: Sta",
-    "investment_thesis": "Core thesis: EDU is a leader in the education sector with a strong brand, but risks of regulatory and competitive pressures weigh on the outlook.  \n\nPeer comparison: Comparable to Apollo Education Group (APOL) and DeVry Education Group (DVY) in terms of business model complexity and regulatory exposure. EDU appears more speculative due to limited data and higher valuation relative to peers.  \n\n\ud83d\udfe2 B"
+    "entry_framework": "- \ud83d\udfe2 Entry: $57.0 \u2014 below current price, suggesting a pullback.\n- \ud83d\udfe1 Add-on: $56.35 \u2014 mid MA support.\n- \ud83d\udd34 Stop Loss: $55.5 \u2014 2.6% below entry.\n- \ud83d\udd35 Target: $68.5 \u2014 20% upside from entry.\n\nBuyDeepDip phase1 failed due to insufficient FCF positivity. Re-qualification requires three years of positive FCF.",
+    "investment_thesis": "EDU is a leader in China's education market with a tech focus. While peers like Chegg and Pearson have similar models, EDU's moat is strong but faces risks. The verdict is WATCH due to the need for a better entry point.\n\n\ud83d\udfe2 Bull Case: Strong market position and tech integration.\n\ud83d\udd34 Bear Case: Regulatory and competitive risks.\n\u2605 Verdict: WATCH \u2014 Scale-In on Pullback"
+  },
+  {
+    "ticker": "DAC",
+    "generated_at": "2026-10-12",
+    "price": 169.09,
+    "market_cap": 3078041344,
+    "sector": "Industrials",
+    "industry": "Marine Shipping",
+    "pipeline_verdict": null,
+    "pipeline_score": null,
+    "bdd_verdict": null,
+    "moat_intact": null,
+    "roe_pct": null,
+    "de_ratio": null,
+    "fcf_latest": null,
+    "entry_framework": "\ud83d\udfe2 Entry: $165.0 \u2014 Based on ATR support and the overbought condition, this level offers a better risk-reward balance.  \n\ud83d\udfe1 Add-on: $159.71 \u2014 Anchored to the short-term moving average, this level reflects a pullback to consolidate gains.  \n\ud83d\udd34 Stop Loss: $157.5 \u2014 4.5% below entry, aligning with ATR-based risk management.  \n\ud83d\udd35 Target: $198.0 \u2014 Extrapolated 20% upside from entry, with no 52-week high far ",
+    "investment_thesis": "Core thesis: DAC operates in a cyclical, capital-intensive industry with significant financial opacity, making it a speculative investment.  \n\nPeer comparison: While no explicit peers are provided, companies like TAL (TAL International Group) or XSD (Seaspan Corporation) offer insights into the sector. DAC lacks the transparency and fundamentals of these peers, making it harder to assess its compe"
   },
   {
     "ticker": "VGIT",
