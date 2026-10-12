@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T15:18:01.174682",
+  "generated_at": "2026-10-12T16:17:33.462843",
   "overall": "critical",
   "checks": [
     {
@@ -17,13 +17,13 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Expected at least 2026-10-09. NASDAQ_Yahoo: 2026-10-08; NYSE_Yahoo: 2026-10-09",
+      "detail": "Expected at least 2026-10-09. NASDAQ_Yahoo: 2026-10-08; NYSE_Yahoo: 2026-10-12",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "critical",
-      "detail": "Through 2026-10-09. NASDAQ_Yahoo: 636/5018 active current (13%), 636/5943 of all; NYSE_Yahoo: 2383/2466 active current (97%), 2383/2727 of all; AMEX_Yahoo: 285/287 active current (99%), 285/317 of all",
+      "detail": "Through 2026-10-09. NASDAQ_Yahoo: 636/5018 active current (13%), 636/5943 of all; NYSE_Yahoo: 2433/2466 active current (99%), 2433/2727 of all; AMEX_Yahoo: 285/287 active current (99%), 285/317 of all",
       "last_success": null
     },
     {
