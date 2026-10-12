@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:17:53.989501",
+  "generated_at": "2026-10-11T19:17:36.931279",
   "overall": "critical",
   "checks": [
     {
@@ -46,8 +46,8 @@
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-10-05 (5d ago)",
+      "detail": "last changed 2026-10-05 (6d ago)",
       "last_success": "2026-10-05T18:30:07"
     },
     {
