@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T18:17:16.053920",
-  "overall": "ok",
+  "generated_at": "2026-10-12T19:16:55.608141",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -40,8 +40,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 299 tickers, published 299 tickers",
+      "status": "warn",
+      "detail": "working 300 tickers, published 299 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-10-11 (0d ago)",
+      "detail": "last changed 2026-10-11 (1d ago)",
       "last_success": "2026-10-11T18:30:56"
     },
     {
