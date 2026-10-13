@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-08",
-  "generated": "2026-10-09 21:35",
+  "date": "2026-10-09",
+  "generated": "2026-10-12 21:35",
   "picks": [
     {
       "rank": 1,
@@ -8,14 +8,14 @@
       "label": "Best Overall",
       "setup_type": "Breakout",
       "sector": "Industrials",
-      "composite_score": 90.1,
+      "composite_score": 89.0,
       "tier": 1,
       "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
       "entry": 170.22,
-      "stop": 164.21,
-      "target": 182.23,
+      "stop": 164.15,
+      "target": 182.36,
       "rr_ratio": 2.0,
-      "risk_pct": 3.5,
+      "risk_pct": 3.6,
       "why": "Strongest combination of pattern quality + momentum + favorable risk"
     },
     {
@@ -24,7 +24,7 @@
       "label": "Different Driver",
       "setup_type": "Continuation",
       "sector": "Consumer Defensive",
-      "composite_score": 92.1,
+      "composite_score": 81.6,
       "tier": 1,
       "setup_description": "Cup & Handle continuation \u2014 handle pullback completing in established uptrend",
       "entry": 57.08,
@@ -36,18 +36,18 @@
     },
     {
       "rank": 3,
-      "symbol": "MSGM",
+      "symbol": "DT",
       "label": "Higher Risk/Reward",
-      "setup_type": "Continuation",
-      "sector": "Communication Services",
-      "composite_score": 84.3,
+      "setup_type": "Breakout",
+      "sector": "Technology",
+      "composite_score": 79.9,
       "tier": 1,
-      "setup_description": "Cup & Handle continuation \u2014 handle pullback completing in established uptrend",
-      "entry": 5.38,
-      "stop": 4.73,
-      "target": 6.69,
+      "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
+      "entry": 57.2,
+      "stop": 54.67,
+      "target": 62.27,
       "rr_ratio": 2.0,
-      "risk_pct": 12.1,
+      "risk_pct": 4.4,
       "why": "Different sector + setup offers uncorrelated return potential"
     }
   ]
