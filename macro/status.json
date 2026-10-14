@@ -1,31 +1,31 @@
 {
   "cpi_headline": {
-    "latest_date": "2026-08-01",
-    "mom_pct": 0.4,
-    "ann_3m_pct": 0.18,
-    "ann_6m_pct": 4.12,
-    "yoy_pct": 3.71
+    "latest_date": "2026-09-01",
+    "mom_pct": 0.65,
+    "ann_3m_pct": 4.56,
+    "ann_6m_pct": 3.67,
+    "yoy_pct": 4.02
   },
   "cpi_core": {
-    "latest_date": "2026-08-01",
-    "mom_pct": 0.29,
-    "ann_3m_pct": 1.97,
-    "ann_6m_pct": 2.57,
-    "yoy_pct": 2.76
+    "latest_date": "2026-09-01",
+    "mom_pct": 0.33,
+    "ann_3m_pct": 3.41,
+    "ann_6m_pct": 2.85,
+    "yoy_pct": 2.79
   },
   "cpi_shelter": {
-    "latest_date": "2026-08-01",
-    "mom_pct": 0.26,
-    "ann_3m_pct": 2.1,
-    "ann_6m_pct": 3.47,
+    "latest_date": "2026-09-01",
+    "mom_pct": 0.39,
+    "ann_3m_pct": 3.22,
+    "ann_6m_pct": 3.73,
     "yoy_pct": 3.44
   },
   "cpi_ex_shelter": {
-    "latest_date": "2026-08-01",
-    "mom_pct": 0.47,
-    "ann_3m_pct": -0.85,
-    "ann_6m_pct": 4.47,
-    "yoy_pct": 3.86
+    "latest_date": "2026-09-01",
+    "mom_pct": 0.79,
+    "ann_3m_pct": 5.3,
+    "ann_6m_pct": 3.64,
+    "yoy_pct": 4.35
   },
   "ppi_final_demand": {
     "latest_date": "2026-08-01",
@@ -47,20 +47,20 @@
     "avg_6m": 2.88
   },
   "breakeven_5y": {
-    "latest": 2.34,
-    "latest_date": "2026-10-09",
-    "avg_3m": 2.36,
+    "latest": 2.33,
+    "latest_date": "2026-10-13",
+    "avg_3m": 2.35,
     "avg_6m": 2.36
   },
   "breakeven_10y": {
     "latest": 2.33,
-    "latest_date": "2026-10-09",
-    "avg_3m": 2.35,
+    "latest_date": "2026-10-13",
+    "avg_3m": 2.34,
     "avg_6m": 2.35
   },
   "real_yield_10y": {
-    "latest": 2.87,
-    "latest_date": "2026-10-08",
+    "latest": 2.91,
+    "latest_date": "2026-10-09",
     "avg_3m": 2.9,
     "avg_6m": 2.91
   },
@@ -123,14 +123,14 @@
       "oil": 1,
       "gasoline": 1,
       "shelter": -1,
-      "core_cpi_3m_vs_6m": -1,
+      "core_cpi_3m_vs_6m": 1,
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
       "inflation_expectations": -1
     },
-    "total": -1,
-    "regime": "MILD DISINFLATIONARY"
+    "total": 1,
+    "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
@@ -139,5 +139,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-13T13:45:08.818718+00:00"
+  "generated_at": "2026-10-14T13:45:06.424324+00:00"
 }
