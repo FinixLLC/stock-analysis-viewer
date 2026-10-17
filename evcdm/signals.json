@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-08",
-  "signal_count": 28,
+  "generated": "2026-10-16",
+  "signal_count": 35,
   "signals": [
     {
       "id": "ORCL-capex_surge-2026",
@@ -90,72 +90,97 @@
       "confidence": 0.75
     },
     {
-      "id": "AMAT-capex_surge-2025",
-      "company": "Applied Materials, Inc.",
-      "ticker": "AMAT",
-      "industry": "ai",
+      "id": "COHR-capex_surge-2026",
+      "company": "Coherent Corp",
+      "ticker": "COHR",
+      "industry": "cloud",
       "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 90% YoY ($1.2B \u2192 $2.3B)",
-      "observable_value": 0.8992,
-      "hidden_cause": "Applied Materials is a semiconductor equipment supplier \u2014 it sits two steps upstream of AI end demand. The causal chain runs: AI compute demand \u2192 foundries and chipmakers plan fab expansions \u2192 wafer-fab-equipment demand improves \u2192 Applied Materials builds capacity ahead of anticipated orders. This is an expectation signal, not a confirmation: CapEx reflects management's assessment of customer capacity plans, not booked orders. The inference strengthens materially when accompanied by rising bookings, backlog growth, or revenue acceleration at downstream foundry customers.",
+      "period": "2026",
+      "observable": "Capex grew 150% YoY ($0.4B \u2192 $1.1B)",
+      "observable_value": 1.5019,
+      "hidden_cause": "Capital expansion at Coherent Corp signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
-        "AI semiconductor capacity expansion \u2014 demand propagates: AI models \u2192 GPUs \u2192 foundry capacity \u2192 equipment",
-        "Technology node transitions \u2014 gate-all-around (GAA), CoWoS advanced packaging, HBM manufacturing, advanced DRAM",
-        "CHIPS Act and government incentive programs \u2014 domestic fab investments subsidized by industrial policy",
-        "Overbuilding risk \u2014 semiconductor cycles show excess capacity after aggressive investment (2000, 2008, 2022)"
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
       ],
       "upstream_beneficiaries": [],
       "downstream_implications": [
         {
-          "company": "Micron Technology",
-          "ticker": "MU",
+          "company": "Arista Networks",
+          "ticker": "ANET",
           "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.9,
-          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
-        },
-        {
-          "company": "TSMC",
-          "ticker": "TSM",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.92,
-          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Samsung Electronics",
-          "ticker": "SSNNF",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.88,
-          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Intel",
-          "ticker": "INTC",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.82,
+          "inference": "Capital commitment by Coherent Corp suggests its customers are in a growth phase."
         }
       ],
       "partner_context": [],
       "confidence": 0.75
     },
     {
-      "id": "MU-capex_surge-2025",
+      "id": "FN-capex_surge-2026",
+      "company": "Fabrinet",
+      "ticker": "FN",
+      "industry": "semiconductor",
+      "signal_type": "capex_surge",
+      "period": "2026",
+      "observable": "Capex grew 109% YoY ($0.1B \u2192 $0.3B)",
+      "observable_value": 1.0855,
+      "hidden_cause": "Capital expansion at Fabrinet signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "LITE-capex_surge-2026",
+      "company": "Lumentum Holdings",
+      "ticker": "LITE",
+      "industry": "cloud",
+      "signal_type": "capex_surge",
+      "period": "2026",
+      "observable": "Capex grew 95% YoY ($0.2B \u2192 $0.5B)",
+      "observable_value": 0.9537,
+      "hidden_cause": "Capital expansion at Lumentum Holdings signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.8,
+          "inference": "Capital commitment by Lumentum Holdings suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "MU-capex_surge-2026",
       "company": "Micron Technology",
       "ticker": "MU",
       "industry": "ai",
       "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 89% YoY ($8.4B \u2192 $15.9B)",
-      "observable_value": 0.8909,
+      "period": "2026",
+      "observable": "Capex grew 94% YoY ($15.9B \u2192 $30.7B)",
+      "observable_value": 0.9368,
       "hidden_cause": "Capital expansion at Micron Technology signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
         "HBM capacity expansion ahead of NVIDIA Blackwell demand",
@@ -252,6 +277,64 @@
       "confidence": 0.75
     },
     {
+      "id": "AMAT-capex_surge-2025",
+      "company": "Applied Materials, Inc.",
+      "ticker": "AMAT",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 90% YoY ($1.2B \u2192 $2.3B)",
+      "observable_value": 0.8992,
+      "hidden_cause": "Applied Materials is a semiconductor equipment supplier \u2014 it sits two steps upstream of AI end demand. The causal chain runs: AI compute demand \u2192 foundries and chipmakers plan fab expansions \u2192 wafer-fab-equipment demand improves \u2192 Applied Materials builds capacity ahead of anticipated orders. This is an expectation signal, not a confirmation: CapEx reflects management's assessment of customer capacity plans, not booked orders. The inference strengthens materially when accompanied by rising bookings, backlog growth, or revenue acceleration at downstream foundry customers.",
+      "alternative_explanations": [
+        "AI semiconductor capacity expansion \u2014 demand propagates: AI models \u2192 GPUs \u2192 foundry capacity \u2192 equipment",
+        "Technology node transitions \u2014 gate-all-around (GAA), CoWoS advanced packaging, HBM manufacturing, advanced DRAM",
+        "CHIPS Act and government incentive programs \u2014 domestic fab investments subsidized by industrial policy",
+        "Overbuilding risk \u2014 semiconductor cycles show excess capacity after aggressive investment (2000, 2008, 2022)"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.9,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.92,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Samsung Electronics",
+          "ticker": "SSNNF",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Intel",
+          "ticker": "INTC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Applied Materials, Inc. suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
       "id": "META-capex_surge-2025",
       "company": "Meta",
       "ticker": "META",
@@ -301,412 +384,14 @@
       "confidence": 0.75
     },
     {
-      "id": "GOOGL-capex_surge-2025",
-      "company": "Google Cloud",
-      "ticker": "GOOGL",
-      "industry": "ai",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 74% YoY ($52.5B \u2192 $91.4B)",
-      "observable_value": 0.7407,
-      "hidden_cause": "Capital expansion at Google Cloud signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
-      "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
-      ],
-      "upstream_beneficiaries": [
-        {
-          "company": "Micron",
-          "ticker": "MU",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "NVIDIA",
-          "ticker": "NVDA",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Broadcom",
-          "ticker": "AVGO",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Arista Networks",
-          "ticker": "ANET",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.9,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Marvell",
-          "ticker": "MRVL",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "semiconductor",
-          "edge_confidence": 0.88,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Digital Realty",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L1",
-          "industry": "cloud",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        },
-        {
-          "company": "Vertiv",
-          "ticker": "VRT",
-          "relationship": "supplier_to_customer",
-          "layer": "L1",
-          "industry": "cloud",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
-        }
-      ],
-      "downstream_implications": [
-        {
-          "company": "Atlas",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "cloud",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Okta",
-          "ticker": "OKTA",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "cloud",
-          "edge_confidence": 0.85,
-          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
-        },
-        {
-          "company": "IonQ",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "quantum",
-          "edge_confidence": 0.9,
-          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
-        }
-      ],
-      "partner_context": [
-        {
-          "company": "Oracle",
-          "ticker": "ORCL",
-          "relationship": "cooperates_with",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
-        },
-        {
-          "company": "Zscaler",
-          "ticker": "ZS",
-          "relationship": "cooperates_with",
-          "layer": "L1",
-          "industry": "cyber",
-          "edge_confidence": 0.75,
-          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
-        }
-      ],
-      "confidence": 0.75
-    },
-    {
-      "id": "LITE-capex_surge-2025",
-      "company": "Lumentum Holdings",
-      "ticker": "LITE",
-      "industry": "cloud",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 74% YoY ($0.1B \u2192 $0.2B)",
-      "observable_value": 0.7368,
-      "hidden_cause": "Capital expansion at Lumentum Holdings signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
-      "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
-      ],
-      "upstream_beneficiaries": [],
-      "downstream_implications": [
-        {
-          "company": "Arista Networks",
-          "ticker": "ANET",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "cloud",
-          "edge_confidence": 0.8,
-          "inference": "Capital commitment by Lumentum Holdings suggests its customers are in a growth phase."
-        }
-      ],
-      "partner_context": [],
-      "confidence": 0.75
-    },
-    {
-      "id": "NET-capex_surge-2025",
-      "company": "Cloudflare",
-      "ticker": "NET",
-      "industry": "cloud",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 71% YoY ($0.2B \u2192 $0.3B)",
-      "observable_value": 0.7057,
-      "hidden_cause": "Capital expansion at Cloudflare signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
-      "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
-      ],
-      "upstream_beneficiaries": [],
-      "downstream_implications": [],
-      "partner_context": [],
-      "confidence": 0.75
-    },
-    {
-      "id": "AMGN-capex_surge-2025",
-      "company": "Amgen",
-      "ticker": "AMGN",
-      "industry": "biotech",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 70% YoY ($1.1B \u2192 $1.9B)",
-      "observable_value": 0.6953,
-      "hidden_cause": "Capital expansion at Amgen signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
-      "alternative_explanations": [
-        "Strategic capacity grab ahead of competitors",
-        "AI infrastructure arms race (speculative buildout)",
-        "Signed customer contracts not yet publicly announced",
-        "Potential overbuilding if demand growth decelerates"
-      ],
-      "upstream_beneficiaries": [
-        {
-          "company": "Becton Dickinson",
-          "ticker": "BDX",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "healthcare",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at Amgen will require additional equipment and materials."
-        }
-      ],
-      "downstream_implications": [
-        {
-          "company": "UCB",
-          "ticker": null,
-          "relationship": "critical_dependency",
-          "layer": "L6",
-          "industry": "biotech",
-          "edge_confidence": 0.8,
-          "inference": "Capital commitment by Amgen suggests its customers are in a growth phase."
-        }
-      ],
-      "partner_context": [],
-      "confidence": 0.75
-    },
-    {
-      "id": "AMD-capex_surge-2025",
-      "company": "AMD",
-      "ticker": "AMD",
-      "industry": "ai",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 53% YoY ($0.6B \u2192 $1.0B)",
-      "observable_value": 0.5314,
-      "hidden_cause": "AMD is a fabless semiconductor company \u2014 it designs chips but contracts all manufacturing to external foundries, primarily TSMC. CapEx at AMD reflects investment in engineering labs, AI development clusters, chip packaging and testing infrastructure, and software ecosystem tooling \u2014 not production manufacturing capacity. The actual manufacturing supply signal flows through TSMC's capacity decisions, not AMD's CapEx directly. AMD's investment level still signals management conviction in sustained AI data center and x86 CPU demand cycles.",
-      "alternative_explanations": [
-        "AI data center acceleration \u2014 Instinct MI-series GPU demand from hyperscalers (Azure, AWS, Google)",
-        "x86 server CPU market share gains vs. Intel in enterprise and cloud data centers",
-        "Gaming console cycle \u2014 next-generation PlayStation and Xbox both use AMD APUs",
-        "AI PC ecosystem investment ahead of next-generation Ryzen and Radeon client platforms"
-      ],
-      "upstream_beneficiaries": [
-        {
-          "company": "GLOBALFOUNDRIES Inc.",
-          "ticker": "GFS",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.5,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        },
-        {
-          "company": "TSMC",
-          "ticker": "TSM",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        },
-        {
-          "company": "United Microelectronics Corporation",
-          "ticker": "UMC",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.4,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        },
-        {
-          "company": "SK Hynix",
-          "ticker": "HXSCL",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.88,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        },
-        {
-          "company": "Micron Technology",
-          "ticker": "MU",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        },
-        {
-          "company": "ASE Technology Holding",
-          "ticker": "ASX",
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "ai",
-          "edge_confidence": 0.8,
-          "inference": "Capacity expansion at AMD will require additional equipment and materials."
-        }
-      ],
-      "downstream_implications": [
-        {
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.9166666666666666,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Sony",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Valve",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Tesla, Inc.",
-          "ticker": "TSLA",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
-        }
-      ],
-      "partner_context": [
-        {
-          "company": "Sanmina",
-          "ticker": null,
-          "relationship": "cooperates_with",
-          "layer": "L5",
-          "industry": "semiconductor",
-          "edge_confidence": 1.0,
-          "inference": "AMD competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
-        }
-      ],
-      "confidence": 0.65
-    },
-    {
-      "id": "BLK-capex_surge-2025",
-      "company": "BlackRock",
-      "ticker": "BLK",
-      "industry": "finance",
-      "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 47% YoY ($0.3B \u2192 $0.4B)",
-      "observable_value": 0.4706,
-      "hidden_cause": "Increased capital spending at BlackRock suggests investment in technology platforms, data infrastructure, and operational scale. For a financial services firm, CapEx typically reflects digital modernization, AI/analytics buildout, and platform expansion \u2014 not committed customer orders, as it would for a manufacturer or cloud provider.",
-      "alternative_explanations": [
-        "Technology platform modernization (Aladdin, trading systems, risk infrastructure)",
-        "Regulatory and cybersecurity compliance requirements",
-        "AI and data analytics investment",
-        "Acquisition integration or real estate / office buildout"
-      ],
-      "upstream_beneficiaries": [
-        {
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "relationship": "critical_dependency",
-          "layer": "L6",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
-        },
-        {
-          "company": "Amazon Web Services",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L6",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
-        }
-      ],
-      "downstream_implications": [
-        {
-          "company": "Insurance companies",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L3",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Capital commitment by BlackRock suggests its customers are in a growth phase."
-        }
-      ],
-      "partner_context": [],
-      "confidence": 0.58
-    },
-    {
-      "id": "MSFT-capex_surge-2025",
+      "id": "MSFT-capex_surge-2026",
       "company": "Microsoft",
       "ticker": "MSFT",
       "industry": "ai",
       "signal_type": "capex_surge",
-      "period": "2025",
-      "observable": "Capex grew 45% YoY ($44.5B \u2192 $64.6B)",
-      "observable_value": 0.4513,
+      "period": "2026",
+      "observable": "Capex grew 80% YoY ($64.6B \u2192 $115.9B)",
+      "observable_value": 0.7962,
       "hidden_cause": "Capital expansion at Microsoft signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
       "alternative_explanations": [
         "Strategic capacity grab ahead of competitors",
@@ -903,6 +588,422 @@
       "confidence": 0.75
     },
     {
+      "id": "GOOGL-capex_surge-2025",
+      "company": "Google Cloud",
+      "ticker": "GOOGL",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 74% YoY ($52.5B \u2192 $91.4B)",
+      "observable_value": 0.7407,
+      "hidden_cause": "Capital expansion at Google Cloud signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Micron",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "NVIDIA",
+          "ticker": "NVDA",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Broadcom",
+          "ticker": "AVGO",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.9,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Marvell",
+          "ticker": "MRVL",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "semiconductor",
+          "edge_confidence": 0.88,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Digital Realty",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        },
+        {
+          "company": "Vertiv",
+          "ticker": "VRT",
+          "relationship": "supplier_to_customer",
+          "layer": "L1",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at Google Cloud will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Atlas",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Okta",
+          "ticker": "OKTA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        },
+        {
+          "company": "IonQ",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "quantum",
+          "edge_confidence": 0.9,
+          "inference": "Capital commitment by Google Cloud suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [
+        {
+          "company": "Oracle",
+          "ticker": "ORCL",
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Zscaler",
+          "ticker": "ZS",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Google Cloud competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "NET-capex_surge-2025",
+      "company": "Cloudflare",
+      "ticker": "NET",
+      "industry": "cloud",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 71% YoY ($0.2B \u2192 $0.3B)",
+      "observable_value": 0.7057,
+      "hidden_cause": "Capital expansion at Cloudflare signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "AMGN-capex_surge-2025",
+      "company": "Amgen",
+      "ticker": "AMGN",
+      "industry": "biotech",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 70% YoY ($1.1B \u2192 $1.9B)",
+      "observable_value": 0.6953,
+      "hidden_cause": "Capital expansion at Amgen signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Becton Dickinson",
+          "ticker": "BDX",
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "healthcare",
+          "edge_confidence": 0.95,
+          "inference": "Capacity expansion at Amgen will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "UCB",
+          "ticker": null,
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "biotech",
+          "edge_confidence": 0.8,
+          "inference": "Capital commitment by Amgen suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "ZS-capex_surge-2026",
+      "company": "Zscaler",
+      "ticker": "ZS",
+      "industry": "cyber",
+      "signal_type": "capex_surge",
+      "period": "2026",
+      "observable": "Capex grew 69% YoY ($0.2B \u2192 $0.3B)",
+      "observable_value": 0.6883,
+      "hidden_cause": "Capital expansion at Zscaler signals management has high conviction in future demand \u2014 likely reflecting some combination of signed contracts, backlog visibility, and strategic positioning. The precise mix of committed orders vs. speculative buildout is not directly observable from CapEx data alone.",
+      "alternative_explanations": [
+        "Strategic capacity grab ahead of competitors",
+        "AI infrastructure arms race (speculative buildout)",
+        "Signed customer contracts not yet publicly announced",
+        "Potential overbuilding if demand growth decelerates"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "Azure",
+          "ticker": "MSFT",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        },
+        {
+          "company": "GCP",
+          "ticker": "GOOGL",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "AMD-capex_surge-2025",
+      "company": "AMD",
+      "ticker": "AMD",
+      "industry": "ai",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 53% YoY ($0.6B \u2192 $1.0B)",
+      "observable_value": 0.5314,
+      "hidden_cause": "AMD is a fabless semiconductor company \u2014 it designs chips but contracts all manufacturing to external foundries, primarily TSMC. CapEx at AMD reflects investment in engineering labs, AI development clusters, chip packaging and testing infrastructure, and software ecosystem tooling \u2014 not production manufacturing capacity. The actual manufacturing supply signal flows through TSMC's capacity decisions, not AMD's CapEx directly. AMD's investment level still signals management conviction in sustained AI data center and x86 CPU demand cycles.",
+      "alternative_explanations": [
+        "AI data center acceleration \u2014 Instinct MI-series GPU demand from hyperscalers (Azure, AWS, Google)",
+        "x86 server CPU market share gains vs. Intel in enterprise and cloud data centers",
+        "Gaming console cycle \u2014 next-generation PlayStation and Xbox both use AMD APUs",
+        "AI PC ecosystem investment ahead of next-generation Ryzen and Radeon client platforms"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "GLOBALFOUNDRIES Inc.",
+          "ticker": "GFS",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.5,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "TSMC",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "United Microelectronics Corporation",
+          "ticker": "UMC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.4,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "SK Hynix",
+          "ticker": "HXSCL",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.88,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        },
+        {
+          "company": "ASE Technology Holding",
+          "ticker": "ASX",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.8,
+          "inference": "Capacity expansion at AMD will require additional equipment and materials."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.9166666666666666,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Sony",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Valve",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        },
+        {
+          "company": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Capital commitment by AMD suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [
+        {
+          "company": "Sanmina",
+          "ticker": null,
+          "relationship": "cooperates_with",
+          "layer": "L5",
+          "industry": "semiconductor",
+          "edge_confidence": 1.0,
+          "inference": "AMD competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
+        }
+      ],
+      "confidence": 0.65
+    },
+    {
+      "id": "BLK-capex_surge-2025",
+      "company": "BlackRock",
+      "ticker": "BLK",
+      "industry": "finance",
+      "signal_type": "capex_surge",
+      "period": "2025",
+      "observable": "Capex grew 47% YoY ($0.3B \u2192 $0.4B)",
+      "observable_value": 0.4706,
+      "hidden_cause": "Increased capital spending at BlackRock suggests investment in technology platforms, data infrastructure, and operational scale. For a financial services firm, CapEx typically reflects digital modernization, AI/analytics buildout, and platform expansion \u2014 not committed customer orders, as it would for a manufacturer or cloud provider.",
+      "alternative_explanations": [
+        "Technology platform modernization (Aladdin, trading systems, risk infrastructure)",
+        "Regulatory and cybersecurity compliance requirements",
+        "AI and data analytics investment",
+        "Acquisition integration or real estate / office buildout"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Microsoft",
+          "ticker": "MSFT",
+          "relationship": "critical_dependency",
+          "layer": "L6",
+          "industry": "finance",
+          "edge_confidence": 0.95,
+          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
+        },
+        {
+          "company": "Amazon Web Services",
+          "ticker": "AMZN",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "finance",
+          "edge_confidence": 0.95,
+          "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
+        }
+      ],
+      "downstream_implications": [
+        {
+          "company": "Insurance companies",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "finance",
+          "edge_confidence": 0.95,
+          "inference": "Capital commitment by BlackRock suggests its customers are in a growth phase."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.58
+    },
+    {
       "id": "CAT-capex_surge-2025",
       "company": "Caterpillar",
       "ticker": "CAT",
@@ -932,6 +1033,36 @@
       ],
       "partner_context": [],
       "confidence": 0.75
+    },
+    {
+      "id": "LITE-revenue_acceleration-2026",
+      "company": "Lumentum Holdings",
+      "ticker": "LITE",
+      "industry": "cloud",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 83% YoY ($1.6B \u2192 $3.0B)",
+      "observable_value": 0.8322,
+      "hidden_cause": "Revenue acceleration at Lumentum Holdings confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Arista Networks",
+          "ticker": "ANET",
+          "relationship": "supplier_to_customer",
+          "layer": "L4",
+          "industry": "cloud",
+          "edge_confidence": 0.8,
+          "inference": "Revenue surge at Lumentum Holdings implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.8
     },
     {
       "id": "NVDA-revenue_acceleration-2026",
@@ -1064,110 +1195,6 @@
       "confidence": 0.8
     },
     {
-      "id": "MU-revenue_acceleration-2025",
-      "company": "Micron Technology",
-      "ticker": "MU",
-      "industry": "ai",
-      "signal_type": "revenue_acceleration",
-      "period": "2025",
-      "observable": "Revenue grew 49% YoY ($25.1B \u2192 $37.4B)",
-      "observable_value": 0.4885,
-      "hidden_cause": "Revenue acceleration at Micron Technology confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
-      "alternative_explanations": [
-        "AI server deployments driving HBM and DRAM demand",
-        "Memory pricing recovery cycle (higher ASPs, not just volume growth)",
-        "Market share gains vs. Samsung and SK Hynix",
-        "Hyperscaler inventory restocking after prior drawdown"
-      ],
-      "upstream_beneficiaries": [
-        {
-          "company": "Lam Research",
-          "ticker": "LRCX",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
-        },
-        {
-          "company": "Applied Materials",
-          "ticker": "AMAT",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "ai",
-          "edge_confidence": 0.9,
-          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
-        },
-        {
-          "company": "KLA Corporation",
-          "ticker": "KLAC",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "ai",
-          "edge_confidence": 0.88,
-          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
-        },
-        {
-          "company": "ASML",
-          "ticker": "ASML",
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Strong demand flowing to Micron Technology will ripple upstream to its key suppliers."
-        }
-      ],
-      "downstream_implications": [
-        {
-          "company": "NVIDIA",
-          "ticker": "NVDA",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "AMD",
-          "ticker": "AMD",
-          "relationship": "supplier_to_customer",
-          "layer": "L4",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "AWS",
-          "ticker": "AMZN",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Google Cloud",
-          "ticker": "GOOGL",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        },
-        {
-          "company": "Microsoft Azure",
-          "ticker": "MSFT",
-          "relationship": "supplier_to_customer",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.85,
-          "inference": "Revenue surge at Micron Technology implies its downstream customers are expanding rapidly."
-        }
-      ],
-      "partner_context": [],
-      "confidence": 0.8
-    },
-    {
       "id": "MRVL-revenue_acceleration-2026",
       "company": "Marvell",
       "ticker": "MRVL",
@@ -1245,40 +1272,21 @@
       "confidence": 0.8
     },
     {
-      "id": "AFRM-revenue_acceleration-2025",
-      "company": "Affirm",
-      "ticker": "AFRM",
-      "industry": "finance",
+      "id": "FN-revenue_acceleration-2026",
+      "company": "Fabrinet",
+      "ticker": "FN",
+      "industry": "semiconductor",
       "signal_type": "revenue_acceleration",
-      "period": "2025",
-      "observable": "Revenue grew 35% YoY ($0.8B \u2192 $1.1B)",
-      "observable_value": 0.3486,
-      "hidden_cause": "Revenue acceleration at Affirm confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "period": "2026",
+      "observable": "Revenue grew 36% YoY ($3.4B \u2192 $4.6B)",
+      "observable_value": 0.3573,
+      "hidden_cause": "Revenue acceleration at Fabrinet confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
       "alternative_explanations": [
         "One-time large deal or unexpected customer ramp",
         "Favorable macro lifting all competitors equally",
         "Price increases masking flat unit volumes"
       ],
-      "upstream_beneficiaries": [
-        {
-          "company": "Celtic Bank",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
-        },
-        {
-          "company": "Lead Bank",
-          "ticker": null,
-          "relationship": "supplier_to_customer",
-          "layer": "L2",
-          "industry": "finance",
-          "edge_confidence": 0.95,
-          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
-        }
-      ],
+      "upstream_beneficiaries": [],
       "downstream_implications": [],
       "partner_context": [],
       "confidence": 0.8
@@ -1451,6 +1459,45 @@
         "Price increases masking flat unit volumes"
       ],
       "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.8
+    },
+    {
+      "id": "AFRM-revenue_acceleration-2026",
+      "company": "Affirm",
+      "ticker": "AFRM",
+      "industry": "finance",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 30% YoY ($1.1B \u2192 $1.4B)",
+      "observable_value": 0.2962,
+      "hidden_cause": "Revenue acceleration at Affirm confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
+      "upstream_beneficiaries": [
+        {
+          "company": "Celtic Bank",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "finance",
+          "edge_confidence": 0.95,
+          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
+        },
+        {
+          "company": "Lead Bank",
+          "ticker": null,
+          "relationship": "supplier_to_customer",
+          "layer": "L2",
+          "industry": "finance",
+          "edge_confidence": 0.95,
+          "inference": "Strong demand flowing to Affirm will ripple upstream to its key suppliers."
+        }
+      ],
       "downstream_implications": [],
       "partner_context": [],
       "confidence": 0.8
@@ -1630,6 +1677,111 @@
       "confidence": 0.8
     },
     {
+      "id": "LRCX-revenue_acceleration-2026",
+      "company": "Lam Research",
+      "ticker": "LRCX",
+      "industry": "ai",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 26% YoY ($18.4B \u2192 $23.2B)",
+      "observable_value": 0.2602,
+      "hidden_cause": "Revenue acceleration at Lam Research confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Intel Corporation",
+          "ticker": "INTC",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Lam Research implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Micron Technology",
+          "ticker": "MU",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Lam Research implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Samsung Electronics",
+          "ticker": "SSNNF",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Lam Research implies its downstream customers are expanding rapidly."
+        },
+        {
+          "company": "Taiwan Semiconductor Manufacturing Company",
+          "ticker": "TSM",
+          "relationship": "supplier_to_customer",
+          "layer": "L3",
+          "industry": "ai",
+          "edge_confidence": 0.85,
+          "inference": "Revenue surge at Lam Research implies its downstream customers are expanding rapidly."
+        }
+      ],
+      "partner_context": [],
+      "confidence": 0.8
+    },
+    {
+      "id": "ZS-revenue_acceleration-2026",
+      "company": "Zscaler",
+      "ticker": "ZS",
+      "industry": "cyber",
+      "signal_type": "revenue_acceleration",
+      "period": "2026",
+      "observable": "Revenue grew 25% YoY ($2.7B \u2192 $3.4B)",
+      "observable_value": 0.2542,
+      "hidden_cause": "Revenue acceleration at Zscaler confirms that downstream customers are actively in a buying cycle \u2014 demand has already translated into shipped products and recognized revenue. This is higher-confidence than a CapEx signal because orders have already cleared.",
+      "alternative_explanations": [
+        "One-time large deal or unexpected customer ramp",
+        "Favorable macro lifting all competitors equally",
+        "Price increases masking flat unit volumes"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [],
+      "partner_context": [
+        {
+          "company": "AWS",
+          "ticker": "AMZN",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler's growth may increase or decrease workload overlap with this platform depending on customer migration patterns."
+        },
+        {
+          "company": "Azure",
+          "ticker": "MSFT",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler's growth may increase or decrease workload overlap with this platform depending on customer migration patterns."
+        },
+        {
+          "company": "GCP",
+          "ticker": "GOOGL",
+          "relationship": "cooperates_with",
+          "layer": "L1",
+          "industry": "cyber",
+          "edge_confidence": 0.75,
+          "inference": "Zscaler's growth may increase or decrease workload overlap with this platform depending on customer migration patterns."
+        }
+      ],
+      "confidence": 0.8
+    },
+    {
       "id": "MDB-rd_spike-2026",
       "company": "MongoDB",
       "ticker": "MDB",
@@ -1728,14 +1880,14 @@
       "confidence": 0.65
     },
     {
-      "id": "ZS-rd_spike-2025",
+      "id": "ZS-rd_spike-2026",
       "company": "Zscaler",
       "ticker": "ZS",
       "industry": "cyber",
       "signal_type": "rd_spike",
-      "period": "2025",
-      "observable": "R&D intensity 25% of revenue with 35% YoY R&D growth",
-      "observable_value": 0.2516,
+      "period": "2026",
+      "observable": "R&D intensity 27% of revenue with 34% YoY R&D growth",
+      "observable_value": 0.2695,
       "hidden_cause": "Zscaler is accelerating investment in AI-driven threat detection, zero-trust architecture, and cloud security platform capabilities (SSE, SASE, DSPM). Unlike semiconductor R&D, cybersecurity R&D funds hundreds of incremental improvements \u2014 threat intelligence models, detection algorithms, policy engines \u2014 rather than a single identifiable product generation. The signal is platform ambition under competitive pressure from CrowdStrike, Palo Alto Networks, and Microsoft. No direct supply chain demand is generated. This is a 12\u201324 month leading indicator for Zscaler's own product capability and customer retention, not a supply chain catalyst.",
       "alternative_explanations": [
         "AI security platform development \u2014 AI copilots, autonomous threat detection, AI workload protection",
@@ -1946,6 +2098,36 @@
         }
       ],
       "downstream_implications": [],
+      "partner_context": [],
+      "confidence": 0.62
+    },
+    {
+      "id": "PANW-rd_spike-2026",
+      "company": "Palo Alto Networks",
+      "ticker": "PANW",
+      "industry": "cloud",
+      "signal_type": "rd_spike",
+      "period": "2026",
+      "observable": "R&D intensity 22% of revenue with 29% YoY R&D growth",
+      "observable_value": 0.2223,
+      "hidden_cause": "A R&D intensity spike at Palo Alto Networks indicates a new product generation is in development. Specialized upstream suppliers will receive design-in orders before the product ships.",
+      "alternative_explanations": [
+        "M&A-driven headcount increase classified as R&D",
+        "One-time product refresh cycle, not sustained investment",
+        "Regulatory compliance spend misclassified as R&D"
+      ],
+      "upstream_beneficiaries": [],
+      "downstream_implications": [
+        {
+          "company": "Okta",
+          "ticker": "OKTA",
+          "relationship": "supplier_to_customer",
+          "layer": "L6",
+          "industry": "cloud",
+          "edge_confidence": 0.85,
+          "inference": "R&D investment at Palo Alto Networks will create next-generation products for downstream buyers."
+        }
+      ],
       "partner_context": [],
       "confidence": 0.62
     }
