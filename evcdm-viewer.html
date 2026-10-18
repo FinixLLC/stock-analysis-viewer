@@ -675,8 +675,9 @@ async function loadAll() {
 
     // Load sector JSONs + signals.json in parallel
     const sectorKeys = Object.keys(INDUSTRIES);
-    const [signalsResult, ...sectorResults] = await Promise.all([
+    const [signalsResult, overridesResult, ...sectorResults] = await Promise.all([
         fetch('evcdm/signals.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('evcdm/edge_overrides.json').then(r => r.ok ? r.json() : null).catch(() => null),
         ...sectorKeys.map(async industry => {
             try {
                 const res = await fetch(`evcdm/${industry}.json`);
@@ -706,6 +707,12 @@ async function loadAll() {
     }
 
     allEdges = sectorResults.flat();
+    if (overridesResult) {
+        edgeOverrides = overridesResult;
+        const r = applyEdgeOverrides(allEdges, edgeOverrides);
+        allEdges = r.edges;
+        overrideStats = r.stats;
+    }
 
     // Sort: industry order, then layer_from, then layer_to
     const industryOrder = Object.keys(INDUSTRIES);
@@ -1207,104 +1214,218 @@ function renderSignals() {
 }
 
 // ── BRIDGE VIEW ──────────────────────────────────────────────────────────────
+// Entities are grouped by entityKey() and the alias table in edge_overrides.json,
+// so "Microsoft Azure" counts as Microsoft and "Pharmacyclics" as AbbVie.
 
-function normalizeEntity(name) {
-    return (name || '')
-        .toLowerCase()
-        .replace(/,?\s+(inc\.?|corp\.?|corporation|ltd\.?|llc|l\.l\.c\.?|co\.)(\s|$)/gi, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+let bridgeUpstreamOnly = false;   // true = count only edges where the entity is the supplier
+
+const _LEGAL_WORDS = /\s+(inc|incorporated|corp|corporation|ltd|limited|llc|lp|co|company|plc|sa|ag|nv|se|group)$/;
+
+function entityKey(name) {
+    let k = (name || '').toLowerCase().replace(/&/g, ' ').replace(/[.,'’()\-]/g, '').replace(/\s+/g, ' ').trim();
+    let prev;
+    do { prev = k; k = k.replace(_LEGAL_WORDS, '').trim(); } while (k !== prev && k.length > 0);
+    return k;
 }
+
+function canonicalEntity(name) {
+    const k = entityKey(name);
+    return (edgeOverrides.aliases || {})[k] || null;
+}
+
+function isPlaceholderEntity(name) {
+    const n = (name || '').trim().toLowerCase();
+    if ((edgeOverrides.placeholders || []).some(p => new RegExp(p, 'i').test(n))) return true;
+    return GENERIC_PREFIXES.some(p => n.startsWith(p));
+}
+
+// Same list as scripts/evcdm_causal_signals.py _GENERIC_PREFIXES
+const GENERIC_PREFIXES = [
+    'third-party', 'third party', 'third parties', 'key third', 'competitors', 'certain third',
+    'independent third', 'various third', 'other third', 'companies headquartered', 'companies in ',
+    'customers in ', 'entities in ', 'certain customers',
+];
 
 function buildBridgeData() {
     const map = new Map();
+    const seen = new Set();   // one count per relationship, even when two industry files carry it
+    const touch = (name, industry) => {
+        const label = canonicalEntity(name);
+        const key = label ? 'alias:' + label : entityKey(name);
+        if (!map.has(key)) {
+            map.set(key, { canonical: label || name, key, names: new Set(), industries: new Set(),
+                           edgeCount: 0, types: new Set(),
+                           roles: { supplies: 0, buys: 0, rival: 0, partner: 0, dependency: 0 } });
+        }
+        const b = map.get(key);
+        b.names.add(name);
+        if (!label && name.length > b.canonical.length) b.canonical = name;
+        return b;
+    };
     allEdges.forEach(e => {
-        ['from', 'to'].forEach(side => {
-            const name = (e[side] || '').trim();
-            if (name.length < 3) return;
-            const norm = normalizeEntity(name);
-            if (norm.length < 3) return;
-            if (!map.has(norm)) {
-                map.set(norm, { canonical: name, norm, industries: new Set(), edgeCount: 0, types: new Set() });
-            }
-            const b = map.get(norm);
+        const from = (e.from || '').trim(), to = (e.to || '').trim();
+        const directional = e.type === 'supplier_to_customer' || e.type === 'customer_to_supplier';
+        if (bridgeUpstreamOnly && !directional) return;
+        const supplier = e.type === 'customer_to_supplier' ? to : from;
+        [['from', from], ['to', to]].forEach(([side, name]) => {
+            if (entityKey(name).length < 3 || isPlaceholderEntity(name)) return;
+            if (bridgeUpstreamOnly && name !== supplier) return;
+            const b = touch(name, e.industry);
             b.industries.add(e.industry);
-            b.edgeCount++;
             b.types.add(e.type);
-            if (name.length > b.canonical.length) b.canonical = name;
+            const other = side === 'from' ? to : from;
+            const relKey = [b.key, e.type, side, canonicalEntity(other) || entityKey(other)].join('|');
+            if (seen.has(relKey)) return;
+            seen.add(relKey);
+            b.edgeCount++;
+            if (directional) b.roles[name === supplier ? 'supplies' : 'buys']++;
+            else if (e.type === 'substitute') b.roles.rival++;
+            else if (e.type === 'cooperates_with') b.roles.partner++;
+            else if (e.type === 'critical_dependency') b.roles.dependency++;
         });
     });
     return Array.from(map.values())
-        .filter(b => b.industries.size >= 2)
+        .filter(b => b.industries.size >= 2 && b.edgeCount >= 2)   // one relationship copied into two files is not a bridge
         .sort((a, b) => {
             const di = b.industries.size - a.industries.size;
             return di !== 0 ? di : b.edgeCount - a.edgeCount;
         });
 }
 
+function directionSummary(r) {
+    const supply = r.supplies + r.buys;
+    const groups = [['supply', supply], ['rival', r.rival], ['partner', r.partner], ['dependency', r.dependency]];
+    const top = groups.reduce((a, b) => (b[1] > a[1] ? b : a));
+    let label;
+    if (top[0] === 'supply') {
+        const share = r.supplies / supply;
+        label = share >= 0.67 ? 'mostly supplier' : share <= 0.33 ? 'mostly customer' : 'supplier & customer';
+    } else if (top[0] === 'rival') label = 'mostly substitute';
+    else if (top[0] === 'partner') label = 'mostly partner';
+    else label = 'mostly dependency (direction unclear)';
+    const parts = [];
+    if (r.supplies) parts.push(`supplies ${r.supplies}`);
+    if (r.buys) parts.push(`buys ${r.buys}`);
+    if (r.rival) parts.push(`rival ${r.rival}`);
+    if (r.partner) parts.push(`partner ${r.partner}`);
+    if (r.dependency) parts.push(`dependency ${r.dependency}`);
+    return `<strong>${label}</strong><br><span style="color:#94a3b8;font-size:0.85em">${parts.join(' · ')}</span>`;
+}
+
 function renderBridges() {
     const bridges = buildBridgeData();
     const filtered = searchQuery
-        ? bridges.filter(b => b.canonical.toLowerCase().includes(searchQuery) || b.norm.includes(searchQuery))
+        ? bridges.filter(b => b.canonical.toLowerCase().includes(searchQuery) ||
+                              Array.from(b.names).some(n => n.toLowerCase().includes(searchQuery)))
         : bridges;
 
     document.getElementById('shown-count').textContent = filtered.length + ' bridge';
     document.getElementById('edge-unit').style.display = 'none';
 
     const content = document.getElementById('content');
-    if (filtered.length === 0) {
-        content.innerHTML = `<div class="state-box"><div class="state-icon">🔍</div><div class="state-title">No bridge entities match</div><div class="state-desc">Clear the search to see all cross-industry entities.</div></div>`;
-        return;
-    }
-
     const wrap = document.createElement('div');
     wrap.className = 'bridge-wrap';
 
+    const s = overrideStats;
     const info = document.createElement('div');
     info.className = 'bridge-info';
-    info.innerHTML = `🌐 <strong>${filtered.length}</strong> entities appear in 2 or more supply chain industries — these are cross-industry bridge nodes connecting value chains. Sorted by industry breadth, then edge count.`;
+    info.innerHTML = (bridgeUpstreamOnly
+        ? `🌐 <strong>${filtered.length}</strong> entities act as a <em>supplier</em> in 2 or more supply chain industries — upstream bridges whose customers sit in different value chains.`
+        : `🌐 <strong>${filtered.length}</strong> entities appear in 2 or more supply chain industries through at least 2 distinct relationships — cross-industry bridge nodes connecting value chains.`)
+        + ` Sorted by industry breadth, then edge count. Names are merged through an alias/parent table and placeholders are dropped.`
+        + `<br><label style="cursor:pointer;user-select:none"><input type="checkbox" id="bridge-upstream" ${bridgeUpstreamOnly ? 'checked' : ''}> Upstream only (count supply edges where the entity is the supplier)</label>`
+        + (s ? `<br><span style="color:#94a3b8">Data corrections from <code>evcdm/edge_overrides.json</code>: ${s.dropped} dropped, ${s.reversed} reversed, ${s.retyped} retyped, ${s.flagged} flagged unverified, ${s.duplicates} duplicates removed (${s.raw} → ${allEdges.length} edges).</span>` : '')
+        + `<br><span style="color:#94a3b8">Bridges show where an entity appears, not how its performance affects others. Dependency edges have no consistent direction in the extracted data.</span>`;
     wrap.appendChild(info);
 
-    const table = document.createElement('table');
-    table.className = 'bridge-table';
-    table.innerHTML = `<thead><tr>
-        <th style="width:36px">#</th>
-        <th>Entity</th>
-        <th>Industries</th>
-        <th style="width:52px;text-align:center">Edges</th>
-        <th>Types</th>
-    </tr></thead>`;
+    if (filtered.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'state-box';
+        empty.innerHTML = `<div class="state-icon">🔍</div><div class="state-title">No bridge entities match</div><div class="state-desc">Clear the search to see all cross-industry entities.</div>`;
+        wrap.appendChild(empty);
+    } else {
+        const table = document.createElement('table');
+        table.className = 'bridge-table';
+        table.innerHTML = `<thead><tr>
+            <th style="width:36px">#</th>
+            <th>Entity</th>
+            <th>Industries</th>
+            <th style="width:52px;text-align:center">Edges</th>
+            <th>Direction</th>
+            <th>Types</th>
+        </tr></thead>`;
 
-    const tbody = document.createElement('tbody');
-    filtered.forEach((b, i) => {
-        const tr = document.createElement('tr');
-        tr.className = 'bridge-row';
+        const tbody = document.createElement('tbody');
+        filtered.forEach((b, i) => {
+            const tr = document.createElement('tr');
+            tr.className = 'bridge-row';
 
-        const indChips = Array.from(b.industries).map(k => {
-            const ind = INDUSTRIES[k];
-            if (!ind) return '';
-            return `<span class="ind-chip" style="background:${ind.accent}18;border-color:${ind.accent}50;color:${ind.accent}" title="${esc(ind.label)}">${ind.icon} ${k}</span>`;
-        }).join('');
+            const indChips = Array.from(b.industries).map(k => {
+                const ind = INDUSTRIES[k];
+                if (!ind) return '';
+                return `<span class="ind-chip" style="background:${ind.accent}18;border-color:${ind.accent}50;color:${ind.accent}" title="${esc(ind.label)}">${ind.icon} ${k}</span>`;
+            }).join('');
 
-        const typePills = Array.from(b.types).map(t => {
-            const ti = TYPE_INFO[t] || { label: t, cls: 'other' };
-            return `<span class="type-pill ${ti.cls}" style="font-size:0.7em;padding:2px 7px">${ti.label}</span>`;
-        }).join(' ');
+            const typePills = Array.from(b.types).map(t => {
+                const ti = TYPE_INFO[t] || { label: t, cls: 'other' };
+                return `<span class="type-pill ${ti.cls}" style="font-size:0.7em;padding:2px 7px">${ti.label}</span>`;
+            }).join(' ');
 
-        tr.innerHTML = `
-            <td class="bridge-rank">${i + 1}</td>
-            <td class="bridge-entity">${esc(b.canonical)}</td>
-            <td class="bridge-industries">${indChips}</td>
-            <td class="bridge-edges">${b.edgeCount}</td>
-            <td class="bridge-types">${typePills}</td>
-        `;
-        tbody.appendChild(tr);
-    });
+            const aka = Array.from(b.names).filter(n => n !== b.canonical);
+            tr.innerHTML = `
+                <td class="bridge-rank">${i + 1}</td>
+                <td class="bridge-entity" title="${esc(aka.length ? 'Also: ' + aka.join('; ') : '')}">${esc(b.canonical)}${aka.length ? ` <span style="color:#94a3b8;font-weight:400;font-size:0.8em">+${aka.length} name${aka.length > 1 ? 's' : ''}</span>` : ''}</td>
+                <td class="bridge-industries">${indChips}</td>
+                <td class="bridge-edges">${b.edgeCount}</td>
+                <td style="font-size:0.82em;color:#475569">${directionSummary(b.roles)}</td>
+                <td class="bridge-types">${typePills}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+        wrap.appendChild(table);
+    }
 
-    table.appendChild(tbody);
-    wrap.appendChild(table);
     content.innerHTML = '';
     content.appendChild(wrap);
+    document.getElementById('bridge-upstream').addEventListener('change', ev => {
+        bridgeUpstreamOnly = ev.target.checked;
+        renderBridges();
+    });
+}
+
+// ── EDGE CORRECTIONS (evcdm/edge_overrides.json) ─────────────────────────────
+
+let edgeOverrides = {};
+let overrideStats = null;
+
+function applyEdgeOverrides(edges, ov) {
+    const stats = { raw: edges.length, dropped: 0, reversed: 0, retyped: 0, flagged: 0, duplicates: 0 };
+    const rules = (ov.rules || []).map(r => ({ ...r,
+        fromRe: r.from ? new RegExp(r.from, 'i') : null, toRe: r.to ? new RegExp(r.to, 'i') : null }));
+    const out = [];
+    const seen = new Set();
+    for (const e0 of edges) {
+        let e = e0, drop = false;
+        for (const r of rules) {
+            if (r.type && e.type !== r.type) continue;
+            if (r.fromRe && !r.fromRe.test(e.from || '')) continue;
+            if (r.toRe && !r.toRe.test(e.to || '')) continue;
+            if (r.action === 'drop') { drop = true; stats.dropped++; break; }
+            if (r.action === 'reverse') { e = { ...e, from: e.to, to: e.from, layer_from: e.layer_to, layer_to: e.layer_from, correction: r.reason }; stats.reversed++; }
+            else if (r.action === 'retype') { e = { ...e, type: r.new_type, correction: r.reason }; stats.retyped++; }
+            else if (r.action === 'flag') { e = { ...e, unverified: r.note }; stats.flagged++; }
+        }
+        if (drop) continue;
+        const a = canonicalEntity(e.from) || entityKey(e.from), b = canonicalEntity(e.to) || entityKey(e.to);
+        const symmetric = e.type === 'substitute' || e.type === 'cooperates_with';
+        const pair = symmetric && a > b ? [b, a] : [a, b];
+        const key = [e.industry, e.type, ...pair].join('|');
+        if (seen.has(key)) { stats.duplicates++; continue; }
+        seen.add(key);
+        out.push(e);
+    }
+    return { edges: out, stats };
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
