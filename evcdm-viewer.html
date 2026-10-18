@@ -621,7 +621,7 @@ const INDUSTRIES = {
     biotech:       { label: 'Biotech & Pharmaceutical',        icon: '🧬', accent: '#0d9488' },
     telecom:       { label: 'Telecommunications',              icon: '📡', accent: '#0369a1' },
     cyber:         { label: 'Cybersecurity Value Chain',        icon: '🔒', accent: '#dc2626' },
-    cleantech:     { label: 'Energy Storage & Clean Tech',      icon: '🌱', accent: '#16a34a' },
+    cleantech:     { label: 'Energy Storage & Clean Tech',      icon: '🌱', accent: '#16a34a', short: 'Clean Tech' },
 };
 
 const LAYER_NAMES = {
@@ -746,7 +746,7 @@ function initUI() {
 
     Object.entries(INDUSTRIES).forEach(([key, info]) => {
         const count = allEdges.filter(e => e.industry === key).length;
-        const pill = makePill(key, info.icon, info.label.split(' ')[0], count, info.accent);
+        const pill = makePill(key, info.icon, info.short || info.label.split(' ')[0], count, info.accent);
         pillsDiv.appendChild(pill);
     });
 
@@ -1255,7 +1255,7 @@ function buildBridgeData() {
         if (!map.has(key)) {
             map.set(key, { canonical: label || name, key, names: new Set(), industries: new Set(),
                            edgeCount: 0, types: new Set(),
-                           roles: { supplies: 0, buys: 0, rival: 0, partner: 0, dependency: 0 } });
+                           roles: { supplies: 0, buys: 0, rival: 0, partner: 0, dependsOn: 0, reliedOn: 0 } });
         }
         const b = map.get(key);
         b.names.add(name);
@@ -1281,7 +1281,7 @@ function buildBridgeData() {
             if (directional) b.roles[name === supplier ? 'supplies' : 'buys']++;
             else if (e.type === 'substitute') b.roles.rival++;
             else if (e.type === 'cooperates_with') b.roles.partner++;
-            else if (e.type === 'critical_dependency') b.roles.dependency++;
+            else if (e.type === 'critical_dependency') b.roles[side === 'from' ? 'dependsOn' : 'reliedOn']++;   // dependent -> provider
         });
     });
     return Array.from(map.values())
@@ -1294,7 +1294,7 @@ function buildBridgeData() {
 
 function directionSummary(r) {
     const supply = r.supplies + r.buys;
-    const groups = [['supply', supply], ['rival', r.rival], ['partner', r.partner], ['dependency', r.dependency]];
+    const groups = [['supply', supply], ['rival', r.rival], ['partner', r.partner], ['dependency', r.dependsOn + r.reliedOn]];
     const top = groups.reduce((a, b) => (b[1] > a[1] ? b : a));
     let label;
     if (top[0] === 'supply') {
@@ -1302,13 +1302,14 @@ function directionSummary(r) {
         label = share >= 0.67 ? 'mostly supplier' : share <= 0.33 ? 'mostly customer' : 'supplier & customer';
     } else if (top[0] === 'rival') label = 'mostly substitute';
     else if (top[0] === 'partner') label = 'mostly partner';
-    else label = 'mostly dependency (direction unclear)';
+    else label = r.dependsOn >= r.reliedOn ? 'mostly depends on others' : 'mostly relied on by others';
     const parts = [];
     if (r.supplies) parts.push(`supplies ${r.supplies}`);
     if (r.buys) parts.push(`buys ${r.buys}`);
     if (r.rival) parts.push(`rival ${r.rival}`);
     if (r.partner) parts.push(`partner ${r.partner}`);
-    if (r.dependency) parts.push(`dependency ${r.dependency}`);
+    if (r.dependsOn) parts.push(`depends on ${r.dependsOn}`);
+    if (r.reliedOn) parts.push(`relied on by ${r.reliedOn}`);
     return `<strong>${label}</strong><br><span style="color:#94a3b8;font-size:0.85em">${parts.join(' · ')}</span>`;
 }
 
@@ -1335,7 +1336,7 @@ function renderBridges() {
         + ` Sorted by industry breadth, then edge count. Names are merged through an alias/parent table and placeholders are dropped.`
         + `<br><label style="cursor:pointer;user-select:none"><input type="checkbox" id="bridge-upstream" ${bridgeUpstreamOnly ? 'checked' : ''}> Upstream only (count supply edges where the entity is the supplier)</label>`
         + (s ? `<br><span style="color:#94a3b8">Data corrections from <code>evcdm/edge_overrides.json</code>: ${s.dropped} dropped, ${s.reversed} reversed, ${s.retyped} retyped, ${s.flagged} flagged unverified, ${s.duplicates} duplicates removed (${s.raw} → ${allEdges.length} edges).</span>` : '')
-        + `<br><span style="color:#94a3b8">Bridges show where an entity appears, not how its performance affects others. Dependency edges have no consistent direction in the extracted data.</span>`;
+        + `<br><span style="color:#94a3b8">Bridges show where an entity appears, not how its performance affects others. Dependency edges point from the company that depends to the company it relies on.</span>`;
     wrap.appendChild(info);
 
     if (filtered.length === 0) {
