@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T14:17:38.659576",
+  "generated_at": "2026-10-19T15:17:30.418567",
   "overall": "critical",
   "checks": [
     {
@@ -23,13 +23,13 @@
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "critical",
-      "detail": "Through 2026-10-16. NASDAQ_Yahoo: 606/5048 active current (12%), 606/5944 of all; NYSE_Yahoo: 2379/2467 active current (96%), 2379/2728 of all; AMEX_Yahoo: 269/286 active current (94%), 269/317 of all",
+      "detail": "Through 2026-10-16. NASDAQ_Yahoo: 607/5048 active current (12%), 607/5944 of all; NYSE_Yahoo: 2379/2467 active current (96%), 2379/2728 of all; AMEX_Yahoo: 285/286 active current (100%), 285/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "critical",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars, thin days 2026-10-16 (606/4840); NYSE_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars, thin days 2026-10-16 (607/4840); NYSE_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-05 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
