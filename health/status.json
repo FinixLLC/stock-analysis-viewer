@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T17:18:03.569415",
-  "overall": "warn",
+  "generated_at": "2026-10-20T18:17:16.100345",
+  "overall": "ok",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -22,8 +22,8 @@
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "warn",
-      "detail": "Through 2026-10-19. NASDAQ_Yahoo: 3773/5044 active current (75%), 3773/5945 of all; NYSE_Yahoo: 2431/2442 active current (100%), 2431/2728 of all; AMEX_Yahoo: 285/286 active current (100%), 285/317 of all",
+      "status": "ok",
+      "detail": "Through 2026-10-19. NASDAQ_Yahoo: 4862/5045 active current (96%), 4862/5945 of all; NYSE_Yahoo: 2431/2442 active current (100%), 2431/2728 of all; AMEX_Yahoo: 285/286 active current (100%), 285/317 of all",
       "last_success": null
     },
     {
