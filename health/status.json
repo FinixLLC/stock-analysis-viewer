@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T16:17:37.244117",
-  "overall": "critical",
+  "generated_at": "2026-10-20T17:18:03.569415",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -16,20 +16,20 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "critical",
-      "detail": "Expected at least 2026-10-19. NASDAQ_Yahoo: 2026-10-16; NYSE_Yahoo: 2026-10-20",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: 2026-10-19; NYSE_Yahoo: 2026-10-20",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "critical",
-      "detail": "Through 2026-10-19. NASDAQ_Yahoo: 626/5044 active current (12%), 626/5945 of all; NYSE_Yahoo: 2431/2442 active current (100%), 2431/2728 of all; AMEX_Yahoo: 285/286 active current (100%), 285/317 of all",
+      "status": "warn",
+      "detail": "Through 2026-10-19. NASDAQ_Yahoo: 3773/5044 active current (75%), 3773/5945 of all; NYSE_Yahoo: 2431/2442 active current (100%), 2431/2728 of all; AMEX_Yahoo: 285/286 active current (100%), 285/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
-      "status": "critical",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars, thin days 2026-10-19 (626/4837); NYSE_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-06 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-10-18 (1d ago)",
+      "detail": "last changed 2026-10-18 (2d ago)",
       "last_success": "2026-10-18T16:37:00"
     },
     {
