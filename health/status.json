@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:17:32.834017",
+  "generated_at": "2026-10-22T07:17:30.656492",
   "overall": "critical",
   "checks": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "warn",
-      "detail": "working 326 tickers, published 324 tickers \u2014 2 tickers pending publish",
+      "status": "ok",
+      "detail": "working 326 tickers, published 326 tickers",
       "last_success": null
     },
     {
