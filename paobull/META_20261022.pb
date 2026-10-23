@@ -1,49 +1,43 @@
 # PaoBull Research Report — META
-Generated: 2026-10-22 10:16 UTC | Model: deepseek-r1:32b | Peers: —
+Generated: 2026-10-22 17:22 UTC | Model: deepseek-r1:32b | Peers: —
 
 ## Data Snapshot
-Price: $697.52 | 52w: $520.26–$779.82 (-10.6% from high)
-RSI-14: 46.4 / RSI-9: 40.7 | Trend: bullish
+Price: $648.325 | 52w: $520.26–$779.82 (-16.9% from high)
+RSI-14: 46.4 / RSI-9: 27.2 | Trend: bullish
 StartupPick: BUY 45/60 | BuyDeepDip: WATCH
 ROE: 27.8% | D/E: 0.27 | FCF: $46.1B
 
 ---
 
 ## 1. Price Context & Technical Picture
-META is in the upper half of its 52-week range, 68% from the low. RSI-14 and RSI-9 are bearish, suggesting momentum weakness despite a bullish trend signal. The short MA is above mid and long MAs, indicating potential bullishness, but RSI remains bearish. Current price is above the entry level, supporting a stance to wait for a better entry point.
+META is in the lower half of its 52-week range, at 49% from the low. RSI-14 at 46.4 and RSI-9 at 27.2 indicate bearish momentum without overbought conditions. The bullish trend signal, with short MA above mid and long MA, suggests potential strength. However, the current price is meaningfully above the entry level, suggesting a wait for a pullback. 
 
 Stance: wait for better level
 
 ## 2. Fundamentals & Capital Efficiency
-- Revenue growth: 22.2% YoY
-- FCF growth: -14.7% YoY
-- ROE: 27.8%
-- Debt-to-equity ratio: 0.27
-- R&D as % of revenue: 28.5%
+- Revenue grew 22.2% YoY to $201.0B in 2025.
+- ROE stable at 27.8%, strong FCF conversion.
+- FCF growth negative at -14.7% YoY.
 
-META demonstrates strong revenue growth and capital efficiency, though FCF growth is negative. The company's asset-light model and high R&D investment support its competitive edge, but FCF concerns warrant caution.
-
-Verdict: Solid fundamentals with cautious optimism on FCF trends.
+META's asset-light model and network effects drive efficiency. However, FCF growth concerns exist. Verdict: BUY with caution.
 
 ## 3. Industry-Specific Risk
-- MEDIUM: Dependence on AI advancements and competition from peers like NVIDIA and Broadcom.
-- MEDIUM: Regulatory scrutiny and privacy concerns impacting user growth.
-- MEDIUM: Economic cyclicality affecting ad revenue.
-
-META faces significant risks, but its strong moat and market position mitigate these concerns.
+- HIGH: Regulatory scrutiny on antitrust and data privacy.
+- MEDIUM: Intense competition in AI from Google and Microsoft.
+- MEDIUM: Economic sensitivity due to digital ad spending fluctuations.
 
 ## 4. Investment Thesis & Peer Comparison
-META is a leader in AI with a strong moat, but faces risks from competition and regulation. Compared to NVIDIA, META has better FCF but lower growth. The thesis supports ownership due to its strategic position and moat, despite risks.
+META leads in AI with strong fundamentals. Compared to Alphabet and Microsoft, it has a solid moat but faces risks. 
 
-🟢 Bull Case: META's leadership in AI and strong moat justify ownership.
-🔴 Bear Case: Risks from competition and regulation could hinder growth.
-★ Verdict: BUY — Scale-In on Pullback (entry $673.0)
+🟢 Bull Case: META's AI leadership and strong cash flow justify investment.
+🔴 Bear Case: Regulatory and competitive pressures could hinder growth.
+★ Verdict: BUY — Scale-In on Pullback
 
 ## 5. Entry / Add-on / Exit Framework
-🟢 Entry: $673.0 — Justifies as the current price is above, suggesting a pullback entry.
-🟡 Add-on: $632.38 — Mid-MA level for additional buys.
-🔴 Stop Loss: $608.0 — 9.7% below entry, protecting capital.
-🔵 Target: $779.82 — Prior 52-week high, a technical reference.
+🟢 Entry: $632.38 — below current price, suggesting a pullback entry.
+🟡 Add-on: $592.5 — further support level.
+🔴 Stop Loss: $566.0 — 10.5% below entry.
+🔵 Target: $779.82 — prior 52w high.
 
-Position sizing: Moderate (5-10% of portfolio). Timeframe: 18 months.
+Position: 5% of portfolio. Timeframe: 18 months.
 
