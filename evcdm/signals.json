@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-23",
   "signal_count": 35,
   "signals": [
     {
@@ -446,15 +446,6 @@
           "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
         },
         {
-          "company": "OpenAI",
-          "ticker": "MSFT",
-          "relationship": "critical_dependency",
-          "layer": "L6",
-          "industry": "ai",
-          "edge_confidence": 0.95,
-          "inference": "Capacity expansion at Microsoft will require additional equipment and materials."
-        },
-        {
           "company": "Digital Realty",
           "ticker": null,
           "relationship": "supplier_to_customer",
@@ -544,15 +535,6 @@
           "layer": "L2",
           "industry": "quantum",
           "edge_confidence": 0.9,
-          "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
-        },
-        {
-          "company": "Microsoft",
-          "ticker": "MSFT",
-          "relationship": "critical_dependency",
-          "layer": "L5",
-          "industry": "ai",
-          "edge_confidence": 0.95,
           "inference": "Capital commitment by Microsoft suggests its customers are in a growth phase."
         }
       ],
@@ -767,18 +749,18 @@
           "inference": "Capacity expansion at Amgen will require additional equipment and materials."
         }
       ],
-      "downstream_implications": [
+      "downstream_implications": [],
+      "partner_context": [
         {
           "company": "UCB",
           "ticker": null,
-          "relationship": "critical_dependency",
+          "relationship": "cooperates_with",
           "layer": "L6",
           "industry": "biotech",
           "edge_confidence": 0.8,
-          "inference": "Capital commitment by Amgen suggests its customers are in a growth phase."
+          "inference": "Amgen competes and cooperates with this platform \u2014 expansion may shift workloads or create multicloud integration demand."
         }
       ],
-      "partner_context": [],
       "confidence": 0.75
     },
     {
@@ -974,7 +956,7 @@
           "company": "Microsoft",
           "ticker": "MSFT",
           "relationship": "critical_dependency",
-          "layer": "L6",
+          "layer": "L4",
           "industry": "finance",
           "edge_confidence": 0.95,
           "inference": "Platform and data infrastructure expansion at BlackRock will increase cloud and technology consumption."
