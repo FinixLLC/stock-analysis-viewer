@@ -1,21 +1,21 @@
 {
-  "date": "2026-10-22",
-  "generated": "2026-10-23 21:35",
+  "date": "2026-10-23",
+  "generated": "2026-10-26 21:35",
   "picks": [
     {
       "rank": 1,
-      "symbol": "HALO",
+      "symbol": "GMAB",
       "label": "Best Overall",
       "setup_type": "Breakout",
       "sector": "Healthcare",
-      "composite_score": 57.9,
-      "tier": 1,
+      "composite_score": 52.0,
+      "tier": 2,
       "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
-      "entry": 124.54,
-      "stop": 119.43,
-      "target": 134.76,
+      "entry": 43.79,
+      "stop": 41.39,
+      "target": 48.59,
       "rr_ratio": 2.0,
-      "risk_pct": 4.1,
+      "risk_pct": 5.5,
       "why": "Strongest combination of pattern quality + momentum + favorable risk"
     },
     {
@@ -36,18 +36,18 @@
     },
     {
       "rank": 3,
-      "symbol": "SKYY",
+      "symbol": "ECO",
       "label": "Higher Risk/Reward",
       "setup_type": "Breakout",
-      "sector": "N/A",
-      "composite_score": 55.2,
-      "tier": 1,
+      "sector": "Industrials",
+      "composite_score": 54.4,
+      "tier": 2,
       "setup_description": "Darvas Box breakout \u2014 price consolidating at highs before expansion",
-      "entry": 174.89,
-      "stop": 168.5,
-      "target": 187.68,
+      "entry": 95.66,
+      "stop": 88.62,
+      "target": 109.74,
       "rr_ratio": 2.0,
-      "risk_pct": 3.7,
+      "risk_pct": 7.4,
       "why": "Different sector + setup offers uncorrelated return potential"
     }
   ]
