@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.47,
-    "latest_date": "2026-10-26",
+    "latest": 2.45,
+    "latest_date": "2026-10-27",
     "avg_3m": 2.47,
-    "avg_6m": 2.43
+    "avg_6m": 2.44
   },
   "breakeven_10y": {
-    "latest": 2.34,
-    "latest_date": "2026-10-26",
-    "avg_3m": 2.33,
+    "latest": 2.35,
+    "latest_date": "2026-10-27",
+    "avg_3m": 2.34,
     "avg_6m": 2.35
   },
   "real_yield_10y": {
     "latest": 2.66,
-    "latest_date": "2026-10-23",
-    "avg_3m": 2.69,
-    "avg_6m": 2.73
+    "latest_date": "2026-10-26",
+    "avg_3m": 2.65,
+    "avg_6m": 2.71
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -75,8 +75,8 @@
     "chg_3m_pct": 23.08
   },
   "gasoline": {
-    "latest": 4.284,
-    "chg_3m_pct": 7.07
+    "latest": 4.269,
+    "chg_3m_pct": 4.22
   },
   "wages": {
     "latest": 37.81,
@@ -89,14 +89,14 @@
   "cf_nowcast": {
     "mom": {
       "month": "October 2026",
-      "cpi": 0.25,
+      "cpi": 0.24,
       "core_cpi": 0.21,
-      "pce": 0.27,
+      "pce": 0.26,
       "core_pce": 0.25
     },
     "yoy": {
       "month": "October 2026",
-      "cpi": 3.75,
+      "cpi": 3.74,
       "core_cpi": 2.48,
       "pce": 3.72,
       "core_pce": 3.13
@@ -139,5 +139,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-27T13:45:07.553882+00:00"
+  "generated_at": "2026-10-28T13:45:08.360569+00:00"
 }
