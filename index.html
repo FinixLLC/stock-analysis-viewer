@@ -575,8 +575,8 @@
         <!-- Top 3 Picks of the Day -- diversified, sector-balanced selection,
              distinct from the broader Today's Top Picks list above -->
         <div class="top-picks" id="top3-picks-section" role="region" aria-labelledby="top3-picks-heading">
-            <h2 id="top3-picks-heading">📊 Top 3 Picks of the Day</h2>
-            <p style="color:#777;font-size:0.85em;margin:-12px 0 16px;">Source: diversified 3-pick selection (one per setup type, sector-balanced) &mdash; confirmed breakouts, with entry/stop/target levels</p>
+            <h2 id="top3-picks-heading">📊 Top 5 Picks of the Day</h2>
+            <p style="color:#777;font-size:0.85em;margin:-12px 0 16px;">Source: diversified selection of up to 5 picks (new sectors and setup types first, sector-balanced) &mdash; confirmed breakouts, with entry/stop/target levels</p>
             <div id="top3-picks-content" aria-live="polite">
                 <div class="loading-state"><span class="spinner"></span> Loading today's 3 picks...</div>
             </div>
@@ -1380,7 +1380,7 @@
         function showNoTop3PicksMessage(isError = false) {
             const content = document.getElementById('top3-picks-content');
             content.innerHTML = isError
-                ? '<div class="error-alert">Unable to load today\'s 3 picks. Please try refreshing the page.</div>'
+                ? '<div class="error-alert">Unable to load today\'s picks. Please try refreshing the page.</div>'
                 : '<div class="no-picks">No picks available today. Check back after the next analysis run.</div>';
         }
 
