@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.45,
-    "latest_date": "2026-10-27",
+    "latest": 2.49,
+    "latest_date": "2026-10-28",
     "avg_3m": 2.47,
-    "avg_6m": 2.44
+    "avg_6m": 2.46
   },
   "breakeven_10y": {
-    "latest": 2.35,
-    "latest_date": "2026-10-27",
-    "avg_3m": 2.34,
+    "latest": 2.38,
+    "latest_date": "2026-10-28",
+    "avg_3m": 2.36,
     "avg_6m": 2.35
   },
   "real_yield_10y": {
-    "latest": 2.66,
-    "latest_date": "2026-10-26",
+    "latest": 2.64,
+    "latest_date": "2026-10-27",
     "avg_3m": 2.65,
-    "avg_6m": 2.71
+    "avg_6m": 2.69
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -71,8 +71,8 @@
     "avg_6m": 4.48
   },
   "oil": {
-    "latest": 107.89,
-    "chg_3m_pct": 23.08
+    "latest": 103.37,
+    "chg_3m_pct": 20.09
   },
   "gasoline": {
     "latest": 4.269,
@@ -127,9 +127,9 @@
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
-      "inflation_expectations": -1
+      "inflation_expectations": 1
     },
-    "total": 1,
+    "total": 3,
     "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
@@ -137,7 +137,7 @@
     "gasoline": "rising"
   },
   "median_cpi_trend_word": "falling",
-  "inflation_expectations_trend_word": "falling",
+  "inflation_expectations_trend_word": "rising",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-28T13:45:08.360569+00:00"
+  "generated_at": "2026-10-29T13:45:10.314655+00:00"
 }
