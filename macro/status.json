@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.49,
-    "latest_date": "2026-10-28",
+    "latest": 2.47,
+    "latest_date": "2026-10-29",
     "avg_3m": 2.47,
-    "avg_6m": 2.46
+    "avg_6m": 2.47
   },
   "breakeven_10y": {
-    "latest": 2.38,
-    "latest_date": "2026-10-28",
+    "latest": 2.35,
+    "latest_date": "2026-10-29",
     "avg_3m": 2.36,
     "avg_6m": 2.35
   },
   "real_yield_10y": {
-    "latest": 2.64,
-    "latest_date": "2026-10-27",
-    "avg_3m": 2.65,
-    "avg_6m": 2.69
+    "latest": 2.67,
+    "latest_date": "2026-10-28",
+    "avg_3m": 2.66,
+    "avg_6m": 2.67
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -91,22 +91,22 @@
       "month": "October 2026",
       "cpi": 0.24,
       "core_cpi": 0.21,
-      "pce": 0.26,
-      "core_pce": 0.25
+      "pce": 0.27,
+      "core_pce": 0.26
     },
     "yoy": {
       "month": "October 2026",
       "cpi": 3.74,
       "core_cpi": 2.48,
-      "pce": 3.72,
-      "core_pce": 3.13
+      "pce": 3.77,
+      "core_pce": 3.2
     },
     "quarterly_annualized": {
-      "quarter": "2026:Q3",
-      "cpi": NaN,
-      "core_cpi": NaN,
-      "pce": 1.97,
-      "core_pce": 2.33
+      "quarter": "2026:Q4",
+      "cpi": 5.13,
+      "core_cpi": 3.02,
+      "pce": 4.45,
+      "core_pce": 3.33
     }
   },
   "nyfed_infl_exp_1y": {
@@ -127,9 +127,9 @@
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
-      "inflation_expectations": 1
+      "inflation_expectations": 0
     },
-    "total": 3,
+    "total": 2,
     "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
@@ -137,7 +137,7 @@
     "gasoline": "rising"
   },
   "median_cpi_trend_word": "falling",
-  "inflation_expectations_trend_word": "rising",
+  "inflation_expectations_trend_word": "flat",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-10-29T13:45:10.314655+00:00"
+  "generated_at": "2026-10-30T13:45:08.663511+00:00"
 }
