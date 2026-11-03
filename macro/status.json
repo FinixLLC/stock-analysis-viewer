@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.46,
-    "latest_date": "2026-10-30",
-    "avg_3m": 2.47,
-    "avg_6m": 2.47
+    "latest": 2.39,
+    "latest_date": "2026-11-02",
+    "avg_3m": 2.44,
+    "avg_6m": 2.46
   },
   "breakeven_10y": {
-    "latest": 2.34,
-    "latest_date": "2026-10-30",
-    "avg_3m": 2.36,
-    "avg_6m": 2.35
+    "latest": 2.29,
+    "latest_date": "2026-11-02",
+    "avg_3m": 2.33,
+    "avg_6m": 2.34
   },
   "real_yield_10y": {
-    "latest": 2.63,
-    "latest_date": "2026-10-29",
-    "avg_3m": 2.65,
-    "avg_6m": 2.65
+    "latest": 2.6,
+    "latest_date": "2026-10-30",
+    "avg_3m": 2.63,
+    "avg_6m": 2.64
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -88,24 +88,24 @@
   },
   "cf_nowcast": {
     "mom": {
-      "month": "October 2026",
-      "cpi": 0.24,
-      "core_cpi": 0.21,
-      "pce": 0.27,
+      "month": "November 2026",
+      "cpi": 0.54,
+      "core_cpi": 0.2,
+      "pce": 0.45,
       "core_pce": 0.26
     },
     "yoy": {
-      "month": "October 2026",
-      "cpi": 3.74,
-      "core_cpi": 2.48,
-      "pce": 3.77,
-      "core_pce": 3.2
+      "month": "November 2026",
+      "cpi": 4.25,
+      "core_cpi": 2.77,
+      "pce": 4.03,
+      "core_pce": 3.31
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 5.08,
+      "cpi": 5.26,
       "core_cpi": 3.02,
-      "pce": 4.42,
+      "pce": 4.52,
       "core_pce": 3.33
     }
   },
@@ -127,9 +127,9 @@
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
-      "inflation_expectations": 0
+      "inflation_expectations": -1
     },
-    "total": 2,
+    "total": 1,
     "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
@@ -137,7 +137,7 @@
     "gasoline": "rising"
   },
   "median_cpi_trend_word": "falling",
-  "inflation_expectations_trend_word": "flat",
+  "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-11-02T14:45:07.636577+00:00"
+  "generated_at": "2026-11-03T14:45:07.637399+00:00"
 }
