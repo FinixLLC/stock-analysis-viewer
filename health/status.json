@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T01:18:13.763369",
+  "generated_at": "2026-11-03T02:18:00.863614",
   "overall": "critical",
   "checks": [
     {
@@ -29,7 +29,7 @@
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "critical",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-20 0.0%, 0 symbols with duplicate bars, thin days 2026-11-02 (602/4815); NYSE_Yahoo: worst NaN day 2026-10-20 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-20 0.0%, 0 symbols with duplicate bars",
+      "detail": "Could not query: localhost:27018: connection closed (configured timeouts: connectTimeoutMS: 20000.0ms)",
       "last_success": null
     },
     {
