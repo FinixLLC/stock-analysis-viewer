@@ -48,20 +48,20 @@
   },
   "breakeven_5y": {
     "latest": 2.39,
-    "latest_date": "2026-11-02",
-    "avg_3m": 2.44,
-    "avg_6m": 2.46
+    "latest_date": "2026-11-03",
+    "avg_3m": 2.41,
+    "avg_6m": 2.44
   },
   "breakeven_10y": {
-    "latest": 2.29,
-    "latest_date": "2026-11-02",
-    "avg_3m": 2.33,
+    "latest": 2.3,
+    "latest_date": "2026-11-03",
+    "avg_3m": 2.31,
     "avg_6m": 2.34
   },
   "real_yield_10y": {
-    "latest": 2.6,
-    "latest_date": "2026-10-30",
-    "avg_3m": 2.63,
+    "latest": 2.62,
+    "latest_date": "2026-11-02",
+    "avg_3m": 2.62,
     "avg_6m": 2.64
   },
   "mich_inflation_expectations": {
@@ -75,8 +75,8 @@
     "chg_3m_pct": 20.09
   },
   "gasoline": {
-    "latest": 4.269,
-    "chg_3m_pct": 4.22
+    "latest": 4.153,
+    "chg_3m_pct": 1.81
   },
   "wages": {
     "latest": 37.81,
@@ -89,23 +89,23 @@
   "cf_nowcast": {
     "mom": {
       "month": "November 2026",
-      "cpi": 0.54,
+      "cpi": 0.22,
       "core_cpi": 0.2,
-      "pce": 0.45,
+      "pce": 0.26,
       "core_pce": 0.26
     },
     "yoy": {
       "month": "November 2026",
-      "cpi": 4.25,
+      "cpi": 3.92,
       "core_cpi": 2.77,
-      "pce": 4.03,
+      "pce": 3.84,
       "core_pce": 3.31
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 5.26,
+      "cpi": 4.42,
       "core_cpi": 3.02,
-      "pce": 4.52,
+      "pce": 4.05,
       "core_pce": 3.33
     }
   },
@@ -121,7 +121,7 @@
   "pressure_index": {
     "signals": {
       "oil": 1,
-      "gasoline": 1,
+      "gasoline": 0,
       "shelter": -1,
       "core_cpi_3m_vs_6m": 1,
       "wage_growth": 0,
@@ -129,15 +129,15 @@
       "median_cpi_trend": -1,
       "inflation_expectations": -1
     },
-    "total": 1,
-    "regime": "MILD INFLATIONARY"
+    "total": 0,
+    "regime": "NEUTRAL"
   },
   "energy_trend": {
     "oil": "rising",
-    "gasoline": "rising"
+    "gasoline": "flat"
   },
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-11-03T14:45:07.637399+00:00"
+  "generated_at": "2026-11-04T14:45:12.123920+00:00"
 }
