@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:19:27.178597",
+  "generated_at": "2026-11-05T11:19:18.087579",
   "overall": "critical",
   "checks": [
     {
@@ -23,13 +23,13 @@
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "critical",
-      "detail": "Through 2026-11-04. NASDAQ_Yahoo: 600/5018 active current (12%), 600/5946 of all; NYSE_Yahoo: 2399/2438 active current (98%), 2399/2729 of all; AMEX_Yahoo: 268/286 active current (94%), 268/317 of all",
+      "detail": "Could not query: operation cancelled",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "critical",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-10-22 0.0%, 0 symbols with duplicate bars, thin days 2026-11-04 (600/4801); NYSE_Yahoo: worst NaN day 2026-10-22 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-22 0.0%, 0 symbols with duplicate bars",
+      "detail": "Could not query: No servers found yet, Timeout: 4.0s, Topology Description: <TopologyDescription id: 6aecd6aa5e5f56506654424d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None>]>",
       "last_success": null
     },
     {
