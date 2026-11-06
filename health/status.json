@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T06:20:24.275303",
+  "generated_at": "2026-11-06T07:19:14.659524",
   "overall": "critical",
   "checks": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "critical",
-      "detail": "working 382 tickers, published 371 tickers \u2014 11 scored but never published (e.g. ACLS, FLEX, NXPI, PLXS, POWI, RMD, SANM, SNPS). sync_and_pull_viewer.sh may not be running.",
+      "status": "ok",
+      "detail": "working 382 tickers, published 382 tickers",
       "last_success": null
     },
     {
