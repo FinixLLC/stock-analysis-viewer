@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T21:18:08.695861",
+  "generated_at": "2026-11-09T22:18:22.129260",
   "overall": "warn",
   "checks": [
     {
@@ -40,27 +40,27 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 385 tickers, published 385 tickers",
+      "status": "warn",
+      "detail": "working 386 tickers, published 385 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
       "status": "warn",
-      "detail": "3 commit(s) behind origin/main",
+      "detail": "1 commit(s) behind origin/main",
       "last_success": null
     },
     {
       "name": "Portfolio summary (Lenovo, 9pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-11-06 (3d ago)",
-      "last_success": "2026-11-06T21:12:24"
+      "detail": "last changed 2026-11-09 (0d ago)",
+      "last_success": "2026-11-09T21:14:09"
     },
     {
       "name": "Top picks (Lenovo, 6:30pm weekdays)",
       "status": "ok",
-      "detail": "last changed 2026-11-06 (3d ago)",
-      "last_success": "2026-11-06T21:12:24"
+      "detail": "last changed 2026-11-09 (0d ago)",
+      "last_success": "2026-11-09T21:14:09"
     },
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
@@ -77,7 +77,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "1/3 due so far, all logged",
+      "detail": "3/3 due so far, all logged",
       "last_success": null
     }
   ]
