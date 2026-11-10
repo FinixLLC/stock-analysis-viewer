@@ -1,31 +1,31 @@
 {
   "cpi_headline": {
-    "latest_date": "2026-09-01",
-    "mom_pct": 0.65,
-    "ann_3m_pct": 4.56,
-    "ann_6m_pct": 3.67,
-    "yoy_pct": 4.02
+    "latest_date": "2026-10-01",
+    "mom_pct": 0.35,
+    "ann_3m_pct": 5.72,
+    "ann_6m_pct": 3.07,
+    "yoy_pct": 4.08
   },
   "cpi_core": {
-    "latest_date": "2026-09-01",
-    "mom_pct": 0.33,
-    "ann_3m_pct": 3.41,
-    "ann_6m_pct": 2.85,
-    "yoy_pct": 2.79
+    "latest_date": "2026-10-01",
+    "mom_pct": 0.3,
+    "ann_3m_pct": 3.75,
+    "ann_6m_pct": 2.69,
+    "yoy_pct": 2.87
   },
   "cpi_shelter": {
-    "latest_date": "2026-09-01",
-    "mom_pct": 0.39,
-    "ann_3m_pct": 3.22,
-    "ann_6m_pct": 3.73,
-    "yoy_pct": 3.44
+    "latest_date": "2026-10-01",
+    "mom_pct": 0.3,
+    "ann_3m_pct": 3.9,
+    "ann_6m_pct": 3.11,
+    "yoy_pct": 3.54
   },
   "cpi_ex_shelter": {
-    "latest_date": "2026-09-01",
-    "mom_pct": 0.79,
-    "ann_3m_pct": 5.3,
-    "ann_6m_pct": 3.64,
-    "yoy_pct": 4.35
+    "latest_date": "2026-10-01",
+    "mom_pct": 0.38,
+    "ann_3m_pct": 6.73,
+    "ann_6m_pct": 3.05,
+    "yoy_pct": 4.38
   },
   "ppi_final_demand": {
     "latest_date": "2026-09-01",
@@ -47,21 +47,21 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.29,
-    "latest_date": "2026-11-06",
-    "avg_3m": 2.28,
-    "avg_6m": 2.35
+    "latest": 2.25,
+    "latest_date": "2026-11-09",
+    "avg_3m": 2.27,
+    "avg_6m": 2.31
   },
   "breakeven_10y": {
-    "latest": 2.23,
-    "latest_date": "2026-11-06",
-    "avg_3m": 2.24,
-    "avg_6m": 2.28
+    "latest": 2.22,
+    "latest_date": "2026-11-09",
+    "avg_3m": 2.23,
+    "avg_6m": 2.26
   },
   "real_yield_10y": {
-    "latest": 2.6,
-    "latest_date": "2026-11-05",
-    "avg_3m": 2.63,
+    "latest": 2.63,
+    "latest_date": "2026-11-06",
+    "avg_3m": 2.62,
     "avg_6m": 2.62
   },
   "mich_inflation_expectations": {
@@ -103,9 +103,9 @@
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 4.22,
+      "cpi": 4.24,
       "core_cpi": 3.02,
-      "pce": 3.94,
+      "pce": 3.95,
       "core_pce": 3.33
     }
   },
@@ -122,15 +122,15 @@
     "signals": {
       "oil": 1,
       "gasoline": 0,
-      "shelter": -1,
+      "shelter": 1,
       "core_cpi_3m_vs_6m": 1,
       "wage_growth": 0,
       "philly_fed_prices_paid": 1,
       "median_cpi_trend": -1,
       "inflation_expectations": -1
     },
-    "total": 0,
-    "regime": "NEUTRAL"
+    "total": 2,
+    "regime": "MILD INFLATIONARY"
   },
   "energy_trend": {
     "oil": "rising",
@@ -139,5 +139,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "moderate",
-  "generated_at": "2026-11-09T14:45:08.507071+00:00"
+  "generated_at": "2026-11-10T14:45:07.949130+00:00"
 }
