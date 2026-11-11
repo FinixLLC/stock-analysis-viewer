@@ -12,13 +12,13 @@ td { padding: 10px 8px; border-bottom: 1px solid #d9d2bd; vertical-align: top; }
 .meta { color: #6b6455; font-size: 0.82rem; margin-top: 6px; }
 </style></head><body><div class="wrap">
 <h1>Pipeline Health <span class="overall">CRITICAL</span></h1>
-<p class="meta">Generated 2026-11-11 14:46:25 on M1 Max &middot;
+<p class="meta">Generated 2026-11-11 15:37:44 on M1 Max &middot;
 <a href="paobull-eval.html">PaoBull verdict audit &rarr;</a></p>
 <table><tr><td><span class="dot" style="background:#3f7a56"></span>Lenovo Mongo (tunnel): localhost:27018 → LENOVO</td><td>OK</td><td>Identity verified (NASDAQ_Yahoo ✓)</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Local Mongo (m1max): localhost:27017 → LOCAL</td><td>OK</td><td>Identity verified (sec_cache ✓)</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Price data freshness (Lenovo Mongo)</td><td>OK</td><td>NASDAQ_Yahoo: 2026-11-10; NYSE_Yahoo: 2026-11-10</td></tr>
-<tr><td><span class="dot" style="background:#b5533f"></span>Exchange coverage (share of tickers current)</td><td>CRITICAL</td><td>Through 2026-11-10. NASDAQ_Yahoo: 1860/5004 active current (37%), 1860/5946 of all; NYSE_Yahoo: 2377/2440 active current (97%), 2377/2730 of all; AMEX_Yahoo: 270/285 active current (95%), 270/317 of all</td></tr>
-<tr><td><span class="dot" style="background:#b5533f"></span>Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)</td><td>CRITICAL</td><td>NASDAQ_Yahoo: worst NaN day 2026-10-28 0.0%, 0 symbols with duplicate bars, thin days 2026-11-10 (1860/4788); NYSE_Yahoo: worst NaN day 2026-10-28 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-10-28 0.0%, 0 symbols with duplicate bars</td></tr>
+<tr><td><span class="dot" style="background:#b5533f"></span>Exchange coverage (share of tickers current)</td><td>CRITICAL</td><td>Through 2026-11-10. NASDAQ_Yahoo: 1860/5004 active current (37%), 1860/5946 of all; NYSE_Yahoo: 2377/2440 active current (97%), 2377/2730 of all; AMEX_Yahoo: 284/285 active current (100%), 284/317 of all</td></tr>
+<tr><td><span class="dot" style="background:#b5533f"></span>Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)</td><td>CRITICAL</td><td>Could not query: operation cancelled</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>Ollama (local LLM)</td><td>OK</td><td>Responding, 8 models available</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>PaoBull cache: working vs. published</td><td>OK</td><td>working 389 tickers, published 389 tickers</td></tr>
 <tr><td><span class="dot" style="background:#3f7a56"></span>m1max's own ~/viewer checkout</td><td>OK</td><td>Up to date with origin/main</td></tr>
