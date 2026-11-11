@@ -35,34 +35,34 @@
     "yoy_pct": 6.35
   },
   "median_cpi_saar": {
-    "latest": 2.81,
-    "latest_date": "2026-09-01",
-    "avg_3m": 2.68,
-    "avg_6m": 3.12
+    "latest": 3.66,
+    "latest_date": "2026-10-01",
+    "avg_3m": 2.86,
+    "avg_6m": 2.91
   },
   "sticky_core_cpi_saar": {
-    "latest": 2.78,
-    "latest_date": "2026-09-01",
-    "avg_3m": 2.73,
+    "latest": 3.06,
+    "latest_date": "2026-10-01",
+    "avg_3m": 2.85,
     "avg_6m": 2.86
   },
   "breakeven_5y": {
     "latest": 2.25,
-    "latest_date": "2026-11-09",
-    "avg_3m": 2.27,
-    "avg_6m": 2.31
+    "latest_date": "2026-11-10",
+    "avg_3m": 2.26,
+    "avg_6m": 2.29
   },
   "breakeven_10y": {
-    "latest": 2.22,
-    "latest_date": "2026-11-09",
-    "avg_3m": 2.23,
-    "avg_6m": 2.26
+    "latest": 2.2,
+    "latest_date": "2026-11-10",
+    "avg_3m": 2.22,
+    "avg_6m": 2.24
   },
   "real_yield_10y": {
-    "latest": 2.63,
-    "latest_date": "2026-11-06",
-    "avg_3m": 2.62,
-    "avg_6m": 2.62
+    "latest": 2.66,
+    "latest_date": "2026-11-09",
+    "avg_3m": 2.63,
+    "avg_6m": 2.63
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -75,8 +75,8 @@
     "chg_3m_pct": 29.77
   },
   "gasoline": {
-    "latest": 4.153,
-    "chg_3m_pct": 1.81
+    "latest": 3.995,
+    "chg_3m_pct": -0.27
   },
   "wages": {
     "latest": 38.0,
@@ -89,24 +89,24 @@
   "cf_nowcast": {
     "mom": {
       "month": "November 2026",
-      "cpi": 0.19,
-      "core_cpi": 0.2,
-      "pce": 0.25,
+      "cpi": 0.14,
+      "core_cpi": 0.21,
+      "pce": 0.21,
       "core_pce": 0.26
     },
     "yoy": {
       "month": "November 2026",
-      "cpi": 3.88,
-      "core_cpi": 2.77,
-      "pce": 3.82,
-      "core_pce": 3.31
+      "cpi": 3.94,
+      "core_cpi": 2.87,
+      "pce": 3.83,
+      "core_pce": 3.32
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 4.24,
-      "core_cpi": 3.02,
-      "pce": 3.95,
-      "core_pce": 3.33
+      "cpi": 4.4,
+      "core_cpi": 3.4,
+      "pce": 3.94,
+      "core_pce": 3.38
     }
   },
   "nyfed_infl_exp_1y": {
@@ -138,6 +138,6 @@
   },
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
-  "median_cpi_level_word": "moderate",
-  "generated_at": "2026-11-10T14:45:07.949130+00:00"
+  "median_cpi_level_word": "elevated",
+  "generated_at": "2026-11-11T14:45:07.595763+00:00"
 }
