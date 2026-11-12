@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T10:15:19.110237",
+  "generated_at": "2026-11-12T11:15:19.625437",
   "overall": "critical",
   "checks": [
     {
@@ -17,19 +17,19 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af60228e1f0feb2e152df5a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af610373d7f9c1ad47047f9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af6022ce1f0feb2e152df5b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af6103c3d7f9c1ad47047fa, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af60231e1f0feb2e152df5c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6af610403d7f9c1ad47047fb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
       "last_success": null
     },
     {
