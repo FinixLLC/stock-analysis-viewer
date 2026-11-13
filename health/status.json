@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:18:24.937842",
+  "generated_at": "2026-11-12T18:18:23.372920",
   "overall": "warn",
   "checks": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "warn",
-      "detail": "Through 2026-11-11. NASDAQ_Yahoo: 3886/5004 active current (78%), 3886/5946 of all; NYSE_Yahoo: 2419/2440 active current (99%), 2419/2730 of all; AMEX_Yahoo: 284/285 active current (100%), 284/317 of all",
+      "status": "ok",
+      "detail": "Through 2026-11-11. NASDAQ_Yahoo: 4815/5004 active current (96%), 4815/5946 of all; NYSE_Yahoo: 2419/2440 active current (99%), 2419/2730 of all; AMEX_Yahoo: 284/285 active current (100%), 284/317 of all",
       "last_success": null
     },
     {
