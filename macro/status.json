@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.25,
-    "latest_date": "2026-11-10",
-    "avg_3m": 2.26,
-    "avg_6m": 2.29
+    "latest": 2.31,
+    "latest_date": "2026-11-12",
+    "avg_3m": 2.27,
+    "avg_6m": 2.28
   },
   "breakeven_10y": {
-    "latest": 2.2,
-    "latest_date": "2026-11-10",
+    "latest": 2.24,
+    "latest_date": "2026-11-12",
     "avg_3m": 2.22,
-    "avg_6m": 2.24
+    "avg_6m": 2.23
   },
   "real_yield_10y": {
-    "latest": 2.66,
-    "latest_date": "2026-11-09",
-    "avg_3m": 2.63,
-    "avg_6m": 2.63
+    "latest": 2.78,
+    "latest_date": "2026-11-10",
+    "avg_3m": 2.69,
+    "avg_6m": 2.66
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -71,8 +71,8 @@
     "avg_6m": 4.48
   },
   "oil": {
-    "latest": 99.64,
-    "chg_3m_pct": 29.77
+    "latest": 89.62,
+    "chg_3m_pct": 8.28
   },
   "gasoline": {
     "latest": 3.995,
@@ -103,9 +103,9 @@
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 4.4,
+      "cpi": 4.45,
       "core_cpi": 3.4,
-      "pce": 3.94,
+      "pce": 3.97,
       "core_pce": 3.38
     }
   },
@@ -139,5 +139,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "elevated",
-  "generated_at": "2026-11-12T14:45:08.364591+00:00"
+  "generated_at": "2026-11-13T14:45:08.518794+00:00"
 }
