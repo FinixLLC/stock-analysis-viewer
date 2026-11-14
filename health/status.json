@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T18:18:33.761615",
-  "overall": "ok",
+  "generated_at": "2026-11-13T19:17:40.310904",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -40,8 +40,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 393 tickers, published 393 tickers",
+      "status": "warn",
+      "detail": "working 394 tickers, published 393 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
