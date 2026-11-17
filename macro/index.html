@@ -5,51 +5,45 @@ body { font-family: -apple-system, sans-serif; background: #f6f3ec; color: #201d
 .wrap { max-width: 760px; margin: 0 auto; }
 h1 { font-size: 1.4rem; }
 .regime { display:inline-block; padding: 4px 14px; border-radius: 20px; color: white;
-  background: #b5843f; font-size: 0.9rem; font-weight: 600; }
+  background: #b5533f; font-size: 0.9rem; font-weight: 600; }
 pre { white-space: pre-wrap; background: #fff; border: 1px solid #d9d2bd; border-radius: 8px;
   padding: 16px 20px; font-family: ui-monospace, monospace; font-size: 0.88rem; line-height: 1.6; }
 table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 0.85rem; }
 td { padding: 6px 8px; border-bottom: 1px solid #d9d2bd; }
 .meta { color: #6b6455; font-size: 0.82rem; margin-top: 6px; }
 </style></head><body><div class="wrap">
-<h1>Inflation Pulse <span class="regime">MILD INFLATIONARY</span> (score +3)</h1>
-<p class="meta">Generated 2026-11-16 14:45:06 UTC</p>
+<h1>Inflation Pulse <span class="regime">STRONG INFLATIONARY</span> (score +4)</h1>
+<p class="meta">Generated 2026-11-17 14:45:17 UTC</p>
 <pre><think>
-Alright, I need to write a regime note for a long-only equity portfolio focused on rate-sensitive growth stocks. The user has provided specific data and a structure to follow. Let me break down the steps.
+Okay, so I need to write a regime note for a long-only equity portfolio focused on rate-sensitive growth stocks. The user has provided a specific structure and data to fill in. Let me go through the data step by step to make sure I understand everything correctly.
 
-First, I'll look at the inflation regime. The data shows the regime is "MILD INFLATIONARY." That's straightforward.
+First, the inflation regime is labeled as "STRONG INFLATIONARY" from the pressure_index.regime. That's the first line done.
 
-Next, I need to fill in the 3M Core CPI. The value is 3.75%, and comparing it to the 6M value of 2.69%, it's accelerating. So I'll note that as "accelerating."
+Next, I need to fill in the 3M Core CPI. The data shows 3.75%, and I need to compare it to the 6M Core CPI, which is 2.69%. Since 3.75 is higher than 2.69, it's accelerating. So I'll note that as "accelerating".
 
-For the 6M Core CPI, it's 2.69%, which is lower than the 3M, so it's decelerating. But the structure only asks for the value, so I just put 2.69%.
+The 6M Core CPI is straightforward at 2.69%.
 
-Median CPI is given as 3.66% SAAR, with the level word "elevated" and trend "falling." So I write that as "elevated, falling."
+For Median CPI, the latest value is 3.66% SAAR. The trend is "falling", and the level is "elevated". So that line will be "Median CPI (level & trend): 3.66% SAAR — elevated, falling".
 
-Shelter's 3M annualized is 3.9%, and comparing to 6M of 3.11%, it's accelerating. So I note that.
+Shelter's 3M annualized value is 3.9%, and comparing it to the 6M of 3.11%, it's accelerating. So Shelter is "accelerating".
 
-Energy is specified as "oil rising, gasoline flat," so I use that exact phrase.
+Energy is given as "oil rising, gasoline flat" exactly, so I'll use that.
 
-Wage pressure is 3.12% YoY. The user wants to classify it as hot, cooling, or moderate. Given the context, 3.12% seems moderate, so I'll say "moderate, as wage growth remains stable but not overheating."
+Wage pressure is 3.12% YoY. The user wants to classify it as hot, cooling, or moderate. Given the context, 3.12% seems moderate, so I'll note it as "moderate" and justify briefly.
 
-Inflation expectations are flat, as per the data.
+Inflation Expectations are rising, as per the pre-computed trend word.
 
 The Cleveland Fed nowcast for the current month's CPI MoM is 0.14%.
 
-Now, for the analysis paragraph. I need to separate signals into underlying momentum and forward risk.
+Now, looking at the structure, I need to separate the signals into underlying inflation momentum and forward-looking risk. Underlying momentum includes 3M vs 6M Core CPI, Median CPI trend, and Shelter trend. Forward-looking includes oil, gasoline, and inflation expectations.
 
-Underlying momentum includes 3M Core CPI (accelerating), Median CPI trend (falling), and Shelter (accelerating). So momentum is mixed but leaning towards acceleration in some areas.
+In this case, underlying momentum is mixed: Core CPI is accelerating, Shelter is accelerating, but Median CPI is falling. So it's a bit conflicting. Forward-looking, oil is rising, but gasoline is flat, and inflation expectations are rising, indicating some risk.
 
-Forward risk includes oil (rising), gasoline (flat), and inflation expectations (flat). So energy is a risk, but expectations are stable.
+For the portfolio implications, since the momentum is mixed but there's some risk building, it's a neutral environment. Growth stocks might face headwinds if inflation expectations rise further, but currently, it's not too bad.
 
-The portfolio is in rate-sensitive growth stocks. Favorable conditions would be low inflation with stable expectations. Here, underlying momentum is mixed, and forward risk is moderate. So the environment is neutral but with some risks. I should mention that while not unfavorable, there are risks from energy prices and wage growth.
+I need to make sure not to conflate level and trend, and to state each group's direction explicitly. Also, avoid using numeric confidence scores, just describe in words.
 
-Putting it all together, I structure the note as per the user's template, ensuring each section is filled correctly and the analysis reflects the data accurately.
-</think>
-
-Inflation Regime: MILD INFLATIONARY  
-3M Core CPI (annualized): 3.75% accelerating  
-6M Core CPI (annualized): 2.69%  
-Median CPI (level & trend): 3.66% SAAR — elevated</pre>
+Putting it all together, I'll structure the note as per the user's instructions, ensuring each line is filled correctly and the paragraph explains</pre>
 <h2 style="font-size:1rem;margin-top:24px;">Pressure Index components</h2>
 <table><tr><td>oil</td><td>+1</td></tr>
 <tr><td>gasoline</td><td>0</td></tr>
@@ -58,5 +52,5 @@ Median CPI (level & trend): 3.66% SAAR — elevated</pre>
 <tr><td>wage_growth</td><td>0</td></tr>
 <tr><td>philly_fed_prices_paid</td><td>+1</td></tr>
 <tr><td>median_cpi_trend</td><td>-1</td></tr>
-<tr><td>inflation_expectations</td><td>0</td></tr></table>
+<tr><td>inflation_expectations</td><td>+1</td></tr></table>
 </div></body></html>
