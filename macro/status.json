@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.26,
-    "latest_date": "2026-11-17",
-    "avg_3m": 2.27,
+    "latest": 2.23,
+    "latest_date": "2026-11-18",
+    "avg_3m": 2.25,
     "avg_6m": 2.27
   },
   "breakeven_10y": {
-    "latest": 2.21,
-    "latest_date": "2026-11-17",
-    "avg_3m": 2.22,
-    "avg_6m": 2.22
+    "latest": 2.19,
+    "latest_date": "2026-11-18",
+    "avg_3m": 2.2,
+    "avg_6m": 2.21
   },
   "real_yield_10y": {
-    "latest": 2.92,
-    "latest_date": "2026-11-16",
-    "avg_3m": 2.9,
-    "avg_6m": 2.79
+    "latest": 2.89,
+    "latest_date": "2026-11-17",
+    "avg_3m": 2.91,
+    "avg_6m": 2.84
   },
   "mich_inflation_expectations": {
     "latest": 4.6,
@@ -71,8 +71,8 @@
     "avg_6m": 4.48
   },
   "oil": {
-    "latest": 89.62,
-    "chg_3m_pct": 8.28
+    "latest": 89.53,
+    "chg_3m_pct": 2.58
   },
   "gasoline": {
     "latest": 3.805,
@@ -83,8 +83,8 @@
     "yoy_pct": 3.12
   },
   "philly_fed_prices_paid": {
-    "latest": 20.9,
-    "latest_date": "2026-10-01"
+    "latest": 6.3,
+    "latest_date": "2026-11-01"
   },
   "cf_nowcast": {
     "mom": {
@@ -103,9 +103,9 @@
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 4.28,
+      "cpi": 4.32,
       "core_cpi": 3.4,
-      "pce": 3.87,
+      "pce": 3.89,
       "core_pce": 3.38
     }
   },
@@ -120,24 +120,24 @@
   },
   "pressure_index": {
     "signals": {
-      "oil": 1,
+      "oil": 0,
       "gasoline": -1,
       "shelter": 1,
       "core_cpi_3m_vs_6m": 1,
       "wage_growth": 0,
-      "philly_fed_prices_paid": 1,
+      "philly_fed_prices_paid": 0,
       "median_cpi_trend": -1,
       "inflation_expectations": -1
     },
-    "total": 1,
-    "regime": "MILD INFLATIONARY"
+    "total": -1,
+    "regime": "MILD DISINFLATIONARY"
   },
   "energy_trend": {
-    "oil": "rising",
+    "oil": "flat",
     "gasoline": "falling"
   },
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "elevated",
-  "generated_at": "2026-11-18T14:45:24.375586+00:00"
+  "generated_at": "2026-11-19T14:45:12.695390+00:00"
 }
