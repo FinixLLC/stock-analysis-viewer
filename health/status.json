@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T23:18:23.578857",
-  "overall": "warn",
+  "generated_at": "2026-11-20T00:18:22.425893",
+  "overall": "critical",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -16,20 +16,20 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: 2026-11-18; NYSE_Yahoo: 2026-11-19",
+      "status": "critical",
+      "detail": "Expected at least 2026-11-19. NASDAQ_Yahoo: 2026-11-18; NYSE_Yahoo: 2026-11-19",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "ok",
-      "detail": "Through 2026-11-18. NASDAQ_Yahoo: 4806/4998 active current (96%), 4806/5947 of all; NYSE_Yahoo: 2419/2438 active current (99%), 2419/2731 of all; AMEX_Yahoo: 283/285 active current (99%), 283/317 of all",
+      "status": "critical",
+      "detail": "Through 2026-11-19. NASDAQ_Yahoo: 577/4996 active current (12%), 577/5947 of all; NYSE_Yahoo: 2375/2435 active current (98%), 2375/2731 of all; AMEX_Yahoo: 256/285 active current (90%), 256/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
-      "status": "ok",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars",
+      "status": "critical",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars, thin days 2026-11-19 (577/4777); NYSE_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
@@ -77,7 +77,7 @@
     {
       "name": "Today's scheduled cron jobs",
       "status": "ok",
-      "detail": "3/3 due so far, all logged",
+      "detail": "None due yet today",
       "last_success": null
     }
   ]
