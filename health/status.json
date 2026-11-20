@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T16:19:18.664456",
-  "overall": "critical",
+  "generated_at": "2026-11-19T17:18:48.925575",
+  "overall": "warn",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
@@ -16,20 +16,20 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "critical",
-      "detail": "Expected at least 2026-11-18. NASDAQ_Yahoo: 2026-11-17; NYSE_Yahoo: 2026-11-19",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: 2026-11-18; NYSE_Yahoo: 2026-11-19",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "critical",
-      "detail": "Through 2026-11-18. NASDAQ_Yahoo: 585/4995 active current (12%), 585/5947 of all; NYSE_Yahoo: 2419/2438 active current (99%), 2419/2731 of all; AMEX_Yahoo: 283/285 active current (99%), 283/317 of all",
+      "status": "warn",
+      "detail": "Through 2026-11-18. NASDAQ_Yahoo: 3838/4997 active current (77%), 3838/5947 of all; NYSE_Yahoo: 2419/2438 active current (99%), 2419/2731 of all; AMEX_Yahoo: 283/285 active current (99%), 283/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
-      "status": "critical",
-      "detail": "NASDAQ_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars, thin days 2026-11-18 (585/4779); NYSE_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-11-06 0.0%, 0 symbols with duplicate bars; NYSE_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-11-05 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
