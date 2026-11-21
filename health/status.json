@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:18:38.236515",
+  "generated_at": "2026-11-21T15:18:30.814736",
   "overall": "critical",
   "checks": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 403 tickers, published 403 tickers",
+      "status": "warn",
+      "detail": "working 404 tickers, published 403 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "Ticker-research index (weekly, Sun 1am)",
       "status": "ok",
-      "detail": "last changed 2026-11-15 (5d ago)",
+      "detail": "last changed 2026-11-15 (6d ago)",
       "last_success": "2026-11-15T15:13:05"
     },
     {
