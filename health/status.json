@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T22:18:23.700247",
+  "generated_at": "2026-11-21T23:18:15.569441",
   "overall": "critical",
   "checks": [
     {
@@ -40,14 +40,14 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "warn",
-      "detail": "working 411 tickers, published 403 tickers \u2014 8 tickers pending publish",
+      "status": "ok",
+      "detail": "working 411 tickers, published 411 tickers",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "warn",
-      "detail": "1 commit(s) behind origin/main",
+      "status": "ok",
+      "detail": "Up to date with origin/main",
       "last_success": null
     },
     {
@@ -71,7 +71,7 @@
     {
       "name": "NewsAgent dashboard",
       "status": "ok",
-      "detail": "Last generated 2026-11-21 06:00",
+      "detail": "Last generated 2026-11-21 22:41",
       "last_success": null
     },
     {
