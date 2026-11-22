@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-15T09:00:39.681754",
+  "generated_at": "2026-11-22T09:00:45.795864",
   "summary": {
-    "total_snapshots": 1441,
-    "unique_tickers": 395,
-    "too_recent_to_judge": 209,
-    "judged": 860,
-    "unparseable_entry_target": 369,
-    "parse_rate_pct": 70.0,
-    "hit_rate_pct": 49.1,
+    "total_snapshots": 1592,
+    "unique_tickers": 411,
+    "too_recent_to_judge": 235,
+    "judged": 981,
+    "unparseable_entry_target": 373,
+    "parse_rate_pct": 72.5,
+    "hit_rate_pct": 29.2,
     "hit_rate_note": "of calls that moved meaningfully either way (excludes flat, unparseable, too-recent)",
-    "on_track": 339,
-    "off_track": 352,
-    "flat": 169
+    "on_track": 233,
+    "off_track": 564,
+    "flat": 184
   },
   "biggest_misses": [
-    {
-      "ticker": "QUAL",
-      "generated_at": "2026-10-06",
-      "entry": 224.0,
-      "target": 269.0,
-      "price_then": 225.88,
-      "price_now": 56.02,
-      "progress_pct": -373.3,
-      "return_pct": -75.2,
-      "verdict": null,
-      "status": "off_track"
-    },
     {
       "ticker": "AAOI",
       "generated_at": "2026-06-15",
       "entry": 180.0,
       "target": 200.0,
       "price_then": 191.0199,
-      "price_now": 49.89,
-      "progress_pct": -650.6,
-      "return_pct": -73.9,
+      "price_now": 32.93,
+      "progress_pct": -735.3,
+      "return_pct": -82.8,
+      "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "QUAL",
+      "generated_at": "2026-10-06",
+      "entry": 224.0,
+      "target": 269.0,
+      "price_then": 225.88,
+      "price_now": 51.87,
+      "progress_pct": -382.5,
+      "return_pct": -77.0,
       "verdict": null,
       "status": "off_track"
     },
@@ -44,9 +44,9 @@
       "entry": 117.0,
       "target": 233.67,
       "price_then": 139.5,
-      "price_now": 49.89,
-      "progress_pct": -57.5,
-      "return_pct": -64.2,
+      "price_now": 32.93,
+      "progress_pct": -72.1,
+      "return_pct": -76.4,
       "verdict": null,
       "status": "off_track"
     },
@@ -56,9 +56,9 @@
       "entry": 38.0,
       "target": 50.725,
       "price_then": 41.98,
-      "price_now": 15.97,
-      "progress_pct": -173.1,
-      "return_pct": -62.0,
+      "price_now": 11.49,
+      "progress_pct": -208.3,
+      "return_pct": -72.6,
       "verdict": null,
       "status": "off_track"
     },
@@ -68,34 +68,22 @@
       "entry": 10.5,
       "target": 14.0,
       "price_then": 12.75,
-      "price_now": 4.88,
-      "progress_pct": -160.6,
-      "return_pct": -61.7,
+      "price_now": 3.55,
+      "progress_pct": -198.6,
+      "return_pct": -72.2,
       "verdict": null,
       "status": "off_track"
     },
     {
-      "ticker": "SNDK",
-      "generated_at": "2026-06-18",
-      "entry": 2100.0,
-      "target": 2400.0,
-      "price_then": 2184.75,
-      "price_now": 885.01,
-      "progress_pct": -405.0,
-      "return_pct": -59.5,
-      "verdict": "PA",
-      "status": "off_track"
-    },
-    {
-      "ticker": "ICHR",
-      "generated_at": "2026-06-17",
-      "entry": 75.0,
-      "target": 95.0,
-      "price_then": 85.77,
-      "price_now": 35.72,
-      "progress_pct": -196.4,
-      "return_pct": -58.4,
-      "verdict": "PASS",
+      "ticker": "NVDG",
+      "generated_at": "2026-10-15",
+      "entry": 18.0,
+      "target": 25.34,
+      "price_then": 19.18,
+      "price_now": 5.8,
+      "progress_pct": -166.2,
+      "return_pct": -69.8,
+      "verdict": "WATCH",
       "status": "off_track"
     },
     {
@@ -104,10 +92,22 @@
       "entry": 11.0,
       "target": 12.938,
       "price_then": 11.27,
-      "price_now": 4.88,
-      "progress_pct": -315.8,
-      "return_pct": -56.7,
+      "price_now": 3.55,
+      "progress_pct": -384.4,
+      "return_pct": -68.5,
       "verdict": null,
+      "status": "off_track"
+    },
+    {
+      "ticker": "ICHR",
+      "generated_at": "2026-06-17",
+      "entry": 75.0,
+      "target": 95.0,
+      "price_then": 85.77,
+      "price_now": 27.28,
+      "progress_pct": -238.6,
+      "return_pct": -68.2,
+      "verdict": "PASS",
       "status": "off_track"
     },
     {
@@ -116,21 +116,21 @@
       "entry": 31.5,
       "target": 50.725,
       "price_then": 35.52,
-      "price_now": 15.97,
-      "progress_pct": -80.8,
-      "return_pct": -55.0,
+      "price_now": 11.49,
+      "progress_pct": -104.1,
+      "return_pct": -67.7,
       "verdict": null,
       "status": "off_track"
     },
     {
-      "ticker": "INTC",
-      "generated_at": "2026-09-24",
-      "entry": 121.0,
-      "target": 142.35,
-      "price_then": 127.205,
-      "price_now": 59.66,
-      "progress_pct": -287.3,
-      "return_pct": -53.1,
+      "ticker": "MX",
+      "generated_at": "2026-06-24",
+      "entry": 4.5,
+      "target": 9.86,
+      "price_then": 5.22,
+      "price_now": 2.1,
+      "progress_pct": -44.8,
+      "return_pct": -59.8,
       "verdict": null,
       "status": "off_track"
     }
@@ -142,81 +142,9 @@
       "entry": 5.7,
       "target": 7.0,
       "price_then": 5.81,
-      "price_now": 9.03,
-      "progress_pct": 256.2,
-      "return_pct": 55.4,
-      "verdict": null,
-      "status": "on_track"
-    },
-    {
-      "ticker": "PLTR",
-      "generated_at": "2026-06-25",
-      "entry": 107.0,
-      "target": 207.52,
-      "price_then": 113.5,
-      "price_now": 167.99,
-      "progress_pct": 60.7,
-      "return_pct": 48.0,
-      "verdict": null,
-      "status": "on_track"
-    },
-    {
-      "ticker": "PLTR",
-      "generated_at": "2026-06-24",
-      "entry": 110.0,
-      "target": 207.52,
-      "price_then": 116.7,
-      "price_now": 167.99,
-      "progress_pct": 59.5,
-      "return_pct": 44.0,
-      "verdict": null,
-      "status": "on_track"
-    },
-    {
-      "ticker": "ULTA",
-      "generated_at": "2026-06-24",
-      "entry": 444.5,
-      "target": 714.97,
-      "price_then": 459.33,
-      "price_now": 660.66,
-      "progress_pct": 79.9,
-      "return_pct": 43.8,
-      "verdict": null,
-      "status": "on_track"
-    },
-    {
-      "ticker": "MSFT",
-      "generated_at": "2026-06-25",
-      "entry": 353.5,
-      "target": 555.45,
-      "price_then": 365.46,
-      "price_now": 523.88,
-      "progress_pct": 84.4,
-      "return_pct": 43.3,
-      "verdict": null,
-      "status": "on_track"
-    },
-    {
-      "ticker": "ULTA",
-      "generated_at": "2026-07-02",
-      "entry": 446.0,
-      "target": 714.97,
-      "price_then": 461.33,
-      "price_now": 660.66,
-      "progress_pct": 79.8,
-      "return_pct": 43.2,
-      "verdict": "BUY",
-      "status": "on_track"
-    },
-    {
-      "ticker": "ABNB",
-      "generated_at": "2026-06-12",
-      "entry": 120.0,
-      "target": 140.0,
-      "price_then": 130.87,
-      "price_now": 186.78,
-      "progress_pct": 333.9,
-      "return_pct": 42.7,
+      "price_now": 8.03,
+      "progress_pct": 179.2,
+      "return_pct": 38.2,
       "verdict": null,
       "status": "on_track"
     },
@@ -226,65 +154,170 @@
       "entry": 214.5,
       "target": 315.98,
       "price_then": 220.5,
-      "price_now": 309.93,
-      "progress_pct": 94.0,
-      "return_pct": 40.6,
+      "price_now": 301.71,
+      "progress_pct": 85.9,
+      "return_pct": 36.8,
       "verdict": "BUY",
       "status": "on_track"
     },
     {
-      "ticker": "MSFT",
-      "generated_at": "2026-06-24",
-      "entry": 362.0,
-      "target": 555.45,
-      "price_then": 373.94,
-      "price_now": 523.88,
-      "progress_pct": 83.7,
-      "return_pct": 40.1,
+      "ticker": "ADP",
+      "generated_at": "2026-06-25",
+      "entry": 218.0,
+      "target": 315.98,
+      "price_then": 224.06,
+      "price_now": 301.71,
+      "progress_pct": 85.4,
+      "return_pct": 34.7,
       "verdict": null,
       "status": "on_track"
     },
     {
       "ticker": "ULTA",
+      "generated_at": "2026-06-24",
+      "entry": 444.5,
+      "target": 714.97,
+      "price_then": 459.33,
+      "price_now": 615.74,
+      "progress_pct": 63.3,
+      "return_pct": 34.1,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "ULTA",
+      "generated_at": "2026-07-02",
+      "entry": 446.0,
+      "target": 714.97,
+      "price_then": 461.33,
+      "price_now": 615.74,
+      "progress_pct": 63.1,
+      "return_pct": 33.5,
+      "verdict": "BUY",
+      "status": "on_track"
+    },
+    {
+      "ticker": "MSFT",
+      "generated_at": "2026-06-25",
+      "entry": 353.5,
+      "target": 555.45,
+      "price_then": 365.46,
+      "price_now": 484.52,
+      "progress_pct": 64.9,
+      "return_pct": 32.6,
+      "verdict": null,
+      "status": "on_track"
+    },
+    {
+      "ticker": "IDXX",
+      "generated_at": "2026-09-24",
+      "entry": 500.0,
+      "target": 769.98,
+      "price_then": 513.94,
+      "price_now": 676.21,
+      "progress_pct": 65.3,
+      "return_pct": 31.6,
+      "verdict": "WATCH",
+      "status": "on_track"
+    },
+    {
+      "ticker": "KNSL",
+      "generated_at": "2026-06-24",
+      "entry": 294.0,
+      "target": 512.76,
+      "price_then": 304.48,
+      "price_now": 398.58,
+      "progress_pct": 47.8,
+      "return_pct": 30.9,
+      "verdict": "BUY",
+      "status": "on_track"
+    },
+    {
+      "ticker": "BHC",
+      "generated_at": "2026-10-16",
+      "entry": 6.15,
+      "target": 8.0,
+      "price_then": 6.31,
+      "price_now": 8.22,
+      "progress_pct": 111.9,
+      "return_pct": 30.3,
+      "verdict": "WATCH",
+      "status": "on_track"
+    },
+    {
+      "ticker": "ABNB",
       "generated_at": "2026-06-12",
-      "entry": 450.0,
-      "target": 520.0,
-      "price_then": 476.42,
-      "price_now": 660.66,
-      "progress_pct": 300.9,
-      "return_pct": 38.7,
+      "entry": 120.0,
+      "target": 140.0,
+      "price_then": 130.87,
+      "price_now": 170.36,
+      "progress_pct": 251.8,
+      "return_pct": 30.2,
       "verdict": null,
       "status": "on_track"
     }
   ],
   "flip_floppers": [
     {
-      "ticker": "NVDA",
+      "ticker": "DXCM",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-10",
+        "2026-06-23",
+        "2026-11-10"
+      ]
+    },
+    {
+      "ticker": "CPRT",
       "verdict_sequence": [
         "BUY",
         "BUY",
         "BUY",
         "BUY",
-        "BUY",
         "WATCH",
-        "BUY",
-        "BUY",
-        "BUY",
-        "BUY",
         "BUY"
       ],
       "dates": [
-        "2026-06-24",
+        "2026-06-12",
         "2026-06-25",
-        "2026-07-12",
-        "2026-07-25",
+        "2026-07-11",
         "2026-08-21",
         "2026-09-24",
-        "2026-10-26",
-        "2026-11-02",
-        "2026-11-04",
+        "2026-11-10"
+      ]
+    },
+    {
+      "ticker": "CDNS",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-09-11",
+        "2026-09-24",
+        "2026-10-08",
         "2026-11-10",
-        "2026-11-13"
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "verdict_sequence": [
+        "WATCH",
+        "PASS",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-09-24",
+        "2026-11-10",
+        "2026-11-22"
       ]
     },
     {
@@ -296,6 +329,7 @@
         "WATCH",
         "WATCH",
         "WATCH",
+        "BUY",
         "BUY"
       ],
       "dates": [
@@ -305,7 +339,8 @@
         "2026-09-24",
         "2026-09-30",
         "2026-10-20",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-22"
       ]
     },
     {
@@ -319,7 +354,8 @@
         "BUY",
         "WATCH",
         "BUY",
-        "BUY"
+        "BUY",
+        "PASS"
       ],
       "dates": [
         "2026-06-10",
@@ -330,7 +366,23 @@
         "2026-10-26",
         "2026-11-02",
         "2026-11-06",
-        "2026-11-07"
+        "2026-11-07",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "TKR",
+      "verdict_sequence": [
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-08-21",
+        "2026-09-24",
+        "2026-11-10",
+        "2026-11-22"
       ]
     },
     {
@@ -351,39 +403,104 @@
       ]
     },
     {
+      "ticker": "SNDK",
+      "verdict_sequence": [
+        "PA",
+        "PASS",
+        "WATCH",
+        "BUY",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-06-18",
+        "2026-06-25",
+        "2026-08-22",
+        "2026-10-26",
+        "2026-11-02"
+      ]
+    },
+    {
       "ticker": "ROST",
       "verdict_sequence": [
         "BUY",
         "BUY",
         "WATCH",
+        "BUY",
         "BUY"
       ],
       "dates": [
         "2026-07-13",
         "2026-07-16",
         "2026-10-07",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-22"
       ]
     },
     {
-      "ticker": "MDB",
+      "ticker": "ORCL",
+      "verdict_sequence": [
+        "PASS",
+        "WATCH",
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-08-15",
+        "2026-09-11",
+        "2026-10-12",
+        "2026-10-30",
+        "2026-11-02",
+        "2026-11-07"
+      ]
+    },
+    {
+      "ticker": "NVDA",
       "verdict_sequence": [
         "BUY",
-        "WATCH",
+        "BUY",
+        "BUY",
         "BUY",
         "BUY",
         "WATCH",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-24",
+        "2026-06-25",
+        "2026-07-12",
+        "2026-07-25",
+        "2026-08-21",
+        "2026-09-24",
+        "2026-10-26",
+        "2026-11-02",
+        "2026-11-04",
+        "2026-11-10",
+        "2026-11-13",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "verdict_sequence": [
+        "BUY",
+        "BUY",
+        "BUY",
         "WATCH",
         "BUY"
       ],
       "dates": [
-        "2026-06-09",
         "2026-06-24",
-        "2026-08-15",
+        "2026-08-21",
         "2026-08-22",
-        "2026-09-24",
-        "2026-10-30",
-        "2026-11-10"
+        "2026-11-06",
+        "2026-11-22"
       ]
     },
     {
@@ -405,6 +522,59 @@
         "2026-10-22",
         "2026-10-26",
         "2026-11-06"
+      ]
+    },
+    {
+      "ticker": "MDB",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY",
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-06-09",
+        "2026-06-24",
+        "2026-08-15",
+        "2026-08-22",
+        "2026-09-24",
+        "2026-10-30",
+        "2026-11-10",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "MA",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-08-14",
+        "2026-09-25",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "KNSL",
+      "verdict_sequence": [
+        "BUY",
+        "BUY",
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-24",
+        "2026-07-25",
+        "2026-08-22",
+        "2026-09-24",
+        "2026-11-22"
       ]
     },
     {
@@ -446,10 +616,39 @@
       ]
     },
     {
+      "ticker": "IDXX",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-12",
+        "2026-09-24",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "verdict_sequence": [
+        "WATCH",
+        "WATCH",
+        "BUY",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-08-21",
+        "2026-09-24",
+        "2026-10-26",
+        "2026-11-22"
+      ]
+    },
+    {
       "ticker": "GOOG",
       "verdict_sequence": [
         "BUY",
         "WATCH",
+        "BUY",
         "BUY",
         "BUY",
         "BUY",
@@ -465,7 +664,8 @@
         "2026-08-21",
         "2026-08-22",
         "2026-11-04",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-22"
       ]
     },
     {
@@ -477,6 +677,7 @@
         "BUY",
         "WATCH",
         "BUY",
+        "BUY",
         "BUY"
       ],
       "dates": [
@@ -486,7 +687,21 @@
         "2026-08-22",
         "2026-09-14",
         "2026-11-04",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-22"
+      ]
+    },
+    {
+      "ticker": "FIX",
+      "verdict_sequence": [
+        "BUY",
+        "WATCH",
+        "BUY"
+      ],
+      "dates": [
+        "2026-08-21",
+        "2026-10-08",
+        "2026-11-22"
       ]
     },
     {
@@ -507,23 +722,11 @@
       ]
     },
     {
-      "ticker": "DXCM",
-      "verdict_sequence": [
-        "BUY",
-        "WATCH",
-        "BUY"
-      ],
-      "dates": [
-        "2026-06-10",
-        "2026-06-23",
-        "2026-11-10"
-      ]
-    },
-    {
       "ticker": "CVS",
       "verdict_sequence": [
         "BUY",
         "WATCH",
+        "BUY",
         "BUY",
         "BUY"
       ],
@@ -531,41 +734,23 @@
         "2026-08-16",
         "2026-09-24",
         "2026-11-03",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-21"
       ]
     },
     {
-      "ticker": "CPRT",
-      "verdict_sequence": [
-        "BUY",
-        "BUY",
-        "BUY",
-        "BUY",
-        "WATCH",
-        "BUY"
-      ],
-      "dates": [
-        "2026-06-12",
-        "2026-06-25",
-        "2026-07-11",
-        "2026-08-21",
-        "2026-09-24",
-        "2026-11-10"
-      ]
-    },
-    {
-      "ticker": "CDNS",
+      "ticker": "CHPS",
       "verdict_sequence": [
         "BUY",
         "WATCH",
         "WATCH",
-        "BUY"
+        "PASS"
       ],
       "dates": [
-        "2026-09-11",
+        "2026-08-14",
         "2026-09-24",
-        "2026-10-08",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-21"
       ]
     },
     {
@@ -588,6 +773,76 @@
       ]
     },
     {
+      "ticker": "BA",
+      "verdict_sequence": [
+        "WATCH",
+        "PASS",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-10-07",
+        "2026-11-10",
+        "2026-11-20"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "verdict_sequence": [
+        "BUY",
+        "BUY",
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-10",
+        "2026-07-16",
+        "2026-08-14",
+        "2026-09-24",
+        "2026-10-26",
+        "2026-11-02",
+        "2026-11-20"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "verdict_sequence": [
+        "WATCH",
+        "BUY",
+        "WATCH",
+        "WATCH",
+        "WATCH"
+      ],
+      "dates": [
+        "2026-08-14",
+        "2026-10-26",
+        "2026-11-04",
+        "2026-11-06",
+        "2026-11-20"
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "verdict_sequence": [
+        "BUY",
+        "BUY",
+        "BUY",
+        "WATCH",
+        "BUY",
+        "BUY"
+      ],
+      "dates": [
+        "2026-06-25",
+        "2026-07-12",
+        "2026-08-22",
+        "2026-10-30",
+        "2026-11-10",
+        "2026-11-20"
+      ]
+    },
+    {
       "ticker": "AMZN",
       "verdict_sequence": [
         "BUY",
@@ -596,6 +851,7 @@
         "BUY",
         "BUY",
         "WATCH",
+        "BUY",
         "BUY",
         "BUY",
         "BUY",
@@ -611,7 +867,8 @@
         "2026-11-02",
         "2026-11-04",
         "2026-11-06",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-20"
       ]
     },
     {
@@ -621,14 +878,16 @@
         "WATCH",
         "BUY",
         "WATCH",
-        "WAT"
+        "WAT",
+        "WATCH"
       ],
       "dates": [
         "2026-06-11",
         "2026-08-22",
         "2026-09-24",
         "2026-11-02",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-20"
       ]
     },
     {
@@ -636,29 +895,27 @@
       "verdict_sequence": [
         "BUY",
         "WATCH",
+        "BUY",
         "BUY"
       ],
       "dates": [
         "2026-08-22",
         "2026-09-26",
-        "2026-11-10"
+        "2026-11-10",
+        "2026-11-20"
       ]
     },
     {
-      "ticker": "ANET",
+      "ticker": "ALAB",
       "verdict_sequence": [
-        "BUY",
-        "BUY",
         "BUY",
         "WATCH",
         "BUY"
       ],
       "dates": [
-        "2026-06-25",
-        "2026-07-12",
         "2026-08-22",
-        "2026-10-30",
-        "2026-11-10"
+        "2026-09-22",
+        "2026-11-20"
       ]
     },
     {
@@ -668,6 +925,7 @@
         "BUY",
         "BUY",
         "WATCH",
+        "BUY",
         "BUY"
       ],
       "dates": [
@@ -675,60 +933,8 @@
         "2026-07-02",
         "2026-08-21",
         "2026-10-21",
-        "2026-11-10"
-      ]
-    },
-    {
-      "ticker": "ORCL",
-      "verdict_sequence": [
-        "PASS",
-        "WATCH",
-        "WATCH",
-        "WATCH",
-        "BUY",
-        "BUY"
-      ],
-      "dates": [
-        "2026-08-15",
-        "2026-09-11",
-        "2026-10-12",
-        "2026-10-30",
-        "2026-11-02",
-        "2026-11-07"
-      ]
-    },
-    {
-      "ticker": "AVGO",
-      "verdict_sequence": [
-        "BUY",
-        "BUY",
-        "BUY",
-        "WATCH",
-        "BUY",
-        "BUY"
-      ],
-      "dates": [
-        "2026-06-10",
-        "2026-07-16",
-        "2026-08-14",
-        "2026-09-24",
-        "2026-10-26",
-        "2026-11-02"
-      ]
-    },
-    {
-      "ticker": "ASML",
-      "verdict_sequence": [
-        "WATCH",
-        "BUY",
-        "WATCH",
-        "WATCH"
-      ],
-      "dates": [
-        "2026-08-14",
-        "2026-10-26",
-        "2026-11-04",
-        "2026-11-06"
+        "2026-11-10",
+        "2026-11-20"
       ]
     },
     {
@@ -742,23 +948,6 @@
       "dates": [
         "2026-08-15",
         "2026-09-22",
-        "2026-10-26",
-        "2026-11-02"
-      ]
-    },
-    {
-      "ticker": "SNDK",
-      "verdict_sequence": [
-        "PA",
-        "PASS",
-        "WATCH",
-        "BUY",
-        "WATCH"
-      ],
-      "dates": [
-        "2026-06-18",
-        "2026-06-25",
-        "2026-08-22",
         "2026-10-26",
         "2026-11-02"
       ]
