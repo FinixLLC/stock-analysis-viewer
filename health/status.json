@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-23T19:34:02.382680",
-  "overall": "critical",
+  "generated_at": "2026-11-23T20:49:56.559549",
+  "overall": "ok",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
-      "status": "critical",
-      "detail": "Not responding (ServerSelectionTimeoutError) \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
+      "status": "ok",
+      "detail": "Identity verified (NASDAQ_Yahoo \u2713)",
       "last_success": null
     },
     {
@@ -16,14 +16,14 @@
     },
     {
       "name": "Price data freshness (Lenovo Mongo)",
-      "status": "critical",
-      "detail": "Could not query: No servers found yet, Timeout: 4.0s, Topology Description: <TopologyDescription id: 6b050138009cc5b0e83cc3af, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None>]>",
+      "status": "ok",
+      "detail": "NASDAQ_Yahoo: 2026-11-20; NYSE_Yahoo: 2026-11-23",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
-      "status": "critical",
-      "detail": "Could not query: No servers found yet, Timeout: 4.0s, Topology Description: <TopologyDescription id: 6b05013c009cc5b0e83cc3b0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None>]>",
+      "status": "ok",
+      "detail": "Through 2026-11-20. NASDAQ_Yahoo: 4872/4997 active current (97%), 4872/5950 of all; NYSE_Yahoo: 2416/2435 active current (99%), 2416/2731 of all; AMEX_Yahoo: 281/285 active current (99%), 281/317 of all",
       "last_success": null
     },
     {
