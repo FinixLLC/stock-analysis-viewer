@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T09:19:46.599669",
+  "generated_at": "2026-11-26T10:19:43.995453",
   "overall": "critical",
   "checks": [
     {
@@ -40,14 +40,14 @@
     },
     {
       "name": "PaoBull cache: working vs. published",
-      "status": "ok",
-      "detail": "working 414 tickers, published 414 tickers",
+      "status": "warn",
+      "detail": "working 415 tickers, published 414 tickers \u2014 1 tickers pending publish",
       "last_success": null
     },
     {
       "name": "m1max's own ~/viewer checkout",
-      "status": "ok",
-      "detail": "Up to date with origin/main",
+      "status": "warn",
+      "detail": "4 commit(s) behind origin/main",
       "last_success": null
     },
     {
