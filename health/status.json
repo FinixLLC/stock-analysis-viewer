@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T08:15:18.934817",
+  "generated_at": "2026-11-26T09:19:46.599669",
   "overall": "critical",
   "checks": [
     {
       "name": "Lenovo Mongo (tunnel): localhost:27018 \u2192 LENOVO",
-      "status": "critical",
-      "detail": "Not responding (ServerSelectionTimeoutError) \u2014 LLM layer is blind to live prices/fundamentals until the watchdog reconnects (checks every 5 min)",
+      "status": "ok",
+      "detail": "Identity verified (NASDAQ_Yahoo \u2713)",
       "last_success": null
     },
     {
@@ -17,19 +17,19 @@
     {
       "name": "Price data freshness (Lenovo Mongo)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6b085b089e73ebf18696578e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Expected at least 2026-11-25. NASDAQ_Yahoo: 2026-11-23; NYSE_Yahoo: 2026-11-24",
       "last_success": null
     },
     {
       "name": "Exchange coverage (share of tickers current)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6b085b0c9e73ebf18696578f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "Through 2026-11-25. NASDAQ_Yahoo: 0/4981 active current (0%), 0/5950 of all; NYSE_Yahoo: 0/2432 active current (0%), 0/2731 of all; AMEX_Yahoo: 0/284 active current (0%), 0/317 of all",
       "last_success": null
     },
     {
       "name": "Bar integrity (last 2 weeks: NaN prices, duplicates, missing days)",
       "status": "critical",
-      "detail": "Could not query: localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 4.0s, Topology Description: <TopologyDescription id: 6b085b109e73ebf186965790, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27018) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27018: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>",
+      "detail": "NASDAQ_Yahoo: worst NaN day 2026-11-12 0.0%, 0 symbols with duplicate bars, thin days 2026-11-24 (608/4769); NYSE_Yahoo: worst NaN day 2026-11-12 0.0%, 0 symbols with duplicate bars; AMEX_Yahoo: worst NaN day 2026-11-12 0.0%, 0 symbols with duplicate bars",
       "last_success": null
     },
     {
