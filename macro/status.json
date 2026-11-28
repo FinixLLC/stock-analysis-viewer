@@ -47,22 +47,22 @@
     "avg_6m": 2.86
   },
   "breakeven_5y": {
-    "latest": 2.13,
-    "latest_date": "2026-11-25",
+    "latest": 2.16,
+    "latest_date": "2026-11-27",
     "avg_3m": 2.13,
-    "avg_6m": 2.17
+    "avg_6m": 2.16
   },
   "breakeven_10y": {
-    "latest": 2.12,
-    "latest_date": "2026-11-25",
-    "avg_3m": 2.12,
-    "avg_6m": 2.15
+    "latest": 2.15,
+    "latest_date": "2026-11-27",
+    "avg_3m": 2.13,
+    "avg_6m": 2.14
   },
   "real_yield_10y": {
-    "latest": 2.79,
-    "latest_date": "2026-11-24",
-    "avg_3m": 2.78,
-    "avg_6m": 2.83
+    "latest": 2.73,
+    "latest_date": "2026-11-25",
+    "avg_3m": 2.77,
+    "avg_6m": 2.81
   },
   "mich_inflation_expectations": {
     "latest": 4.7,
@@ -103,9 +103,9 @@
     },
     "quarterly_annualized": {
       "quarter": "2026:Q4",
-      "cpi": 4.13,
+      "cpi": 4.32,
       "core_cpi": 3.4,
-      "pce": 3.89,
+      "pce": 4.0,
       "core_pce": 3.54
     }
   },
@@ -139,5 +139,5 @@
   "median_cpi_trend_word": "falling",
   "inflation_expectations_trend_word": "falling",
   "median_cpi_level_word": "elevated",
-  "generated_at": "2026-11-27T14:45:06.452679+00:00"
+  "generated_at": "2026-11-28T14:45:05.764649+00:00"
 }
