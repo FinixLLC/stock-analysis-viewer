@@ -1,5 +1,39 @@
 [
   {
+    "ticker": "KRO",
+    "generated_at": "2026-11-28",
+    "price": 7.74,
+    "market_cap": 890854784,
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals",
+    "pipeline_verdict": null,
+    "pipeline_score": null,
+    "bdd_verdict": null,
+    "moat_intact": null,
+    "roe_pct": -14.8,
+    "de_ratio": 0.76,
+    "fcf_latest": -40400000.0,
+    "entry_framework": "A formal entry framework is not available due to the automated system's inability to generate a valid level set (R/R below 1.5:1). A favorable entry would be on a pullback to the long-term MA ($7.06) or the 52-week low ($4.36). Re-evaluate if FCF turns positive or if the stock confirms a breakout above $9.17.  \n\nBuyDeepDip phase1 failed due to insufficient positive FCF years (0 vs. required 3) and",
+    "investment_thesis": "Bull Case: KRO could recover if specialty chemicals demand rebounds, and its modest debt levels provide some financial flexibility.  \n\nBear Case: Negative FCF and weak demand trends suggest the company is struggling to generate sustainable returns.  \n\nPeer Comparison: KRO resembles other specialty chemical firms like Nucor (NUE) or Eastman Chemical (EMN), but with weaker FCF and higher cyclicality"
+  },
+  {
+    "ticker": "RPC",
+    "generated_at": "2026-11-28",
+    "price": 9.92,
+    "market_cap": 1230968064,
+    "sector": "Financial Services",
+    "industry": "Asset Management",
+    "pipeline_verdict": null,
+    "pipeline_score": null,
+    "bdd_verdict": null,
+    "moat_intact": null,
+    "roe_pct": 4.9,
+    "de_ratio": 0.94,
+    "fcf_latest": 18107000.0,
+    "entry_framework": "\ud83d\udfe2 Entry: $9.5 \u2014 aligns with support levels and ATR-based framework.  \n\ud83d\udfe1 Add-on: $9.0 \u2014 lower support level for incremental exposure.  \n\ud83d\udd34 Stop Loss: $8.5 \u2014 10.5% below entry to limit downside.  \n\ud83d\udd35 Target: $11.47 \u2014 prior 52-week high, a technical reference.  \n\nBuyDeepDip phase1 failed due to D/E > 0.6. Position sizing: starter (1-2% of portfolio). Timeframe: 18 months.  \n\n---",
+    "investment_thesis": "RPC's thesis hinges on its growth trajectory and ability to stabilize FCF. While revenue has grown steadily, FCF volatility raises concerns. Compared to peers like BlackRock, RPC lacks scale and market position but offers a smaller-cap opportunity.  \n\n\ud83d\udfe2 Bull Case: RPC's growth story and potential FCF recovery could justify current levels.  \n\ud83d\udd34 Bear Case: Cyclicality and FCF issues could weigh on pe"
+  },
+  {
     "ticker": "DDI",
     "generated_at": "2026-11-27",
     "price": 15.5,
@@ -2786,23 +2820,6 @@
     "fcf_latest": null,
     "entry_framework": "\ud83d\udfe2 Entry: $52.0 \u2014 aligns with support levels and ATR-based calculations.  \n\ud83d\udfe1 Add-on: $49.03 \u2014 mid-term MA anchor.  \n\ud83d\udd34 Stop Loss: $47.5 \u2014 8.7% below entry, capturing downside risk.  \n\ud83d\udd35 Target: $62.5 \u2014 extrapolated 20% upside from entry.  \n\nCurrent price ($53.315) is +2.5% above entry, suggesting a pullback is needed for a cleaner entry. BuyDeepDip phase1 failed due to missing sec_cache data. Requali",
     "investment_thesis": "\ud83d\udfe2 Bull Case: VABK offers a stable, efficient regional banking model with a strong capital structure. Its low leverage and moderate ROE suggest prudent risk management.  \n\n\ud83d\udd34 Bear Case: Limited growth data and exposure to credit cycle risks could weigh on performance in a weaker economic environment.  \n\n\u2605 Verdict: BUY \u2014 Scale-In on Pullback (entry $52.0)  \n\n---"
-  },
-  {
-    "ticker": "KRO",
-    "generated_at": "2026-11-11",
-    "price": 8.22,
-    "market_cap": 946101632,
-    "sector": "Basic Materials",
-    "industry": "Specialty Chemicals",
-    "pipeline_verdict": null,
-    "pipeline_score": null,
-    "bdd_verdict": null,
-    "moat_intact": null,
-    "roe_pct": -14.8,
-    "de_ratio": 0.76,
-    "fcf_latest": -40400000.0,
-    "entry_framework": "No formal entry framework available. Accumulate on pullback to mid-MA around $7. Re-qualify if FCF turns positive.",
-    "investment_thesis": "Bull Case: Potential recovery in specialty chemicals could boost margins.  \nBear Case: Weak fundamentals and cyclicality pose risks.  \n\nVerdict: PASS \u2014 Avoid due to failed screens and negative fundamentals."
   },
   {
     "ticker": "CLDT",
